@@ -19,7 +19,7 @@ a.b:hover {
 @media screen and (min-width: 1001px) {
     a.l:link {
         text-decoration: none;
-        font-size: 1.1vw;
+        font-size: 1.25vw;
     }
 
     a {
@@ -57,7 +57,7 @@ a.b:hover {
 
     a.l:link {
         text-decoration: none;
-        font-size: var(--font-adapt)*1.1vw;
+        font-size: var(--font-adapt)*1.25vw;
     }
 
     a {
