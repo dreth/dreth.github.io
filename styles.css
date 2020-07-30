@@ -1,39 +1,46 @@
 body {
     background-color: black;
-    color: white;
-  }
+        color: white;
+    }
 
-  a.b:link {
-    text-decoration: none;
-    color: aqua;
-  }
+    a.b:link {
+        text-decoration: none;
+        color: aqua;
+    }
 
-  a.l:link {
-    text-decoration: none;
-    color: red;
-    font-size: 1.1vw;
-  }
+    a.l:link {
+        text-decoration: none;
+        font-size: 1.1vw;
+    }
+    a:active {
+        color: aqua;
+    }
 
-  a {
-    font-size: 1.1vw;
-    font-family: ubuntu, verdana, Sans-Serif;
-    word-wrap: break-word;
-  }
+    a[tabindex]:focus {
+        color:aqua;
+        outline: none;
+    }
 
-  ul,
-  p {
-    font-size: 1vw;
-    font-family: ubuntu, verdana, Sans-Serif;
-    word-wrap: break-word;
-  }
-  p.heading {
-    font-size: 1.5vw;
-  }
-  p.heading2 {
-    font-size: 1.2vw;
-  }
-  h1,
-  h3 {
-    font-size: 1.8vw;
-    font-family: ubuntu, verdana, Sans-Serif;
-  }
+    a {
+        font-size: 1.1vw;
+        font-family: ubuntu, verdana, Sans-Serif;
+        word-wrap: break-word;
+    }
+
+    ul,
+    p {
+        font-size: 1vw;
+        font-family: ubuntu, verdana, Sans-Serif;
+        word-wrap: break-word;
+    }
+    p.heading {
+        font-size: 1.5vw;
+    }
+    p.heading2 {
+        font-size: 1.2vw;
+    }
+    h1,
+    h3 {
+        font-size: 1.8vw;
+        font-family: ubuntu, verdana, Sans-Serif;
+}
