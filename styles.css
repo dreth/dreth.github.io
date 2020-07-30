@@ -3,10 +3,6 @@ html {
     color: white;
 }
 
-body {
-    width:100%;
-}
-
 a.b:link {
     text-decoration: none;
     color: aqua;
