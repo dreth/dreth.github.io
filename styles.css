@@ -11,7 +11,7 @@ body {
   a.l:link {
     text-decoration: none;
     color: red;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
   }
 
   a {
@@ -29,7 +29,9 @@ body {
   p.heading {
     font-size: 1.5vw;
   }
-
+  p.heading2 {
+    font-size: 1.2vw;
+  }
   h1,
   h3 {
     font-size: 1.8vw;
