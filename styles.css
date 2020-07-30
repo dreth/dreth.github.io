@@ -9,9 +9,12 @@ a.b:link {
 }
 
 @media screen and (max-width: 600px) {
+    #root {
+        --text-measure: 5;
+    }
     a.l:link {
         text-decoration: none;
-        font-size: 3.3vw;
+        font-size: var(--text-measure)*1.1vw;
     }
     a:active {
         color: aqua;
@@ -23,26 +26,26 @@ a.b:link {
     }
     
     a {
-        font-size: 3.3vw;
+        font-size: var(--text-measure)*1.1vw;
         font-family: ubuntu, verdana, Sans-Serif;
         word-wrap: break-word;
     }
     
     ul,
     p {
-        font-size: 3vw;
+        font-size: var(--text-measure)*1vw;
         font-family: ubuntu, verdana, Sans-Serif;
         word-wrap: break-word;
     }
     p.heading {
-        font-size: 4.5vw;
+        font-size: var(--text-measure)*1.5vw;
     }
     p.heading2 {
-        font-size: 3.6vw;
+        font-size: var(--text-measure)*1.2vw;
     }
     h1,
     h3 {
-        font-size: 5.4vw;
+        font-size: var(--text-measure)*1.8vw;
         font-family: ubuntu, verdana, Sans-Serif;
     }
   }
