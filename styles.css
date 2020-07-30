@@ -7,8 +7,17 @@ a.b:link {
     text-decoration: none;
     color: aqua;
 }
+
 a:active {
     color: aqua;
+}
+
+a:visited {
+    color: aqua;
+}
+
+a:hover {
+    color: lime;
 }
 
 a[tabindex]:focus {
@@ -19,14 +28,6 @@ a[tabindex]:focus {
     a.l:link {
         text-decoration: none;
         font-size: 1.1vw;
-    }
-    a:active {
-        color: aqua;
-    }
-
-    a[tabindex]:focus {
-        color:aqua;
-        outline: none;
     }
 
     a {
@@ -41,12 +42,15 @@ a[tabindex]:focus {
         font-family: ubuntu, verdana, Sans-Serif;
         word-wrap: break-word;
     }
+
     p.heading {
         font-size: 1.5vw;
     }
+
     p.heading2 {
         font-size: 1.2vw;
     }
+
     h1,
     h3 {
         font-size: 1.8vw;
@@ -58,17 +62,10 @@ a[tabindex]:focus {
     #root {
         --font-adapt: 7;
     }
+
     a.l:link {
         text-decoration: none;
         font-size: var(--font-adapt)*1.1vw;
-    }
-    a:active {
-        color: aqua;
-    }
-
-    a[tabindex]:focus {
-        color:aqua;
-        outline: none;
     }
 
     a {
@@ -83,12 +80,15 @@ a[tabindex]:focus {
         font-family: ubuntu, verdana, Sans-Serif;
         word-wrap: break-word;
     }
+
     p.heading {
         font-size: var(--font-adapt)*1.5vw;
     }
+
     p.heading2 {
         font-size: var(--font-adapt)*1.2vw;
     }
+
     h1,
     h3 {
         font-size: var(--font-adapt)*1.8vw;
