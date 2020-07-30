@@ -16,10 +16,6 @@ a:hover {
     color: lime;
 }
 
-a[tabindex]:focus {
-    color:aqua;
-    outline: none;
-}
 @media screen and (min-width: 1001px) {
     a.l:link {
         text-decoration: none;
