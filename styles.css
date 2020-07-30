@@ -7,11 +7,6 @@ a.b:link {
     text-decoration: none;
     color: aqua;
 }
-
-a.l:link {
-    text-decoration: none;
-    font-size: 1.1vw;
-}
 a:active {
     color: aqua;
 }
@@ -20,27 +15,84 @@ a[tabindex]:focus {
     color:aqua;
     outline: none;
 }
+@media screen and (min-width: 1001px) {
+    a.l:link {
+        text-decoration: none;
+        font-size: 1.1vw;
+    }
+    a:active {
+        color: aqua;
+    }
 
-a {
-    font-size: 1.1vw;
-    font-family: ubuntu, verdana, Sans-Serif;
-    word-wrap: break-word;
+    a[tabindex]:focus {
+        color:aqua;
+        outline: none;
+    }
+
+    a {
+        font-size: 1.1vw;
+        font-family: ubuntu, verdana, Sans-Serif;
+        word-wrap: break-word;
+    }
+
+    ul,
+    p {
+        font-size: 1vw;
+        font-family: ubuntu, verdana, Sans-Serif;
+        word-wrap: break-word;
+    }
+    p.heading {
+        font-size: 1.5vw;
+    }
+    p.heading2 {
+        font-size: 1.2vw;
+    }
+    h1,
+    h3 {
+        font-size: 1.8vw;
+        font-family: ubuntu, verdana, Sans-Serif;
+    }
+
+} 
+@media screen and (max-width: 1000px) {
+    #root {
+        --font-adapt: 5;
+    }
+    a.l:link {
+        text-decoration: none;
+        font-size: var(--font-adapt)*1.1vw;
+    }
+    a:active {
+        color: aqua;
+    }
+
+    a[tabindex]:focus {
+        color:aqua;
+        outline: none;
+    }
+
+    a {
+        font-size: var(--font-adapt)*1.1vw;
+        font-family: ubuntu, verdana, Sans-Serif;
+        word-wrap: break-word;
+    }
+
+    ul,
+    p {
+        font-size: var(--font-adapt)*1vw;
+        font-family: ubuntu, verdana, Sans-Serif;
+        word-wrap: break-word;
+    }
+    p.heading {
+        font-size: var(--font-adapt)*1.5vw;
+    }
+    p.heading2 {
+        font-size: var(--font-adapt)*1.2vw;
+    }
+    h1,
+    h3 {
+        font-size: var(--font-adapt)*1.8vw;
+        font-family: ubuntu, verdana, Sans-Serif;
+    }
 }
 
-ul,
-p {
-    font-size: 1vw;
-    font-family: ubuntu, verdana, Sans-Serif;
-    word-wrap: break-word;
-}
-p.heading {
-    font-size: 1.5vw;
-}
-p.heading2 {
-    font-size: 1.2vw;
-}
-h1,
-h3 {
-    font-size: 1.8vw;
-    font-family: ubuntu, verdana, Sans-Serif;
-}
