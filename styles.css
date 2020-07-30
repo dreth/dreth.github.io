@@ -10,7 +10,7 @@ a.b:link {
 
 a.l:link {
     text-decoration: none;
-    font-size: 1.1vw;
+    font-size: 1.1%;
 }
 a:active {
     color: aqua;
@@ -22,25 +22,25 @@ a[tabindex]:focus {
 }
 
 a {
-    font-size: 1.1vw;
+    font-size: 1.1%;
     font-family: ubuntu, verdana, Sans-Serif;
     word-wrap: break-word;
 }
 
 ul,
 p {
-    font-size: 1vw;
+    font-size: 1%;
     font-family: ubuntu, verdana, Sans-Serif;
     word-wrap: break-word;
 }
 p.heading {
-    font-size: 1.5vw;
+    font-size: 1.5%;
 }
 p.heading2 {
-    font-size: 1.2vw;
+    font-size: 1.2%;
 }
 h1,
 h3 {
-    font-size: 1.8vw;
+    font-size: 1.8%;
     font-family: ubuntu, verdana, Sans-Serif;
 }
