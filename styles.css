@@ -15,7 +15,7 @@ body {
   }
 
   a {
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     font-family: ubuntu, verdana, Sans-Serif;
     word-wrap: break-word;
   }
@@ -27,7 +27,7 @@ body {
     word-wrap: break-word;
   }
   p.heading {
-    font-weight: bold;
+    font-size: 1.5vw;
   }
 
   h1,
