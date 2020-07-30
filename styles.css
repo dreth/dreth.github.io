@@ -8,10 +8,6 @@ a.b:link {
     color: aqua;
 }
 
-a:active {
-    color: aqua;
-}
-
 a:visited {
     color: aqua;
 }
