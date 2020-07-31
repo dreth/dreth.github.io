@@ -17,7 +17,19 @@ a.b:hover {
 }
 
 /* showing languages */
-.lshowes:hover .esshow{
+.showblockes {
+    display: none;
+}
+
+.showblocken {
+    display: none;
+}
+
+.showblocknl {
+    display: none;
+}
+
+.lshowes:hover .showblockes{
     display: block;
 }
 
@@ -25,7 +37,7 @@ a.b:hover {
     display: none;
 }
 
-.lshowen:hover .enshow{
+.lshowen:hover .showblocken{
     display: block;
 }
 
@@ -33,7 +45,7 @@ a.b:hover {
     display: none;
 }
 
-.lshownl:hover .nlshow{
+.lshownl:hover .showblocknl{
     display: block;
 }
 
