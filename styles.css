@@ -23,7 +23,7 @@ a.b:hover {
 }
 
 .l.showes:hover + .hidees {
-    display: block;
+    display: inline-block;
 }
 /* EN */
 .hideen {
@@ -31,7 +31,7 @@ a.b:hover {
 }
 
 .l.showen:hover + .hideen {
-    display: block;
+    display: inline-block;
 }
 /* NL */
 .hidenl {
@@ -39,7 +39,7 @@ a.b:hover {
 }
 
 .l.showen:hover + .hidenl {
-    display: block;
+    display: inline-block;
 }
 
 /* screen width higher than 1000 px */
