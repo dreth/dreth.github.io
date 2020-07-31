@@ -22,7 +22,7 @@ a.b:hover {
     display: none;
 }
 
-.l.showes:hover + .hidees {
+.showes:hover + .hidees {
     display: inline-block;
 }
 /* EN */
@@ -30,7 +30,7 @@ a.b:hover {
     display: none;
 }
 
-.l.showen:hover + .hideen {
+.showen:hover + .hideen {
     display: inline-block;
 }
 /* NL */
@@ -38,7 +38,7 @@ a.b:hover {
     display: none;
 }
 
-.l.showen:hover + .hidenl {
+.shownl:hover + .hidenl {
     display: inline-block;
 }
 
