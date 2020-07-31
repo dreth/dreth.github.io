@@ -16,9 +16,35 @@ a.b:hover {
     color: lime;
 }
 
+/* hide and show languages names */
+/* ES */
+.hidees {
+    display: none;
+}
+
+.l.showes:hover + .hidees {
+    display: block;
+}
+/* EN */
+.hideen {
+    display: none;
+}
+
+.l.showen:hover + .hideen {
+    display: block;
+}
+/* NL */
+.hidenl {
+    display: none;
+}
+
+.l.showen:hover + .hidenl {
+    display: block;
+}
+
 /* screen width higher than 1000 px */
 @media screen and (min-width: 1001px) {
-    a.l:link {
+    .l:link {
         text-decoration: none;
         font-size: 1.25vw;
     }
@@ -36,11 +62,11 @@ a.b:hover {
         word-wrap: break-word;
     }
 
-    p.heading {
+    .heading {
         font-size: 1.5vw;
     }
 
-    p.heading2 {
+    .heading2 {
         font-size: 1.2vw;
     }
 
@@ -58,7 +84,7 @@ a.b:hover {
         --font-adapt: 7;
     }
 
-    a.l:link {
+    .l:link {
         text-decoration: none;
         font-size: var(--font-adapt)*1.25vw;
     }
@@ -76,11 +102,11 @@ a.b:hover {
         word-wrap: break-word;
     }
 
-    p.heading {
+    .heading {
         font-size: var(--font-adapt)*1.5vw;
     }
 
-    p.heading2 {
+    .heading2 {
         font-size: var(--font-adapt)*1.2vw;
     }
 
