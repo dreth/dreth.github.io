@@ -16,6 +16,32 @@ a.b:hover {
     color: lime;
 }
 
+/* showing languages */
+.lshowes:hover .esshow{
+    display: block;
+}
+
+.lshowes:hover .hide {
+    display: none;
+}
+
+.lshowen:hover .enshow{
+    display: block;
+}
+
+.lshowen:hover .hide {
+    display: none;
+}
+
+.lshownl:hover .nlshow{
+    display: block;
+}
+
+.lshownl:hover .hide {
+    display: none;
+}
+
+/* screen width higher than 1000 px */
 @media screen and (min-width: 1001px) {
     a.l:link {
         text-decoration: none;
@@ -50,6 +76,8 @@ a.b:hover {
     }
 
 } 
+
+/* screen width lower than 1000 px */
 @media screen and (max-width: 1000px) {
     #root {
         --font-adapt: 7;
