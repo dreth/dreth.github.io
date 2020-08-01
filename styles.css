@@ -47,6 +47,11 @@ a.b:hover {
     .l:link {
         text-decoration: none;
         font-size: 1.25vw;
+        color: red;
+    }
+
+    .l:hover {
+        color: green;
     }
 
     a {
@@ -88,6 +93,11 @@ a.b:hover {
     .l:link {
         text-decoration: none;
         font-size: var(--font-adapt)*1.25vw;
+        color: red;
+    }
+
+    .l:hover {
+        color: green;
     }
 
     a {
