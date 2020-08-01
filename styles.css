@@ -80,9 +80,13 @@ a.b:hover {
         font-size: 1.12vw;
     }
 
-    h1,
+    h1 {
+        font-size: 1.9vw;
+        font-family: ubuntu, Sans-Serif;
+    }
+
     h3 {
-        font-size: 1.8vw;
+        font-size: 1.6vw;
         font-family: ubuntu, Sans-Serif;
     }
 
@@ -127,9 +131,13 @@ a.b:hover {
         font-size: 5*1.12vw;
     }
 
-    h1,
-    h3 {
+    h1 {
         font-size: 5*1.8vw;
+        font-family: ubuntu, Sans-Serif;
+    }
+
+    h3 {
+        font-size: 5*1.6vw;
         font-family: ubuntu, Sans-Serif;
     }
 }
