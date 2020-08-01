@@ -12,5 +12,3 @@ function isMobile() {
         document.getElementById("block").style.display = "block";
     }
   };
-
-isMobile();
