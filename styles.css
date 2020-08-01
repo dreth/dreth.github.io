@@ -65,7 +65,7 @@ a.b:hover {
     p,
     span {
         font-size: 1vw;
-        font-family: ubuntu, verdana, Sans-Serif;
+        font-family: ubuntu, Sans-Serif;
         word-wrap: break-word;
     }
 
@@ -80,7 +80,7 @@ a.b:hover {
     h1,
     h3 {
         font-size: 1.8vw;
-        font-family: ubuntu, verdana, Sans-Serif;
+        font-family: ubuntu, Sans-Serif;
     }
 
 } 
@@ -102,7 +102,7 @@ a.b:hover {
 
     a {
         font-size: var(--font-adapt)*1.1vw;
-        font-family: ubuntu, verdana, Sans-Serif;
+        font-family: ubuntu, Sans-Serif;
         word-wrap: break-word;
         color: red;
     }
@@ -111,7 +111,7 @@ a.b:hover {
     p,
     span {
         font-size: var(--font-adapt)*1vw;
-        font-family: ubuntu, verdana, Sans-Serif;
+        font-family: ubuntu, Sans-Serif;
         word-wrap: break-word;
     }
 
@@ -126,7 +126,7 @@ a.b:hover {
     h1,
     h3 {
         font-size: var(--font-adapt)*1.8vw;
-        font-family: ubuntu, verdana, Sans-Serif;
+        font-family: ubuntu, Sans-Serif;
     }
 }
 
