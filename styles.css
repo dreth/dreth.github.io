@@ -44,6 +44,10 @@ a.b:hover {
 
 /* screen width higher than 1000 px */
 @media screen and (min-width: 1001px) {
+    .l:visited {
+        color: red;
+    }
+
     .l:link {
         text-decoration: none;
         font-size: 1.25vw;
@@ -58,7 +62,6 @@ a.b:hover {
         font-size: 1.1vw;
         font-family: ubuntu, Sans-Serif;
         word-wrap: break-word;
-        color: red;
     }
 
     ul,
@@ -88,12 +91,17 @@ a.b:hover {
 /* screen width lower than 1000 px */
 @media screen and (max-width: 1000px) {
     #root {
-        --font-adapt: 7;
+        --font-adapt: 8;
+    }
+    
+    .l:visited {
+        color: red;
     }
 
     .l:link {
         text-decoration: none;
         font-size: var(--font-adapt)*1.25vw;
+        color: red;
     }
 
     .l:hover {
@@ -104,7 +112,6 @@ a.b:hover {
         font-size: var(--font-adapt)*1.1vw;
         font-family: ubuntu, Sans-Serif;
         word-wrap: break-word;
-        color: red;
     }
 
     ul,
