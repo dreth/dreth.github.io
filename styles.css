@@ -59,7 +59,7 @@ a.b:hover {
     }
 
     a {
-        font-size: 1.1vw;
+        font-size: 1.6vw;
         font-family: ubuntu, Sans-Serif;
         word-wrap: break-word;
     }
@@ -73,20 +73,20 @@ a.b:hover {
     }
 
     .heading {
-        font-size: 1.45vw;
+        font-size: 1.7vw;
     }
 
     .heading2 {
-        font-size: 1.12vw;
+        font-size: 1.4vw;
     }
 
     h1 {
-        font-size: 1.9vw;
+        font-size: 3.3vw;
         font-family: ubuntu, Sans-Serif;
     }
 
     h3 {
-        font-size: 1.52vw;
+        font-size: 2vw;
         font-family: ubuntu, Sans-Serif;
     }
 
@@ -110,7 +110,7 @@ a.b:hover {
     }
 
     a {
-        font-size: 5*1.1vw;
+        font-size: 5*1.6vw;
         font-family: ubuntu, Sans-Serif;
         word-wrap: break-word;
     }
@@ -124,20 +124,20 @@ a.b:hover {
     }
 
     .heading {
-        font-size: 5*1.5vw;
+        font-size: 5*1.7vw;
     }
 
     .heading2 {
-        font-size: 5*1.12vw;
+        font-size: 5*1.4vw;
     }
 
     h1 {
-        font-size: 5*1.8vw;
+        font-size: 5*3vw;
         font-family: ubuntu, Sans-Serif;
     }
 
     h3 {
-        font-size: 5*1.6vw;
+        font-size: 5*2vw;
         font-family: ubuntu, Sans-Serif;
     }
 }
