@@ -101,7 +101,7 @@ a.b:hover {
 
     .l:link {
         text-decoration: none;
-        font-size: 1.7vw;
+        font-size: 2*1.7vw;
         color: red;
     }
 
@@ -110,7 +110,7 @@ a.b:hover {
     }
 
     a {
-        font-size: 1.75vw;
+        font-size: 2*1.75vw;
         font-family: ubuntu, Sans-Serif;
         word-wrap: break-word;
     }
@@ -118,26 +118,26 @@ a.b:hover {
     ul,
     p,
     span {
-        font-size: 1.5vw;
+        font-size: 2*1.5vw;
         font-family: ubuntu, Sans-Serif;
         word-wrap: break-word;
     }
 
     .heading {
-        font-size: 1.85vw;
+        font-size: 2*1.85vw;
     }
 
     .heading2 {
-        font-size: 1.6vw;
+        font-size: 2*1.6vw;
     }
 
     h1 {
-        font-size: 3.2vw;
+        font-size: 2*3.2vw;
         font-family: ubuntu, Sans-Serif;
     }
 
     h3 {
-        font-size: 2vw;
+        font-size: 2*2vw;
         font-family: ubuntu, Sans-Serif;
     }
 }
