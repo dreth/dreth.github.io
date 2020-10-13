@@ -42,8 +42,8 @@ a.b:hover {
     display: inline-block;
 }
 
-/* screen width higher than 2161 px */
-@media screen and (min-width: 2161px) {
+/* screen width higher than 1500 px */
+@media screen and (min-width: 1500px) {
     .l:visited {
         color: red;
     }
@@ -92,8 +92,8 @@ a.b:hover {
 
 } 
 
-/* screen width lower than 2161 px */
-@media screen and (max-width: 2161px) {
+/* screen width lower than 1500 px */
+@media screen and (max-width: 1500px) {
 
     .l:visited {
         color: red;
