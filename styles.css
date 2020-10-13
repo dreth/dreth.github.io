@@ -43,7 +43,7 @@ a.b:hover {
 }
 
 /* screen width higher than 1500 px */
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1000px) {
     .l:visited {
         color: red;
     }
@@ -93,7 +93,7 @@ a.b:hover {
 } 
 
 /* screen width lower than 1500 px */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1000px) {
 
     .l:visited {
         color: red;
