@@ -6,7 +6,7 @@
   <link rel="shortcut icon" href="../icons/icon_ubuntu.ico" />
   <title>CV - Daniel A.</title>
   <style>
-    a.b:link {
+    a.b {
       text-decoration: none;
       color: aqua;
     }
@@ -44,14 +44,14 @@
 <body>
   <br>
   <ul>
-    <h1><a href="https://daac.es" class="b">
+    <h1><a onclick="history.back()" class="b" style="cursor: pointer;">
         < main page</a>
     </h1>
-    <span>view in </span><a onclick="document.getElementById('pdf_doc').data = 'CV-EN.pdf'" class="light">light</a> or <a
-      onclick="document.getElementById('pdf_doc').data = 'CV-EN-DARK.pdf'" class="dark">dark</a>
+    <span>view in </span><a onclick="document.getElementById('pdf_doc').data = '../cvs/CV-EN.pdf'" class="light">light</a><span> or </span><a
+      onclick="document.getElementById('pdf_doc').data = '../cvs/CV-EN-DARK.pdf'" class="dark">dark</a><span> theme</span>
   </ul>
   <br>
-  <object id="pdf_doc" data="CV-EN-DARK.pdf" width="100%" height="100%">
+  <object id="pdf_doc" data="../cvs/CV-EN-DARK.pdf" width="100%" height="100%">
 </body>
 
 </html>
