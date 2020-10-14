@@ -1,0 +1,32 @@
+a.b:link {
+    text-decoration: none;
+    color: aqua;
+  }
+
+  a:visited {
+    color: aqua;
+  }
+
+  a.b:hover {
+    color: rgb(125, 255, 125);
+  }
+
+  a.light:link {
+    text-decoration: none;
+    color: white;
+  }
+
+  a.light:hover {
+    color: rgb(0, 255, 0);
+    cursor: pointer;
+  }
+
+  a.dark:link {
+    text-decoration: none;
+    color: lightslategray;
+  }
+
+  a.dark:hover {
+    color: rgb(8, 129, 55);
+    cursor: pointer;
+  }
