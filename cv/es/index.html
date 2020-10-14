@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="shortcut icon" href="../icons/icon_ubuntu.ico" />
+  <title>CV - Daniel A.</title>
+  <style>
+    a.b:link {
+      text-decoration: none;
+      color: aqua;
+    }
+
+    a:visited {
+      color: aqua;
+    }
+
+    a.b:hover {
+      color: rgb(125, 255, 125);
+    }
+
+    a.light:link {
+      text-decoration: none;
+      color: white;
+    }
+
+    a.light:hover {
+      color: rgb(0, 255, 0);
+      cursor: pointer;
+    }
+
+    a.dark:link {
+      text-decoration: none;
+      color: lightslategray;
+    }
+
+    a.dark:hover {
+      color: rgb(8, 129, 55);
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+  <ul>
+    <h1><a href="https://daac.es" class="b" >
+        < página principal</a>
+    </h1>
+    <span>ver en </span><a onclick="document.getElementById('pdf_doc').data = 'CV-ES.pdf'" class="light">claro</a> ó <a
+      onclick="document.getElementById('pdf_doc').data = 'CV-ES-DARK.pdf'" class="dark">oscuro</a>
+  </ul>
+  <br>
+  <object id="pdf_doc" data="CV-ES-DARK.pdf" width="100%" height="100%">
+</body>
+
+</html>
