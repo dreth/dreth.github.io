@@ -6,6 +6,7 @@ html {
 a.b:link {
     text-decoration: none;
     color: aqua;
+    font-weight: bold;
 }
 
 a:visited {
@@ -19,30 +20,41 @@ a.b:hover {
 /* hide and show languages names */
 /* ES */
 .hidees {
+    font-size: 1.6vw;
     display: none;
 }
 
 .showes:hover + .hidees {
+    font-size: 1.6vw;
     display: inline-block;
 }
 /* EN */
 .hideen {
+    font-size: 1.6vw;
     display: none;
 }
 
 .showen:hover + .hideen {
+    font-size: 1.6vw;
     display: inline-block;
 }
 /* NL */
 .hidenl {
+    font-size: 1.6vw;
     display: none;
 }
 
 .shownl:hover + .hidenl {
+    font-size: 1.6vw;
     display: inline-block;
 }
 
-/* screen width higher than 1500 px */
+/* little dashes */
+.dash {
+    font-size: 1.6vw;
+}
+
+/* screen width higher than 1000 px */
 @media screen and (min-width: 1000px) {
     .l:visited {
         color: red;
@@ -50,7 +62,7 @@ a.b:hover {
 
     .l:link {
         text-decoration: none;
-        font-size: 1.25vw;
+        font-size: 1.7vw;
         color: red;
     }
 
@@ -59,7 +71,7 @@ a.b:hover {
     }
 
     a {
-        font-size: 1.4vw;
+        font-size: 1.8vw;
         font-family: ubuntu, Sans-Serif;
         word-wrap: break-word;
     }
@@ -77,11 +89,11 @@ a.b:hover {
     }
 
     .heading2 {
-        font-size: 1.3vw;
+        font-size: 1.5vw;
     }
 
     h1 {
-        font-size: 2.2vw;
+        font-size: 2.4vw;
         font-family: ubuntu, Sans-Serif;
     }
 
@@ -92,7 +104,7 @@ a.b:hover {
 
 } 
 
-/* screen width lower than 1500 px */
+/* screen width lower than 1000 px */
 @media screen and (max-width: 1000px) {
 
     .l:visited {
@@ -132,7 +144,7 @@ a.b:hover {
     }
 
     h1 {
-        font-size: 6.4vw;
+        font-size: 6vw;
         font-family: ubuntu, Sans-Serif;
     }
 
