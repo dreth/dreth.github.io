@@ -14,11 +14,11 @@
     <h1><a href="https://daac.es/es" class="b" style="cursor: pointer;">
         < página principal</a>
     </h1>
-    <span>ver en tema</span><a onclick="document.getElementById('pdf_doc').data = '../cvs/CV-ES.pdf'" class="light">claro</a><span> ó </span><a
-      onclick="document.getElementById('pdf_doc').data = '../cvs/CV-ES-DARK.pdf'" class="dark">oscuro</a>
+    <span>ver en tema</span><a onclick="document.getElementById('pdf_doc').src = '../cvs/CV-ES.pdf'" class="light">claro</a><span> ó </span><a
+      onclick="document.getElementById('pdf_doc').src = '../cvs/CV-ES-DARK.pdf'" class="dark">oscuro</a>
   </ul>
   <br>
-  <object id="pdf_doc" data="../cvs/CV-ES-DARK.pdf" width="100%" height="100%">
+  <embed id="pdf_doc" src="../cvs/CV-ES-DARK.pdf" width="100%" height="100%">
 </body>
 
 </html>
