@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="../styles2.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   <link rel="shortcut icon" href="../../icons/icon_ubuntu.ico" />
+  <script src="../script.js"></script>
   <title>CV - Daniel A.</title>
 </head>
 
@@ -14,11 +15,13 @@
     <h1><a href="https://daac.es/es" class="b" style="cursor: pointer;">
         < página principal</a>
     </h1>
-    <span>ver en tema </span><a onclick="document.getElementById('pdf_doc').src = '../cvs/CV-ES.pdf'" class="light">claro</a><span> ó </span><a
-      onclick="document.getElementById('pdf_doc').src = '../cvs/CV-ES-DARK.pdf'" class="dark">oscuro</a>
+    <a id="pdf_doc" href="../cvs/CV-ES-DARK.pdf" class="b">click aquí para ver/descargar en formato PDF</a>
+    <br><br>
+    <span>ver en tema </span><a onclick="swap_theme('light','es')" class="light">claro</a><span> ó </span><a
+      onclick="swap_theme('dark','es')" class="dark">oscuro</a>
   </ul>
   <br>
-  <iframe id="pdf_doc" src="../cvs/CV-ES-DARK.pdf" width="100%" height="100%">
+  <img id="img_doc" src="../cvs/CV-ES-DARK.png" frameBorder="0" scrolling="auto" width="auto"></img>
 </body>
 
 </html>
