@@ -19,7 +19,7 @@ font(font-family, font-size, letter-spacing, font-weight, line-height = 1)
     line-height line-height
         
 // GENERAL FONTS AND CLASSES AND SETUP STUFF
-* {box-sizing: border-box; transition: 0.35s ease;}
+* {box-sizing: border-box; transition: 0.25s ease;}
     
 .rela-block
     setup(block, relative, auto)
@@ -44,14 +44,13 @@ body
         content ""
         setup($x,fixed,0,0,0,0,0)
         background-color rgb(0,0,0)
-        
     
 .caps {text-transform: uppercase;}
 .justified {text-align: justify;}
 p.light {color: white;}
 span.lesslight {color: black; font-weight: bold;}
 p.lesslight {color: black;}
-h2 {font('Ubuntu',23px,3px,600,40px); color: White}
+h2 {font('Ubuntu',25px,3px,600,40px); color: White}
 h3 {font('Ubuntu',19px,1px,600,22px); color: White}
 
 .page
@@ -69,7 +68,7 @@ h3 {font('Ubuntu',19px,1px,600,22px); color: White}
     setup($x,absolute,$x,$x,0,0,calc(350px + 5%))
     height 120px
     text-align center
-    font('Ubuntu',62px,8px,100,60px)
+    font('Ubuntu',58px,8px,100,60px)
     & div {width: 94%}
     
 .side-bar
