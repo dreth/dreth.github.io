@@ -145,6 +145,17 @@ h3 {
   margin: -23px;
 }
 .logo {
+  display: false;
+  position: absolute;
+  margin: false;
+  top: 0;
+  left: 0;
+  right: false;
+  bottom: false;
+  z-index: 100;
+  margin: 0;
+  color: #000;
+  height: 300px;
   width: 300px;
 }
 .social {

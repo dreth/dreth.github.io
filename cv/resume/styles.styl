@@ -83,7 +83,14 @@ h3 {font('Ubuntu',21px,1px,600,28px); color: White}
     & .logo {margin: -23px;}
     
 .logo
-    width 300px
+    $midSize = 300px;    // Controls overall size
+    setup($x,absolute,$x,0,$x,$x,0)
+    z-index 100
+    margin 0
+    color black
+    height $midSize
+    width $midSize
+
 
 .social
     padding-left 60px
