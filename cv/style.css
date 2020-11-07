@@ -69,6 +69,10 @@ body:before {
 p.light {
   color: #fff;
 }
+span.lesslight {
+  color: #000;
+  font-weight: bold;
+}
 p.lesslight {
   color: #000;
 }
@@ -82,10 +86,10 @@ h2 {
 }
 h3 {
   font-family: 'Ubuntu';
-  font-size: 21px;
+  font-size: 19px;
   letter-spacing: 1px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 22px;
   color: White;
 }
 .page {
@@ -235,7 +239,7 @@ h3 {
   text-align: center;
   font-family: 'Ubuntu';
   font-size: 18px;
-  letter-spacing: 6px;
+  letter-spacing: 2px;
   font-weight: 600;
   line-height: 28px;
 }
