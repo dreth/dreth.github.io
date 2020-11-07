@@ -176,6 +176,9 @@ h3 {
   width: 35px;
   background-size: cover !important;
 }
+.social.website:before {
+  background: url("../../icons/profiles/website.png") center no-repeat;
+}
 .social.email:before {
   background: url("../../icons/profiles/email.png") center no-repeat;
 }
