@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: daac.es
+Token: e9fe6643924b8737330e1ec882a55230dd7815d765bdd85d08704cec15ae037b
