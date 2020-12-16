@@ -200,6 +200,9 @@ a {
 .social.medium:before {
   background: url("../../icons/profiles/medium.png") center no-repeat;
 }
+.social.whatsapp:before {
+  background: url("../../icons/profiles/whatsapp.png") center no-repeat;
+}
 .side-header {
   font-family: 'Ubuntu';
   font-size: 18px;
