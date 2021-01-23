@@ -16,7 +16,6 @@ a.b:hover {
 /* hide and show languages names */
 /* ES */
 .hidees {
-  font-size: 1.6vw;
   display: none;
 }
 .showes:hover + .hidees {
