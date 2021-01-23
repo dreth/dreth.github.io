@@ -1,136 +1,124 @@
 html {
-    background-color: black;
-    color: white;
+  background-color: #000;
+  color: #fff;
 }
-
 a.b:link {
-    text-decoration: none;
-    color: aqua;
-    font-weight: bold;
+  text-decoration: none;
+  color: #0ff;
+  font-weight: bold;
 }
-
 a:visited {
-    color: aqua;
+  color: #0ff;
 }
-
 a.b:hover {
-    color: rgb(125, 255, 125);
+  color: #7dff7d;
 }
-
 /* hide and show languages names */
 /* ES */
 .hidees {
-    font-size: 1.6vw;
-    display: none;
+  font-size: 1.6vw;
+  display: none;
 }
-
 .showes:hover + .hidees {
-    display: inline-block;
+  display: inline-block;
 }
 /* EN */
 .hideen {
-    display: none;
+  display: none;
 }
-
 .showen:hover + .hideen {
-    display: inline-block;
+  display: inline-block;
 }
 /* NL */
 .hidenl {
-    display: none;
+  display: none;
 }
-
 .shownl:hover + .hidenl {
-    display: inline-block;
+  display: inline-block;
 }
-
-
-
 /* screen width higher than 1000 px */
 @media screen and (min-width: 1000px) {
-    .l:visited {
-        color: red;
-    }
-    .l:link {
-        text-decoration: none;
-        font-size: 2vw;
-        color: red;
-    }
-    .l:hover {
-        color: lightsalmon;
-    }
-    a {
-        font-size: 1.8vw;
-        font-family: ubuntu, Sans-Serif;
-        word-wrap: break-word;
-    }
-    ul,
-    p,
-    span {
-        font-size: 1.6vw;
-        font-family: ubuntu, Sans-Serif;
-        word-wrap: break-word;
-    }
-    .heading {
-        font-size: 1.5vw;
-    }
-    .heading2 {
-        font-size: 1.5vw;
-    }
-    h1 {
-        font-size: 2.4vw;
-        font-family: ubuntu, Sans-Serif;
-    }
-    h3 {
-        font-size: 1.8vw;
-        font-family: ubuntu, Sans-Serif;
-    }
-    .dash {
-        font-size: 1.6vw;
-    }
-} 
-
+  .l:visited {
+    color: #f00;
+  }
+  .l:link {
+    text-decoration: none;
+    font-size: 2vw;
+    color: #f00;
+  }
+  .l:hover {
+    color: #ffa07a;
+  }
+  a {
+    font-size: 1.8vw;
+    font-family: ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
+  ul,
+  p,
+  span {
+    font-size: 1.6vw;
+    font-family: ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
+  .heading {
+    font-size: 1.5vw;
+  }
+  .heading2 {
+    font-size: 1.5vw;
+  }
+  h1 {
+    font-size: 2.4vw;
+    font-family: ubuntu, Sans-Serif;
+  }
+  h3 {
+    font-size: 1.8vw;
+    font-family: ubuntu, Sans-Serif;
+  }
+  .dash {
+    font-size: 1.6vw;
+  }
+}
 /* screen width lower than 1000 px */
 @media screen and (max-width: 1000px) {
-    .l:visited {
-        color: red;
-    }
-    .l:link {
-        text-decoration: none;
-        font-size: 4vw;
-        color: red;
-    }
-    .l:hover {
-        color: lightsalmon;
-    }
-    a {
-        font-size: 3.5vw;
-        font-family: ubuntu, Sans-Serif;
-        word-wrap: break-word;
-    }
-    ul,
-    p,
-    span {
-        font-size: 3.5vw;
-        font-family: ubuntu, Sans-Serif;
-        word-wrap: break-word;
-    }
-    .heading {
-        font-size: 3.7vw;
-    }
-    .heading2 {
-        font-size: 3.2vw;
-    }
-    h1 {
-        font-size: 6vw;
-        font-family: ubuntu, Sans-Serif;
-    }
-    h3 {
-        font-size: 4vw;
-        font-family: ubuntu, Sans-Serif;
-    }
-    .dash {
-        font-size: 3.5vw;
-    }
+  .l:visited {
+    color: #f00;
+  }
+  .l:link {
+    text-decoration: none;
+    font-size: 4vw;
+    color: #f00;
+  }
+  .l:hover {
+    color: #ffa07a;
+  }
+  a {
+    font-size: 3.5vw;
+    font-family: ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
+  ul,
+  p,
+  span {
+    font-size: 3.5vw;
+    font-family: ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
+  .heading {
+    font-size: 3.7vw;
+  }
+  .heading2 {
+    font-size: 3.2vw;
+  }
+  h1 {
+    font-size: 6vw;
+    font-family: ubuntu, Sans-Serif;
+  }
+  h3 {
+    font-size: 4vw;
+    font-family: ubuntu, Sans-Serif;
+  }
+  .dash {
+    font-size: 3.5vw;
+  }
 }
-
