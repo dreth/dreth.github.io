@@ -186,19 +186,19 @@ a {
   background-size: cover !important;
 }
 .social.website:before {
-  background: url("../../icons/profiles/website.png") center no-repeat;
+  background: url("../../assets/profiles/website.png") center no-repeat;
 }
 .social.email:before {
-  background: url("../../icons/profiles/email.png") center no-repeat;
+  background: url("../../assets/profiles/email.png") center no-repeat;
 }
 .social.github:before {
-  background: url("../../icons/profiles/github.png") center no-repeat;
+  background: url("../../assets/profiles/github.png") center no-repeat;
 }
 .social.linkedin:before {
-  background: url("../../icons/profiles/linkedin.png") center no-repeat;
+  background: url("../../assets/profiles/linkedin.png") center no-repeat;
 }
 .social.medium:before {
-  background: url("../../icons/profiles/medium.png") center no-repeat;
+  background: url("../../assets/profiles/medium.png") center no-repeat;
 }
 .side-header {
   font-family: 'Ubuntu';
