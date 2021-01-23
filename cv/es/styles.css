@@ -136,7 +136,7 @@ a {
   right: false;
   bottom: 0;
   width: 350px;
-  background-color: #525252;
+  background-color: #656565;
   padding: 320px 30px 50px;
 }
 .mugshot {
@@ -157,7 +157,7 @@ a {
   display: false;
   position: absolute;
   margin: false;
-  top: 5;
+  top: 10;
   left: 0;
   right: false;
   bottom: false;
