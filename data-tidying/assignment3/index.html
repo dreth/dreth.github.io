@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dynamically changing barplot style</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+
+    td {
+      color: white;
+    }
+
+    tr {
+      border: grey 1px;
+    }
+
+    tr:hover {
+      cursor: pointer;
+      background-color: rgb(56, 56, 56);
+      box-shadow: inset 0 0 0 1px aquamarine;
+      border-color: aquamarine;
+    }
+
+    th {
+      color: aqua;
+    }
+
+    #qtyRows {
+      width: 50px;
+    }
+
+    #myCanvas {
+      background-color: lightgray;
+      height: 100%;
+      width: 100%;
+    }
+
+    .name {
+      color: red;
+      border: solid black 1pt;
+    }
+
+    .name:hover {
+      border-width: 2pt;
+    }
+
+    .date {
+      color: green;
+    }
+
+    .date:hover {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Dynamically changing barplot style</h1>
+  <h5>Daniel Alonso, Danyu Zhang</h5>
+  <br>
+  <p>
+  <div>Show <input id="qtyRows" type="value" placeholder="amount" value="10" onchange="displayRows()"> amount of rows
+  </div>
+  <br>
+  <span>Select year: </span><select id="dateSelector"></select>
+  <br><br>
+  <svg id="myCanvas"></svg>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <table class="table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </p>
+</body>
+
+<script>
+  var csv_url = "./data/category-brands.csv";
+  var cs = {
+    "date": "fecha",
+    "name": "nombre",
+    "category": "categoria",
+    "value": "valor"
+  };
+  var coloured = false;
+  var currRect;
+  var prevRect;
+  
+  function displayRows() {
+    d3.csv(csv_url, (d) => d)
+    .then(tidying)
+  }
+
+  // default rows to display
+  displayRows()
+
+  function updateTable(d) {
+    d3.select("table tbody")
+      .selectAll("tr")
+      .data(d)
+      .join("tr")
+      .on('click', (e,d) => { 
+        currRect = `#rect_${d.name[1]}_${d.value}`;
+        d3.select(currRect).attr('fill', (d) => { 
+        if (coloured == false) {
+          updateSelect();
+          if (prevRect == currRect) {
+            d3.select(currRect).attr('fill',color(d.category));
+          } else {
+            d3.select(currRect).attr('fill','black');
+          }
+          coloured = true;
+          }
+        else {
+          updateSelect();
+          d3.select(currRect).attr('fill','black');
+          coloured = false;
+        }})
+        prevRect = currRect;
+      })
+      .selectAll("td")
+      .data(e => columns.map(x => e[x]))
+      .join("td")
+      .text(x => x);
+  }
+
+  function makeHeader(d) {
+    d3.select("table thead").selectAll("tr").remove()
+
+    d3.select("table thead")
+      .append("tr")
+      .selectAll("th")
+      .data(columns)
+      .join("th").text(e => e)
+  }
+
+  var data, columns, maxValue;
+  function tidying(d) {
+    data = d;
+    columns = d.columns;
+    maxValue = d3.reduce(d, (p, v) => Math.max(p, v.value), 0)
+    dates = Array.from(new Set(d.map(e => e.date)));
+    dateSelector(dates);
+    updateSelect()
+  }
+
+  function dateSelector(d) {
+    d.sort((a, b) => d3.ascending(a.date, b.date));
+    d3.select("#dateSelector")
+      .attr("id", "dates")
+      .on("change", d => updateSelect(d))
+      .selectAll("option")
+      .data(d).enter()
+      .append("option")
+      .attr("value", e => e)
+      .text(e => e.slice(0, 4));
+  }
+
+  function updateSelect(e) {
+    val = d3.select("select").node().value
+    fdata = d3.filter(data, (d,i) => d.date == val)
+    .filter((d,i) =>  i <= d3.select("#qtyRows").property('value'))
+    updateTable(fdata)
+    updateChart(fdata)
+  }
+
+  function updateChart(data) {
+    var svg = d3.select("#myCanvas");
+    w = svg.node().width.baseVal.value;
+    h = svg.node().height.baseVal.value;
+
+    x = d3.scaleLinear([0, data.length], [0, w])
+    y = d3.scaleLinear([0, maxValue], [0, h])
+    cat = new Set(d3.map(data, d => d.category))
+    color = d3.scaleOrdinal(cat, d3.schemeTableau10)
+
+    svgBind = svg.text("")
+      .selectAll("rect")
+      .data(data)
+
+    svgBind.enter()
+      .append('rect')
+      .attr('x', (d, i) => x(i))
+      .attr('y', d => y(maxValue - d.value))
+      .attr('height', d => y(d.value))
+      .attr('width', x(1) * 0.95)
+      .attr('fill', d => color(d.category))
+      .attr('id', d => `rect_${d.name[1]}_${d.value}`)
+
+    svgBind.enter()
+      .append("text")
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr('transform',
+        (d, i) => 'translate(' + x(i + 0.5) +
+          ',' + y(maxValue - d.value - 5000) + '),'
+          + 'rotate(-90)')
+      .text(d => d.name);
+  }
+</script>
+
+
+
+</html>
