@@ -137,7 +137,7 @@ a {
   bottom: 0;
   width: 350px;
   background-color: #707070;
-  padding: 320px 30px 50px;
+  padding: 30px 30px 50px;
 }
 .mugshot {
   display: false;
@@ -184,6 +184,9 @@ a {
   height: 35px;
   width: 35px;
   background-size: cover !important;
+}
+.social.location:before {
+  background: url("../../assets/profiles/location.png") center no-repeat;
 }
 .social.website:before {
   background: url("../../assets/profiles/website.png") center no-repeat;
