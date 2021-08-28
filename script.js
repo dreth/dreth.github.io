@@ -1,7 +1,7 @@
 var linkedin = 'https://dac.ac/p/linkedin';
 var github = 'https://dac.ac/p/github';
 var blog = 'https://dac.ac/p/blog';
-var home = 'https://dac.ac/';
+var home = 'https://dac.ac';
 var status = 'https://dac.ac/status';
 
 let url_lang = window.location.href.split("/");
@@ -11,5 +11,6 @@ if (url_lang == 'nl') {
 } else {
     var lang = url_lang;
 }
+console.log(url_lang)
 
 var cv = `${home}/cv/${lang}`;
