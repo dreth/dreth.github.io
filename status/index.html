@@ -8,11 +8,26 @@
   <link rel="shortcut icon" href="../assets/icons/icon_ubuntu.ico" />
   <link rel="stylesheet" type="text/css" href="../styles.css">
   <script src="../script.js"></script>
+  <style>
+    a:link {
+      text-decoration: none;
+      color: #0ff;
+      font-weight: bold;
+    }
+
+    a:visited {
+      color: #0ff;
+    }
+
+    a:hover {
+      color: #7dff7d;
+    }
+  </style>
   <title>Daniel A.</title>
 </head>
 
 <body>
-  <div id="content"></div>
+
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
     fetch('https://raw.githubusercontent.com/dreth/dreth/main/README.md')
@@ -22,6 +37,8 @@
           marked(`#${data}`);
       });
   </script>
+  <div id="content"></div>
+
   <br><br>
   <div>
     <a href="#" onclick="this.href = visit_redirect;" style="color: rgb(0, 80, 27);">
