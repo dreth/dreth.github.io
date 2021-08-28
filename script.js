@@ -4,7 +4,8 @@ var blog = 'https://dac.ac/p/blog';
 var home = 'https://dac.ac/';
 var status = 'https://dac.ac/status';
 
-let url_lang = window.location.href.slice(-2);
+let url_lang = window.location.href.split("/")[-1];
+console.log(url_lang);
 if (url_lang == 'nl') {
     var lang = 'en';
 } else {
