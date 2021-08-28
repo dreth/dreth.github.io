@@ -5,7 +5,7 @@ var home = 'https://dac.ac/';
 var status = 'https://dac.ac/status';
 
 let url_lang = window.location.href.split("/");
-var url_lang = url_lang[url_lang.length - 1];
+url_lang = url_lang[url_lang.length - 1];
 if (url_lang == 'nl') {
     var lang = 'en';
 } else {
