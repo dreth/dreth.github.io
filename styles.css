@@ -2,16 +2,29 @@ html {
   background-color: #000;
   color: #fff;
 }
+/* links (b) */
 a.b:link {
   text-decoration: none;
   color: #0ff;
   font-weight: bold;
 }
-a:visited {
+a.b:visited {
   color: #0ff;
 }
 a.b:hover {
   color: #7dff7d;
+}
+/* links (c) */
+a.c:link {
+  text-decoration: none;
+  color: rgb(0, 174, 255);
+  font-weight: bold;
+}
+a.c:visited {
+  color: rgb(0, 174, 255);
+}
+a.c:hover {
+  color: #00a500;
 }
 /* hide and show languages names */
 /* ES */
