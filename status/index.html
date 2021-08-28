@@ -5,18 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-  <link rel="shortcut icon" href="../assets/icons/icon_ubuntu.ico"/>
+  <link rel="shortcut icon" href="../assets/icons/icon_ubuntu.ico" />
   <link rel="stylesheet" type="text/css" href="../styles.css">
   <title>Daniel A.</title>
 </head>
 
 <body>
+  <div id="content"></div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
-    document.getElementById('content').innerHTML =
-      marked('# Marked in the browser\n\nRendered by **marked**.');
+    fetch('https://raw.githubusercontent.com/dreth/dreth/main/README.md')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('content').innerHTML =
+          marked(data);;
+      });
   </script>
-
 </body>
 
 </html>
