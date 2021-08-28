@@ -3,7 +3,6 @@ var github = 'https://dac.ac/p/github';
 var blog = 'https://dac.ac/p/blog';
 var home = 'https://dac.ac/';
 var status = 'https://dac.ac/status';
-var cv = 'https://dac.ac/cv';
 
 let url_lang = window.location.href.slice(-2);
 if (url_lang == 'nl') {
@@ -11,3 +10,5 @@ if (url_lang == 'nl') {
 } else {
     var lang = url_lang;
 }
+
+var cv = `${home}/cv/${lang}`;
