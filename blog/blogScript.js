@@ -5,7 +5,6 @@ art_path = art_path[art_path.length - 1];
 var art_gh_path = `https://raw.githubusercontent.com/dreth/dreth.github.io/master/blog/${art_path}/article.md`;
 console.log(art_gh_path)
 
-
 // lists of article info
 var articleTitles = [
     'My switch to linux as primary OS in 2020',
