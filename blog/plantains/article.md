@@ -1,4 +1,4 @@
-### How a staple of Dominican cuisine has helped me manage my Crohn’s Disease
+## How a staple of Dominican cuisine has helped me manage my Crohn’s Disease
 
 I’m partly dominican and spanish. I grew up, went to school and did my bachelor’s in the Dominican Republic. My closest friends and parents live there and it has and will always have a special place in my heart.
 
@@ -30,7 +30,7 @@ This dish always felt like something I had to keep eating, because for most peop
 And while being a dish moderately high in fiber, along with other nice health benefits. Most people would have trouble doing number 2 if they ate it every day.
 
 <figure>
-    <img src="./assets/3.jpeg" width="50%">
+    <img src="./assets/3.jpeg">
     <figcaption>A very complete mangú plate.</figcaption>
 </figure>
 
