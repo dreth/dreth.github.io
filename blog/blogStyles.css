@@ -1,0 +1,19 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link {
+    text-decoration: none;
+    color: #0ff;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #0ff;
+}
+
+a:hover {
+    color: #7dff7d;
+}

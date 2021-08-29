@@ -5,6 +5,8 @@ var blog = 'https://dreth.medium.com/';
 var home = 'https://dac.ac';
 var status = 'https://dac.ac/status';
 var email = 'mailto:contact@dac.ac';
+
+
 // detecting the language to abstract language-based links
 let url_lang = window.location.href.split("/");
 url_lang = url_lang[url_lang.length - 1];
@@ -16,6 +18,8 @@ if (url_lang == 'nl') {
 // language-based links
 var cv = `${home}/cv/${lang}`;
 var home_lang = `${home}/${lang}`;
+
+
 // check user locale to redirect to ideal language
 if (navigator.language.includes('es')) {
     var redirect_lang = 'es'
@@ -26,5 +30,3 @@ if (navigator.language.includes('es')) {
 }
 // final redirect URL
 var visit_redirect = `${home}/${redirect_lang}`;
-
-

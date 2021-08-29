@@ -26,6 +26,18 @@ a.c:visited {
 a.c:hover {
   color: #00a500;
 }
+/* links (going back) */
+a.gb:link {
+  text-decoration: none;
+  color: rgb(233, 55, 55);
+  font-weight: bold;
+}
+a.gb:visited {
+  color: rgb(233, 55, 55);
+}
+a.gb:hover {
+  color: #ce60f0;
+}
 /* hide and show languages names */
 /* ES */
 .hidees {

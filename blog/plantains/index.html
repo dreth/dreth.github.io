@@ -8,21 +8,7 @@
   <link rel="shortcut icon" href="../assets/icons/icon_ubuntu.ico" />
   <link rel="stylesheet" type="text/css" href="../styles.css">
   <script src="../script.js"></script>
-  <style>
-    a:link {
-      text-decoration: none;
-      color: #0ff;
-      font-weight: bold;
-    }
-
-    a:visited {
-      color: #0ff;
-    }
-
-    a:hover {
-      color: #7dff7d;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./blogStyles.css">
   <title>Daniel A.</title>
 </head>
 
@@ -30,7 +16,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
-    fetch('https://raw.githubusercontent.com/dreth/dreth/main/README.md')
+    fetch(art_gh_path)
       .then(response => response.text())
       .then(data => {
         document.getElementById('content').innerHTML =
