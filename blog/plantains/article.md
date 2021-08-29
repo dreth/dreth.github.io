@@ -50,8 +50,6 @@ Thanks for checking out my article!
 
 ### Image sources
 
-1- [Wikipedia](https://en.wikipedia.org/wiki/Cooking_banana)
-
-2- [Wikipedia](https://en.wikipedia.org/wiki/Mang%C3%BA)
-
-3- [DominicanCooking.com](https://dominicancooking.com/)
+1. [Wikipedia](https://en.wikipedia.org/wiki/Cooking_banana)
+2. [Wikipedia](https://en.wikipedia.org/wiki/Mang%C3%BA)
+3. [DominicanCooking.com](https://dominicancooking.com/)
