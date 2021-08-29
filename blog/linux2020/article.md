@@ -1,7 +1,7 @@
 ## My switch to linux as primary OS in 2020
 
 <figure>
-    <img src="./assets/1.jpeg">
+    <img src="./assets/1.png">
     <figcaption>The Linux mascot Tux.</figcaption>
 </figure>
 
@@ -40,14 +40,14 @@ I got into data science after finishing my bachelor’s in the Dominican Republi
 Installing packages is a breeze, setting up a Python/R programming environment quickly is insanely easy and fast. My computer flies through tasks, the system is lightweight, private, secure and everything I need is here.
 
 <figure>
-    <img src="./assets/3.jpeg">
+    <img src="./assets/3.png">
     <figcaption>Simple, clean desktop.</figcaption>
 </figure>
 
 Every single problem I used to experience back in the day just doesn’t exist anymore, almost everything I’ve set to do or customize just works pretty much flawlessly.
 
 <figure>
-    <img src="./assets/4.jpeg">
+    <img src="./assets/4.png">
     <figcaption>The gnome 3 app switcher.</figcaption>
 </figure>
 
@@ -55,10 +55,13 @@ I also keep another small SSD in my desktop with Windows 10 for the sole purpose
 
 I highly recommend trying it out in a virtual machine if you like tinkering, it’s fun to set up and to start over with it. It might just be the best tech/lifestyle decision I’ve made last year.
 
+***
+
 ### Image sources (original unless cited)
 
 1. [Unity Blog](https://blogs.unity3d.com/2019/05/30/announcing-the-unity-editor-for-linux/)
 2. [HowtoForge.com](https://www.howtoforge.com/the-perfect-desktop-ubuntu-9.04)
 
+***
 
 **Date: January 23, 2021**

@@ -38,6 +38,8 @@ For me it was quite the opposite. I’d go to the toilet too much and this would
 
 Not to say meds didn’t help, totally the opposite. Meds have kept me healthy and alive, but I must say this has helped me control how often my body tells me to run now.
 
+***
+
 ### Further reading
 
 Thanks for checking out my article!
@@ -53,5 +55,7 @@ Thanks for checking out my article!
 1. [Wikipedia](https://en.wikipedia.org/wiki/Cooking_banana)
 2. [Wikipedia](https://en.wikipedia.org/wiki/Mang%C3%BA)
 3. [DominicanCooking.com](https://dominicancooking.com/)
+
+***
 
 **Date: November 14, 2020**

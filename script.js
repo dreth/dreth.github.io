@@ -1,7 +1,7 @@
 // links to all the profiles + email
 var linkedin = 'https://www.linkedin.com/in/dreth/';
 var github = 'https://github.com/dreth';
-var blog = 'https://dreth.medium.com/';
+var blog = 'https://dac.ac/blog/';
 var home = 'https://dac.ac';
 var status = 'https://dac.ac/status';
 var email = 'mailto:contact@dac.ac';
