@@ -30,8 +30,8 @@ This dish always felt like something I had to keep eating, because for most peop
 And while being a dish moderately high in fiber, along with other nice health benefits. Most people would have trouble doing number 2 if they ate it every day.
 
 <figure>
-    <img src="./assets/3.jpeg">
-    <figcaption>A very complete mangú plate. Source: <a href="https://DominicanCooking.com">DominicanCooking.com</a></figcaption>
+    <img src="./assets/3.jpeg" width="50%">
+    <a href="https://DominicanCooking.com"><figcaption>A very complete mangú plate. Source: DominicanCooking.com</figcaption></a>
 </figure>
 
 For me it was quite the opposite. I’d go to the toilet too much and this would make it easier to go by my day without having to worry about running to the bathroom in the middle of class or maybe before a work meeting.
