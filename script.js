@@ -26,3 +26,5 @@ if (navigator.language.includes('es')) {
 }
 // final redirect URL
 var visit_redirect = `${home}/${redirect_lang}`;
+
+
