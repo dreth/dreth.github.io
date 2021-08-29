@@ -4,11 +4,18 @@ I’m partly dominican and spanish. I grew up, went to school and did my bachelo
 
 Here in Spain, where I currently live, I still hold the common dominican practice of frequently eating plantains for breakfast or at any time.
 
-![Plantains being sold at a market. Source: [Wikipedia](https://en.wikipedia.org/wiki/Cooking_banana)](./assets/1.jpeg)
+<figure>
+    <img src="./assets/1.jpeg">
+    <figcaption>Plantains being sold at a market. Source: <a href="https://en.wikipedia.org/wiki/Cooking_banana"> Wikipedia</a></figcaption>
+</figure>
 
 In the DR there’s a very traditional plate called “Mangú” (peeled, boiled and mashed plantains) which people usually accompany with fried eggs, fried salami, sautéed onion, fried cheese, avocado, or whatever they want!
 
-![Mangú topped with fried cheese and fried dominican salami. Source: [Wikipedia](https://en.wikipedia.org/wiki/Mang%C3%BA)](./assets/2.jpeg)
+
+<figure>
+    <img src="./assets/2.jpeg">
+    <figcaption>Mangú topped with fried cheese and fried dominican salami. Source: <a href="https://en.wikipedia.org/wiki/Mang%C3%BA"> Wikipedia</a></figcaption>
+</figure>
 
 In my case, I do it a bit differently, as a person with IBD I can’t be eating fried things often or plates with too much fat in it. I usually eat it with turkey ham, a laughing cow cheese triangle and sautéed chopped onions. These sides make the plate flavourful (as plantains usually lack in flavour) and make it a very complete breakfast.
 
@@ -22,7 +29,10 @@ This dish always felt like something I had to keep eating, because for most peop
 
 And while being a dish moderately high in fiber, along with other nice health benefits. Most people would have trouble doing number 2 if they ate it every day.
 
-![A very complete mangú plate. Source: [DominicanCooking.com](A very complete mangú plate. Source: DominicanCooking.com)](./assets/3.jpeg)
+<figure>
+    <img src="./assets/3.jpeg">
+    <figcaption>A very complete mangú plate. Source: <a href="https://DominicanCooking.com">DominicanCooking.com</a></figcaption>
+</figure>
 
 For me it was quite the opposite. I’d go to the toilet too much and this would make it easier to go by my day without having to worry about running to the bathroom in the middle of class or maybe before a work meeting.
 
