@@ -10,7 +10,7 @@ La verdad es que no necesariamente gracias a la increíble innovación de empres
 
 ***
 
-#### Algunos detalles importantes
+### Algunos detalles importantes
 
 Para invertir en las propiedades ofrecidas por RealT, necesitamos saber unas cuantas cosas:
 
@@ -24,7 +24,7 @@ Para invertir en las propiedades ofrecidas por RealT, necesitamos saber unas cua
 
 ***
 
-#### ¿Cómo RealT logra esto?
+### ¿Cómo RealT logra esto?
 
 El proceso que sigue RealT para lograr internacionalizar inversiones de bienes raíces en Estados Unidos no es particularmente complicado de entender:
 
@@ -47,7 +47,7 @@ El proceso que sigue RealT para lograr internacionalizar inversiones de bienes r
 
 ***
 
-#### ¿Cómo obtengo una cartera/dirección en el blockchain?
+### ¿Cómo obtengo una cartera/dirección en el blockchain?
 
 Lo primero es tener una wallet en el blockchain de Ethereum o xDai. Mi cartera de elección para interactuar con aplicaciones en el blockchain y manejar mis criptomonedas es Metamask. Esto es muy sencillo y los llevaré paso a paso a continuación:
 
@@ -139,7 +139,7 @@ Para los fines de este tutorial, la dirección que hemos copiado es la siguiente
 
 ***
 
-#### Registrarse en RealT
+### Registrarse en RealT
 
 La parte más sencilla del proceso, registrarse en RealT es como registrarse en cualquier otra página web, especialmente aquellas que requieren verificación de identidad, como lo es en este caso.
 
@@ -194,7 +194,7 @@ Luego de la verificación de identidad y tener la cuenta lista, podemos proceder
 
 ***
 
-#### Comprar tu primer token
+### Comprar tu primer token
 
 Para proceder a hacer una orden, las compras son muy similares a las de otras páginas web, sin embargo, tenemos un par de pasos extras muy simples.
 
@@ -306,7 +306,7 @@ Para proceder a hacer una orden, las compras son muy similares a las de otras p�
 
 ***
 
-#### Envío y recepción de Tokens y renta
+### Envío y recepción de Tokens y renta
 
 Luego de recibida la orden, el contrato firmado por ambas partes, recibiremos en nuestra cartera el token al cabo de aprox. 24h, un ejemplo de envío de tokens de una propiedad pasada es [el siguiente](https://etherscan.io/tx/0xa9fa678b69b93128a5a08486c0d5c358fd0edd387d4d6083dc7a8619c7099c30):
 
@@ -335,7 +335,7 @@ Y listo!, hemos recibido la renta por parte de RealT en nuestra cartera, ahora p
 
 ***
 
-#### Monitorear la inversión
+### Monitorear la inversión
 
 Luego de haber hecho la inversión, podemos visitar el [Dashboard de RealT](https://dashboard.realt.community/) que un miembro de la comunidad ha hecho para los usuarios y buscar nuestra dirección de nuestra cartera para ver como la renta llega, y un resumen de las inversiones:
 
@@ -346,7 +346,7 @@ Luego de haber hecho la inversión, podemos visitar el [Dashboard de RealT](http
 
 ***
 
-#### ¡Gracias por leer este artículo!
+### ¡Gracias por leer este artículo!
 
 A continuación las páginas web y servicios que hemos mencionado en este artículo:
 
