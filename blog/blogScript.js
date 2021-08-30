@@ -13,6 +13,7 @@ var articleTag = [
     'linux2020',
     'plantains'
 ];
+
 // links for the article MD files and article URL
 var artList = '<ul>';
 for (let i = 0; i <= articleTag.length-1; i++) {
