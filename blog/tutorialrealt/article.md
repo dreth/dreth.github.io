@@ -43,7 +43,7 @@ El proceso que sigue RealT para lograr internacionalizar inversiones de bienes r
 - RealT cobra la renta de la propiedad con la regularidad establecida (una vez al mes) y deposita los USD y los tokeniza a través de la entidad que ellos prefieren ([Centre](https://www.centre.io/), por ejemplo, es quien emite los USDC y es una empresa subsidiaria de [Coinbase](https://www.coinbase.com) y [Circle](https://circle.com/), permite la conversión 1:1 de USD a USDC).
 
 - RealT distribuye la renta a todos los dueños de los tokens (acciones) de dicha propiedad, quienes recibirán la cantidad de USDC correspondiente con su cantidad de tokens entre la cantidad de tokens total.
-  - Por ejemplo: 1- He comprado 1 token de la casa 10974 Worden Street, Detroit, MI 48224, el token tiene un valor de 53.59 USD de los 69,667 USD que vale la casa completa, por lo que soy dueño de 1/1300 del valor de la casa y por ende me tocaría ~0.077% de la renta de la casa, es decir, ~0.515 USD mensuales de renta, una tasa efectiva de ~11.52% anual.
+- Por ejemplo: 1- He comprado 1 token de la casa 10974 Worden Street, Detroit, MI 48224, el token tiene un valor de 53.59 USD de los 69,667 USD que vale la casa completa, por lo que soy dueño de 1/1300 del valor de la casa y por ende me tocaría ~0.077% de la renta de la casa, es decir, ~0.515 USD mensuales de renta, una tasa efectiva de ~11.52% anual.
 
 ***
 
