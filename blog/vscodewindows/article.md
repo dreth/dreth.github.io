@@ -112,7 +112,7 @@ In this next step we install VS Code. This only encompasses the process of getti
 
 *Note: **Rstudio** is probably a better code editor for **R**, however, you can still open R files or R notebooks in VS Code and run them as long as you have the R interpreter installed on your computer.*
 
-1- Go to the VS Code website. It’ll show the version to download for your platform in the blue download button.
+1- Go to the [VS Code website](https://code.visualstudio.com/). It’ll show the version to download for your platform in the blue download button.
 
 <figure>
     <img src="./assets/12.png">
@@ -536,17 +536,24 @@ Here you can see the same file with the extension enabled
     <figcaption>CSV file with the extension enabled.</figcaption>
 </figure>
 
-Querying the file using SQL-like queries
+And you can even align a file’s columns or query the file
 
 <figure>
     <img src="./assets/66.png">
+    <figcaption>Aligned columns</figcaption>
+</figure>
+
+Querying the file using SQL-like queries
+
+<figure>
+    <img src="./assets/67.png">
     <figcaption>Creating the query “select * where a3 > 10000”</figcaption>
 </figure>
 
 and executing queries will return the same CSV with the entries matched by the query
 
 <figure>
-    <img src="./assets/67.png">
+    <img src="./assets/68.png">
     <figcaption>Query result.</figcaption>
 </figure>
 
@@ -555,42 +562,42 @@ and executing queries will return the same CSV with the entries matched by the q
 You can get any theme you like for it, for example this one!
 
 <figure>
-    <img src="./assets/68.png">
+    <img src="./assets/69.png">
     <figcaption>One monokai theme extension.</figcaption>
 </figure>
 
 Before the theme:
 
 <figure>
-    <img src="./assets/69.png">
+    <img src="./assets/70.png">
     <figcaption></figcaption>
 </figure>
 
 After the theme:
 
 <figure>
-    <img src="./assets/70.png">
+    <img src="./assets/71.png">
     <figcaption></figcaption>
 </figure>
 
 And we can also customize the icons we see for files in the integrated file explorer:
 
 <figure>
-    <img src="./assets/71.png">
+    <img src="./assets/72.png">
     <figcaption>Material Icon Theme extension.</figcaption>
 </figure>
 
 Before applying the icon theme:
 
 <figure>
-    <img src="./assets/72.png">
+    <img src="./assets/73.png">
     <figcaption>the stuff in my downloads folder with original icons.</figcaption>
 </figure>
 
 After applying the icon theme:
 
 <figure>
-    <img src="./assets/73.png">
+    <img src="./assets/74.png">
     <figcaption>We can see that all icons but the .exe or msi files changed.</figcaption>
 </figure>
 
@@ -603,12 +610,12 @@ I personally work with PDFs regularly when doing programming exercises, or when 
 You can use the vscode-pdf reader extension to explore PDF files by just opening them like you’d open any other file inside VS Code
 
 <figure>
-    <img src="./assets/74.png">
+    <img src="./assets/75.png">
     <figcaption>vscode-pdf extension.</figcaption>
 </figure>
 
 <figure>
-    <img src="./assets/75.png">
+    <img src="./assets/76.png">
     <figcaption>A PDF file inside VS Code.</figcaption>
 </figure>
 
@@ -617,21 +624,21 @@ You can use the vscode-pdf reader extension to explore PDF files by just opening
 If you already work with latex, you can use the LaTeX Workshop extension which includes a PDF reader
 
 <figure>
-    <img src="./assets/76.png">
+    <img src="./assets/77.png">
     <figcaption>LaTeX Workshop extension.</figcaption>
 </figure>
 
 Here I can have the .Tex file, the preview PDF and a cheat sheet open side by side:
 
 <figure>
-    <img src="./assets/77.png">
+    <img src="./assets/78.png">
     <figcaption>file explorer | .tex file | preview PDF | cheat sheet.</figcaption>
 </figure>
 
 When opening a PDF using this extension we might get the following prompt
 
 <figure>
-    <img src="./assets/78.png">
+    <img src="./assets/79.png">
     <figcaption>open anyway.</figcaption>
 </figure>
 
@@ -648,7 +655,7 @@ On the bottom left you should see a typical user account icon.
 1- Click on it and click turn on **settings sync**
 
 <figure>
-    <img src="./assets/79.png">
+    <img src="./assets/80.png">
     <figcaption>Settings sync.</figcaption>
 </figure>
 
@@ -657,21 +664,21 @@ On the bottom left you should see a typical user account icon.
 Select your desired options and click on **Sign in & Turn on**.
 
 <figure>
-    <img src="./assets/80.png">
+    <img src="./assets/81.png">
     <figcaption>Sync options.</figcaption>
 </figure>
 
 3- You’ll then be asked whether you want to use a Microsoft or Github account.
 
 <figure>
-    <img src="./assets/81.png">
+    <img src="./assets/82.png">
     <figcaption>Sign in options.</figcaption>
 </figure>
 
 Either option works fine but I will recommend going with Github, they will redirect you to their specific login pages and you can just log in and go through with it.
 
 <figure>
-    <img src="./assets/82.png">
+    <img src="./assets/83.png">
     <figcaption>Microsoft account option.</figcaption>
 </figure>
 
@@ -680,35 +687,35 @@ I’ll go with the github option, as for me it makes more sense to sync VS Code 
 After logging in you should see the following prompt
 
 <figure>
-    <img src="./assets/83.png">
+    <img src="./assets/84.png">
     <figcaption>Authorization request.</figcaption>
 </figure>
 
 Click on continue and you should be redirected to a tab containing an authorization key. Make sure to click on Open link.
 
 <figure>
-    <img src="./assets/84.png">
+    <img src="./assets/85.png">
     <figcaption>Click on Open link.</figcaption>
 </figure>
 
 This should open VS Code and ask you for an authorization to open the URI
 
 <figure>
-    <img src="./assets/85.png">
+    <img src="./assets/86.png">
     <figcaption>Prompt to allow opening the URI.</figcaption>
 </figure>
 
 Then you should see a notification saying it’s activated
 
 <figure>
-    <img src="./assets/86.png">
+    <img src="./assets/87.png">
     <figcaption>Settings sync is turned on now!</figcaption>
 </figure>
 
 4- As a result, you’ll also be signed into Github (or Microsoft account)
 
 <figure>
-    <img src="./assets/87.png">
+    <img src="./assets/88.png">
     <figcaption></figcaption>
 </figure>
 
@@ -725,7 +732,7 @@ To do this we first need to make an account in either platform. In this case I w
 1- Create a new repo
 
 <figure>
-    <img src="./assets/88.png">
+    <img src="./assets/89.png">
     <figcaption>When logged in and into your dashboard create a new repo.</figcaption>
 </figure>
 
@@ -738,49 +745,49 @@ The .gitignore file is a file that you can add to a repository in order to ignor
 In my case I will include a Readme file in it and make it a public repo.
 
 <figure>
-    <img src="./assets/89.png">
+    <img src="./assets/90.png">
     <figcaption>Repository creation and options.</figcaption>
 </figure>
 
 3- Done!, we have created our repo, now we should clone it to a folder we want. Go to a new VS Code window and click on Clone Repository.
 
 <figure>
-    <img src="./assets/90.png">
+    <img src="./assets/91.png">
     <figcaption>Clone repository.</figcaption>
 </figure>
 
 4- A small menu will pop up top to allow introducing a repository link or to clone directly from github. Let’s click on **Clone from Github**.
 
 <figure>
-    <img src="./assets/91.png">
+    <img src="./assets/92.png">
     <figcaption>Clone repository menu.</figcaption>
 </figure>
 
 5- You’ll get a prompt that says the GitHub extension wants you to sign into GitHub. Click on **Allow**.
 
 <figure>
-    <img src="./assets/92.png">
+    <img src="./assets/93.png">
     <figcaption>Authorization prompt from the github extension.</figcaption>
 </figure>
 
 6- You’ll be redirected to your browser asking for autorization to access github from VS Code. Click on Continue.
 
 <figure>
-    <img src="./assets/93.png">
+    <img src="./assets/94.png">
     <figcaption>Authorization in browser.</figcaption>
 </figure>
 
 7- You’ll get a prompt to open VS Code. Click on Open link.
 
 <figure>
-    <img src="./assets/94.png">
+    <img src="./assets/95.png">
     <figcaption>VS Code link prompt.</figcaption>
 </figure>
 
 8- You’ll then be asked if you want to allow opening this URI. Click on Open.
 
 <figure>
-    <img src="./assets/95.png">
+    <img src="./assets/96.png">
     <figcaption>URI Opening authorization.</figcaption>
 </figure>
 
@@ -789,7 +796,7 @@ In my case I will include a Readme file in it and make it a public repo.
 Where you should see the previously created repository.
 
 <figure>
-    <img src="./assets/96.png">
+    <img src="./assets/97.png">
     <figcaption>Our previously created repo shows up.</figcaption>
 </figure>
 
@@ -802,7 +809,7 @@ Not all code is public. Maybe you don’t want to share your code yet and you’
 When creating your repo you can make a repository private the following way:
 
 <figure>
-    <img src="./assets/97.png">
+    <img src="./assets/98.png">
     <figcaption>Option to create a private repository.</figcaption>
 </figure>
 
@@ -811,77 +818,77 @@ Once the repository is created, we must clone it to add stuff to it and push it 
 Click on the green button that says Code with a download icon. This should show us the link to clone our repository in a folder.
 
 <figure>
-    <img src="./assets/98.png">
+    <img src="./assets/99.png">
     <figcaption>The repository page for our example repo.</figcaption>
 </figure>
 
 1- Click on the copy button, to copy the HTTPS link to clone our repo.
 
 <figure>
-    <img src="./assets/99.png">
+    <img src="./assets/100.png">
     <figcaption>Link to clone the repo.</figcaption>
 </figure>
 
 2- Once copied and in a new VS Code window we will have the option to either Open a folder or to Clone a repo. Click on Clone Repository.
 
 <figure>
-    <img src="./assets/100.png">
+    <img src="./assets/101.png">
     <figcaption>Clone repository.</figcaption>
 </figure>
 
 3- We will be prompted with a little window up top that allows us to paste the previously copied link to clone the repo. Once pasted, click on Clone from URL.
 
 <figure>
-    <img src="./assets/101.png">
+    <img src="./assets/102.png">
     <figcaption>Clone repo menu.</figcaption>
 </figure>
 
 4- There will be another prompt to select the location to clone the repo in. Select the location and click Select repository location.
 
 <figure>
-    <img src="./assets/102.png">
+    <img src="./assets/103.png">
     <figcaption>Selecting repository location.</figcaption>
 </figure>
 
 5- In case you aren’t signed into github, you’ll be prompted to do so. Click on Sign in with your browser.
 
 <figure>
-    <img src="./assets/103.png">
+    <img src="./assets/104.png">
     <figcaption>Sign in prompt.</figcaption>
 </figure>
 
 6- On your browser Authorize the GitCredentialManager.
 
 <figure>
-    <img src="./assets/104.png">
+    <img src="./assets/105.png">
     <figcaption>Authorization prompt.</figcaption>
 </figure>
 
 7- Your authentication will succeed and you can go back to github.
 
 <figure>
-    <img src="./assets/105.png">
+    <img src="./assets/106.png">
     <figcaption>Authorization succees.</figcaption>
 </figure>
 
 8- You’ll see a cloning git repository notification.
 
 <figure>
-    <img src="./assets/106.png">
+    <img src="./assets/107.png">
     <figcaption>Cloning repository notification.</figcaption>
 </figure>
 
 When that one’s done, you’ll see another notification that asks if you would like to open the cloned repo. Click on **Open**.
 
 <figure>
-    <img src="./assets/107.png">
+    <img src="./assets/108.png">
     <figcaption></figcaption>
 </figure>
 
 Cool! now you’re in the right folder, now any file you create or any modifications you make to files already in the repository will be able to be uploaded to github with a few clicks.
 
 <figure>
-    <img src="./assets/108.png">
+    <img src="./assets/109.png">
     <figcaption></figcaption>
 </figure>
 
@@ -896,14 +903,14 @@ VS Code makes this very easy, you still *should* learn git, but VS Code takes mo
 In this case I will create a folder inside the repo and drag a PDF file to it. Then create a python script on the root directory of the repo.
 
 <figure>
-    <img src="./assets/109.png">
+    <img src="./assets/110.png">
     <figcaption>Create folder.</figcaption>
 </figure>
 
 I’ve created a folder called pdf and dragged the file latexsheet.pdf to it.
 
 <figure>
-    <img src="./assets/110.png">
+    <img src="./assets/111.png">
     <figcaption>Files currently in the repo.</figcaption>
 </figure>
 
@@ -914,14 +921,14 @@ However, to upload these files we must create a commit and push them.
 We can see that there’s a 2 on the source control tab. (we’ve made changes to 2 files, in this case created them)
 
 <figure>
-    <img src="./assets/111.png">
+    <img src="./assets/112.png">
     <figcaption>Source control.</figcaption>
 </figure>
 
 2- Once we’ve made our modifications, we go to source control and we’ll see the changes.
 
 <figure>
-    <img src="./assets/112.png">
+    <img src="./assets/113.png">
     <figcaption>Files we’ve changed.</figcaption>
 </figure>
 
@@ -932,7 +939,7 @@ Note: You can have multiple channels, called branches, maybe multiple people are
 In this case, we’re going to commit directly to the main branch, but maybe we should first examine the changes:
 
 <figure>
-    <img src="./assets/113.png">
+    <img src="./assets/114.png">
     <figcaption>Changes to the file test.py.</figcaption>
 </figure>
 
@@ -941,7 +948,7 @@ We can see the changes made to the file test.py, where we have added a line prin
 3- We can commit the changes to the repository. Write a message for the commit and then press commit.
 
 <figure>
-    <img src="./assets/114.png">
+    <img src="./assets/115.png">
     <figcaption>Writing commit message and showing the commit button.</figcaption>
 </figure>
 
@@ -950,14 +957,14 @@ We can see the changes made to the file test.py, where we have added a line prin
 On the bottom left corner of VS Code we should see the small 1 with a commit to push to the repo. Click on it to push and pull commits. In this case we won’t pull anything as no one has made any additional changes to the repo’s contents before we push these commits.
 
 <figure>
-    <img src="./assets/115.png">
+    <img src="./assets/116.png">
     <figcaption>Sync icon with one commit to push.</figcaption>
 </figure>
 
 5- Push the changes!
 
 <figure>
-    <img src="./assets/116.png">
+    <img src="./assets/117.png">
     <figcaption>The sync-ish icon will turn until the commits are pushed.</figcaption>
 </figure>
 
@@ -966,7 +973,7 @@ On the bottom left corner of VS Code we should see the small 1 with a commit to 
 Done!, we can see the pdf folder was uploaded with the file in it along with the test.py file and the message of the commit next to that specific file or folder.
 
 <figure>
-    <img src="./assets/117.png">
+    <img src="./assets/118.png">
     <figcaption>Seeing changes.</figcaption>
 </figure>
 
