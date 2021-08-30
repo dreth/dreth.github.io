@@ -7,11 +7,13 @@ var art_gh_path = `https://raw.githubusercontent.com/dreth/dreth.github.io/maste
 // lists of article info
 var articleTitles = [
     'My switch to linux as primary OS in 2020',
-    'How a staple of Dominican cuisine, plantains, have helped me manage my Crohn’s Disease'
+    'How a staple of Dominican cuisine, plantains, have helped me manage my Crohn’s Disease',
+    'Como invertir en bienes raíces utilizando RealT y blockchain'
 ];
 var articleTag = [
     'linux2020',
-    'plantains'
+    'plantains',
+    'tutorialrealt'
 ];
 
 // links for the article MD files and article URL
