@@ -25,77 +25,77 @@ Anaconda is an open source distribution that includes Python along with several 
 
 It also includes several libraries that are useful for data science, machine learning, numerical operations and such.
 
-1. Go to the [Anaconda website](https://www.anaconda.com/products/individual)
+1- Go to the [Anaconda website](https://www.anaconda.com/products/individual)
 
 <figure>
     <img src="./assets/1.png">
     <figcaption>Anaconda website.</figcaption>
 </figure>
 
-2. Click on download and select the download for your platform, in this case Windows.
+2- Click on download and select the download for your platform, in this case Windows.
 
 <figure>
     <img src="./assets/2.png">
     <figcaption>Installers per platform.</figcaption>
 </figure>
 
-3. Click on 64-Bit or 32-Bit depending on your system, most computers these days run 64-Bit operating systems.
+3- Click on 64-Bit or 32-Bit depending on your system, most computers these days run 64-Bit operating systems.
 
 <figure>
     <img src="./assets/3.png">
     <figcaption>We click on Windows 64-Bit or 32-Bit depending on your system.</figcaption>
 </figure>
 
-4. We wait for the download to finish.
+4- We wait for the download to finish.
 
 <figure>
     <img src="./assets/4.png">
     <figcaption>Downloading the installer.</figcaption>
 </figure>
 
-5. We open the installer file and follow the setup. Click on next after opening.
+5- We open the installer file and follow the setup. Click on next after opening.
 
 <figure>
     <img src="./assets/5.png">
     <figcaption>Anaconda setup 1st step..</figcaption>
 </figure>
 
-6. We agree with the license agreement.
+6- We agree with the license agreement.
 
 <figure>
     <img src="./assets/6.png">
     <figcaption>License agreement.</figcaption>
 </figure>
 
-7. Install for just your user or for all users, ideally just yours.
+7- Install for just your user or for all users, ideally just yours.
 
 <figure>
     <img src="./assets/7.png">
     <figcaption>Installation type.</figcaption>
 </figure>
 
-8. Choose the install location, be mindful that anaconda requires 2.7GB of space.
+8- Choose the install location, be mindful that anaconda requires 2.7GB of space.
 
 <figure>
     <img src="./assets/8.png">
     <figcaption>Install location.</figcaption>
 </figure>
 
-9. Make sure to register anaconda as your default python 3, this is the default option. Then click install.
+9- Make sure to register anaconda as your default python 3, this is the default option. Then click install.
   
 <figure>
     <img src="./assets/9.png">
     <figcaption>Click install.</figcaption>
 </figure>
 
-10. Wait for the installation to be done and then open cmd (Windows button -> type cmd -> open cmd). You should see the command prompt come up, type conda init and then enter on your keyboard.
+10- Wait for the installation to be done and then open cmd (Windows button -> type cmd -> open cmd). You should see the command prompt come up, type conda init and then enter on your keyboard.
 
 <figure>
     <img src="./assets/10.png">
     <figcaption>conda init command in command prompt.</figcaption>
 </figure>
 
-11. Test if the environment has been initialized by typing “conda activate base” and then enter on your keyboard.
+11- Test if the environment has been initialized by typing “conda activate base” and then enter on your keyboard.
 
 <figure>
     <img src="./assets/11.png">
@@ -112,49 +112,49 @@ In this next step we install VS Code. This only encompasses the process of getti
 
 *Note: **Rstudio** is probably a better code editor for **R**, however, you can still open R files or R notebooks in VS Code and run them as long as you have the R interpreter installed on your computer.*
 
-1. Go to the VS Code website. It’ll show the version to download for your platform in the blue download button.
+1- Go to the VS Code website. It’ll show the version to download for your platform in the blue download button.
 
 <figure>
     <img src="./assets/12.png">
     <figcaption>VS Code site.</figcaption>
 </figure>
 
-2. Upon clicking we should get the download to start.
+2- Upon clicking we should get the download to start.
 
 <figure>
     <img src="./assets/13.png">
     <figcaption>VS Code Setup Download.</figcaption>
 </figure>
 
-3. Once the download is compelted, we open the installer.
+3- Once the download is compelted, we open the installer.
 
 <figure>
     <img src="./assets/14.png">
     <figcaption>Download finished.</figcaption>
 </figure>
 
-4. We accept the license agreement and continue.
+4- We accept the license agreement and continue.
 
 <figure>
     <img src="./assets/15.png">
     <figcaption>License Agreement.</figcaption>
 </figure>
 
-5. We select the installation folder, we can just leave the defaul there and continue.
+5- We select the installation folder, we can just leave the defaul there and continue.
 
 <figure>
     <img src="./assets/16.png">
     <figcaption>Folder to install.</figcaption>
 </figure>
 
-6. We decide whether to include it in the start menu or not and continue.
+6- We decide whether to include it in the start menu or not and continue.
 
 <figure>
     <img src="./assets/17.png">
     <figcaption>Start menu folder.</figcaption>
 </figure>
 
-7. We add code to PATH and select additional options we may want. I personally would add the “Open with Code” option to the windows explorer context menu and register the application for the supported file types.
+7- We add code to PATH and select additional options we may want. I personally would add the “Open with Code” option to the windows explorer context menu and register the application for the supported file types.
 
 This is completely optional though.
 
@@ -163,21 +163,21 @@ This is completely optional though.
     <figcaption>Extra options.</figcaption>
 </figure>
 
-8. We install the application
+8- We install the application
 
 <figure>
     <img src="./assets/19.png">
     <figcaption>Final confirmation with options.</figcaption>
 </figure>
 
-9. We wait for the installer to do its thing.
+9- We wait for the installer to do its thing.
 
 <figure>
     <img src="./assets/20.png">
     <figcaption></figcaption>
 </figure>
 
-10. And we’re done, we can decide to launch VS Code now, we can go ahead and do that and go to Step 3.
+10- And we’re done, we can decide to launch VS Code now, we can go ahead and do that and go to Step 3.
 
 <figure>
     <img src="./assets/21.png">
@@ -205,56 +205,56 @@ An important part of developing things is to be able to publish them somewhere. 
 
 I personally really like services like [Github](https://github.com/) or [Gitlab](https://gitlab.com/) to host my own projects, and there’s no way to push stuff into your own repositories if you don’t have git. So we’re gonna go ahead and install that now.
 
-1. Go to the [git downloads site](https://git-scm.com/downloads) and click on the download for your platform.
+1- Go to the [git downloads site](https://git-scm.com/downloads) and click on the download for your platform.
 
 <figure>
     <img src="./assets/23.png">
     <figcaption>git download site.</figcaption>
 </figure>
 
-2. The installer download should start
+2- The installer download should start
 
 <figure>
     <img src="./assets/24.png">
     <figcaption>installer download.</figcaption>
 </figure>
 
-3. We open the installer and accept the administrative privilege request
+3- We open the installer and accept the administrative privilege request
 
 <figure>
     <img src="./assets/25.png">
     <figcaption>administrative privilege request.</figcaption>
 </figure>
 
-4. We click on next and continue through the installer
+4- We click on next and continue through the installer
 
 <figure>
     <img src="./assets/26.png">
     <figcaption>Accept the information and click next.</figcaption>
 </figure>
 
-5. We select the installation location. We can just leave the default one. Git occupies ~258 MB of space.
+5- We select the installation location. We can just leave the default one. Git occupies ~258 MB of space.
 
 <figure>
     <img src="./assets/27.png">
     <figcaption>Select installation location.</figcaption>
 </figure>
 
-6. We select the features we want. You could just leave this as default or take off windows explorer integration in case you don’t want to have another option in your windows explorer context menu (the menu that comes up when you right click inside a folder of your windows explorer).
+6- We select the features we want. You could just leave this as default or take off windows explorer integration in case you don’t want to have another option in your windows explorer context menu (the menu that comes up when you right click inside a folder of your windows explorer).
 
 <figure>
     <img src="./assets/28.png">
     <figcaption>Components selection menu.</figcaption>
 </figure>
 
-7. We select whether to install or not in start menu. I’d keep this as default.
+7- We select whether to install or not in start menu. I’d keep this as default.
 
 <figure>
     <img src="./assets/29.png">
     <figcaption>Start menu shortcut installation.</figcaption>
 </figure>
 
-8. Default editor used by Git. Select VS Code as the default editor for git.
+8- Default editor used by Git. Select VS Code as the default editor for git.
 
 <figure>
     <img src="./assets/30.png">
@@ -266,7 +266,7 @@ I personally really like services like [Github](https://github.com/) or [Gitlab]
     <figcaption>Selecting Visual Studio Code as git’s default editor.</figcaption>
 </figure>
 
-9. For the next steps, we can just keep the default options, but I will include the screenshots for the sake of completion.
+9- For the next steps, we can just keep the default options, but I will include the screenshots for the sake of completion.
 
 <figure>
     <img src="./assets/32.png">
@@ -308,21 +308,21 @@ I personally really like services like [Github](https://github.com/) or [Gitlab]
     <figcaption>Keep going!, we’re almost done.</figcaption>
 </figure>
 
-10. Keep this option as default (unchecked) and click install!
+10- Keep this option as default (unchecked) and click install!
 
 <figure>
     <img src="./assets/40.png">
     <figcaption>Click install.</figcaption>
 </figure>
 
-11. We wait for the installation to finish and we’re done installing git!
+11- We wait for the installation to finish and we’re done installing git!
 
 <figure>
     <img src="./assets/41.png">
     <figcaption>Installation process.</figcaption>
 </figure>
 
-12. You can choose to view release notes if you’re interested, otherwise uncheck the option and finish!
+12- You can choose to view release notes if you’re interested, otherwise uncheck the option and finish!
 
 <figure>
     <img src="./assets/42.png">
@@ -343,14 +343,14 @@ Currently, VS Code is JUST a text editor, it can’t run a lot of files yet, but
 
 Let’s get it set up!
 
-1. Click on the little blocks icon on the left bar.
+1- Click on the little blocks icon on the left bar.
 
 <figure>
     <img src="./assets/43.png">
     <figcaption>VS Code welcome page. The extensions icon is marked in red.</figcaption>
 </figure>
 
-2. We see the list of extensions by amount of downloads. All these extensions are awesome and they make this application the full programming suite that it is.
+2- We see the list of extensions by amount of downloads. All these extensions are awesome and they make this application the full programming suite that it is.
 
 There is a whole world of extensions out there. I’ll go through a few that I think are absolutely amazing and will serve greatly when working with data.
 
@@ -390,7 +390,7 @@ Jupyter Notebooks work once the extension is installed (it comes with the python
 
 Obviously, we want to be able to run python scripts as well (.py files). VS Code allows us to run the files in either our default shell or interactive (which is an IPython console that quite resembles a notebook.
 
-1. Let’s open a folder
+1- Let’s open a folder
 
 <figure>
     <img src="./assets/48.png">
@@ -404,21 +404,21 @@ And let’s select the folder we want to work on, this first folder is just an e
     <figcaption>Example folder.</figcaption>
 </figure>
 
-2. Let’s create a test script using the new file button, pointed by the green arrow. First button from left to right.
+2- Let’s create a test script using the new file button, pointed by the green arrow. First button from left to right.
 
 <figure>
     <img src="./assets/50.png">
     <figcaption>test.py file.</figcaption>
 </figure>
 
-3. Let’s write something simple to test whether things run smoothly
+3- Let’s write something simple to test whether things run smoothly
 
 <figure>
     <img src="./assets/51.png">
     <figcaption>Importing a few libraries and printing a line.</figcaption>
 </figure>
 
-4. Before running it, let’s set our desired kernel.
+4- Before running it, let’s set our desired kernel.
 
 <figure>
     <img src="./assets/52.png">
@@ -432,7 +432,7 @@ To change the kernel, click on where it says “Python 3.8.3…” this will pop
     <figcaption>Select your desired kernel.</figcaption>
 </figure>
 
-5. Now that we have selected the right kernel, we now check whether this indeed works in your shell.
+5- Now that we have selected the right kernel, we now check whether this indeed works in your shell.
 
 First click on *Run python file in terminal.*
 
@@ -450,7 +450,7 @@ One thing to note here is that we could get this nasty error if we are using pow
 
 We can solve this by changing our default shell to cmd, as we have already initialized it before (when installing anaconda by running *conda init* in cmd).
 
-6. On the top right of the shell, we can see a drop down menu. Let’s click on select default shell
+6- On the top right of the shell, we can see a drop down menu. Let’s click on select default shell
 
 <figure>
     <img src="./assets/56.png">
@@ -471,7 +471,7 @@ Close the previous shell through the little trash can button
     <figcaption>integrated shell menu options.</figcaption>
 </figure>
 
-7. Run the script again after having picked command prompt as default shell
+7- Run the script again after having picked command prompt as default shell
 
 <figure>
     <img src="./assets/59.png">
@@ -645,14 +645,14 @@ There’s an extension called Settings Sync in the VS Marketplace which worked a
 
 On the bottom left you should see a typical user account icon.
 
-1. Click on it and click turn on **settings sync**
+1- Click on it and click turn on **settings sync**
 
 <figure>
     <img src="./assets/79.png">
     <figcaption>Settings sync.</figcaption>
 </figure>
 
-2. You’ll be asked what you’d like to sync.
+2- You’ll be asked what you’d like to sync.
 
 Select your desired options and click on **Sign in & Turn on**.
 
@@ -661,7 +661,7 @@ Select your desired options and click on **Sign in & Turn on**.
     <figcaption>Sync options.</figcaption>
 </figure>
 
-3. You’ll then be asked whether you want to use a Microsoft or Github account.
+3- You’ll then be asked whether you want to use a Microsoft or Github account.
 
 <figure>
     <img src="./assets/81.png">
@@ -705,7 +705,7 @@ Then you should see a notification saying it’s activated
     <figcaption>Settings sync is turned on now!</figcaption>
 </figure>
 
-4. As a result, you’ll also be signed into Github (or Microsoft account)
+4- As a result, you’ll also be signed into Github (or Microsoft account)
 
 <figure>
     <img src="./assets/87.png">
@@ -722,14 +722,14 @@ The purpose of having installed git and VS Code and using them as our working en
 
 To do this we first need to make an account in either platform. In this case I will use github, as this is what I use, but the process should be quite similar for other platforms.
 
-1. Create a new repo
+1- Create a new repo
 
 <figure>
     <img src="./assets/88.png">
     <figcaption>When logged in and into your dashboard create a new repo.</figcaption>
 </figure>
 
-2. Name your repo and make a description for it.
+2- Name your repo and make a description for it.
 
 Then specify whether you want this to be a public or a private repository and you can decide to initialize the repo using a Readme file (a markdown file where you can describe the contents of your repo).
 
@@ -742,49 +742,49 @@ In my case I will include a Readme file in it and make it a public repo.
     <figcaption>Repository creation and options.</figcaption>
 </figure>
 
-3. Done!, we have created our repo, now we should clone it to a folder we want. Go to a new VS Code window and click on Clone Repository.
+3- Done!, we have created our repo, now we should clone it to a folder we want. Go to a new VS Code window and click on Clone Repository.
 
 <figure>
     <img src="./assets/90.png">
     <figcaption>Clone repository.</figcaption>
 </figure>
 
-4. A small menu will pop up top to allow introducing a repository link or to clone directly from github. Let’s click on **Clone from Github**.
+4- A small menu will pop up top to allow introducing a repository link or to clone directly from github. Let’s click on **Clone from Github**.
 
 <figure>
     <img src="./assets/91.png">
     <figcaption>Clone repository menu.</figcaption>
 </figure>
 
-5. You’ll get a prompt that says the GitHub extension wants you to sign into GitHub. Click on **Allow**.
+5- You’ll get a prompt that says the GitHub extension wants you to sign into GitHub. Click on **Allow**.
 
 <figure>
     <img src="./assets/92.png">
     <figcaption>Authorization prompt from the github extension.</figcaption>
 </figure>
 
-6. You’ll be redirected to your browser asking for autorization to access github from VS Code. Click on Continue.
+6- You’ll be redirected to your browser asking for autorization to access github from VS Code. Click on Continue.
 
 <figure>
     <img src="./assets/93.png">
     <figcaption>Authorization in browser.</figcaption>
 </figure>
 
-7. You’ll get a prompt to open VS Code. Click on Open link.
+7- You’ll get a prompt to open VS Code. Click on Open link.
 
 <figure>
     <img src="./assets/94.png">
     <figcaption>VS Code link prompt.</figcaption>
 </figure>
 
-8. You’ll then be asked if you want to allow opening this URI. Click on Open.
+8- You’ll then be asked if you want to allow opening this URI. Click on Open.
 
 <figure>
     <img src="./assets/95.png">
     <figcaption>URI Opening authorization.</figcaption>
 </figure>
 
-9. After this you’ll see a similar small window as before pop up with the options of which repository in our github account to clone.
+9- After this you’ll see a similar small window as before pop up with the options of which repository in our github account to clone.
 
 Where you should see the previously created repository.
 
@@ -815,14 +815,14 @@ Click on the green button that says Code with a download icon. This should show 
     <figcaption>The repository page for our example repo.</figcaption>
 </figure>
 
-1. Click on the copy button, to copy the HTTPS link to clone our repo.
+1- Click on the copy button, to copy the HTTPS link to clone our repo.
 
 <figure>
     <img src="./assets/99.png">
     <figcaption>Link to clone the repo.</figcaption>
 </figure>
 
-2. Once copied and in a new VS Code window we will have the option to either Open a folder or to Clone a repo. Click on Clone Repository.
+2- Once copied and in a new VS Code window we will have the option to either Open a folder or to Clone a repo. Click on Clone Repository.
 
 <figure>
     <img src="./assets/100.png">
@@ -836,35 +836,35 @@ Click on the green button that says Code with a download icon. This should show 
     <figcaption>Clone repo menu.</figcaption>
 </figure>
 
-4. There will be another prompt to select the location to clone the repo in. Select the location and click Select repository location.
+4- There will be another prompt to select the location to clone the repo in. Select the location and click Select repository location.
 
 <figure>
     <img src="./assets/102.png">
     <figcaption>Selecting repository location.</figcaption>
 </figure>
 
-5. In case you aren’t signed into github, you’ll be prompted to do so. Click on Sign in with your browser.
+5- In case you aren’t signed into github, you’ll be prompted to do so. Click on Sign in with your browser.
 
 <figure>
     <img src="./assets/103.png">
     <figcaption>Sign in prompt.</figcaption>
 </figure>
 
-6. On your browser Authorize the GitCredentialManager.
+6- On your browser Authorize the GitCredentialManager.
 
 <figure>
     <img src="./assets/104.png">
     <figcaption>Authorization prompt.</figcaption>
 </figure>
 
-7. Your authentication will succeed and you can go back to github.
+7- Your authentication will succeed and you can go back to github.
 
 <figure>
     <img src="./assets/105.png">
     <figcaption>Authorization succees.</figcaption>
 </figure>
 
-8. You’ll see a cloning git repository notification.
+8- You’ll see a cloning git repository notification.
 
 <figure>
     <img src="./assets/106.png">
@@ -891,7 +891,7 @@ Now that you have your folder open, the only thing left to do is to code some th
 
 VS Code makes this very easy, you still *should* learn git, but VS Code takes most of the effort out of it. We’ll go through it step by step.
 
-1. Code something or add files to the repo!
+1- Code something or add files to the repo!
 
 In this case I will create a folder inside the repo and drag a PDF file to it. Then create a python script on the root directory of the repo.
 
@@ -918,7 +918,7 @@ We can see that there’s a 2 on the source control tab. (we’ve made changes t
     <figcaption>Source control.</figcaption>
 </figure>
 
-2. Once we’ve made our modifications, we go to source control and we’ll see the changes.
+2- Once we’ve made our modifications, we go to source control and we’ll see the changes.
 
 <figure>
     <img src="./assets/112.png">
@@ -938,14 +938,14 @@ In this case, we’re going to commit directly to the main branch, but maybe we 
 
 We can see the changes made to the file test.py, where we have added a line printing the string ‘testing’. We can see that because the file was not in the repository prior to the changes, it shows “(untracked)” next to the name. But we can see each line changed highlighted with red on the left and green on the right, where red is the previous state of that line and green the new state of that line after those changes.
 
-3. We can commit the changes to the repository. Write a message for the commit and then press commit.
+3- We can commit the changes to the repository. Write a message for the commit and then press commit.
 
 <figure>
     <img src="./assets/114.png">
     <figcaption>Writing commit message and showing the commit button.</figcaption>
 </figure>
 
-4. Once we press the button, the changes will be applied and we can now “push” the commit to github.
+4- Once we press the button, the changes will be applied and we can now “push” the commit to github.
 
 On the bottom left corner of VS Code we should see the small 1 with a commit to push to the repo. Click on it to push and pull commits. In this case we won’t pull anything as no one has made any additional changes to the repo’s contents before we push these commits.
 
