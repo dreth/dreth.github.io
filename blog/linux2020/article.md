@@ -13,7 +13,6 @@ Then, about 3 weeks after moving, I had a working setup. However, Windows bored 
 
 I used linux extensively in the shape of Ubuntu 9.04 back when I was 14 in high school and my then laptop ran horribly with Windows Vista or even XP.
 
-In the DR there’s a very traditional plate called “Mangú” (peeled, boiled and mashed plantains) which people usually accompany with fried eggs, fried salami, sautéed onion, fried cheese, avocado, or whatever they want!
 
 
 <figure>
