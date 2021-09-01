@@ -191,6 +191,9 @@ a {
 .social.website:before {
   background: url("../../assets/profiles/website.png") center no-repeat;
 }
+.social.blog:before {
+  background: url("../../assets/profiles/blog.png") center no-repeat;
+}
 .social.email:before {
   background: url("../../assets/profiles/email.png") center no-repeat;
 }
@@ -200,8 +203,20 @@ a {
 .social.linkedin:before {
   background: url("../../assets/profiles/linkedin.png") center no-repeat;
 }
-.social.medium:before {
-  background: url("../../assets/profiles/medium.png") center no-repeat;
+.social.website:hover {
+  color: #90ee90;
+}
+.social.blog:hover {
+  color: #90ee90;
+}
+.social.email:hover {
+  color: #90ee90;
+}
+.social.github:hover {
+  color: #90ee90;
+}
+.social.linkedin:hover {
+  color: #90ee90;
 }
 .side-header {
   font-family: 'Ubuntu';
