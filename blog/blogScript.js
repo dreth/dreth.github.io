@@ -23,6 +23,12 @@ var articleTag = [
     'plantains',
     'tutorialrealt'
 ];
+var articleEmoji = [
+    '💽',
+    '🖥️',
+    '🇩🇴',
+    '🏘️'
+];
 
 // links for the article MD files and article URL
 var artList = '<ul>';
@@ -31,7 +37,7 @@ for (let i = 0; i <= articleTag.length-1; i++) {
     let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
 
     // append to article list html object
-    artList += `<li><span class="ad">${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a></li><br>`;
+    artList += `<span>${articleEmoji[i]}</span> - <span class="ad">${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
 }
 artList += '</ul>';
 
