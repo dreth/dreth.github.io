@@ -39,7 +39,7 @@ for (let i = 0; i <= articleTag.length-1; i++) {
     // append to article list html object
     artList += `<span>${articleEmoji[i]}</span> - <span class="ad">${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
 }
-artList += '</ul>';
+artList += '</ul><hr>';
 
 // appending the list of articles
 document.getElementById("articleList").innerHTML = artList;
