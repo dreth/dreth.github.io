@@ -30,3 +30,9 @@ if (navigator.language.includes('es')) {
 }
 // final redirect URL
 var visit_redirect = `${home}/${redirect_lang}`;
+
+//  site favicon
+document.head = document.head || document.getElementsByTagName('head')[0];
+var link = document.createElement('link');
+link.rel = 'shortcut icon';
+link.href = './assets/icons/icon.ico';
