@@ -179,3 +179,11 @@ li.cv:before {
 li.email:before {
   content: '✉️';
 }
+
+/* li bullet icons for cv section */
+li.cv_es:before {
+  content:'🇪🇸 🇩🇴';
+}
+li.cv_en:before {
+  content:'🇬🇧 🇺🇸';
+}
