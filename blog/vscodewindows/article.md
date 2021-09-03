@@ -123,7 +123,7 @@ If you see base to the left of the path you’re in, then we’re done setting a
 
 ### Step 2: Install VS Code
 
-In this next step we install VS Code. This only encompasses the process of getting the application installed, we will then set it up in Step 4 to work well with Python or R.
+In this next step we install VS Code. This only encompasses the process of getting the application installed, we will then set it up in [Step 4](#step-4-set-up-our-environment-in-vs-code) to work well with Python or R.
 
 *Note: **Rstudio** is probably a better code editor for **R**, however, you can still open R files or R notebooks in VS Code and run them as long as you have the R interpreter installed on your computer.*
 
@@ -192,7 +192,7 @@ This is completely optional though.
     <figcaption></figcaption>
 </figure>
 
-10- And we’re done, we can decide to launch VS Code now, we can go ahead and do that and go to Step 3.
+10- And we’re done, we can decide to launch VS Code now, we can go ahead and do that and [go to Step 3](#step-3-install-git).
 
 <figure>
     <img src="./assets/21.png">
