@@ -5,6 +5,8 @@ var blog = 'https://dac.ac/blog/';
 var home = 'https://dac.ac';
 var status = 'https://dac.ac/status';
 var email = 'mailto:contact@dac.ac';
+var cv_en = 'https://dac.ac/cv/en';
+var cv_es = 'https://dac.ac/cv/es';
 
 
 // detecting the language to abstract language-based links
