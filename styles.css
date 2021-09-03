@@ -181,9 +181,6 @@ li.email:before {
 }
 
 /* li bullet icons for cv section */
-li.cv_es:before {
-  content:'🇪🇸 🇩🇴';
-}
-li.cv_en:before {
-  content:'🇬🇧 🇺🇸';
+li.tag:before {
+  content:'>';
 }
