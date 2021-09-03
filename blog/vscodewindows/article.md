@@ -6,6 +6,21 @@ I’m currently doing a master’s degree and I have found myself using it as no
 
 ***
 
+### Tutorial index
+
+  - [Why VS Code?](#why-vs-code)
+  - [Step 1: Install Anaconda](#step-1-install-anaconda)
+  - [Step 2: Install VS Code](#step-2-install-vs-code)
+  - [Step 3: Install Git](#step-3-install-git)
+  - [Step 4: Set up our environment in VS Code](#step-4-set-up-our-environment-in-vs-code)
+    - [Must have extensions (IMO)](#must-have-extensions-imo)
+  - [Step 5: Syncing your extensions, UI and settings](#step-5-syncing-your-extensions-ui-and-settings)
+  - [Step 6: Pushing code to your repos on github](#step-6-pushing-code-to-your-repos-on-github)
+    - [Creating and cloning private repositories](#creating-and-cloning-private-repositories)
+    - [Committing code and pushing it](#committing-code-and-pushing-it)
+
+***
+
 ### Why VS Code?
 
 A few simple reasons without explanation and in no specific order:

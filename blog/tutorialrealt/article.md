@@ -8,6 +8,20 @@ Sin embargo, entrar en este mercado es (aparentemente) increíblemente complicad
 
 La verdad es que no necesariamente gracias a la increíble innovación de empresas como [RealT](https://realt.co/ref/dreth/) y el poder del blockchain.
 
+
+***
+
+### Tabla de contenido
+
+  - [Algunos detalles importantes](#algunos-detalles-importantes)
+  - [¿Cómo RealT logra esto?](#cómo-realt-logra-esto)
+  - [¿Cómo obtengo una cartera/dirección en el blockchain?](#cómo-obtengo-una-carteradirección-en-el-blockchain)
+  - [Registrarse en RealT](#registrarse-en-realt)
+  - [Comprar tu primer token](#comprar-tu-primer-token)
+  - [Envío y recepción de Tokens y renta](#envío-y-recepción-de-tokens-y-renta)
+  - [Monitorear la inversión](#monitorear-la-inversión)
+
+
 ***
 
 ### Algunos detalles importantes
