@@ -146,3 +146,36 @@ a.gb:hover {
     font-size: 3.5vw;
   }
 }
+/* li bullet icons for diff profiles/links */
+ul.noBullets {
+  list-style: none;
+}
+
+li.ml:before {
+  margin-left: -20px; 
+  margin-right: 10px;
+}
+
+li.waid:before {
+  content: '📝';
+}
+
+li.linkedin:before {
+  content: '👤';
+}
+
+li.github:before {
+  content: '📦';
+}
+
+li.blog:before {
+  content: '🗒️';
+}
+
+li.cv:before {
+  content: '📃';
+}
+
+li.email:before {
+  content: '✉️';
+}
