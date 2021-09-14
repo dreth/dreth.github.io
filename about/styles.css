@@ -224,7 +224,7 @@ a {
   letter-spacing: 2px;
   font-weight: 600;
   line-height: 28px;
-  margin: 60px auto 10px;
+  margin: 10px auto 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #888;
 }
@@ -234,8 +234,8 @@ a {
 }
 .content-container {
   margin-right: 0;
-  width: calc(95% - 350px);
-  padding: 25px 40px 50px;
+  width: calc(100%);
+  padding: 25px 10px 10px;
 }
 .content-container > * {
   margin: 0 auto 25px;
