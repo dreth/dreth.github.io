@@ -2,6 +2,15 @@ html {
   background-color: #000;
   color: #fff;
 }
+p.innerText {
+  font-size: large;
+}
+span.innerText {
+  font-size: large;
+}
+span.aboutHeading {
+  font-size: x-large;
+}
 /* links (b) */
 a.b:link {
   text-decoration: none;

@@ -5,8 +5,8 @@ var blog = 'https://dac.ac/blog/';
 var home = 'https://dac.ac';
 var status = 'https://dac.ac/status';
 var email = 'mailto:contact@dac.ac';
-var cv_en = 'https://dac.ac/cv/en';
-var cv_es = 'https://dac.ac/cv/es';
+var about_en = 'https://dac.ac/about/en';
+var about_es = 'https://dac.ac/about/es';
 
 
 // detecting the language to abstract language-based links
@@ -18,7 +18,7 @@ if (url_lang == 'nl') {
     var lang = url_lang;
 }
 // language-based links
-var cv = `${home}/cv/${lang}`;
+var about = `${home}/about/${lang}`;
 var home_lang = `${home}/${lang}`;
 
 
