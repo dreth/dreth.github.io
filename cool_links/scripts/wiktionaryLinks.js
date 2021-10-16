@@ -1,18 +1,19 @@
-// article titles
-var articleTitles = [
-    'ja'
-];
+// base link
+const wiktionaryBaseLink = 'https://en.wiktionary.org/wiki/';
 
 // links
-var articleURL = [
-    'https://en.wiktionary.org/wiki/ja'
-];
+var wiktionaryArticles = {
+    'ja':'ja'
+};
 
 // links for the article MD files and article URL
 var artList = '<ul>';
-for (let i = 0; i <= articleTitles.length-1; i++) {
+for (const [name, page] of Object.entries(wiktionaryArticles)) {
+    // create article URL
+    var articleURL = `${wiktionaryBaseLink}${page}` 
+
     // append to article list html object
-    artList += `<span>🔗</span> <a class="b" href="${articleURL[i]}">${articleTitles[i]}</a><br><br>`;
+    artList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br><br>`;
 }
 artList += '</ul><hr>';
 

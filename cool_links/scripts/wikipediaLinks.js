@@ -1,50 +1,36 @@
-// article titles
-var articleTitles = [
-    'Historical mongolian naval forces',
-    'List of ongoing armed conflicts',
-    'Mexican drug war',
-    'List of people who disappeared (list of lists basically)',
-    'Ratlines (World War II aftermath)',
-    'Human Development Index',
-    'List of doping cases in athletics',
-    'Privacy concerns regarding Google',
-    'Privacy concerns with Facebook',
-    'Religion in Suriname',
-    'Spanish Guinea',
-    'Purely functional programming',
-    'Kalmykia',
-    'Almaty',
-    'Hong Kong Basic Law',
-    'The White Stripes',
-    'Hungarian language'
-];
+// base link
+const wikipediaBaseLink = 'https://en.wikipedia.org/wiki/';
 
 // links
-var articleURL = [
-    'https://en.wikipedia.org/wiki/Mongolian_Armed_Forces#Historical_Mongolian_naval_forces',
-    'https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts',
-    'https://en.wikipedia.org/wiki/Mexican_drug_war',
-    'https://en.wikipedia.org/wiki/Lists_of_people_who_disappeared',
-    'https://en.wikipedia.org/wiki/Ratlines_(World_War_II_aftermath)',
-    'https://en.wikipedia.org/wiki/Human_Development_Index',
-    'https://en.wikipedia.org/wiki/List_of_doping_cases_in_athletics',
-    'https://en.wikipedia.org/wiki/Privacy_concerns_regarding_Google',
-    'https://en.wikipedia.org/wiki/Privacy_concerns_with_Facebook',
-    'https://en.wikipedia.org/wiki/Religion_in_Suriname',
-    'https://en.wikipedia.org/wiki/Spanish_Guinea',
-    'https://en.wikipedia.org/wiki/Purely_functional_programming',
-    'https://en.wikipedia.org/wiki/Kalmykia',
-    'https://en.wikipedia.org/wiki/Almaty',
-    'https://en.wikipedia.org/wiki/Hong_Kong_Basic_Law',
-    'https://en.wikipedia.org/wiki/The_White_Stripes',
-    'https://en.wikipedia.org/wiki/Hungarian_language'
-];
+var wikipediaArticles = {
+    'Historical mongolian naval forces':'Mongolian_Armed_Forces#Historical_Mongolian_naval_forces',
+    'List of ongoing armed conflicts':'List_of_ongoing_armed_conflicts',
+    'Mexican drug war':'Mexican_drug_war',
+    'List of people who disappeared (list of lists basically)':'Lists_of_people_who_disappeared',
+    'Ratlines (World War II aftermath)':'Ratlines_(World_War_II_aftermath)',
+    'Human Development Index':'Human_Development_Index',
+    'List of doping cases in athletics':'List_of_doping_cases_in_athletics',
+    'Privacy concerns regarding Google':'Privacy_concerns_regarding_Google',
+    'Privacy concerns with Facebook':'Privacy_concerns_with_Facebook',
+    'Religion in Suriname':'Religion_in_Suriname',
+    'Spanish Guinea':'Spanish_Guinea',
+    'Purely functional programming':'Purely_functional_programming',
+    'Kalmykia':'Kalmykia',
+    'Almaty':'Almaty',
+    'Hong Kong Basic Law':'Hong_Kong_Basic_Law',
+    'The White Stripes':'The_White_Stripes',
+    'Hungarian language':'Hungarian_language',
+    'Wirecard Scandal':'Wirecard_scandal'
+};
 
 // links for the article MD files and article URL
 var artList = '<ul>';
-for (let i = 0; i <= articleTitles.length-1; i++) {
+for (const [name, page] of Object.entries(wikipediaArticles)) {
+    // create article URL
+    var articleURL = `${wikipediaBaseLink}${page}` 
+
     // append to article list html object
-    artList += `<span>🔗</span> <a class="b" href="${articleURL[i]}">${articleTitles[i]}</a><br><br>`;
+    artList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br><br>`;
 }
 artList += '</ul><hr>';
 
