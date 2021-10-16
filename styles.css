@@ -200,6 +200,10 @@ li.email:before {
   content: '✉️';
 }
 
+li.coolLinks:before {
+  content: '🔗';
+}
+
 /* li bullet icons for cv section */
 li.tag:before {
   content:'>';

@@ -4,6 +4,7 @@ var github = 'https://github.com/dreth';
 var blog = 'https://dac.ac/blog/';
 var home = 'https://dac.ac';
 var status = 'https://dac.ac/status';
+var cool_links = 'https://dac.ac/cool_links';
 var email = 'mailto:contact@dac.ac';
 var about_en = 'https://dac.ac/about/en';
 var about_es = 'https://dac.ac/about/es';
@@ -24,16 +25,22 @@ var home_lang = `${home}/${lang}`;
 
 // check user locale to redirect to ideal language
 if (navigator.language.includes('es')) {
-    var redirect_lang = 'es'
+    var browserLocale = 'es'
 } else if (navigator.language.includes('nl')) {
-    var redirect_lang = 'nl'
+    var browserLocale = 'nl'
 } else {
-    var redirect_lang = 'en'
+    var browserLocale = 'en'
 }
 // final redirect URL
-var visit_redirect = `${home}/${redirect_lang}`;
+var visit_redirect = `${home}/${browserLocale}`;
 
 //  site favicon
 document.head = document.head || document.getElementsByTagName('head')[0];
 var link = document.getElementById('icon');
 link.href = 'https://raw.githubusercontent.com/dreth/dreth.github.io/master/assets/icons/icon.ico';
+
+// change lang function, to set a different language
+function changeLang(language) {
+    lang = language;
+    browserLocale = language;
+}
