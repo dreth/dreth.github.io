@@ -38,9 +38,3 @@ var visit_redirect = `${home}/${browserLocale}`;
 document.head = document.head || document.getElementsByTagName('head')[0];
 var link = document.getElementById('icon');
 link.href = 'https://raw.githubusercontent.com/dreth/dreth.github.io/master/assets/icons/icon.ico';
-
-// change lang function, to set a different language
-function changeLang(language) {
-    lang = language;
-    browserLocale = language;
-}

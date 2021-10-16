@@ -4,7 +4,9 @@ var articleTitles = [
     'List of ongoing armed conflicts',
     'Mexican drug war',
     'List of people who disappeared (list of lists basically)',
-    'Ratlines (World War II aftermath)'
+    'Ratlines (World War II aftermath)',
+    'Human Development Index',
+    'List of doping cases in athletics'
 ];
 
 // links
@@ -13,7 +15,9 @@ var articleURL = [
     'https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts',
     'https://en.wikipedia.org/wiki/Mexican_drug_war',
     'https://en.wikipedia.org/wiki/Lists_of_people_who_disappeared',
-    'https://en.wikipedia.org/wiki/Ratlines_(World_War_II_aftermath)'
+    'https://en.wikipedia.org/wiki/Ratlines_(World_War_II_aftermath)',
+    'https://en.wikipedia.org/wiki/Human_Development_Index',
+    'https://en.wikipedia.org/wiki/List_of_doping_cases_in_athletics'
 ];
 
 // links for the article MD files and article URL
@@ -41,4 +45,4 @@ switch(browserLocale) {
 }
 
 // setting h1 title
-document.getElementById("linksTitle").innerHTML = `<h1>⛓️ ${linksTitle}</h1>`
+document.getElementById("linksTitle").innerHTML = `<h3>⛓️ ${linksTitle}</h3>`
