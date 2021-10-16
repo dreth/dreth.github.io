@@ -1,11 +1,19 @@
 // article titles
 var articleTitles = [
-    'Historical mongolian naval forces'
+    'Historical mongolian naval forces',
+    'List of ongoing armed conflicts',
+    'Mexican drug war',
+    'List of people who disappeared (list of lists basically)',
+    'Ratlines (World War II aftermath)'
 ];
 
 // links
 var articleURL = [
-    'https://en.wikipedia.org/wiki/Mongolian_Armed_Forces#Historical_Mongolian_naval_forces'
+    'https://en.wikipedia.org/wiki/Mongolian_Armed_Forces#Historical_Mongolian_naval_forces',
+    'https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts',
+    'https://en.wikipedia.org/wiki/Mexican_drug_war',
+    'https://en.wikipedia.org/wiki/Lists_of_people_who_disappeared',
+    'https://en.wikipedia.org/wiki/Ratlines_(World_War_II_aftermath)'
 ];
 
 // links for the article MD files and article URL
