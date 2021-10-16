@@ -5,7 +5,7 @@ var blog = 'https://dac.ac/blog/';
 var home = 'https://dac.ac';
 var status = 'https://dac.ac/status';
 var cool_links = 'https://dac.ac/cool_links';
-var email = 'mailto:contact@dac.ac';
+var email = 'mailto:contact@m.dac.ac';
 var about_en = 'https://dac.ac/about/en';
 var about_es = 'https://dac.ac/about/es';
 
