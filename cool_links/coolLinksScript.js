@@ -24,7 +24,7 @@ var articleURL = [
 var artList = '<ul>';
 for (let i = 0; i <= articleTitles.length-1; i++) {
     // append to article list html object
-    artList += `<span>🔗</span> - <a class="b" href="${articleURL[i]}">${articleTitles[i]}</a><br><br>`;
+    artList += `<span>🔗</span> <a class="b" href="${articleURL[i]}">${articleTitles[i]}</a><br><br>`;
 }
 artList += '</ul><hr>';
 
