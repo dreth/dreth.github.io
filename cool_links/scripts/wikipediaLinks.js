@@ -6,7 +6,17 @@ var articleTitles = [
     'List of people who disappeared (list of lists basically)',
     'Ratlines (World War II aftermath)',
     'Human Development Index',
-    'List of doping cases in athletics'
+    'List of doping cases in athletics',
+    'Privacy concerns regarding Google',
+    'Privacy concerns with Facebook',
+    'Religion in Suriname',
+    'Spanish Guinea',
+    'Purely functional programming',
+    'Kalmykia',
+    'Almaty',
+    'Hong Kong Basic Law',
+    'The White Stripes',
+    'Hungarian language'
 ];
 
 // links
@@ -17,7 +27,17 @@ var articleURL = [
     'https://en.wikipedia.org/wiki/Lists_of_people_who_disappeared',
     'https://en.wikipedia.org/wiki/Ratlines_(World_War_II_aftermath)',
     'https://en.wikipedia.org/wiki/Human_Development_Index',
-    'https://en.wikipedia.org/wiki/List_of_doping_cases_in_athletics'
+    'https://en.wikipedia.org/wiki/List_of_doping_cases_in_athletics',
+    'https://en.wikipedia.org/wiki/Privacy_concerns_regarding_Google',
+    'https://en.wikipedia.org/wiki/Privacy_concerns_with_Facebook',
+    'https://en.wikipedia.org/wiki/Religion_in_Suriname',
+    'https://en.wikipedia.org/wiki/Spanish_Guinea',
+    'https://en.wikipedia.org/wiki/Purely_functional_programming',
+    'https://en.wikipedia.org/wiki/Kalmykia',
+    'https://en.wikipedia.org/wiki/Almaty',
+    'https://en.wikipedia.org/wiki/Hong_Kong_Basic_Law',
+    'https://en.wikipedia.org/wiki/The_White_Stripes',
+    'https://en.wikipedia.org/wiki/Hungarian_language'
 ];
 
 // links for the article MD files and article URL
@@ -30,19 +50,3 @@ artList += '</ul><hr>';
 
 // appending the list of articles
 document.getElementById("wikipediaLinkList").innerHTML = artList;
-
-// changing visible site title based on locale 
-var linksTitle
-switch(browserLocale) {
-    case 'es':
-        linksTitle = 'links cool'
-        break;
-    case 'en':
-        linksTitle = 'cool links'
-        break;
-    case 'nl':
-        linksTitle = 'coole links'
-}
-
-// setting h1 title
-document.getElementById("linksTitle").innerHTML = `<h3>⛓️ ${linksTitle}</h3>`
