@@ -3,7 +3,8 @@ const wiktionaryBaseLink = 'https://en.wiktionary.org/wiki/';
 
 // links
 var wiktionaryArticles = {
-    'ja':'ja'
+    'ja':'ja',
+    'jordgubbe':'jordgubbe'
 };
 
 // links for the article MD files and article URL
