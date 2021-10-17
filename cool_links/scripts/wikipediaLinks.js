@@ -20,7 +20,24 @@ var wikipediaArticles = {
     'Hong Kong Basic Law':'Hong_Kong_Basic_Law',
     'The White Stripes':'The_White_Stripes',
     'Hungarian language':'Hungarian_language',
-    'Wirecard Scandal':'Wirecard_scandal'
+    'Wirecard Scandal':'Wirecard_scandal',
+    'List of time zones by country':'List_of_time_zones_by_country',
+    'Tajik language':'Tajik_language',
+    'Demographics of Chile':'Demographics_of_Chile',
+    'Fase fashion':'Fast_fashion',
+    'Hanseatic League':'Hanseatic_League',
+    'Asexuality':'Asexuality',
+    'Honey badger':'Honey_badger',
+    'Sifan Hassan':'Sifan_Hassan',
+    'IJsselmeer':'IJsselmeer',
+    'Chavacano':'Chavacano',
+    'Ghent':'Ghent',
+    'Textile industry in Bangladesh':'Textile_industry_in_Bangladesh',
+    'Sino-German cooperation 1926-1941':'Sino-German_cooperation_%281926%E2%80%931941%29',
+    'Second Cold War':'Second_Cold_War',
+    'Japanese Brazilians':'Japanese_Brazilians',
+    'Spanish language in the Philippines':'Spanish_language_in_the_Philippines',
+    'Norwegian Antarctic Expedition':'Norwegian_Antarctic_Expedition'
 };
 
 // links for the article MD files and article URL
