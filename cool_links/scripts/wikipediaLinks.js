@@ -37,7 +37,11 @@ var wikipediaArticles = {
     'Second Cold War':'Second_Cold_War',
     'Japanese Brazilians':'Japanese_Brazilians',
     'Spanish language in the Philippines':'Spanish_language_in_the_Philippines',
-    'Norwegian Antarctic Expedition':'Norwegian_Antarctic_Expedition'
+    'Norwegian Antarctic Expedition':'Norwegian_Antarctic_Expedition',
+    'Kentucky Bend':'Kentucky_Bend',
+    'Kazakhstan man-in-the-middle attack':'Kazakhstan_man-in-the-middle_attack',
+    'Smooth newt':'Smooth_newt',
+    'Rough-skinned newt':'Rough-skinned_newt'
 };
 
 // links for the article MD files and article URL
