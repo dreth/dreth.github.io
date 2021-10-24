@@ -15,7 +15,7 @@ switch(browserLocale) {
 document.getElementById("playlistsTitle").innerHTML = `<h3>🎶 ${playlistsTitle}</h3>`
 
 // base spotify link
-var baseSpotifyLink = 'https://open.spotify.com/playlist';
+var baseSpotifyLink = 'https://open.spotify.com/playlist/';
 
 // playlist names
 var playlistsNames = {
