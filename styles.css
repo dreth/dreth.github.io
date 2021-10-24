@@ -204,7 +204,12 @@ li.coolLinks:before {
   content: '⛓️';
 }
 
+li.playlists:before {
+  content: '🎵';
+}
+
 /* li bullet icons for cv section */
 li.tag:before {
   content:'>';
 }
+
