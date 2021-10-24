@@ -98,6 +98,9 @@ a.gb:hover {
     font-family: ubuntu, Sans-Serif;
     word-wrap: break-word;
   }
+  img.playlistImages {
+    width:18vw
+  }
   ul,
   p,
   span {
@@ -140,6 +143,9 @@ a.gb:hover {
     font-size: 3.5vw;
     font-family: ubuntu, Sans-Serif;
     word-wrap: break-word;
+  }
+  img.playlistImages {
+    width:30vw
   }
   ul,
   p,

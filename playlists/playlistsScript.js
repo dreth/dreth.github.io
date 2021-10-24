@@ -37,7 +37,7 @@ for (const [name, page] of Object.entries(playlistsNames)) {
     var articleURL = `${page}` 
 
     // append to article list html object
-    playlistList += `<a href="${baseSpotifyLink}${page}">${name}<br><img src="./images/${name}.png"></a><br><br><br>`;
+    playlistList += `<a href="${baseSpotifyLink}${page}">${name}<br><img class="playlistImages" src="./images/${name}.png"></a><br><br><br>`;
 }
 
 // appending the list of articles
