@@ -28,3 +28,8 @@ a:hover {
 .ad {
     color:rgb(71, 233, 198);
 }
+
+.articleBody {
+    padding-left: 10%;
+    padding-right: 10%;
+}
