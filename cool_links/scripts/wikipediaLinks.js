@@ -41,7 +41,8 @@ var wikipediaArticles = {
     'Kentucky Bend':'Kentucky_Bend',
     'Kazakhstan man-in-the-middle attack':'Kazakhstan_man-in-the-middle_attack',
     'Smooth newt':'Smooth_newt',
-    'Rough-skinned newt':'Rough-skinned_newt'
+    'Rough-skinned newt':'Rough-skinned_newt',
+    'List of UEFA Champions League hat':'List_of_UEFA_Champions_League_hat'
 };
 
 // links for the article MD files and article URL
