@@ -45,7 +45,7 @@
       .then(response => response.text())
       .then(data => {
         document.getElementById('content').innerHTML =
-          marked(`#${data}`);
+          marked.parse(`#${data}`);
       });
   </script>
   <div id="content"></div>
