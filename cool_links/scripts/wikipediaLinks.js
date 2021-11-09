@@ -42,7 +42,7 @@ var wikipediaArticles = {
     'Kazakhstan man-in-the-middle attack':'Kazakhstan_man-in-the-middle_attack',
     'Smooth newt':'Smooth_newt',
     'Rough-skinned newt':'Rough-skinned_newt',
-    'List of UEFA Champions League hat':'List_of_UEFA_Champions_League_hat'
+    'List of UEFA Champions League hat-tricks':'List_of_UEFA_Champions_League_hat-tricks'
 };
 
 // links for the article MD files and article URL
