@@ -4,7 +4,8 @@ const wiktionaryBaseLink = 'https://en.wiktionary.org/wiki/';
 // links
 var wiktionaryArticles = {
     'ja':'ja',
-    'jordgubbe':'jordgubbe'
+    'jordgubbe':'jordgubbe',
+    'garish':'garish'
 };
 
 // links for the article MD files and article URL

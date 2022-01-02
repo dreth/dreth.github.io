@@ -42,7 +42,12 @@ var wikipediaArticles = {
     'Kazakhstan man-in-the-middle attack':'Kazakhstan_man-in-the-middle_attack',
     'Smooth newt':'Smooth_newt',
     'Rough-skinned newt':'Rough-skinned_newt',
-    'List of UEFA Champions League hat-tricks':'List_of_UEFA_Champions_League_hat-tricks'
+    'List of UEFA Champions League hat-tricks':'List_of_UEFA_Champions_League_hat-tricks',
+    'Roy Sullivan':'Roy_Sullivan',
+    'My Way killings':'My_Way_killings',
+    'Corporate Memphis':'Corporate_Memphis',
+    'Optimism bias':'Optimism_bias',
+    'Neomugicha incident':'Neomugicha_incident'
 };
 
 // links for the article MD files and article URL
