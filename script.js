@@ -37,5 +37,7 @@ var visit_redirect = `${home}/${browserLocale}`;
 
 //  site favicon
 document.head = document.head || document.getElementsByTagName('head')[0];
+// directory levels for favicon
+var faviconLevel = parseInt(document.getElementById('icon').getAttribute("note"));
 var link = document.getElementById('icon');
-link.href = 'https://raw.githubusercontent.com/dreth/dreth.github.io/master/assets/icons/icon.ico';
+link.href = `${'../'.repeat(faviconLevel)}assets/icons/icon.ico`;
