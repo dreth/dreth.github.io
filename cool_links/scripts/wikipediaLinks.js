@@ -1,60 +1,67 @@
 // base link
-const wikipediaBaseLink = 'https://en.wikipedia.org/wiki/';
+const wikipediaBaseLink = 'wikipedia.org/wiki/';
 
 // links
 var wikipediaArticles = {
-    'Historical mongolian naval forces':'Mongolian_Armed_Forces#Historical_Mongolian_naval_forces',
-    'List of ongoing armed conflicts':'List_of_ongoing_armed_conflicts',
-    'Mexican drug war':'Mexican_drug_war',
-    'List of people who disappeared (list of lists basically)':'Lists_of_people_who_disappeared',
-    'Ratlines (World War II aftermath)':'Ratlines_(World_War_II_aftermath)',
-    'Human Development Index':'Human_Development_Index',
-    'List of doping cases in athletics':'List_of_doping_cases_in_athletics',
-    'Privacy concerns regarding Google':'Privacy_concerns_regarding_Google',
-    'Privacy concerns with Facebook':'Privacy_concerns_with_Facebook',
-    'Religion in Suriname':'Religion_in_Suriname',
-    'Spanish Guinea':'Spanish_Guinea',
-    'Purely functional programming':'Purely_functional_programming',
-    'Kalmykia':'Kalmykia',
-    'Almaty':'Almaty',
-    'Hong Kong Basic Law':'Hong_Kong_Basic_Law',
-    'The White Stripes':'The_White_Stripes',
-    'Hungarian language':'Hungarian_language',
-    'Wirecard Scandal':'Wirecard_scandal',
-    'List of time zones by country':'List_of_time_zones_by_country',
-    'Tajik language':'Tajik_language',
-    'Demographics of Chile':'Demographics_of_Chile',
-    'Fase fashion':'Fast_fashion',
-    'Hanseatic League':'Hanseatic_League',
-    'Asexuality':'Asexuality',
-    'Honey badger':'Honey_badger',
-    'Sifan Hassan':'Sifan_Hassan',
-    'IJsselmeer':'IJsselmeer',
-    'Chavacano':'Chavacano',
-    'Ghent':'Ghent',
-    'Textile industry in Bangladesh':'Textile_industry_in_Bangladesh',
-    'Sino-German cooperation 1926-1941':'Sino-German_cooperation_%281926%E2%80%931941%29',
-    'Second Cold War':'Second_Cold_War',
-    'Japanese Brazilians':'Japanese_Brazilians',
-    'Spanish language in the Philippines':'Spanish_language_in_the_Philippines',
-    'Norwegian Antarctic Expedition':'Norwegian_Antarctic_Expedition',
-    'Kentucky Bend':'Kentucky_Bend',
-    'Kazakhstan man-in-the-middle attack':'Kazakhstan_man-in-the-middle_attack',
-    'Smooth newt':'Smooth_newt',
-    'Rough-skinned newt':'Rough-skinned_newt',
-    'List of UEFA Champions League hat-tricks':'List_of_UEFA_Champions_League_hat-tricks',
-    'Roy Sullivan':'Roy_Sullivan',
-    'My Way killings':'My_Way_killings',
-    'Corporate Memphis':'Corporate_Memphis',
-    'Optimism bias':'Optimism_bias',
-    'Neomugicha incident':'Neomugicha_incident'
+    'Historical mongolian naval forces':'EN_Mongolian_Armed_Forces#Historical_Mongolian_naval_forces',
+    'List of ongoing armed conflicts':'EN_List_of_ongoing_armed_conflicts',
+    'Mexican drug war':'EN_Mexican_drug_war',
+    'List of people who disappeared (list of lists basically)':'EN_Lists_of_people_who_disappeared',
+    'Ratlines (World War II aftermath)':'EN_Ratlines_(World_War_II_aftermath)',
+    'Human Development Index':'EN_Human_Development_Index',
+    'List of doping cases in athletics':'EN_List_of_doping_cases_in_athletics',
+    'Privacy concerns regarding Google':'EN_Privacy_concerns_regarding_Google',
+    'Privacy concerns with Facebook':'EN_Privacy_concerns_with_Facebook',
+    'Religion in Suriname':'EN_Religion_in_Suriname',
+    'Spanish Guinea':'EN_Spanish_Guinea',
+    'Purely functional programming':'EN_Purely_functional_programming',
+    'Kalmykia':'EN_Kalmykia',
+    'Almaty':'EN_Almaty',
+    'Hong Kong Basic Law':'EN_Hong_Kong_Basic_Law',
+    'The White Stripes':'EN_The_White_Stripes',
+    'Hungarian language':'EN_Hungarian_language',
+    'Wirecard Scandal':'EN_Wirecard_scandal',
+    'List of time zones by country':'EN_List_of_time_zones_by_country',
+    'Tajik language':'EN_Tajik_language',
+    'Demographics of Chile':'EN_Demographics_of_Chile',
+    'Fase fashion':'EN_Fast_fashion',
+    'Hanseatic League':'EN_Hanseatic_League',
+    'Asexuality':'EN_Asexuality',
+    'Honey badger':'EN_Honey_badger',
+    'Sifan Hassan':'EN_Sifan_Hassan',
+    'IJsselmeer':'EN_IJsselmeer',
+    'Chavacano':'EN_Chavacano',
+    'Ghent':'EN_Ghent',
+    'Textile industry in Bangladesh':'EN_Textile_industry_in_Bangladesh',
+    'Sino-German cooperation 1926-1941':'EN_Sino-German_cooperation_%281926%E2%80%931941%29',
+    'Second Cold War':'EN_Second_Cold_War',
+    'Japanese Brazilians':'EN_Japanese_Brazilians',
+    'Spanish language in the Philippines':'EN_Spanish_language_in_the_Philippines',
+    'Norwegian Antarctic Expedition':'EN_Norwegian_Antarctic_Expedition',
+    'Kentucky Bend':'EN_Kentucky_Bend',
+    'Kazakhstan man-in-the-middle attack':'EN_Kazakhstan_man-in-the-middle_attack',
+    'Smooth newt':'EN_Smooth_newt',
+    'Rough-skinned newt':'EN_Rough-skinned_newt',
+    'List of UEFA Champions League hat-tricks':'EN_List_of_UEFA_Champions_League_hat-tricks',
+    'Roy Sullivan':'EN_Roy_Sullivan',
+    'My Way killings':'EN_My_Way_killings',
+    'Corporate Memphis':'EN_Corporate_Memphis',
+    'Optimism bias':'EN_Optimism_bias',
+    'Neomugicha incident':'EN_Neomugicha_incident',
+    '1815 eruption of Mount Tambora':'EN_1815_eruption_of_Mount_Tambora',
+    'Year Without a Summer':'EN_Year_Without_a_Summer',
+    'Jón Steingrímsson':'DE_Jón_Steingrímsson',
+    'Banned gymnastics skills':'EN_Banned_gymnastics_skills'
 };
 
 // links for the article MD files and article URL
 var artList = '<ul>';
 for (const [name, page] of Object.entries(wikipediaArticles)) {
+    // extract language of article
+    let articleLang = page.slice(0,2);
+
     // create article URL
-    var articleURL = `${wikipediaBaseLink}${page}` 
+    var articleURL = `https://${articleLang}.${wikipediaBaseLink}${page.slice(3)}` 
 
     // append to article list html object
     artList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br><br>`;
