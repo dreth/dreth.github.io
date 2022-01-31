@@ -51,7 +51,9 @@ var wikipediaArticles = {
     '1815 eruption of Mount Tambora':'EN_1815_eruption_of_Mount_Tambora',
     'Year Without a Summer':'EN_Year_Without_a_Summer',
     'Jón Steingrímsson':'DE_Jón_Steingrímsson',
-    'Banned gymnastics skills':'EN_Banned_gymnastics_skills'
+    'Banned gymnastics skills':'EN_Banned_gymnastics_skills',
+    "List of Grand Slam men's singles champions":"EN_List_of_Grand_Slam_men's_singles_champions",
+    'List of national animals':'EN_List_of_national_animals'
 };
 
 // links for the article MD files and article URL
