@@ -2,7 +2,7 @@
 var blog = 'https://dac.ac/blog/';
 let art_path = window.location.href.split("/");
 art_path = art_path[art_path.length - 2];
-var art_gh_path = `https://raw.githubusercontent.com/dreth/dreth.github.io/master/blog/${art_path}/article.md`;
+var art_md_path = `/blog/${art_path}/article.md`;
 
 // lists of article info
 var articleDates = [

@@ -41,3 +41,4 @@ document.head = document.head || document.getElementsByTagName('head')[0];
 var faviconLevel = parseInt(document.getElementById('icon').getAttribute("note"));
 var link = document.getElementById('icon');
 link.href = `${'../'.repeat(faviconLevel)}assets/icons/icon.ico`;
+
