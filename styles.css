@@ -108,6 +108,15 @@ a.gb:hover {
     font-family: ubuntu, Sans-Serif;
     word-wrap: break-word;
   }
+  span.aboutHeading2 {
+    font-size: 1.8vw;
+  }
+  span.aboutHeading3 {
+    font-size: 1.6vw;
+  }
+  h3.aboutHeading2 {
+    font-size: 1.8vw;
+  }
   .heading {
     font-size: 1.5vw;
   }
@@ -153,6 +162,15 @@ a.gb:hover {
     font-size: 3.5vw;
     font-family: ubuntu, Sans-Serif;
     word-wrap: break-word;
+  }
+  span.aboutHeading2 {
+    font-size: x-large;
+  }
+  span.aboutHeading3 {
+    font-size: large;
+  }
+  h3.aboutHeading2 {
+    font-size: x-large;
   }
   .heading {
     font-size: 3.7vw;
