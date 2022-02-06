@@ -22,6 +22,7 @@ var playlistsNames = {
     'ambient':'3tJch4CHUPWtvW9oO9hr9K?si=29AL2w5gQDaXFN9S2CrGFQ',
     'math':'3EuNE4UrJPBpluPgms9h3q?si=d6c2f8e209b14826',
     'the sky was pink':'6ted27GV89iz0hirEv16ZN?si=182f75ded1744b63',
+    "pumped up walking up a tiny hill that isn't even particularly steep tbh":'3KhcEuY603u5PU5hiqjIZl?si=d3c136c2a9c24ee1',
     'nederlands':'3t9GSwN2y974CjJb3asmNW?si=738f7c30116c4c3d',
     'clusterfuck':'0AufZp9wW0buR5M3qbBKZr?si=v1WEclfLTFumDttlunOIPw',
     'post-rock':'78aH1v1qmTmKUeOzsQl3Jx?si=rGmqwGk3T6OHuoOTo5JOlA',
