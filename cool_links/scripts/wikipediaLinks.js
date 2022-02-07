@@ -53,7 +53,22 @@ var wikipediaArticles = {
     'Jón Steingrímsson':'DE_Jón_Steingrímsson',
     'Banned gymnastics skills':'EN_Banned_gymnastics_skills',
     "List of Grand Slam men's singles champions":"EN_List_of_Grand_Slam_men's_singles_champions",
-    'List of national animals':'EN_List_of_national_animals'
+    'List of national animals':'EN_List_of_national_animals',
+    'List of countries and dependencies by area':"EN_List_of_countries_and_dependencies_by_area",
+    'Indonesia and the United Nations':"EN_Indonesia_and_the_United_Nations",
+    'Indonesian mass killings of 1965–66':"EN_Indonesian_mass_killings_of_1965%E2%80%9366",
+    'Sukarno':"EN_Sukarno",
+    'Suharto':"EN_Suharto",
+    'German bombing of Rotterdam':"EN_German_bombing_of_Rotterdam",
+    'Hubert Pierlot':"EN_Hubert_Pierlot",
+    'Leopold III of Belgium':"EN_Leopold_III_of_Belgium",
+    'Dissolution of the union between Norway and Sweden':"EN_Dissolution_of_the_union_between_Norway_and_Sweden",
+    '1905 Norwegian union dissolution referendum':"EN_1905_Norwegian_union_dissolution_referendum",
+    'Swedish–Norwegian War (1814)':"EN_Swedish%E2%80%93Norwegian_War_(1814)",
+    'Kingdom of Ireland':"EN_Kingdom_of_Ireland",
+    'Acts of Union 1800':"EN_Acts_of_Union_1800",
+    'Union Jack':"EN_Union_Jack",
+    'Sister city':"EN_Sister_city"
 };
 
 // links for the article MD files and article URL
