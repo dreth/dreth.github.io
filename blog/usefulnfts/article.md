@@ -24,7 +24,7 @@ When an product, commodity or asset is _non fungible_, it is fundamentally uniqu
 
 ![Salvator Mundi](./assets/2.jpg)
 
-Only one copy of _Salvator Mundi_ exists, da Vinci could've painted 3 _Salvator Mundi_, but he didn't, he painted one. However, had he painted 3, then we would have _Salvator Mundi_ No.1, _Salvator Mundi_ No.2 and _Salvator Mundi_ No.3, which would all be unique in their own way, or identical, but still unique at least in the order in which they were painted, thus retaining at least some difference between each other in terms of order (assuming da Vinci could reproduce 3 copies of it in absolutely perfect order like a robot).
+Only one copy of _Salvator Mundi_ exists, da Vinci could've painted 3 _Salvator Mundi_, but he didn't, he painted one. However, had he painted 3, then we would have _Salvator Mundi_ No.1, _Salvator Mundi_ No.2 and _Salvator Mundi_ No.3, which would all be unique in their own way, or identical, but still unique at least in the order in which they were painted, thus retaining some difference between each other in terms of order (assuming da Vinci could reproduce 3 copies of it in absolutely perfect order like a robot).
 
 ### Tokens on the blockchain
 
