@@ -1,6 +1,6 @@
 # Useful NFTs?
 
-### What is an NFT?
+## What is an NFT?
 
 According to my favourite source in the universe, [wikipedia](https://en.wikipedia.org/wiki/Non-fungible_token), an NFT is:
 
@@ -26,13 +26,13 @@ When an product, commodity or asset is _non fungible_, it is fundamentally uniqu
 
 Only one copy of _Salvator Mundi_ exists, da Vinci could've painted 3 _Salvator Mundi_, but he didn't, he painted one. However, had he painted 3, then we would have _Salvator Mundi_ No.1, _Salvator Mundi_ No.2 and _Salvator Mundi_ No.3, which would all be unique in their own way, or identical, but still unique at least in the order in which they were painted, thus retaining some difference between each other in terms of order (assuming da Vinci could reproduce 3 copies of it in absolutely perfect order like a robot).
 
-### Tokens on the blockchain
+## Tokens on the blockchain
 
 Sufficiently distributed and decentralized blockchains are perhaps the most trustworthy systems we can have. Where trust is _not even needed_ to perform a handshake or agreement, simply a digital signature. 
 
 Now that we have a couple of examples, one of fungibility and another one of non-fungibility, we can move on to the last piece of the puzzle: tokens.
 
-#### Fungible tokens on the blockchain
+### Fungible tokens on the blockchain
 
 **With some blockchain-specific terminology**: A token on the Ethereum blockchain, other Ethereum Virtual Machine (EVM) compatible blockchains, and other non-EVM blockchains, is typically a smart contract, basically an address that corresponds to a script, a piece of code with attributes and methods. One of the most fundamental and basic smart contracts one can have are tokens. These will normally have functions that allow for the tokens to be moved from one wallet to another, attributes that describe how much of that token any given address has, etc...
 
@@ -43,13 +43,16 @@ Anything we can represent in real life with a symbolic plastic token, identical 
 Let's illustrate this with an example, the *stablecoin* (meaning its value is pegged to that of a specific fiat currency) USDC:
 
 - USDC is a **fungible** token on the blockchain, meaning 1 USDC in my wallet is identical to another 1 USDC in someone else's wallet.
+  
 - 1 USDC always represents 1 USD in real life (in [Centre's](https://www.centre.io/) reserves)
+  
 - USDC follows the ERC-20 standard for tokens, which is a set of rules to follow when deploying a token contract on the Ethereum blockchain ([investopedia](https://www.investopedia.com/news/what-erc20-and-what-does-it-mean-ethereum/) has an OK article on what this means, in case you want to read further)
+  
 - Any amount of USDC can be transferred from one wallet to another by interacting with the [USDC smart contract](https://etherscan.io/address/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48#code), for example, if I have 10.5 USDC in my wallet and I want to send it to a friend, I will take my software (or hardware) wallet, click on the 10.5 USDC in my account and then click send on the wallet. This will call the function `transfer()`, through which we can specify how much we want to send and to what address we want to send it:
 
 ![USDC transfer() function](./assets/3.png)
 
-#### Non-fungible tokens on the blockchain
+### Non-fungible tokens on the blockchain
 
 Non-fungible tokens or NFTs are a specific type of token on the blockchain that follows a different standard (ERC-721 or ERC-1155) to fungible tokens (ERC-20). These tokens have several interesting properties. 
 
@@ -80,12 +83,14 @@ In the case of this legendary painting we can say that this value, no matter how
 
 The question some people ask me is, and excuse them for cussing, "Why the **FUCK** is this piece of **SHIT** jpeg being sold for millions?". To which I first would say "chill bro" and then explain that people *like money*, people *want money*, because money is useful, and people *speculate* on the value of assets with the purpose and intent to *make money*. Sure let's not discard those individuals that do have some sort of emotional attachment to their CryptoPunk or Bored Ape, it's not like they paid 200K for them or something... However, these are not the majority of people trading these digital assets. The majority will buy these to try and flip them for a profit, simple as that, you have a lot of ETH to buy one of these, then you can get a lot of ETH for selling one of these and (hopefully) even more than what it initially costed you.
 
-#### Risks
+### Risks
 
 As a result, these digital assets command huge levels of trading volume between speculators and traders. Though they carry additional risk that other digital assets do not always carry:
 
 - **Liquidity**: The NFT market is largely illiquid, given that the tokens tend to have a relatively steep price and there's *so many* different collections of them, holding NFTs that do not belong to extremely popular collections like CryptoPunks tend to result in you buying the asset for more than you can get by selling it.
+  
 - **Next-big thing disease**: NFT collections that do not *catch on* will lose value and interest of speculators, and as with every market, there's losers and there's winners. With NFTs, the losers are those that are left holding the assets with no possibility of selling it, or forced to sell them at a loss. The winners are those that will successfully flip them for a profit, or at least break even.
+  
 - **Lack of continued development from creators**: An NFT collection may be created by a large team of engineers, artists or perhaps a large conglomerate or company. Though it can also be created by some anonymous dude on telegram that got paid a couple thousand bucks to copy-paste a popular collection's smart contract, lightly modify it and do all the tedious work that requires deploying an NFT collection on the Ethereum blockchain. Creators that do not show active development activity or creation of an ecosystem around their collection tend to fall into irrelevancy. 
 
 ## Actually useful NFTs
@@ -133,8 +138,11 @@ Gold obtained through either gameplay or gem conversion can later be used to pur
 Guild wars 2 legendary weapons (and similarly expensive items) could be a perfect candidate for NFTs, and here I want to present some arguments why this is a good idea:
 
 - NFTs are tokens on the blockchain and transactions on the blockchain are *public*, therefore ArenaNet would have greater control over who is selling or buying large amounts of these in-game items
+  
 - NFTs are purchased with cryptocurrency, which we can value in an objective manner in the open market in fiat currency. So the value of these in-game items as NFTs would be objective and would not require the many different conversions that buying highly valued in-game items in gold requires (Fiat currency <--> Gems <--> Gold <--> In-game item)
+  
 - ArenaNet could charge royalties on the exchange of these goods in a highly liquid and *actually useful and valuable currency* outside of Guild Wars 2, like ETH.
+  
 - People [**buy and sell these for money**](https://www.reddit.com/r/Guildwars2/comments/4il4zr/buying_legendary_weapons_with_gems/) anyway, there is absolutely NO need for ArenaNet to spend resources and energy trying to combat a third-party market that will exist anyway. They could, instead, be the *owners* of this market, creating restrictions for these items to be traded exclusively through their own market.
 
 Just like Guild Wars 2, other games could implement NFTs in a way the user *doesn't even know* they're using NFTs, thereby avoiding any [unnecessary backlash](https://cointelegraph.com/news/ubisoft-executive-responds-to-the-backlash-over-new-nft-platform) trying to force the concept down your clients' (gamers) throat.
@@ -148,15 +156,21 @@ NFTs can be and are very useful, we're just too focused on a speculative and qui
 This is not financial advice, but I want to end with a recommendation after indulging in these markets as a risk-averse, careful investor:
 
 - Do not buy assets with money that you can't afford to lose
+  
 - Do not buy NFTs from random collections unless you're absolutely sure you can bear the loss
+  
 - Do not bet your livelihood on JPEGs
+  
 - Inform yourself before you say NFTs are 'useless'. They're not useless, are pretty cool, and are here to stay whether you like it or not.
 
 ### Image sources
 
 1. [Dollar bill](https://commons.wikimedia.org/wiki/File:United_States_one_dollar_bill,_obverse.jpg)
+   
 2. [Salvator Mundi](https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci,_Salvator_Mundi,_c.1500,_oil_on_walnut,_45.4_%C3%97_65.6_cm.jpg)
+   
 4. [CryptoPunk #5136](https://opensea.io/assets/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/5136)
+   
 5. [ENS logo](https://gadgetstouse.com/blog/2022/02/05/ens-domain-buy-create-register/)
 
 ***
