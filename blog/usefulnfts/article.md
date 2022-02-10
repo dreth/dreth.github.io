@@ -95,7 +95,7 @@ As a result, these digital assets command huge levels of trading volume between 
 
 ## Actually useful NFTs
 
-NFTs have all sorts of novel uses, they can represent real-life assets, they can represent digital assets, but I want to focus on 2 specific use cases of these tokens on the blockchain, as well as 1 hypothetical use for them in a game I personally used to play.
+NFTs have all sorts of novel uses, they can represent real-life assets, they can represent other digital assets, but I want to focus on 2 specific use cases of these tokens on the blockchain, as well as 1 hypothetical use for them in a game I personally used to play.
 
 ### ENS names
 
@@ -153,13 +153,17 @@ NFTs are NOT a feature, they are, like screwdrivers, a tool, a path to a goal, a
 
 NFTs can be and are very useful, we're just too focused on a speculative and quite frankly very stupid market where everyone, like us, are just tryna' get some cash.
 
+Keep in mind that art, music and design are still a perfectly acceptable uses for NFTs, and I hope lots of artists are able to extract and create value for themselves through them. 
+
 This is not financial advice, but I want to end with a recommendation after indulging in these markets as a risk-averse, careful investor:
 
-- Do not buy illiquid digital assets with money that you can't afford to lose
+- Do not buy illiquid digital assets with money that you can't afford to lose.
   
-- Do not buy NFTs from random collections unless you're absolutely sure you can bear the loss
+- Do not buy NFTs from random collections unless you're absolutely sure you can bear the loss.
   
-- Do not bet your livelihood on JPEGs
+- Do not bet your livelihood on JPEGs.
+
+- Buying art is OK, supporting artists is great. Support artists and not some scammers' quickly and loosely put together cash grab NFT collection.
   
 - Inform yourself before you say NFTs are 'useless'. They're not useless, they're pretty cool, and are here to stay whether you like it or not.
 
