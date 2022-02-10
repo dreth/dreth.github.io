@@ -141,7 +141,7 @@ Just like Guild Wars 2, other games could implement NFTs in a way the user *does
 
 NFTs are NOT a feature, they are, like screwdrivers, a tool, a path to a goal, and companies and people alike should learn to treat them as such.
 
-## Conclusion
+### Conclusion
 
 NFTs can be and are very useful, we're just too focused on a speculative and quite frankly very stupid market where everyone, like us, are just tryna' get some cash.
 
