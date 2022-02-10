@@ -38,7 +38,7 @@ Now that we have a couple of examples, one of fungibility and another one of non
 
 **Without any blockchain-specific terminology**: A token on the Ethereum blockchain and other similar blockchains is basically an object with some properties and functionality. It can represent some real life currency, meaning it can be transferred (sent from one wallet to another), as well as in-game currency, voting rights, a company's shares, etc...
 
-Anything we can represent in real life with a symbolic plastic token, identical to other plastic tokens that serve its same purpose, we can represent with a token on the blockchain, except it can be done in a permissionless manner. Anyone can interact with the token, anyone can (if the deployer chooses to) show the definition of the token publicly, all in a permissionless manner. 
+Anything we can represent in real life with a symbolic plastic token, identical to other plastic tokens that serve its same purpose, we can represent with a token on the blockchain, except it can be done in a permissionless manner. Anyone can interact with the token, anyone can (if the deployer chooses to) see the definition of the token publicly, all in a permissionless manner. 
 
 Let's illustrate this with an example, the *stablecoin* (meaning its value is pegged to that of a specific fiat currency) USDC:
 
