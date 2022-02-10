@@ -131,6 +131,10 @@ a.gb:hover {
     font-size: 1.8vw;
     font-family: ubuntu, Sans-Serif;
   }
+  h4 {
+    font-size: 1.6vw;
+    font-family: ubuntu, Sans-Serif;
+  }
   .dash {
     font-size: 1.6vw;
   }
@@ -184,6 +188,10 @@ a.gb:hover {
   }
   h3 {
     font-size: 4vw;
+    font-family: ubuntu, Sans-Serif;
+  }
+  h4 {
+    font-size: 2vw;
     font-family: ubuntu, Sans-Serif;
   }
   .dash {

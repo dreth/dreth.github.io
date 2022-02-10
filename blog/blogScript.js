@@ -6,24 +6,28 @@ var art_md_path = `/blog/${art_path}/article.md`;
 
 // lists of article info
 var articleDates = [
+    '10/02/2022',
     '23/01/2021',
     '16/11/2020',
     '14/11/2020',
     '13/10/2020'
 ];
 var articleTitles = [
+    'Useful NFTs',
     'My switch to linux as primary OS in 2020',
     'How to set up a Data Science environment on Windows using Visual Studio Code',
     'How a staple of Dominican cuisine, plantains, have helped me manage my Crohn’s Disease',
     'Como invertir en bienes raíces utilizando RealT y blockchain'
 ];
 var articleTag = [
+    'usefulnfts',
     'linux2020',
     'vscodewindows',
     'plantains',
     'tutorialrealt'
 ];
 var articleEmoji = [
+    '🖼️',
     '💽',
     '🖥️',
     '🇩🇴',
