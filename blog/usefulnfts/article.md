@@ -95,7 +95,7 @@ As a result, these digital assets command huge levels of trading volume between 
 
 ## Actually useful NFTs
 
-NFTs have all sorts of novel uses, they can represent real-life assets, they can represent digital assets, but I want to focus on 2 specific uses of these tokens on the blockchain, as well as 1 hypothetical use for them in a game I personally used to play.
+NFTs have all sorts of novel uses, they can represent real-life assets, they can represent digital assets, but I want to focus on 2 specific use cases of these tokens on the blockchain, as well as 1 hypothetical use for them in a game I personally used to play.
 
 ### ENS names
 
