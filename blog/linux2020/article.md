@@ -1,4 +1,4 @@
-# My switch to linux as primary OS in 2020
+# My switch (back) to linux as primary OS in 2020
 
 <figure>
     <img src="./assets/1.png">

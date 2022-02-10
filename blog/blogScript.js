@@ -14,7 +14,7 @@ var articleDates = [
 ];
 var articleTitles = [
     'Useful NFTs',
-    'My switch to linux as primary OS in 2020',
+    'My switch (back) to linux as primary OS in 2020',
     'How to set up a Data Science environment on Windows using Visual Studio Code',
     'How a staple of Dominican cuisine, plantains, have helped me manage my Crohn’s Disease',
     'Como invertir en bienes raíces utilizando RealT y blockchain'
