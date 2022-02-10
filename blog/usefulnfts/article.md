@@ -34,7 +34,7 @@ Now that we have a couple of examples, one of fungibility and another one of non
 
 #### Fungible tokens on the blockchain
 
-**With some blockchain-specific terminology**: A token on the Ethereum blockchain, and other Ethereum Virtual Machine (EVM) compatible blockchains, is a smart contract, basically an address that corresponds to a script, a piece of code with attributes and methods. One of the most fundamental and basic smart contracts one can have are tokens. These will normally have functions that allow for the tokens to be moved from one wallet to another, or attributes that describe how much of that token any given address has.
+**With some blockchain-specific terminology**: A token on the Ethereum blockchain, other Ethereum Virtual Machine (EVM) compatible blockchains, and other non-EVM blockchains, is typically a smart contract, basically an address that corresponds to a script, a piece of code with attributes and methods. One of the most fundamental and basic smart contracts one can have are tokens. These will normally have functions that allow for the tokens to be moved from one wallet to another, attributes that describe how much of that token any given address has, etc...
 
 **Without any blockchain-specific terminology**: A token on the Ethereum blockchain and other similar blockchains is basically an object with some properties and functionality. It can represent some real life currency, meaning it can be transferred (sent from one wallet to another), as well as in-game currency, voting rights, a company's shares, etc...
 
