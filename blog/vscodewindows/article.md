@@ -1,4 +1,4 @@
-## How to set up a Data Science environment on Windows using Visual Studio Code
+# How to set up a Data Science environment on Windows using Visual Studio Code
 
 It is no mystery that I am profoundly in love with VS Code in many more ways than I’m comfortable admitting. Since my good friend Victor showed me the power of this application, I not only have never gone back to any other code editor but I’ve also even replaced other tools with it.
 

@@ -33,7 +33,7 @@
   <script src="../blogScript.js"></script>
 
   <!-- title -->
-  <title>Useful NFTs</title>
+  <title>Useful NFTs?</title>
 </head>
 
 <body class="articleBody">
@@ -46,7 +46,7 @@
       .then(response => response.text())
       .then(data => {
         document.getElementById('content').innerHTML =
-          marked.parse(`#${data}`);
+          marked.parse(`${data}`);
       });
   </script>
   <div id="content"></div>

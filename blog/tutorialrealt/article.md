@@ -1,4 +1,4 @@
-## Como invertir en bienes raíces utilizando RealT y blockchain
+# Como invertir en bienes raíces utilizando RealT y blockchain
 
 En un mundo increíblemente globalizado y cuya población se encuentra en constante crecimiento, la demanda de vivienda siempre se mantendrá vigente.
 

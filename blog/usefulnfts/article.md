@@ -1,4 +1,4 @@
-## Useful NFTs?
+# Useful NFTs?
 
 ### What is an NFT?
 

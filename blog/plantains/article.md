@@ -1,4 +1,4 @@
-## How a staple of Dominican cuisine has helped me manage my Crohn’s Disease
+# How a staple of Dominican cuisine has helped me manage my Crohn’s Disease
 
 I’m partly dominican and spanish. I grew up, went to school and did my bachelor’s in the Dominican Republic. My closest friends and parents live there and it has and will always have a special place in my heart.
 
