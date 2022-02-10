@@ -155,13 +155,13 @@ NFTs can be and are very useful, we're just too focused on a speculative and qui
 
 This is not financial advice, but I want to end with a recommendation after indulging in these markets as a risk-averse, careful investor:
 
-- Do not buy assets with money that you can't afford to lose
+- Do not buy illiquid digital assets with money that you can't afford to lose
   
 - Do not buy NFTs from random collections unless you're absolutely sure you can bear the loss
   
 - Do not bet your livelihood on JPEGs
   
-- Inform yourself before you say NFTs are 'useless'. They're not useless, are pretty cool, and are here to stay whether you like it or not.
+- Inform yourself before you say NFTs are 'useless'. They're not useless, they're pretty cool, and are here to stay whether you like it or not.
 
 ### Image sources
 
