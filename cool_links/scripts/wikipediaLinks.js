@@ -70,7 +70,8 @@ var wikipediaArticles = {
     'Union Jack':"EN_Union_Jack",
     'Sister city':"EN_Sister_city",
     'List of most expensive paintings':"EN_List_of_most_expensive_paintings",
-    'São Paulo':"EN_S%C3%A3o_Paulo"
+    'São Paulo':"EN_S%C3%A3o_Paulo",
+    'United Kingdom of Portugal, Brazil and the Algarves':"EN_United_Kingdom_of_Portugal,_Brazil_and_the_Algarves"
 };
 
 // links for the article MD files and article URL
