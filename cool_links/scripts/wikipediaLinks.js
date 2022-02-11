@@ -68,7 +68,8 @@ var wikipediaArticles = {
     'Kingdom of Ireland':"EN_Kingdom_of_Ireland",
     'Acts of Union 1800':"EN_Acts_of_Union_1800",
     'Union Jack':"EN_Union_Jack",
-    'Sister city':"EN_Sister_city"
+    'Sister city':"EN_Sister_city",
+    'List of most expensive paintings':"EN_List_of_most_expensive_paintings"
 };
 
 // links for the article MD files and article URL
