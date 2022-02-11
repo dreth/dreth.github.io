@@ -69,7 +69,8 @@ var wikipediaArticles = {
     'Acts of Union 1800':"EN_Acts_of_Union_1800",
     'Union Jack':"EN_Union_Jack",
     'Sister city':"EN_Sister_city",
-    'List of most expensive paintings':"EN_List_of_most_expensive_paintings"
+    'List of most expensive paintings':"EN_List_of_most_expensive_paintings",
+    'São Paulo':"EN_S%C3%A3o_Paulo"
 };
 
 // links for the article MD files and article URL
