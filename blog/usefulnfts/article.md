@@ -1,8 +1,33 @@
 # Useful NFTs?
 
+NFTs have taken the spotlight extremely quickly and suddenly everyone knows about their existence. From being a piece of technology that only people involved in the blockchain world knew about, to having tons of artists, famous or infamous, release their own collections, gaming companies attempt to introduce it in their gaming ecosystems with limited success or huge backlash, and existing crypto projects integrate it in their existing functionality.
+
+They seem to be here to stay, but there's a lot of details people don't quite understand about these. Here I will try to demystify them, show some interesting use-cases for NFTs currently implemented, give my own opinion on their value justify it in some way. I write this because I find the topic fascinating, but also because I strongly dislike how the media have painted these, generally causing people to _despise_ the technology without quite understanding its use.
+
+***
+
+### Article index
+
+  - [What is an NFT?](#what-is-an-nft)
+    - [Fungibility](#fungibility)
+    - [Non-fungibility](#non-fungibility)
+  - [Tokens on the blockchain](#tokens-on-the-blockchain)
+    - [Fungible tokens on the blockchain](#fungible-tokens-on-the-blockchain)
+    - [Non-fungible tokens on the blockchain](#non-fungible-tokens-on-the-blockchain)
+    - [Value](#value)
+    - [Risks](#risks)
+  - [Actually useful NFTs](#actually-useful-nfts)
+    - [ENS names](#ens-names)
+    - [Uniswap positions](#uniswap-positions)
+    - [NFTs in MMOs and games with internal marketplaces](#nfts-in-mmos-and-games-with-internal-marketplaces)
+  - [Conclusion](#conclusion)
+  - [Image sources](#image-sources)
+
+***
+
 ## What is an NFT?
 
-According to my favourite source in the universe, [wikipedia](https://en.wikipedia.org/wiki/Non-fungible_token), an NFT is:
+According to my favourite source in the universe, [Wikipedia](https://en.wikipedia.org/wiki/Non-fungible_token), an NFT is:
 
 > *A non-fungible token (NFT) is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger, that can be sold and traded. Types of NFT data units may be associated with digital files such as photos, videos, and audio. Because each token is uniquely identifiable, NFTs differ from blockchain cryptocurrencies, such as Bitcoin.*
 
@@ -24,7 +49,7 @@ When an product, commodity or asset is _non fungible_, it is fundamentally uniqu
 
 ![Salvator Mundi](./assets/2.jpg)
 
-Only one copy of _Salvator Mundi_ exists, da Vinci could've painted 3 _Salvator Mundi_, but he didn't, he painted one. However, had he painted 3, then we would have _Salvator Mundi_ No.1, _Salvator Mundi_ No.2 and _Salvator Mundi_ No.3, which would all be unique in their own way, or identical, but still unique at least in the order in which they were painted, thus retaining some difference between each other in terms of order (assuming da Vinci could reproduce 3 copies of it in absolutely perfect order like a robot).
+Only one copy of it exists, Leonardo could've painted three copies of this artwork, but he didn't, he painted one. However, had he painted three, then we would have _Salvator Mundi No.1_, _Salvator Mundi No.2_ and _Salvator Mundi No.3_, which would all be unique in their own way, or identical, but still unique at least in the order in which they were painted, thus retaining some difference between each other in terms of order (assuming Leonardo could reproduce 3 copies of it in absolutely perfect order like a robot).
 
 ## Tokens on the blockchain
 
@@ -46,7 +71,7 @@ Let's illustrate this with an example, the *stablecoin* (meaning its value is pe
   
 - 1 USDC always represents 1 USD in real life (in [Centre's](https://www.centre.io/) reserves)
   
-- USDC follows the ERC-20 standard for tokens, which is a set of rules to follow when deploying a token contract on the Ethereum blockchain ([investopedia](https://www.investopedia.com/news/what-erc20-and-what-does-it-mean-ethereum/) has an OK article on what this means, in case you want to read further)
+- USDC follows the ERC-20 standard for tokens, which is a set of rules to follow when deploying a token contract on the Ethereum blockchain ([Investopedia](https://www.investopedia.com/news/what-erc20-and-what-does-it-mean-ethereum/) has an OK article on what this means, in case you want to read further)
   
 - Any amount of USDC can be transferred from one wallet to another by interacting with the [USDC smart contract](https://etherscan.io/address/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48#code), for example, if I have 10.5 USDC in my wallet and I want to send it to a friend, I will take my software (or hardware) wallet, click on the 10.5 USDC in my account and then click send on the wallet. This will call the function `transfer()`, through which we can specify how much we want to send and to what address we want to send it:
 
@@ -75,15 +100,15 @@ Yes, there are instances where the asset represented by the token is not an exte
 
 We can question the utility of tokens like *CryptoPunks*, but there's not much use in discussing the utility of *Salvator Mundi* either, both are art, and they can be used for whatever its owner wants to use it.
 
-### Value
+#### Value
 
 As humans, we tend to place value to unique items with special and unique qualities, which is why paintings like this one hold such a massive monetary value. If someone will pay X amount for it, then it is worth X amount. 
 
-In the case of this legendary painting we can say that this value, no matter how large, is perfectly justified, after all _this is a da Vinci painting_. I tend to agree with this view, some things **should** hold a high value, others perhaps **should not**, whether fungible or non-fungible. 
+In the case of this legendary painting we can say that this value, no matter how large, is perfectly justified, after all _this is a painting by Leonardo da Vinci_. I tend to agree with this view, some things **should** hold a high value, others perhaps **should not**, whether fungible or non-fungible. 
 
 The question some people ask me is, and excuse them for cussing, "Why the **FUCK** is this piece of **SHIT** jpeg being sold for millions?". To which I first would say "chill bro" and then explain that people *like money*, people *want money*, because money is useful, and people *speculate* on the value of assets with the purpose and intent to *make money*. Sure let's not discard those individuals that do have some sort of emotional attachment to their CryptoPunk or Bored Ape, it's not like they paid 200K for them or something... However, these are not the majority of people trading these digital assets. The majority will buy these to try and flip them for a profit, simple as that, you have a lot of ETH to buy one of these, then you can get a lot of ETH for selling one of these and (hopefully) even more than what it initially costed you.
 
-### Risks
+#### Risks
 
 As a result, these digital assets command huge levels of trading volume between speculators and traders. Though they carry additional risk that other digital assets do not always carry:
 
@@ -149,7 +174,7 @@ Just like Guild Wars 2, other games could implement NFTs in a way the user *does
 
 NFTs are NOT a feature, they are, like screwdrivers, a tool, a path to a goal, and companies and people alike should learn to treat them as such.
 
-### Conclusion
+## Conclusion
 
 NFTs can be and are very useful, we're just too focused on a speculative and quite frankly very stupid market where everyone, like us, are just tryna' get some cash.
 
@@ -167,7 +192,7 @@ This is not financial advice, but I want to end with a recommendation after indu
   
 - Inform yourself before you say NFTs are 'useless'. They're not useless, they're pretty cool, and are here to stay whether you like it or not.
 
-### Image sources
+## Image sources
 
 1. [Dollar bill](https://commons.wikimedia.org/wiki/File:United_States_one_dollar_bill,_obverse.jpg)
    
