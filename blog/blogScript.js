@@ -73,4 +73,4 @@ $("#expandBlogPreview").click(function() {
     } else {
         $("#expandBlogPreview").html('⊖')
     }
-})
+});
