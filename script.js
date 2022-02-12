@@ -13,7 +13,7 @@ var about_es = 'https://dac.ac/about/es';
 
 // detecting the language to abstract language-based links
 let url_lang = window.location.href.split("/");
-url_lang = url_lang[url_lang.length - 1];
+url_lang = url_lang[url_lang.length - 2];
 if (url_lang == 'nl') {
     var lang = 'en';
 } else {
