@@ -36,9 +36,23 @@ var articleEmoji = [
     '🏘️'
 ];
 
+// latest 3 articles preview text in my site's langs
+if (url_lang) {
+    switch(url_lang) {
+        case 'es':
+            var smallArtList = '<br><span>Últimos tres artículos:</span><br><br><ul>';
+            break;
+        case 'en':
+            var smallArtList = '<br><span>Latest three blog posts:</span><br><br><ul>';
+            break;
+        case 'nl':
+            var smallArtList = '<br><span>Laatste drie blogberichten:</span><br><br><ul>';
+    }
+}
+
+
 // links for the article MD files and article URL
 var artList = '<ul>';
-var smallArtList = '<br>';
 for (let i = 0; i <= articleTag.length-1; i++) {
     // generate article URL
     let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
