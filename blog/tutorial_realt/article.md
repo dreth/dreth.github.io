@@ -11,7 +11,7 @@ La verdad es que no necesariamente gracias a la increíble innovación de empres
 
 ***
 
-### Tabla de contenido
+### Secciones del artículo
 
   - [Algunos detalles importantes](#algunos-detalles-importantes)
   - [¿Cómo RealT logra esto?](#cómo-realt-logra-esto)
