@@ -20,11 +20,11 @@ var articleTitles = [
     'Como invertir en bienes raíces utilizando RealT y blockchain'
 ];
 var articleTag = [
-    'usefulnfts',
-    'linux2020',
-    'vscodewindows',
+    'useful_nfts',
+    'linux_2020',
+    'vs_code_windows',
     'plantains',
-    'tutorialrealt'
+    'tutorial_realt'
 ];
 var articleEmoji = [
     '🖼️',
