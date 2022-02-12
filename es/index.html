@@ -26,9 +26,10 @@
 
   <!-- stylesheet, script, icon and font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-  <link rel="shortcut icon" id="icon" note="1"/>
-  <link rel="stylesheet" type="text/css" href="../styles.css">
-  <script src="../script.js"></script>
+  <link rel="shortcut icon" id="icon"/>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <script src="/script.js"></script>
+  <script src="/jquery.js"></script>
 
   <!-- title -->
   <title>Daniel A.</title>
@@ -51,7 +52,11 @@
         <br>
         <li class="ml github"><a href="#" onclick="this.href = github;" oncontextmenu="this.href = github;" class="b">github</a></li>
         <br>
-        <li class="ml blog"><a href="#" onclick="this.href = blog;" oncontextmenu="this.href = blog;" class="b">blog</a></li>
+        <li class="ml blog">
+          <a href="#" onclick="this.href = blog;" oncontextmenu="this.href = blog;" class="b">blog</a>
+          <a href="#" class="bp" id="expandBlogPreview">⊕</a>
+        </li>
+          <div id="homepageArticlePreview"></div>
         <br>
         <li class="ml email"><a href="#" onclick="this.href = email;" oncontextmenu="this.href = email;" class="b">correo electrónico</a></li>
         <br>
@@ -69,6 +74,7 @@
       <a href="https://dac.ac/nl" class="l shownl">🇳🇱🇧🇪</a> <span class="hidenl"> - nederlands</span>
     </ul>
   </div>
+  <script src="/blog/blogScript.js"></script>
 </body>
 
 </html>

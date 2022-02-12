@@ -35,6 +35,18 @@ a.c:visited {
 a.c:hover {
   color: #00a500;
 }
+/* hide and show blog preview link */
+a.bp:link {
+  text-decoration: none;
+  color: rgb(0, 174, 255);
+  font-weight: bold;
+}
+a.bp:visited {
+  color: rgb(0, 174, 255);
+}
+a.bp:hover {
+  color: #d2ff6a;
+}
 /* links (title) */
 a.title:link {
   text-decoration: none;
@@ -80,6 +92,7 @@ a.gb:hover {
 .shownl:hover + .hidenl {
   display: inline-block;
 }
+
 /* screen width higher than 1000 px */
 @media screen and (min-width: 1000px) {
   .l:visited {
@@ -142,6 +155,11 @@ a.gb:hover {
   .dash {
     font-size: 1.6vw;
   }
+  /* numbered lists font */
+  ol {
+    font-size: 1.7vw;
+    font-family: ubuntu, Sans-Serif;
+  }
 }
 /* screen width lower than 1000 px */
 @media screen and (max-width: 1000px) {
@@ -167,7 +185,7 @@ a.gb:hover {
   ul,
   p,
   span {
-    font-size: 3.5vw;
+    font-size: 3.2vw;
     font-family: ubuntu, Sans-Serif;
     word-wrap: break-word;
   }
@@ -199,11 +217,16 @@ a.gb:hover {
     font-family: ubuntu, Sans-Serif;
   }
   h4 {
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-family: ubuntu, Sans-Serif;
   }
   .dash {
     font-size: 3.5vw;
+  }
+  /* numbered lists font */
+  ol {
+    font-size: 3.5vw;
+    font-family: ubuntu, Sans-Serif;
   }
 }
 /* li bullet icons for diff profiles/links */
@@ -252,4 +275,3 @@ li.playlists:before {
 li.tag:before {
   content:'>';
 }
-

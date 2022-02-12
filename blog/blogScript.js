@@ -3,6 +3,8 @@ var blog = 'https://dac.ac/blog/';
 let art_path = window.location.href.split("/");
 art_path = art_path[art_path.length - 2];
 var art_md_path = `/blog/${art_path}/article.md`;
+// hide article preview list
+$("#homepageArticlePreview").toggle()
 
 // lists of article info
 var articleDates = [
@@ -36,14 +38,39 @@ var articleEmoji = [
 
 // links for the article MD files and article URL
 var artList = '<ul>';
+var smallArtList = '<br>';
 for (let i = 0; i <= articleTag.length-1; i++) {
     // generate article URL
     let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
 
     // append to article list html object
     artList += `<span>${articleEmoji[i]}</span> - <span class="ad">${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
+
+    if (i < 2) {
+        smallArtList += `<span>${articleEmoji[i]}</span> - <span class="ad">${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
+    } else if (i == 2) {
+        smallArtList += `<span>${articleEmoji[i]}</span> - <span class="ad">${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br>`;
+    }
 }
 artList += '</ul><hr>';
 
 // appending the list of articles
-document.getElementById("articleList").innerHTML = artList;
+if (document.getElementById("articleList")) {
+    document.getElementById("articleList").innerHTML = artList;
+}
+
+
+// appending the preview list of articles
+if (document.getElementById("homepageArticlePreview")) {
+    document.getElementById("homepageArticlePreview").innerHTML = smallArtList;
+}
+
+// show or hide blog preview
+$("#expandBlogPreview").click(function() {
+    $("#homepageArticlePreview").toggle()
+    if ($("#expandBlogPreview").html() === '⊖') {
+        $("#expandBlogPreview").html('⊕')
+    } else {
+        $("#expandBlogPreview").html('⊖')
+    }
+})

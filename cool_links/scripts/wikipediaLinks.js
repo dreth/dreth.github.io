@@ -76,12 +76,12 @@ var wikipediaArticles = {
 
 // links for the article MD files and article URL
 var artList = '<ul>';
-for (const [name, page] of Object.entries(wikipediaArticles)) {
+for (const name of Object.keys(wikipediaArticles).reverse()) {
     // extract language of article
-    let articleLang = page.slice(0,2);
+    let articleLang = wikipediaArticles[name].slice(0,2);
 
     // create article URL
-    var articleURL = `https://${articleLang}.${wikipediaBaseLink}${page.slice(3)}` 
+    var articleURL = `https://${articleLang}.${wikipediaBaseLink}${wikipediaArticles[name].slice(3)}` 
 
     // append to article list html object
     artList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br><br>`;
