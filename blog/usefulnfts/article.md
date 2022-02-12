@@ -102,9 +102,9 @@ We can question the utility of tokens like *CryptoPunks*, but there's not much u
 
 #### Value
 
-As humans, we tend to place value to unique items with special and unique qualities, which is why paintings like this one hold such a massive monetary value. If someone will pay X amount for it, then it is worth X amount. 
+As humans, we tend to place value to unique items with special and unique qualities, which is why paintings like the aforementioned hold such a massive monetary value. If someone will pay *x amount* for it, then it is worth *x amount*. 
 
-In the case of this legendary painting we can say that this value, no matter how large, is perfectly justified, after all _this is a painting by Leonardo da Vinci_. I tend to agree with this view, some things **should** hold a high value, others perhaps **should not**, whether fungible or non-fungible. 
+In the case of this legendary painting we can say that this value, no matter how large, is perfectly justified, after all **this is a painting by Leonardo da Vinci**. I tend to agree with this view, some things **should** hold a high value, others perhaps **should not**, whether fungible or non-fungible. 
 
 The question some people ask me is, and excuse them for cussing, "Why the **FUCK** is this piece of **SHIT** jpeg being sold for millions?". To which I first would say "chill bro" and then explain that people *like money*, people *want money*, because money is useful, and people *speculate* on the value of assets with the purpose and intent to *make money*. Sure let's not discard those individuals that do have some sort of emotional attachment to their CryptoPunk or Bored Ape, it's not like they paid 200K for them or something... However, these are not the majority of people trading these digital assets. The majority will buy these to try and flip them for a profit, simple as that, you have a lot of ETH to buy one of these, then you can get a lot of ETH for selling one of these and (hopefully) even more than what it initially costed you.
 
