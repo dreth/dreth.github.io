@@ -5,13 +5,13 @@ $("#homepageCoolLinkPreview").toggle()
 if (url_lang) {
     switch(url_lang) {
         case 'es':
-            var homepageCoolLinkList = '<br><span>Articulos de Wikipedia que leí recientemente:</span><br><br><ul>';
+            var homepageCoolLinkList = '<br><span>Articulos de Wikipedia que leí recientemente:</span><br><br>';
             break;
         case 'en':
-            var homepageCoolLinkList = '<br><span>Some Wikipedia articles I read recently:</span><br><br><ul>';
+            var homepageCoolLinkList = '<br><span>Some Wikipedia articles I read recently:</span><br><br>';
             break;
         case 'nl':
-            var homepageCoolLinkList = '<br><span>Wikipedia-artikelen die ik onlangs heb gelezen:</span><br><br><ul>';
+            var homepageCoolLinkList = '<br><span>Wikipedia-artikelen die ik onlangs heb gelezen:</span><br><br>';
     }
 }
 
@@ -26,9 +26,9 @@ for (const name of Object.keys(wikipediaArticles).reverse()) {
 
     // append to article list html object
     if (cnt < 2) {
-        homepageCoolLinkList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br><br>`;
+        homepageCoolLinkList += `<span>🔗</span> <a class="bp" href="${articleURL}">${name}</a><br><br>`;
     } else {
-        homepageCoolLinkList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br>`;
+        homepageCoolLinkList += `<span>🔗</span> <a class="bp" href="${articleURL}">${name}</a><br>`;
     }
     
 

@@ -57,13 +57,13 @@ if (document.getElementById("playlistsLinks")) {
 if (url_lang) {
     switch(url_lang) {
         case 'es':
-            var homepagePlaylistList = '<br><span>Moderadamente orgulloso de esta:</span><br><br><ul>';
+            var homepagePlaylistList = '<br><span>Moderadamente orgulloso de esta:</span><br><br>';
             break;
         case 'en':
-            var homepagePlaylistList = '<br><span>Kinda proud of this one:</span><br><br><ul>';
+            var homepagePlaylistList = '<br><span>Kinda proud of this one:</span><br><br>';
             break;
         case 'nl':
-            var homepagePlaylistList = '<br><span>Best wel trots op deze:</span><br><br><ul>';
+            var homepagePlaylistList = '<br><span>Best wel trots op deze:</span><br><br>';
     }
 }
 

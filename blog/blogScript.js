@@ -40,13 +40,13 @@ var articleEmoji = [
 if (url_lang) {
     switch(url_lang) {
         case 'es':
-            var smallArtList = '<br><span>Últimos tres artículos:</span><br><br><ul>';
+            var smallArtList = '<br><span>Últimos tres artículos:</span><br><br>';
             break;
         case 'en':
-            var smallArtList = '<br><span>Latest three blog posts:</span><br><br><ul>';
+            var smallArtList = '<br><span>Latest three blog posts:</span><br><br>';
             break;
         case 'nl':
-            var smallArtList = '<br><span>Laatste drie blogberichten:</span><br><br><ul>';
+            var smallArtList = '<br><span>Laatste drie blogberichten:</span><br><br>';
     }
 }
 
