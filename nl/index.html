@@ -24,7 +24,7 @@
   <meta property="twitter:image" content="/assets/icons/meta.png">
 
   <!-- stylesheet, script, icon and font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="/assets/fonts/ubuntu/ubuntu.css">
   <link rel="shortcut icon" id="icon"/>
   <link rel="stylesheet" type="text/css" href="/styles.css">
   <script src="/script.js"></script>
@@ -43,7 +43,11 @@
       <p class="heading">welkom!</p>
 
       <ul class="noBullets">
-        <li class="ml cv"><a href="#" onclick="this.href = about;" oncontextmenu="this.href = about;" class="b">over mij</a></li>
+        <li class="ml cv">
+          <a href="#" onclick="this.href = about;" oncontextmenu="this.href = about;" class="b">over mij</a>
+          <a href="#" class="bp" id="expandAboutMePreview">⊕</a>
+        </li>
+          <div id="homepageAboutMePreview"></div>
         <br>
         <!-- <li class="ml waid"><a href="#" onclick="this.href = status;" oncontextmenu="this.href = status;" class="c">wat ben ik nu aan het doen?</a></li>
         <br> -->
@@ -72,6 +76,8 @@
         <li class="ml email"><a href="#" onclick="this.href = email;" oncontextmenu="this.href = email;" class="b">e-mail</a></li>
       </ul>
       <br>
+
+      <!-- Language selection buttons -->
       <span class="heading2">andere talen:</span>
       <br>
       <a href="https://dac.ac/es" class="l showes">🇪🇸🇩🇴</a> <span class="hidees"> - español</span><span
@@ -81,10 +87,13 @@
       <a href="https://dac.ac/nl" class="l shownl">🇳🇱🇧🇪</a> <span class="hidenl"> - nederlands</span>
     </ul>
   </div>
+
+  <!-- Expandable previews scripts, edit these to modify previews -->
   <script src="/blog/blogScript.js"></script>
   <script src="/playlists/playlistsScript.js"></script>
   <script src="/cool_links/scripts/wikipediaLinks.js"></script>
   <script src="/cool_links/scripts/homepageLinks.js"></script>
+  <script src="/about/selfDescription.js"></script>
 </body>
 
 </html>

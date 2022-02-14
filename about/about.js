@@ -13,3 +13,4 @@ switch(browserLocale) {
 
 // setting h3 title
 document.getElementById("aboutTitle").innerHTML = `<h3>📃 ${aboutTitle}</h3>`
+

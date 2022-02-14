@@ -23,7 +23,6 @@ if (url_lang == 'nl') {
 var about = `${home}/about/${lang}`;
 var home_lang = `${home}/${lang}`;
 
-
 // check user locale to redirect to ideal language
 if (navigator.language.includes('es')) {
     var browserLocale = 'es'

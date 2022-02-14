@@ -26,12 +26,13 @@
 
   <!-- stylesheet, script, icon and font -->
   <link rel="shortcut icon" id="icon"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="/assets/fonts/ubuntu/ubuntu.css">
   <link href='/styles.css' rel='stylesheet' type='text/css'>
   <script src="/script.js"></script>
+  <script src="/jquery.js"></script>
 
   <!-- title -->
-  <title>Daniel A. | Sobre mí</title>
+  <title>Sobre mí | Daniel A.</title>
 </head>
 
 <body>
@@ -43,9 +44,7 @@
     <hr>
     <ul>
       <h3 class="aboutHeading2">Sobre mí</h3>
-      <p><span class="aboutHeading3">Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.</span><br><br>
-      <span class="aboutHeading3">Actualmente me dedico a trabajar en ciencia de datos, pero me mantengo abierto a nuevos retos (siempre que divertidos e interesantes)</span>
-      </p>
+      <div id="aboutMeDescription"></div>
     </ul>
     <hr>
     <ul>
@@ -150,6 +149,7 @@
       </div>
     </ul>
   </div>
+  <script src="/about/selfDescription.js"></script>
 </body>
 
 </html>
