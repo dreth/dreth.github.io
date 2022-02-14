@@ -74,7 +74,7 @@ var wikipediaArticles = {
     'United Kingdom of Portugal, Brazil and the Algarves':"EN_United_Kingdom_of_Portugal,_Brazil_and_the_Algarves"
 };
 
-// links for the article MD files and article URL
+// generate wikipedia link list
 var artList = '<ul>';
 for (const name of Object.keys(wikipediaArticles).reverse()) {
     // extract language of article
@@ -89,4 +89,6 @@ for (const name of Object.keys(wikipediaArticles).reverse()) {
 artList += '</ul><hr>';
 
 // appending the list of articles
-document.getElementById("wikipediaLinkList").innerHTML = artList;
+if (document.getElementById("wikipediaLinkList")) {
+    document.getElementById("wikipediaLinkList").innerHTML = artList;
+}

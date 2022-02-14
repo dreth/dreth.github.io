@@ -33,6 +33,17 @@ a.c:visited {
 a.c:hover {
   color: #00a500;
 }
+/* links (p) */
+a.p:link {
+  text-decoration: none;
+  color: rgb(0, 174, 255);
+}
+a.p:visited {
+  color: rgb(0, 174, 255);
+}
+a.p:hover {
+  color: rgb(255, 0, 0);
+}
 /* hide and show blog preview link */
 a.bp:link {
   text-decoration: none;
@@ -135,18 +146,22 @@ a.gb:hover {
   h1 {
     font-size: 2.4vw;
     font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
   }
   h2 {
     font-size: 2vw;
     font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
   }
   h3 {
     font-size: 1.8vw;
     font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
   }
   h4 {
     font-size: 1.6vw;
     font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
   }
   .dash {
     font-size: 1.6vw;
@@ -203,18 +218,22 @@ a.gb:hover {
   h1 {
     font-size: 6vw;
     font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
   }
   h2 {
     font-size: 5vw;
     font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
   }
   h3 {
     font-size: 4vw;
     font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
   }
   h4 {
     font-size: 3.5vw;
     font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
   }
   .dash {
     font-size: 3.5vw;

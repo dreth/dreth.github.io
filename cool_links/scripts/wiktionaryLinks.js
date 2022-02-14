@@ -8,7 +8,7 @@ var wiktionaryArticles = {
     'garish':'garish'
 };
 
-// links for the article MD files and article URL
+// generate wiktionary link list
 var artList = '<ul>';
 for (const name of Object.keys(wiktionaryArticles).reverse()) {
     // create article URL
@@ -20,4 +20,7 @@ for (const name of Object.keys(wiktionaryArticles).reverse()) {
 artList += '</ul><hr>';
 
 // appending the list of articles
-document.getElementById("wiktionaryLinkList").innerHTML = artList;
+if (document.getElementById("wiktionaryLinkList")) {
+    document.getElementById("wiktionaryLinkList").innerHTML = artList;
+}
+

@@ -11,8 +11,13 @@ switch(browserLocale) {
         playlistsTitle = 'afspeelijsten'
 }
 
+// hide homepage playlists preview
+$("#homepagePlaylistPreview").toggle()
+
 // setting h1 title
-document.getElementById("playlistsTitle").innerHTML = `<h3>🎶 ${playlistsTitle}</h3>`
+if (document.getElementById("playlistsTitle")) {
+    document.getElementById("playlistsTitle").innerHTML = `<h3>🎶 ${playlistsTitle}</h3>`
+}
 
 // base spotify link
 var baseSpotifyLink = 'https://open.spotify.com/playlist/';
@@ -31,15 +36,58 @@ var playlistsNames = {
     'pandemic songs':'7FNIteKO07QFM73I2eos8P?si=L0hl6JEZTRq_a-pcMo8Yrg'
 };
 
-// links for the article MD files and article URL
+// homepage preview playlists
+var homepagePlaylistsNames = {
+    'ambient':'3tJch4CHUPWtvW9oO9hr9K?si=29AL2w5gQDaXFN9S2CrGFQ'
+}
+
+// creating playlists list
 var playlistList = '';
 for (const [name, page] of Object.entries(playlistsNames)) {
+    // append to playlist list html object
+    playlistList += `<a class="p" href="${baseSpotifyLink}${page}">${name}<br><img class="playlistImages" src="/playlists/images/${name}.png"></a><br><br><br>`;
+}
+
+// appending the list of playlists
+if (document.getElementById("playlistsLinks")) {
+    document.getElementById("playlistsLinks").innerHTML = playlistList;
+}
+
+// latest 3 articles preview text in my site's langs
+if (url_lang) {
+    switch(url_lang) {
+        case 'es':
+            var homepagePlaylistList = '<br><span>Moderadamente orgulloso de esta:</span><br><br><ul>';
+            break;
+        case 'en':
+            var homepagePlaylistList = '<br><span>Kinda proud of this one:</span><br><br><ul>';
+            break;
+        case 'nl':
+            var homepagePlaylistList = '<br><span>Best wel trots op deze:</span><br><br><ul>';
+    }
+}
+
+
+// creating homepage playlists list
+for (const [name, page] of Object.entries(homepagePlaylistsNames)) {
     // create article URL
     var articleURL = `${page}` 
 
     // append to article list html object
-    playlistList += `<a href="${baseSpotifyLink}${page}">${name}<br><img class="playlistImages" src="./images/${name}.png"></a><br><br><br>`;
+    homepagePlaylistList += `<a class="p" href="${baseSpotifyLink}${page}">${name}<br><img class="playlistImages" src="/playlists/images/${name}.png"></a><br>`;
 }
 
-// appending the list of articles
-document.getElementById("playlistsLinks").innerHTML = playlistList;
+// appending the preview list of playlists
+if (document.getElementById("homepagePlaylistPreview")) {
+    document.getElementById("homepagePlaylistPreview").innerHTML = homepagePlaylistList;
+}
+
+// show or hide homepage playlists preview
+$("#expandPlaylistsPreview").click(function() {
+    $("#homepagePlaylistPreview").toggle()
+    if ($("#expandPlaylistsPreview").html() === '⊖') {
+        $("#expandPlaylistsPreview").html('⊕')
+    } else {
+        $("#expandPlaylistsPreview").html('⊖')
+    }
+});
