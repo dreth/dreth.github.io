@@ -11,7 +11,7 @@ if (url_lang) {
             var homepageCoolLinkList = '<br><span>Some Wikipedia articles I read recently:</span><br><br><ul>';
             break;
         case 'nl':
-            var homepageCoolLinkList = '<br><span>Wikipedia artikelen dat ik onlangs heb gelezen:</span><br><br><ul>';
+            var homepageCoolLinkList = '<br><span>Wikipedia-artikelen die ik onlangs heb gelezen:</span><br><br><ul>';
     }
 }
 
