@@ -28,8 +28,15 @@ a:hover {
     color:rgb(71, 233, 198);
 }
 
-.articleBody {
-    padding-left: 10%;
-    padding-right: 10%;
+@media screen and (min-width: 1000px) {
+    .articleBody {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
-
+@media screen and (max-width: 1000px) {
+    .articleBody {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
