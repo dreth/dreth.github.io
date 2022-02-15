@@ -3,6 +3,7 @@ var blog = 'https://dac.ac/blog/';
 let art_path = window.location.href.split("/");
 art_path = art_path[art_path.length - 2];
 var art_md_path = `/blog/${art_path}/article.md`;
+var art_draft_md_path = `/blog/drafts/${art_path}/article.md`;
 // hide article preview list
 $("#homepageArticlePreview").toggle()
 
