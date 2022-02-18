@@ -71,7 +71,21 @@ var wikipediaArticles = {
     'Sister city':"EN_Sister_city",
     'List of most expensive paintings':"EN_List_of_most_expensive_paintings",
     'São Paulo':"EN_S%C3%A3o_Paulo",
-    'United Kingdom of Portugal, Brazil and the Algarves':"EN_United_Kingdom_of_Portugal,_Brazil_and_the_Algarves"
+    'United Kingdom of Portugal, Brazil and the Algarves':"EN_United_Kingdom_of_Portugal,_Brazil_and_the_Algarves",
+    'First Mexican Empire':"EN_First_Mexican_Empire",
+    'Yingluck cabinet':"EN_Yingluck_cabinet",
+    '2013–2014 Thai political crisis':"EN_2013%E2%80%932014_Thai_political_crisis",
+    'French invasion of Russia':"EN_French_invasion_of_Russia",
+    'Congress of Vienna':"EN_Congress_of_Vienna",
+    'German Confederation':"EN_German_Confederation",
+    'List of countries by military expenditures':"EN_List_of_countries_by_military_expenditures",
+    'List of glaciers in Russia':"EN_List_of_glaciers_in_Russia",
+    'Belt and Road Initiative':"EN_Belt_and_Road_Initiative",
+    'Economy of Mauritius':"EN_Economy_of_Mauritius",
+    'Asian Infrastructure Investment Bank':"EN_Asian_Infrastructure_Investment_Bank",
+    'Dialect continuum':"EN_Dialect_continuum",
+    'Northern Sea Route':"EN_Northern_Sea_Route",
+    'Goalscoring goalkeepers':"EN_Goalscoring_goalkeepers"
 };
 
 // generate wikipedia link list
