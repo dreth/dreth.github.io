@@ -1,4 +1,4 @@
-# What I watch out for when considering investing in specific cryptocurrencies or tokens
+# What constitutes a 'good' crypto project?
 
 I happen to really enjoy rolling around in the crypto world. I spend hours and hours researching, not to find specific answers to things, but because I think its _really fucking cool_. Given that many my friends and some acquaintances know how much time I spent researching, I often get asked the question **How do you determine a project is probably a good investment?**. Yesterday, I had a cool conversation about life with my friend César, who phrased this question in a way that gave me a great idea... _write an article about it!_. So here we are again, talking about crypto stuff.
 
@@ -16,7 +16,7 @@ As any human, aside from objective research I've made, I have my own biases and 
 
 A few disclaimers I must make before jumping right into it:
 
-- This is **my** opinion, formulated from other people's opinions and lots... lots of reading. I am in no way, shape or form an authority on this, I simply speak from my personal experience, mistakes, successes and things I've read.
+- This is **my opinion**, formulated from other people's opinions and lots... lots of reading. I am in no way, shape or form an authority on this, I simply speak from my personal experience, mistakes, successes and things I've read.
 
 - I've been deeply interested in this world for the past 5 years and have seen lots and lots of disasters, scams, cool projects, as well as massive opportunities, some I've taken advantage of, others I've [almost cried](https://youtu.be/9GkVhgIeGJQ) over missing.
   
@@ -65,7 +65,7 @@ There's projects for all sorts of things, but you must first identify what _the 
 
 Each one of these categories will have their own specific criteria to consider. I'll focus on the top three, payment blockchains, smart contract blockchains and apps.
 
-## Questions applicable to any crypto project
+## Questions to answer about any crypto project
 
 Some questions I ask myself that I think apply to every crypto project:
 
