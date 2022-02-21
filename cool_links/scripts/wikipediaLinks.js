@@ -93,7 +93,7 @@ var wikipediaArticles = {
     'List of Alcatraz escape attempts':"EN_List_of_Alcatraz_escape_attempts",
     'Hitler Youth':"EN_Hitler_Youth",
     'June 1962 Alcatraz escape attempt':"EN_June_1962_Alcatraz_escape_attempt",
-    'Kererū?wprov=sfla1':"EN_Kerer%C5%AB?wprov=sfla1",
+    'Kererū':"EN_Kerer%C5%AB",
     'Sea of Azov':"EN_Sea_of_Azov"
 };
 
