@@ -85,7 +85,16 @@ var wikipediaArticles = {
     'Asian Infrastructure Investment Bank':"EN_Asian_Infrastructure_Investment_Bank",
     'Dialect continuum':"EN_Dialect_continuum",
     'Northern Sea Route':"EN_Northern_Sea_Route",
-    'Goalscoring goalkeepers':"EN_Goalscoring_goalkeepers"
+    'Goalscoring goalkeepers':"EN_Goalscoring_goalkeepers",
+    'Airports of London':"EN_Airports_of_London",
+    'Andén':"EN_And%C3%A9n",
+    'Disappearance of Tony Jones#Cold case playing cards':"EN_Disappearance_of_Tony_Jones#Cold_case_playing_cards",
+    'Philippine drug war':"EN_Philippine_drug_war",
+    'List of Alcatraz escape attempts':"EN_List_of_Alcatraz_escape_attempts",
+    'Hitler Youth':"EN_Hitler_Youth",
+    'June 1962 Alcatraz escape attempt':"EN_June_1962_Alcatraz_escape_attempt",
+    'Kererū?wprov=sfla1':"EN_Kerer%C5%AB?wprov=sfla1",
+    'Sea of Azov':"EN_Sea_of_Azov"
 };
 
 // generate wikipedia link list

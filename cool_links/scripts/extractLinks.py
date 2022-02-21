@@ -2,7 +2,7 @@ from urllib import parse
 
 links = []
 
-with open('./links_to_process.txt') as f:
+with open('./cool_links/scripts/links_to_process.txt') as f:
 
     for i,line in enumerate(f.read().splitlines()):
         
