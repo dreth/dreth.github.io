@@ -101,7 +101,80 @@ a.gb:hover {
 }
 
 /* screen width higher than 1000 px */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 2000px) {
+  .l:visited {
+    color: #f00;
+  }
+  .l:link {
+    text-decoration: none;
+    font-size: 2vw;
+    color: #f00;
+  }
+  .l:hover {
+    color: #ffa07a;
+  }
+  a {
+    font-size: 1.2vw;
+    font-family: Ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
+  img.playlistImages {
+    width:18vw
+  }
+  ul,
+  p,
+  span {
+    font-size: 1vw;
+    font-family: Ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
+  span.aboutHeading2 {
+    font-size: 1.2vw;
+  }
+  span.aboutHeading3 {
+    font-size: 1vw;
+  }
+  h3.aboutHeading2 {
+    font-size: 1.2vw;
+  }
+  .heading {
+    font-size: 0.9vw;
+  }
+  .heading2 {
+    font-size: 0.9vw;
+  }
+  h1 {
+    font-size: 2vw;
+    font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 1.7vw;
+    font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
+  }
+  h3 {
+    font-size: 1.2vw;
+    font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
+  }
+  h4 {
+    font-size: 1vw;
+    font-family: Ubuntu, Sans-Serif;
+    font-weight: normal;
+  }
+  .dash {
+    font-size: 1vw;
+  }
+  /* numbered lists font */
+  ol {
+    font-size: 1.7vw;
+    font-family: Ubuntu, Sans-Serif;
+  }
+}
+
+/* screen width higher than 1000 px */
+@media screen and (max-width: 2000px) and (min-width: 1000px) {
   .l:visited {
     color: #f00;
   }
@@ -173,7 +246,7 @@ a.gb:hover {
   }
 }
 /* screen width lower than 1000 px */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 0px) {
   .l:visited {
     color: #f00;
   }
