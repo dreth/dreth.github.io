@@ -94,7 +94,19 @@ var wikipediaArticles = {
     'Hitler Youth':"EN_Hitler_Youth",
     'June 1962 Alcatraz escape attempt':"EN_June_1962_Alcatraz_escape_attempt",
     'Kererū':"EN_Kerer%C5%AB",
-    'Sea of Azov':"EN_Sea_of_Azov"
+    'Sea of Azov':"EN_Sea_of_Azov",
+    'Daniel V. Jones':"EN_Daniel_V._Jones",
+    'Timeline of the 2022 Russian invasion of Ukraine':"EN_Timeline_of_the_2022_Russian_invasion_of_Ukraine",
+    'International sanctions during the Russo-Ukrainian War':"EN_International_sanctions_during_the_Russo-Ukrainian_War",
+    'Partitions of Poland':"EN_Partitions_of_Poland",
+    'List of countries by natural gas proven reserves':"EN_List_of_countries_by_natural_gas_proven_reserves",
+    'Nord Stream':"EN_Nord_Stream",
+    'Russia in the European energy sector':"EN_Russia_in_the_European_energy_sector",
+    'Cities and towns during the Russo-Ukrainian War':"EN_Cities_and_towns_during_the_Russo-Ukrainian_War",
+    'Template:Russo-Ukrainian War detailed map':"EN_Template:Russo-Ukrainian_War_detailed_map",
+    'Japanese holdout':"EN_Japanese_holdout",
+    'Hiroo Onoda':"EN_Hiroo_Onoda",
+    'Ghost of Kyiv':"EN_Ghost_of_Kyiv"
 };
 
 // generate wikipedia link list
