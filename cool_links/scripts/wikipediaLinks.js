@@ -106,7 +106,11 @@ var wikipediaArticles = {
     'Template:Russo-Ukrainian War detailed map':"EN_Template:Russo-Ukrainian_War_detailed_map",
     'Japanese holdout':"EN_Japanese_holdout",
     'Hiroo Onoda':"EN_Hiroo_Onoda",
-    'Ghost of Kyiv':"EN_Ghost_of_Kyiv"
+    'Ghost of Kyiv':"EN_Ghost_of_Kyiv",
+    'Livonians':"EN_Livonians",
+    'Ethnic groups in Russia':"EN_Ethnic_groups_in_Russia",
+    'Language policy in Latvia':"EN_Language_policy_in_Latvia",
+    'Romani language':"EN_Romani_language"
 };
 
 // generate wikipedia link list
