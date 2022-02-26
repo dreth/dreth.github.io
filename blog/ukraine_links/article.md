@@ -4,7 +4,7 @@ I've been closely following the invasion and the conflict for a few years and I'
 
 I'll summarize my opinion in **fuck Putin** and his guts, he deserves to be charged as a war criminal for this war, the 2008 Georgian war, supporting the Kazakh and Chinese governments' oppression of their population, and the rampant [government corruption](https://youtu.be/ipAnwilMncI) that he has allowed and led. My sincerest condolences to the ones affected by the war and my best wishes to the Ukrainian people and the Russian people bravely protesting against this horrific event and Putin's corrupt and tyrannical government.
 
-Some of the links I share here may have extremely graphic content. I'll mark the links with the following emojis:
+Some of the links I share here may have extremely graphic content. I'll mark the links with the following emoji:
 
 - ⚠️ : May contain graphic content
 
