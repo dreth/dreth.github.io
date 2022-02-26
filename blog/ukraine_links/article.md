@@ -1,6 +1,6 @@
 # Links and information resources on the 2022 Russian invasion of Ukraine. Слава Україні!
 
-I've been closely following the invasion and the conflict for a few years and I'm very sad about the escalation and full invasion. I've compiled some links and useful resources to keep up with the war. 
+I've been closely following the invasion and the conflict for a few years and I'm very sad about the escalation and full invasion. I've compiled some links and useful resources to keep up with the war.
 
 I'll summarize my opinion in **fuck Putin** and his guts, he deserves to be charged as a war criminal for this war, the 2008 Georgian war, supporting the Kazakh and Chinese governments' oppression of their population, and the rampant government corruption that he has allowed and led. My sincerest condolences to the ones affected by the war and my best wishes to the Ukrainian people and the Russian people bravely protesting against this horrific event and Putin's corrupt and tyrannical government.
 
@@ -8,13 +8,27 @@ Some of the links I share here may have extremely graphic content. I'll mark the
 
 - ⚠️ : May contain graphic content
 
+***
+
+## Table of contents
+
+  - [Background](#background)
+    - [Not directly related but important events](#not-directly-related-but-important-events)
+    - [Events directly related in the timeline](#events-directly-related-in-the-timeline)
+  - [Interactive maps](#interactive-maps)
+  - [Status of each city](#status-of-each-city)
+    - [Articles on individual battles during the war](#articles-on-individual-battles-during-the-war)
+  - [Timeline of events](#timeline-of-events)
+  - [Coverage on news sites and live updates](#coverage-on-news-sites-and-live-updates)
+
+***
 ## Background
 
 The invasion is an escalation following a tense situation that has been ongoing since 2014 but has a lot more background. The news' approach of saying that the escalation was caused by Ukraine wanting to join NATO is a gross oversimplification. Wikipedia has some great articles on the events previous to the war as well as some history:
 
 ### Not directly related but important events
 
-- [Holodomor](https://en.wikipedia.org/wiki/Holodomor): The great famine of 1932-1933 where about 3.5 M people died in the Ukrainian SSR, it was a part of the wider [Soviet Famine of 1932-1933](https://en.wikipedia.org/wiki/Soviet_famine_of_1932%E2%80%931933).
+- [Holodomor](https://en.wikipedia.org/wiki/Holodomor): The great famine of 1932-1933 where about 3.5 M people died in the Ukrainian SSR, it was a part of the wider [Soviet Famine of 1932-1933](https://en.wikipedia.org/wiki/Soviet_famine_of_1932%E2%80%931933). This was a man-made famine, whether the intention was to suppress the independence movement or as a consequence of industralization is up to debate.
 
 - [1954 transfer of Crimea](https://en.wikipedia.org/wiki/1954_transfer_of_Crimea) to the Ukrainian SSR.
 
