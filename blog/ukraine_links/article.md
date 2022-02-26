@@ -67,7 +67,7 @@ Wikipedia has a great article on the status of each city per oblast and raion li
 
 - [Cities and towns during the Russo-Ukrainian War](https://en.wikipedia.org/wiki/Cities_and_towns_during_the_Russo-Ukrainian_War)
 
-### Articles on individual battles during the war
+### Wikipedia articles on individual battles during the war
 
 - Battle of [Chernihiv](https://en.wikipedia.org/wiki/Battle_of_Chernihiv)
 
