@@ -18,6 +18,7 @@ Some of the links I share here may have extremely graphic content. I'll mark the
     - [Articles on individual battles during the war](#articles-on-individual-battles-during-the-war)
   - [Timeline of events](#timeline-of-events)
   - [Coverage on news sites and live updates](#coverage-on-news-sites-and-live-updates)
+  - [Twitter accounts posting war news](#twitter-accounts-posting-war-news)
 
 ***
 ## Background
