@@ -73,7 +73,7 @@ Wikipedia has a great article on the status of each city per oblast and raion li
 
 - Battle of [Kharkiv](https://en.wikipedia.org/wiki/Battle_of_Kharkiv_(2022))
 
-- [Kherson offensive](https://en.wikipedia.org/wiki/Kherson_offensive)
+- [Kherson offensive](https://en.wikipedia.org/wiki/Kherson_offensive) and [Battle of Kherson](https://en.wikipedia.org/wiki/Battle_of_Kherson)
 
 - Battle of [Chernobyl](https://en.wikipedia.org/wiki/Battle_of_Chernobyl)
 
