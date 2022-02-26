@@ -112,6 +112,7 @@ var wikipediaArticles = {
     'Language policy in Latvia':"EN_Language_policy_in_Latvia",
     'Three-Country Cairn':"EN_Three-Country_Cairn",
     'Romani language':"EN_Romani_language",
+    'Hazaras':"EN_Hazaras",
     'List of lakes of Norway':"EN_List_of_lakes_of_Norway",
     'Northeast Caucasian languages':"EN_Northeast_Caucasian_languages",
     'Treriksrøysa':"EN_Treriksr%C3%B8ysa",

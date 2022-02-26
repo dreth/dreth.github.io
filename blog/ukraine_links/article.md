@@ -103,6 +103,19 @@ I've also been following some news sites since the start of the invasion.
 
 - Aljazeera's [live coverage](https://www.aljazeera.com/news/2022/2/23/ukraine-declares-state-of-emergency-amid-fears-of-invasion-liveblog)
 
+
+## Twitter accounts posting war news
+
+These may contain very graphic content, if you're sensitive do NOT click any of these. Seriously.
+
+- ⚠️ [666_mancer](https://twitter.com/666_mancer)
+
+- ⚠️ [slobozhanyn](https://twitter.com/slobozhanyn)
+
+- [Illia Ponomarenko](https://twitter.com/IAPonomarenko/) 
+
+- [monavrill](https://twitter.com/monavrill)
+
 ***
 
 **Date: February 26, 2022**
