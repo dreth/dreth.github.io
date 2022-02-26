@@ -110,7 +110,12 @@ var wikipediaArticles = {
     'Livonians':"EN_Livonians",
     'Ethnic groups in Russia':"EN_Ethnic_groups_in_Russia",
     'Language policy in Latvia':"EN_Language_policy_in_Latvia",
-    'Romani language':"EN_Romani_language"
+    'Three-Country Cairn':"EN_Three-Country_Cairn",
+    'Romani language':"EN_Romani_language",
+    'List of lakes of Norway':"EN_List_of_lakes_of_Norway",
+    'Northeast Caucasian languages':"EN_Northeast_Caucasian_languages",
+    'Treriksrøysa':"EN_Treriksr%C3%B8ysa",
+    'Mjøstårnet':"EN_Mj%C3%B8st%C3%A5rnet"
 };
 
 // generate wikipedia link list
