@@ -84,6 +84,10 @@ Wikipedia has a great article on the status of each city per oblast and raion li
 - Battle of [Konotop](https://en.wikipedia.org/wiki/Battle_of_Konotop_(2022))
 
 - Battle of [Melitopol](https://en.wikipedia.org/wiki/Battle_of_Melitopol)
+  
+- Battle of [Ivankiv](https://en.wikipedia.org/wiki/Battle_of_Ivankiv)
+
+- Battle of [Starobilsk](https://en.wikipedia.org/wiki/Battle_of_Starobilsk)
 
 ## Timeline of events
 

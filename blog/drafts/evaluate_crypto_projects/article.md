@@ -8,7 +8,21 @@ As any human, aside from objective research I've made, I have my own biases and 
 
 ## Article index
 
-
+- [What constitutes a 'good' crypto project?](#what-constitutes-a-good-crypto-project)
+  - [Article index](#article-index)
+  - [Some disclaimers](#some-disclaimers)
+  - [Purpose](#purpose)
+  - [Questions to answer about any crypto project](#questions-to-answer-about-any-crypto-project)
+    - [Open source vs Closed source](#open-source-vs-closed-source)
+    - [Token utility](#token-utility)
+      - [UNI/ETH Ratio](#unieth-ratio)
+      - [1INCH/ETH Ratio](#1incheth-ratio)
+      - [CAKE/ETH Ratio](#cakeeth-ratio)
+    - [Tokenomics](#tokenomics)
+      - [Example of bad tokenomics:](#example-of-bad-tokenomics)
+      - [Example of good tokenomics](#example-of-good-tokenomics)
+  - [Glossary](#glossary)
+  - [Image sources](#image-sources)
 
 ***
 
@@ -27,6 +41,8 @@ A few disclaimers I must make before jumping right into it:
 - If you think all of cryptocurrency is a ponzi scheme or a huge scam, I recommend you read [the following article](https://divethru.com/feeling-stupid-a-guide-to-your-emotions/).
 
 - I am a risk-averse investor, I do not engage with especially obscure projects, and if so I only put a small portion of my portfolio there.
+
+- When I say "big cryptos", I'm only referring to Bitcoin (BTC) and Ethereum (ETH). Nothing else.
 
 ## Purpose
 
@@ -55,21 +71,21 @@ There's projects for all sorts of things, but you must first identify what _the 
   - Lotteries/savings (Ex. Pooltogether)
   - Indexes (Ex. Set protocol, Enzyme)
   - Privacy (Ex. Tornado, Aztec)
-**... etc..**
+  **... etc..**
 
 - **Other types of projects**
   - VPN (Ex. Orchid)
   - Network provider for IOT systems (Ex. Helium)
   - Storage (Ex. Filecoin, Sia)
-**... etc..**
+  **... etc..**
 
 Each one of these categories will have their own specific criteria to consider. I'll focus on the top three, payment blockchains, smart contract blockchains and apps.
 
 ## Questions to answer about any crypto project
 
-Some questions I ask myself that I think apply to every crypto project:
+Some questions I ask myself that I consider apply to every crypto project:
 
-- Is the project **open source**?
+- Is the project [**open source**](#open-source-vs-closed-source)?
   
 - Is its token **useful**?
 
@@ -91,6 +107,8 @@ Some questions I ask myself that I think apply to every crypto project:
 
 - Is the token source code **identical** to that of a previous scam? Is the token vulnerable to any **previously discovered vulnerability** that any pas project has suffered?
 
+Let's begin to answer some of these in the following sections.
+
 ### Open source vs Closed source
 
 In the non-blockchain world of software, it's OK to use closed source software if it's coming from a trusted source. Sure, it's safer to use open source software, as you can actually _see_ what the piece of software is doing, however, on the blockchain this is **not optional**.
@@ -99,16 +117,83 @@ Blockchain applications and blockchains themselves *must* be open source, as the
 
 The purpose of blockchains is to remove the middleman, to avoid requiring trust. If you go and use an application on the blockchain or a blockchain that requires trust to use, you're exposing yourself to catastrophic financial loss, as unlike with traditional software on your computer, you're still able to stop software as long as you never allow it to have administrative privileges. On the blockchain, after you sign a transaction and the transaction is confirmed/included in a block, **you are never going to be able to reverse it or cancel it**.
 
+If a project is closed source, the project is <span class="red">**not a good project**.</span>
+
+You can check whether a smart contract is closed source or open source in the projects' website or on the block explorer of the blockchain the project is deployed on. Let's take Uniswap for example:
+
+![UniswapGH](assets/UniswapGH.png)
+
+Uniswap is an extraordinarily good example as it has open source smart contracts and an open source web application interface. This way anyone can inspect the code and see if there's any vulnerability or if there's any malicious function.
+
+We should always also make sure that this is also reflected on the deployed contract of the project:
+
+![UniswapV3](assets/UniswapV3Router2Etherscan.png)
+
+
+
 ### Token utility
 
 Apps and blockchains alike sometimes need a cryptocurrency or token to thrive, encourage growth, govern the protocol, or any sort of utility. However, other times, the token is _basically useless_ or simply not necessary to have. This is (IMO) the first thing to consider when buying a token or investing in a project.
 
+Other times, even if the token has some utility, it simply serves the purpose of governance. Projects with tokens that only serve the purpose of *governance*[<sup>[1]</sup>](#glossary) are provably **not a good investment** when compared to big cryptos. We can clearly see this when we take a large project's token like UNI (Uniswap), 1INCH (1inch) or CAKE (Pancakeswap, a Uniswap V2 fork) and we take their ratio vs ETH or BTC:
+
+#### UNI/ETH Ratio
+
+Looking at the UNI/ETH ratio, we can clearly see how poor of an investment buying UNI tokens would have been at almost any point as opposed to buying ETH. There's many reasons for this, but in particular we can attribute some of the poor performance to the fact that the token does nothing but allow you to vote on proposals.
+
+![UNI/ETH](assets/UNIETH.png)
+
+#### 1INCH/ETH Ratio
+
+1INCH tokens have suffered much of the same fate of UNI tokens, yes there are differences, however, just like with UNI, this project started with an airdrop which caused a massive selloff, to then go on to a rally against ETH (meaning the price was going up more and faster than the price of ETH), however, the demand did not quite keep up and the token emissions (inflation) screwed up the price in the long term. This made 1INCH tokens not quite worth holding. We'll get into token emissions and inflation more in the [Tokenomics](#tokenomics) section.
+
+1INCH does have additional utility when compared to UNI, it allows users to get gas fee discounts when trading in the 1Inch *DEX*[<sup>[2]</sup>](#glossary) Aggregator, however, 1Inch has not managed to catch the *TVL*[<sup>[3]</sup>](#glossary) that Uniswap has managed to retain, so even if 
+
+![1INCH/ETH](assets/1INCHETH.png)
+
+#### CAKE/ETH Ratio
+
+PancakeSwap came to sweep the market as the only DEX on Binance Smart Chain, however, even if some investors managed to do very well when CAKE launched, the trand is identical as with the other previous two projects. The developers of this project did essentially copy another project, Uniswap V2, to deploy it into a functionally centralized chain (when compared to Ethereum), however, there was a lot of development to make PancakeSwap into something more than just 'another DEX', with attractive farming programs and incentives for liquidity providers. It managed to attract a large amount of liquidity and it still holds a quite high position if we list protocols by their TVL.
+
+Regardless of what PancakeSwap has achieved, investing in CAKE was surely a great way to lose money when compared to just straight up buying BTC. As PancakeSwap was positioned weirdly, being in a chain that is [unsustainable in the long term](https://github.com/bnb-chain/bsc/issues/553#issue-1055158659), created with the sole purpose of performing a *vampire attack*[<sup>[4]</sup>](#glossary) on Ethereum, which was largely successful at first, but hardly sustainable in the long term. CAKE is another token that was a victim of its own emissions due to poor [tokenomics](#tokenomics) as well as lack of innovation and utility.
+
+![CAKE/BTC](assets/CAKEBTC.png)
+
+The bottom line here is, if your project's token is not useful, it is likely <span class="red">**not a good investment**</span> when compared to ETH or BTC, which should **always** be your golden standard, especially ETH.
+
 ### Tokenomics
 
-Tokenomics are perhaps the top 2 consideration to have when investing in a specific cryptocurrency or token. These are how the token is distributed, how much will users/the community get, how much the investors and developers get, how long it'll take for the token supply to be fully diluted, etc.
+Tokenomics are sometimes the most important consideration to have when investing in a specific cryptocurrency or token. These describe how the token supply is or will be distributed, how much will users/the community get, how much the investors and developers get, how long it'll take for the token supply to be fully diluted, etc.
 
-Good token
+The best tokenomics will have several features:
 
+- Application features or incentives that create demand for the token
+
+- A non-one-sided distribution of the token, where investors, while still get a significant portion of the supply, don't completely swallow it
+
+- Application features that encourage locking the token for an extended period of time in exchange for benefits like additional rewards for providing liquidity
+
+- A slow enough release schedule as to not absolutely overwhelm and flood the market with tokens. Inflation should be controlled, if existent
+
+- A mechanism to remove tokens from the supply, either by locking the tokens or by straight up burning them
+
+Among other things.
+
+#### Example of bad tokenomics: 
+
+
+
+#### Example of good tokenomics
+
+## Glossary
+
+- **Governance**: When a token serves the purpose of 'governance' it means that it works as a share of a company, allowing you as a token holder to vote on proposals made by other community members or developers. The voting for this proposal typically happens on-chain and when a proposal passes, when the voting time is over there is a transaction that occurs on-chain with effects on the project contract as described on the proposal. 
+
+- **DEX**: Decentralized exchange. It's an application on the blockchain that allows users to trade tokens in trading pairs (or asset bags in the case of Curve or Balancer). Trades on a DEX are permissionless and no central entity controls the liquidity in them (as opposed to centralized exchanges)
+
+- **TVL**: Total value locked. It's the sum of all assets locked in a protocol. It's important to note here that the value is not exactly 'locked', it's just contained in the protocol's smart contracts. Normally depositors can always withdraw whenever they want.
+
+- **Vampire attack**: When a project is created with the sole purpose of stealing liquidity and user activity from another by giving users a more comfortable/faster/cheaper way to transact or providing additional incentives as opposed to a competing project. Ex. SushiSwap on Uniswap in Q4 2020 (providing bigger incentives to LPs), or BSC (Binance Smart Chain) on Ethereum in Q1 2021 (providing cheaper gas fees at the cost of security, decentralization, long-term sustainability and spam mitigation).
 
 ## Image sources
 

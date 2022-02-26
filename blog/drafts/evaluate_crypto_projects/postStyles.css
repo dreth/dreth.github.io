@@ -22,3 +22,8 @@
         object-fit: cover;
     }
 }
+
+span.red {
+    color: red;
+}
+
