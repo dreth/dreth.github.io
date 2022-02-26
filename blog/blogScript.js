@@ -9,6 +9,7 @@ $("#homepageArticlePreview").toggle()
 
 // lists of article info
 var articleDates = [
+    '26/02/2022',
     '10/02/2022',
     '23/01/2021',
     '16/11/2020',
@@ -16,6 +17,7 @@ var articleDates = [
     '13/10/2020'
 ];
 var articleTitles = [
+    'Links and information resources on the 2022 Russian invasion of Ukraine. Слава Україні!',
     'Useful NFTs?',
     'My switch (back) to linux as primary OS in 2020',
     'How to set up a Data Science environment on Windows using Visual Studio Code',
@@ -23,6 +25,7 @@ var articleTitles = [
     'Como invertir en bienes raíces utilizando RealT y blockchain'
 ];
 var articleTag = [
+    'ukraine_links',
     'useful_nfts',
     'linux_2020',
     'vs_code_windows',
@@ -30,6 +33,7 @@ var articleTag = [
     'tutorial_realt'
 ];
 var articleEmoji = [
+    '🇺🇦',
     '🖼️',
     '💽',
     '🖥️',

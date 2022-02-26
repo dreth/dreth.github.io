@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Daniel A. | blog">
+  <meta name="description" content="Links and information resources on the 2022 Russian invasion of Ukraine">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dac.ac/blog/ukraine_links">
+  <meta property="og:title" content="Daniel A. | blog">
+  <meta property="og:description" content="Links and information resources on the 2022 Russian invasion of Ukraine">
+  <meta property="og:image" content="/assets/icons/meta.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="/assets/icons/meta.png">
+  <meta property="twitter:url" content="https://dac.ac/blog/ukraine_links">
+  <meta property="twitter:title" content="Daniel A. | blog">
+  <meta property="twitter:description" content="Links and information resources on the 2022 Russian invasion of Ukraine">
+  <meta property="twitter:image" content="/assets/icons/meta.png">
+
+  <!-- stylesheet, script, icon and font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="shortcut icon" id="icon"/>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link rel="stylesheet" type="text/css" href="/blog/blogStyles.css">
+  <link rel="stylesheet" type="text/css" href="postStyles.css">
+  <script src="/script.js"></script>
+  <script src="/jquery.js"></script>
+  <script src="/blog/blogScript.js"></script>
+
+  <!-- title -->
+  <title>Links and information resources on the 2022 Russian invasion of Ukraine</title>
+</head>
+
+<body class="articleBody">
+  <a href="#" onclick="this.href = blog;" oncontextmenu="this.href = blog;" class="gb">
+    ⬅️ article list</a>
+  <br><hr>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch(art_md_path)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('content').innerHTML =
+          marked.parse(`${data}`);
+      });
+  </script>
+  <div id="content"></div>
+
+  <br><br>
+
+</body>
+
+</html>
