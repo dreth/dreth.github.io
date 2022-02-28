@@ -4,14 +4,14 @@
 // ik hou van jullie<3
 
 // engels
-let selfDescriptionENLine1 = "I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.";
-let selfDescriptionENLine2 = "I currently work in the field of data science, but I'm always open to new cool challenges (as long as they're fun and interesting)";
+let selfDescriptionENLine1 = "I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general. Originally studied mathematics and then branched out into data science.";
+let selfDescriptionENLine2 = "Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects.";
 
 var selfDescriptionEN = `<p><span>${selfDescriptionENLine1}</span><br><br><span>${selfDescriptionENLine2}</span></p>`;
 
 // spaans
-let selfDescriptionESLine1 = "Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.";
-let selfDescriptionESLine2 = "Actualmente me dedico a trabajar en ciencia de datos, pero me mantengo abierto a nuevos retos (siempre que divertidos e interesantes)";
+let selfDescriptionESLine1 = "Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas. Originalmente estudié matemáticas y luego me integré en el mundo de ciencia de datos.";
+let selfDescriptionESLine2 = "Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. Me estoy tomando un pequeño descanso del mercado laboral para aprender, estudiar y desarrollar mis propios proyectos personales.";
 
 var selfDescriptionES = `<p><span>${selfDescriptionESLine1}</span><br><br><span>${selfDescriptionESLine2}</span></p>`;
 

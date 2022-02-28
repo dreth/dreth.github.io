@@ -159,7 +159,7 @@ Regardless of what PancakeSwap has achieved, investing in CAKE was surely a grea
 
 ![CAKE/BTC](assets/CAKEBTC.png)
 
-The bottom line here is, if your project's token is not useful, it is likely <span class="red">**not a good investment**</span> when compared to ETH or BTC, which should **always** be your golden standard, especially ETH.
+The bottom line here is, if your project's token is not useful, it is likely <span class="red">**not a good investment**</span> when compared to ETH or BTC, which should **always** be the main assets whose performance you should compare other crypto assets to. In markets that mostly go down, BTC is a better asset to compare them to, in markets that mostly go up, ETH would be the ideal choice.
 
 ### Tokenomics
 
