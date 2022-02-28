@@ -2,6 +2,8 @@
 
 I've been closely following the invasion and the conflict for a few years and I'm very sad about the escalation and full invasion. I've compiled some links and useful resources to keep up with the war.
 
+Путин не Россия. I hope this ends well for everyone, but it probably won't. Best wishes to the Ukrainian people and the Russians that stand against the war.
+
 Some of the links I share here may have extremely graphic content. I'll mark the links with the following emoji:
 
 - ⚠️ : May contain graphic content
