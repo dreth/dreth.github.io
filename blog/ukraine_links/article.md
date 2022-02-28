@@ -67,27 +67,9 @@ Wikipedia has a great article on the status of each city per oblast and raion li
 
 ### Wikipedia articles on individual battles during the war
 
-- Battle of [Chernihiv](https://en.wikipedia.org/wiki/Battle_of_Chernihiv)
+Wikipedia has a really good article on this as well:
 
-- Battle of [Mariupol](https://en.wikipedia.org/wiki/Battle_of_Mariupol_(2022))
-
-- Battle of [Kharkiv](https://en.wikipedia.org/wiki/Battle_of_Kharkiv_(2022))
-
-- [Kherson offensive](https://en.wikipedia.org/wiki/Kherson_offensive) and [Battle of Kherson](https://en.wikipedia.org/wiki/Battle_of_Kherson)
-
-- Battle of [Chernobyl](https://en.wikipedia.org/wiki/Battle_of_Chernobyl)
-
-- [Kyiv Offensive](https://en.wikipedia.org/wiki/Kyiv_Offensive_(2022)) and [Battle of Kyiv](https://en.wikipedia.org/wiki/Battle_of_Kyiv_(2022))
-
-- Battle of [Sumy](https://en.wikipedia.org/wiki/Battle_of_Sumy)
-
-- Battle of [Konotop](https://en.wikipedia.org/wiki/Battle_of_Konotop_(2022))
-
-- Battle of [Melitopol](https://en.wikipedia.org/wiki/Battle_of_Melitopol)
-  
-- Battle of [Ivankiv](https://en.wikipedia.org/wiki/Battle_of_Ivankiv)
-
-- Battle of [Starobilsk](https://en.wikipedia.org/wiki/Battle_of_Starobilsk)
+- [List of military engagements during the 2022 Russian invasion of Ukraine](https://en.wikipedia.org/wiki/List_of_military_engagements_during_the_2022_Russian_invasion_of_Ukraine)
 
 ## Timeline of events
 
