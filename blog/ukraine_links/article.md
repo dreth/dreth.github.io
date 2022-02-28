@@ -15,7 +15,7 @@ Some of the links I share here may have extremely graphic content. I'll mark the
     - [Events directly related in the timeline](#events-directly-related-in-the-timeline)
   - [Interactive maps](#interactive-maps)
   - [Status of each city](#status-of-each-city)
-    - [Articles on individual battles during the war](#articles-on-individual-battles-during-the-war)
+    - [ Individual battles during the war](#individual-battles-during-the-war)
   - [Timeline of events](#timeline-of-events)
   - [Coverage on news sites and live updates](#coverage-on-news-sites-and-live-updates)
   - [Twitter accounts posting war news](#twitter-accounts-posting-war-news)
@@ -66,7 +66,7 @@ Wikipedia has a great article on the status of each city per oblast and raion li
 
 - [Cities and towns during the Russo-Ukrainian War](https://en.wikipedia.org/wiki/Cities_and_towns_during_the_Russo-Ukrainian_War)
 
-### Wikipedia articles on individual battles during the war
+### Individual battles during the war
 
 Wikipedia has a really good article on this as well:
 
