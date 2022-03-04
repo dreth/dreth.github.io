@@ -116,7 +116,9 @@ var wikipediaArticles = {
     'List of lakes of Norway':"EN_List_of_lakes_of_Norway",
     'Northeast Caucasian languages':"EN_Northeast_Caucasian_languages",
     'Treriksrøysa':"EN_Treriksr%C3%B8ysa",
-    'Mjøstårnet':"EN_Mj%C3%B8st%C3%A5rnet"
+    'Mjøstårnet':"EN_Mj%C3%B8st%C3%A5rnet",
+    'List of World Series champions':"EN_List_of_World_Series_champions",
+    '.su':"EN_.su"
 };
 
 // generate wikipedia link list
