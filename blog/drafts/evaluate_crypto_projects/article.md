@@ -1,4 +1,4 @@
-# A guide on analyzing investments in cryptocurrency projects
+# Analyzing investments in cryptocurrency projects
 
 I happen to really enjoy rolling around in the crypto world. I spend hours and hours researching, not to find specific answers to things, but because I think its _really fucking cool_. Given that many my friends and some acquaintances know how much time I spent researching, I often get asked the question **How do you determine a project is probably a good investment?**. Yesterday, I had a cool conversation about life with my friend César, who phrased this question in a way that gave me a great idea... _write an article about it!_. So here we are again, talking about crypto stuff.
 
@@ -8,7 +8,7 @@ As any human, aside from objective research I've made, I have my own biases and 
 
 ## Article index
 
-- [A guide on analyzing investments in cryptocurrency projects](#a-guide-on-analyzing-investments-in-cryptocurrency-projects)
+- [Analyzing investments in cryptocurrency projects](#analyzing-investments-in-cryptocurrency-projects)
   - [Article index](#article-index)
   - [Some disclaimers](#some-disclaimers)
   - [Purpose](#purpose)
@@ -20,6 +20,7 @@ As any human, aside from objective research I've made, I have my own biases and 
     - [CAKE/ETH Ratio](#cakeeth-ratio)
   - [Tokenomics](#tokenomics)
     - [Example: Uniswap tokenomics](#example-uniswap-tokenomics)
+    - [Example: Curve tokenomics](#example-curve-tokenomics)
   - [Glossary](#glossary)
   - [Image sources](#image-sources)
 
@@ -182,11 +183,47 @@ Uniswap is a DEX, it allows users to trade assets in a permissionless manner, as
 
 The UNI token distribution is as follows:
 
+![](assets/UniswapTokenomics1.png)
 
+This, as far as tokenomics distributions go is alright, 60% going to the community is good. Uniswap is fairly recognized in the community so the proportion given to investors is not massive, 17.8% for investors is not ridiculous or excessive by any means when compared to other similar applications.
 
+This is the genesis allocation though, as more tokens are released on the market, the proportions will change slightly, but not significantly, therefore this chart is sufficient to describe the allocations. 
 
+![](assets/UniswapTokenomics2.png)
 
+The release schedule also seems quite standard. But as with any *new* token, we have to consider the possibility that inflation will exist until the full supply is out there, meaning that if demand for it does not rise, and there's not inherent mechanic to reduce supply or increase demand, the token will NOT perform well when compared to ETH or BTC. Again, if you're going to invest in a project, no matter how 'good' you perceive it, the investment may not be good enough because of inflation. Inflation is baked into new tokens, they need to eventually become fully diluted or have good mechanics before you should consider an investment in them.
 
+Uniswap's token UNI at the time does nothing but allow for active participation in governance, like shares in a company. **There is no mechanic to**:
+
+- Distribute protocol revenue to holders
+
+- Lock UNI tokens or remove them from the supply
+  
+- Increase demand for the token
+
+Therefore holding UNI is potentially shooting yourself in the foot. Uniswap is a formidable, trusted, revolutionary, useful and amazing project, but this <span class="red">does not mean that buying UNI is a good idea.</span> 
+
+Despite this, and as I mentioned before, the lack of existence of these mechanics doesn't necessarily condition their future existence. A way to keep up with whether these mechanics will exist or have been proposed by prominent community members or developers is to look at the [governance forum for Uniswap](https://gov.uniswap.org/). Before implementing anything on the blockchain, several steps need to be achieved, at least in the case of highly secure, audited protocols (the ONLY kind of project you should ever invest in) like Uniswap:
+
+1. Either a discussion thread about any implementation of these mechanics is created and prominent community members, developers, investors or simple users discuss them. This could happen before a formal forum proposal thread is made, or in the same thread as the proposal. The proposal is then actively discussed in the forum.
+
+![](assets/UniswapGovernanceForum.png)
+
+2. Given overwhelming support in the forums, some entity or person develops the code to create a formal proposal to be voted on on-chain in the [Uniswap governance interface](https://app.uniswap.org/#/vote?chain=mainnet). The formal proposal **requires** coding a smart contract or calling a set of functions in the formal Uniswap smart contracts (or other contracts), the set of actions has to be programmed, this is why the governance is decentralized, because IF the quorum is met AND the vote passes, the action is executed on-chain, and no one can change it once it passes. If it does NOT pass, then nothing happens.
+
+![](assets/UniswapGovernanceInterface.png)
+
+If the actions in step 2 require an additional contract, a formal audit may be made before creating the vote on-chain, this costs money, maybe financed by the protocol treasury or by an external entity, but also takes **time**. Therefore any change occurring to any prominent project's tokenomics is a SLOW process, and may require even several different forum discussions about it, as well as individuals to actually code what will (or won't) occur when the vote passes.
+
+### Example: Curve tokenomics
+
+Curve Finance is a decentralized exchange that has been especially popular for stablecoin pools. Given the variety of stablecoins like USDT, USDC, DAI, UST... a need for a more robust stablecoin decentralized exchange was created. Uniswap and other decentralized exchanges still work for stablecoin swaps. There's large pools for this on Uniswap V3 as well that trade between assets in pairs like USDC/DAI, however, Curve's approach is different and allows for multi-asset pools as opposed to just pairs as well as keeping the price peg between stablecoins in a much more efficient way, with much lower slippage and fees. It's important to note Uniswap V3 has fixed much of the faults of Uniswap V2 that Curve has improved significantly, but the big differentiator for Curve as opposed to Uniswap and the reason why it's attracted so much more liquidity is its CRV token and the outstandingly good tokenomics it boasts.
+
+Aside from stablecoins, Curve is very effective in pairing assets that are wrapped or represented by another token, providing utility in other projects, for example Alchemix's alETH, StakeWise's sETH2, etc... These are assets that either should always be represented by the value of ETH or are supposed to be pegged 1:1 with ETH (or as close as possible) due to other mechanics. The idea here is that Curve is a fantastic tool for stable pools, whether those are stablecoins or other stable pairs.
+
+Knowing this, we can go into why Curve has attracted so much liquidity aside from the efficiency of its stable pools, and that's the tokenomics of CRV, Curve's native token. Let's first check out the distribution of CRV:
+
+![](assets/CurveTokenomics1.png)
 
 ## Glossary
 
@@ -202,6 +239,9 @@ The UNI token distribution is as follows:
 
 ## Image sources
 
+I typically source these in order but I'll reference them with a description since I have created some images and I'm not keeping track of image order in this post.
+
+- Uniswap tokenomics images: [Introducing UNI blog post on Uniswap.org](https://uniswap.org/blog/uni)
 
 ***
 
