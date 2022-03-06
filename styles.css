@@ -47,6 +47,7 @@ a.p:hover {
 /* hide and show blog preview link */
 a.bp {
   color: rgb(0, 174, 255);
+  cursor: pointer;
 }
 a.bp:link {
   text-decoration: none;
