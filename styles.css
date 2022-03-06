@@ -45,14 +45,20 @@ a.p:hover {
   color: rgb(255, 0, 0);
 }
 /* hide and show blog preview link */
+a.bp {
+  color: rgb(0, 174, 255);
+}
 a.bp:link {
   text-decoration: none;
+  cursor: pointer;
   color: rgb(0, 174, 255);
 }
 a.bp:visited {
+  cursor: pointer;
   color: rgb(0, 174, 255);
 }
 a.bp:hover {
+  cursor: pointer;
   color: #d2ff6a;
 }
 /* links (title) */
