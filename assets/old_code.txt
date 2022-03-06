@@ -1,0 +1,8 @@
+<!-- <li class="ml waid"><a href="#" onclick="this.href = status;" oncontextmenu="this.href = status;" class="c">what am I doing now?</a></li>
+        <br> -->
+
+<!-- <li class="ml waid"><a href="#" onclick="this.href = status;" oncontextmenu="this.href = status;" class="c">qué estoy haciendo ahora?</a></li>
+        <br> -->
+
+<!-- <li class="ml waid"><a href="#" onclick="this.href = status;" oncontextmenu="this.href = status;" class="c">wat ben ik nu aan het doen?</a></li>
+        <br> -->
