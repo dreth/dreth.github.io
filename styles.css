@@ -128,6 +128,11 @@ a.gb:hover {
     font-family: Ubuntu, Sans-Serif;
     word-wrap: break-word;
   }
+  figcaption {
+    font-size: 0.8vw;
+    font-family: Ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
   sup {
     font-size: 0.5vw;
     font-family: Ubuntu, Sans-Serif;
@@ -206,6 +211,11 @@ a.gb:hover {
     font-family: Ubuntu, Sans-Serif;
     word-wrap: break-word;
   }
+  figcaption {
+    font-size: 1.3vw;
+    font-family: Ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
   sup {
     font-size: 0.8vw;
     font-family: Ubuntu, Sans-Serif;
@@ -280,6 +290,11 @@ a.gb:hover {
   p,
   span {
     font-size: 3.2vw;
+    font-family: Ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
+  figcaption {
+    font-size: 2.8vw;
     font-family: Ubuntu, Sans-Serif;
     word-wrap: break-word;
   }
