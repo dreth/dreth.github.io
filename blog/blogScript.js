@@ -104,13 +104,14 @@ if (document.getElementById("content")) {
           marked.parse(`${data}`);
 
         // for articles with more custom web devy shit
+        var specialAttribute = $("#content").attr('special');
         // ---------------------------- evaluate crypto projects
-        if ($("#content").attr('special') == "evaluate_crypto_projects") {
-            // evaluate crypto projects article
-            // hide boys dont cry audio
-            $('#boysDontCryAudio').hide() 
+        switch (specialAttribute) {
+            case "evaluate_crypto_projects":
+                // evaluate crypto projects article
+                // hide boys dont cry audio
+                $('#boysDontCryAudio').hide() 
         }
-
       });
 }
 
