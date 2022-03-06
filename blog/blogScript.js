@@ -93,3 +93,13 @@ $("#expandBlogPreview").click(function() {
         $("#expandBlogPreview").html('⊖')
     }
 });
+
+// check if there's a post div id to insert article content
+if (document.getElementById("content")) {
+    fetch(art_md_path)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('content').innerHTML =
+          marked.parse(`${data}`);
+      });
+}
