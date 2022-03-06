@@ -11,7 +11,7 @@ As any human, aside from objective research I've made, I have my own biases and 
 - [Analyzing investments in cryptocurrency projects](#analyzing-investments-in-cryptocurrency-projects)
   - [Article index](#article-index)
   - [Some disclaimers](#some-disclaimers)
-  - [Purpose](#purpose)
+  - [Purpose of the project](#purpose-of-the-project)
   - [Questions to answer about any crypto project](#questions-to-answer-about-any-crypto-project)
   - [Open source vs Closed source](#open-source-vs-closed-source)
   - [Token utility](#token-utility)
@@ -30,10 +30,12 @@ As any human, aside from objective research I've made, I have my own biases and 
 
 A few disclaimers I must make before jumping right into it:
 
-- This is **my opinion**, formulated from other people's opinions and lots... lots of reading. I am in no way, shape or form an authority on this, I simply speak from my personal experience, mistakes, successes and things I've read.
+- This is **my opinion**, formulated from other people's opinions and lots... lots of reading, and watching the market. I am in no way, shape or form an authority on this, I simply speak from my personal experience, mistakes, successes and things I've read.
 
-- I've been deeply interested in this world for the past 5 years and have seen lots and lots of disasters, scams, cool projects, as well as massive opportunities, some I've taken advantage of, others I've [almost cried](https://youtu.be/9GkVhgIeGJQ) over missing.
-  
+- I've been deeply interested in this world for the past 5 years and have seen lots and lots of disasters, scams, cool projects, as well as massive opportunities, some I've taken advantage of, others I've <a id="boysDontCryLink" onclick="showBoysDontCry()">almost cried</a> over missing.
+
+<div id="boysDontCryAudio"><audio controls src="./assets/boysdontcry.mp3"> Your browser does not support the <code>audio</code> element.</audio></div>
+
 - The cryptocurrency market is very speculative, no hypothesis that I or anyone has about the fundamentals or functionality of an application or blockchain will necessarily be reflected on the price. 
 
 - Any investment that you make as a direct cause of reading this article is NOT my responsibility, this is risk that YOU and only YOU take.
@@ -44,7 +46,12 @@ A few disclaimers I must make before jumping right into it:
 
 - When I say "big cryptos", I'm only referring to Bitcoin (BTC) and Ethereum (ETH). Nothing else.
 
-## Purpose
+- Investment in cryptocurrency carry additional risk when compared to traditional investments. My focus on this article is to consider **risk-adjusted returns**. Yes, it may be potentially a lot more profitable to invest in a small cap coin with ranks 1000+ when sorted by market cap like on [CoinGecko](https://www.coingecko.com/) as opposed to BTC or ETH, however, this carries additional risk too, scams and abandoned projects are a very common sight in this market so we must be very careful when putting money into these. Returns must either beat or match those of BTC or ETH and remain consistent, if not, you might as well put your money in BTC or ETH given they carry lower risk.
+  - This is NOT to say that an investment in BTC or ETH is risk-free, **no investment is risk-free**, but the risk is certainly lower than when investing in a token like [**DogeCash**](https://www.coingecko.com/en/coins/dogecash) or anything with a Shiba Inu on it.
+
+***
+
+## Purpose of the project
 
 There's projects for all sorts of things, but you must first identify what _the purpose_ of that project is. There's so many different projects out there, so let's try to bundle them and categorize them into a few different sections and provide some examples per category:
 
@@ -105,6 +112,8 @@ Some questions I ask myself that I consider apply to every crypto project:
 
 Let's begin to answer some of these in the following sections. I'll also try to define some terms in the [glossary](#glossary) section, but I will assume the reader has at least extremely basic knowledge of software development (not how to do it, but at least what it entails) and basic economics terminology (supply, demand, inflation, etc...)
 
+***
+
 ## Open source vs Closed source
 
 In the non-blockchain world of software, it's OK to use closed source software if it's coming from a trusted source. Sure, it's safer to use open source software, as you can actually _see_ what the piece of software is doing, however, on the blockchain this is **not optional**.
@@ -124,6 +133,8 @@ Uniswap is an extraordinarily good example as it has open source smart contracts
 We should always also make sure that this is also reflected on the deployed contract of the project:
 
 ![UniswapV3](assets/UniswapV3Router2Etherscan.png)
+
+***
 
 ## Token utility
 
@@ -154,6 +165,8 @@ Regardless of what PancakeSwap has achieved, investing in CAKE was surely a grea
 ![CAKE/BTC](assets/CAKEBTC.png)
 
 The bottom line here is, if your project's token is not useful, it is likely <span class="red">**not a good investment**</span> when compared to ETH or BTC. You want whatever project you're investing to either **match** the performance of ETH and BTC or to **outperform** them consistently. That's not easy, but it's possible under the right circumstances. We'll see more examples of this later.
+
+***
 
 ## Tokenomics
 
@@ -224,6 +237,8 @@ Aside from stablecoins, Curve is very effective in pairing assets that are wrapp
 Knowing this, we can go into why Curve has attracted so much liquidity aside from the efficiency of its stable pools, and that's the tokenomics of CRV, Curve's native token. Let's first check out the distribution of CRV:
 
 ![](assets/CurveTokenomics1.png)
+
+***
 
 ## Glossary
 
