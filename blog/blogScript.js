@@ -96,10 +96,27 @@ $("#expandBlogPreview").click(function() {
 
 // check if there's a post div id to insert article content
 if (document.getElementById("content")) {
+    // fetch the markdown file
     fetch(art_md_path)
       .then(response => response.text())
       .then(data => {
         document.getElementById('content').innerHTML =
           marked.parse(`${data}`);
+
+        // for articles with more custom web devy shit
+        // ---------------------------- evaluate crypto projects
+        if ($("#content").attr('special') == "evaluate_crypto_projects") {
+            // evaluate crypto projects article
+            // hide boys dont cry audio
+            $('#boysDontCryAudio').hide() 
+        }
+
       });
+}
+
+// random functions in specific articles
+// ------------- evaluate crypto projects
+// add functionality to toggle audio
+function showBoysDontCry() {
+    $('#boysDontCryAudio').toggle()
 }
