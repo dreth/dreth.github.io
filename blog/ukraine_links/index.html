@@ -32,7 +32,7 @@
   <link rel="stylesheet" type="text/css" href="postStyles.css">
   <script src="/script.js"></script>
   <script src="/jquery.js"></script>
-  <script src="/blog/blogScript.js"></script>
+  <script src="/blog/marked.js"></script>
 
   <!-- title -->
   <title>Links and information resources on the 2022 Russian invasion of Ukraine</title>
@@ -42,19 +42,10 @@
   <a href="#" onclick="this.href = blog;" oncontextmenu="this.href = blog;" class="gb">
     ⬅️ article list</a>
   <br><hr>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script>
-    fetch(art_md_path)
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('content').innerHTML =
-          marked.parse(`${data}`);
-      });
-  </script>
   <div id="content"></div>
-
   <br><br>
 
 </body>
+<script src="/blog/blogScript.js"></script>
 
 </html>

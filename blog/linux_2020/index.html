@@ -41,19 +41,11 @@
   <a href="#" onclick="this.href = blog;" oncontextmenu="this.href = blog;" class="gb">
     ⬅️ article list</a>
   <br><hr>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script>
-    fetch(art_md_path)
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('content').innerHTML =
-          marked.parse(`${data}`);
-      });
-  </script>
   <div id="content"></div>
 
   <br><br>
 
 </body>
+<script src="/blog/marked.js"></script>
 
 </html>
