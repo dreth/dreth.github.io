@@ -202,6 +202,8 @@ This is not financial advice, but I want to end with a recommendation after indu
   
 - Inform yourself before you say NFTs are 'useless'. They're not useless, they're pretty cool, and are here to stay whether you like it or not.
 
+***
+
 ## Image sources
 
 I'll only source externally obtained images, these are in order. Images I do not source I either took a screenshot of or created on my own.

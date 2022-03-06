@@ -238,6 +238,8 @@ Knowing this, we can go into why Curve has attracted so much liquidity aside fro
 
 ![](assets/CurveTokenomics1.png)
 
+
+
 ***
 
 ## Glossary
@@ -252,6 +254,8 @@ Knowing this, we can go into why Curve has attracted so much liquidity aside fro
 
 - **Airdrop**: An airdrop is an event where a project allocates and distributes a specific amount of its supply to non-insiders (investors, developers) and releases this portion of the supply to previous users, liquidity providers or even people that apply to it.
 
+***
+
 ## Image sources
 
 I typically source these in order but I'll reference them with a description since I have created some images and I'm not keeping track of image order in this post.
@@ -260,4 +264,4 @@ I typically source these in order but I'll reference them with a description sin
 
 ***
 
-**Date: February 12, 2022**
+**Date: March 6th, 2022**
