@@ -51,6 +51,8 @@ When an product, commodity or asset is _non fungible_, it is fundamentally uniqu
 
 Only one copy of it exists, Leonardo could've painted three copies of this artwork, but he didn't, he painted one. However, had he painted three, then we would have _Salvator Mundi No.1_, _Salvator Mundi No.2_ and _Salvator Mundi No.3_, which would all be unique in their own way, or identical, but still unique at least in the order in which they were painted, thus retaining some difference between each other in terms of order (assuming Leonardo could reproduce 3 copies of it in absolutely perfect order like a robot).
 
+***
+
 ## Tokens on the blockchain
 
 Sufficiently distributed and decentralized blockchains are perhaps the most trustworthy systems we can have. Where trust is _not even needed_ to perform a handshake or agreement, simply a digital signature. 
@@ -100,7 +102,7 @@ Yes, there are instances where the asset represented by the token is not an exte
 
 We can question the utility of tokens like *CryptoPunks*, but there's not much use in discussing the utility of *Salvator Mundi* either, both are art, and they can be used for whatever its owner wants to use it.
 
-#### Value
+### Value
 
 As humans, we tend to place value to unique items with special and unique qualities, which is why paintings like the aforementioned hold such a massive monetary value. If someone will pay *x amount* for it, then it is worth *x amount*. 
 
@@ -108,7 +110,7 @@ In the case of this legendary painting we can say that this value, no matter how
 
 The question some people ask me is, and excuse them for cussing, "Why the **FUCK** is this piece of **SHIT** jpeg being sold for millions?". To which I first would say "chill bro" and then explain that people *like money*, people *want money*, because money is useful, and people *speculate* on the value of assets with the purpose and intent to *make money*. Sure let's not discard those individuals that do have some sort of emotional attachment to their CryptoPunk or Bored Ape, it's not like they paid 200K for them or something... However, these are not the majority of people trading these digital assets. The majority will buy these to try and flip them for a profit, simple as that, you have a lot of ETH to buy one of these, then you can get a lot of ETH for selling one of these and (hopefully) even more than what it initially costed you.
 
-#### Risks
+### Risks
 
 As a result, these digital assets command huge levels of trading volume between speculators and traders. Though they carry additional risk that other digital assets do not always carry:
 
@@ -118,11 +120,15 @@ As a result, these digital assets command huge levels of trading volume between 
   
 - **Lack of continued development from creators**: An NFT collection may be created by a large team of engineers, artists or perhaps a large conglomerate or company. Though it can also be created by some anonymous dude on telegram that got paid a couple thousand bucks to copy-paste a popular collection's smart contract, lightly modify it and do all the tedious work that requires deploying an NFT collection on the Ethereum blockchain. Creators that do not show active development activity or creation of an ecosystem around their collection tend to fall into irrelevancy. 
 
+***
+
 ## Actually useful NFTs
 
 NFTs have all sorts of novel uses, they can represent real-life assets, they can represent other digital assets, but I want to focus on 2 specific use cases of these tokens on the blockchain, as well as 1 hypothetical use for them in a game I personally used to play.
 
 ### ENS names
+
+![ENS logo](assets/5.png)
 
 ENS names are NFTs that have a specific domain name functionality on the blockchain. With domains like **startpage.com**, we can refer to network locations or resources in a human-readable way. For example, [**startpage.com**](https://startpage.com) will redirect to the StartPage search engine, which is a website hosted in some server. The 'original' address for this resource (the StartPage search engine website) could be a much longer and difficult to remember address than **startpage.com**, but domain names allow us to recognize these locations and remember them.
 
@@ -154,6 +160,8 @@ Now on to an example of NFT use applied to a massive multiplayer online (MMO) ga
 
 Guild Wars 2 has an [in-game marketplace](https://wiki.guildwars2.com/wiki/Trading_Post) where users can sell items, these items often trade for high [*gold*](https://wiki.guildwars2.com/wiki/Coin) (main in-game currency) values, which often either require **a lot** of play time to acquire, or the conversion of [*gems*](https://wiki.guildwars2.com/wiki/Gem) (purchaseable in-game currency) to gold. 
 
+![GW2 marketplace](assets/7.jpeg)
+
 Gold **cannot** be purchased from anyone, not even the game developer ArenaNet, and it is strictly banned. If ArenaNet catches you selling or buying gold from other users for real-life money, they will ban your and the seller's account. This, however, does not discourage people from buying or selling in-game gold in third-party marketplaces, as gold can be sent through the in-game mail system.
 
 Gems, however, can be purchased directly from ArenaNet or authorized third party sellers. This, also, does not discourage unauthorized sellers from selling cards that can be redeemed for gems in-game, after acquiring them through either money laundering (buying them at original price from an official reseller and selling cheaper to launder the money), or some other legal (or illegal) way.
@@ -173,6 +181,8 @@ Guild wars 2 legendary weapons (and similarly expensive items) could be a perfec
 Just like Guild Wars 2, other games could implement NFTs in a way the user *doesn't even know* they're using NFTs, thereby avoiding any [unnecessary backlash](https://cointelegraph.com/news/ubisoft-executive-responds-to-the-backlash-over-new-nft-platform) trying to force the concept down your clients' (gamers) throat.
 
 NFTs are NOT a feature, they are, like screwdrivers, a tool, a path to a goal, and companies and people alike should learn to treat them as such.
+
+***
 
 ## Conclusion
 
@@ -194,6 +204,8 @@ This is not financial advice, but I want to end with a recommendation after indu
 
 ## Image sources
 
+I'll only source externally obtained images, these are in order. Images I do not source I either took a screenshot of or created on my own.
+
 1. [Dollar bill](https://commons.wikimedia.org/wiki/File:United_States_one_dollar_bill,_obverse.jpg)
    
 2. [Salvator Mundi](https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci,_Salvator_Mundi,_c.1500,_oil_on_walnut,_45.4_%C3%97_65.6_cm.jpg)
@@ -201,6 +213,8 @@ This is not financial advice, but I want to end with a recommendation after indu
 4. [CryptoPunk #5136](https://opensea.io/assets/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/5136)
    
 5. [ENS logo](https://gadgetstouse.com/blog/2022/02/05/ens-domain-buy-create-register/)
+
+7. [Guild wars 2 trading post](https://wiki.guildwars2.com/wiki/Trading_Post)
 
 ***
 
