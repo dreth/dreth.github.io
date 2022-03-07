@@ -20,7 +20,16 @@ As any human, aside from objective research I've made, I have my own biases and 
     - [CAKE/ETH Ratio](#cakeeth-ratio)
   - [Tokenomics](#tokenomics)
     - [Example: Uniswap tokenomics](#example-uniswap-tokenomics)
+      - [UNI token distribution](#uni-token-distribution)
+      - [UNI's issues as an investment from the perspective of tokenomics](#unis-issues-as-an-investment-from-the-perspective-of-tokenomics)
+      - [How UNI can become more attractive as an investment](#how-uni-can-become-more-attractive-as-an-investment)
     - [Example: Curve tokenomics](#example-curve-tokenomics)
+      - [CRV token distribution](#crv-token-distribution)
+      - [CRV's advantage over other pure governance tokens like UNI](#crvs-advantage-over-other-pure-governance-tokens-like-uni)
+      - [CRV's performance](#crvs-performance)
+  - [Weird token mechanics](#weird-token-mechanics)
+  - [Competing blockchains](#competing-blockchains)
+  - [Project developers](#project-developers)
   - [Glossary](#glossary)
   - [Image sources](#image-sources)
 
@@ -96,13 +105,11 @@ Some questions I ask myself that I consider apply to every crypto project:
   
 - Is its token [**useful**](#token-utility)? Is its token **necessary**? If the project didn't have a token, would it impede them from achieving the goal or functionality of the application?
 
-- How are the project's [**tokenomics**](#tokenomics)? Does the token provide any yield or **dividends to holders**? Did the project start its token distribution with an **airdrop**?
+- How are the project's [**tokenomics**](#tokenomics)? Does the token provide any yield or **dividends to holders**? Does the token have any **locking or supply reducing** mechanics? Did the project start its token distribution with an **airdrop**? Is there any **incentive** to hold or use the token that's creating **demand**? How's the **vesting schedule**? How long will it take for the token's supply to be fully diluted?
 
-- How's the **vesting schedule**? How long will it take for the token's supply to be fully diluted?
+- Does the token have [**bullshit mechanics**](#weird-token-mechanics) to artificially try and create demand for it while having zero utility whatsoever?
 
-- **Who** are the people behind this project? Are they anonymous? 
-
-- Do the owners/developers have a **good track record**? Have they been part of some kind of scam in the past?
+- [**Who**](#project-developers) are the people behind this project? Are they anonymous? Do the owners/developers have a **good track record**? Have they been part of some kind of scam in the past?
 
 - How do the project's **git repositories** look like?
 
@@ -194,7 +201,7 @@ Let's look at some example tokenomics, outline strenghts and weaknesses and perh
 
 Uniswap is a DEX, it allows users to trade assets in a permissionless manner, as well as create trading pairs and provide liquidity to existing trading pairs. Uniswap released their token in Q4 2020 through an *airdrop*[<sup>[5]</sup>](#glossary). The airdrop gave away 400 UNI tokens to each and every wallet that ever interacted with the protocol, whether the trade was successful or the transaction executing the trade failed. 
 
-The UNI token distribution is as follows:
+#### UNI token distribution
 
 ![](assets/UniswapTokenomics1.png)
 
@@ -206,6 +213,8 @@ This is the genesis allocation though, as more tokens are released on the market
 
 The release schedule also seems quite standard. But as with any *new* token, we have to consider the possibility that inflation will exist until the full supply is out there, meaning that if demand for it does not rise, and there's not inherent mechanic to reduce supply or increase demand, the token will NOT perform well when compared to ETH or BTC. Again, if you're going to invest in a project, no matter how 'good' you perceive it, the investment may not be good enough because of inflation. Inflation is baked into new tokens, they need to eventually become fully diluted or have good mechanics before you should consider an investment in them.
 
+#### UNI's issues as an investment from the perspective of tokenomics
+
 Uniswap's token UNI at the time does nothing but allow for active participation in governance, like shares in a company. **There is no mechanic to**:
 
 - Distribute protocol revenue to holders
@@ -215,6 +224,8 @@ Uniswap's token UNI at the time does nothing but allow for active participation 
 - Increase demand for the token
 
 Therefore holding UNI is potentially shooting yourself in the foot. Uniswap is a formidable, trusted, revolutionary, useful and amazing project, but this <span class="red">does not mean that buying UNI is a good idea.</span> 
+
+#### How UNI can become more attractive as an investment
 
 Despite this, and as I mentioned before, the lack of existence of these mechanics doesn't necessarily condition their future existence. A way to keep up with whether these mechanics will exist or have been proposed by prominent community members or developers is to look at the [governance forum for Uniswap](https://gov.uniswap.org/). Before implementing anything on the blockchain, several steps need to be achieved, at least in the case of highly secure, audited protocols (the ONLY kind of project you should ever invest in) like Uniswap:
 
@@ -230,15 +241,103 @@ If the actions in step 2 require an additional contract, a formal audit may be m
 
 ### Example: Curve tokenomics
 
-Curve Finance is a decentralized exchange that has been especially popular for stablecoin pools. Given the variety of stablecoins like USDT, USDC, DAI, UST... a need for a more robust stablecoin decentralized exchange was created. Uniswap and other decentralized exchanges still work for stablecoin swaps. There's large pools for this on Uniswap V3 as well that trade between assets in pairs like USDC/DAI, however, Curve's approach is different and allows for multi-asset pools as opposed to just pairs as well as keeping the price peg between stablecoins in a much more efficient way, with much lower slippage and fees. It's important to note Uniswap V3 has fixed much of the faults of Uniswap V2 that Curve has improved significantly, but the big differentiator for Curve as opposed to Uniswap and the reason why it's attracted so much more liquidity is its CRV token and the outstandingly good tokenomics it boasts.
+Curve Finance is a decentralized exchange that has been especially popular for stablecoin pools. Given the variety of stablecoins like USDT, USDC, DAI, UST... a need for a more robust stablecoin decentralized exchange was created. Uniswap and other decentralized exchanges still work for stablecoin swaps. There's large pools for this on Uniswap V3 as well that trade between assets in pairs like USDC/DAI, however, Curve's approach is different and allows for multi-asset pools as opposed to just pairs as well as keeping the price peg between stablecoins in a much more efficient way, with much lower slippage and fees. 
+
+It's important to note Uniswap V3 has fixed much of the faults of Uniswap V2 that Curve has improved significantly, but the big differentiator for Curve as opposed to Uniswap and the reason why it's attracted so much more liquidity is its CRV token and the outstandingly good tokenomics it boasts.
 
 Aside from stablecoins, Curve is very effective in pairing assets that are wrapped or represented by another token, providing utility in other projects, for example Alchemix's alETH, StakeWise's sETH2, etc... These are assets that either should always be represented by the value of ETH or are supposed to be pegged 1:1 with ETH (or as close as possible) due to other mechanics. The idea here is that Curve is a fantastic tool for stable pools, whether those are stablecoins or other stable pairs.
+
+#### CRV token distribution
 
 Knowing this, we can go into why Curve has attracted so much liquidity aside from the efficiency of its stable pools, and that's the tokenomics of CRV, Curve's native token. Let's first check out the distribution of CRV:
 
 ![](assets/CurveTokenomics1.png)
 
+This looks fairly standard, however, let's notice how the initial supply of CRV was distributed:
 
+![](assets/CurveTokenomics2.png)
+
+Here we can see several interesting features which differentiate CRV as a governance token:
+
+- The CRV allocation for liquidity providers is *vested*[<sup>[6]</sup>](#glossary), meaning they can't sell it until after a year.
+
+- There's no instantly massive release of a significant amount of the supply, but rather a 2M release per day.
+
+- The primary objective of CRV is to put LPs first.
+
+#### CRV's advantage over other pure governance tokens like UNI
+
+**Much** more important than just the distribution are the amazing **features** of CRV:
+
+![](assets/CurveLocking.png)
+
+- CRV can be locked for 1 week, 1 month, 3 months, 6 months, 1 year or 4 years and people that lock their CRV will get back veCRV back, which has several features:
+  
+  - veCRV holders can vote on governance proposals, as opposed to CRV holders, the longer the lock period, the larger the voting power.
+  
+  - veCRV holders can boost the CRV rewards they get from providing liquidity on Curve pools significantly (up to 2.5x the normal reward amount in CRV).
+  
+  - veCRV holders earn 50% of the trading fees in Curve pools in the form of 3CRV LP tokens, which represent the underlying liquidity for the 3Pool. A pool composed of the DAI/USDC/USDT stablecoins that gets a lot of use in large trades. At the time of writing, this pool has ~20M dollars worth of daily trading volume and has about 4B dollars worth of liquidity.
+  
+  - veCRV holders decide where CRV incentives are allocated in Curve, so there's an incentive from external projects that have their liquidity on Curve to bribe (or rather pay) veCRV holders for the service of directing CRV rewards to their pools.
+
+These rewards are then further incentivized by other projects that try to take advantage of this system to reward users that provide liquidity even further. Without getting into much more detail about these mechanics we can analyze them closely and <span class="red">see why CRV tokenomics are excellent</span>:
+
+- CRV can be locked to get the benefits of veCRV, so CRV has a mechanic to take tokens out of the supply for a significant period of time.
+
+- CRV earns protocol fees in the form of 3CRV, so CRV has a mechanic to pay dividends to holders.
+
+- veCRV can be used to vote to direct incentives to pools, so CRV has a mechanic to create demand to buy it in order for projects to attract liquidity.
+
+These seem trivial, but given the innovation of Curve and how popular it is for pooling stable assets, it's become a very popular go-to option for other projects to set up their liquidity pools and even spawning other projects with the sole purpose of controlling CRV incentives to pools.
+
+#### CRV's performance
+
+As a result of Curve's success as a decentralized exchange and the subsequent success of its CRV incentives and great CRV tokenomics, the performance of CRV has been on-par with that of ETH:
+
+![](assets/CRVETH.png)
+
+As well as BTC:
+
+![](assets/CRVBTC.png)
+
+With the exception of the starting 2 months, when the token was released given the initial high inflation, but as Curve became more and more popular and more and more projects decided to establish their pools in the protocol, this has made CRV another **solid token to hold** in combination to ETH and BTC.
+
+***
+
+## Weird token mechanics
+
+Following tokenomics, we can make a short section dedicated to 'weird mechanics', tokens that have deliberate mechanics to artificially try to create demand, even when the token serves absolutely no purpose. Some of the mechanics most quasi-scam projects will use are:
+
+- **Loud claims of having a 'deflationary' token distribution**: Using basic law of supply and demand we know that given a decreasing supply and increasing demand, the price of an asset should rise. However, when the token serves no purpose no matter how 'deflationary' the distribution is, the price will not increase unless some artificial demand is created.
+
+  - Example: 'SAFEMOON', a token that has a deflationary mechanic, but again, no utility at all. Rose very prominently in January 2021, but given how useless it is, anyone that didn't buy before the hype period and initial rise (yellow) ended up losing money in the subsequent period where investors realized this token is pretty much useless (fuchsia):
+
+![](assets/SAFEMOONETH.png) 
+
+- **Additional transaction fees when buying/selling**: If the token's supply is reduced and distributed to other holders of the token upon transacting with the token (sending it) or upon buying/selling the token, then there's an incentive to not sell the token. Yeah, no. Usually projects will use this kind of bullshit mechanic so that people don't sell it, but people will sell it, even at a loss.
+
+  - Example: Fees.wtf's token 'WTF'. Released through an airdrop which anyone could theoretically sell after receiving, this tactic was used to encourage holding or buying and holding the token. Needless to say, this approach did not quite work well as we can see by the token's performance:
+
+![](assets/WTFETH.png)
+
+Either way, the devil is in the details, bullshit claims to create bullshit demand is only gonna benefit a few and it's gonna make a lot of people lose their money. If a token is hot on social media and gaining a lot of traction, you're most likely already too late to the bandwagon and have already lost your chance to profit off of it.
+
+<figure>
+  <img src="./assets/SAFEMOONScamTokenomics.png">
+  <figcaption><i>Tell me you're a scam without telling me you're a scam</i></figcaption>
+</figure>
+
+
+***
+## Competing blockchains
+
+
+
+
+***
+
+## Project developers
 
 ***
 
@@ -253,6 +352,8 @@ Knowing this, we can go into why Curve has attracted so much liquidity aside fro
 - **Vampire attack**: When a project is created with the sole purpose of stealing liquidity and user activity from another by giving users a more comfortable/faster/cheaper way to transact or providing additional incentives as opposed to a competing project. Ex. SushiSwap on Uniswap in Q4 2020 (providing bigger incentives to LPs), or BSC (Binance Smart Chain) on Ethereum in Q1 2021 (providing cheaper gas fees at the cost of security, decentralization, long-term sustainability and spam mitigation).
 
 - **Airdrop**: An airdrop is an event where a project allocates and distributes a specific amount of its supply to non-insiders (investors, developers) and releases this portion of the supply to previous users, liquidity providers or even people that apply to it.
+
+- **Vesting period**: The vesting period is the period of time in which an investor or token recipient, after making an investment or participating in a protocol, is unable to sell their vested tokens. The tokens may be in their wallet already or they may take a while to be received or for it to be possible to claim them or sell them in the open market.
 
 ***
 
