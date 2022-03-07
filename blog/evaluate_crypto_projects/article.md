@@ -10,7 +10,7 @@ As any human, aside from objective research I've made, I have my own biases and 
 
 - [Analyzing investments in cryptocurrency projects](#analyzing-investments-in-cryptocurrency-projects)
   - [Article index](#article-index)
-  - [Some disclaimers](#some-disclaimers)
+  - [Disclaimers](#disclaimers)
   - [Purpose of the project](#purpose-of-the-project)
   - [Questions to answer about any crypto project](#questions-to-answer-about-any-crypto-project)
   - [Open source vs Closed source](#open-source-vs-closed-source)
@@ -28,35 +28,43 @@ As any human, aside from objective research I've made, I have my own biases and 
       - [CRV's advantage over other pure governance tokens like UNI](#crvs-advantage-over-other-pure-governance-tokens-like-uni)
       - [CRV's performance](#crvs-performance)
   - [Weird token mechanics](#weird-token-mechanics)
-  - [Competing blockchains](#competing-blockchains)
+  - [Blockchain native tokens](#blockchain-native-tokens)
+    - [Payment blockchains](#payment-blockchains)
+      - [Historical performance vs BTC](#historical-performance-vs-btc)
+    - [Smart contract blockchains](#smart-contract-blockchains)
+      - [ETH's performance vs BTC](#eths-performance-vs-btc)
   - [Project developers](#project-developers)
   - [Glossary](#glossary)
   - [Image sources](#image-sources)
 
 ***
 
-## Some disclaimers
+## Disclaimers
 
-A few disclaimers I must make before jumping right into it:
+Some disclaimers I must make before jumping right into it:
 
-- This is **my opinion**, formulated from other people's opinions and lots... lots of reading, and watching the market. I am in no way, shape or form an authority on this, I simply speak from my personal experience, mistakes, successes and things I've read.
+- This is **my opinion**, formulated from other people's opinions and lots... lots of reading, and watching the market. I am in no way, shape or form an authority on this, I simply speak from my personal experience, mistakes, successes and things I've read. NONE of what I say here should constituted as financial advice, the way you invest is the way YOU invest. All I'm trying to do with this article is to encourage **doing your own research** or DYOR.
 
 - I've been deeply interested in this world for the past 5 years and have seen lots and lots of disasters, scams, cool projects, as well as massive opportunities, some I've taken advantage of, others I've <a id="boysDontCryLink" onclick="showBoysDontCry()">almost cried</a> over missing.
 
 <div id="boysDontCryAudio"><audio controls src="./assets/boysdontcry.mp3"> Your browser does not support the <code>audio</code> element.</audio></div>
 
-- The cryptocurrency market is very speculative, no hypothesis that I or anyone has about the fundamentals or functionality of an application or blockchain will necessarily be reflected on the price. 
+- The cryptocurrency market is very speculative, no hypothesis that I or anyone has about the fundamentals or functionality of an application or blockchain will necessarily be reflected on the price.
 
 - Any investment that you make as a direct cause of reading this article is NOT my responsibility, this is risk that YOU and only YOU take.
 
 - If you think all of cryptocurrency is a ponzi scheme or a huge scam, I recommend you read [the following article](https://divethru.com/feeling-stupid-a-guide-to-your-emotions/).
 
-- I am a risk-averse investor, I do not engage with especially obscure projects, and if so I only put a small portion of my portfolio there.
+- I am a risk-averse investor, I do not engage with especially obscure projects, and if so I only put a negligible portion of my portfolio there. Full disclosure: Most of my holdings are in ETH.
+
+- Whenever I say that a token or coin is probably not a good investment, it does not mean that there's absolutely anything wrong with the project.
+
+- I do NOT TRADE, almost never, I enter and exit positions in very long timeframes, cutting losses or taking profits when I consider it appropriate according to my analysis. This article is **not for traders**, it's for people looking at crypto projects with the intent to **hold the asset for a long time**. Investments in cryptocurrency can be extraordinarily good for you if you are **patient** and are able to go about your day without looking at the price (or being affected by it)
 
 - When I say "big cryptos", I'm only referring to Bitcoin (BTC) and Ethereum (ETH). Nothing else.
 
 - Investment in cryptocurrency carry additional risk when compared to traditional investments. My focus on this article is to consider **risk-adjusted returns**. Yes, it may be potentially a lot more profitable to invest in a small cap coin with ranks 1000+ when sorted by market cap like on [CoinGecko](https://www.coingecko.com/) as opposed to BTC or ETH, however, this carries additional risk too, scams and abandoned projects are a very common sight in this market so we must be very careful when putting money into these. Returns must either beat or match those of BTC or ETH and remain consistent, if not, you might as well put your money in BTC or ETH given they carry lower risk.
-  - This is NOT to say that an investment in BTC or ETH is risk-free, **no investment is risk-free**, but the risk is certainly lower than when investing in a token like [**DogeCash**](https://www.coingecko.com/en/coins/dogecash) or anything with a Shiba Inu on it.
+  - This is NOT to say that an investment in BTC or ETH is risk-free, quite the opposite! Also, **no investment is risk-free**, but the risk is certainly lower than when investing in a token like [**DogeCash**](https://www.coingecko.com/en/coins/dogecash) or anything with a Shiba Inu on it (maybe except DOGE? meh)
 
 ***
 
@@ -321,7 +329,7 @@ Following tokenomics, we can make a short section dedicated to 'weird mechanics'
 
 ![](assets/WTFETH.png)
 
-Either way, the devil is in the details, bullshit claims to create bullshit demand is only gonna benefit a few and it's gonna make a lot of people lose their money. If a token is hot on social media and gaining a lot of traction, you're most likely already too late to the bandwagon and have already lost your chance to profit off of it.
+Either way, the devil is in the details, bullshit mechanics to create temporary artificial demand is only gonna benefit a few and it's gonna make a lot of people lose their money. If a token is hot on social media and gaining a lot of traction, you're most likely already too late to the bandwagon and have already lost your chance to profit off of it.
 
 <figure>
   <img src="./assets/SAFEMOONScamTokenomics.png">
@@ -330,14 +338,82 @@ Either way, the devil is in the details, bullshit claims to create bullshit dema
 
 
 ***
-## Competing blockchains
+## Blockchain native tokens
+
+Since the initial release of the Bitcoin white paper and its creation, there's been a lot of different blockchains with different purposes. In particular, we've come to classify them by their purpose. To keep this article within scope, I want to only focus on two types of blockchains: **Payment blockchains** and **Smart contract blockchains**.
+
+### Payment blockchains
 
 
+<img class="smaller" src="assets/Bitcoin.png">
+
+Payment blockchains allow you to send and receive cryptocurrency. Their functionality is simple even if the underlying technology is extremely complex. The 'original' payment blockchain is the Bitcoin blockchain, through which we can send and receive Bitcoin's native token BTC.
+
+BTC is potentially the best investment in the history of humanity if purchased when it launched in 2009 and held until today. However, a lot of people came to know BTC through other similar projects (and their native tokens) like:
+
+- Litecoin (LTC)
+- Dash (DASH)
+- Dogecoin (DOGE)
+- Nano (NANO)
+  .. among others.
+
+<img class="smaller" src="assets/PaymentBlockchains.png">
+
+
+These projects do the exact same thing Bitcoin attempts to do, but 'cheaper' and 'more efficiently'. However, while well known, relatively innovative and with large communities of their own, they are an investment very difficult to justify for several reasons:
+
+- Bitcoin was the first proof of concept that we can have a digital currency in a decentralized distributed network secured by cryptography (blockchain), these other Bitcoin 'alternatives' do not exactly provide any new functionality, they are simply 'cheaper', but hardly recognized like Bitcoin is.
+
+- Large investors, institutions and those with the capital to be able to push the price of an asset up are probably not going to seriously consider an investment in a 'Bitcoin alternative' like Litecoin. Their portfolios hold Bitcoin, not Litecoin, and they will not use Bitcoin for payments, they will use it as an investment. Whether Bitcoin suceeded or failed in the task of becoming a 'worldwide digital currency' as of 2022 is hardly relevant.
+
+- Their historical performance when compared to Bitcoin is just 'meh', let's look at some charts.
+
+#### Historical performance vs BTC
+
+In this section I want to highlight that when I refer to poor historical performance vs BTC, I'm not trying to say you "can't make money with these", but I do not trade in short timeframes, so good performance of any of these assets vs BTC during a short period of 1-3 weeks is probably not going to be something I can catch *on time*. 
+
+- **DASH/BTC**, meh.
+
+![](assets/DASHBTC.png)
+
+- **LTC/BTC**, good sometimes, *mediocre overall*.
+
+![](assets/LTCBTC.png)
+
+- **NANO/BTC**, there was a period where holding it could've earned you a lot as opposed to holding Bitcoin, but for the most part, the trend is down with the exception of that period. If you think this thing is going to take off, that's okay, but I don't see that happening for now and would rather hold BTC.
+
+![](assets/NANOBTC.png)
+
+- **DOGE/BTC**, so what? I made a mistake? what are you gonna do about it huh? Doge has performed *alright* against bitcoin historically, being mostly a sideways dance with some spikes in specific moments, whenever it gets 'hot again'. Don't be deceived by this chart though, the investment is alright if we consider its historical performance, but the token is a meme, it has infinite supply and there's like 50 wallets that control the overwhelming majority of the supply. "But Daniel you could also say that about BTC!!", then buy DOGE man, it's OK, I also think the lil dog is kinda cute too, good luck trying to catch those spikes though!
+ 
+![](assets/DOGEBTC.png)
+
+Note, I am not trying to argue that you **shouldn't buy any of these**, I'm just saying, the priority is <span class="red">maximizing **risk-adjusted returns**</span>, BTC is just less risky than these and it's what makes these assets go up because they are all more than 95% correlated to BTC. BTC moves them, not the other way around!
+
+### Smart contract blockchains
+
+<img class="smaller" src="assets/Ethereum.png">
+
+In late 2013, Vitalik Buterin described Ethereum in a white paper. The project was created with the purpose of building decentralized applications and during its initial founding and development it had some extremely prominent leaders of other projects on board, among those Gavin Wood and Charles Hoskinson both founders of similar projects with different approaches to smart contracts.
+
+The Ethereum blockchain had a specific advantage over the Bitcoin blockchain in that it could host smart contracts as opposed to just addresses. Smart contracts are essentially a script, the script's functions can be called from a web interface that connects to the blockchain through a javascript library called web3.js through a local or remote ethereum node. Allowing for the creation and execution of applications that interact with the blockchain.
+
+The result of this is a robust ecosystem of mostly financial applications and a blockchain that supports more functionality than just sending and receiving payments, but rather all sorts of cool things like lending and borrowing, decentralized exchanges, etc.
+
+Ethereum's native asset ETH serves as the currency to cover costs for using these applications. Whenever there's a transaction, an amount of ETH must be paid. When interacting with a smart contract in any decentralized application, a set of instructions run in the Ethereum Virtual Machine and a cost is charged to the user based on what and how many operations were performed.
+
+#### ETH's performance vs BTC
+
+ETH as an asset has had mostly excellent performance vs BTC for the most part, with periods where BTC clearly is a better investment and periods where ETH is a better investment, however, for the most part we can see that the trend is up:
+
+![](assets/ETHBTC.png)
 
 
 ***
 
 ## Project developers
+
+
 
 ***
 
