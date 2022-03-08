@@ -111,6 +111,8 @@ if (document.getElementById("content")) {
                 // evaluate crypto projects article
                 // hide boys dont cry audio
                 $('#boysDontCryAudio').hide() 
+                // hide go back from glossary link
+                $('#goBackToReadingSectionDiv').hide()
         }
       });
 }
@@ -120,4 +122,12 @@ if (document.getElementById("content")) {
 // add functionality to toggle audio
 function showBoysDontCry() {
     $('#boysDontCryAudio').toggle()
+}
+// go back to section after clicking glossary sup-button ⬆
+function goBackToReadingSection() {
+    $('#goBackToReadingSectionDiv').hide()
+}
+function captureSection(section) {
+    $('#goBackToReadingSectionDiv').show()
+    $('#goBackToReadingSection').attr('href',section)
 }

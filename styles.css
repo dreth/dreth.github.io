@@ -11,6 +11,7 @@ span.innerText {
 span.aboutHeading {
   font-size: x-large;
 }
+
 /* links (b) */
 a.b:link {
   text-decoration: none;
@@ -145,6 +146,12 @@ a.gb:hover {
     font-family: Ubuntu, Sans-Serif;
     word-wrap: break-word;
   }
+  a.imageSource {
+    text-align: center;
+    font-size: 0.5vw;
+    font-family: Ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
   span.aboutHeading2 {
     font-size: 1.2vw;
   }
@@ -228,6 +235,12 @@ a.gb:hover {
     font-family: Ubuntu, Sans-Serif;
     word-wrap: break-word;
   }
+  a.imageSource {
+    text-align: center;
+    font-size: 0.8vw;
+    font-family: Ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
   span.aboutHeading2 {
     font-size: 1.8vw;
   }
@@ -306,6 +319,12 @@ a.gb:hover {
     word-wrap: break-word;
   }
   sup {
+    font-size: 1.5vw;
+    font-family: Ubuntu, Sans-Serif;
+    word-wrap: break-word;
+  }
+  a.imageSource {
+    text-align: center;
     font-size: 1.5vw;
     font-family: Ubuntu, Sans-Serif;
     word-wrap: break-word;

@@ -11,6 +11,10 @@ figure {
     text-align: center;
 }
 
+figcaption {
+    text-align: center;
+}
+
 a:link {
     text-decoration: none;
     color: #0ff;

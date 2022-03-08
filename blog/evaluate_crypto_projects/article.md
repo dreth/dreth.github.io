@@ -33,6 +33,7 @@ As any human, aside from objective research I've made, I have my own biases and 
       - [Historical performance vs BTC](#historical-performance-vs-btc)
     - [Smart contract blockchains](#smart-contract-blockchains)
       - [ETH's performance vs BTC](#eths-performance-vs-btc)
+      - [Ethereum as the leading blockchain](#ethereum-as-the-leading-blockchain)
   - [Project developers](#project-developers)
   - [Glossary](#glossary)
   - [Image sources](#image-sources)
@@ -155,7 +156,7 @@ We should always also make sure that this is also reflected on the deployed cont
 
 Apps and blockchains alike sometimes need a cryptocurrency or token to thrive, encourage growth, govern the protocol, or any sort of utility. However, other times, the token is _basically useless_ or simply not necessary to have. This is (IMO) the first thing to consider when buying a token or investing in a project.
 
-Other times, even if the token has some utility, it simply serves the purpose of governance. Projects with tokens that only serve the purpose of *governance*[<sup>[1]</sup>](#glossary) are provably **not a good investment** when compared to big cryptos. We can clearly see this when we take a large project's token like UNI (Uniswap), 1INCH (1inch) or CAKE (Pancakeswap, a Uniswap V2 fork) and we take their ratio vs ETH or BTC:
+Other times, even if the token has some utility, it simply serves the purpose of governance. Projects with tokens that only serve the purpose of *governance*<a onclick="captureSection('#token-utility')" href="#glossary"><sup>[1]</sup></a> are provably **not a good investment** when compared to big cryptos. We can clearly see this when we take a large project's token like UNI (Uniswap), 1INCH (1inch) or CAKE (Pancakeswap, a Uniswap V2 fork) and we take their ratio vs ETH or BTC:
 
 ### UNI/ETH Ratio
 
@@ -167,7 +168,7 @@ Looking at the UNI/ETH ratio, we can clearly see how poor of an investment buyin
 
 1INCH tokens have suffered much of the same fate of UNI tokens, yes there are differences, however, just like with UNI, this project started with an airdrop which caused a massive selloff, to then go on to a rally against ETH (meaning the price was going up more and faster than the price of ETH), however, the demand did not quite keep up and the token emissions (inflation) screwed up the price in the long term. This made 1INCH tokens not quite worth holding. We'll get into token emissions and inflation more in the [Tokenomics](#tokenomics) section.
 
-1INCH does have additional utility when compared to UNI, it allows users to get gas fee discounts when trading in the 1Inch *DEX*[<sup>[2]</sup>](#glossary) Aggregator, however, 1Inch has not managed to catch the *TVL*[<sup>[3]</sup>](#glossary) that Uniswap has managed to retain, so even if 
+1INCH does have additional utility when compared to UNI, it allows users to get gas fee discounts when trading in the 1Inch *DEX*<a onclick="captureSection('#1incheth-ratio')" href="#glossary"><sup>[2]</sup></a> Aggregator, however, 1Inch has not managed to catch the *TVL*<a onclick="captureSection('#1incheth-ratio')" href="#glossary"><sup>[3]</sup></a> that Uniswap has managed to retain, so even if 
 
 ![1INCH/ETH](assets/1INCHETH.png)
 
@@ -175,7 +176,7 @@ Looking at the UNI/ETH ratio, we can clearly see how poor of an investment buyin
 
 PancakeSwap came to sweep the market as the only DEX on Binance Smart Chain, however, even if some investors managed to do very well when CAKE launched, the trand is identical as with the other previous two projects. The developers of this project did essentially copy another project, Uniswap V2, to deploy it into a functionally centralized chain (when compared to Ethereum), however, there was a lot of development to make PancakeSwap into something more than just 'another DEX', with attractive farming programs and incentives for liquidity providers. It managed to attract a large amount of liquidity and it still holds a quite high position if we list protocols by their TVL.
 
-Regardless of what PancakeSwap has achieved, investing in CAKE was surely a great way to lose money when compared to just straight up buying BTC. As PancakeSwap was positioned weirdly, being in a chain that is [unsustainable in the long term](https://github.com/bnb-chain/bsc/issues/553#issue-1055158659), created with the sole purpose of performing a *vampire attack*[<sup>[4]</sup>](#glossary) on Ethereum, which was largely successful at first, but hardly sustainable in the long term. CAKE is another token that was a victim of its own emissions due to poor [tokenomics](#tokenomics) as well as lack of innovation and utility.
+Regardless of what PancakeSwap has achieved, investing in CAKE was surely a great way to lose money when compared to just straight up buying BTC. As PancakeSwap was positioned weirdly, being in a chain that is [unsustainable in the long term](https://github.com/bnb-chain/bsc/issues/553#issue-1055158659), created with the sole purpose of performing a *vampire attack*<a onclick="captureSection('#cakeeth-ratio')" href="#glossary"><sup>[4]</sup></a> on Ethereum, which was largely successful at first, but hardly sustainable in the long term. CAKE is another token that was a victim of its own emissions due to poor [tokenomics](#tokenomics) as well as lack of innovation and utility.
 
 ![CAKE/BTC](assets/CAKEBTC.png)
 
@@ -207,17 +208,19 @@ Let's look at some example tokenomics, outline strenghts and weaknesses and perh
 
 ### Example: Uniswap tokenomics
 
-Uniswap is a DEX, it allows users to trade assets in a permissionless manner, as well as create trading pairs and provide liquidity to existing trading pairs. Uniswap released their token in Q4 2020 through an *airdrop*[<sup>[5]</sup>](#glossary). The airdrop gave away 400 UNI tokens to each and every wallet that ever interacted with the protocol, whether the trade was successful or the transaction executing the trade failed. 
+Uniswap is a DEX, it allows users to trade assets in a permissionless manner, as well as create trading pairs and provide liquidity to existing trading pairs. Uniswap released their token in Q4 2020 through an *airdrop*<a onclick="captureSection('#example-uniswap-tokenomics')" href="#glossary"><sup>[5]</sup></a>. The airdrop gave away 400 UNI tokens to each and every wallet that ever interacted with the protocol, whether the trade was successful or the transaction executing the trade failed. 
 
 #### UNI token distribution
 
 ![](assets/UniswapTokenomics1.png)
+<figcaption><a href="https://uniswap.org/blog/uni" class="imageSource" target="_blank">Image source</a></figcaption>
 
 This, as far as tokenomics distributions go is alright, 60% going to the community is good. Uniswap is fairly recognized in the community so the proportion given to investors is not massive, 17.8% for investors is not ridiculous or excessive by any means when compared to other similar applications.
 
 This is the genesis allocation though, as more tokens are released on the market, the proportions will change slightly, but not significantly, therefore this chart is sufficient to describe the allocations. 
 
 ![](assets/UniswapTokenomics2.png)
+<figcaption><a href="https://uniswap.org/blog/uni" class="imageSource" target="_blank">Image source</a></figcaption>
 
 The release schedule also seems quite standard. But as with any *new* token, we have to consider the possibility that inflation will exist until the full supply is out there, meaning that if demand for it does not rise, and there's not inherent mechanic to reduce supply or increase demand, the token will NOT perform well when compared to ETH or BTC. Again, if you're going to invest in a project, no matter how 'good' you perceive it, the investment may not be good enough because of inflation. Inflation is baked into new tokens, they need to eventually become fully diluted or have good mechanics before you should consider an investment in them.
 
@@ -267,7 +270,7 @@ This looks fairly standard, however, let's notice how the initial supply of CRV 
 
 Here we can see several interesting features which differentiate CRV as a governance token:
 
-- The CRV allocation for liquidity providers is *vested*[<sup>[6]</sup>](#glossary), meaning they can't sell it until after a year.
+- The CRV allocation for liquidity providers is *vested*<a onclick="captureSection('#crv-token-distribution')" href="#glossary"><sup>[6]</sup></a>, meaning they can't sell it until after a year.
 
 - There's no instantly massive release of a significant amount of the supply, but rather a 2M release per day.
 
@@ -346,6 +349,7 @@ Since the initial release of the Bitcoin white paper and its creation, there's b
 
 
 <img class="smaller" src="assets/Bitcoin.png">
+<figcaption><a href="https://bitcoin.org/en/" class="imageSource" target="_blank">Image source</a></figcaption>
 
 Payment blockchains allow you to send and receive cryptocurrency. Their functionality is simple even if the underlying technology is extremely complex. The 'original' payment blockchain is the Bitcoin blockchain, through which we can send and receive Bitcoin's native token BTC.
 
@@ -355,9 +359,11 @@ BTC is potentially the best investment in the history of humanity if purchased w
 - Dash (DASH)
 - Dogecoin (DOGE)
 - Nano (NANO)
+
   .. among others.
 
 <img class="smaller" src="assets/PaymentBlockchains.png">
+<figcaption><a href="#image-sources" class="imageSource" target="_blank">Image sources</a></figcaption>
 
 
 These projects do the exact same thing Bitcoin attempts to do, but 'cheaper' and 'more efficiently'. However, while well known, relatively innovative and with large communities of their own, they are an investment very difficult to justify for several reasons:
@@ -393,6 +399,7 @@ Note, I am not trying to argue that you **shouldn't buy any of these**, I'm just
 ### Smart contract blockchains
 
 <img class="smaller" src="assets/Ethereum.png">
+<figcaption><a href="https://iconarchive.com/show/cryptocurrency-flat-icons-by-cjdowner/Ethereum-ETH-icon.html" class="imageSource" target="_blank">Image source</a></figcaption>
 
 In late 2013, Vitalik Buterin described Ethereum in a white paper. The project was created with the purpose of building decentralized applications and during its initial founding and development it had some extremely prominent leaders of other projects on board, among those Gavin Wood and Charles Hoskinson both founders of similar projects with different approaches to smart contracts.
 
@@ -408,8 +415,43 @@ ETH as an asset has had mostly good performance vs BTC, with periods where BTC c
 
 ![](assets/ETHBTC.png)
 
+ETH did not have the same recognition in the media as BTC, therefore didn't attract as many buyers, but perhaps due to its lower market cap at the time and therefore higher volatility, returns were higher (or losses if you liked trading but weren't good at it). Since 2019 or so though, ETH has outperformed BTC significantly given how quickly the development of financial applications has ramped up.
 
+#### Ethereum as the leading blockchain
 
+As a result of increased development activity and innovation happening on Ethereum, it is now the leading blockchain by several important metrics:
+
+- Amount of developers and development activity (Events on the official github repo excluding comments, forks, stars...)
+
+![](assets/DevActivity.png)
+<figcaption><a href="https://app.santiment.net/charts?settings=%7B%22slug%22%3A%22bitcoin%22%2C%22ticker%22%3A%22BTC%22%2C%22from%22%3A%222021-09-08T21%3A59%3A59.999Z%22%2C%22to%22%3A%222022-03-08T22%3A59%3A59.999Z%22%7D&widgets=%5B%7B%22widget%22%3A%22ChartWidget%22%2C%22wcsa%22%3Atrue%2C%22metrics%22%3A%5B%22ethereum_MC_ETH_MC_dev_activity%22%2C%22dev_activity%22%2C%22cardano_MC_ADA_MC_dev_activity%22%2C%22solana_MC_SOL_MC_dev_activity%22%2C%22avalanche_MC_AVAX_MC_dev_activity%22%2C%22binance-coin_MC_BNB_MC_dev_activity%22%2C%22luna_MC_LUNA_MC_dev_activity%22%2C%22cosmos_MC_ATOM_MC_dev_activity%22%5D%2C%22axesMetrics%22%3A%5B%22dev_activity%22%5D%2C%22colors%22%3A%7B%22ethereum_MC_ETH_MC_dev_activity%22%3A%22%23F47BF7%22%2C%22dev_activity%22%3A%22%238358FF%22%2C%22cardano_MC_ADA_MC_dev_activity%22%3A%22%23FF5B5B%22%2C%22solana_MC_SOL_MC_dev_activity%22%3A%22%23FFCB47%22%2C%22avalanche_MC_AVAX_MC_dev_activity%22%3A%22%235275FF%22%2C%22binance-coin_MC_BNB_MC_dev_activity%22%3A%22%23FF8450%22%2C%22luna_MC_LUNA_MC_dev_activity%22%3A%22%23785549%22%2C%22cosmos_MC_ATOM_MC_dev_activity%22%3A%22%23D4E763%22%7D%2C%22settings%22%3A%7B%22ethereum_MC_ETH_MC_dev_activity%22%3A%7B%22interval%22%3A%221d%22%2C%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22dev_activity%22%3A%7B%22interval%22%3A%221d%22%2C%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22cardano_MC_ADA_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22solana_MC_SOL_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22avalanche_MC_AVAX_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22binance-coin_MC_BNB_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22luna_MC_LUNA_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22cosmos_MC_ATOM_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%7D%2C%22combinedMetrics%22%3A%5B%5D%7D%5D" class="imageSource" target="_blank">Image source</a></figcaption>
+
+- Value settled through the network (Including tokens on Ethereum)
+
+![](assets/ValueSettledBTCETH.png)
+<figcaption><a href="https://money-movers.info/" class="imageSource" target="_blank">Image source</a></figcaption>
+
+- Daily transaction fees for securing the network (Earnings to miners/stakers)
+
+![](assets/CryptoFees.png)
+<figcaption><a href="https://cryptofees.info/" class="imageSource" target="_blank">Image source</a></figcaption>
+
+- Amount of money locked in applications on the blockchain (TVL)
+
+![](assets/TVLPerChain.png)
+<figcaption><a href="https://defillama.com/chains" class="imageSource" target="_blank">Image source</a></figcaption>
+
+- Size of its layer 2 ecosystem in terms of both development, VC funding, TVL, etc... There's a big incentive to scale Ethereum at the moment given its high activity and high level of decentralization
+
+![](assets/TVLRollups.png)
+<figcaption><a href="https://l2beat.com" class="imageSource" target="_blank">Image source</a></figcaption>
+
+- Decentralization and network security as opposed to other smart contract blockchains 
+
+![](assets/ValidatorCountPOS.png)
+<figcaption><a href="https://stakers.info/" class="imageSource" target="_blank">Image source</a></figcaption>
+
+**Note:** this validator count is for Ethereum on proof of stake, however, after *the merge*<a onclick="captureSection('#ethereum-as-the-leading-blockchain')" href="#glossary"><sup>[7]</sup></a> somewhere around Q2 2022 this will be the effective validator count for Ethereum. 
 
 ***
 
@@ -420,6 +462,8 @@ ETH as an asset has had mostly good performance vs BTC, with periods where BTC c
 ***
 
 ## Glossary
+
+<div id="goBackToReadingSectionDiv"><a id="goBackToReadingSection" onclick="goBackToReadingSection()">Go back to the section you were reading when you clicked to come here ⬆</a></div>
 
 - **Governance**: When a token serves the purpose of 'governance' it means that it works as a share of a company, allowing you as a token holder to vote on proposals made by other community members or developers. The voting for this proposal typically happens on-chain and when a proposal passes, when the voting time is over there is a transaction that occurs on-chain with effects on the project contract as described on the proposal. 
 
@@ -440,6 +484,30 @@ ETH as an asset has had mostly good performance vs BTC, with periods where BTC c
 I typically source these in order but I'll reference them with a description since I have created some images and I'm not keeping track of image order in this post.
 
 - Uniswap tokenomics images: [Introducing UNI blog post on Uniswap.org](https://uniswap.org/blog/uni)
+
+- Bitcoin logo: [bitcoin.org homepage](https://bitcoin.org/en/)
+
+- Litecoin logo: [Wikipedia litecoin article](https://es.wikipedia.org/wiki/Litecoin)
+
+- Dash logo: [Logos download.com](https://logos-download.com/26510-dash-logo-download.html)
+
+- Dogecoin logo: [Coinmarketcap dogecoin page](https://coinmarketcap.com/es/currencies/dogecoin/)
+
+- Nano logo: [mrgrench420's upload on pinterest](https://www.pinterest.com/pin/412501647121246242/)
+
+- Ethereum logo: [iconarchive.com](https://iconarchive.com/show/cryptocurrency-flat-icons-by-cjdowner/Ethereum-ETH-icon.html)
+
+- Development activity chart: [Santiment app custom selection for dev activity](https://app.santiment.net/charts?settings=%7B%22slug%22%3A%22bitcoin%22%2C%22ticker%22%3A%22BTC%22%2C%22from%22%3A%222021-09-08T21%3A59%3A59.999Z%22%2C%22to%22%3A%222022-03-08T22%3A59%3A59.999Z%22%7D&widgets=%5B%7B%22widget%22%3A%22ChartWidget%22%2C%22wcsa%22%3Atrue%2C%22metrics%22%3A%5B%22ethereum_MC_ETH_MC_dev_activity%22%2C%22dev_activity%22%2C%22cardano_MC_ADA_MC_dev_activity%22%2C%22solana_MC_SOL_MC_dev_activity%22%2C%22avalanche_MC_AVAX_MC_dev_activity%22%2C%22binance-coin_MC_BNB_MC_dev_activity%22%2C%22luna_MC_LUNA_MC_dev_activity%22%2C%22cosmos_MC_ATOM_MC_dev_activity%22%5D%2C%22axesMetrics%22%3A%5B%22dev_activity%22%5D%2C%22colors%22%3A%7B%22ethereum_MC_ETH_MC_dev_activity%22%3A%22%23F47BF7%22%2C%22dev_activity%22%3A%22%238358FF%22%2C%22cardano_MC_ADA_MC_dev_activity%22%3A%22%23FF5B5B%22%2C%22solana_MC_SOL_MC_dev_activity%22%3A%22%23FFCB47%22%2C%22avalanche_MC_AVAX_MC_dev_activity%22%3A%22%235275FF%22%2C%22binance-coin_MC_BNB_MC_dev_activity%22%3A%22%23FF8450%22%2C%22luna_MC_LUNA_MC_dev_activity%22%3A%22%23785549%22%2C%22cosmos_MC_ATOM_MC_dev_activity%22%3A%22%23D4E763%22%7D%2C%22settings%22%3A%7B%22ethereum_MC_ETH_MC_dev_activity%22%3A%7B%22interval%22%3A%221d%22%2C%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22dev_activity%22%3A%7B%22interval%22%3A%221d%22%2C%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22cardano_MC_ADA_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22solana_MC_SOL_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22avalanche_MC_AVAX_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22binance-coin_MC_BNB_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22luna_MC_LUNA_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22cosmos_MC_ATOM_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%7D%2C%22combinedMetrics%22%3A%5B%5D%7D%5D)
+
+- Value settled per blockchain (BTC and ETH): [money-movers.info](https://money-movers.info/)
+
+- Fees paid for using blockchains: [cryptofees.info](https://cryptofees.info/)
+
+- TVL per blockchain: [DefiLlama chains section](https://defillama.com/chains)
+
+- TVL for Ethereum rollups: [L2Beat](https://l2beat.com)
+
+- Validator count for PoS and dPoS chains: [stakers.info](https://stakers.info/)
 
 ***
 
