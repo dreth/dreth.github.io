@@ -376,15 +376,15 @@ In this section I want to highlight that when I refer to poor historical perform
 
 ![](assets/DASHBTC.png)
 
-- **LTC/BTC**, good sometimes, *mediocre overall*.
+- **LTC/BTC**, good start, *mediocre overall*.
 
 ![](assets/LTCBTC.png)
 
-- **NANO/BTC**, there was a period where holding it could've earned you a lot as opposed to holding Bitcoin, but for the most part, the trend is down with the exception of that period. If you think this thing is going to take off, that's okay, but I don't see that happening for now and would rather hold BTC.
+- **NANO/BTC**, there was a period where holding it could've earned you a lot as opposed to holding BTC, but for the most part, the trend is down with the exception of that period. If you think this thing is going to take off, that's okay, but I don't see that happening for now and would rather hold BTC.
 
 ![](assets/NANOBTC.png)
 
-- **DOGE/BTC**, so what? I made a mistake? what are you gonna do about it huh? Doge has performed *alright* against bitcoin historically, being mostly a sideways dance with some spikes in specific moments, whenever it gets 'hot again'. Don't be deceived by this chart though, the investment is alright if we consider its historical performance, but the token is a meme, it has infinite supply and there's like 50 wallets that control the overwhelming majority of the supply. "But Daniel you could also say that about BTC!!", then buy DOGE man, it's OK, I also think the lil dog is kinda cute too, good luck trying to catch those spikes though!
+- **DOGE/BTC**, so what? I made a mistake? what are you gonna do about it huh? Doge has historically performed *pretty well* against BTC, being mostly a sideways dance with some spikes in specific moments, whenever it gets 'hot again'. Don't be deceived by this chart though, the investment is alright if we consider its historical performance, but the token is a meme, it has infinite supply and there's like 50 wallets that control the overwhelming majority of the supply. "But Daniel you could also say that about BTC!!", then buy DOGE man, it's OK, I also think the lil dog is kinda cute too, good luck trying to catch those spikes though!
  
 ![](assets/DOGEBTC.png)
 
@@ -404,9 +404,11 @@ Ethereum's native asset ETH serves as the currency to cover costs for using thes
 
 #### ETH's performance vs BTC
 
-ETH as an asset has had mostly excellent performance vs BTC for the most part, with periods where BTC clearly is a better investment and periods where ETH is a better investment, however, for the most part we can see that the trend is up:
+ETH as an asset has had mostly good performance vs BTC, with periods where BTC clearly is a better investment and periods where ETH is a better investment, however, for the most part we can see that the trend is up, especially after late 2019.
 
 ![](assets/ETHBTC.png)
+
+
 
 
 ***
