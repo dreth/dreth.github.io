@@ -13,6 +13,7 @@ Some of the links I share here may have extremely graphic content. I'll mark the
   - [Background](#background)
     - [Not directly related but important events](#not-directly-related-but-important-events)
     - [Events directly related in the timeline](#events-directly-related-in-the-timeline)
+    - [Some opinion on the timeline](#some-opinion-on-the-timeline)
   - [Interactive maps](#interactive-maps)
   - [Status of each city](#status-of-each-city)
     - [ Individual battles during the war](#individual-battles-during-the-war)
