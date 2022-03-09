@@ -34,6 +34,8 @@ As any human, aside from objective research I've made, I have my own biases and 
     - [Smart contract blockchains](#smart-contract-blockchains)
       - [ETH's performance vs BTC](#eths-performance-vs-btc)
       - [Ethereum as the leading blockchain](#ethereum-as-the-leading-blockchain)
+      - [Ethereum 'killers'](#ethereum-killers)
+      - [The issue with Ethereum 'killers'](#the-issue-with-ethereum-killers)
   - [Project developers](#project-developers)
   - [Glossary](#glossary)
   - [Image sources](#image-sources)
@@ -363,7 +365,7 @@ BTC is potentially the best investment in the history of humanity if purchased w
   .. among others.
 
 <img class="smaller" src="assets/PaymentBlockchains.png">
-<figcaption><a href="#image-sources" class="imageSource" target="_blank">Image sources</a></figcaption>
+<figcaption><a href="#image-sources" class="imageSource">Image sources</a></figcaption>
 
 
 These projects do the exact same thing Bitcoin attempts to do, but 'cheaper' and 'more efficiently'. However, while well known, relatively innovative and with large communities of their own, they are an investment very difficult to justify for several reasons:
@@ -453,6 +455,29 @@ As a result of increased development activity and innovation happening on Ethere
 
 **Note:** this validator count is for Ethereum on proof of stake, however, after *the merge*<a onclick="captureSection('#ethereum-as-the-leading-blockchain')" href="#glossary"><sup>[7]</sup></a> somewhere around Q2 2022 this will be the effective validator count for Ethereum. 
 
+#### Ethereum 'killers'
+
+![](assets/ETHKillers.png)
+<figcaption><a href="#image-sources" class="imageSource">Image sources</a></figcaption>
+
+Since Ethereum became the leading platform to develop smart contracts in, and since it remains the leading platform for it, several other projects have spawned to attempt to solve its main problem: high transaction fees.
+
+High transaction fees are obviously a major problem. These occur when the blockchain is experiencing high activity from users, and due to this extreme demand of block space on Ethereum, blocks can fill up quite quickly. This causes fees required to pay for a transaction to increase significantly in order to be fit in blocks, as miners automatically mine the highest-paying transactions.
+
+The scalability issue makes transacting on Ethereum potentially prohibitively expensive. As a result, users looking for investment opportunities, high yields or just experimenting with applications have flocked to projects that promise 'cheap transactions'.
+
+These new 'Ethereum killers' not only have attracted users looking to transact on the cheap, but also large venture capital firms looking to invest in them early on in order to profit as much as possible from potential growth of these platforms.
+
+#### The issue with Ethereum 'killers'
+
+These new platforms trade transaction costs for other potentially more problematic and risky issues like:
+
+- **Lack of decentralization**: 
+  
+- Lack of spam mitigation (the transactions are cheap, so it's easy to congest the network), uptime, costs for network validators, excessive fraudulent activity from rogue developers, etc.
+
+
+
 ***
 
 ## Project developers
@@ -476,6 +501,8 @@ As a result of increased development activity and innovation happening on Ethere
 - **Airdrop**: An airdrop is an event where a project allocates and distributes a specific amount of its supply to non-insiders (investors, developers) and releases this portion of the supply to previous users, liquidity providers or even people that apply to it.
 
 - **Vesting period**: The vesting period is the period of time in which an investor or token recipient, after making an investment or participating in a protocol, is unable to sell their vested tokens. The tokens may be in their wallet already or they may take a while to be received or for it to be possible to claim them or sell them in the open market.
+
+- **The merge**: Scheduled upgrade to the Ethereum network where the current Ethereum blockchain (Proof of Work) will merge with the Beaconchain (Proof of Stake), thereby effectively 'switching' the consensus mechanism of Ethereum to proof of stake. The event also carries out several interesting monetary policy changes to the ethereum network.
 
 ***
 
@@ -508,6 +535,8 @@ I typically source these in order but I'll reference them with a description sin
 - TVL for Ethereum rollups: [L2Beat](https://l2beat.com)
 
 - Validator count for PoS and dPoS chains: [stakers.info](https://stakers.info/)
+
+- Binance coin logo: [seeklogo.com](https://seeklogo.com/free-vector-logos/binance)
 
 ***
 
