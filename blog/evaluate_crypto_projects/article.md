@@ -75,16 +75,16 @@ Some disclaimers I must make before jumping right into it:
 
 There's projects for all sorts of things, but you must first identify what _the purpose_ of that project is. There's so many different projects out there, so let's try to bundle them and categorize them into a few different sections and provide some examples per category:
 
-- **Payment blockchains** (Ex. Bitcoin, Litecoin, Dash, Nano)
+- <span class="lc">**Payment blockchains**</span> (Ex. Bitcoin, Litecoin, Dash, Nano)
   - Private payment blockchains (Ex. Monero, Zcash)
   
-- **Smart contract blockchains** 
+- <span class="lc">**Smart contract blockchains** </span>
   - EVM and EVM-compatible (Ex. Ethereum, Fantom, Gnosis Chain)
   - Non-EVM (Ex. Cardano, Polkadot, Solana, Terra)
   - Rollups (Ex. Arbitrum, Optimism, Metis, Boba)
   - ZK-Rollups (Ex. zkSync, Polygon Hermez)
 
-- **Financial applications**
+- <span class="lc">**Financial applications**</span>
   - Decentralized exchanges (Ex. Curve, Uniswap)
   - Lending protocols (Ex. AAVE, Compound)
   - Cross-chain and multi-chain asset protocols (Ex. REN, WBTC)
@@ -100,7 +100,7 @@ There's projects for all sorts of things, but you must first identify what _the 
   - Privacy (Ex. Tornado, Aztec)
   **... etc..**
 
-- **Other types of projects**
+- <span class="lc">**Other types of projects**</span>
   - VPN (Ex. Orchid)
   - Network provider for IOT systems (Ex. Helium)
   - Storage (Ex. Filecoin, Sia)
@@ -466,15 +466,29 @@ High transaction fees are obviously a major problem. These occur when the blockc
 
 The scalability issue makes transacting on Ethereum potentially prohibitively expensive. As a result, users looking for investment opportunities, high yields or just experimenting with applications have flocked to projects that promise 'cheap transactions'.
 
-These new 'Ethereum killers' not only have attracted users looking to transact on the cheap, but also large venture capital firms looking to invest in them early on in order to profit as much as possible from potential growth of these platforms.
+These new 'Ethereum killers' not only have attracted users looking to transact on the cheap, but also large venture capital firms looking to invest in them early on in order to profit as much as possible from any potential growth of these platforms.
 
 #### The issue with Ethereum 'killers'
 
-These new platforms trade transaction costs for other potentially more problematic and risky issues like:
+These new platforms have low transaction fees, however, they give up some other features Ethereum has either partially or completely, which poses other risks:
 
-- **Lack of decentralization**: 
+![](assets/BSCValidators.png)
+<figcaption>This amount of validators should be an immediate red flag in terms of sustainability and security of a chain</figcaption>
+
+- <span class="lc">**Lack of decentralization**</span>: Chains like Binance Smart Chain or BSC essentially copy-pasted Ethereum and increased the block size and block speed. This has several effects on validator hardware requirements. Blockchains are a distributed network, therefore a copy of the entire blockchain is kept on validators. If block size and block speed are too lenient, the storage and hardware requirements to validate the entire chain become unsustainably and prohibitively expensive for individuals to become a validator in order to earn validator rewards for securing the chain. This has created a highly centralized network, akin to a simple database. Validators have [not liked this](https://github.com/bnb-chain/bsc/issues/553#issue-1055158659).
   
-- Lack of spam mitigation (the transactions are cheap, so it's easy to congest the network), uptime, costs for network validators, excessive fraudulent activity from rogue developers, etc.
+  + Something possibly similar occurs with other chains, but perhaps not as extreme as with BSC. Chains like Fantom only have 50 validators, while other chains like Solana have a bit over a thousand, but the majority are owned by very few extremely wealthy individuals that backed the project early on. 
+
+  + This does not necessarily mean your money is **not safe**, but it is **less safe** than on Ethereum, as it is ridiculously expensive to attack Ethereum as opposed to any of these other, less robust blockchains.
+
+![](assets/SolanaOutage.png)
+<figcaption>Would you trust beta software with all your life savings and investments?</figcaption>
+
+- <span class="lc">**Lack of permanent uptime**</span>: In the financial world, if we are in the process of doing a trade or there's assets that we may want to buy/sell at some point, we **have** to have the ability to buy or sell them whenever we want. If the environment or platform in which we trade goes down and we are unable to transact, then we will be caught in positions without the ability to do anything. Part of the purpose of a blockchain is to remain up **all the time**, down time is **not acceptable** for blockchains. 
+
+  + Solana (for example) [already has had several incidents of downtime](https://fortune.com/2022/01/25/solana-founder-anatoly-yakovenko-crypto-crash-blockchain-instability/) where users are trapped without being able to move their money or execute any trades for extended periods of time. Either caused by a validator client bug, by excessive spam on the blockchain or any other reason. Having been down several times is clearly a big risk to users.
+
+- <span class="lc">**Lack of spam mitigation**</span>: If transactions are extremely cheap to execute, it's easy to congest the network, easily create fraudulent spam tokens and cheaply deploy anything, from just spam to scams. This doesn't mean it's OK for these actions to be extremely expensive
 
 
 
@@ -490,19 +504,19 @@ These new platforms trade transaction costs for other potentially more problemat
 
 <div id="goBackToReadingSectionDiv"><a id="goBackToReadingSection" onclick="goBackToReadingSection()">Go back to the section you were reading when you clicked to come here ⬆</a></div>
 
-- **Governance**: When a token serves the purpose of 'governance' it means that it works as a share of a company, allowing you as a token holder to vote on proposals made by other community members or developers. The voting for this proposal typically happens on-chain and when a proposal passes, when the voting time is over there is a transaction that occurs on-chain with effects on the project contract as described on the proposal. 
+- <span class="lc">**Governance**</span>: When a token serves the purpose of 'governance' it means that it works as a share of a company, allowing you as a token holder to vote on proposals made by other community members or developers. The voting for this proposal typically happens on-chain and when a proposal passes, when the voting time is over there is a transaction that occurs on-chain with effects on the project contract as described on the proposal. 
 
-- **DEX**: Decentralized exchange. It's an application on the blockchain that allows users to trade tokens in trading pairs (or asset bags in the case of Curve or Balancer). Trades on a DEX are permissionless and no central entity controls the liquidity in them (as opposed to centralized exchanges)
+- <span class="lc">**DEX**</span>: Decentralized exchange. It's an application on the blockchain that allows users to trade tokens in trading pairs (or asset bags in the case of Curve or Balancer). Trades on a DEX are permissionless and no central entity controls the liquidity in them (as opposed to centralized exchanges)
 
-- **TVL**: Total value locked. It's the sum of all assets locked in a protocol. It's important to note here that the value is not exactly 'locked', it's just contained in the protocol's smart contracts. Normally depositors can always withdraw whenever they want.
+- <span class="lc">**TVL**</span>: Total value locked. It's the sum of all assets locked in a protocol. It's important to note here that the value is not exactly 'locked', it's just contained in the protocol's smart contracts. Normally depositors can always withdraw whenever they want.
 
-- **Vampire attack**: When a project is created with the sole purpose of stealing liquidity and user activity from another by giving users a more comfortable/faster/cheaper way to transact or providing additional incentives as opposed to a competing project. Ex. SushiSwap on Uniswap in Q4 2020 (providing bigger incentives to LPs), or BSC (Binance Smart Chain) on Ethereum in Q1 2021 (providing cheaper gas fees at the cost of security, decentralization, long-term sustainability and spam mitigation).
+- <span class="lc">**Vampire attack**</span>: When a project is created with the sole purpose of stealing liquidity and user activity from another by giving users a more comfortable/faster/cheaper way to transact or providing additional incentives as opposed to a competing project. Ex. SushiSwap on Uniswap in Q4 2020 (providing bigger incentives to LPs), or BSC (Binance Smart Chain) on Ethereum in Q1 2021 (providing cheaper gas fees at the cost of security, decentralization, long-term sustainability and spam mitigation).
 
-- **Airdrop**: An airdrop is an event where a project allocates and distributes a specific amount of its supply to non-insiders (investors, developers) and releases this portion of the supply to previous users, liquidity providers or even people that apply to it.
+- <span class="lc">**Airdrop**</span>: An airdrop is an event where a project allocates and distributes a specific amount of its supply to non-insiders (investors, developers) and releases this portion of the supply to previous users, liquidity providers or even people that apply to it.
 
-- **Vesting period**: The vesting period is the period of time in which an investor or token recipient, after making an investment or participating in a protocol, is unable to sell their vested tokens. The tokens may be in their wallet already or they may take a while to be received or for it to be possible to claim them or sell them in the open market.
+- <span class="lc">**Vesting period**</span>: The vesting period is the period of time in which an investor or token recipient, after making an investment or participating in a protocol, is unable to sell their vested tokens. The tokens may be in their wallet already or they may take a while to be received or for it to be possible to claim them or sell them in the open market.
 
-- **The merge**: Scheduled upgrade to the Ethereum network where the current Ethereum blockchain (Proof of Work) will merge with the Beaconchain (Proof of Stake), thereby effectively 'switching' the consensus mechanism of Ethereum to proof of stake. The event also carries out several interesting monetary policy changes to the ethereum network.
+- <span class="lc">**The merge**</span>: Scheduled upgrade to the Ethereum network where the current Ethereum blockchain (Proof of Work) will merge with the Beaconchain (Proof of Stake), thereby effectively 'switching' the consensus mechanism of Ethereum to proof of stake. The event also carries out several interesting monetary policy changes to the ethereum network.
 
 ***
 
@@ -539,6 +553,14 @@ I typically source these in order but I'll reference them with a description sin
 - Binance coin logo: [seeklogo.com](https://seeklogo.com/free-vector-logos/binance)
 
 - Polkadot logo: [freelogovectors.net](https://www.freelogovectors.net/polkadot-logo-dot/)
+
+- Solana logo: [cryptologos.cc](https://cryptologos.cc/solana)
+
+- Terra (LUNA) logo: [cryptologos.cc](https://cryptologos.cc/terra-luna) 
+
+- Cardano logo: [cardaners.com](https://cardaners.com/cardano/)
+
+- Avalanche logo: [logotyp.us](https://logotyp.us/logo/avalanche/)
 
 ***
 

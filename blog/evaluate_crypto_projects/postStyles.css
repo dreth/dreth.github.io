@@ -45,6 +45,10 @@ span.red {
     color: red;
 }
 
+span.lc {
+    color: lightcoral;
+}
+
 a:hover {
     cursor: pointer;
 }
