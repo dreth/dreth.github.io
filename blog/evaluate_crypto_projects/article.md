@@ -538,6 +538,8 @@ I typically source these in order but I'll reference them with a description sin
 
 - Binance coin logo: [seeklogo.com](https://seeklogo.com/free-vector-logos/binance)
 
+- Polkadot logo: [freelogovectors.net](https://www.freelogovectors.net/polkadot-logo-dot/)
+
 ***
 
 **Date: March 6th, 2022**
