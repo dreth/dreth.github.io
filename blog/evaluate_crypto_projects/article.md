@@ -1,6 +1,6 @@
 # Analyzing long-term investments in cryptocurrency projects
 
-I happen to really enjoy rolling around in the crypto world. I spend hours and hours researching, not to find specific answers to things, but because I think its _really fucking cool_. Given that many my friends and some acquaintances know how much time I spent researching, I often get asked the question **How do you determine a project is probably a good investment?**. Yesterday, I had a cool conversation about life with my friend César, who phrased this question in a way that gave me a great idea... _write an article about it!_. So here we are again, talking about crypto stuff.
+I happen to really enjoy rolling around in the crypto world. I spend hours and hours researching, not to find specific answers to things, but because I think its _really fucking cool_. Given that many of my friends and some acquaintances know how much time I spent researching, I often get asked the question **How do you determine a project is probably a good investment?**. Yesterday, I had a cool conversation about life with my friend César, who phrased this question in a way that gave me a great idea... _write an article about it!_. So here we are again, talking about crypto stuff.
 
 As any human, aside from objective research I've made, I have my own biases and opinions, and like everyone else does, I also apply these to my investment choices. So the answer to the question of **what YOU should invest in** is a question only you can answer. All I'll do in this article is point to resources and details to watch out when investing on crypto projects, because I've heard far too many times the sentence _"Hey i found this really **good** project, you should check it out!"_, and then I check it out and it's just like any other project of its type. Competition is incredibly aggressive and fast on the crypto space, _almost everything_ (more on this later) is open source software, anyone can fork anything and improve it or change it.
 
@@ -390,7 +390,7 @@ In this section I want to highlight that when I refer to poor historical perform
 
 ![](assets/LTCBTC.png)
 
-- <span class="lc">**NANO/BTC**</span>, there was a period where holding it could've earned you a lot as opposed to holding BTC, but for the most part, the trend is down with the exception of that period. If you think this thing is going to take off, that's okay, but I don't see that happening for now and would rather hold BTC.
+- <span class="lc">**NANO/BTC**</span>, there was a period where holding it could've earned you a lot as opposed to holding BTC, but for the most part, the trend is down with the exception of that period. If you think this thing is going to take off, that's okay, but I personally don't see that happening for now and would rather hold BTC.
 
 ![](assets/NANOBTC.png)
 
@@ -531,7 +531,7 @@ Let's observe the performance of some of these and analyze the sustainability of
 ![](assets/LUNABTC.png)
 <figcaption>LUNA's impressive performance vs BTC in 2021</figcaption>
 
-- <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which pays a consistent 20% on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*. Instead, the rewards are provided by a reserve of UST provided by investors. The growth of the ecosystem is great, but it may be unsustainable. Articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. Is the growth of LUNA a feedback loop of UST --> LUNA purchases? Why is LUNA performing so well? When will investors take profits?. No matter what, I still think LUNA's performance will continue for a bit longer, but with my risk tolerance, I may not participate in this investment.
+- <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which pays a consistent 20% on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*. Instead, the rewards are provided by a reserve of UST provided by investors. The growth of the ecosystem is great, but it may be unsustainable. Articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. Is the growth of LUNA a feedback loop of UST --> LUNA purchases? Why is LUNA performing so well? When will investors take profits?. No matter what, I still think LUNA's performance will continue for a bit longer, but with my current risk tolerance, I may not participate in this investment.
 
 #### Ethereum's coming upgrades and development
 
@@ -539,7 +539,7 @@ An important consideration to make before investing in any of these projects is 
 
 Moreover, the coming monetary policy changes to Ethereum after the London hardfork upgrade and the merge have several important economic effects on ETH:
 
-- <span class="lc">**Significant reduction of inflation with EIP-1559**</span>: 
+- <span class="lc">**Significant reduction of inflation with EIP-1559**</span>: In August 2021, an upgrade came into effect on the Ethereum network
   
 - <span class="lc">**Further reduction of inflation after the merge**</span>: which is a big incentive to hold the ETH token. as miner revenue will naturally flow to stakers, and miners earn **a lot** if their operations are large enough. Staking also allows individuals wealthy in ETH but lacking expensive mining hardware to engage in the staking process
 
