@@ -37,6 +37,7 @@ As any human, aside from objective research I've made, I have my own biases and 
       - [Ethereum 'killers'](#ethereum-killers)
       - [The issue with Alt-L1s](#the-issue-with-alt-l1s)
       - [Alt-L1 native tokens](#alt-l1-native-tokens)
+      - [Ethereum's coming upgrades and development](#ethereums-coming-upgrades-and-development)
   - [Project developers](#project-developers)
   - [Glossary](#glossary)
   - [Image sources](#image-sources)
@@ -171,7 +172,7 @@ Looking at the UNI/ETH ratio, we can clearly see how poor of an investment buyin
 
 1INCH tokens have suffered much of the same fate of UNI tokens, yes there are differences, however, just like with UNI, this project started with an airdrop which caused a massive selloff, to then go on to a rally against ETH (meaning the price was going up more and faster than the price of ETH), however, the demand did not quite keep up and the token emissions (inflation) screwed up the price in the long term. This made 1INCH tokens not quite worth holding. We'll get into token emissions and inflation more in the [Tokenomics](#tokenomics) section.
 
-1INCH does have additional utility when compared to UNI, it allows users to get gas fee discounts when trading in the 1Inch *DEX*<a onclick="captureSection('#1incheth-ratio')" href="#glossary"><sup>[2]</sup></a> Aggregator, however, 1Inch has not managed to catch the *TVL*<a onclick="captureSection('#1incheth-ratio')" href="#glossary"><sup>[3]</sup></a> that Uniswap has managed to retain, so even if 
+1INCH does have additional utility when compared to UNI, it allows users to get transaction fee discounts when trading in the 1Inch *DEX*<a onclick="captureSection('#1incheth-ratio')" href="#glossary"><sup>[2]</sup></a> aggregator, however, 1Inch has not managed to catch the *TVL*<a onclick="captureSection('#1incheth-ratio')" href="#glossary"><sup>[3]</sup></a> that other dexes have managed to retain, and simply offering fee discounts doesn't seem to encourage enough buying to offset the inflation current incentives for liquidity provision and staking create.
 
 ![1INCH/ETH](assets/1INCHETH.png)
 
@@ -509,15 +510,35 @@ These new platforms have low transaction fees, however, they give up some other 
 
 **Note:** The Olyseum case is an extreme one. Projects like these are much larger than Olyseum and certainly serve much more purposes than Olyseum, however, quick price depreciation can and WILL happen with some projects in this category of Ethereum 'killers'. Not every project can be a winner, and you're the one taking the risks here.
 
+
 #### Alt-L1 native tokens
 
 Alt-L1's, just like Ethereum have native tokens, and given how expensive it became to transact on Ethereum, other Alt-L1 garnered significant developer attention as well as liquidity. In particular Terra, Avalanche, Binance Smart Chain, Fantom and Solana. Some of these tokens either matched ETH's performance or significantly outperformed it in 2021. 
 
 I want to highlight that with my criticism of Alt-L1s and what I consider their main weaknesses, I still think these were formidable and excellent investments, especially in 2021. However, I have my doubts about the sustainability of this performance given the large amount of insiders as well as some of the dubious tokenomics of native tokens like LUNA (Terra's staking token). I also must disclose that I do not have a position in any of these, and while I wish I had seen the possible growth these eventually had in order to invest in them myself, I recognize that I would have still eventually trade these positions for a larger ETH position.
 
-Let's observe the performance of some of these and I'll give my arguments on why I personally don't think this performance is particularly sustainable in the long term:
+Let's observe the performance of some of these and analyze the sustainability of their growth:
 
-- SOL/ETH:
+![](assets/SOLETH.png)
+<figcaption>SOL's impressive performance vs ETH in 2021</figcaption>
+
+- <span class="lc">SOL/ETH</span>: Holding SOL (Solana's native token) has proven to be an excellent investment as opposed to holding ETH. There's several reasons behind this incredible growth:
+  - <span class="green">**High capital flow into the chain**</span>: Solana, with time, has become one of the fastest-growing smart contract blockchains in terms of TVL. 
+  - <span class="green">**Investor capital**</span>: It has lots and lots of capital from investors to pump into incentivizing and financing application development and infrastructure. 
+  - <span class="green">**Innovation**</span>: The technology is innovative and their marketing is good. 
+  - <span class="red">**Possible counterpoints**</span>: I doubt this past growth will necessarily transition into similarly fast future growth as Solana faces serious competition from a lot of different chains which serve its same intended purpose, which is to capture value from Ethereum. SOL tokens should face some sell pressure once investors decide to cash out significant portions of their tokens, which could possibly diminish retail investor confidence. Also, the several outages and recent [massive exploit to the Wormhole bridge](https://twitter.com/wormholecrypto/status/1489001949881978883?s=20&t=AQZK6rhQnCicF_am6QcCYg) have probably slowed down its unprecedented growth during 2021. Solana also has pretty much all the issues I described previously, **which it could definitely improve with time**. However, I just don't see this kind of crazy growth vs ETH continuing in full force in 2022 and beyond, especially now that SOL is not the tiny small marketcap token it was in July 2020.
+
+- <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which pays a consistent 20% on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*. Instead, the rewards are provided by a reserve of UST provided by investors. The growth of the ecosystem is great, but it may be unsustainable. Articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. Is the growth of LUNA a feedback loop of UST --> LUNA purchases? Why is LUNA performing so well? When will investors take profits?. No matter what, I still think LUNA's performance will continue for a bit longer, but with my risk tolerance, I may not participate in this investment.
+
+#### Ethereum's coming upgrades and development
+
+An important consideration to make before investing in any of these projects is that these chains were able to capture a lot of value from Ethereum almost exclusively because Ethereum was **expensive to use**, but with rollups already live and in full force geting many applications and developers on board, Ethereum has become **cheap to use** through such rollups. This makes the value proposition of Alt-L1s somewhat less attractive for users and developers.
+
+Moreover, the coming monetary policy changes to Ethereum after the London hardfork upgrade and the merge have several important economic effects on ETH:
+
+- <span class="lc">**Significant reduction of inflation with EIP-1559**</span>: 
+  
+- <span class="lc">**Further reduction of inflation after the merge**</span>: which is a big incentive to hold the ETH token. as miner revenue will naturally flow to stakers, and miners earn **a lot** if their operations are large enough. Staking also allows individuals wealthy in ETH but lacking expensive mining hardware to engage in the staking process
 
 ***
 
