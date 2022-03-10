@@ -1,4 +1,4 @@
-# Analyzing investments in cryptocurrency projects
+# Analyzing long-term investments in cryptocurrency projects
 
 I happen to really enjoy rolling around in the crypto world. I spend hours and hours researching, not to find specific answers to things, but because I think its _really fucking cool_. Given that many my friends and some acquaintances know how much time I spent researching, I often get asked the question **How do you determine a project is probably a good investment?**. Yesterday, I had a cool conversation about life with my friend César, who phrased this question in a way that gave me a great idea... _write an article about it!_. So here we are again, talking about crypto stuff.
 
@@ -8,7 +8,7 @@ As any human, aside from objective research I've made, I have my own biases and 
 
 ## Article index
 
-- [Analyzing investments in cryptocurrency projects](#analyzing-investments-in-cryptocurrency-projects)
+- [Analyzing long-term investments in cryptocurrency projects](#analyzing-long-term-investments-in-cryptocurrency-projects)
   - [Article index](#article-index)
   - [Disclaimers](#disclaimers)
   - [Purpose of the project](#purpose-of-the-project)
@@ -35,7 +35,8 @@ As any human, aside from objective research I've made, I have my own biases and 
       - [ETH's performance vs BTC](#eths-performance-vs-btc)
       - [Ethereum as the leading blockchain](#ethereum-as-the-leading-blockchain)
       - [Ethereum 'killers'](#ethereum-killers)
-      - [The issue with Ethereum 'killers'](#the-issue-with-ethereum-killers)
+      - [The issue with Alt-L1s](#the-issue-with-alt-l1s)
+      - [Alt-L1 native tokens](#alt-l1-native-tokens)
   - [Project developers](#project-developers)
   - [Glossary](#glossary)
   - [Image sources](#image-sources)
@@ -345,7 +346,7 @@ Either way, the devil is in the details, bullshit mechanics to create temporary 
 ***
 ## Blockchain native tokens
 
-Since the initial release of the Bitcoin white paper and its creation, there's been a lot of different blockchains with different purposes. In particular, we've come to classify them by their purpose. To keep this article within scope, I want to only focus on two types of blockchains: **Payment blockchains** and **Smart contract blockchains**.
+Since the initial release of the Bitcoin white paper and its creation, there's been a lot of different blockchains with different purposes. In particular, we've come to classify them by their purpose. To keep this article within scope, I want to only focus on two types of blockchains: **Payment blockchains** and **Smart contract blockchains**. Each blockchain typically has its own native token, which is normally used to pay for transaction fees, in the case of the Bitcoin blockchain, BTC is the native token, in the case of Ethereum, it's ETH.
 
 ### Payment blockchains
 
@@ -380,19 +381,19 @@ These projects do the exact same thing Bitcoin attempts to do, but 'cheaper' and
 
 In this section I want to highlight that when I refer to poor historical performance vs BTC, I'm not trying to say you "can't make money with these", but I do not trade in short timeframes, so good performance of any of these assets vs BTC during a short period of 1-3 weeks is probably not going to be something I can catch *on time*. 
 
-- **DASH/BTC**, meh.
+- <span class="lc">**DASH/BTC**</span>, meh.
 
 ![](assets/DASHBTC.png)
 
-- **LTC/BTC**, good start, *mediocre overall*.
+- <span class="lc">**LTC/BTC**</span>, good start, *mediocre overall*.
 
 ![](assets/LTCBTC.png)
 
-- **NANO/BTC**, there was a period where holding it could've earned you a lot as opposed to holding BTC, but for the most part, the trend is down with the exception of that period. If you think this thing is going to take off, that's okay, but I don't see that happening for now and would rather hold BTC.
+- <span class="lc">**NANO/BTC**</span>, there was a period where holding it could've earned you a lot as opposed to holding BTC, but for the most part, the trend is down with the exception of that period. If you think this thing is going to take off, that's okay, but I don't see that happening for now and would rather hold BTC.
 
 ![](assets/NANOBTC.png)
 
-- **DOGE/BTC**, so what? I made a mistake? what are you gonna do about it huh? Doge has historically performed *pretty well* against BTC, being mostly a sideways dance with some spikes in specific moments, whenever it gets 'hot again'. Don't be deceived by this chart though, the investment is alright if we consider its historical performance, but the token is a meme, it has infinite supply and there's like 50 wallets that control the overwhelming majority of the supply. "But Daniel you could also say that about BTC!!", then buy DOGE man, it's OK, I also think the lil dog is kinda cute too, good luck trying to catch those spikes though!
+- <span class="lc">**DOGE/BTC**</span>, so what? I made a mistake? what are you gonna do about it huh? Doge has historically performed *pretty well* against BTC, being mostly a sideways dance with some spikes in specific moments, whenever it gets 'hot again'. Don't be deceived by this chart though, the investment is alright if we consider its historical performance, but the token is a meme, it has infinite supply and there's like 50 wallets that control the overwhelming majority of the supply. "But Daniel you could also say that about BTC!!", then buy DOGE man, it's OK, I also think the lil dog is kinda cute too, good luck trying to catch those spikes though!
  
 ![](assets/DOGEBTC.png)
 
@@ -443,7 +444,7 @@ As a result of increased development activity and innovation happening on Ethere
 ![](assets/TVLPerChain.png)
 <figcaption><a href="https://defillama.com/chains" class="imageSource" target="_blank">Image source</a></figcaption>
 
-- Size of its layer 2 ecosystem in terms of both development, VC funding, TVL, etc... There's a big incentive to scale Ethereum at the moment given its high activity and high level of decentralization
+- Size of its *layer 2 (L2)*<a onclick="captureSection('#ethereum-as-the-leading-blockchain')" href="#glossary"><sup>[7]</sup></a> ecosystem in terms of both development, VC funding, TVL, etc... There's a big incentive to scale Ethereum at the moment given its high activity and high level of decentralization
 
 ![](assets/TVLRollups.png)
 <figcaption><a href="https://l2beat.com" class="imageSource" target="_blank">Image source</a></figcaption>
@@ -453,7 +454,7 @@ As a result of increased development activity and innovation happening on Ethere
 ![](assets/ValidatorCountPOS.png)
 <figcaption><a href="https://stakers.info/" class="imageSource" target="_blank">Image source</a></figcaption>
 
-**Note:** this validator count is for Ethereum on proof of stake, however, after *the merge*<a onclick="captureSection('#ethereum-as-the-leading-blockchain')" href="#glossary"><sup>[7]</sup></a> somewhere around Q2 2022 this will be the effective validator count for Ethereum. 
+**Note:** this validator count is for Ethereum on proof of stake, however, after *the merge*<a onclick="captureSection('#ethereum-as-the-leading-blockchain')" href="#glossary"><sup>[8]</sup></a> somewhere around Q2 2022 this will be the effective validator count for Ethereum. 
 
 #### Ethereum 'killers'
 
@@ -466,9 +467,9 @@ High transaction fees are obviously a major problem. These occur when the blockc
 
 The scalability issue makes transacting on Ethereum potentially prohibitively expensive. As a result, users looking for investment opportunities, high yields or just experimenting with applications have flocked to projects that promise 'cheap transactions'.
 
-These new 'Ethereum killers' not only have attracted users looking to transact on the cheap, but also large venture capital firms looking to invest in them early on in order to profit as much as possible from any potential growth of these platforms.
+These new 'Ethereum killers' not only have attracted users looking to transact on the cheap, but also large venture capital firms looking to invest in them early on in order to profit as much as possible from any potential growth of these platforms. Since no platform has managed to 'kill' Ethereum, I will refer to these as *Alt-L1*<a onclick="captureSection('#ethereum-killers')" href="#glossary"><sup>[9]</sup></a> blockchains or Alternative L1 blockchains.
 
-#### The issue with Ethereum 'killers'
+#### The issue with Alt-L1s
 
 These new platforms have low transaction fees, however, they give up some other features Ethereum has either partially or completely, which poses other risks:
 
@@ -481,16 +482,42 @@ These new platforms have low transaction fees, however, they give up some other 
 
   + This does not necessarily mean your money is **not safe**, but it is **less safe** than on Ethereum, as it is ridiculously expensive to attack Ethereum as opposed to any of these other, less robust blockchains.
 
+  + If a chain like these does not have plans to decentralize in the future, you should NOT hold assets on it for an extended period of time.
+
 ![](assets/SolanaOutage.png)
-<figcaption>Would you trust beta software with all your life savings and investments?</figcaption>
+<figcaption>Would you trust a chain that has experienced several outages with your life savings?<br><a class="imageSource" href="https://twitter.com/SolanaStatus/status/1437856638279487493" target="_blank">(source tweet)</a></figcaption>
 
-- <span class="lc">**Lack of permanent uptime**</span>: In the financial world, if we are in the process of doing a trade or there's assets that we may want to buy/sell at some point, we **have** to have the ability to buy or sell them whenever we want. If the environment or platform in which we trade goes down and we are unable to transact, then we will be caught in positions without the ability to do anything. Part of the purpose of a blockchain is to remain up **all the time**, down time is **not acceptable** for blockchains. 
+- <span class="lc">**Lack of permanent uptime**</span>: In the financial world, if we are involved in the process of performing a trade or there's assets that we may want to buy/sell at some point, we **have** to have the ability to buy or sell them whenever we want. If the environment or platform in which we trade goes down and we are unable to transact, then we will be caught in positions without the ability to do anything. Part of the purpose of a blockchain is to remain up **all the time**, down time is **not acceptable** for blockchains. 
 
-  + Solana (for example) [already has had several incidents of downtime](https://fortune.com/2022/01/25/solana-founder-anatoly-yakovenko-crypto-crash-blockchain-instability/) where users are trapped without being able to move their money or execute any trades for extended periods of time. Either caused by a validator client bug, by excessive spam on the blockchain or any other reason. Having been down several times is clearly a big risk to users.
+  + Solana (for example) [already has had several incidents causing extensive downtime](https://fortune.com/2022/01/25/solana-founder-anatoly-yakovenko-crypto-crash-blockchain-instability/) where users are trapped without being able to move their money or execute any trades for extended periods of time. Either caused by a validator client bug, by excessive spam on the blockchain or any other reason. Having been down several times is clearly a big risk to users.
 
-- <span class="lc">**Lack of spam mitigation**</span>: If transactions are extremely cheap to execute, it's easy to congest the network, easily create fraudulent spam tokens and cheaply deploy anything, from just spam to scams. This doesn't mean it's OK for these actions to be extremely expensive
+![](assets/AssLoverToken.png)
+<figcaption><i>Some tokens have really family friendly names</i><br><a class="imageSource" href="https://bscscan.com/tokenholdings?a=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&ps=25&sort=total_price_usd&order=desc&p=48" target="_blank">(source address)</a></figcaption>
 
+- <span class="lc">**Lack of spam mitigation**</span>: If transactions are extremely cheap to execute, it's easy to congest the network, easily create fraudulent spam tokens and cheaply deploy anything, from just spam to scams. This *doesn't mean* that it's OK for these actions to be extremely expensive like they are on Ethereum, but as a side effect of them being expensive and block space filling relatively quickly pushing fees up if spamming the chain is attempted discourages potential attackers, as the costs would be high and the impact likely very small.
 
+  + Given how cheap it is to create and distribute spam tokens on Binance Smart Chain, [users quickly had their wallets stuffed with garbage tokens](https://twitter.com/peckshield/status/1430096380945702914) whose contracts at times even hide token approvals or straight up steal funds from users wallets when interacting with them. If for instance block size was smaller, the cost of doing this would rise significantly.
+
+![](assets/InitialTokenDistributions.png)
+
+- <span class="lc">**Very skewed native token distributions**</span>: As with any project, investors and developers get a portion of the native token supply. Investors purchase it and developers get it as long-term reward for their work. Most current of the current hottest Ethereum 'killers' like Avalanche, Solana or Near have a lot of investors backing them. Investors typically look for return-on-investment, they're putting money there with the exact same purpose as you, except they're buying the tokens for MUCH cheaper than you and they did so MUCH earlier than you did, so you should expect them to eventually start taking profits. The larger the portion for the insiders, if demand doesn't increase proportionally, investors will eventually realize their gains, and this will most certainly push the price down. 
+
+  + A project called Olyseum, backed by large football celebrities like Andrés Iniesta had an investor token unlock event on March 31st 2021. The investor(s) whose portion came out of its vesting period decided to sell their stake causing the price to plummet from 0.82 USD to 0.07 USD, an over 92% drop in price over a span of under 1 hour. This caused massive panic among early community investors who expected the price to go up because they were 'early' right? The token now trades for 0.003 USD. This is not a project of the type I have talked about in this section but it's an illustrative example of what a large investor selling a significant portion of their stake can do to the price of an asset given how illiquid some market pairs can be. Here's an image of what happened to it:
+
+![](assets/OLYLinear.png)
+<figcaption><i>Yikes.</i><br><a class="imageSource" href="https://www.coingecko.com/en/coins/olyseum" target="_blank">(source chart)</a></figcaption>
+
+**Note:** The Olyseum case is an extreme one. Projects like these are much larger than Olyseum and certainly serve much more purposes than Olyseum, however, quick price depreciation can and WILL happen with some projects in this category of Ethereum 'killers'. Not every project can be a winner, and you're the one taking the risks here.
+
+#### Alt-L1 native tokens
+
+Alt-L1's, just like Ethereum have native tokens, and given how expensive it became to transact on Ethereum, other Alt-L1 garnered significant developer attention as well as liquidity. In particular Terra, Avalanche, Binance Smart Chain, Fantom and Solana. Some of these tokens either matched ETH's performance or significantly outperformed it in 2021. 
+
+I want to highlight that with my criticism of Alt-L1s and what I consider their main weaknesses, I still think these were formidable and excellent investments, especially in 2021. However, I have my doubts about the sustainability of this performance given the large amount of insiders as well as some of the dubious tokenomics of native tokens like LUNA (Terra's staking token). I also must disclose that I do not have a position in any of these, and while I wish I had seen the possible growth these eventually had in order to invest in them myself, I recognize that I would have still eventually trade these positions for a larger ETH position.
+
+Let's observe the performance of some of these and I'll give my arguments on why I personally don't think this performance is particularly sustainable in the long term:
+
+- SOL/ETH:
 
 ***
 
@@ -517,6 +544,10 @@ These new platforms have low transaction fees, however, they give up some other 
 - <span class="lc">**Vesting period**</span>: The vesting period is the period of time in which an investor or token recipient, after making an investment or participating in a protocol, is unable to sell their vested tokens. The tokens may be in their wallet already or they may take a while to be received or for it to be possible to claim them or sell them in the open market.
 
 - <span class="lc">**The merge**</span>: Scheduled upgrade to the Ethereum network where the current Ethereum blockchain (Proof of Work) will merge with the Beaconchain (Proof of Stake), thereby effectively 'switching' the consensus mechanism of Ethereum to proof of stake. The event also carries out several interesting monetary policy changes to the ethereum network.
+
+- <span class="lc">**Layer 2 or L2**</span>: Layer 2 or L2 is the name given typically to Ethereum rollups, though it can apply to any other blockchain's rollups (it's just more prevalent on Ethereum at the time of writing). A rollup refers to a blockchain which executes and pushes transaction data to the Layer 1 or L1 blockchain in which it anchors its security. This allows for significant savings in transaction fees while retaining all the security inherited from the Ethereum blockchain. [Read up more on scaling on the Ethereum.org article about it](https://ethereum.org/en/developers/docs/scaling/).
+
+- <span class="lc">**Alt-L1 or Alternative L1 blockchain**</span>: Since the development and deployment of Ethereum Rollups, also commonly called L2 (Layer 2), the terminology L1 has been applied to name L1 (or Layer 1) blockchains like Ethereum. When we say Alt-L1 we refer to smart contract blockchains which are intended to be competitors to Ethereum, also sometimes called Ethereum 'killers'.
 
 ***
 
@@ -561,6 +592,8 @@ I typically source these in order but I'll reference them with a description sin
 - Cardano logo: [cardaners.com](https://cardaners.com/cardano/)
 
 - Avalanche logo: [logotyp.us](https://logotyp.us/logo/avalanche/)
+
+- Initial token distributions for different blockchains: [messari.io](https://messari.io/)
 
 ***
 
