@@ -121,7 +121,7 @@ a.gb:hover {
   .l:hover {
     color: #ffa07a;
   }
-  a {
+  a.ml, a.b, a.p, a.b, a.bp, a.gb {
     font-size: 1.2vw;
     font-family: Ubuntu, Sans-Serif;
     word-wrap: break-word;
@@ -129,6 +129,7 @@ a.gb:hover {
   img.playlistImages {
     width:18vw
   }
+  a,
   ul,
   p,
   span {
@@ -210,7 +211,7 @@ a.gb:hover {
   .l:hover {
     color: #ffa07a;
   }
-  a {
+  a.ml, a.b, a.p, a.b, a.bp, a.gb {
     font-size: 1.8vw;
     font-family: Ubuntu, Sans-Serif;
     word-wrap: break-word;
@@ -218,6 +219,7 @@ a.gb:hover {
   img.playlistImages {
     width:18vw
   }
+  a,
   ul,
   p,
   span {
@@ -298,7 +300,7 @@ a.gb:hover {
   .l:hover {
     color: #ffa07a;
   }
-  a {
+  a.ml, a.b, a.p, a.b, a.bp, a.gb {
     font-size: 3.5vw;
     font-family: Ubuntu, Sans-Serif;
     word-wrap: break-word;
@@ -306,6 +308,7 @@ a.gb:hover {
   img.playlistImages {
     width:30vw
   }
+  a,
   ul,
   p,
   span {
