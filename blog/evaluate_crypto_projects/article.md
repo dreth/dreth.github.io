@@ -37,7 +37,6 @@ As any human, aside from objective research I've made, I have my own biases and 
       - [Ethereum 'killers'](#ethereum-killers)
       - [The issue with Alt-L1s](#the-issue-with-alt-l1s)
       - [Alt-L1 native tokens](#alt-l1-native-tokens)
-      - [EVM chains native tokens](#evm-chains-native-tokens)
       - [Ethereum's coming upgrades and development](#ethereums-coming-upgrades-and-development)
   - [Project developers](#project-developers)
   - [Glossary](#glossary)
@@ -504,13 +503,19 @@ These new platforms have low transaction fees, however, they give up some other 
 
 - <span class="lc">**Very skewed native token distributions**</span>: As with any project, investors and developers get a portion of the native token supply. Investors purchase it and developers get it as long-term reward for their work. Most current of the current hottest Ethereum 'killers' like Avalanche, Solana or Near have a lot of investors backing them. Investors typically look for return-on-investment, they're putting money there with the exact same purpose as you, except they're buying the tokens for MUCH cheaper than you and they did so MUCH earlier than you did, so you should expect them to eventually start taking profits. The larger the portion for the insiders, if demand doesn't increase proportionally, investors will eventually realize their gains, and this will most certainly push the price down. 
 
-  + A project called Olyseum, backed by large football celebrities like Andrés Iniesta had an investor token unlock event on March 31st 2021. The investor(s) whose portion came out of its vesting period decided to sell their stake causing the price to plummet from 0.82 USD to 0.07 USD, an over 92% drop in price over a span of under 1 hour. This caused massive panic among early community investors who expected the price to go up because they were 'early' right? The token now trades for 0.003 USD. This is not a project of the type I have talked about in this section but it's an illustrative example of what a large investor selling a significant portion of their stake can do to the price of an asset given how illiquid some market pairs can be. Here's an image of what happened to it:
+  + A project called Olyseum, backed by large football celebrities like Andrés Iniesta had an investor token unlock event on March 31st 2021. The investor(s) whose portion came out of its vesting period decided to sell their stake causing the price to plummet from 0.82 USD to 0.07 USD, an over 92% drop in price over a span of under 1 hour. This caused massive panic among early community investors who expected the price to go up because they were 'early' right? The token now trades for 0.003 USD. *This is not an Alt-L1 project* but it's an illustrative example of what a large investor selling a significant portion of their stake can do to the price of an asset given how illiquid some market pairs can be. Here's an image of what happened to it:
 
 ![](assets/OLYLinear.png)
 <figcaption><i>Yikes.</i><br><a class="imageSource" href="https://www.coingecko.com/en/coins/olyseum" target="_blank">(source chart)</a></figcaption>
 
 **Note:** The Olyseum case is an extreme one. Projects like these are much larger than Olyseum and certainly serve much more purposes than Olyseum, however, quick price depreciation can and WILL happen with some projects in this category of Ethereum 'killers'. Not every project can be a winner, and you're the one taking the risks here.
 
+![](assets/EminVitalikResponse.png)
+<figcaption>A notable twitter thread calling out this behavior<br><a class="imageSource" href="https://nitter.net/peter_szilagyi/status/1490695003118747650#m" target="_blank">(source twitter thread)</a></figcaption>
+
+- <span class="lc">**Dishonest marketing**</span>: There is an incentive to create an alternative chain to garner user activity and pull locked value from Ethereum, otherwise nobody would do it, right? At times project leaders, participants or investors will create noise on social media or make wild dishonest claims bashing Ethereum for not being 'as cheap' while using faulty arguments or straight up fallacies.
+
+  + [This twitter thread by ChainLinkGod](https://nitter.net/ChainLinkGod/status/1502148988371300358#m) explains in great detail why these chains tout themselves as the ultimate fix to high transaction fees on Ethereum but their claims are <span class="red">at best dishonest</span> like the tweet Vitalik calls out in the image above or <span class="red">at worst a quasi-scam</span> like in the case of [Pulsechain](https://pulsechain.com/) (*yuck*).
 
 #### Alt-L1 native tokens
 
@@ -529,37 +534,27 @@ Let's observe the performance of some of these and analyze the sustainability of
   
   - **Investor capital**: It has lots and lots of capital from investors to pump into incentivizing and financing application development and infrastructure. 
 
-  - **Innovation and marketing**: The technology is innovative and their marketing is good. 
+  - **Marketing**: Their marketing worked and brought some users over. 
 
   - <span class="red">**Is this growth sustainable?**</span>: I doubt this past growth will necessarily transition into similarly fast future growth as Solana faces serious competition from a lot of different chains which serve its same intended purpose, which is to capture value from Ethereum. SOL tokens should face some sell pressure once investors decide to cash out significant portions of their tokens, which could possibly diminish retail investor confidence. Also, the several outages and recent [massive exploit to the Wormhole bridge](https://twitter.com/wormholecrypto/status/1489001949881978883?s=20&t=AQZK6rhQnCicF_am6QcCYg) have probably slowed down its unprecedented growth during 2021. Solana also has pretty much all the issues I described previously, **which it could definitely improve with time**. However, I just don't see this kind of crazy growth vs ETH continuing in full force in 2022 and beyond, especially now that SOL is not the tiny small marketcap token it was in July 2020.
 
 ![](assets/LUNABTC.png)
 <figcaption>LUNA's impressive performance vs BTC in 2021</figcaption>
 
-- <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which pays a consistent 20% on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*. Instead, the rewards are provided by a reserve of UST provided by investors. The growth of the ecosystem is great, but it may be unsustainable. Articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. Is the growth of LUNA a feedback loop of UST --> LUNA purchases? Why is LUNA performing so well? When will investors take profits? No matter what, I still think LUNA's performance may continue for longer, but due to my personal risk tolerance, I don't usually get into projects whose sustainability I'm not confident of.
+- <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which pays a consistent 20% on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*. Instead, the rewards are provided by a reserve of UST provided by investors. The growth of the ecosystem is great, but it may be unsustainable. Articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. Is the growth of LUNA a feedback loop of UST --> LUNA purchases? Why is LUNA performing so well? When will investors take profits? No matter what, I still think LUNA's performance may continue for longer, but due to my personal risk tolerance, I don't usually get into projects whose sustainability I'm not 100% confident in.
 
-**Note:** I specifically analyzed the price action vs ETH and BTC of two NON-EVN chains, meaning these are not carbon-copies of the Ethereum blockchain or use the Ethereum Virtual Machine. That's because in my view, those chains are often <span class="red">not innovative at all</span> and often use lies and deceptive statements around the argument that 'Ethereum is not fast enough' while they copy-paste Ethereum
-
-#### EVM chains native tokens
-
-I will not go too deep into the performance of tokens like AVAX, FTM, BNB and other tokens of EVM-chains, because these chains typically are a copy-paste of Ethereum with often zero or almost no innovation, very low node counts, very centralized token distribution and although they've performed well price-wise, these are the least sustainable future investments of all in my opinion.
-
-EVM Chains like Avalance, Fantom or Binance Smart Chain are not especially innovative and they use very deceptive statements to promote themselves under the umbrella of 'we are cheaper than Ethereum' and this is, unfortunately for them, not the only aspect of Ethereum that makes it the leader in all the aspects we mentioned previously.
-
-Let's also consider that TVL must never be the only parameter in which to judge a smart contract blockchain. Many people comment and yell on the internet that because these chains have been able to capture value from Ethereum, that they're somehow going to overtake it. However, the statement is ignoring the fact that large liquidity providers and investors will go to <span class="red">where they can make money</span> and if these chains are eventually deprived of opportunities like these and Ethereum manages to transact cheaply (which it already does through rollups) then their entire value proposition is gone.
-
-[This twitter thread by ChainLinkGod](https://nitter.net/ChainLinkGod/status/1502148988371300358#m) explains in great detail why these chains tout themselves as the ultimate fix to high transaction fees on Ethereum but their claims are <span class="red">at best dishonest</span>.
+**Note:** I specifically analyzed the price action vs ETH and BTC of two NON-EVN chains, meaning these are not carbon-copies of the Ethereum blockchain or use the Ethereum Virtual Machine. That's because in my view, those chains are <span class="red">not innovative</span> and often use lies and deceptive statements around the argument that 'Ethereum is not fast enough' while they copy-paste Ethereum and change some parameters which would make the long-term growth of those chains completely unsustainable.
 
 #### Ethereum's coming upgrades and development
 
 ![](assets/EthereumUpgrades.jpeg)
-<figcaption>The upgrades as tweeted by Vitalik in the Beacon Chain birthday<br><a class="imageSource" href="https://mobile.twitter.com/VitalikButerin/status/1466411377107558402" target="_blank">(source twitter thread)</a></figcaption>
+<figcaption>The upgrades as tweeted by Vitalik in the Beacon Chain's birthday<br><a class="imageSource" href="https://mobile.twitter.com/VitalikButerin/status/1466411377107558402" target="_blank">(source twitter thread)</a></figcaption>
 
 An important consideration to make before investing in any of these projects is that these chains were able to capture a lot of value from Ethereum almost exclusively because Ethereum was **expensive to use**, but with rollups already live and in full force geting many applications and developers on board, Ethereum has become **cheap to use** through such rollups. This makes the value proposition of Alt-L1s somewhat less attractive for users and developers.
 
 Moreover, the coming monetary policy changes to Ethereum after the London hardfork upgrade and the merge have several important economic effects on ETH:
 
-- <span class="lc">**Significant reduction of inflation with EIP-1559**</span>: In August 2021, an upgrade came into effect on the Ethereum network
+- <span class="lc">**Significant reduction of inflation with EIP-1559**</span>: In August 2021, an upgrade came into effect on the Ethereum network. This upgrade causes transaction fees to be removed from the supply as opposed to paid to miners. Given's Ethereum's use and demand for block space
   
 - <span class="lc">**Further reduction of inflation after the merge**</span>: which is a big incentive to hold the ETH token. as miner revenue will naturally flow to stakers, and miners earn **a lot** if their operations are large enough. Staking also allows individuals wealthy in ETH but lacking expensive mining hardware to engage in the staking process
 
