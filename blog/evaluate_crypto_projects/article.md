@@ -37,6 +37,7 @@ As any human, aside from objective research I've made, I have my own biases and 
       - [Ethereum 'killers'](#ethereum-killers)
       - [The issue with Alt-L1s](#the-issue-with-alt-l1s)
       - [Alt-L1 native tokens](#alt-l1-native-tokens)
+      - [EVM chains native tokens](#evm-chains-native-tokens)
       - [Ethereum's coming upgrades and development](#ethereums-coming-upgrades-and-development)
   - [Project developers](#project-developers)
   - [Glossary](#glossary)
@@ -535,9 +536,24 @@ Let's observe the performance of some of these and analyze the sustainability of
 ![](assets/LUNABTC.png)
 <figcaption>LUNA's impressive performance vs BTC in 2021</figcaption>
 
-- <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which pays a consistent 20% on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*. Instead, the rewards are provided by a reserve of UST provided by investors. The growth of the ecosystem is great, but it may be unsustainable. Articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. Is the growth of LUNA a feedback loop of UST --> LUNA purchases? Why is LUNA performing so well? When will investors take profits? No matter what, I still think LUNA's performance may continue for longer, but I personally \
+- <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which pays a consistent 20% on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*. Instead, the rewards are provided by a reserve of UST provided by investors. The growth of the ecosystem is great, but it may be unsustainable. Articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. Is the growth of LUNA a feedback loop of UST --> LUNA purchases? Why is LUNA performing so well? When will investors take profits? No matter what, I still think LUNA's performance may continue for longer, but due to my personal risk tolerance, I don't usually get into projects whose sustainability I'm not confident of.
+
+**Note:** I specifically analyzed the price action vs ETH and BTC of two NON-EVN chains, meaning these are not carbon-copies of the Ethereum blockchain or use the Ethereum Virtual Machine. That's because in my view, those chains are often <span class="red">not innovative at all</span> and often use lies and deceptive statements around the argument that 'Ethereum is not fast enough' while they copy-paste Ethereum
+
+#### EVM chains native tokens
+
+I will not go too deep into the performance of tokens like AVAX, FTM, BNB and other tokens of EVM-chains, because these chains typically are a copy-paste of Ethereum with often zero or almost no innovation, very low node counts, very centralized token distribution and although they've performed well price-wise, these are the least sustainable future investments of all in my opinion.
+
+EVM Chains like Avalance, Fantom or Binance Smart Chain are not especially innovative and they use very deceptive statements to promote themselves under the umbrella of 'we are cheaper than Ethereum' and this is, unfortunately for them, not the only aspect of Ethereum that makes it the leader in all the aspects we mentioned previously.
+
+Let's also consider that TVL must never be the only parameter in which to judge a smart contract blockchain. Many people comment and yell on the internet that because these chains have been able to capture value from Ethereum, that they're somehow going to overtake it. However, the statement is ignoring the fact that large liquidity providers and investors will go to <span class="red">where they can make money</span> and if these chains are eventually deprived of opportunities like these and Ethereum manages to transact cheaply (which it already does through rollups) then their entire value proposition is gone.
+
+[This twitter thread by ChainLinkGod](https://nitter.net/ChainLinkGod/status/1502148988371300358#m) explains in great detail why these chains tout themselves as the ultimate fix to high transaction fees on Ethereum but their claims are <span class="red">at best dishonest</span>.
 
 #### Ethereum's coming upgrades and development
+
+![](assets/EthereumUpgrades.jpeg)
+<figcaption>The upgrades as tweeted by Vitalik in the Beacon Chain birthday<br><a class="imageSource" href="https://mobile.twitter.com/VitalikButerin/status/1466411377107558402" target="_blank">(source twitter thread)</a></figcaption>
 
 An important consideration to make before investing in any of these projects is that these chains were able to capture a lot of value from Ethereum almost exclusively because Ethereum was **expensive to use**, but with rollups already live and in full force geting many applications and developers on board, Ethereum has become **cheap to use** through such rollups. This makes the value proposition of Alt-L1s somewhat less attractive for users and developers.
 
