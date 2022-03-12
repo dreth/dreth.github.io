@@ -390,7 +390,7 @@ In this section I want to highlight that when I refer to poor historical perform
 
 ![](assets/LTCBTC.png)
 
-- <span class="lc">**NANO/BTC**</span>, there was a period where holding it could've earned you a lot as opposed to holding BTC, but for the most part, the trend is down with the exception of that period. If you think this thing is going to take off, that's okay, but I personally don't see that happening for now and would rather hold BTC.
+- <span class="lc">**NANO/BTC**</span>, there was a period where holding it could've earned you a lot as opposed to holding BTC, but for the most part, the trend is down with the exception of that period. If you think this thing is going to take off, that's okay, but I personally don't see that happening for now and would rather hold BTC. The performance is clearly better than the previous two though!
 
 ![](assets/NANOBTC.png)
 
@@ -556,7 +556,7 @@ Moreover, the coming monetary policy changes to Ethereum after the London hardfo
 
 - <span class="lc">**Significant reduction of inflation with EIP-1559**</span>: In August 2021, an upgrade came into effect on the Ethereum network. This upgrade causes transaction fees to be removed from the supply as opposed to paid to miners. Given's Ethereum's use and demand for block space, the amount of ETH removed from the total supply was much more than expected. As it stands now, the total reduction of inflation since August 2021 has been of about ~70%, which is significantly more than a Bitcoin halving's reduction of inflation on BTC issuance. This supply shock has likely <span class="red">not been reflected on the price of ETH yet</span> given its strong correlation to BTC.
   
-- <span class="lc">**Further reduction of inflation after the merge**</span>: After the merge, inflation will be further reduced, as rewards to stakers have a much smaller rate of issuance as opposed to the traiditional block rewarded awarded to miners on proof of work. This means that there's a probability that 
+- <span class="lc">**Further reduction of inflation after the merge**</span>: After the merge, inflation will be further reduced, as rewards to stakers have a much smaller rate of issuance as opposed to the flat 2 ETH block rewarded awarded to miners on proof of work. The merge could even render the ETH inflation negative, leading to deflationary periods. This can be simulated in [this website](https://ultrasound.money)
 
 ***
 
