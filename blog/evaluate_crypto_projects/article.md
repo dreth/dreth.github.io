@@ -39,6 +39,10 @@ As any human, aside from objective research I've made, I have my own biases and 
       - [Alt-L1 native tokens](#alt-l1-native-tokens)
       - [Ethereum's coming upgrades and development](#ethereums-coming-upgrades-and-development)
   - [Project developers](#project-developers)
+    - [A bad example: Wonderland](#a-bad-example-wonderland)
+      - [Wonderland's downfall](#wonderlands-downfall)
+    - [A good example: Uniswap](#a-good-example-uniswap)
+  - [How do I check if it's a scam?](#how-do-i-check-if-its-a-scam)
   - [Glossary](#glossary)
   - [Image sources](#image-sources)
 
@@ -124,11 +128,9 @@ Some questions I ask myself that I consider apply to every crypto project:
 
 - [**Who**](#project-developers) are the people behind this project? Are they anonymous? Do the owners/developers have a **good track record**? Have they been part of some kind of scam in the past?
 
-- How do the project's **git repositories** look like?
+- How do the project's [**git repositories** look like](#project-developers)? Is the project **forked** from another successful (or unsuccessful) project?
 
-- Is the project **forked** from another successful (or unsuccessful) project?
-
-- Is the token source code **identical** to that of a previous scam? Is the token vulnerable to any **previously discovered vulnerability** that any pas project has suffered?
+- Is the token source code [**identical**](#how-do-i-check-if-its-a-scam) to that of a previous scam? Is the token vulnerable to any **previously discovered vulnerability** that any pas project has suffered?
 
 Let's begin to answer some of these in the following sections. I'll also try to define some terms in the [glossary](#glossary) section, but I will assume the reader has at least extremely basic knowledge of software development (not how to do it, but at least what it entails) and basic economics terminology (supply, demand, inflation, etc...)
 
@@ -486,7 +488,7 @@ These new platforms have low transaction fees, however, they give up some other 
   + If a chain like these does not have plans to decentralize in the future, you should NOT hold assets on it for an extended period of time.
 
 ![](assets/SolanaOutage.png)
-<figcaption>Would you trust a chain that has experienced several outages with your life savings?<br><a class="imageSource" href="https://twitter.com/SolanaStatus/status/1437856638279487493">(source tweet)</a></figcaption>
+<figcaption>Would you trust a chain that has experienced several outages with your life savings?<br><a class="imageSource" href="https://nitter.net/SolanaStatus/status/1437856638279487493">(source tweet)</a></figcaption>
 
 - <span class="lc">**Lack of permanent uptime**</span>: In the financial world, if we are involved in the process of performing a trade or there's assets that we may want to buy/sell at some point, we **have** to have the ability to buy or sell them whenever we want. If the environment or platform in which we trade goes down and we are unable to transact, then we will be caught in positions without the ability to do anything. Part of the purpose of a blockchain is to remain up **all the time**, down time is **not acceptable** for blockchains. 
 
@@ -497,7 +499,7 @@ These new platforms have low transaction fees, however, they give up some other 
 
 - <span class="lc">**Lack of spam mitigation**</span>: If transactions are extremely cheap to execute, it's easy to congest the network, easily create fraudulent spam tokens and cheaply deploy anything, from just spam to scams. This *doesn't mean* that it's OK for these actions to be extremely expensive like they are on Ethereum, but as a side effect of them being expensive and block space filling relatively quickly pushing fees up if spamming the chain is attempted discourages potential attackers, as the costs would be high and the impact likely very small.
 
-  + Given how cheap it is to create and distribute spam tokens on Binance Smart Chain, [users quickly had their wallets stuffed with garbage tokens](https://twitter.com/peckshield/status/1430096380945702914) whose contracts at times even hide token approvals or straight up steal funds from users wallets when interacting with them. If for instance block size was smaller, the cost of doing this would rise significantly.
+  + Given how cheap it is to create and distribute spam tokens on Binance Smart Chain, [users quickly had their wallets stuffed with garbage tokens](https://nitter.net/peckshield/status/1430096380945702914) whose contracts at times even hide token approvals or straight up steal funds from users wallets when interacting with them. If for instance block size was smaller, the cost of doing this would rise significantly.
 
 ![](assets/InitialTokenDistributions.png)
 
@@ -536,19 +538,19 @@ Let's observe the performance of some of these and analyze the sustainability of
 
   - **Marketing**: Their marketing worked and brought lots of deposits over. 
 
-  - <span class="red">**Is this growth sustainable?**</span>: I doubt this past growth will necessarily transition into similarly fast future growth as Solana faces serious competition from a lot of different chains which serve its same intended purpose, which is to capture value from Ethereum. SOL tokens should face some sell pressure once investors decide to cash out significant portions of their tokens, which could possibly diminish retail investor confidence. Also, the several outages and recent [massive exploit to the Wormhole bridge](https://twitter.com/wormholecrypto/status/1489001949881978883?s=20&t=AQZK6rhQnCicF_am6QcCYg) have probably slowed down its unprecedented growth during 2021. Solana also has pretty much all the issues I described previously, **which it could definitely improve with time**. However, I just don't see this kind of crazy growth vs ETH continuing in full force in 2022 and beyond, especially now that SOL is not the tiny small marketcap token it was in July 2020.
+  - <span class="red">**Is this growth sustainable?**</span>: I doubt this past growth will necessarily transition into similarly fast future growth as Solana faces serious competition from a lot of different chains which serve its same intended purpose, which is to capture value from Ethereum. SOL tokens should face some sell pressure once investors decide to cash out significant portions of their tokens, which could possibly diminish retail investor confidence. Also, the several outages and recent [massive exploit to the Wormhole bridge](https://nitter.net/wormholecrypto/status/1489001949881978883?s=20&t=AQZK6rhQnCicF_am6QcCYg) have probably slowed down its unprecedented growth during 2021. Solana also has pretty much all the issues I described previously, **which it could definitely improve with time**. However, I just don't see this kind of crazy growth vs ETH continuing in full force in 2022 and beyond, especially now that SOL is not the tiny small marketcap token it was in July 2020.
 
 ![](assets/LUNABTC.png)
 <figcaption>LUNA's impressive performance vs BTC in 2021</figcaption>
 
 - <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which pays a consistent 20% on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*, instead, the rewards are provided by a reserve of UST provided by investors. Additionally, not all the UST is fully collateralized. The growth of the ecosystem is great, but it may be unsustainable. This [twitter thread](https://nitter.net/AlgodTrading/status/1493900328655335424?s=20&t=fjlz5YVMUPlyZvKIaBPQEQ) by AlgodTrading and articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. so then why is LUNA performing so well? When will investors take profits? are these ponzinomics sustainable? No matter what, I still think LUNA's performance may continue for longer, but due to my personal risk tolerance, I don't usually get into projects whose sustainability I'm not 100% confident in. 
 
-**Note:** I specifically analyzed the price action vs ETH and BTC of two NON-EVN chains, meaning these are not carbon-copies of the Ethereum blockchain or use the Ethereum Virtual Machine. That's because in my view, those chains are <span class="red">not innovative</span> and often use lies and deceptive statements around the argument that 'Ethereum is not fast enough' while they copy-paste Ethereum and change some parameters which would make the long-term growth of those chains completely unsustainable.
+**Note:** I specifically analyzed the price action vs ETH and BTC of two NON-EVN chains, meaning these are not carbon-copies of the Ethereum blockchain or use the Ethereum Virtual Machine. That's because in my view, those chains are <span class="red">not innovative</span> and often use lies and deceptive statements around the argument that 'Ethereum is not fast enough' while they copy-paste Ethereum and change some parameters which would make the long-term growth of those chains completely unsustainable. Again, none of this means you can't or shouldn't try to make money with these, this is simply my perspective and opinion on *why I don't try to make money with these*.
 
 #### Ethereum's coming upgrades and development
 
 ![](assets/EthereumUpgrades.jpeg)
-<figcaption>The upgrades as tweeted by Vitalik in the Beacon Chain's birthday<br><a class="imageSource" href="https://mobile.twitter.com/VitalikButerin/status/1466411377107558402">(source twitter thread)</a></figcaption>
+<figcaption>The upgrades as tweeted by Vitalik in the Beacon Chain's birthday<br><a class="imageSource" href="https://nitter.net/VitalikButerin/status/1466411377107558402">(source twitter thread)</a></figcaption>
 
 An important consideration to make before investing in any of these projects is that these chains were able to capture a lot of value from Ethereum almost exclusively because Ethereum was **expensive to use**, but with rollups already live and in full force geting many applications and developers on board, Ethereum has become **cheap to use** through such rollups. This makes the value proposition of Alt-L1s somewhat less attractive for users and developers.
 
@@ -558,12 +560,102 @@ Moreover, the coming monetary policy changes to Ethereum after the London hardfo
   
 - <span class="lc">**Further reduction of inflation after the merge**</span>: After the merge, inflation will be further reduced, as rewards to stakers have a much smaller rate of issuance as opposed to the flat 2 ETH block rewarded awarded to miners on proof of work. The merge could even render the ETH inflation negative, leading to deflationary periods. This can be simulated in [this website](https://ultrasound.money).
 
-- <span class="lc">**Revenue shares to network participants**</span>: As 
+- <span class="lc">**Revenue shares to network participants**</span>: In proof of stake, users can gain revenue from staking Ether. There's staking pools where users can deposit their ETH and earn anywhere between 4% (at the time of writing) up to whatever the amount is at the time of the merge. Some estimates put it at ~12%, though these are only predictions. Whatever the amount is though, ETH holders that stake their ETH can benefit from a decent APR as well as ETH either reducing its total supply with time (deflation) or inflating very very little depending on network conditions, which again, has not been reflected on the price yet.
+
+Not only that but the argument that "Ethereum can't scale" or that "Ethereum is expensive", essentially the only arguments used by other Alt-L1 proponents to bash Ethereum, is not going to be especially relevant with the [thriving rollup ecosystem](https://l2beat.com) being developed on top of Ethereum.
 
 ***
 
 ## Project developers
 
+When investing in a project, you **need** to know who is developing the project. Who is backing the project. Not just who they are by name, but what's their background, where were they before starting the project. The owners, investors and developers need to be disclosed. The team being anonymous can already be a big sign that the project may not be legitimate or may be a straight up scam.
+
+### A bad example: Wonderland
+
+![](assets/WonderlandLandingPage.png)
+<figcaption>Wonderland's landing page at <a class="figcaption" href="https://www.wonderland.money/">wonderland.money</a></figcaption>
+
+I want to highlight the story of Wonderland, a project that started being not-so-shady and turning out to be an unsustainable ponzi scheme lead by 2 people, one that seemingly popped out of nowhere and another one that had an extremely shady background, several identities as well as several exit scams already on his résumé. Here's why wonderland was a catastrophe for investors that drank the bullshit koolaid:
+
+![](assets/OlympusDAOLandingPage.png)
+<figcaption>Olympus DAO's landing page at <a class="figcaption" href="https://www.olympusdao.finance/">olympusdao.finance</a></figcaption>
+
+- Wonderland was initially a fork of Ohm (Olympus DAO), a legitimate project with dangerously unsustainable tokenomics that didn't just resembled a ponzi scheme, but that was, openly, a ponzi scheme. Not one that would intentionally harm others to pull money out of them, but one that worked as a proof of concept. There's nothing shady about Olympus, it simply was not especially sustainable, period. Olympus was [fully open source](https://github.com/OlympusDAO), the contracts, the website, the data querying, everything. What wonderland did was basically fork the project, modify a few things, and release it with a pretty frontend. The github repository of Wonderland's contracts was just [embarrassingly bad at the time](https://nitter.net/larry0x/status/1486150220538855431). Many forks of Ohm have emerged, but this one was lazy and clearly a cash grab from the start, but it gets worse!
+
+![](assets/0xSifuScam.png)
+<figcaption>A good twitter thread explaining the whole fiasco. See the full thread <a class="figcaption" href="https://nitter.net/zachxbt/status/1486591682728673282">here.</a></figcaption>
+
+- The co-founder of Wonderland, 0xSifu is also Michael Patryn, the co-founder of QuadrigaCX, a canadian exchange that was essentially a behind-the-curtains personal trading game for its founder Gerald Cotten, who disappeared with all the money in the exchange and mysteriously died in India of complications from Crohn's Disease. I have Crohn's disease and if you're doing just fine, it ain't easy to just die from one day to another. A lot of people doubt is death and there's even a [9-episode epic podcast](https://exitscam.show) explaining basically everything around the fiasco, a lot of people speculate that Gerald is not even dead, and an exhumation has never been done on his body (the coffin was never opened when shipped back from India). Either way, if you know the story of Michael Patryn, you'll know this isn't his first rodeo and not even QuadrigaCX was his first rodeo. He is a talented and very experienced scammer and *nobody even really knows his real name*...
+
+#### Wonderland's downfall
+
+Make sure that you *KNOW* who's behind a project. Once people were onto who 0xSifu was, the project met its maker:
+
+![](assets/TIMEDownfall.png)
+<figcaption>Downfall of Wonderland's TIME token.</figcaption>
+
+Also, even if you *DIDN'T KNOW* or cared to know who 0xSifu was, you should have known how TIME was going to end knowing that it's basically OHM with a different name and OHM's bubble was already popping:
+
+![](assets/OHMAwfulPriceAction.png)
+<figcaption>OHM's price history.</figcaption>
+
+### A good example: Uniswap
+
+![](assets/UniswapLandingPage.png)
+<figcaption>Uniswap's landing page at <a class="figcaption" href="https://uniswap.org/">Uniswap.org</a></figcaption>
+
+Once again, we talk about Uniswap. Uniswap has an extremely well documented team, docs, repositories, website, etc... The landing page isn't just pretty, but it has all the information you need to know about the project.
+
+1. Links to different communities, from Uniswap's governance, to discord, to the grants program, to reddit, anything:
+
+![](assets/UniswapCommunities.png)
+
+2. Links to resources for developers as well as where to the protocol's github repositories:
+
+![](assets/UniswapDevelopers.png)
+
+3. A jobs section! Very important. It shows the project probably has funding, active development and is hiring, solo anonymous projects rarely have job postings for multiple positions:
+  
+![](assets/UniswapJobs.png)
+
+4. Every key person in the protocol's development is public on their github organization and has a public profile on twitter, public sites, linkedin profiles, everything. These people are not 'random' anonymous individuals, they are *public*:
+
+![](assets/UniswapTeamGithub.png)
+
+
+5. The founder is Hayden Adams, a public figure well known in the community for being the founder and creator of Uniswap. This dude isn't some random anon that popped out of nowhere and forked some ponzi!
+
+![](assets/HaydenTwitter.png)
+<figcaption>Hayden's twitter profile <a class="figcaption" href="https://nitter.net/haydenzadams">@haydenzadams</a></figcaption>
+
+***
+
+## How do I check if it's a scam?
+
+![](assets/TokenSniffer.png)
+<figcaption>TokenSniffer's landing page at <a class="figcaption" href="https://tokensniffer.com/">TokenSniffer.com</a></figcaption>
+
+So you've already vetted this project in its totality. You're almost sure it's not a scam, but you are not a smart contract developer and you have NO idea how to check if the token itself, the token contract, is indeed a scam or not. For this we have tools like [TokenSniffer](https://tokensniffer.com/).
+
+1. You can go on Etherscan or any other block explorer and copy the address of any token:
+
+![](assets/KickTokenAddress.png)
+<figcaption>For example this known scam from a few years back</figcaption>
+
+2. Paste it on TokenSniffer check if the smart contract is either identical to other scams, similar to other scams, where the token comes from (if it was forked from another project), and so on:
+
+![](assets/TokenSnifferSearch.png)
+<figcaption>Search on TokenSniffer, it'll detect the Chain and Token name</figcaption>
+
+3. Check out the report that TokenSniffer returns:
+
+![](assets/TokenSnifferAutoAudit.png)
+<figcaption>TokenSniffer does an <a class="figcaption" href="https://tokensniffer.com/token/b6n2l6pbq0aaqo2biie0koe61j9sua0qag3fs9jfz2j2c2opoz90povhx8qa">automated audit</a> and will tell you if there's potentially malicious code</figcaption>
+
+1. As we can see, the token is most likely a scam:
+
+![](assets/TokenSnifferKickTokenSummary.png)
+<figcaption>Scam alert!</figcaption>
 
 
 ***
