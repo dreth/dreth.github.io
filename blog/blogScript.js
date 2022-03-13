@@ -36,6 +36,7 @@ var articleTag = [
     'tutorial_realt'
 ];
 var articleEmoji = [
+    '🪙',
     '🇺🇦',
     '🖼️',
     '💽',
