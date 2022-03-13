@@ -1,8 +1,10 @@
 # Analyzing long-term investments in cryptocurrency projects
 
-I happen to really enjoy rolling around in the crypto world. I spend hours and hours researching, not to find specific answers to things, but because I think its _really fucking cool_. Given that many of my friends and some acquaintances know how much time I spent researching, I often get asked the question **How do you determine a project is probably a good investment?**. Yesterday, I had a cool conversation about life with my friend César, who phrased this question in a way that gave me a great idea... _write an article about it!_. So here we are again, talking about crypto stuff.
+I happen to really enjoy rolling around in the crypto world. I spend hours and hours researching, not only to find specific answers to things I'm curious about, but because I think its _really cool_ and this is what makes me happy. Given that many of my friends and some acquaintances know how much time I spent researching, I often get asked the question **How do you determine if project may or may not be a good investment?**. I can't predict the future, but there's several things I research before deciding to invest in any project. 
 
-As any human, aside from objective research I've made, I have my own biases and opinions, and like everyone else does, I also apply these to my investment choices. So the answer to the question of **what YOU should invest in** is a question only you can answer. All I'll do in this article is point to resources and details to watch out when investing on crypto projects, because I've heard far too many times the sentence _"Hey i found this really **good** project, you should check it out!"_, and then I check it out and it's just like any other project of its type. Competition is incredibly aggressive and fast on the crypto space, _almost everything_ (more on this later) is open source software, anyone can fork anything and improve it or change it.
+A few weeks ago, I had a cool conversation about life with my friend César, who phrased this question in a way that gave me a great idea... _write an article about it!_. So here we are again, talking about crypto stuff.
+
+As any human, aside from research I've done, I have my own biases and opinions, and like everyone else does, I also apply these to my investment choices. So the answer to the question of **what YOU should invest in** is a question only *you* can answer. All I'll do in this article is point to resources and details to watch out when investing on crypto projects, because I've heard far too many times the sentence _"Hey i found this really **good** project, you should totally check it out!"_, and then I check it out and it's just like any other project of its type. Competition is incredibly aggressive and fast on the crypto space, _almost everything_ (more on this later) is open source software, and anyone can fork anything and improve it or change it.
 
 ***
 
@@ -52,13 +54,13 @@ As any human, aside from objective research I've made, I have my own biases and 
 
 Some disclaimers I must make before jumping right into it:
 
-- This is **my opinion**, formulated from other people's opinions and lots... lots of reading, and watching the market. I am in no way, shape or form an authority on this, I simply speak from my personal experience, mistakes, successes and things I've read. NONE of what I say here should constituted as financial advice, the way you invest is the way YOU invest. All I'm trying to do with this article is to encourage **doing your own research** or DYOR.
+- This is **my opinion**, formulated from a combination many other people's opinions and lots... lots of reading and watching the market. I am in no way, shape or form an authority on this, I simply speak from my personal experience, mistakes, successes and things I've read. <span class="red">NONE of what I say here should constituted as financial advice</span>, the way you invest is the way YOU invest. All I'm trying to do with this article is to encourage you to **do your own research** (DYOR).
 
-- I've been deeply interested in this world for the past 5 years and have seen lots and lots of disasters, scams, cool projects, as well as massive opportunities, some I've taken advantage of, others I've <a id="boysDontCryLink" onclick="showBoysDontCry()">almost cried</a> over missing.
+- I've been deeply interested in this world for the past 5 years and have seen lots and lots of disasters, scams, cool projects, as well as massive opportunities, some I've taken advantage of, others I've <a id="boysDontCryLink" onclick="showBoysDontCry()">almost cried</a> over missing. Do not beat yourself over missed opportunities, you don't catch the bus or train on time _every time_ you go to the bus stop, do you?
 
 <div id="boysDontCryAudio"><audio controls src="./assets/boysdontcry.mp3"> Your browser does not support the <code>audio</code> element.</audio></div>
 
-- The cryptocurrency market is very speculative, no hypothesis that I or anyone has about the fundamentals or functionality of an application or blockchain will necessarily be reflected on the price.
+- The cryptocurrency market is very speculative, no hypothesis that I or anyone has about the fundamentals or functionality of an application or blockchain will necessarily be reflected on the price. It sometimes takes years for projects to really take off.
 
 - Any investment that you make as a direct cause of reading this article is NOT my responsibility, this is risk that YOU and only YOU take.
 
@@ -72,7 +74,7 @@ Some disclaimers I must make before jumping right into it:
 
 - When I say "big cryptos", I'm only referring to Bitcoin (BTC) and Ethereum (ETH). Nothing else.
 
-- Investment in cryptocurrency carry additional risk when compared to traditional investments. My focus on this article is to consider **risk-adjusted returns**. Yes, it may be potentially a lot more profitable to invest in a small cap coin with ranks 1000+ when sorted by market cap like on [CoinGecko](https://www.coingecko.com/) as opposed to BTC or ETH, however, this carries additional risk too, scams and abandoned projects are a very common sight in this market so we must be very careful when putting money into these. Returns must either beat or match those of BTC or ETH and remain consistent, if not, you might as well put your money in BTC or ETH given they carry lower risk.
+- Investment in cryptocurrency carry additional risk when compared to traditional investments. My focus on this article is to consider **risk-adjusted returns**. Yes, it may be potentially a lot more profitable to invest in a small cap coin with ranks 1000+ when sorted by market cap like on [CoinGecko](https://www.coingecko.com/) as opposed to BTC or ETH, however, this carries additional risk too, scams and abandoned projects are a very common sight in this market so we must be very careful when putting money into anything. Returns must either beat or match those of BTC or ETH and remain consistent, if not, you might as well put your money in BTC or ETH precisely because they are less risky.
   - This is NOT to say that an investment in BTC or ETH is risk-free, quite the opposite! Also, **no investment is risk-free**, but the risk is certainly lower than when investing in a token like [**DogeCash**](https://www.coingecko.com/en/coins/dogecash) or anything with a Shiba Inu on it (maybe except DOGE? meh)
 
 ***
@@ -114,6 +116,8 @@ There's projects for all sorts of things, but you must first identify what _the 
 
 Each one of these categories will have their own specific criteria to consider. I'll focus on the top three, payment blockchains, smart contract blockchains and apps.
 
+***
+
 ## Questions to answer about any crypto project
 
 Some questions I ask myself that I consider apply to every crypto project:
@@ -144,17 +148,21 @@ Blockchain applications and blockchains themselves *must* be open source, as the
 
 The purpose of blockchains is to remove the middleman, to avoid requiring trust. If you go and use an application on the blockchain or a blockchain that requires trust to use, you're exposing yourself to catastrophic financial loss, as unlike with traditional software on your computer, you're still able to stop software as long as you never allow it to have administrative privileges. On the blockchain, after you sign a transaction and the transaction is confirmed/included in a block, **you are never going to be able to reverse it or cancel it**.
 
-If a project is closed source, the project is <span class="red">**not a good project**.</span>
+If a project is closed source, the project is probably <span class="red">**not a good project**.</span>
 
 You can check whether a smart contract is closed source or open source in the projects' website or on the block explorer of the blockchain the project is deployed on. Let's take Uniswap for example:
 
 ![UniswapGH](assets/UniswapGH.png)
 
-Uniswap is an extraordinarily good example as it has open source smart contracts and an open source web application interface. This way anyone can inspect the code and see if there's any vulnerability or if there's any malicious function.
+Uniswap is a good example as it has open source smart contracts and an open source web application interface. This way anyone can inspect the code and see if there's any vulnerability or if there's any malicious function.
 
 We should always also make sure that this is also reflected on the deployed contract of the project:
 
 ![UniswapV3](assets/UniswapV3Router2Etherscan.png)
+
+Also, if a project has a bug bounty program offering thousands if not hundreds of thousands for people to find bugs and fix them. That's a great signal that the project is likely a good one. This is Uniswap's bug bounty banner on the developers section of their site:
+
+![UniswapBugBounty](assets/UniswapBugBounty.png)
 
 ***
 
@@ -166,23 +174,23 @@ Other times, even if the token has some utility, it simply serves the purpose of
 
 ### UNI/ETH Ratio
 
-Looking at the UNI/ETH ratio, we can clearly see how poor of an investment buying UNI tokens would have been at almost any point as opposed to buying ETH. There's many reasons for this, but in particular we can attribute some of the poor performance to the fact that the token does nothing but allow you to vote on proposals.
+Looking at the UNI/ETH ratio, we can clearly see how poor of an investment buying and holding UNI tokens would have been at almost any point as opposed to buying ETH. There's many reasons for this, but in particular we can attribute some of the poor performance to the fact that the token does nothing but allow you to vote on proposals (governance).
 
 ![UNI/ETH](assets/UNIETH.png)
 
 ### 1INCH/ETH Ratio
 
-1INCH tokens have suffered much of the same fate of UNI tokens, yes there are differences, however, just like with UNI, this project started with an airdrop which caused a massive selloff, to then go on to a rally against ETH (meaning the price was going up more and faster than the price of ETH), however, the demand did not quite keep up and the token emissions (inflation) screwed up the price in the long term. This made 1INCH tokens not quite worth holding. We'll get into token emissions and inflation more in the [Tokenomics](#tokenomics) section.
+1INCH tokens have suffered much of the same fate of UNI tokens, yes there are differences, however, just like with UNI, this project started with an airdrop which caused a massive selloff, to then go on to a rally against ETH (meaning the price was going up more and faster than the price of ETH), however, the demand did not quite keep up and the token emissions (inflation) messed up the price in the long term. This made 1INCH tokens not quite worth holding. We'll get into inflation in the [Tokenomics](#tokenomics) section.
 
-1INCH does have additional utility when compared to UNI, it allows users to get transaction fee discounts when trading in the 1Inch *DEX*<a onclick="captureSection('#1incheth-ratio')" href="#glossary"><sup>[2]</sup></a> aggregator, however, 1Inch has not managed to catch the *TVL*<a onclick="captureSection('#1incheth-ratio')" href="#glossary"><sup>[3]</sup></a> that other dexes have managed to retain, and simply offering fee discounts doesn't seem to encourage enough buying to offset the inflation current incentives for liquidity provision and staking create.
+1INCH does have additional utility when compared to UNI, it allows users to get transaction fee discounts when trading in the 1Inch *DEX*<a onclick="captureSection('#1incheth-ratio')" href="#glossary"><sup>[2]</sup></a> aggregator, however, 1Inch has not managed to catch the *TVL*<a onclick="captureSection('#1incheth-ratio')" href="#glossary"><sup>[3]</sup></a> and use that other dexes have managed to retain, and simply offering fee discounts doesn't seem to encourage enough buying to offset the inflation current incentives for liquidity provision and staking create. Also, their app is often more expensive to use when compared to others.
 
 ![1INCH/ETH](assets/1INCHETH.png)
 
 ### CAKE/ETH Ratio
 
-PancakeSwap came to sweep the market as the only DEX on Binance Smart Chain, however, even if some investors managed to do very well when CAKE launched, the trand is identical as with the other previous two projects. The developers of this project did essentially copy another project, Uniswap V2, to deploy it into a functionally centralized chain (when compared to Ethereum), however, there was a lot of development to make PancakeSwap into something more than just 'another DEX', with attractive farming programs and incentives for liquidity providers. It managed to attract a large amount of liquidity and it still holds a quite high position if we list protocols by their TVL.
+PancakeSwap came to sweep the market as the only relevant DEX on Binance Smart Chain, however, even if some investors managed to do very well when CAKE launched, the trend is identical as with the other previous two projects. The developers of this project did essentially copy another project, Uniswap V2, to deploy it into a functionally centralized chain (when compared to Ethereum). There was still a lot of development to make PancakeSwap into something more than just 'another Uniswap V2 fork', with attractive farming programs and incentives for liquidity providers. It managed to attract a large amount of liquidity and it still holds a quite high position if we list protocols by their TVL.
 
-Regardless of what PancakeSwap has achieved, investing in CAKE was surely a great way to lose money when compared to just straight up buying BTC. As PancakeSwap was positioned weirdly, being in a chain that is [unsustainable in the long term](https://github.com/bnb-chain/bsc/issues/553#issue-1055158659), created with the sole purpose of performing a *vampire attack*<a onclick="captureSection('#cakeeth-ratio')" href="#glossary"><sup>[4]</sup></a> on Ethereum, which was largely successful at first, but hardly sustainable in the long term. CAKE is another token that was a victim of its own emissions due to poor [tokenomics](#tokenomics) as well as lack of innovation and utility.
+Regardless of what PancakeSwap has achieved though, investing in CAKE was surely a great way to lose money when compared to just straight up buying BTC. As PancakeSwap was positioned weirdly, being in a chain that is [unsustainable in the long term](https://github.com/bnb-chain/bsc/issues/553#issue-1055158659), created with the sole purpose of performing a *vampire attack*<a onclick="captureSection('#cakeeth-ratio')" href="#glossary"><sup>[4]</sup></a> on Ethereum, which was largely successful at first, but hardly sustainable in the long term. CAKE is, too, another token that was a victim of its own inflation due to poor [tokenomics](#tokenomics) as well as lack of innovation and utility.
 
 ![CAKE/BTC](assets/CAKEBTC.png)
 
@@ -192,29 +200,29 @@ The bottom line here is, if your project's token is not useful, it is likely <sp
 
 ## Tokenomics
 
-Tokenomics are sometimes the most important consideration to have when investing in a specific cryptocurrency or token. These describe how the token supply will be or currently is distributed, how much the liquidity providers, users and the community will get, how much the investors and developers get, how long it'll take for the token supply to be fully diluted, etc.
+Tokenomics are sometimes the most important consideration to have when investing in a specific cryptocurrency or token. These describe how the token supply will be or currently is distributed, how much the liquidity providers, users and the community, the investors and developers will get, how long it'll take for the token supply to be fully diluted, among other things.
 
-The best tokenomics will have several features:
+The _best_ tokenomics will have several features:
 
-- Application features or incentives that create demand for the token
+- Application features or incentives that create demand for the token.
 
-- A non-one-sided distribution of the token, where investors, while still get a significant portion of the supply, don't completely swallow it
+- A fair distribution of the token, where investors, while still get a significant portion of the supply, don't completely swallow it.
 
-- Application features that encourage locking the token for an extended period of time in exchange for benefits like additional rewards for providing liquidity
+- Application features that encourage locking the token for an extended period of time in exchange for benefits like additional rewards for providing liquidity.
 
-- A slow enough release schedule as to not absolutely overwhelm and flood the market with tokens. Inflation should be controlled, if existent
+- A slow enough release schedule as to not absolutely overwhelm and flood the market with tokens. Inflation should be controlled, if present.
 
-- A mechanism to remove tokens from the supply, either by locking the tokens or by straight up burning them
+- A mechanism to remove tokens from the supply, either by locking the tokens or by straight up burning them.
 
-The token will have as much demand as the project is able to attract liquidity right? Except that with bad tokenomics it doesn't even matter if the project attracts a monstruous amount of liquidity, investing in the token is **not worth it**. 
+The token will have as much demand as the project is able to attract liquidity right? Except that with bad tokenomics it doesn't matter if the project attracts a monstruous amount of liquidity, investing in the token will **not be worth it**. 
 
-Before strongly judging a project's tokenomics and making a choice, consider that they are **not fixed**, tokenomics can change, new locking mechanisms or incentives can be created. The great thing about an economy powered by permissionless immutable code is that we can build on top of that code, we can upgrade that code in future deployments (as previous deployments are immutable), we can create additional contracts to create new modules on top of currently built code. This makes considering tokens with subpar or straight up terrible performance in terms of returns a potential attractive investment given that an interesting or worthwhile upgrade is introduced.
+Before strongly judging a project's tokenomics and making a choice, consider that they are **not fixed**, tokenomics can change, new locking mechanisms or incentives can be created. The great thing about an economy powered by permissionless immutable code is that we can build on top of that code, we can upgrade that code in future deployments (as previous deployments are immutable), we can create additional new modules on top of currently built code. This makes considering tokens with subpar or straight up terrible performance in terms of returns a potential attractive long-term investment if an interesting or worthwhile upgrade is introduced.
 
 Let's look at some example tokenomics, outline strenghts and weaknesses and perhaps consider some possible future changes to the tokenomics or future mechanics to be introduced that could possibly remedy poor price action and performance vs ETH or BTC.
 
 ### Example: Uniswap tokenomics
 
-Uniswap is a DEX, it allows users to trade assets in a permissionless manner, as well as create trading pairs and provide liquidity to existing trading pairs. Uniswap released their token in Q4 2020 through an *airdrop*<a onclick="captureSection('#example-uniswap-tokenomics')" href="#glossary"><sup>[5]</sup></a>. The airdrop gave away 400 UNI tokens to each and every wallet that ever interacted with the protocol, whether the trade was successful or the transaction executing the trade failed. 
+Uniswap is a DEX, it allows users to trade assets in a permissionless manner, as well as create trading pairs and provide liquidity to existing trading pairs. Uniswap released their token in Q4 2020 through an *airdrop*<a onclick="captureSection('#example-uniswap-tokenomics')" href="#glossary"><sup>[5]</sup></a>. The airdrop gave away 400 UNI tokens to each and every wallet that ever interacted with the protocol, whether the trade was successful or the transaction failed.
 
 #### UNI token distribution
 
