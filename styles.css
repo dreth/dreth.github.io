@@ -132,6 +132,7 @@ a.gb:hover {
   a,
   ul,
   p,
+  ol,
   span {
     font-size: 1vw;
     font-family: Ubuntu, Sans-Serif;
@@ -191,11 +192,6 @@ a.gb:hover {
   .dash {
     font-size: 1vw;
   }
-  /* numbered lists font */
-  ol {
-    font-size: 1.5vw;
-    font-family: Ubuntu, Sans-Serif;
-  }
 }
 
 /* screen width higher than 1000 px */
@@ -222,6 +218,7 @@ a.gb:hover {
   a,
   ul,
   p,
+  ol,
   span {
     font-size: 1.6vw;
     font-family: Ubuntu, Sans-Serif;
@@ -281,11 +278,6 @@ a.gb:hover {
   .dash {
     font-size: 1.6vw;
   }
-  /* numbered lists font */
-  ol {
-    font-size: 1.7vw;
-    font-family: Ubuntu, Sans-Serif;
-  }
 }
 /* screen width lower than 1000 px */
 @media screen and (max-width: 1000px) and (min-width: 0px) {
@@ -311,6 +303,7 @@ a.gb:hover {
   a,
   ul,
   p,
+  ol,
   span {
     font-size: 3.2vw;
     font-family: Ubuntu, Sans-Serif;
@@ -369,11 +362,6 @@ a.gb:hover {
   }
   .dash {
     font-size: 3.5vw;
-  }
-  /* numbered lists font */
-  ol {
-    font-size: 3.5vw;
-    font-family: Ubuntu, Sans-Serif;
   }
 }
 /* li bullet icons for diff profiles/links */
