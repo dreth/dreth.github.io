@@ -10,7 +10,6 @@ As any human, aside from research I've done, I have my own biases and opinions, 
 
 ## Article index
 
-- [Analyzing long-term investments in cryptocurrency projects](#analyzing-long-term-investments-in-cryptocurrency-projects)
   - [Article index](#article-index)
   - [Disclaimers](#disclaimers)
   - [Purpose of the project](#purpose-of-the-project)
