@@ -558,6 +558,8 @@ Moreover, the coming monetary policy changes to Ethereum after the London hardfo
   
 - <span class="lc">**Further reduction of inflation after the merge**</span>: After the merge, inflation will be further reduced, as rewards to stakers have a much smaller rate of issuance as opposed to the flat 2 ETH block rewarded awarded to miners on proof of work. The merge could even render the ETH inflation negative, leading to deflationary periods. This can be simulated in [this website](https://ultrasound.money).
 
+- <span class="lc">**Revenue shares to network participants**</span>: As 
+
 ***
 
 ## Project developers

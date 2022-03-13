@@ -18,6 +18,9 @@ def get_links(type):
         with open('./cool_links/scripts/links_to_process.txt') as f:
 
             for i,line in enumerate(f.read().splitlines()):
+                # clean mobile stuff
+                if '?wprov=sfla1' in line:
+                    line = line.replace('?wprov=sfla1','')
                 
                 # get language
                 try:
@@ -89,4 +92,4 @@ def get_links(type):
 
 
 # run function
-get_links(2)
+get_links(1)
