@@ -217,14 +217,14 @@ Uniswap is a DEX, it allows users to trade assets in a permissionless manner, as
 #### UNI token distribution
 
 ![](assets/UniswapTokenomics1.png)
-<figcaption><a href="https://uniswap.org/blog/uni" class="imageSource" target="_blank">(Image source)</a></figcaption>
+<figcaption><a href="https://uniswap.org/blog/uni" class="imageSource">(Image source)</a></figcaption>
 
 This, as far as tokenomics distributions go is alright, 60% going to the community is good. Uniswap is fairly recognized in the community so the proportion given to investors is not massive, 17.8% for investors is not ridiculous or excessive by any means when compared to other similar applications.
 
 This is the genesis allocation though, as more tokens are released on the market, the proportions will change slightly, but not significantly, therefore this chart is sufficient to describe the allocations. 
 
 ![](assets/UniswapTokenomics2.png)
-<figcaption><a href="https://uniswap.org/blog/uni" class="imageSource" target="_blank">(Image source)</a></figcaption>
+<figcaption><a href="https://uniswap.org/blog/uni" class="imageSource">(Image source)</a></figcaption>
 
 The release schedule also seems quite standard. But as with any *new* token, we have to consider the possibility that inflation will exist until the full supply is out there, meaning that if demand for it does not rise, and there's not inherent mechanic to reduce supply or increase demand, the token will NOT perform well when compared to ETH or BTC. Again, if you're going to invest in a project, no matter how 'good' you perceive it, the investment may not be good enough because of inflation. Inflation is baked into new tokens, they need to eventually become fully diluted or have good mechanics before you should consider an investment in them.
 
@@ -353,7 +353,7 @@ Since the initial release of the Bitcoin white paper and its creation, there's b
 
 
 <img class="smaller" src="assets/Bitcoin.png">
-<figcaption><a href="https://bitcoin.org/en/" class="imageSource" target="_blank">(Image source)</a></figcaption>
+<figcaption><a href="https://bitcoin.org/en/" class="imageSource">(Image source)</a></figcaption>
 
 Payment blockchains allow you to send and receive cryptocurrency. Their functionality is simple even if the underlying technology is extremely complex. The 'original' payment blockchain is the Bitcoin blockchain, through which we can send and receive Bitcoin's native token BTC.
 
@@ -403,7 +403,7 @@ Note, I am not trying to argue that you **shouldn't buy any of these**, I'm just
 ### Smart contract blockchains
 
 <img class="smaller" src="assets/Ethereum.png">
-<figcaption><a href="https://iconarchive.com/show/cryptocurrency-flat-icons-by-cjdowner/Ethereum-ETH-icon.html" class="imageSource" target="_blank">(Image source)</a></figcaption>
+<figcaption><a href="https://iconarchive.com/show/cryptocurrency-flat-icons-by-cjdowner/Ethereum-ETH-icon.html" class="imageSource">(Image source)</a></figcaption>
 
 In late 2013, Vitalik Buterin described Ethereum in a white paper. The project was created with the purpose of building decentralized applications and during its initial founding and development it had some extremely prominent leaders of other projects on board, among those Gavin Wood and Charles Hoskinson both founders of similar projects with different approaches to smart contracts.
 
@@ -428,32 +428,32 @@ As a result of increased development activity and innovation happening on Ethere
 - Amount of developers and development activity (Events on the official github repo excluding comments, forks, stars...)
 
 ![](assets/DevActivity.png)
-<figcaption><a href="https://app.santiment.net/charts?settings=%7B%22slug%22%3A%22bitcoin%22%2C%22ticker%22%3A%22BTC%22%2C%22from%22%3A%222021-09-08T21%3A59%3A59.999Z%22%2C%22to%22%3A%222022-03-08T22%3A59%3A59.999Z%22%7D&widgets=%5B%7B%22widget%22%3A%22ChartWidget%22%2C%22wcsa%22%3Atrue%2C%22metrics%22%3A%5B%22ethereum_MC_ETH_MC_dev_activity%22%2C%22dev_activity%22%2C%22cardano_MC_ADA_MC_dev_activity%22%2C%22solana_MC_SOL_MC_dev_activity%22%2C%22avalanche_MC_AVAX_MC_dev_activity%22%2C%22binance-coin_MC_BNB_MC_dev_activity%22%2C%22luna_MC_LUNA_MC_dev_activity%22%2C%22cosmos_MC_ATOM_MC_dev_activity%22%5D%2C%22axesMetrics%22%3A%5B%22dev_activity%22%5D%2C%22colors%22%3A%7B%22ethereum_MC_ETH_MC_dev_activity%22%3A%22%23F47BF7%22%2C%22dev_activity%22%3A%22%238358FF%22%2C%22cardano_MC_ADA_MC_dev_activity%22%3A%22%23FF5B5B%22%2C%22solana_MC_SOL_MC_dev_activity%22%3A%22%23FFCB47%22%2C%22avalanche_MC_AVAX_MC_dev_activity%22%3A%22%235275FF%22%2C%22binance-coin_MC_BNB_MC_dev_activity%22%3A%22%23FF8450%22%2C%22luna_MC_LUNA_MC_dev_activity%22%3A%22%23785549%22%2C%22cosmos_MC_ATOM_MC_dev_activity%22%3A%22%23D4E763%22%7D%2C%22settings%22%3A%7B%22ethereum_MC_ETH_MC_dev_activity%22%3A%7B%22interval%22%3A%221d%22%2C%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22dev_activity%22%3A%7B%22interval%22%3A%221d%22%2C%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22cardano_MC_ADA_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22solana_MC_SOL_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22avalanche_MC_AVAX_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22binance-coin_MC_BNB_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22luna_MC_LUNA_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22cosmos_MC_ATOM_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%7D%2C%22combinedMetrics%22%3A%5B%5D%7D%5D" class="imageSource" target="_blank">(Image source)</a></figcaption>
+<figcaption><a href="https://app.santiment.net/charts?settings=%7B%22slug%22%3A%22bitcoin%22%2C%22ticker%22%3A%22BTC%22%2C%22from%22%3A%222021-09-08T21%3A59%3A59.999Z%22%2C%22to%22%3A%222022-03-08T22%3A59%3A59.999Z%22%7D&widgets=%5B%7B%22widget%22%3A%22ChartWidget%22%2C%22wcsa%22%3Atrue%2C%22metrics%22%3A%5B%22ethereum_MC_ETH_MC_dev_activity%22%2C%22dev_activity%22%2C%22cardano_MC_ADA_MC_dev_activity%22%2C%22solana_MC_SOL_MC_dev_activity%22%2C%22avalanche_MC_AVAX_MC_dev_activity%22%2C%22binance-coin_MC_BNB_MC_dev_activity%22%2C%22luna_MC_LUNA_MC_dev_activity%22%2C%22cosmos_MC_ATOM_MC_dev_activity%22%5D%2C%22axesMetrics%22%3A%5B%22dev_activity%22%5D%2C%22colors%22%3A%7B%22ethereum_MC_ETH_MC_dev_activity%22%3A%22%23F47BF7%22%2C%22dev_activity%22%3A%22%238358FF%22%2C%22cardano_MC_ADA_MC_dev_activity%22%3A%22%23FF5B5B%22%2C%22solana_MC_SOL_MC_dev_activity%22%3A%22%23FFCB47%22%2C%22avalanche_MC_AVAX_MC_dev_activity%22%3A%22%235275FF%22%2C%22binance-coin_MC_BNB_MC_dev_activity%22%3A%22%23FF8450%22%2C%22luna_MC_LUNA_MC_dev_activity%22%3A%22%23785549%22%2C%22cosmos_MC_ATOM_MC_dev_activity%22%3A%22%23D4E763%22%7D%2C%22settings%22%3A%7B%22ethereum_MC_ETH_MC_dev_activity%22%3A%7B%22interval%22%3A%221d%22%2C%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22dev_activity%22%3A%7B%22interval%22%3A%221d%22%2C%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22cardano_MC_ADA_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22solana_MC_SOL_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22avalanche_MC_AVAX_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22binance-coin_MC_BNB_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22luna_MC_LUNA_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%2C%22cosmos_MC_ATOM_MC_dev_activity%22%3A%7B%22transform%22%3A%7B%22movingAverageBase%22%3A42%2C%22type%22%3A%22moving_average%22%7D%7D%7D%2C%22combinedMetrics%22%3A%5B%5D%7D%5D" class="imageSource">(Image source)</a></figcaption>
 
 - Value settled through the network (Including tokens on Ethereum)
 
 ![](assets/ValueSettledBTCETH.png)
-<figcaption><a href="https://money-movers.info/" class="imageSource" target="_blank">(Image source)</a></figcaption>
+<figcaption><a href="https://money-movers.info/" class="imageSource">(Image source)</a></figcaption>
 
 - Daily transaction fees for securing the network (Earnings to miners/stakers)
 
 ![](assets/CryptoFees.png)
-<figcaption><a href="https://cryptofees.info/" class="imageSource" target="_blank">(Image source)</a></figcaption>
+<figcaption><a href="https://cryptofees.info/" class="imageSource">(Image source)</a></figcaption>
 
 - Amount of money locked in applications on the blockchain (TVL)
 
 ![](assets/TVLPerChain.png)
-<figcaption><a href="https://defillama.com/chains" class="imageSource" target="_blank">(Image source)</a></figcaption>
+<figcaption><a href="https://defillama.com/chains" class="imageSource">(Image source)</a></figcaption>
 
 - Size of its *layer 2 (L2)*<a onclick="captureSection('#ethereum-as-the-leading-blockchain')" href="#glossary"><sup>[7]</sup></a> ecosystem in terms of both development, VC funding, TVL, etc... There's a big incentive to scale Ethereum at the moment given its high activity and high level of decentralization
 
 ![](assets/TVLRollups.png)
-<figcaption><a href="https://l2beat.com" class="imageSource" target="_blank">(Image source)</a></figcaption>
+<figcaption><a href="https://l2beat.com" class="imageSource">(Image source)</a></figcaption>
 
 - Decentralization and network security as opposed to other smart contract blockchains 
 
 ![](assets/ValidatorCountPOS.png)
-<figcaption><a href="https://stakers.info/" class="imageSource" target="_blank">(Image source)</a></figcaption>
+<figcaption><a href="https://stakers.info/" class="imageSource">(Image source)</a></figcaption>
 
 **Note:** this validator count is for Ethereum on proof of stake, however, after *the merge*<a onclick="captureSection('#ethereum-as-the-leading-blockchain')" href="#glossary"><sup>[8]</sup></a> somewhere around Q2 2022 this will be the effective validator count for Ethereum. 
 
@@ -486,14 +486,14 @@ These new platforms have low transaction fees, however, they give up some other 
   + If a chain like these does not have plans to decentralize in the future, you should NOT hold assets on it for an extended period of time.
 
 ![](assets/SolanaOutage.png)
-<figcaption>Would you trust a chain that has experienced several outages with your life savings?<br><a class="imageSource" href="https://twitter.com/SolanaStatus/status/1437856638279487493" target="_blank">(source tweet)</a></figcaption>
+<figcaption>Would you trust a chain that has experienced several outages with your life savings?<br><a class="imageSource" href="https://twitter.com/SolanaStatus/status/1437856638279487493">(source tweet)</a></figcaption>
 
 - <span class="lc">**Lack of permanent uptime**</span>: In the financial world, if we are involved in the process of performing a trade or there's assets that we may want to buy/sell at some point, we **have** to have the ability to buy or sell them whenever we want. If the environment or platform in which we trade goes down and we are unable to transact, then we will be caught in positions without the ability to do anything. Part of the purpose of a blockchain is to remain up **all the time**, down time is **not acceptable** for blockchains. 
 
   + Solana (for example) [already has had several incidents causing extensive downtime](https://fortune.com/2022/01/25/solana-founder-anatoly-yakovenko-crypto-crash-blockchain-instability/) where users are trapped without being able to move their money or execute any trades for extended periods of time. Either caused by a validator client bug, by excessive spam on the blockchain or any other reason. Having been down several times is clearly a big risk to users.
 
 ![](assets/AssLoverToken.png)
-<figcaption><i>Some tokens have really family friendly names</i><br><a class="imageSource" href="https://bscscan.com/tokenholdings?a=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&ps=25&sort=total_price_usd&order=desc&p=48" target="_blank">(source address)</a></figcaption>
+<figcaption><i>Some tokens have really family friendly names</i><br><a class="imageSource" href="https://bscscan.com/tokenholdings?a=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&ps=25&sort=total_price_usd&order=desc&p=48">(source address)</a></figcaption>
 
 - <span class="lc">**Lack of spam mitigation**</span>: If transactions are extremely cheap to execute, it's easy to congest the network, easily create fraudulent spam tokens and cheaply deploy anything, from just spam to scams. This *doesn't mean* that it's OK for these actions to be extremely expensive like they are on Ethereum, but as a side effect of them being expensive and block space filling relatively quickly pushing fees up if spamming the chain is attempted discourages potential attackers, as the costs would be high and the impact likely very small.
 
@@ -506,12 +506,12 @@ These new platforms have low transaction fees, however, they give up some other 
   + A project called Olyseum, backed by large football celebrities like Andrés Iniesta had an investor token unlock event on March 31st 2021. The investor(s) whose portion came out of its vesting period decided to sell their stake causing the price to plummet from 0.82 USD to 0.07 USD, an over 92% drop in price over a span of under 1 hour. This caused massive panic among early community investors who expected the price to go up because they were 'early' right? The token now trades for 0.003 USD. *This is not an Alt-L1 project* but it's an illustrative example of what a large investor selling a significant portion of their stake can do to the price of an asset given how illiquid some market pairs can be. Here's an image of what happened to it:
 
 ![](assets/OLYLinear.png)
-<figcaption><i>Yikes.</i><br><a class="imageSource" href="https://www.coingecko.com/en/coins/olyseum" target="_blank">(source chart)</a></figcaption>
+<figcaption><i>Yikes.</i><br><a class="imageSource" href="https://www.coingecko.com/en/coins/olyseum">(source chart)</a></figcaption>
 
 **Note:** The Olyseum case is an extreme one. Projects like these are much larger than Olyseum and certainly serve much more purposes than Olyseum, however, quick price depreciation can and WILL happen with some projects in this category of Ethereum 'killers'. Not every project can be a winner, and you're the one taking the risks here.
 
 ![](assets/EminVitalikResponse.png)
-<figcaption>A notable twitter thread calling out this behavior<br><a class="imageSource" href="https://nitter.net/peter_szilagyi/status/1490695003118747650#m" target="_blank">(source twitter thread)</a></figcaption>
+<figcaption>A notable twitter thread calling out this behavior<br><a class="imageSource" href="https://nitter.net/peter_szilagyi/status/1490695003118747650#m">(source twitter thread)</a></figcaption>
 
 - <span class="lc">**Dishonest marketing**</span>: There is an incentive to create an alternative chain to garner user activity and pull locked value from Ethereum, otherwise nobody would do it, right? At times project leaders, participants or investors will create noise on social media or make wild dishonest claims bashing Ethereum for not being 'as cheap' while using faulty arguments or straight up fallacies.
 
@@ -541,14 +541,14 @@ Let's observe the performance of some of these and analyze the sustainability of
 ![](assets/LUNABTC.png)
 <figcaption>LUNA's impressive performance vs BTC in 2021</figcaption>
 
-- <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which pays a consistent 20% on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*. Instead, the rewards are provided by a reserve of UST provided by investors. The growth of the ecosystem is great, but it may be unsustainable. Articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. Is the growth of LUNA a feedback loop of UST --> LUNA purchases? Why is LUNA performing so well? When will investors take profits? No matter what, I still think LUNA's performance may continue for longer, but due to my personal risk tolerance, I don't usually get into projects whose sustainability I'm not 100% confident in.
+- <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which pays a consistent 20% on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*, instead, the rewards are provided by a reserve of UST provided by investors. Additionally, not all the UST is fully collateralized. The growth of the ecosystem is great, but it may be unsustainable. This [twitter thread](https://nitter.net/AlgodTrading/status/1493900328655335424?s=20&t=fjlz5YVMUPlyZvKIaBPQEQ) by AlgodTrading and articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. so then why is LUNA performing so well? When will investors take profits? are these ponzinomics sustainable? No matter what, I still think LUNA's performance may continue for longer, but due to my personal risk tolerance, I don't usually get into projects whose sustainability I'm not 100% confident in. 
 
 **Note:** I specifically analyzed the price action vs ETH and BTC of two NON-EVN chains, meaning these are not carbon-copies of the Ethereum blockchain or use the Ethereum Virtual Machine. That's because in my view, those chains are <span class="red">not innovative</span> and often use lies and deceptive statements around the argument that 'Ethereum is not fast enough' while they copy-paste Ethereum and change some parameters which would make the long-term growth of those chains completely unsustainable.
 
 #### Ethereum's coming upgrades and development
 
 ![](assets/EthereumUpgrades.jpeg)
-<figcaption>The upgrades as tweeted by Vitalik in the Beacon Chain's birthday<br><a class="imageSource" href="https://mobile.twitter.com/VitalikButerin/status/1466411377107558402" target="_blank">(source twitter thread)</a></figcaption>
+<figcaption>The upgrades as tweeted by Vitalik in the Beacon Chain's birthday<br><a class="imageSource" href="https://mobile.twitter.com/VitalikButerin/status/1466411377107558402">(source twitter thread)</a></figcaption>
 
 An important consideration to make before investing in any of these projects is that these chains were able to capture a lot of value from Ethereum almost exclusively because Ethereum was **expensive to use**, but with rollups already live and in full force geting many applications and developers on board, Ethereum has become **cheap to use** through such rollups. This makes the value proposition of Alt-L1s somewhat less attractive for users and developers.
 
@@ -556,7 +556,7 @@ Moreover, the coming monetary policy changes to Ethereum after the London hardfo
 
 - <span class="lc">**Significant reduction of inflation with EIP-1559**</span>: In August 2021, an upgrade came into effect on the Ethereum network. This upgrade causes transaction fees to be removed from the supply as opposed to paid to miners. Given's Ethereum's use and demand for block space, the amount of ETH removed from the total supply was much more than expected. As it stands now, the total reduction of inflation since August 2021 has been of about ~70%, which is significantly more than a Bitcoin halving's reduction of inflation on BTC issuance. This supply shock has likely <span class="red">not been reflected on the price of ETH yet</span> given its strong correlation to BTC.
   
-- <span class="lc">**Further reduction of inflation after the merge**</span>: After the merge, inflation will be further reduced, as rewards to stakers have a much smaller rate of issuance as opposed to the flat 2 ETH block rewarded awarded to miners on proof of work. The merge could even render the ETH inflation negative, leading to deflationary periods. This can be simulated in [this website](https://ultrasound.money)
+- <span class="lc">**Further reduction of inflation after the merge**</span>: After the merge, inflation will be further reduced, as rewards to stakers have a much smaller rate of issuance as opposed to the flat 2 ETH block rewarded awarded to miners on proof of work. The merge could even render the ETH inflation negative, leading to deflationary periods. This can be simulated in [this website](https://ultrasound.money).
 
 ***
 
