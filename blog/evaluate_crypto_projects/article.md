@@ -29,6 +29,11 @@ As any human, aside from research I've done, I have my own biases and opinions, 
       - [CRV token distribution](#crv-token-distribution)
       - [CRV's advantage over other pure governance tokens like UNI](#crvs-advantage-over-other-pure-governance-tokens-like-uni)
       - [CRV's performance](#crvs-performance)
+  - [Project developers](#project-developers)
+    - [A bad example: Wonderland](#a-bad-example-wonderland)
+      - [Wonderland's downfall](#wonderlands-downfall)
+    - [A good example: Uniswap](#a-good-example-uniswap)
+  - [How do I check if it's a scam?](#how-do-i-check-if-its-a-scam)
   - [Weird token mechanics](#weird-token-mechanics)
   - [Blockchain native tokens](#blockchain-native-tokens)
     - [Payment blockchains](#payment-blockchains)
@@ -40,11 +45,6 @@ As any human, aside from research I've done, I have my own biases and opinions, 
       - [The issue with Alt-L1s](#the-issue-with-alt-l1s)
       - [Alt-L1 native tokens](#alt-l1-native-tokens)
       - [Ethereum's coming upgrades and development](#ethereums-coming-upgrades-and-development)
-  - [Project developers](#project-developers)
-    - [A bad example: Wonderland](#a-bad-example-wonderland)
-      - [Wonderland's downfall](#wonderlands-downfall)
-    - [A good example: Uniswap](#a-good-example-uniswap)
-  - [How do I check if it's a scam?](#how-do-i-check-if-its-a-scam)
   - [Glossary](#glossary)
   - [Image sources](#image-sources)
 
@@ -229,14 +229,14 @@ Uniswap is a DEX, it allows users to trade assets in a permissionless manner, as
 ![](assets/UniswapTokenomics1.png)
 <figcaption><a href="https://uniswap.org/blog/uni" class="imageSource">(Image source)</a></figcaption>
 
-This, as far as tokenomics distributions go is alright, 60% going to the community is good. Uniswap is fairly recognized in the community so the proportion given to investors is not massive, 17.8% for investors is not ridiculous or excessive by any means when compared to other similar applications.
+This, as far as tokenomics distributions go is *alright*, 60% going to the community is good. Uniswap is fairly recognized in the community so the proportion given to investors is not massive, 17.8% for investors is not ridiculous or excessive by any means when compared to other similar applications.
 
-This is the genesis allocation though, as more tokens are released on the market, the proportions will change slightly, but not significantly, therefore this chart is sufficient to describe the allocations. 
+This is the genesis allocation though, as more tokens are released on the market, the proportions will change slightly, but not significantly.
 
 ![](assets/UniswapTokenomics2.png)
 <figcaption><a href="https://uniswap.org/blog/uni" class="imageSource">(Image source)</a></figcaption>
 
-The release schedule also seems quite standard. But as with any *new* token, we have to consider the possibility that inflation will exist until the full supply is out there, meaning that if demand for it does not rise, and there's not inherent mechanic to reduce supply or increase demand, the token will NOT perform well when compared to ETH or BTC. Again, if you're going to invest in a project, no matter how 'good' you perceive it, the investment may not be good enough because of inflation. Inflation is baked into new tokens, they need to eventually become fully diluted or have good mechanics before you should consider an investment in them.
+The release schedule also seems quite standard. But as with any *new* token, we have to consider the possibility that inflation will exist until the full supply is out there, meaning that if demand for it does not rise, and there's not inherent mechanic to reduce supply or increase demand, the token will NOT perform well when compared to ETH or BTC. Again, if you're going to invest in a project, no matter how 'good' you perceive it, the investment may not be good enough because of inflation. Inflation is baked into newly released tokens, they need to eventually become fully diluted or have good mechanics before you should consider investing in them.
 
 #### UNI's issues as an investment from the perspective of tokenomics
 
@@ -254,23 +254,25 @@ Therefore holding UNI is potentially shooting yourself in the foot. Uniswap is a
 
 Despite this, and as I mentioned before, the lack of existence of these mechanics doesn't necessarily condition their future existence. A way to keep up with whether these mechanics will exist or have been proposed by prominent community members or developers is to look at the [governance forum for Uniswap](https://gov.uniswap.org/). Before implementing anything on the blockchain, several steps need to be achieved, at least in the case of highly secure, audited protocols (the ONLY kind of project you should ever invest in) like Uniswap:
 
-1. Either a discussion thread about any implementation of these mechanics is created and prominent community members, developers, investors or simple users discuss them. This could happen before a formal forum proposal thread is made, or in the same thread as the proposal. The proposal is then actively discussed in the forum.
+1. Either a discussion thread about any implementation of these mechanics is created and prominent community members, developers, investors or simple users discuss them. This could happen before a formal forum proposal thread is made, or in the same thread as the proposal. The proposal is then actively discussed in the forum:
 
 ![](assets/UniswapGovernanceForum.png)
 
-2. Given overwhelming support in the forums, some entity or person develops the code to create a formal proposal to be voted on on-chain in the [Uniswap governance interface](https://app.uniswap.org/#/vote?chain=mainnet). The formal proposal **requires** coding a smart contract or calling a set of functions in the formal Uniswap smart contracts (or other contracts), the set of actions has to be programmed, this is why the governance is decentralized, because IF the quorum is met AND the vote passes, the action is executed on-chain, and no one can change it once it passes. If it does NOT pass, then nothing happens.
+1. If there's an overwhelmingly positive reaction in the forums, some entity or person develops the code to create a formal proposal to be voted on on-chain in the [Uniswap governance interface](https://app.uniswap.org/#/vote?chain=mainnet). The formal proposal **requires** either coding a smart contract or calling a set of functions in the formal Uniswap smart contracts (or other contracts). The set of actions has to be programmed, this is why the governance is decentralized, because IF the quorum is met AND the vote passes, the action is executed on-chain, and no one can change it once it passes. If it does NOT pass, then nothing happens.
 
 ![](assets/UniswapGovernanceInterface.png)
 
-If the actions in step 2 require an additional contract, a formal audit may be made before creating the vote on-chain, this costs money, maybe financed by the protocol treasury or by an external entity, but also takes **time**. Therefore any change occurring to any prominent project's tokenomics is a SLOW process, and may require even several different forum discussions about it, as well as individuals to actually code what will (or won't) occur when the vote passes.
+If the actions in step 2 require an additional contract, a formal audit may be made before creating the vote on-chain, this costs money and it may be financed by the protocol treasury, by an external entity or by the company developing the protocol itself, this often takes **time**. Therefore any change occurring to any prominent project's tokenomics is a SLOW process, and may require even several different forum discussions about it, as well as individuals to actually code what will (or won't) occur when the vote passes, if it passes.
 
 ### Example: Curve tokenomics
 
-Curve Finance is a decentralized exchange that has been especially popular for stablecoin pools. Given the variety of stablecoins like USDT, USDC, DAI, UST... a need for a more robust stablecoin decentralized exchange was created. Uniswap and other decentralized exchanges still work for stablecoin swaps. There's large pools for this on Uniswap V3 as well that trade between assets in pairs like USDC/DAI, however, Curve's approach is different and allows for multi-asset pools as opposed to just pairs as well as keeping the price peg between stablecoins in a much more efficient way, with much lower slippage and fees. 
+Curve Finance is a decentralized exchange that has been especially popular for stablecoin pools. Given the variety of stablecoins like USDT, USDC, DAI, UST... a need for a more robust stablecoin decentralized exchange was created. Uniswap and other decentralized exchanges still work for stablecoin swaps, but when Curve was conceptualized, they weren't the best places to pool stablecoins.
 
-It's important to note Uniswap V3 has fixed much of the faults of Uniswap V2 that Curve has improved significantly, but the big differentiator for Curve as opposed to Uniswap and the reason why it's attracted so much more liquidity is its CRV token and the outstandingly good tokenomics it boasts.
+There's now large pools for this on Uniswap V3 now that trade between assets in pairs like USDC/DAI, nevertheless, Curve's approach is different and allows for multi-asset pools as opposed to just pairs as well as keeping the price peg between stablecoins in a much more efficient way, with much lower slippage and fees. 
 
-Aside from stablecoins, Curve is very effective in pairing assets that are wrapped or represented by another token, providing utility in other projects, for example Alchemix's alETH, StakeWise's sETH2, etc... These are assets that either should always be represented by the value of ETH or are supposed to be pegged 1:1 with ETH (or as close as possible) due to other mechanics. The idea here is that Curve is a fantastic tool for stable pools, whether those are stablecoins or other stable pairs.
+It's important to note Uniswap V3 has fixed much of the faults of Uniswap V2 that Curve essentially fixed, but the big differentiator for Curve as opposed to Uniswap and the reason why it's attracted so much more liquidity is <span class="red">its CRV token and the outstandingly good tokenomics it boasts</span>.
+
+Aside from stablecoins, Curve is very effective in pairing assets that are wrapped or represented by another token, providing utility in other projects, for example Alchemix's alETH, Synthetix's sETH, etc... These are assets that either should always be represented by the value of ETH or are supposed to be pegged 1:1 with ETH (or as close as possible) due to other mechanics. The idea here is that Curve is a fantastic tool for stable pools, whether those are stablecoins or other stable pairs.
 
 #### CRV token distribution
 
@@ -278,7 +280,7 @@ Knowing this, we can go into why Curve has attracted so much liquidity aside fro
 
 ![](assets/CurveTokenomics1.png)
 
-This looks fairly standard, however, let's notice how the initial supply of CRV was distributed:
+This looks fairly standard, but let's check how the initial supply of CRV was distributed:
 
 ![](assets/CurveTokenomics2.png)
 
@@ -286,7 +288,7 @@ Here we can see several interesting features which differentiate CRV as a govern
 
 - The CRV allocation for liquidity providers is *vested*<a onclick="captureSection('#crv-token-distribution')" href="#glossary"><sup>[6]</sup></a>, meaning they can't sell it until after a year.
 
-- There's no instantly massive release of a significant amount of the supply, but rather a 2M release per day.
+- There's no instantly massive release of a significant amount of the supply, but rather a 2M release per day (inflation).
 
 - The primary objective of CRV is to put LPs first.
 
@@ -308,13 +310,13 @@ Here we can see several interesting features which differentiate CRV as a govern
 
 These rewards are then further incentivized by other projects that try to take advantage of this system to reward users that provide liquidity even further. Without getting into much more detail about these mechanics we can analyze them closely and <span class="red">see why CRV tokenomics are excellent</span>:
 
-- CRV can be locked to get the benefits of veCRV, so CRV has a mechanic to take tokens out of the supply for a significant period of time.
+1. CRV can be locked to get the benefits of veCRV, so CRV has a mechanic to take tokens out of the supply for a significant period of time.
 
-- CRV earns protocol fees in the form of 3CRV, so CRV has a mechanic to pay dividends to holders.
+2. CRV earns protocol fees in the form of 3CRV, so CRV has a mechanic to pay dividends to holders.
 
-- veCRV can be used to vote to direct incentives to pools, so CRV has a mechanic to create demand to buy it in order for projects to attract liquidity.
+3. veCRV can be used to vote to direct incentives to pools, so CRV has a mechanic to create demand to buy it in order for projects to attract liquidity.
 
-These seem trivial, but given the innovation of Curve and how popular it is for pooling stable assets, it's become a very popular go-to option for other projects to set up their liquidity pools and even spawning other projects with the sole purpose of controlling CRV incentives to pools.
+These seem trivial, but given the innovation of Curve and how popular it is for pooling stable assets, it's become the go-to option for other projects to set up their liquidity pools and even spawning other projects with the sole purpose of controlling CRV incentives to pools like Convex.
 
 #### CRV's performance
 
@@ -326,38 +328,132 @@ As well as BTC:
 
 ![](assets/CRVBTC.png)
 
-With the exception of the starting 2 months, when the token was released given the initial high inflation, but as Curve became more and more popular and more and more projects decided to establish their pools in the protocol, this has made CRV another **solid token to hold** in combination to ETH and BTC.
+With the exception of the starting 2 months, when the token was released, Curve became more and more popular and more and more projects decided to establish their pools in the protocol, this has made CRV another **solid token to hold** in combination with ETH and BTC.
+
+***
+
+## Project developers
+
+When investing in a project, you **need** to know who is developing the project. Who is backing the project. Not just who they are by name, but what's their background, where were they before starting the project. The owners, investors and developers need to be disclosed. The team being anonymous can already be a big sign that the project may not be legitimate or may be a straight up scam.
+
+### A bad example: Wonderland
+
+![](assets/WonderlandLandingPage.png)
+<figcaption>Wonderland's landing page at <a class="figcaption" href="https://www.wonderland.money/">wonderland.money</a>. <i>"Grow your wealth", sure...</i></figcaption>
+
+I want to highlight the story of Wonderland, a project that that initially looked not-so-shady and turning out to be an unsustainable ponzi scheme lead by 2 people, one known figure in the space and another one with an extremely shady background, several identities as well as several scams already on his résumé. Here's why wonderland was a catastrophe for the investors that drank the bullshit koolaid:
+
+![](assets/OlympusDAOLandingPage.png)
+<figcaption>Olympus DAO's landing page at <a class="figcaption" href="https://www.olympusdao.finance/">olympusdao.finance</a></figcaption>
+
+- Wonderland was initially a fork of Ohm (Olympus DAO), a legitimate project with seemingly unsustainable tokenomics that didn't just resembled a ponzi scheme, but that was openly a ponzi scheme. Not one that would intentionally try to rob money from unsuspecting investors, but one that worked as a proof of concept. There's nothing shady about Olympus, it simply is not especially sustainable, period. Olympus was [fully open source](https://github.com/OlympusDAO), the contracts, the website, the data querying, everything. What wonderland did was basically fork the project, modify a few things, and release it with a pretty frontend. The github repository of Wonderland's contracts was just [embarrassingly bad at the time](https://nitter.net/larry0x/status/1486150220538855431). Many forks of Ohm have emerged, but this one was lazy and clearly a cash grab from the start, but it gets worse!
+
+![](assets/0xSifuScam.png)
+<figcaption>A good twitter thread explaining the whole fiasco. See the full thread <a class="figcaption" href="https://nitter.net/zachxbt/status/1486591682728673282">here.</a></figcaption>
+
+- The co-founder of Wonderland, 0xSifu is also Michael Patryn, the co-founder of QuadrigaCX, a Canadian exchange that was essentially a behind-the-curtains personal trading game for its founder Gerald Cotten, who disappeared with all the money in the exchange and mysteriously died in India of complications from Crohn's Disease. I have Crohn's disease and if you're doing just fine, it ain't easy to just randomly die from one day to another. A lot of people doubt his death and there's even a [9-episode epic podcast](https://exitscam.show) explaining basically everything around the whole fiasco, a lot of people speculate that Gerald is not even dead, and an exhumation has never been done on his body (the coffin was never opened when shipped back from India). Either way, if you know the story of Michael Patryn, you'll know this isn't his first rodeo and not even QuadrigaCX was his first rodeo. He is a talented, very experienced scammer and *nobody even really knows his real name*...
+
+#### Wonderland's downfall
+
+Make sure that you *KNOW* who's behind a project. Once people were onto who 0xSifu was, the project met its maker:
+
+![](assets/TIMEDownfall.png)
+<figcaption>Downfall of Wonderland's TIME token.</figcaption>
+
+Also, even if you *DIDN'T KNOW* or cared to know who 0xSifu was, you should have known how TIME was going to end knowing that it's basically OHM with a different name and OHM's bubble was already popping since December 2021:
+
+![](assets/OHMAwfulPriceAction.png)
+<figcaption>OHM's price history.</figcaption>
+
+### A good example: Uniswap
+
+![](assets/UniswapLandingPage.png)
+<figcaption>Uniswap's landing page at <a class="figcaption" href="https://uniswap.org/">Uniswap.org</a></figcaption>
+
+Once again, we talk about Uniswap. Uniswap has an extremely well documented team, docs, repositories, website, etc... The landing page isn't just pretty, but it has all the information you need to know about the project.
+
+1. Links to different communities, from Uniswap's governance, to discord, to the grants program, to reddit, anything:
+
+![](assets/UniswapCommunities.png)
+
+2. Links to resources for developers as well as where to the protocol's github repositories:
+
+![](assets/UniswapDevelopers.png)
+
+3. A jobs section! Very important. It shows the project probably has funding, active development and is hiring, solo anonymous projects rarely have job postings for multiple positions:
+  
+![](assets/UniswapJobs.png)
+
+4. Every key person in the protocol's development is public on their github organization and has a public profile on twitter, public sites, linkedin profiles, everything. These people are not 'random' anonymous individuals, they are *public*:
+
+![](assets/UniswapTeamGithub.png)
+
+
+5. The founder is Hayden Adams, a public figure well known in the community for being the founder and creator of Uniswap. This dude isn't some random anon that popped out of nowhere and forked some ponzi!
+
+![](assets/HaydenTwitter.png)
+<figcaption>Hayden's twitter profile <a class="figcaption" href="https://nitter.net/haydenzadams">@haydenzadams</a></figcaption>
+
+***
+
+## How do I check if it's a scam?
+
+![](assets/TokenSniffer.png)
+<figcaption>TokenSniffer's landing page at <a class="figcaption" href="https://tokensniffer.com/">TokenSniffer.com</a></figcaption>
+
+So you've already analyzed the project deeply. You're almost sure it's not a scam, but you are not a smart contract developer and you have NO idea how to check if the token itself, the token contract, is indeed a scam or not. For this we have tools like [TokenSniffer](https://tokensniffer.com/).
+
+1. You can go on Etherscan or any other block explorer and copy the address of any token:
+
+![](assets/KickTokenAddress.png)
+<figcaption>For example KickToken, a known scam from a few years back</figcaption>
+
+2. Paste it on TokenSniffer check if the smart contract is either identical to other scams, similar to other scams, where the token comes from (if it was forked from another project), and so on:
+
+![](assets/TokenSnifferSearch.png)
+<figcaption>Search on TokenSniffer, it'll detect the Chain and Token name</figcaption>
+
+3. Check out the report that TokenSniffer returns:
+
+![](assets/TokenSnifferAutoAudit.png)
+<figcaption>TokenSniffer does an <a class="figcaption" href="https://tokensniffer.com/token/b6n2l6pbq0aaqo2biie0koe61j9sua0qag3fs9jfz2j2c2opoz90povhx8qa">automated audit</a> and will tell you if there's potentially malicious code</figcaption>
+
+1. As we can see, the token is most likely a scam:
+
+![](assets/TokenSnifferKickTokenSummary.png)
+<figcaption>Scam alert!</figcaption>
+
 
 ***
 
 ## Weird token mechanics
 
-Following tokenomics, we can make a short section dedicated to 'weird mechanics', tokens that have deliberate mechanics to artificially try to create demand, even when the token serves absolutely no purpose. Some of the mechanics most quasi-scam projects will use are:
+We can also make a short section dedicated to 'weird mechanics', tokens that have deliberate mechanics to artificially try to create demand, even when the token serves absolutely no purpose. Some of the mechanics most quasi-scam projects will use are:
 
-- **Loud claims of having a 'deflationary' token distribution**: Using basic law of supply and demand we know that given a decreasing supply and increasing demand, the price of an asset should rise. However, when the token serves no purpose no matter how 'deflationary' the distribution is, the price will not increase unless some artificial demand is created.
+- **Wild and loud claims of having a 'deflationary' token distribution**: Using basic law of supply and demand we know that with a decreasing supply and increasing demand, the price of an asset should rise. However, when the token serves no purpose no matter how 'deflationary' the distribution is, the price will not increase unless some artificial demand is created.
 
-  - Example: 'SAFEMOON', a token that has a deflationary mechanic, but again, no utility at all. Rose very prominently in January 2021, but given how useless it is, anyone that didn't buy before the hype period and initial rise (yellow) ended up losing money in the subsequent period where investors realized this token is pretty much useless (fuchsia):
+  - Example: 'SAFEMOON', a token that has a set of deflationary mechanics, but again, no utility at all. Rose very prominently in January 2021, but given how useless it is, anyone that didn't buy before the hype period and initial rise (yellow) ended up losing money in the subsequent period where investors realized this token is pretty much useless (fuchsia):
 
 ![](assets/SAFEMOONETH.png) 
 
-- **Additional transaction fees when buying/selling**: If the token's supply is reduced and distributed to other holders of the token upon transacting with the token (sending it) or upon buying/selling the token, then there's an incentive to not sell the token. Yeah, no. Usually projects will use this kind of bullshit mechanic so that people don't sell it, but people will sell it, even at a loss.
+- **Additional transaction fees when buying/selling**: If the token's supply is reduced and distributed to other holders of the token (or the developing team) upon transacting with the token (sending it) or upon buying/selling the token, then there's supposedly an incentive to not sell the token. Yeah, no. Usually projects will use this kind of bullshit mechanic so that people don't sell it, but people will sell it, even at a loss.
 
   - Example: Fees.wtf's token 'WTF'. Released through an airdrop which anyone could theoretically sell after receiving, this tactic was used to encourage holding or buying and holding the token. Needless to say, this approach did not quite work well as we can see by the token's performance:
 
 ![](assets/WTFETH.png)
+<figcaption><i>Come see mom! I turned 100 dollars into 0!</i></figcaption>
 
-Either way, the devil is in the details, bullshit mechanics to create temporary artificial demand is only gonna benefit a few and it's gonna make a lot of people lose their money. If a token is hot on social media and gaining a lot of traction, you're most likely already too late to the bandwagon and have already lost your chance to profit off of it.
+Either way, the devil is in the details, bullshit mechanics to create temporary artificial demand is only gonna benefit a few and it's gonna cause a lot of people to lose their money. If a token is hot on social media and gaining a lot of traction, you're most likely already too late to the bandwagon and have already lost your chance to profit off of it.
 
-<figure>
-  <img src="./assets/SAFEMOONScamTokenomics.png">
-  <figcaption><i>Tell me you're a scam without telling me you're a scam</i></figcaption>
-</figure>
+![](assets/SAFEMOONScamTokenomics.png)
+<figcaption><i>Tell me you're a scam without telling me you're a scam</i></figcaption>
+
 
 
 ***
 ## Blockchain native tokens
 
-Since the initial release of the Bitcoin white paper and its creation, there's been a lot of different blockchains with different purposes. In particular, we've come to classify them by their purpose. To keep this article within scope, I want to only focus on two types of blockchains: **Payment blockchains** and **Smart contract blockchains**. Each blockchain typically has its own native token, which is normally used to pay for transaction fees, in the case of the Bitcoin blockchain, BTC is the native token, in the case of Ethereum, it's ETH.
+Since the initial release of the Bitcoin white paper, there's been a lot of different blockchains with different purposes. In particular, we've come to classify them by their purpose. To keep this article within scope, I want to only focus on two types of blockchains: **Payment blockchains** and **Smart contract blockchains**. Each blockchain typically has its own native token, which is normally used to pay for transaction fees, in the case of the Bitcoin blockchain, BTC is the native token, in the case of Ethereum, it's ETH.
 
 ### Payment blockchains
 
@@ -380,7 +476,7 @@ BTC is potentially the best investment in the history of humanity if purchased w
 <figcaption><a href="#image-sources" class="imageSource">(Image sources)</a></figcaption>
 
 
-These projects do the exact same thing Bitcoin attempts to do, but 'cheaper' and 'more efficiently'. However, while well known, relatively innovative and with large communities of their own, they are an investment very difficult to justify for several reasons:
+These projects do the exact same thing Bitcoin attempts to do, but 'cheaper' and 'more efficiently'. However, while well known, some being relatively innovative and with large communities of their own, they are an investment very difficult to justify for several reasons:
 
 - Bitcoin was the first proof of concept that we can have a digital currency in a decentralized distributed network secured by cryptography (blockchain), these other Bitcoin 'alternatives' do not exactly provide any new functionality, they are simply 'cheaper', but hardly recognized like Bitcoin is.
 
@@ -390,7 +486,7 @@ These projects do the exact same thing Bitcoin attempts to do, but 'cheaper' and
 
 #### Historical performance vs BTC
 
-In this section I want to highlight that when I refer to poor historical performance vs BTC, I'm not trying to say you "can't make money with these", but I do not trade in short timeframes, so good performance of any of these assets vs BTC during a short period of 1-3 weeks is probably not going to be something I can catch *on time*. 
+In this section I want to highlight that when I refer to poor historical performance vs BTC, I'm not trying to say you "can't make money with these", but I do not trade in short timeframes, so good performance of any of these assets vs BTC during a short period of 1-3 weeks is probably not going to be something I'll try or even be able to *catch on time*. 
 
 - <span class="lc">**DASH/BTC**</span>, meh.
 
@@ -400,11 +496,11 @@ In this section I want to highlight that when I refer to poor historical perform
 
 ![](assets/LTCBTC.png)
 
-- <span class="lc">**NANO/BTC**</span>, there was a period where holding it could've earned you a lot as opposed to holding BTC, but for the most part, the trend is down with the exception of that period. If you think this thing is going to take off, that's okay, but I personally don't see that happening for now and would rather hold BTC. The performance is clearly better than the previous two though!
+- <span class="lc">**NANO/BTC**</span>, there was a short period where holding it could've earned you a lot as opposed to holding BTC, but for the most part, the trend is down with the exception of that  short period. If you think this thing is going to take off, that's okay, but I personally don't see that happening for now and would rather hold BTC. The performance is clearly better than the previous two though!
 
 ![](assets/NANOBTC.png)
 
-- <span class="lc">**DOGE/BTC**</span>, so what? I made a mistake? what are you gonna do about it huh? Doge has historically performed *pretty well* against BTC, being mostly a sideways dance with some spikes in specific moments, whenever it gets 'hot again'. Don't be deceived by this chart though, the investment is alright if we consider its historical performance, but the token is a meme, it has infinite supply and there's like 50 wallets that control the overwhelming majority of the supply. "But Daniel you could also say that about BTC!!", then buy DOGE man, it's OK, I also think the lil dog is kinda cute too, good luck trying to catch those spikes though!
+- <span class="lc">**DOGE/BTC**</span>, so what? I made a mistake? what are you gonna do about it huh? Doge has historically performed *pretty well* against BTC, moving mostly sideways with some spikes in specific moments, whenever it gets 'hot again'. Don't be deceived by this chart though, the investment is alright if we consider its historical performance, but the token is a meme, it has infinite supply and there's like 50 wallets that control the overwhelming majority of the supply. "But Daniel you could also say that about BTC!!", then buy DOGE man, it's OK, I also think the lil dog is kinda cute too, good luck trying to catch those spikes though!
  
 ![](assets/DOGEBTC.png)
 
@@ -415,13 +511,13 @@ Note, I am not trying to argue that you **shouldn't buy any of these**, I'm just
 <img class="smaller" src="assets/Ethereum.png">
 <figcaption><a href="https://iconarchive.com/show/cryptocurrency-flat-icons-by-cjdowner/Ethereum-ETH-icon.html" class="imageSource">(Image source)</a></figcaption>
 
-In late 2013, Vitalik Buterin described Ethereum in a white paper. The project was created with the purpose of building decentralized applications and during its initial founding and development it had some extremely prominent leaders of other projects on board, among those Gavin Wood and Charles Hoskinson both founders of similar projects with different approaches to smart contracts.
+In late 2013, Vitalik Buterin described Ethereum in a white paper. The project was created with the purpose of building decentralized applications and during its initial creation and development it had some extremely prominent leaders of other projects on board, among those Gavin Wood and Charles Hoskinson both founders of similar projects with different approaches to smart contracts.
 
-The Ethereum blockchain had a specific advantage over the Bitcoin blockchain in that it could host smart contracts as opposed to just addresses. Smart contracts are essentially a script, the script's functions can be called from a web interface that connects to the blockchain through a javascript library called web3.js through a local or remote ethereum node. Allowing for the creation and execution of applications that interact with the blockchain.
+The Ethereum blockchain had a specific advantage over the Bitcoin blockchain in that it could host smart contracts as opposed to just addresses. Smart contracts are essentially a script deployed on the blockchain, the script's functions can be called from a web interface with a web3 wallet like Metamask or Tally. Allowing for the creation and execution of applications that interact with the blockchain.
 
 The result of this is a robust ecosystem of mostly financial applications and a blockchain that supports more functionality than just sending and receiving payments, but rather all sorts of cool things like lending and borrowing, decentralized exchanges, etc.
 
-Ethereum's native asset ETH serves as the currency to cover costs for using these applications. Whenever there's a transaction, an amount of ETH must be paid. When interacting with a smart contract in any decentralized application, a set of instructions run in the Ethereum Virtual Machine and a cost is charged to the user based on what and how many operations were performed.
+Ethereum's native asset ETH serves as the currency to cover costs (called gas fees) for using these applications or any sort of transaction. Whenever there's a transaction, an amount of ETH must be paid. When interacting with a smart contract in any decentralized application, a set of instructions run in the Ethereum Virtual Machine and a cost is charged to the user based on what and how many operations were performed.
 
 #### ETH's performance vs BTC
 
@@ -429,7 +525,9 @@ ETH as an asset has had mostly good performance vs BTC, with periods where BTC c
 
 ![](assets/ETHBTC.png)
 
-ETH did not have the same recognition in the media as BTC, therefore didn't attract as many buyers, but perhaps due to its lower market cap at the time and therefore higher volatility, returns were higher (or losses if you liked trading but weren't good at it). Since 2019 or so though, ETH has outperformed BTC significantly given how quickly the development of financial applications has ramped up.
+ETH did not have the same recognition in the media as BTC, therefore didn't attract as many buyers, but perhaps due to its lower market cap at the time and therefore higher volatility, returns were higher (or losses if you liked trading but weren't good at it). Since 2019 or so though, ETH has outperformed BTC significantly with how quickly the development and deployment of financial applications ramped up in 2019-2020.
+
+It is theorized by a lot of people that ETH will overtake BTC for the #1 position in terms of market capitalization. That's to be seen, but there's a strong case for this because Bitcoin, as opposed to Ethereum has one huge drawback, and that's how difficult it is to upgrade. Ethereum is typically upgraded with significant changes called EIP (Ethereum Improvement Proposals) and their implementations every 6 months or so.
 
 #### Ethereum as the leading blockchain
 
@@ -465,55 +563,57 @@ As a result of increased development activity and innovation happening on Ethere
 ![](assets/ValidatorCountPOS.png)
 <figcaption><a href="https://stakers.info/" class="imageSource">(Image source)</a></figcaption>
 
-**Note:** this validator count is for Ethereum on proof of stake, however, after *the merge*<a onclick="captureSection('#ethereum-as-the-leading-blockchain')" href="#glossary"><sup>[8]</sup></a> somewhere around Q2 2022 this will be the effective validator count for Ethereum. 
+**Note:** this validator count is for Ethereum on proof of stake, however, after *the merge*<a onclick="captureSection('#ethereum-as-the-leading-blockchain')" href="#glossary"><sup>[8]</sup></a> somewhere around Q2 2022 this will be the effective validator count for Ethereum.  Currently, proof of work Ethereum has anywhere between 3 and 7 thousand nodes and a hashrate of ~1040 Terahashes of computing power at the time of writing.
 
 #### Ethereum 'killers'
 
 ![](assets/ETHKillers.png)
 <figcaption><a href="#image-sources" class="imageSource">(Image sources)</a></figcaption>
 
-Since Ethereum became the leading platform to develop smart contracts in, and since it remains the leading platform for it, several other projects have spawned to attempt to solve its main problem: high transaction fees.
+Since Ethereum became the leading platform to develop smart contracts for, and since it remains the leading platform for it, several other projects have spawned to attempt to solve its biggest issue in terms of usability: high transaction fees.
 
 High transaction fees are obviously a major problem. These occur when the blockchain is experiencing high activity from users, and due to this extreme demand of block space on Ethereum, blocks can fill up quite quickly. This causes fees required to pay for a transaction to increase significantly in order to be fit in blocks, as miners automatically mine the highest-paying transactions.
 
-The scalability issue makes transacting on Ethereum potentially prohibitively expensive. As a result, users looking for investment opportunities, high yields or just experimenting with applications have flocked to projects that promise 'cheap transactions'.
+The scalability issue makes transacting on Ethereum prohibitively expensive at times. As a result, users looking for investment opportunities, high yields or just experimenting with applications have flocked to projects that promise 'cheap transactions'.
 
 These new 'Ethereum killers' not only have attracted users looking to transact on the cheap, but also large venture capital firms looking to invest in them early on in order to profit as much as possible from any potential growth of these platforms. Since no platform has managed to 'kill' Ethereum, I will refer to these as *Alt-L1*<a onclick="captureSection('#ethereum-killers')" href="#glossary"><sup>[9]</sup></a> blockchains or Alternative L1 blockchains.
 
 #### The issue with Alt-L1s
 
-These new platforms have low transaction fees, however, they give up some other features Ethereum has either partially or completely, which poses other risks:
+These new platforms have low transaction fees, nevertheless, they're lacking some other important features and characteristics of Ethereum either partially or completely, which poses other risks:
 
 ![](assets/BSCValidators.png)
 <figcaption>This amount of validators should be an immediate red flag in terms of sustainability and security of a chain</figcaption>
 
-- <span class="lc">**Lack of decentralization**</span>: Chains like Binance Smart Chain or BSC essentially copy-pasted Ethereum and increased the block size and block speed. This has several effects on validator hardware requirements. Blockchains are a distributed network, therefore a copy of the entire blockchain is kept on validators. If block size and block speed are too lenient, the storage and hardware requirements to validate the entire chain become unsustainably and prohibitively expensive for individuals to become a validator in order to earn validator rewards for securing the chain. This has created a highly centralized network, akin to a simple database. Validators have [not liked this](https://github.com/bnb-chain/bsc/issues/553#issue-1055158659).
+- <span class="lc">**Lack of decentralization**</span>: Chains like Binance Smart Chain or BSC essentially copy-pasted Ethereum and increased the block size and block speed. This has several effects on validator hardware requirements. Blockchains are a distributed network, therefore a copy of the entire blockchain is kept on validators. If block size and block speed are too lenient, the storage and hardware requirements to validate the entire chain become unsustainably and prohibitively expensive for individuals to become a validator in order to earn rewards for securing the chain. This has created a highly centralized network, akin to a simple SQL database of transactions. BNB network participants have [not liked this](https://github.com/bnb-chain/bsc/issues/553#issue-1055158659).
   
   + Something possibly similar occurs with other chains, but perhaps not as extreme as with BSC. Chains like Fantom only have 50 validators, while other chains like Solana have a bit over a thousand, but the majority are owned by very few extremely wealthy individuals that backed the project early on. 
 
   + This does not necessarily mean your money is **not safe**, but it is **less safe** than on Ethereum, as it is ridiculously expensive to attack Ethereum as opposed to any of these other, less robust blockchains.
 
   + If a chain like these does not have plans to decentralize in the future, you should NOT hold assets on it for an extended period of time.
+  
+  + Blockchains are **made for decentralization**, if a project does not need to be decentralized, it does not need a blockchain! 
 
 ![](assets/SolanaOutage.png)
-<figcaption>Would you trust a chain that has experienced several outages with your life savings?<br><a class="imageSource" href="https://nitter.net/SolanaStatus/status/1437856638279487493">(source tweet)</a></figcaption>
+<figcaption>Would you trust a chain that has experienced several outages with a significant amount of money?<br><a class="imageSource" href="https://nitter.net/SolanaStatus/status/1437856638279487493">(source tweet)</a></figcaption>
 
-- <span class="lc">**Lack of permanent uptime**</span>: In the financial world, if we are involved in the process of performing a trade or there's assets that we may want to buy/sell at some point, we **have** to have the ability to buy or sell them whenever we want. If the environment or platform in which we trade goes down and we are unable to transact, then we will be caught in positions without the ability to do anything. Part of the purpose of a blockchain is to remain up **all the time**, down time is **not acceptable** for blockchains. 
+- <span class="lc">**Lack of permanent uptime**</span>: In the financial world, if we are involved in the process of performing a trade or there's assets that we may want to buy/sell at some point, we **have** to have the ability to buy or sell them whenever we want. If the environment or platform in which we trade goes down and we are unable to transact, then we will be caught in positions without the ability to do anything. Part of the purpose of a blockchain is to remain up **all the time**, downtime is **not acceptable** for blockchains. 
 
-  + Solana (for example) [already has had several incidents causing extensive downtime](https://fortune.com/2022/01/25/solana-founder-anatoly-yakovenko-crypto-crash-blockchain-instability/) where users are trapped without being able to move their money or execute any trades for extended periods of time. Either caused by a validator client bug, by excessive spam on the blockchain or any other reason. Having been down several times is clearly a big risk to users.
+  + Solana (for example) [already has had several incidents causing extensive downtime](https://fortune.com/2022/01/25/solana-founder-anatoly-yakovenko-crypto-crash-blockchain-instability/) where users are trapped without being able to move their money or execute any trades for extended periods of time. Either caused by a validator client bug, by excessive spam on the blockchain or any other reason. Downtime is a big risk to users.
 
 ![](assets/AssLoverToken.png)
 <figcaption><i>Some tokens have really family friendly names</i><br><a class="imageSource" href="https://bscscan.com/tokenholdings?a=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&ps=25&sort=total_price_usd&order=desc&p=48">(source address)</a></figcaption>
 
 - <span class="lc">**Lack of spam mitigation**</span>: If transactions are extremely cheap to execute, it's easy to congest the network, easily create fraudulent spam tokens and cheaply deploy anything, from just spam to scams. This *doesn't mean* that it's OK for these actions to be extremely expensive like they are on Ethereum, but as a side effect of them being expensive and block space filling relatively quickly pushing fees up if spamming the chain is attempted discourages potential attackers, as the costs would be high and the impact likely very small.
 
-  + Given how cheap it is to create and distribute spam tokens on Binance Smart Chain, [users quickly had their wallets stuffed with garbage tokens](https://nitter.net/peckshield/status/1430096380945702914) whose contracts at times even hide token approvals or straight up steal funds from users wallets when interacting with them. If for instance block size was smaller, the cost of doing this would rise significantly.
+  + Given how cheap it is to create and distribute spam tokens on Binance Smart Chain, [users quickly had their wallets stuffed with garbage tokens](https://nitter.net/peckshield/status/1430096380945702914) whose contracts at times even hide token approvals or straight up steal funds from users wallets when interacting with them. If for instance block size was smaller and block speed lower, the cost of doing this would rise significantly.
 
 ![](assets/InitialTokenDistributions.png)
 
 - <span class="lc">**Very skewed native token distributions**</span>: As with any project, investors and developers get a portion of the native token supply. Investors purchase it and developers get it as long-term reward for their work. Most current of the current hottest Ethereum 'killers' like Avalanche, Solana or Near have a lot of investors backing them. Investors typically look for return-on-investment, they're putting money there with the exact same purpose as you, except they're buying the tokens for MUCH cheaper than you and they did so MUCH earlier than you did, so you should expect them to eventually start taking profits. The larger the portion for the insiders, if demand doesn't increase proportionally, investors will eventually realize their gains, and this will most certainly push the price down. 
 
-  + A project called Olyseum, backed by large football celebrities like Andrés Iniesta had an investor token unlock event on March 31st 2021. The investor(s) whose portion came out of its vesting period decided to sell their stake causing the price to plummet from 0.82 USD to 0.07 USD, an over 92% drop in price over a span of under 1 hour. This caused massive panic among early community investors who expected the price to go up because they were 'early' right? The token now trades for 0.003 USD. *This is not an Alt-L1 project* but it's an illustrative example of what a large investor selling a significant portion of their stake can do to the price of an asset given how illiquid some market pairs can be. Here's an image of what happened to it:
+  + A project called Olyseum, backed by large football celebrities like Andrés Iniesta had an investor token unlock event on March 31st 2021. The investor(s) whose portion came out of its vesting period decided to sell their stake causing the price to plummet from 0.82 USD to 0.07 USD, an over 92% drop in price over a span of under 1 hour. This caused massive panic among early community investors who expected the price to go up because they were 'early' right? The token now trades for 0.003 USD. *This is not an Alt-L1 project* but it's an illustrative example of what a large investor selling a significant portion of their stake in a short period of time can do to the price of an asset given how illiquid some market pairs can be. Here's an image of what happened to it:
 
 ![](assets/OLYLinear.png)
 <figcaption><i>Yikes.</i><br><a class="imageSource" href="https://www.coingecko.com/en/coins/olyseum">(source chart)</a></figcaption>
@@ -571,100 +671,6 @@ Moreover, the coming monetary policy changes to Ethereum after the London hardfo
 - <span class="lc">**Revenue shares to network participants**</span>: In proof of stake, users can gain revenue from staking Ether. There's staking pools where users can deposit their ETH and earn anywhere between 4% (at the time of writing) up to whatever the amount is at the time of the merge. Some estimates put it at ~12%, though these are only predictions. Whatever the amount is though, ETH holders that stake their ETH can benefit from a decent APR as well as ETH either reducing its total supply with time (deflation) or inflating very very little depending on network conditions, which again, has not been reflected on the price yet.
 
 Not only that but the argument that "Ethereum can't scale" or that "Ethereum is expensive", essentially the only arguments used by other Alt-L1 proponents to bash Ethereum, is not going to be especially relevant with the [thriving rollup ecosystem](https://l2beat.com) being developed on top of Ethereum.
-
-***
-
-## Project developers
-
-When investing in a project, you **need** to know who is developing the project. Who is backing the project. Not just who they are by name, but what's their background, where were they before starting the project. The owners, investors and developers need to be disclosed. The team being anonymous can already be a big sign that the project may not be legitimate or may be a straight up scam.
-
-### A bad example: Wonderland
-
-![](assets/WonderlandLandingPage.png)
-<figcaption>Wonderland's landing page at <a class="figcaption" href="https://www.wonderland.money/">wonderland.money</a></figcaption>
-
-I want to highlight the story of Wonderland, a project that started being not-so-shady and turning out to be an unsustainable ponzi scheme lead by 2 people, one that seemingly popped out of nowhere and another one that had an extremely shady background, several identities as well as several exit scams already on his résumé. Here's why wonderland was a catastrophe for investors that drank the bullshit koolaid:
-
-![](assets/OlympusDAOLandingPage.png)
-<figcaption>Olympus DAO's landing page at <a class="figcaption" href="https://www.olympusdao.finance/">olympusdao.finance</a></figcaption>
-
-- Wonderland was initially a fork of Ohm (Olympus DAO), a legitimate project with dangerously unsustainable tokenomics that didn't just resembled a ponzi scheme, but that was, openly, a ponzi scheme. Not one that would intentionally harm others to pull money out of them, but one that worked as a proof of concept. There's nothing shady about Olympus, it simply was not especially sustainable, period. Olympus was [fully open source](https://github.com/OlympusDAO), the contracts, the website, the data querying, everything. What wonderland did was basically fork the project, modify a few things, and release it with a pretty frontend. The github repository of Wonderland's contracts was just [embarrassingly bad at the time](https://nitter.net/larry0x/status/1486150220538855431). Many forks of Ohm have emerged, but this one was lazy and clearly a cash grab from the start, but it gets worse!
-
-![](assets/0xSifuScam.png)
-<figcaption>A good twitter thread explaining the whole fiasco. See the full thread <a class="figcaption" href="https://nitter.net/zachxbt/status/1486591682728673282">here.</a></figcaption>
-
-- The co-founder of Wonderland, 0xSifu is also Michael Patryn, the co-founder of QuadrigaCX, a canadian exchange that was essentially a behind-the-curtains personal trading game for its founder Gerald Cotten, who disappeared with all the money in the exchange and mysteriously died in India of complications from Crohn's Disease. I have Crohn's disease and if you're doing just fine, it ain't easy to just die from one day to another. A lot of people doubt is death and there's even a [9-episode epic podcast](https://exitscam.show) explaining basically everything around the fiasco, a lot of people speculate that Gerald is not even dead, and an exhumation has never been done on his body (the coffin was never opened when shipped back from India). Either way, if you know the story of Michael Patryn, you'll know this isn't his first rodeo and not even QuadrigaCX was his first rodeo. He is a talented and very experienced scammer and *nobody even really knows his real name*...
-
-#### Wonderland's downfall
-
-Make sure that you *KNOW* who's behind a project. Once people were onto who 0xSifu was, the project met its maker:
-
-![](assets/TIMEDownfall.png)
-<figcaption>Downfall of Wonderland's TIME token.</figcaption>
-
-Also, even if you *DIDN'T KNOW* or cared to know who 0xSifu was, you should have known how TIME was going to end knowing that it's basically OHM with a different name and OHM's bubble was already popping:
-
-![](assets/OHMAwfulPriceAction.png)
-<figcaption>OHM's price history.</figcaption>
-
-### A good example: Uniswap
-
-![](assets/UniswapLandingPage.png)
-<figcaption>Uniswap's landing page at <a class="figcaption" href="https://uniswap.org/">Uniswap.org</a></figcaption>
-
-Once again, we talk about Uniswap. Uniswap has an extremely well documented team, docs, repositories, website, etc... The landing page isn't just pretty, but it has all the information you need to know about the project.
-
-1. Links to different communities, from Uniswap's governance, to discord, to the grants program, to reddit, anything:
-
-![](assets/UniswapCommunities.png)
-
-2. Links to resources for developers as well as where to the protocol's github repositories:
-
-![](assets/UniswapDevelopers.png)
-
-3. A jobs section! Very important. It shows the project probably has funding, active development and is hiring, solo anonymous projects rarely have job postings for multiple positions:
-  
-![](assets/UniswapJobs.png)
-
-4. Every key person in the protocol's development is public on their github organization and has a public profile on twitter, public sites, linkedin profiles, everything. These people are not 'random' anonymous individuals, they are *public*:
-
-![](assets/UniswapTeamGithub.png)
-
-
-5. The founder is Hayden Adams, a public figure well known in the community for being the founder and creator of Uniswap. This dude isn't some random anon that popped out of nowhere and forked some ponzi!
-
-![](assets/HaydenTwitter.png)
-<figcaption>Hayden's twitter profile <a class="figcaption" href="https://nitter.net/haydenzadams">@haydenzadams</a></figcaption>
-
-***
-
-## How do I check if it's a scam?
-
-![](assets/TokenSniffer.png)
-<figcaption>TokenSniffer's landing page at <a class="figcaption" href="https://tokensniffer.com/">TokenSniffer.com</a></figcaption>
-
-So you've already vetted this project in its totality. You're almost sure it's not a scam, but you are not a smart contract developer and you have NO idea how to check if the token itself, the token contract, is indeed a scam or not. For this we have tools like [TokenSniffer](https://tokensniffer.com/).
-
-1. You can go on Etherscan or any other block explorer and copy the address of any token:
-
-![](assets/KickTokenAddress.png)
-<figcaption>For example this known scam from a few years back</figcaption>
-
-2. Paste it on TokenSniffer check if the smart contract is either identical to other scams, similar to other scams, where the token comes from (if it was forked from another project), and so on:
-
-![](assets/TokenSnifferSearch.png)
-<figcaption>Search on TokenSniffer, it'll detect the Chain and Token name</figcaption>
-
-3. Check out the report that TokenSniffer returns:
-
-![](assets/TokenSnifferAutoAudit.png)
-<figcaption>TokenSniffer does an <a class="figcaption" href="https://tokensniffer.com/token/b6n2l6pbq0aaqo2biie0koe61j9sua0qag3fs9jfz2j2c2opoz90povhx8qa">automated audit</a> and will tell you if there's potentially malicious code</figcaption>
-
-1. As we can see, the token is most likely a scam:
-
-![](assets/TokenSnifferKickTokenSummary.png)
-<figcaption>Scam alert!</figcaption>
-
 
 ***
 
