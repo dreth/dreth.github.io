@@ -113,7 +113,7 @@ There's projects for all sorts of things, but you must first identify what _the 
   - Storage (Ex. Filecoin, Sia)
   **... etc..**
 
-Each one of these categories will have their own specific criteria to consider. I'll focus on the top three, payment blockchains, smart contract blockchains and apps.
+Each one of these categories will have their own specific criteria to consider. I'll focus on the top three, payment blockchains, smart contract blockchains and apps. The first sections are about apps in general. I'll dig into more specific blockchain matters in the last portion of the article.
 
 ***
 
