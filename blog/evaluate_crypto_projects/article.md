@@ -417,7 +417,7 @@ So you've already analyzed the project deeply. You're almost sure it's not a sca
 ![](assets/TokenSnifferAutoAudit.png)
 <figcaption>TokenSniffer does an <a class="figcaption" href="https://tokensniffer.com/token/b6n2l6pbq0aaqo2biie0koe61j9sua0qag3fs9jfz2j2c2opoz90povhx8qa">automated audit</a> and will tell you if there's potentially malicious code</figcaption>
 
-1. As we can see, the token is most likely a scam:
+4. As we can see, the token is most likely a scam:
 
 ![](assets/TokenSnifferKickTokenSummary.png)
 <figcaption>Scam alert!</figcaption>
