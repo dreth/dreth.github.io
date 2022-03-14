@@ -10,10 +10,10 @@
       float: left;
     }
     div.leftcol {
-      width: 93%
+      width: 91%
     }
     div.rightcol {
-      width: 7%
+      width: 9%
     }
     div.row:after {
       content: "";
@@ -105,10 +105,10 @@
       float: left;
     }
     div.leftcol {
-      width: 90%
+      width: 88%;
     }
     div.rightcol {
-      width: 10%
+      width: 12%;
     }
     div.row:after {
       content: "";
