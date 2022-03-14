@@ -14,22 +14,3 @@ figure {
 figcaption {
     text-align: center;
 }
-
-@media screen and (min-width: 2000px) {
-    .articleBody {
-        padding-left: 20%;
-        padding-right: 20%;
-    }
-}
-@media screen and (max-width: 2000px) and (min-width: 1000px) {
-    .articleBody {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-}
-@media screen and (max-width: 1000px) and (min-width: 0px) {
-    .articleBody {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}

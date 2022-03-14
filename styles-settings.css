@@ -1,5 +1,10 @@
 /* screen width higher than 1000 px */
 @media screen and (min-width: 2000px) {
+    /* article padding */
+    .articleBody {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
     /* two-col layout */
     div.column {
       float: left;
@@ -90,6 +95,11 @@
   
   /* screen width higher than 1000 px */
   @media screen and (max-width: 2000px) and (min-width: 1000px) {
+    /* article padding */
+    .articleBody {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     /* two-col layout */
     div.column {
       float: left;
@@ -179,6 +189,11 @@
   }
   /* screen width lower than 1000 px */
   @media screen and (max-width: 1000px) and (min-width: 0px) {
+    /* article padding */
+    .articleBody {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     /* two-col layout */
     div.column {
       float: left;
