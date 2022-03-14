@@ -1,6 +1,6 @@
 html {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 p.innerText {
   font-size: large;
@@ -42,64 +42,67 @@ a.dt:hover {
 /* links (b) */
 a.b:link {
   text-decoration: none;
-  color: #0ff;
+  cursor: pointer;
+  color: rgb(58, 73, 207);
 }
 a.b:visited {
-  color: #0ff;
+  cursor: pointer;
+  color: rgb(58, 73, 207);
 }
 a.b:hover {
-  color: #7dff7d;
+  cursor: pointer;
+  color: #00a100;
 }
 /* links (c) */
 a.c:link {
   text-decoration: none;
-  color: rgb(0, 174, 255);
+  color: rgb(0, 116, 170);
 }
 a.c:visited {
-  color: rgb(0, 174, 255);
+  color: rgb(0, 116, 170);
 }
 a.c:hover {
-  color: #00a500;
+  color: #007500;
 }
 /* links (p) */
 a.p:link {
   text-decoration: none;
-  color: rgb(0, 174, 255);
+  color: rgb(0, 116, 170);
 }
 a.p:visited {
-  color: rgb(0, 174, 255);
+  color: rgb(0, 116, 170);
 }
 a.p:hover {
   color: rgb(255, 0, 0);
 }
 /* hide and show blog preview link */
 a.bp {
-  color: rgb(0, 174, 255);
+  color: rgb(0, 116, 170);
   cursor: pointer;
 }
 a.bp:link {
   text-decoration: none;
   cursor: pointer;
-  color: rgb(0, 174, 255);
+  color: rgb(0, 116, 170);
 }
 a.bp:visited {
   cursor: pointer;
-  color: rgb(0, 174, 255);
+  color: rgb(0, 116, 170);
 }
 a.bp:hover {
   cursor: pointer;
-  color: #d2ff6a;
+  color: #78ac00;
 }
 /* links (title) */
 a.title:link {
   text-decoration: none;
-  color: white
+  color: rgb(0, 0, 0)
 }
 a.title:visited {
-  color: white
+  color: rgb(0, 0, 0)
 }
 a.title:hover {
-  color: rgb(206, 77, 77)
+  color: rgb(180, 0, 0)
 }
 /* links (going back) */
 a.gb:link {
@@ -110,7 +113,7 @@ a.gb:visited {
   color: rgb(233, 55, 55);
 }
 a.gb:hover {
-  color: #ce60f0;
+  color: #c139eb;
 }
 /* hide and show languages names */
 /* ES */
@@ -160,7 +163,7 @@ a.gb:hover {
     color: #f00;
   }
   .l:hover {
-    color: #ffa07a;
+    color: #ff5614;
   }
   a.ml, a.b, a.p, a.b, a.bp, a.gb {
     font-size: 1.2vw;
@@ -260,7 +263,7 @@ a.gb:hover {
     color: #f00;
   }
   .l:hover {
-    color: #ffa07a;
+    color: #ff5614;
   }
   a.ml, a.b, a.p, a.b, a.bp, a.gb {
     font-size: 1.8vw;
@@ -359,7 +362,7 @@ a.gb:hover {
     color: #f00;
   }
   .l:hover {
-    color: #ffa07a;
+    color: #ff5614;
   }
   a.ml, a.b, a.p, a.b, a.bp, a.gb {
     font-size: 3.5vw;
