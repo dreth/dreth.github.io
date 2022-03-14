@@ -67,12 +67,12 @@ for (let i = 0; i <= articleTag.length-1; i++) {
     let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
 
     // append to article list html object
-    artList += `<span>${articleEmoji[i]}</span> - <span class="ad">${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
+    artList += `<span>${articleEmoji[i]}</span> - <span>${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
 
     if (i < 2) {
-        smallArtList += `<span>${articleEmoji[i]}</span> - <span class="ad">${articleDates[i]}</span> - <a class="bp" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
+        smallArtList += `<span>${articleEmoji[i]}</span> - <span>${articleDates[i]}</span> - <a class="bp" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
     } else if (i == 2) {
-        smallArtList += `<span>${articleEmoji[i]}</span> - <span class="ad">${articleDates[i]}</span> - <a class="bp" href="${articleURL}">${articleTitles[i]}</a><br>`;
+        smallArtList += `<span>${articleEmoji[i]}</span> - <span>${articleDates[i]}</span> - <a class="bp" href="${articleURL}">${articleTitles[i]}</a><br>`;
     }
 }
 artList += '</ul><hr>';
