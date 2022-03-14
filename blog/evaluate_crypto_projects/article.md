@@ -133,7 +133,7 @@ Some questions I ask myself that I consider apply to every crypto project:
 
 - How do the project's [**git repositories** look like](#project-developers)? Is the project **forked** from another successful (or unsuccessful) project?
 
-- Is the token source code [**identical**](#how-do-i-check-if-its-a-scam) to that of a previous scam? Is the token vulnerable to any **previously discovered vulnerability** that any pas project has suffered?
+- Is the token source code [**identical**](#how-do-i-check-if-its-a-scam) to that of a previous scam? Is the token vulnerable to any **previously discovered vulnerability** that any past project has suffered?
 
 Let's begin to answer some of these in the following sections. I'll also try to define some terms in the [glossary](#glossary) section, but I will assume the reader has at least extremely basic knowledge of software development (not how to do it, but at least what it entails) and basic economics terminology (supply, demand, inflation, etc...)
 
