@@ -15,23 +15,6 @@ figcaption {
     text-align: center;
 }
 
-a:link {
-    text-decoration: none;
-    color: #0ff;
-}
-
-a:visited {
-    color: #0ff;
-}
-
-a:hover {
-    color: #7dff7d;
-}
-
-/* .ad {
-    color:rgb(71, 233, 198);
-} */
-
 @media screen and (min-width: 2000px) {
     .articleBody {
         padding-left: 20%;

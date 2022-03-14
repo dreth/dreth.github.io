@@ -106,14 +106,14 @@ if (document.getElementById("content")) {
       .then(data => {
         document.getElementById('content').innerHTML =
           marked.parse(`${data}`);
-        
+
         // make all links' target _blank if the link does not have #
         $('a').click(function() {
             if (!(this.href.indexOf('#') > -1) && !(this.href.indexOf('https://dac.ac/') > -1)) {
                 this.target = '_blank'
             }
         })
-
+        
         // for articles with more custom web devy shit
         var specialAttribute = $("#content").attr('special');
         // ---------------------------- evaluate crypto projects

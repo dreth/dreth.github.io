@@ -25,10 +25,11 @@
 
   <!-- stylesheet, script, icon and font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" type="text/css" href="/styles-settings.css">
   <link rel="shortcut icon" id="icon"/>
-  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/styles.css">
   <link rel="stylesheet" type="text/css" href="/blog/blogStyles.css">
-  <link rel="stylesheet" type="text/css" href="/blog/articleStyles.css">
+  <link rel="stylesheet" type="text/css" id="articleStylesheet" href="/blog/articleStyles.css">
   <script src="/script.js"></script>
   <script src="/jquery.js"></script>
   <script src="/blog/marked.js"></script>
@@ -38,9 +39,18 @@
 </head>
 
 <body class="articleBody">
-  <a href="#" onclick="this.href = blog;" oncontextmenu="this.href = blog;" class="gb">
-    ⬅️ article list</a>
-  <br><hr>
+  <div class="row">
+    <div class="column leftcol">
+      <ul>
+        <a href="#" onclick="this.href = blog;" oncontextmenu="this.href = blog;" class="gb"> ⬅️ article list</a>
+      </ul>
+    </div>
+    <div class="column rightcol">
+      <!-- Theme switcher -->
+      <ul id="themeSwitcher"></ul>
+    </div>
+  </div>
+  <hr>
   <div id="content"></div>
   <br><br>
 

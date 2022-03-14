@@ -1,0 +1,316 @@
+/* screen width higher than 1000 px */
+@media screen and (min-width: 2000px) {
+    /* two-col layout */
+    div.column {
+      float: left;
+    }
+    div.leftcol {
+      width: 93%
+    }
+    div.rightcol {
+      width: 7%
+    }
+    div.row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    a.ml, a.b, a.p, a.b, a.bp, a.gb {
+      font-size: 1.2vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    img.playlistImages {
+      width: 18vw;
+    }
+    a,
+    ul,
+    p,
+    ol,
+    span {
+      font-size: 1vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    figcaption,  a.figcaption {
+      font-size: 0.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    sup {
+      font-size: 0.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.imageSource {
+      text-align: center;
+      font-size: 0.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    span.aboutHeading2 {
+      font-size: 1.2vw;
+    }
+    span.aboutHeading3 {
+      font-size: 1vw;
+    }
+    h3.aboutHeading2 {
+      font-size: 1.2vw;
+    }
+    .heading {
+      font-size: 0.9vw;
+    }
+    .heading2 {
+      font-size: 0.9vw;
+    }
+    h1 {
+      font-size: 2vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 1.7vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 1.2vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h4 {
+      font-size: 1vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .dash {
+      font-size: 1vw;
+    }
+  }
+  
+  /* screen width higher than 1000 px */
+  @media screen and (max-width: 2000px) and (min-width: 1000px) {
+    /* two-col layout */
+    div.column {
+      float: left;
+    }
+    div.leftcol {
+      width: 90%
+    }
+    div.rightcol {
+      width: 10%
+    }
+    div.row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    a.ml, a.b, a.p, a.b, a.bp, a.gb {
+      font-size: 1.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    img.playlistImages {
+      width: 18vw;
+    }
+    a,
+    ul,
+    p,
+    ol,
+    span {
+      font-size: 1.6vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    figcaption, a.figcaption {
+      font-size: 1.3vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    sup {
+      font-size: 0.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.imageSource {
+      text-align: center;
+      font-size: 0.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    span.aboutHeading2 {
+      font-size: 1.8vw;
+    }
+    span.aboutHeading3 {
+      font-size: 1.6vw;
+    }
+    h3.aboutHeading2 {
+      font-size: 1.8vw;
+    }
+    .heading {
+      font-size: 1.5vw;
+    }
+    .heading2 {
+      font-size: 1.5vw;
+    }
+    h1 {
+      font-size: 2.4vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 2vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 1.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h4 {
+      font-size: 1.6vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .dash {
+      font-size: 1.6vw;
+    }
+  }
+  /* screen width lower than 1000 px */
+  @media screen and (max-width: 1000px) and (min-width: 0px) {
+    /* two-col layout */
+    div.column {
+      float: left;
+    }
+    div.leftcol {
+      width: 70%
+    }
+    div.rightcol {
+      width: 30%
+    }
+    div.row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    a.ml, a.b, a.p, a.b, a.bp, a.gb {
+      font-size: 3.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    img.playlistImages {
+      width: 30vw;
+    }
+    a,
+    ul,
+    p,
+    ol,
+    span {
+      font-size: 3.2vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    figcaption,  a.figcaption {
+      font-size: 2.8vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    sup {
+      font-size: 1.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.imageSource {
+      text-align: center;
+      font-size: 1.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    span.aboutHeading2 {
+      font-size: x-large;
+    }
+    span.aboutHeading3 {
+      font-size: large;
+    }
+    h3.aboutHeading2 {
+      font-size: x-large;
+    }
+    .heading {
+      font-size: 3.7vw;
+    }
+    .heading2 {
+      font-size: 3.2vw;
+    }
+    h1 {
+      font-size: 6vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 4vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    h4 {
+      font-size: 3.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .dash {
+      font-size: 3.5vw;
+    }
+  }
+  /* li bullet icons for diff profiles/links */
+  ul.noBullets {
+    list-style: none;
+  }
+  
+  li.ml:before {
+    margin-left: -20px; 
+    margin-right: 10px;
+  }
+  
+  li.waid:before {
+    content: '📝';
+  }
+  
+  li.linkedin:before {
+    content: '👤';
+  }
+  
+  li.github:before {
+    content: '📦';
+  }
+  
+  li.blog:before {
+    content: '🗒️';
+  }
+  
+  li.cv:before {
+    content: '📃';
+  }
+  
+  li.email:before {
+    content: '✉️';
+  }
+  
+  li.coolLinks:before {
+    content: '⛓️';
+  }
+  
+  li.playlists:before {
+    content: '🎶';
+  }
+  
+  /* li bullet icons for cv section */
+  li.tag:before {
+    content:'>';
+  }
+  
+

@@ -26,9 +26,9 @@
 
   <!-- stylesheet, script, icon and font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" type="text/css" href="/styles-settings.css">
   <link rel="shortcut icon" id="icon"/>
-  <link rel="stylesheet" type="text/css" href="/styles.css">
-  <script src="/script.js"></script>
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/styles.css">
   <script src="/jquery.js"></script>
 
   <!-- title -->
@@ -36,11 +36,21 @@
 </head>
 
 <body>
+  <div class="row">
+    <div class="column leftcol">
+      <ul>
+        <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
+        <h3>data scientist y profesor/tutor</h3>
+    </ul>
+    </div>
+    <div class="column rightcol">
+      <!-- Theme switcher -->
+      <ul id="themeSwitcher"></ul>
+    </div>
+  </div>
+  <hr>
   <div>
-    <br>
     <ul>
-      <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
-      <h3>data scientist y profesor/tutor</h3>
       <p class="heading">bienvenido!</p>
 
       <ul class="noBullets">
@@ -74,9 +84,10 @@
         <br>
         <li class="ml email"><a href="#" onclick="this.href = email;" oncontextmenu="this.href = email;" class="b">correo electrónico</a></li>
       </ul>
-      <br>
-
+    </ul>
       <!-- Language selection buttons -->
+    <hr>
+    <ul>
       <span class="heading2">otros idiomas:</span>
       <br>
       <a href="https://dac.ac/es" class="l showes">🇪🇸🇩🇴</a> <span class="hidees"> - español</span><span
@@ -88,6 +99,7 @@
   </div>
 
   <!-- Expandable previews scripts, edit these to modify previews -->
+  <script src="/script.js"></script>
   <script src="/blog/blogScript.js"></script>
   <script src="/playlists/playlistsScript.js"></script>
   <script src="/cool_links/scripts/homepageLinks.js"></script>

@@ -25,9 +25,9 @@
 
   <!-- stylesheet, script, icon and font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" type="text/css" href="/styles-settings.css">
   <link rel="shortcut icon" id="icon"/>
-  <link rel="stylesheet" type="text/css" href="/styles.css">
-  <script src="/script.js"></script>
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/styles.css">
   <script src="/jquery.js"></script>
 
   <!-- title -->
@@ -41,13 +41,20 @@
 
 <body>
   <div>
-    <br>
-    <ul>
-      <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
-    </ul>
+    <div class="row">
+      <div class="column leftcol">
+        <ul>
+          <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
+          <ul id="playlistsTitle"></ul>
+        </ul>
+      </div>
+      <div class="column rightcol">
+        <!-- Theme switcher -->
+        <ul id="themeSwitcher"></ul>
+      </div>
+    </div>
 
     <!-- PLAYLIST LINKS -->
-    <ul id="playlistsTitle"></ul>
     <hr>
     <ul id="playlistsLinks"></ul>
   </div>
@@ -61,6 +68,7 @@
       </div>
     </ul>
   </div>
+  <script src="/script.js"></script>
   <script src="./playlistsScript.js"></script>
 </body>
 

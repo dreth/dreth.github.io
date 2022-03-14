@@ -1,3 +1,14 @@
 h1,h2,h3,h4,h5 {
     color:rgb(129, 193, 253);
 }
+
+a:link {
+    text-decoration: none;
+    color: #0ff;
+}
+a:visited {
+    color: #0ff;
+}
+a:hover {
+    color: #7dff7d;
+}

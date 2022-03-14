@@ -26,9 +26,10 @@
 
   <!-- stylesheet, script, icon and font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" type="text/css" href="/styles-settings.css">
   <link rel="shortcut icon" id="icon"/>
-  <link rel="stylesheet" type="text/css" href="/styles.css">
-  <script src="/script.js"></script>
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/styles.css">
+  <script src="/jquery.js"></script>
 
   <!-- title -->
   <title>Daniel A.</title>
@@ -36,10 +37,19 @@
 
 <body>
   <div>
-    <br>
+    <div class="row">
+      <div class="column leftcol">
+        <ul>
+          <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
+        </ul>
+      </div>
+      <div class="column rightcol">
+        <!-- Theme switcher -->
+        <ul id="themeSwitcher"></ul>
+      </div>
+    </div>
     <ul>
-      <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
-      <div id="aboutTitle"></div>
+    <div id="aboutTitle"></div>
       <ul class="noBullets">
         <li><a href="#" onclick="this.href = about_en;" oncontextmenu="this.href = about_en;" class="b">🇬🇧 🇺🇸 English</a></li>
         <br>
@@ -54,6 +64,7 @@
       </div>
     </ul>
   </div>
+  <script src="/script.js"></script>
   <script src="/about/about.js"></script>
 </body>
 
