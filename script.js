@@ -24,12 +24,18 @@ var about = `${home}/about/${lang}`;
 var home_lang = `${home}/${lang}`;
 
 // check user locale to redirect to ideal language
-if (navigator.language.includes('es')) {
+if (navigator.language.substring(0,2) == 'es') {
     var browserLocale = 'es'
-} else if (navigator.language.includes('nl')) {
+    var darkThemeLabel = 'oscuro';
+    var lightThemeLabel = 'claro';
+} else if (navigator.language.substring(0,2) == 'nl') {
     var browserLocale = 'nl'
+    var darkThemeLabel = 'donker';
+    var lightThemeLabel = 'licht';
 } else {
     var browserLocale = 'en'
+    var darkThemeLabel = 'dark';
+    var lightThemeLabel = 'light';
 }
 // final redirect URL
 var visit_redirect = `${home}/${browserLocale}`;
@@ -52,7 +58,7 @@ function getCookie(key) {
 
 // arrangement of light theme link
 if (getCookie('dac.ac-theme') == 0) {
-    $("#themeSwitcher").html("<a class='dt' onclick='changeTheme()'>🌑 dark</a>")
+    $("#themeSwitcher").html(`<a class='dt' onclick='changeTheme()'>🌑 ${darkThemeLabel}</a>`)
     $("#mainStylesheet").attr('href','/styles-light.css')
 
     // for articles
@@ -60,7 +66,7 @@ if (getCookie('dac.ac-theme') == 0) {
         $("#articleStylesheet").attr('href','/blog/articleStyles-light.css')
     }
 } else {
-    $("#themeSwitcher").html("<a class='lt' onclick='changeTheme()'>☀️ light</a>")
+    $("#themeSwitcher").html(`<a class='lt' onclick='changeTheme()'>☀️ ${lightThemeLabel}</a>`)
     $("#mainStylesheet").attr('href','/styles.css')
 
     // for articles
@@ -73,7 +79,7 @@ if (getCookie('dac.ac-theme') == 0) {
 function changeTheme() {
     if (getCookie('dac.ac-theme') == 0) {
         setCookie('dac.ac-theme',1)
-        $("#themeSwitcher").html("<a class='lt' onclick='changeTheme()'>☀️ light</a>")
+        $("#themeSwitcher").html(`<a class='lt' onclick='changeTheme()'>☀️ ${lightThemeLabel}</a>`)
         $("#mainStylesheet").attr('href','/styles.css')
 
         // for articles
@@ -82,7 +88,7 @@ function changeTheme() {
         }
     } else {
         setCookie('dac.ac-theme',0)
-        $("#themeSwitcher").html("<a class='dt' onclick='changeTheme()'>🌑 dark</a>")
+        $("#themeSwitcher").html(`<a class='dt' onclick='changeTheme()'>🌑 ${darkThemeLabel}</a>`)
         $("#mainStylesheet").attr('href','/styles-light.css')
 
         // for articles
