@@ -15,8 +15,8 @@ switch(browserLocale) {
 document.getElementById("linksTitle").innerHTML = `<h3>⛓️ ${linksTitle}</h3>`
 
 // base link
-const wikipediaBaseLink = 'wikipedia.org/wiki/';
-const wiktionaryBaseLink = 'wiktionary.org/wiki/';
+var wikipediaBaseLink = 'wikipedia.org/wiki/';
+var wiktionaryBaseLink = 'wiktionary.org/wiki/';
 
 // links
 $.getJSON('/cool_links/links/links.json', (links) => {

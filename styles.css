@@ -11,32 +11,29 @@ span.innerText {
 span.aboutHeading {
   font-size: x-large;
 }
+a {
+  cursor: pointer;
+}
 /* links (lt) */
 a.lt {
   text-decoration: none;
-  cursor: pointer;
   color: rgb(255, 173, 42);
 }
 a.lt:visited {
-  cursor: pointer;
   color: rgb(255, 173, 42);
 }
 a.lt:hover {
-  cursor: pointer;
   color: #eeff00;
 }
 /* links (dt) */
 a.dt {
   text-decoration: none;
-  cursor: pointer;
   color: rgb(146, 39, 233);
 }
 a.dt:visited {
-  cursor: pointer;
   color: rgb(146, 39, 233);
 }
 a.dt:hover {
-  cursor: pointer;
   color: #4700cc;
 }
 /* links (b) */
@@ -75,19 +72,15 @@ a.p:hover {
 /* hide and show blog preview link */
 a.bp {
   color: rgb(0, 174, 255);
-  cursor: pointer;
 }
 a.bp:link {
   text-decoration: none;
-  cursor: pointer;
   color: rgb(0, 174, 255);
 }
 a.bp:visited {
-  cursor: pointer;
   color: rgb(0, 174, 255);
 }
 a.bp:hover {
-  cursor: pointer;
   color: #d2ff6a;
 }
 /* links (title) */

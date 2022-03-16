@@ -1,0 +1,121 @@
+{
+    "content": {
+        "subtitle": {
+            "en":"data scientist and teacher/tutor",
+            "es":"data scientist y profesor/tutor",
+            "nl":"data scientist en leraar"
+        },
+        "welcome": {
+            "en":"welcome!",
+            "es":"bienvenido/a!",
+            "nl":"welkom!"
+        },
+        "about": {
+            "en":"about me",
+            "es":"sobre mí",
+            "nl":"over mij"
+        },
+        "blog": {
+            "en":"blog",
+            "es":"blog",
+            "nl":"blog"
+        },
+        "cool_links": {
+            "en":"cool links",
+            "es":"enlaces cool",
+            "nl":"coole links"
+        },
+        "playlists": {
+            "en":"playlists",
+            "es":"listas de reproducción",
+            "nl":"afspeellijsten"
+        },
+        "playlists_title": {
+            "en":"🎶 playlists",
+            "es":"🎶 listas de reproducción",
+            "nl":"🎶 afspeellijsten"
+        },
+        "github": {
+            "en":"github",
+            "es":"github",
+            "nl":"github"
+        },
+        "linkedin": {
+            "en":"linkedin",
+            "es":"linkedin",
+            "nl":"linkedin"
+        },
+        "e-mail": {
+            "en":"e-mail",
+            "es":"correo electrónico",
+            "nl":"e-mail"
+        },
+        "homepage_blogposts": {
+            "en":"Latest three blog posts:",
+            "es":"Últimos tres artículos:",
+            "nl":"Laatste drie blogberichten:"
+        },
+        "homepage_wikipedia": {
+            "en":"Some Wikipedia articles I read recently:",
+            "es":"Articulos de Wikipedia que leí recientemente:",
+            "nl":"Wikipedia-artikelen die ik onlangs heb gelezen:"
+        },
+        "homepage_playlist": {
+            "en":"Kinda proud of this one:",
+            "es":"Moderadamente orgulloso de esta:",
+            "nl":"Best wel trots op deze:"
+        },
+        "theme_lang": {
+            "en":
+                {
+                    "dark":"🌑 dark",
+                    "light":"☀️ light"
+                },
+            "es":
+                {
+                    "dark":"🌑 oscuro",
+                    "light":"☀️ claro"
+                },
+            "nl":
+                {
+                    "dark":"🌑 donker",
+                    "light":"☀️ licht"
+                }
+        },
+        "about_me_text": {
+            "en":"I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general. Originally studied mathematics and then branched out into data science.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills.",
+            "es":"Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas. Originalmente estudié matemáticas y luego me integré en el mundo de ciencia de datos.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. Me estoy tomando un pequeño descanso del mercado laboral para aprender, estudiar y desarrollar mis propios proyectos personales y habilidades.",
+            "nl":"I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general. Originally studied mathematics and then branched out into data science.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills."
+        },
+        "other_sites": {
+            "en":"Other sites:",
+            "es":"Otras páginas web:",
+            "nl":"Andere websites:"
+        },
+        "other_languages": {
+            "en":"other languages:",
+            "es":"otros idiomas:",
+            "nl":"andere talen:"
+        }
+    },
+    "objectIds_Field":{
+        "0": {
+            "homepageSubtitle":"subtitle",
+            "welcomeSubtitle":"welcome",
+            "aboutMeHomepageLink":"about",
+            "blogHomepageLink":"blog",
+            "coolLinksHomepageLink":"cool_links",
+            "playlistsHomepageLink":"playlists",
+            "githubHomepageLink":"github",
+            "linkedinHomepageLink":"linkedin",
+            "emailHomepageLink":"e-mail",
+            "otherLanguagesLabel":"other_languages",
+            "playlistsTitle":"playlists_title"
+        },
+        "1": {
+            "homepageArticlePreview":"homepage_blogposts",
+            "homepagePlaylistPreview":"homepage_playlist",
+            "themeSwitcher":"theme_lang"
+        }
+    }
+}
