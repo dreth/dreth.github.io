@@ -141,7 +141,8 @@
         "2": {
             "linksTitleBar":"cool_links",
             "blogTitleBar":"blog",
-            "playlistsTitleBar":"playlists"
+            "playlistsTitleBar":"playlists",
+            "aboutMeTitleBar":"about"
         }
     }
 }
