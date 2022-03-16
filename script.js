@@ -115,8 +115,12 @@ function loadObjects(langsObj) {
             translation = langsObj["content"][content][language]
 
             // loop over items
-            if (document.getElementById(fieldId) && itemType == 1) {
-                // special fields
+            if (document.getElementById(fieldId) && itemType == 2) {
+                // PAGE TITLES ------------------------------------------------------------------------------
+                $(`#${fieldId}`).html(`${translation} | Daniel A.`);
+
+            } else if (document.getElementById(fieldId) && itemType == 1) {
+                // SPECIAL FIELDS ---------------------------------------------------------------------------
                 switch(fieldId) {
                     // theme switcher
                     case 'themeSwitcher':
@@ -219,7 +223,7 @@ function loadObjects(langsObj) {
                 }
     
             } else if (document.getElementById(fieldId) && itemType == 0) {
-                // add proper text to every id
+                // SITE TEXT FIELDS ---------------------------------------------------------------------------
                 $(`#${fieldId}`).html(translation);
             }
         }
