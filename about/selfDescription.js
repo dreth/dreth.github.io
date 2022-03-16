@@ -15,18 +15,6 @@ let selfDescriptionESLine2 = "Siempre abierto a nuevos retos e ideas. Actualment
 
 var selfDescriptionES = `<p><span>${selfDescriptionESLine1}</span><br><br><span>${selfDescriptionESLine2}</span></p>`;
 
-// url_lang wisselaar
-switch(url_lang) {
-    case 'en':
-        var selfDescription = selfDescriptionEN;
-        break;
-    case 'es':
-        var selfDescription = selfDescriptionES;
-        break;
-    case 'nl':
-        var selfDescription = selfDescriptionEN;
-}
-
 // genereren de "about me" deel (Startpagina)
 if (document.getElementById("homepageAboutMePreview")) {
     document.getElementById("homepageAboutMePreview").innerHTML = selfDescription.replace('<p>','<br>').replace('</p>','');
@@ -36,15 +24,3 @@ if (document.getElementById("homepageAboutMePreview")) {
 if (document.getElementById("aboutMeDescription")) {
     document.getElementById("aboutMeDescription").innerHTML = selfDescription;
 }
-
-// schakelaar voor startpagina "over mij" sectie
-$("#homepageAboutMePreview").toggle()
-// show or hide homepage playlists preview
-$("#expandAboutMePreview").click(function() {
-    $("#homepageAboutMePreview").toggle()
-    if ($("#expandAboutMePreview").html() === '⊖') {
-        $("#expandAboutMePreview").html('⊕')
-    } else {
-        $("#expandAboutMePreview").html('⊖')
-    }
-});

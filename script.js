@@ -17,6 +17,7 @@ var lightThemeLabel;
 var homepageArticleList;
 var homepagePlaylistList;
 var homepageCoolLinkList;
+var homepageSelfDescription;
 
 // base links
 const baseSpotifyLink = 'https://open.spotify.com/playlist/';
@@ -30,6 +31,8 @@ $("#homepageArticlePreview").toggle()
 $("#homepagePlaylistPreview").toggle()
 // hide homepage links preview
 $("#homepageCoolLinkPreview").toggle()
+// schakelaar voor startpagina "over mij" sectie
+$("#homepageAboutMePreview").toggle()
 
 // LANGUAGES -------------- get languages and labels
 var langsJSON = $.getJSON('/data/languages.json');
@@ -140,6 +143,12 @@ function loadObjects(langsObj) {
     
                     // about me preview
                     case 'homepageAboutMePreview':
+                        // homepage self description
+                        homepageSelfDescription = `<br><span>${translation}</span>`;
+
+                        // add stuff to object
+                        $("#homepageAboutMePreview").html(homepageSelfDescription)
+
                         break;
     
     
@@ -258,9 +267,10 @@ allFiles.done(() => {
 // ADD HOMEPAGE EVENTS -------------------------
 // ID of items to add events to
 itemsToAddEventsTo = {
+    'expandAboutMePreview':'homepageAboutMePreview',
     'expandBlogPreview':'homepageArticlePreview',
-    'expandPlaylistsPreview':'homepagePlaylistPreview',
-    'expandCoolLinksPreview':'homepageCoolLinkPreview'
+    'expandCoolLinksPreview':'homepageCoolLinkPreview',
+    'expandPlaylistsPreview':'homepagePlaylistPreview'
 }
 
 // adding events
