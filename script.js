@@ -154,6 +154,16 @@ function loadObjects(langsObj) {
                         $("#homepageAboutMePreview").html(homepageSelfDescription)
 
                         break;
+                    
+                    // about me in CV page
+                    case 'aboutMeDescription':
+                        // homepage self description
+                        aboutMeDescription = `<span>${translation}</span>`;
+
+                        // add stuff to object
+                        $("#aboutMeDescription").html(aboutMeDescription)
+
+                        break;
     
     
                     // blog preview

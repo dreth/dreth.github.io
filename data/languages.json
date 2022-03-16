@@ -136,6 +136,7 @@
             "homepagePlaylistPreview":"homepage_playlist",
             "homepageCoolLinkPreview":"homepage_wikipedia",
             "homepageAboutMePreview":"about_me_text",
+            "aboutMeDescription":"about_me_text",
             "themeSwitcher":"theme_lang"
         },
         "2": {
