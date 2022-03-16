@@ -16,6 +16,7 @@ var lightThemeLabel;
 // homepage previews
 var homepageArticleList;
 var homepagePlaylistList;
+var homepageCoolLinkList;
 
 // base links
 const baseSpotifyLink = 'https://open.spotify.com/playlist/';
@@ -27,6 +28,8 @@ const wiktionaryBaseLink = 'wiktionary.org/wiki/';
 $("#homepageArticlePreview").toggle()
 // hide homepage playlists preview
 $("#homepagePlaylistPreview").toggle()
+// hide homepage links preview
+$("#homepageCoolLinkPreview").toggle()
 
 // LANGUAGES -------------- get languages and labels
 var langsJSON = $.getJSON('/data/languages.json');
@@ -51,17 +54,25 @@ articlesJSON.done(articlesJSON, (articleData) => {
 })
 
 // PLAYLISTS STUFF -------- list playlists stuff
-var playlistsJSON = $.getJSON('/data/playlists.json')
+var playlistsJSON = $.getJSON('/data/playlists.json');
 var playlistsContent;
 var homepagePlaylist;
 
 playlistsJSON.done(playlistsJSON, (playlistsData) => {
     playlistsContent = playlistsData["playlists"];
-    homepagePlaylist = playlistsData["homepage_playlist"]
+    homepagePlaylist = playlistsData["homepage_playlist"];
+})
+
+// COOL LINKS STUFF -------- cool links stuff
+var coolLinksJSON = $.getJSON('/data/links.json');
+var coolLinksContent;
+
+coolLinksJSON.done(coolLinksJSON, (coolLinksData) => {
+    coolLinksContent = coolLinksData;
 })
 
 // ALL FILES LOADED?
-allFiles = $.when(langsJSON,articlesJSON,playlistsJSON)
+allFiles = $.when(langsJSON, articlesJSON, playlistsJSON, coolLinksJSON)
 
 // COOKIES ---------------------------------------
 function setCookie(key, value) {
@@ -129,13 +140,11 @@ function loadObjects(langsObj) {
     
                     // about me preview
                     case 'homepageAboutMePreview':
-                        
                         break;
     
     
                     // blog preview
                     case 'homepageArticlePreview':
-    
                         // latest three articles
                         homepageArticleList = `<br><span>${translation}</span><br><br>`;
                         for (let i = 0; i <= articleTag.slice(0,3).length-1; i++) {
@@ -154,6 +163,34 @@ function loadObjects(langsObj) {
     
                     // cool links preview
                     case 'homepageCoolLinkPreview':
+                        // cool wikipedia links preview
+                        homepageCoolLinkList = `<br><span>${translation}</span><br><br>`;
+                        let cnt = 0;
+                        var wikipediaArticles = coolLinksContent['wikipedia'];
+                        for (const name of Object.keys(wikipediaArticles).reverse()) {
+                            // extract language of article
+                            let articleLang = wikipediaArticles[name].slice(0,2);
+
+                            // create article URL
+                            let articleURL = `https://${articleLang}.${wikipediaBaseLink}${wikipediaArticles[name].slice(3)}`;
+
+                            // append to article list html object
+                            if (cnt < 2) {
+                                homepageCoolLinkList += `<span>🔗</span> <a class="bp" href="${articleURL}">${name}</a><br><br>`;
+                            } else {
+                                homepageCoolLinkList += `<span>🔗</span> <a class="bp" href="${articleURL}">${name}</a><br>`;
+                            }
+                            
+                            // increase counter
+                            cnt += 1;
+                            
+                            // break if counter reaches 3
+                            if (cnt >= 3) {break;}
+                        }
+
+                        // add stuff to object
+                        $("#homepageCoolLinkPreview").html(homepageCoolLinkList)
+
                         break;
     
     
@@ -222,7 +259,8 @@ allFiles.done(() => {
 // ID of items to add events to
 itemsToAddEventsTo = {
     'expandBlogPreview':'homepageArticlePreview',
-    'expandPlaylistsPreview':'homepagePlaylistPreview'
+    'expandPlaylistsPreview':'homepagePlaylistPreview',
+    'expandCoolLinksPreview':'homepageCoolLinkPreview'
 }
 
 // adding events

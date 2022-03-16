@@ -20,10 +20,25 @@
             "es":"blog",
             "nl":"blog"
         },
+        "blog_title": {
+            "en":"🗒️ blog",
+            "es":"🗒️ blog",
+            "nl":"🗒️ blog"
+        },
+        "articles_label": {
+            "en":"articles:",
+            "es":"artículos:",
+            "nl":"artikels:"
+        },
         "cool_links": {
             "en":"cool links",
             "es":"enlaces cool",
             "nl":"coole links"
+        },
+        "cool_links_title": {
+            "en":"⛓️ cool links",
+            "es":"⛓️ enlaces cool",
+            "nl":"⛓️ coole links"
         },
         "playlists": {
             "en":"playlists",
@@ -110,11 +125,16 @@
             "linkedinHomepageLink":"linkedin",
             "emailHomepageLink":"e-mail",
             "otherLanguagesLabel":"other_languages",
-            "playlistsTitle":"playlists_title"
+            "playlistsTitle":"playlists_title",
+            "blogTitle":"blog_title",
+            "articlesLabel":"articles_label",
+            "linksTitle":"cool_links_title",
+            "otherSitesLabel":"other_sites"
         },
         "1": {
             "homepageArticlePreview":"homepage_blogposts",
             "homepagePlaylistPreview":"homepage_playlist",
+            "homepageCoolLinkPreview":"homepage_wikipedia",
             "themeSwitcher":"theme_lang"
         }
     }

@@ -5,22 +5,22 @@ art_path = art_path[art_path.length - 2];
 var art_md_path = `/blog/${art_path}/article.md`;
 var art_draft_md_path = `/blog/drafts/${art_path}/article.md`;
 
-
 // links for the article MD files and article URL
 var artList = '<ul>';
-for (let i = 0; i <= articleTag.length-1; i++) {
-    // generate article URL
-    let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
+articlesJSON.done(() => {
+    for (let i = 0; i < articleTag.length; i++) {
+        // generate article URL
+        let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
 
-    // append to article list html object
-    artList += `<span>${articleEmoji[i]}</span> - <span>${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
-}
-artList += '</ul><hr>';
+        // append to article list html object
+        artList += `<span>${articleEmoji[i]}</span> - <span>${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
+    }
+    artList += '</ul><hr>';
 
-// appending the list of articles
-if (document.getElementById("articleList")) {
-    document.getElementById("articleList").innerHTML = artList;
-}
+    // appending the list of articles
+    $("#articleList").html(artList);
+})
+
 
 // check if there's a post div id to insert article content
 if (document.getElementById("content")) {
