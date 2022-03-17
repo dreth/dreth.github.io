@@ -71,6 +71,7 @@ a.p:hover {
 }
 /* hide and show blog preview link */
 a.bp {
+  text-decoration: none;
   color: rgb(0, 174, 255);
 }
 a.bp:link {
@@ -128,13 +129,13 @@ a.gb:hover {
   display: inline-block;
 }
 /* langs legacy stuff */
-.l:visited {
+a.l:visited {
   color: #f00;
 }
-.l:link {
+a.l {
   text-decoration: none;
   color: #f00;
 }
-.l:hover {
+a.l:hover {
   color: #ffa07a;
 }
