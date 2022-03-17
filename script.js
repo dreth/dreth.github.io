@@ -44,12 +44,14 @@ langsJSON.done(langsJSON, (langsData) => {
 // BLOG STUFF -------------- lists of article info
 var articlesJSON = $.getJSON('/data/articles.json');
 var articleDates;
+var articleLang;
 var articleTitles;
 var articleTag;
 var articleEmoji;
 
 articlesJSON.done(articlesJSON, (articleData) => {
     articleDates = articleData["articleDates"];
+    articleLang = articleData["articleLang"];
     articleTitles = articleData["articleTitles"];
     articleTag = articleData["articleTag"];
     articleEmoji = articleData["articleEmoji"];

@@ -6,7 +6,7 @@
         padding-right: 20%;
     }
     /* article date */
-    span.articleDate {
+    span.articleTopInfo {
       font-size: 0.5vw;
     }
     /* two-col layout */
@@ -110,7 +110,7 @@
         padding-right: 10%;
     }
     /* article date */
-    span.articleDate {
+    span.articleTopInfo {
       font-size: 0.8vw;
     }
     /* two-col layout */
@@ -213,7 +213,7 @@
         padding-right: 5%;
     }
     /* article date */
-    span.articleDate {
+    span.articleTopInfo {
       font-size: 1.6vw;
     }
     /* two-col layout */
