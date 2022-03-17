@@ -32,7 +32,7 @@
 
   <!-- title -->
   <script src="/jquery.js"></script>
-  <title>blog | Daniel A.</title>
+  <title id="blogTitleBar">blog | Daniel A.</title>
 </head>
 
 <body>
@@ -41,7 +41,7 @@
       <div class="column leftcol">
         <ul>
           <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
-          <h3>🗒️ blog</h3>
+          <h3 id="blogTitle"></h3>
         </ul>
       </div>
       <div class="column rightcol">
@@ -53,13 +53,13 @@
 
     <!-- BLOG ARTICLE LINKS -->
     <ul>
-      <p class="heading">articles:</p>
+      <p class="heading" id="articlesLabel"></p>
     </ul>
     <div id="articleList"></div>
 
     <ul>
       <div>
-        <a href="#" onclick="this.href = visit_redirect;" oncontextmenu="this.href = visit_redirect;" class="gb">
+        <a href="#" onclick="this.href = home;" oncontextmenu="this.href = home;" class="gb">
           ⬅️ dac.ac</a>
       </div>
     </ul>

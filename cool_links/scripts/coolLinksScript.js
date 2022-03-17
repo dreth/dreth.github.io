@@ -1,29 +1,14 @@
-// changing visible site title based on locale 
-var linksTitle
-switch(browserLocale) {
-    case 'es':
-        linksTitle = 'links cool'
-        break;
-    case 'en':
-        linksTitle = 'cool links'
-        break;
-    case 'nl':
-        linksTitle = 'coole links'
-}
+
 
 // setting h1 title
 document.getElementById("linksTitle").innerHTML = `<h3>⛓️ ${linksTitle}</h3>`
 
-// base link
-const wikipediaBaseLink = 'wikipedia.org/wiki/';
-const wiktionaryBaseLink = 'wiktionary.org/wiki/';
-
 // links
-$.getJSON('/cool_links/links/links.json', (links) => {
+coolLinksJSON.done(() => {
 
     // ------------------------------------------ WIKIPEDIA
     // generate wikipedia link list
-    var wikipediaArticles = links['wikipedia']; 
+    var wikipediaArticles = coolLinksContent['wikipedia']; 
     var artList = '<ul>';
     for (const name of Object.keys(wikipediaArticles).reverse()) {
         // extract language of article
@@ -44,7 +29,7 @@ $.getJSON('/cool_links/links/links.json', (links) => {
 
     // ------------------------------------------ WIKTIONARY
     // generate wiktionary link list
-    var wiktionaryArticles = links['wiktionary'];
+    var wiktionaryArticles = coolLinksContent['wiktionary'];
     var artList = '<ul>';
     for (const name of Object.keys(wiktionaryArticles).reverse()) {
         // extract language of article
@@ -65,7 +50,7 @@ $.getJSON('/cool_links/links/links.json', (links) => {
 
     // ------------------------------------------ ANYTHING ELSE
     // generate wiktionary link list
-    var wiktionaryArticles = links['other_sites'];
+    var wiktionaryArticles = coolLinksContent['other_sites'];
     var artList = '<ul>';
     for (const name of Object.keys(wiktionaryArticles).reverse()) {
         // create article URL

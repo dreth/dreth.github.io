@@ -1,0 +1,303 @@
+{
+    "headings": {
+        "aboutme":{
+            "en":"About me",
+            "es":"Sobre mí",
+            "nl":"About me"
+        },
+        "cvtitle":{
+            "en":"CV/Résumé",
+            "es":"CV",
+            "nl":"CV/Résumé"
+        }
+    },
+    "education": {
+        "heading":{
+            "en":"📚 Education",
+            "es":"📚 Educación",
+            "nl":"📚 Education"
+        },
+        "list":{
+            "en":[
+                {
+                    "title":"Master in Statistics for Data Science",
+                    "institution":"🎓 Universidad Carlos III de Madrid",
+                    "dates":"📅 September 2020 - September 2021",
+                    "location":"📍 Madrid, Spain"
+                },
+                {
+                    "title":"Bachelor's degree in Mathematics and Actuarial Science",
+                    "institution":"🎓 Instituto Tecnológico de Santo Domingo",
+                    "dates":"📅 August 2015 - October 2019",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                }
+            ],
+            "es":[
+                {
+                    "title":"Master en estadística para ciencia de datos",
+                    "institution":"🎓 Universidad Carlos III de Madrid",
+                    "dates":"📅 Septiembre 2020 - Septiembre 2021",
+                    "location":"📍 Madrid, España"
+                },
+                {
+                    "title":"Licenciatura en matemáticas y ciencias actuariales",
+                    "institution":"🎓 Instituto Tecnológico de Santo Domingo",
+                    "dates":"📅 Agosto 2015 - Octubre 2019",
+                    "location":"📍 Santo Domingo, República Dominicana"
+                }
+            ],
+            "nl":[
+                {
+                    "title":"Master in Statistics for Data Science",
+                    "institution":"🎓 Universidad Carlos III de Madrid",
+                    "dates":"📅 September 2020 - September 2021",
+                    "location":"📍 Madrid, Spain"
+                },
+                {
+                    "title":"Bachelor's degree in Mathematics and Actuarial Science",
+                    "institution":"🎓 Instituto Tecnológico de Santo Domingo",
+                    "dates":"📅 August 2015 - October 2019",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                }
+            ]
+        }
+    },
+    "work": {
+        "heading":{
+            "en":"👨‍💻 Work experience",
+            "es":"👨‍💻 Experiencia laboral",
+            "nl":"👨‍💻 Work experience"
+        },
+        "list":{
+            "en":[
+                {
+                    "title":"Data Scientist",
+                    "institution":"🏢 Populate",
+                    "dates":"📅 September 2021 - February 2022",
+                    "location":"📍 Madrid, Spain"
+                },
+                {
+                    "title":"Field Business Data Scientist",
+                    "institution":"🏢 Cervecería Nacional Dominicana",
+                    "dates":"📅 March 2020 - August 2020",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                },
+                {
+                    "title":"Bioinformatician and data scientist",
+                    "institution":"🏢 Referencia Laboratorio Clínico S.A.",
+                    "dates":"📅 August 2019 - March 2020",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                },
+                {
+                    "title":"Vehicle insurance subscription representative",
+                    "institution":"🏢 Seguros Sura",
+                    "dates":"📅 April 2019 - August 2019",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                },
+                {
+                    "title":"Mathematics and physics tutor",
+                    "institution":"🏢 Sainz Tutoring",
+                    "dates":"📅 November 2016 - May 2019",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                },
+                {
+                    "title":"Tech Support",
+                    "institution":"🏢 Business Computer POS",
+                    "dates":"📅 May 2015 - October 2015",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                },
+                {
+                    "title":"Marketing Staff",
+                    "institution":"🏢 Alonso & Colado SRL",
+                    "dates":"📅 January 2014 - August 2014",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                    }
+            ],
+            "es":[
+                {
+                    "title":"Data Scientist",
+                    "institution":"🏢 Populate",
+                    "dates":"📅 Septiembre 2021 - Febrero 2022",
+                    "location":"📍 Madrid, España"
+                },
+                {
+                    "title":"Field Business Data Scientist",
+                    "institution":"🏢 Cervecería Nacional Dominicana",
+                    "dates":"📅 Marzo 2020 - Agosto 2020",
+                    "location":"📍 Santo Domingo, República Dominicana"
+                },
+                {
+                    "title":"Bioinformático y data scientist",
+                    "institution":"🏢 Referencia Laboratorio Clínico S.A.",
+                    "dates":"📅 Agosto 2019 - Marzo 2020",
+                    "location":"📍 Santo Domingo, República Dominicana"
+                },
+                {
+                    "title":"Oficial de suscripción (Autos)",
+                    "institution":"🏢 Seguros Sura",
+                    "dates":"📅 Abril 2019 - Agosto 2019",
+                    "location":"📍 Santo Domingo, República Dominicana"
+                },
+                {
+                    "title":"Tutor de matemáticas y física",
+                    "institution":"🏢 Sainz Tutoring",
+                    "dates":"📅 Noviembre 2016 - Mayo 2019",
+                    "location":"📍 Santo Domingo, República Dominicana"
+                },
+                {
+                    "title":"Soporte Técnico",
+                    "institution":"🏢 Business Computer POS",
+                    "dates":"📅 Mayo 2015 - Octubre 2015",
+                    "location":"📍 Santo Domingo, República Dominicana"
+                },
+                {
+                    "title":"Encargado de mercadeo",
+                    "institution":"🏢 Alonso & Colado SRL",
+                    "dates":"📅 Enero 2014 - Agosto 2014",
+                    "location":"📍 Santo Domingo, República Dominicana"
+                }
+            ],
+            "nl":[
+                {
+                    "title":"Data Scientist",
+                    "institution":"🏢 Populate",
+                    "dates":"📅 September 2021 - February 2022",
+                    "location":"📍 Madrid, Spain"
+                },
+                {
+                    "title":"Field Business Data Scientist",
+                    "institution":"🏢 Cervecería Nacional Dominicana",
+                    "dates":"📅 March 2020 - August 2020",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                },
+                {
+                    "title":"Bioinformatician and data scientist",
+                    "institution":"🏢 Referencia Laboratorio Clínico S.A.",
+                    "dates":"📅 August 2019 - March 2020",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                },
+                {
+                    "title":"Vehicle insurance subscription representative",
+                    "institution":"🏢 Seguros Sura",
+                    "dates":"📅 April 2019 - August 2019",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                },
+                {
+                    "title":"Mathematics and physics tutor",
+                    "institution":"🏢 Sainz Tutoring",
+                    "dates":"📅 November 2016 - May 2019",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                },
+                {
+                    "title":"Tech Support",
+                    "institution":"🏢 Business Computer POS",
+                    "dates":"📅 May 2015 - October 2015",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                },
+                {
+                    "title":"Marketing Staff",
+                    "institution":"🏢 Alonso & Colado SRL",
+                    "dates":"📅 January 2014 - August 2014",
+                    "location":"📍 Santo Domingo, Dominican Republic"
+                    }
+            ]
+        }
+    },
+    "other": {
+        "languages": {
+            "heading": {
+                "en":"🗺️ Languages",
+                "es":"🗺️ Idiomas",
+                "nl":"🗺️ Languages"
+            },
+            "level":{
+                "en": {
+                    "advanced":"Advanced/Native:",
+                    "intermediate":"Intermediate:",
+                    "basic":"Basic:"
+                },
+                "es":{
+                    "advanced":"Avanzado/Nativo:",
+                    "intermediate":"Intermedio:",
+                    "basic":"Básico:"
+                },
+                "nl":{
+                    "advanced":"Gevorderd/Native:",
+                    "intermediate":"Intermediate:",
+                    "basic":"Basic:"
+                }
+            },
+            "list": {
+                "en":{
+                    "advanced":[
+                        "🇪🇸🇩🇴 Spanish",
+                        "🇺🇸🇬🇧 English"
+                    ],
+                    "intermediate":[
+                        "🇳🇱🇧🇪 Dutch"
+                    ],
+                    "basic":[
+                        "🇮🇹 Italian"
+                    ]
+                },
+                "es":{
+                    "advanced":[
+                        "🇪🇸🇩🇴 Español",
+                        "🇺🇸🇬🇧 Inglés"
+                    ],
+                    "intermediate":[
+                        "🇳🇱🇧🇪 Neerlandés"
+                    ],
+                    "basic":[
+                        "🇮🇹 Italiano"
+                    ]
+                },
+                "nl":{
+                    "advanced":[
+                        "🇪🇸🇩🇴 Spaans",
+                        "🇺🇸🇬🇧 Engels"
+                    ],
+                    "intermediate":[
+                        "🇳🇱🇧🇪 Nederlands"
+                    ],
+                    "basic":[
+                        "🇮🇹 Italiaans"
+                    ]
+                }
+            }
+        },
+        "skills": {
+            "heading":{
+                "en":"🖥️ Skills",
+                "es":"🖥️ Habilidades",
+                "nl":"🖥️ Vaardigheden"
+            },
+            "list":{
+                "en":{
+                    "noLevel":[
+                        "Python, R",
+                        "SQL, DB design",
+                        "Spreadsheets/Excel",
+                        "Simple web development (html, css, js)"
+                    ]
+                },
+                "es":{
+                    "noLevel":[
+                        "Python, R",
+                        "SQL, diseño de BD",
+                        "Hojas de cálculo/Excel",
+                        "Desarrollo web básico (html, css, js)"
+                    ]
+                },
+                "nl":{
+                    "noLevel":[
+                        "Python, R",
+                        "SQL, DB design",
+                        "Spreadsheets/Excel",
+                        "Simple web development (html, css, js)"
+                    ]
+                }
+            }
+        }
+    }
+}
