@@ -125,7 +125,7 @@ function loadObjects(langsObj) {
                     case 'themeSwitcher':
                         // arrangement of theme link
                         if (getCookie('theme') == 0) {
-                            $("#themeSwitcher").html(`<a class='dt' onclick='changeTheme()'>${translation['dark']}</a>`)
+                            $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌑</a>`)
                             $("#mainStylesheet").attr('href','/styles-light.css')
                     
                             // for articles
@@ -133,7 +133,7 @@ function loadObjects(langsObj) {
                                 $("#articleStylesheet").attr('href','/blog/articleStyles-light.css')
                             }
                         } else {
-                            $("#themeSwitcher").html(`<a class='lt' onclick='changeTheme()'>${translation['light']}</a>`)
+                            $("#themeSwitcher").html(`<a class='lt lts' onclick='changeTheme()'>☀️</a>`)
                             $("#mainStylesheet").attr('href','/styles.css')
                     
                             // for articles
@@ -256,7 +256,7 @@ function changeTheme() {
     // translation lang for changing language
     if (getCookie('theme') == 0) {
         setCookie('theme',1)
-        $("#themeSwitcher").html(`<a class='lt' onclick='changeTheme()'>${langs["content"]["theme_lang"][language]['light']}</a>`)
+        $("#themeSwitcher").html(`<a class='lt lts' onclick='changeTheme()'>☀️</a>`)
         $("#mainStylesheet").attr('href','/styles.css')
 
         // for articles
@@ -265,7 +265,7 @@ function changeTheme() {
         }
     } else {
         setCookie('theme',0)
-        $("#themeSwitcher").html(`<a class='dt' onclick='changeTheme()'>${langs["content"]["theme_lang"][language]['dark']}</a>`)
+        $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌑</a>`)
         $("#mainStylesheet").attr('href','/styles-light.css')
 
         // for articles

@@ -83,18 +83,18 @@
         "theme_lang": {
             "en":
                 {
-                    "dark":"🌑 dark",
-                    "light":"☀️ light"
+                    "dark":" dark",
+                    "light":" light"
                 },
             "es":
                 {
-                    "dark":"🌑 oscuro",
-                    "light":"☀️ claro"
+                    "dark":" oscuro",
+                    "light":" claro"
                 },
             "nl":
                 {
-                    "dark":"🌑 donker",
-                    "light":"☀️ licht"
+                    "dark":" donker",
+                    "light":" licht"
                 }
         },
         "about_me_text": {

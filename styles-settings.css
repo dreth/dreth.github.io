@@ -14,10 +14,10 @@
       float: left;
     }
     div.leftcol {
-      width: 91%
+      width: 95%
     }
     div.rightcol {
-      width: 9%
+      width: 5%
     }
     div.row:after {
       content: "";
@@ -38,6 +38,11 @@
     ol,
     span {
       font-size: 1vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.dts, a.lts {
+      font-size: 1.2vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
@@ -113,10 +118,10 @@
       float: left;
     }
     div.leftcol {
-      width: 88%;
+      width: 90%;
     }
     div.rightcol {
-      width: 12%;
+      width: 10%;
     }
     div.row:after {
       content: "";
@@ -137,6 +142,11 @@
     ol,
     span {
       font-size: 1.6vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.dts, a.lts {
+      font-size: 1.8vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
@@ -211,10 +221,10 @@
       float: left;
     }
     div.leftcol {
-      width: 70%
+      width: 80%
     }
     div.rightcol {
-      width: 30%
+      width: 20%
     }
     div.row:after {
       content: "";
@@ -235,6 +245,11 @@
     ol,
     span {
       font-size: 3.2vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    a.dts, a.lts {
+      font-size: 4vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
