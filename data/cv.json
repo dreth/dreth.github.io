@@ -1,9 +1,9 @@
 {
     "headings": {
         "aboutme":{
-            "en":"📃 About me",
-            "es":"📃 Sobre mí",
-            "nl":"📃 About me"
+            "en":"📃 about me",
+            "es":"📃 sobre mí",
+            "nl":"📃 about me"
         },
         "cvtitle":{
             "en":"CV/Résumé",
