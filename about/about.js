@@ -1,7 +1,5 @@
 // GENERAL VARIABLES
 var cvHeading;
-var edWorkContents;
-var otherContents = '';
 var content;
 
 // ABOUT ME SECTION, CV CONTENTS -------------  
@@ -30,6 +28,7 @@ function loadCV() {
 // EDUCATION AND WORK SECTION --------------------------------------
     // list sections to loop over (these are identical)
     let ed_work = ['education','work']
+    let edWorkContents = '';
     // loop over the sections
     for (k = 0; k < ed_work.length; k++) {
         // get section content from cvcontent json
@@ -53,9 +52,10 @@ function loadCV() {
         $(`#${ed_work[k]}Section`).html(edWorkContents)
     }
 
-// OTHER SECTION ------------------------------------------
+// OTHER SECTION -----------------------------------------------------
     // list sections to loop over (these are identical)
     let other_s = ['languages','skills'];
+    let otherContents = '';
     // loop over the sections
     for (k = 0; k < other_s.length; k++) {
         // get section content from cvcontent json
@@ -103,6 +103,13 @@ aboutMeJSON.done(() => {
 function changeCVLang(l) {
     // switch language
     cvLang = l;
+
+    // refresh lang
+    if (language == 'nl') {
+        language = 'nl';
+    } else {
+        language = l;
+    }
 
     aboutMeJSON.done(() => {
         loadCV()
