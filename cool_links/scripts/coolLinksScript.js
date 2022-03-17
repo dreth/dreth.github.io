@@ -1,8 +1,4 @@
 
-
-// setting h1 title
-document.getElementById("linksTitle").innerHTML = `<h3>⛓️ ${linksTitle}</h3>`
-
 // links
 coolLinksJSON.done(() => {
 
