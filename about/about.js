@@ -19,6 +19,14 @@ if (language == 'en' | language == 'nl') {
 
 // GENERATE CONTENTS FOR CV -------------------
 function loadCV() {
+    langsJSON.done(langsJSON, (langsData) => {
+        // site title
+        $("#aboutMeTitleBar").html(`${langsData['content']['about'][cvLang]} | Daniel A.`)
+
+        // aboutMeDescription
+        $("#aboutMeDescription").html(`${langsData['content']['about_me_text'][cvLang]}`)
+    })
+
     // about me section title
     $("#aboutHeading").html(cvContent["headings"]["aboutme"][cvLang])
 
@@ -104,18 +112,7 @@ function changeCVLang(l) {
     // switch language
     cvLang = l;
 
-    // refresh lang
-    if (language == 'nl') {
-        language = 'nl';
-    } else {
-        language = l;
-    }
-
     aboutMeJSON.done(() => {
         loadCV()
-    })
-
-    allFiles.done(() => {
-        loadObjects(langs)
     })
 }

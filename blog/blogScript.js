@@ -13,7 +13,7 @@ articlesJSON.done(() => {
         let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
 
         // append to article list html object
-        artList += `<span>${articleEmoji[i]}</span> - <span>${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
+        artList += `<div><span class="articleDate">${articleDates[i]}</span><br><a class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br>`;
     }
     artList += '</ul><hr>';
 
