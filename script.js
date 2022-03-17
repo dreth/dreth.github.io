@@ -1,12 +1,12 @@
 // GENERAL STUFF ------------ links to all the profiles + email
 var linkedin = 'https://www.linkedin.com/in/dreth/';
 var github = 'https://github.com/dreth';
-var blog = 'https://dac.ac/blog/';
-var about = 'https://dac.ac/about/';
-var home = 'https://dac.ac';
-var status = 'https://dac.ac/status';
-var cool_links = 'https://dac.ac/cool_links';
-var playlists = 'https://dac.ac/playlists';
+var blog = '/blog/';
+var about = '/about/';
+var home = '/';
+var status = '/status';
+var cool_links = '/cool_links';
+var playlists = '/playlists';
 var email = 'mailto:contact@m.dac.ac';
 var language;
 var darkThemeLabel;

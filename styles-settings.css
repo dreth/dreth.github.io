@@ -1,7 +1,7 @@
 /* screen width higher than 1000 px */
 @media screen and (min-width: 2000px) {
     /* article padding */
-    .articleBody, .blogBody {
+    .articleBody, .paddedBody {
         padding-left: 20%;
         padding-right: 20%;
     }
@@ -100,7 +100,7 @@
   /* screen width higher than 1000 px */
   @media screen and (max-width: 2000px) and (min-width: 1000px) {
     /* article padding */
-    .articleBody, .blogBody {
+    .articleBody, .paddedBody {
         padding-left: 10%;
         padding-right: 10%;
     }
@@ -198,7 +198,7 @@
   /* screen width lower than 1000 px */
   @media screen and (max-width: 1000px) and (min-width: 0px) {
     /* article padding */
-    .articleBody, .blogBody {
+    .articleBody, .paddedBody {
         padding-left: 5%;
         padding-right: 5%;
     }
