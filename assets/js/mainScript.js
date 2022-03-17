@@ -32,6 +32,8 @@ $("#homepagePlaylistPreview").toggle()
 $("#homepageCoolLinkPreview").toggle()
 // schakelaar voor startpagina "over mij" sectie
 $("#homepageAboutMePreview").toggle()
+// hide lang name
+$("#langName").toggle()
 
 // LANGUAGES -------------- get languages and labels
 var langsJSON = $.getJSON('/data/languages.json');
@@ -128,19 +130,19 @@ function loadObjects(langsObj) {
                         // arrangement of theme link
                         if (getCookie('theme') == 0) {
                             $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌒</a>`)
-                            $("#mainStylesheet").attr('href','/styles-light.css')
+                            $("#mainStylesheet").attr('href','/assets/css/styles-light.css')
                     
                             // for articles
                             if (document.getElementById('articleStylesheet')) {
-                                $("#articleStylesheet").attr('href','/blog/articleStyles-light.css')
+                                $("#articleStylesheet").attr('href','/assets/css/articleStyles-light.css')
                             }
                         } else {
                             $("#themeSwitcher").html(`<a class='lt lts' onclick='changeTheme()'>☀️</a>`)
-                            $("#mainStylesheet").attr('href','/styles.css')
+                            $("#mainStylesheet").attr('href','/assets/css/styles.css')
                     
                             // for articles
                             if (document.getElementById('articleStylesheet')) {
-                                $("#articleStylesheet").attr('href','/blog/articleStyles.css')
+                                $("#articleStylesheet").attr('href','/assets/css/articleStyles.css')
                             }
                         }
 
@@ -259,21 +261,34 @@ function changeTheme() {
     if (getCookie('theme') == 0) {
         setCookie('theme',1)
         $("#themeSwitcher").html(`<a class='lt lts' onclick='changeTheme()'>☀️</a>`)
-        $("#mainStylesheet").attr('href','/styles.css')
+        $("#mainStylesheet").attr('href','/assets/css/styles.css')
 
         // for articles
         if (document.getElementById('articleStylesheet')) {
-            $("#articleStylesheet").attr('href','/blog/articleStyles.css')
+            $("#articleStylesheet").attr('href','/assets/css/articleStyles.css')
         }
     } else {
         setCookie('theme',0)
         $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌒</a>`)
-        $("#mainStylesheet").attr('href','/styles-light.css')
+        $("#mainStylesheet").attr('href','/assets/css/styles-light.css')
 
         // for articles
         if (document.getElementById('articleStylesheet')) {
-            $("#articleStylesheet").attr('href','/blog/articleStyles-light.css')
+            $("#articleStylesheet").attr('href','/assets/css/articleStyles-light.css')
         }
+    }
+}
+
+// show lang text on right col
+function toggleLangText(l) {
+    if ($(window).width() > 450) {
+        langsJSON.done(() => {
+            // get name of current language
+            let currentLangName = langs['content']['language_names'][l];
+            // add it to the langname lil thingy
+            $("#langName").html(currentLangName)
+            $("#langName").toggle()
+        })
     }
 }
 

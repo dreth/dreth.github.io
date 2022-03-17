@@ -11,11 +11,11 @@ import requests
 def get_links(type):
     input('did you check everything?')
 
-    with open('./cool_links/links/links.json', 'r') as f:
+    with open('./assets/data/links.json', 'r') as f:
         links = json.load(f)
 
     if type == 1:
-        with open('./cool_links/scripts/links_to_process.txt') as f:
+        with open('./assets/py/links_to_process.txt') as f:
 
             for i,line in enumerate(f.read().splitlines()):
                 # clean mobile stuff
@@ -43,11 +43,11 @@ def get_links(type):
                 # assemble and print elements
                 links['wikipedia'][page_name] = f"{lang}_{url_dir}"
 
-        with open('./cool_links/links/links.json', 'w') as f:
+        with open('./assets/data/links.json', 'w') as f:
             json.dump(links, f, indent=4, ensure_ascii=False)
     
     elif type == 2:
-        with open('./cool_links/scripts/links_to_process.txt') as f:
+        with open('./assets/py/links_to_process.txt') as f:
 
             for i,line in enumerate(f.read().splitlines()):
 
@@ -59,7 +59,7 @@ def get_links(type):
                     links['other_sites'][title.get_text()] = line 
 
     elif type == 3:
-        with open('./cool_links/scripts/links_to_process.txt') as f:
+        with open('./assets/py/links_to_process.txt') as f:
             
             for i,line in enumerate(f.read().splitlines()):
                 
@@ -87,7 +87,7 @@ def get_links(type):
     else:
         exit()
 
-    with open('./cool_links/links/links.json', 'w') as f:
+    with open('./assets/data/links.json', 'w') as f:
             json.dump(links, f, indent=4, ensure_ascii=False)
 
 

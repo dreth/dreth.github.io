@@ -107,10 +107,10 @@
             "es":"Otras páginas web:",
             "nl":"Andere websites:"
         },
-        "other_languages": {
-            "en":"other languages:",
-            "es":"otros idiomas:",
-            "nl":"andere talen:"
+        "language_names": {
+            "en":"english",
+            "es":"español",
+            "nl":"nederlands"
         }
     },
     "objectIds_Field":{
@@ -124,7 +124,6 @@
             "githubHomepageLink":"github",
             "linkedinHomepageLink":"linkedin",
             "emailHomepageLink":"e-mail",
-            "otherLanguagesLabel":"other_languages",
             "playlistsTitle":"playlists_title",
             "blogTitle":"blog_title",
             "articlesLabel":"articles_label",

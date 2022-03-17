@@ -1,3 +1,19 @@
+h1,h2,h3,h4,h5 {
+    color:rgb(0, 94, 170);
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(53, 71, 233);
+}
+a:visited {
+    color: rgb(53, 71, 233);
+}
+a:hover {
+    color: #00a100;
+}
+
+/* OTHER SETTINGS */
 @media screen and (min-width: 2000px) {
     img {
         width: 40%;

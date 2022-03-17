@@ -25,10 +25,10 @@
 
   <!-- stylesheet, script, icon and font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-  <link rel="stylesheet" type="text/css" href="/styles-settings.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles-settings.css">
   <link rel="shortcut icon" id="icon"/>
-  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/styles.css">
-  <script src="/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/libs/jquery.js"></script>
 
   <!-- title -->
   <title id="playlistsTitleBar">playlists | Daniel A.</title>
@@ -43,10 +43,8 @@
   <div>
     <div class="row">
       <div class="column leftcol">
-        <ul>
-          <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
-          <h3 id="playlistsTitle"></h3>
-        </ul>
+        <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
+        <h3 id="playlistsTitle"></h3>
       </div>
       <div class="column rightcol">
         <!-- Theme switcher -->
@@ -56,7 +54,8 @@
 
     <!-- PLAYLIST LINKS -->
     <hr>
-    <ul id="playlistsLinks"></ul>
+    <br>
+    <div id="playlistsLinks"></div>
   </div>
   <div>
     <hr>
@@ -68,8 +67,8 @@
       </div>
     </ul>
   </div>
-  <script src="/script.js"></script>
-  <script src="./playlistsScript.js"></script>
+  <script src="/assets/js/mainScript.js"></script>
+  <script src="/assets/js/playlistsScript.js"></script>
 </body>
 
 </html>

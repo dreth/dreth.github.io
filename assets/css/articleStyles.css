@@ -1,0 +1,41 @@
+h1,h2,h3,h4,h5 {
+    color:rgb(129, 193, 253);
+}
+
+a:link {
+    text-decoration: none;
+    color: #0ff;
+}
+a:visited {
+    color: #0ff;
+}
+a:hover {
+    color: #7dff7d;
+}
+
+/* OTHER SETTINGS */
+@media screen and (min-width: 2000px) {
+    img {
+        width: 40%;
+        height:100%;
+        background-size: 100%;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 2000px) and (min-width: 1000px) {
+    img {
+        width: 60%;
+        height:100%;
+        background-size: 100%;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 1000px) and (min-width: 0px) {
+    img {
+        width: 90%;
+        height:100%;
+        background-size: 100%;
+        object-fit: cover;
+    }
+}
+

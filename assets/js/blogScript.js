@@ -10,7 +10,7 @@ var artList = '';
 articlesJSON.done(() => {
     for (let i = 0; i < articleTag.length; i++) {
         // generate article URL
-        let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
+        let articleURL = `/blog/${articleTag[i]}/`;
 
         // append to article list html object
         artList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br><br>`;

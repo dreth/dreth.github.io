@@ -25,10 +25,10 @@
 
   <!-- stylesheet, script, icon and font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-  <link rel="stylesheet" type="text/css" href="/styles-settings.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles-settings.css">
   <link rel="shortcut icon" id="icon"/>
-  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/styles.css">
-  <script src="/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/libs/jquery.js"></script>
 
   <!-- title -->
   <title>Daniel A.</title>
@@ -37,69 +37,61 @@
 <body class="paddedBody">
     <div class="row">
       <div class="column leftcol">
-        <ul>
-          <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
-          <h3 id="homepageSubtitle"></h3>
-        </ul>
+        <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
+        <h3 id="homepageSubtitle"></h3>
+        <p class="heading" id="welcomeSubtitle"></p>
       </div>
       <div class="column rightcol">
+        <br>
         <!-- Theme switcher -->
-        <ul id="themeSwitcher"></ul>
+        <div id="themeSwitcher"></div>
+        <br>
+        <div>
+          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es')" onmouseleave="toggleLangText('es')" class="l">🇪🇸🇩🇴</a><br>
+          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en')" onmouseleave="toggleLangText('en')" class="l">🇬🇧🇺🇸</a><br>
+          <a onclick="updateLang('nl')" onmouseenter="toggleLangText('nl')" onmouseleave="toggleLangText('nl')" class="l">🇳🇱🇧🇪</a><br>
+          <span id="langName"></span>
+        </div>
       </div>
     </div>
     <hr>
     <div>
-      <ul>
-        <p class="heading" id="welcomeSubtitle"></p>
-        
-        <ul class="noBullets">
-          <li class="ml cv">
-            <a href="#" onclick="this.href = about;" oncontextmenu="this.href = about;" class="b" id="aboutMeHomepageLink"></a>
-            <a class="bp" id="expandAboutMePreview">⊕</a>
-          </li>
-            <div id="homepageAboutMePreview"></div>
-          <br>
-          <li class="ml blog">
-            <a href="#" onclick="this.href = blog;" oncontextmenu="this.href = blog;" class="b" id="blogHomepageLink"></a>
-            <a class="bp" id="expandBlogPreview">⊕</a>
-          </li>
-            <div id="homepageArticlePreview"></div>
-          <br>
-          <li class="ml coolLinks">
-              <a href="#" onclick="this.href = cool_links;" oncontextmenu="this.href = cool_links;" class="b" id="coolLinksHomepageLink"></a>
-              <a class="bp" id="expandCoolLinksPreview">⊕</a>
-          </li>
-            <div id="homepageCoolLinkPreview"></div>
-          <br>
-          <li class="ml playlists">
-            <a href="#" onclick="this.href = playlists;" oncontextmenu="this.href = playlists;" class="b" id="playlistsHomepageLink"></a>
-            <a class="bp" id="expandPlaylistsPreview">⊕</a>
-          </li>
-            <div id="homepagePlaylistPreview"></div>
-          <br>
-          <li class="ml github"><a href="#" onclick="this.href = github;" oncontextmenu="this.href = github;" class="b" id="githubHomepageLink"></a></li>
-          <br>
-          <li class="ml linkedin"><a href="#" onclick="this.href = linkedin;" oncontextmenu="this.href = linkedin;" class="b" id="linkedinHomepageLink"></a></li>
-          <br>
-          <li class="ml email"><a href="#" onclick="this.href = email;" oncontextmenu="this.href = email;" class="b" id="emailHomepageLink"></a></li>
-        </ul>
-      </ul>
-        
-        <!-- Language selection buttons -->
-      <hr>
-      <ul>
-        <span class="heading2" id="otherLanguagesLabel"></span>
+      <ul class="noBullets">
+        <li class="ml cv">
+          <a href="#" onclick="this.href = about;" oncontextmenu="this.href = about;" class="b" id="aboutMeHomepageLink"></a>
+          <a class="bp" id="expandAboutMePreview">⊕</a>
+        </li>
+          <div id="homepageAboutMePreview"></div>
         <br>
-        <a onclick="updateLang('es')" class="l showes">🇪🇸🇩🇴</a> <span class="hidees"> - español</span><span
-          class="dash"> - </span>
-        <a onclick="updateLang('en')" class="l showen">🇬🇧🇺🇸</a> <span class="hideen"> - english</span><span
-          class="dash"> - </span>
-        <a onclick="updateLang('nl')" class="l shownl">🇳🇱🇧🇪</a> <span class="hidenl"> - nederlands</span>
+        <li class="ml blog">
+          <a href="#" onclick="this.href = blog;" oncontextmenu="this.href = blog;" class="b" id="blogHomepageLink"></a>
+          <a class="bp" id="expandBlogPreview">⊕</a>
+        </li>
+          <div id="homepageArticlePreview"></div>
+        <br>
+        <li class="ml coolLinks">
+            <a href="#" onclick="this.href = cool_links;" oncontextmenu="this.href = cool_links;" class="b" id="coolLinksHomepageLink"></a>
+            <a class="bp" id="expandCoolLinksPreview">⊕</a>
+        </li>
+          <div id="homepageCoolLinkPreview"></div>
+        <br>
+        <li class="ml playlists">
+          <a href="#" onclick="this.href = playlists;" oncontextmenu="this.href = playlists;" class="b" id="playlistsHomepageLink"></a>
+          <a class="bp" id="expandPlaylistsPreview">⊕</a>
+        </li>
+          <div id="homepagePlaylistPreview"></div>
+        <br>
+        <li class="ml github"><a href="#" onclick="this.href = github;" oncontextmenu="this.href = github;" class="b" id="githubHomepageLink"></a></li>
+        <br>
+        <li class="ml linkedin"><a href="#" onclick="this.href = linkedin;" oncontextmenu="this.href = linkedin;" class="b" id="linkedinHomepageLink"></a></li>
+        <br>
+        <li class="ml email"><a href="#" onclick="this.href = email;" oncontextmenu="this.href = email;" class="b" id="emailHomepageLink"></a></li>
       </ul>
+      <hr>
     </div>
       
   <!-- main script with pretty much everything useful and important -->
-  <script src="/script.js"></script>
+  <script src="/assets/js/mainScript.js"></script>
 </body>
 
 </html>

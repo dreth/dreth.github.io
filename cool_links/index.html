@@ -25,12 +25,12 @@
 
   <!-- stylesheet, script, icon and font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-  <link rel="stylesheet" type="text/css" href="/styles-settings.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles-settings.css">
   <link rel="shortcut icon" id="icon"/>
-  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/styles.css">
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/assets/css/styles.css">
 
   <!-- title -->
-  <script src="/jquery.js"></script>
+  <script src="/assets/js/libs/jquery.js"></script>
   <title id="linksTitleBar">cool links | Daniel A.</title>
 </head>
 
@@ -38,10 +38,8 @@
   <div>
     <div class="row">
       <div class="column leftcol">
-        <ul>
-          <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
-          <h3 id="linksTitle"></h3>
-        </ul>
+        <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
+        <h3 id="linksTitle"></h3>
       </div>
       <div class="column rightcol">
         <!-- Theme switcher -->
@@ -51,21 +49,15 @@
     <hr>
 
     <!-- WIKIPEDIA LINKS -->
-    <ul>
-      <p class="heading">Wikipedia:</p>
-    </ul>
+    <p class="heading">Wikipedia:</p>
     <div id="wikipediaLinkList"></div>
     
     <!-- WIKTIONARY LINKS -->
-    <ul>
-      <p class="heading">Wiktionary:</p>
-    </ul>
+    <p class="heading">Wiktionary:</p>
     <div id="wiktionaryLinkList"></div>
 
     <!-- OTHER LINKS -->
-    <ul>
-      <p class="heading" id="otherSitesLabel"></p>
-    </ul>
+    <p class="heading" id="otherSitesLabel"></p>
     <div id="otherSitesLinkList"></div>
         
     <ul>
@@ -74,8 +66,8 @@
           ⬅️ dac.ac</a>
       </div>
     </ul>
-  <script src="/script.js"></script>
-  <script src="/cool_links/scripts/coolLinksScript.js"></script>
+  <script src="/assets/js/mainScript.js"></script>
+  <script src="/assets/js/coolLinksScript.js"></script>
   </div>
 </body>
 

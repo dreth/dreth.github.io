@@ -27,9 +27,9 @@
   <!-- stylesheet, script, icon and font -->
   <link rel="shortcut icon" id="icon"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-  <link rel="stylesheet" type="text/css" href="/styles-settings.css">
-  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/styles.css">
-  <script src="/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles-settings.css">
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/libs/jquery.js"></script>
 
   <!-- title -->
   <title id="aboutMeTitleBar">About me | Daniel A.</title>
@@ -39,27 +39,24 @@
   <div>
     <div class="row">
       <div class="column leftcol">
-        <ul>
-          <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
-          <h3 class="aboutHeading2" id="aboutHeading">📃 About me</h3>
-        </ul>
+        <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
+        <h3 id="aboutHeading">📃 About me</h3>
       </div>
       <div class="column rightcol">
+        <br>
         <!-- Theme switcher -->
-        <ul id="themeSwitcher"></ul>
+        <div id="themeSwitcher"></div>
         <!-- Language switcher -->
-        <ul>
-          <span><a onclick="changeCVLang('es')">🇪🇸🇩🇴</a></span>
-          <br>
-          <span><a onclick="changeCVLang('en')">🇬🇧🇺🇸</a></span>
-        </ul>
+        <br>
+        <span><a onclick="changeCVLang('es')" onmouseenter="toggleLangText('es')" onmouseleave="toggleLangText('es')">🇪🇸🇩🇴</a></span><br>
+        <span><a onclick="changeCVLang('en')" onmouseenter="toggleLangText('en')" onmouseleave="toggleLangText('en')">🇬🇧🇺🇸</a></span><br>
+        <span id="langName"></span>
       </div>
     </div>
     <hr>
       <p id="aboutMeDescription"></p>
     <br>
     <hr>
-    <ul>
       <h2 id="cvHeading">CV/Résumé</h2>
 
       <!-- EDUCATION -->
@@ -73,7 +70,6 @@
       <!-- OTHER THINGS (langs/skills) -->
       <div id="otherSection"></div>
     
-    </ul>
     <hr>
     <ul>
       <div>
@@ -84,7 +80,7 @@
   </div>
 </body>
 
-<script src="/script.js"></script>
-<script src="/about/about.js"></script>
+<script src="/assets/js/mainScript.js"></script>
+<script src="/assets/js/aboutMeScript.js"></script>
 
 </html>
