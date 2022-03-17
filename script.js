@@ -174,7 +174,7 @@ function loadObjects(langsObj) {
                             let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
     
                             // append to article list html object
-                            homepageArticleList += `<span>${articleEmoji[i]}</span> - <span>${articleDates[i]}</span> - <a class="c" href="${articleURL}">${articleTitles[i]}</a><br><br>`;
+                            homepageArticleList += `<div><span class="articleDate">${articleDates[i]}</span><br><a class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br>`;
                         }
 
                         // add stuff to object

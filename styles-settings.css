@@ -1,9 +1,13 @@
 /* screen width higher than 1000 px */
 @media screen and (min-width: 2000px) {
     /* article padding */
-    .articleBody {
+    .articleBody, .blogBody {
         padding-left: 20%;
         padding-right: 20%;
+    }
+    /* article date */
+    span.articleDate {
+      font-size: 0.5vw;
     }
     /* two-col layout */
     div.column {
@@ -96,9 +100,13 @@
   /* screen width higher than 1000 px */
   @media screen and (max-width: 2000px) and (min-width: 1000px) {
     /* article padding */
-    .articleBody {
+    .articleBody, .blogBody {
         padding-left: 10%;
         padding-right: 10%;
+    }
+    /* article date */
+    span.articleDate {
+      font-size: 0.8vw;
     }
     /* two-col layout */
     div.column {
@@ -190,9 +198,13 @@
   /* screen width lower than 1000 px */
   @media screen and (max-width: 1000px) and (min-width: 0px) {
     /* article padding */
-    .articleBody {
+    .articleBody, .blogBody {
         padding-left: 5%;
         padding-right: 5%;
+    }
+    /* article date */
+    span.articleDate {
+      font-size: 1.6vw;
     }
     /* two-col layout */
     div.column {
