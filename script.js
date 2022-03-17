@@ -125,7 +125,7 @@ function loadObjects(langsObj) {
                     case 'themeSwitcher':
                         // arrangement of theme link
                         if (getCookie('theme') == 0) {
-                            $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌑</a>`)
+                            $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌒</a>`)
                             $("#mainStylesheet").attr('href','/styles-light.css')
                     
                             // for articles
@@ -265,7 +265,7 @@ function changeTheme() {
         }
     } else {
         setCookie('theme',0)
-        $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌑</a>`)
+        $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌒</a>`)
         $("#mainStylesheet").attr('href','/styles-light.css')
 
         // for articles
