@@ -1,7 +1,7 @@
 // GENERAL VARIABLES
 var cvHeading;
 var edWorkContents;
-var otherContents;
+var otherContents = '';
 var content;
 
 // ABOUT ME SECTION, CV CONTENTS -------------  
@@ -55,35 +55,60 @@ function loadCV() {
 
 // OTHER SECTION ------------------------------------------
     // list sections to loop over (these are identical)
-    let other_s = ['skills','languages']
+    let other_s = ['languages','skills'];
     // loop over the sections
     for (k = 0; k < other_s.length; k++) {
         // get section content from cvcontent json
-        content = cvContent[other_s[k]];
+        let content = cvContent['other'][other_s[k]];
+
         // HEADING
-        otherContents = '';
+        otherContents += `<div><h3>${content['heading'][cvLang]}</h3></div>`;
 
         // LOOP OVER CONTENTS LIST
-        for (i = 0; i < content["list"][cvLang].length; i++) {
-            // section heading
-            otherContents += `<div><h3>${content['heading'][cvLang]}</h3></div>`;
+        for (const [level, langContent] of Object.entries(content['list'][cvLang])) {
+            // for stuff with levels of difficulty
+            if (level != 'noLevel') {
+                // mark level
+                otherContents += `<ul><li><h4>${content['level'][cvLang][level]}</h4></li><ul>`;
 
-            // level heading if the section warrants it
-            if ('level' in content) {
-                
+                // add list elements
+                for (s = 0; s < langContent.length; s++) {
+                    otherContents += `<li><span>${langContent[s]}</span></li>`;
+                }
+                otherContents += '</ul></ul>';
             }
+            // if there's no level of difficulty
+            else {
+                // mark level
+                otherContents += `<ul>`;
 
-            // add contents to section
-            otherContents += `${title}${institution}${dates}${location}`
+                // add list elements
+                for (s = 0; s < langContent.length; s++) {
+                    otherContents += `<li><span>${langContent[s]}</span></li>`;
+                }
+                otherContents += '</ul></ul>';
+            }
         }
     }
     // add contents to section innerhtml
-    $(`#${ed_work[k]}Section`).html(otherContents)
-    // get section content from cvcontent json
-    content = cvContent["other"]
-    // HEADINGS
-    otherContents
+    $(`#otherSection`).html(otherContents)
+}
 
+// AFTER JSON LOADS, LOAD CV
+aboutMeJSON.done(() => {
+    loadCV()
+})
 
-    $("#otherSection").html(otherContents)
+// CHANGE LANGUAGE FUNCTION
+function changeCVLang(l) {
+    // switch language
+    cvLang = l;
+
+    aboutMeJSON.done(() => {
+        loadCV()
+    })
+
+    allFiles.done(() => {
+        loadObjects(langs)
+    })
 }

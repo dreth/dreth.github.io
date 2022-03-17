@@ -205,62 +205,62 @@
     },
     "other": {
         "languages": {
-            "heading":{
+            "heading": {
                 "en":"🗺️ Languages",
                 "es":"🗺️ Idiomas",
                 "nl":"🗺️ Languages"
             },
             "level":{
-                "advanced":{
-                    "en":"Advanced/Native:",
-                    "es":"Avanzado/Nativo:",
-                    "nl":"Gevorderd/Native:"
+                "en": {
+                    "advanced":"Advanced/Native:",
+                    "intermediate":"Intermediate:",
+                    "basic":"Basic:"
                 },
-                "intermediate":{
-                    "en":"Intermediate:",
-                    "es":"Intermedio:",
-                    "nl":"Intermediate:"
+                "es":{
+                    "advanced":"Avanzado/Nativo:",
+                    "intermediate":"Intermedio:",
+                    "basic":"Básico:"
                 },
-                "basic":{
-                    "en":"Basic:",
-                    "es":"Básico:",
-                    "nl":"Basic:"
+                "nl":{
+                    "advanced":"Gevorderd/Native:",
+                    "intermediate":"Intermediate:",
+                    "basic":"Basic:"
                 }
             },
             "list": {
-                "advanced":{
-                    "en":[
+                "en":{
+                    "advanced":[
                         "🇪🇸🇩🇴 Spanish",
                         "🇺🇸🇬🇧 English"
                     ],
-                    "es":[
-                        "🇪🇸🇩🇴 Español",
-                        "🇺🇸🇬🇧 Inglés"   
-                    ],
-                    "nl":[
-                        "🇪🇸🇩🇴 Spaans",
-                        "🇺🇸🇬🇧 Engels"
-                    ]
-                },
-                "intermediate":{
-                    "en":[
+                    "intermediate":[
                         "🇳🇱🇧🇪 Dutch"
                     ],
-                    "es":[
-                        "🇳🇱🇧🇪 Neerlandés"
-                    ],
-                    "nl":[
-                        "🇳🇱🇧🇪 Nederlands"
+                    "basic":[
+                        "🇮🇹 Italian"
                     ]
                 },
-                "basic":{
-                    "en":[
-                        "🇮🇹 Italian"
+                "es":{
+                    "advanced":[
+                        "🇪🇸🇩🇴 Español",
+                        "🇺🇸🇬🇧 Inglés"
                     ],
-                    "es":[
+                    "intermediate":[
+                        "🇳🇱🇧🇪 Neerlandés"
+                    ],
+                    "basic":[
                         "🇮🇹 Italiano"
+                    ]
+                },
+                "nl":{
+                    "advanced":[
+                        "🇪🇸🇩🇴 Spaans",
+                        "🇺🇸🇬🇧 Engels"
                     ],
-                    "nl":[
+                    "intermediate":[
+                        "🇳🇱🇧🇪 Nederlands"
+                    ],
+                    "basic":[
                         "🇮🇹 Italiaans"
                     ]
                 }
@@ -273,24 +273,30 @@
                 "nl":"🖥️ Vaardigheden"
             },
             "list":{
-                "en":[
-                    "Python, R",
-                    "SQL, DB design",
-                    "Spreadsheets/Excel",
-                    "Simple web development (html, css, js)"
-                ],
-                "es":[
-                    "Python, R",
-                    "SQL, diseño de BD",
-                    "Hojas de cálculo/Excel",
-                    "Desarrollo web básico (html, css, js)"
-                ],
-                "nl":[
-                    "Python, R",
-                    "SQL, DB design",
-                    "Spreadsheets/Excel",
-                    "Simple web development (html, css, js)"
-                ]
+                "en":{
+                    "noLevel":[
+                        "Python, R",
+                        "SQL, DB design",
+                        "Spreadsheets/Excel",
+                        "Simple web development (html, css, js)"
+                    ]
+                },
+                "es":{
+                    "noLevel":[
+                        "Python, R",
+                        "SQL, diseño de BD",
+                        "Hojas de cálculo/Excel",
+                        "Desarrollo web básico (html, css, js)"
+                    ]
+                },
+                "nl":{
+                    "noLevel":[
+                        "Python, R",
+                        "SQL, DB design",
+                        "Spreadsheets/Excel",
+                        "Simple web development (html, css, js)"
+                    ]
+                }
             }
         }
     }

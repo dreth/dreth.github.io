@@ -245,7 +245,11 @@ function loadObjects(langsObj) {
 function updateLang(l) {
     setCookie('language',l)
     language = l;
-    loadObjects(langs)
+
+    // reload all objectes
+    allFiles.done(() => {
+        loadObjects(langs)
+    })
 }
 
 // change theme
