@@ -11,7 +11,7 @@ import requests
 def get_links(type):
     input('did you check everything?')
 
-    with open('./assets/data/links.json', 'r') as f:
+    with open('./data/links.json', 'r') as f:
         links = json.load(f)
 
     if type == 1:
@@ -43,7 +43,7 @@ def get_links(type):
                 # assemble and print elements
                 links['wikipedia'][page_name] = f"{lang}_{url_dir}"
 
-        with open('./assets/data/links.json', 'w') as f:
+        with open('./data/links.json', 'w') as f:
             json.dump(links, f, indent=4, ensure_ascii=False)
     
     elif type == 2:
@@ -87,7 +87,7 @@ def get_links(type):
     else:
         exit()
 
-    with open('./assets/data/links.json', 'w') as f:
+    with open('./data/links.json', 'w') as f:
             json.dump(links, f, indent=4, ensure_ascii=False)
 
 
