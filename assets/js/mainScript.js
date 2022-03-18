@@ -78,7 +78,7 @@ coolLinksJSON.done(coolLinksJSON, (coolLinksData) => {
 })
 
 // ALL FILES LOADED?
-allFiles = $.when(langsJSON, articlesJSON, playlistsJSON, coolLinksJSON)
+allFiles = $.when(langsJSON, articlesJSON, playlistsJSON, coolLinksJSON);
 
 // COOKIES ---------------------------------------
 function setCookie(key, value) {

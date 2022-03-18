@@ -13,7 +13,7 @@ articlesJSON.done(() => {
         let articleURL = `/blog/${articleTag[i]}/`;
 
         // append to article list html object
-        artList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br><br>`;
+        artList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br><br>`;
     }
     artList += '<hr>';
 
@@ -21,6 +21,17 @@ articlesJSON.done(() => {
     $("#articleList").html(artList);
 })
 
+// function to change blog icon (fun stuff)
+function setBlogIcon(icon) {
+    allFiles.done(() => {
+        $("#blogTitle").html($("#blogTitle").html().replace('🗒️',icon))
+    })
+}
+function removeBlogIcon() {
+    allFiles.done(() => {
+        loadObjects(langs)
+    })
+}
 
 // check if there's a post div id to insert article content
 if (document.getElementById("content")) {
