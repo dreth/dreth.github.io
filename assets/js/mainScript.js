@@ -34,6 +34,8 @@ $("#homepageCoolLinkPreview").toggle()
 $("#homepageAboutMePreview").toggle()
 // hide lang name
 $("#langName").toggle()
+// add notepad to blog link li
+$("#blogHomepageLi").attr('data-before','🗒️')
 
 // LANGUAGES -------------- get languages and labels
 var langsJSON = $.getJSON('/data/languages.json');
@@ -178,7 +180,7 @@ function loadObjects(langsObj) {
                             let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
     
                             // append to article list html object
-                            homepageArticleList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br>`;
+                            homepageArticleList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br>`;
                         }
 
                         // add stuff to object
@@ -228,7 +230,7 @@ function loadObjects(langsObj) {
                         // creating homepage playlists list
                         for (const [name, page] of Object.entries(homepagePlaylist)) {
                             // append to article list html object
-                            homepagePlaylistList += `<a class="p" href="${baseSpotifyLink}${page}">${name}<br><img class="playlistImages" src="/playlists/images/${name}.png"></a><br>`;
+                            homepagePlaylistList += `<a class="p" href="${baseSpotifyLink}${page}">${name}<br><img class="playlistImages" src="/assets/playlist_images/${name}.png"></a><br>`;
                         }
 
                         $('#homepagePlaylistPreview').html(homepagePlaylistList)
@@ -292,13 +294,34 @@ function toggleLangText(l) {
     }
 }
 
-// load objects
+// function to change blog icon (fun stuff)
+function setBlogIcon(icon) {
+    allFiles.done(() => {
+        if (document.getElementById('blogTitle')) {
+            $("#blogTitle").html($("#blogTitle").html().replace('🗒️',icon))
+        } else if (document.getElementById('blogHomepageLink')) {
+            $("#blogHomepageLi").attr('data-before',icon)
+        }
+    })
+}
+function removeBlogIcon() {
+    allFiles.done(() => {
+        loadObjects(langs)
+
+        // restore li icon if it exists
+        if (document.getElementById('blogHomepageLi')) {
+            $("#blogHomepageLi").attr('data-before','🗒️')
+        }
+    })
+}
+
+// LOAD ALL OBJECTS -------------------------------------
 allFiles.done(() => {
     loadObjects(langs)
 })
 
 
-// ADD HOMEPAGE EVENTS -------------------------
+// ADD HOMEPAGE EVENTS ----------------------------------
 // ID of items to add events to
 itemsToAddEventsTo = {
     'expandAboutMePreview':'homepageAboutMePreview',

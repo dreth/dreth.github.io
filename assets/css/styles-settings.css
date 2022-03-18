@@ -304,7 +304,7 @@
   }
   
   li.blog:before {
-    content: '🗒️';
+    content: attr(data-before);
   }
   
   li.cv:before {

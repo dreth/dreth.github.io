@@ -21,18 +21,6 @@ articlesJSON.done(() => {
     $("#articleList").html(artList);
 })
 
-// function to change blog icon (fun stuff)
-function setBlogIcon(icon) {
-    allFiles.done(() => {
-        $("#blogTitle").html($("#blogTitle").html().replace('🗒️',icon))
-    })
-}
-function removeBlogIcon() {
-    allFiles.done(() => {
-        loadObjects(langs)
-    })
-}
-
 // check if there's a post div id to insert article content
 if (document.getElementById("content")) {
     // fetch the markdown file
