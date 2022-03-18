@@ -53,7 +53,7 @@ As any human, aside from research I've done, I have my own biases and opinions, 
 
 Some disclaimers I must make before jumping right into it:
 
-- This is **my opinion**, formulated from a combination many other people's opinions and lots... lots of reading and watching the market. I am in no way, shape or form an authority on this, I simply speak from my personal experience, mistakes, successes and things I've read. <span class="red">NONE of what I say here should constituted as financial advice</span>, the way you invest is the way YOU invest. All I'm trying to do with this article is to encourage you to **do your own research** (DYOR).
+- This is **my opinion**, formulated from a combination many other people's opinions and lots... lots of reading and watching the market. I am in no way, shape or form an authority on this, I simply speak from my personal experience, mistakes, successes and things I've read. <span class="red">NONE of what I say here should be constituted as financial advice</span>, the way you invest is the way YOU invest. All I'm trying to do with this article is to encourage you to **do your own research** (DYOR).
 
 - I've been deeply interested in this world for the past 5 years and have seen lots and lots of disasters, scams, cool projects, as well as massive opportunities, some I've taken advantage of, others I've <a id="boysDontCryLink" onclick="showBoysDontCry()">almost cried</a> over missing. Do not beat yourself over missed opportunities, you don't catch the bus or train on time _every time_ you go to the bus stop, do you?
 
