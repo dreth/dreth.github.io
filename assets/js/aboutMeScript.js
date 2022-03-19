@@ -10,6 +10,9 @@ aboutMeJSON.done(aboutMeJSON, (cvData) => {
     cvContent = cvData;
 })
 
+// jsons to load
+var aboutFiles = $.when(langsJSON, aboutMeJSON);
+
 // SET LANGUAGE TO DISPLAY CV IN -------------
 if (language == 'en' | language == 'nl') {
     var cvLang = 'en';
@@ -19,12 +22,15 @@ if (language == 'en' | language == 'nl') {
 
 // GENERATE CONTENTS FOR CV -------------------
 function loadCV() {
-    langsJSON.done(langsJSON, (langsData) => {
+    aboutFiles.done(langsJSON, (langsData) => {
         // site title
-        $("#aboutMeTitleBar").html(`${langsData['content']['about'][cvLang]} | Daniel A.`)
+        $("#aboutMeTitleBar").html(`${langs['content']['about'][cvLang]} | Daniel A.`)
 
         // aboutMeDescription
-        $("#aboutMeDescription").html(`${langsData['content']['about_me_text'][cvLang]}`)
+        $("#aboutMeDescription").html(langs['content']['about_me_text'][cvLang])
+
+        // site subtitle (what do i do)
+        $("#aboutSubtitle").html(langs['content']['subtitle'][cvLang])
     })
 
     // about me section title
@@ -103,7 +109,7 @@ function loadCV() {
 }
 
 // AFTER JSON LOADS, LOAD CV
-aboutMeJSON.done(() => {
+aboutFiles.done(() => {
     loadCV()
 })
 
@@ -112,7 +118,7 @@ function changeCVLang(l) {
     // switch language
     cvLang = l;
 
-    aboutMeJSON.done(() => {
+    aboutFiles.done(() => {
         loadCV()
     })
 }
