@@ -36,6 +36,8 @@ The invasion is an escalation following a tense situation that has been ongoing 
 
 ### Events directly related in the timeline
 
+- [2008 Bucharest summit](https://en.wikipedia.org/wiki/2008_Bucharest_summit) in which NATO gave a green light to Georgia and Ukraine, right next to Russia's border, that they could *'WILL'* join NATO.
+
 - [2013 Euromaidan protests](https://en.wikipedia.org/wiki/Euromaidan): protests in the independence square of Kyiv and several other parts of the country where the people of Ukraine demanded closer approach to the EU. The protests started because the Ukrainian government at the time (led by Viktor Yanukovych) suspended the signing of the [European Union–Ukraine Association Agreement](https://en.wikipedia.org/wiki/European_Union%E2%80%93Ukraine_Association_Agreement).
 
 - [2014 Annexation of Crimea by Russia](https://en.wikipedia.org/wiki/Annexation_of_Crimea_by_the_Russian_Federation): where Russia unilaterally annexed Crimea after an [internationally unrecognized referendum](https://en.wikipedia.org/wiki/2014_Crimean_status_referendum) on its status.
