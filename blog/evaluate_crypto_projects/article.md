@@ -6,9 +6,6 @@ A few weeks ago, I had a cool conversation about life with my friend César, who
 
 As any human, aside from research I've done, I have my own biases and opinions, and like everyone else does, I also apply these to my investment choices. So the answer to the question of **what YOU should invest in** is a question only *you* can answer. All I'll do in this article is point to resources and details to watch out when investing on crypto projects, because I've heard far too many times the sentence _"Hey i found this really **good** project, you should totally check it out!"_, and then I check it out and it's just like any other project of its type. Competition is incredibly aggressive and fast on the crypto space, _almost everything_ (more on this later) is open source software, and anyone can fork anything and improve it or change it.
 
-<!-- BIBI TIMES -->
-<a href="/blog" id="BibiSecret1" class="bibi" onclick="setCookie('bibiCookie',2,1)"><h1>🧗</h1></a>
-
 ***
 
 ## Article index
