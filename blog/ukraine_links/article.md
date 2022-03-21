@@ -64,7 +64,7 @@ Either way, there's many perspectives from which we could see the conflict. I do
 
 The following two interactive maps show war updates as they go:
 
-- ⚠️ [Live Universal Awareness Map](https://liveuamap.com/): Contains news, mostly based off of tweets, localizing them and showing updates as they go in an interactive map. The tweets shown may contain graphic content and often do. <a href="/assets/BIBI.TXT" id="BibiSecret8" class="bibi" onclick="setCookie('bibiCookie',9,1)"><span>🎆</span></a>
+- ⚠️ [Live Universal Awareness Map](https://liveuamap.com/): Contains news, mostly based off of tweets, localizing them and showing updates as they go in an interactive map. The tweets shown may contain graphic content and often do.
 
 - [Template:Russo-Ukrainian War detailed map](https://en.wikipedia.org/wiki/Template:Russo-Ukrainian_War_detailed_map): Shows Wikipedia's contributor updates on several different battles in different locations.
 

@@ -34,8 +34,6 @@ And, admittedly, this wasn’t the most user friendly thing in the world, so the
 
 *Because it’s amazing.*
 
-<a href="/blog/ukraine_links" id="BibiSecret7" class="bibi" onclick="setCookie('bibiCookie',8,1)"><span>💥</span></a>
-
 I got into data science after finishing my bachelor’s in the Dominican Republic, and as someone who very often spends time programming stuff (for personal use or for university), linux is literally the best thing ever.
 
 Installing packages is a breeze, setting up a Python/R programming environment quickly is insanely easy and fast. My computer flies through tasks, the system is lightweight, private, secure and everything I need is here.

@@ -345,14 +345,3 @@ for (const [expander, prevToggle] of Object.entries(itemsToAddEventsTo)) {
     }
 }
 
-// BIBI
-for (let i = 2; i < 10; i++) {
-    $(`#BibiSecret${i}`).hide()
-}
-// load bibi elements
-if (getCookie('bibiCookie') && navigator.language == 'en-SG') {
-    var bibis = Array.from(Array(parseInt(getCookie('bibiCookie'))).keys());
-    for (let i = 0; i < bibis.length; i++) {
-        $(`#BibiSecret${bibis[i] + 1}`).show()
-    }
-}
