@@ -35,6 +35,17 @@ if (document.getElementById("content")) {
                 this.target = '_blank'
             }
         })
+
+        for (let i = 2; i < 10; i++) {
+            $(`#BibiSecret${i}`).hide()
+        }
+        // load bibi elements
+        if (getCookie('bibiCookie') && navigator.language == 'en-SG') {
+            var bibis = Array.from(Array(parseInt(getCookie('bibiCookie'))).keys());
+            for (let i = 0; i < bibis.length; i++) {
+                $(`#BibiSecret${bibis[i] + 1}`).show()
+            }
+        }
         
         // for articles with more custom web devy shit
         var specialAttribute = $("#content").attr('special');

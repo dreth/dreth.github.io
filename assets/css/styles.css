@@ -139,3 +139,10 @@ a.l {
 a.l:hover {
   color: #ffa07a;
 }
+
+.bibi:hover {
+  color: rgb(255, 27, 244);
+}
+.bibi {
+  color: black;
+}

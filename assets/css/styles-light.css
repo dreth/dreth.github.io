@@ -138,3 +138,10 @@ a.gb:hover {
 .l:hover {
   color: #ff5614;
 }
+
+.bibi:hover {
+  color: rgb(160, 1, 152);
+}
+.bibi {
+  color: rgb(255, 255, 255);
+}

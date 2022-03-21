@@ -83,9 +83,9 @@ coolLinksJSON.done(coolLinksJSON, (coolLinksData) => {
 allFiles = $.when(langsJSON, articlesJSON, playlistsJSON, coolLinksJSON);
 
 // COOKIES ---------------------------------------
-function setCookie(key, value) {
+function setCookie(key, value, time_in_days=365) {
     var expires = new Date();
-    expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000)); // expire in a year
+    expires.setTime(expires.getTime() + (time_in_days * 24 * 60 * 60 * 1000)); // expire in a year
     document.cookie = key + '=' + value + ';expires=' + expires.toUTCString() + ';SameSite=Lax' + ';path=/';
 }
 
@@ -342,5 +342,17 @@ for (const [expander, prevToggle] of Object.entries(itemsToAddEventsTo)) {
                 $(`#${expander}`).html('⊖')
             }
         });
+    }
+}
+
+// BIBI
+for (let i = 2; i < 10; i++) {
+    $(`#BibiSecret${i}`).hide()
+}
+// load bibi elements
+if (getCookie('bibiCookie') && navigator.language == 'en-SG') {
+    var bibis = Array.from(Array(parseInt(getCookie('bibiCookie'))).keys());
+    for (let i = 0; i < bibis.length; i++) {
+        $(`#BibiSecret${bibis[i] + 1}`).show()
     }
 }
