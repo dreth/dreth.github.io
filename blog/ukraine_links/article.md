@@ -24,7 +24,7 @@ Some of the links I share here may have extremely graphic content. I'll mark the
 ***
 ## Background
 
-The invasion is an escalation following a tense situation that has been ongoing since 2014 but has a lot more background. The news' approach of saying that the escalation was caused by Ukraine wanting to join NATO is oversimplifying the situation, yes, that's a big deal, but there's more to it. Wikipedia has some great articles on the events previous to the war as well as some history:
+The invasion is an escalation following a tense situation that has been ongoing since 2014 but has a lot more background. The news' approach of saying that the escalation was caused by Ukraine wanting to join NATO is oversimplifying the situation, yes, that's number 1, but there's more to it. Wikipedia has some great articles on the events previous to the war as well as some history:
 
 ### Not directly related but important events
 
