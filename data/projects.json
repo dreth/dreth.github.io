@@ -109,9 +109,9 @@
                 "nl":"Financial prediction scripts."
             },
             {
-                "en":"",
-                "es":"",
-                "nl":""
+                "en":"Portfolio efficient frontier calculator script.",
+                "es":"Script para calcular la frontera eficiente de un portafolio de inversión.",
+                "nl":"Portfolio efficient frontier calculator script."
             },
             {
                 "en":"",
@@ -181,14 +181,14 @@
                 "nl":"An RShiny web app similar to the previous Dash app, with interactive plots and a dashboard UI."
             },
             {
-                "en":"Some cool financial asset price prediction scripts.",
-                "es":"Algunos scripts de predicción de precio de activos financieros.",
-                "nl":"Some cool financial asset price prediction scripts."
+                "en":"Some cool financial asset price prediction scripts. At the time was a big challenge, but very fun to make.",
+                "es":"Algunos scripts de predicción de precio de activos financieros. Un gran reto en su momento, pero muy divertido.",
+                "nl":"Some cool financial asset price prediction scripts. At the time was a big challenge, but very fun to make."
             },
             {
-                "en":"",
-                "es":"",
-                "nl":""
+                "en":"A simple portfolio efficient frontier calculator derived from a boilerplate excel sheet. May not be correct anymore, but was a fun project to try to derive from excel spreadsheets.",
+                "es":"Una calculadora de la frontera eficiente de un  portafolio derivado de una hoja de excel base que nos dieron en clases. Quizás no esté del todo correcto, pero fue entretenido derivar el código de una hoja de cálculo.",
+                "nl":"A simple portfolio efficient frontier calculator derived from a boilerplate excel sheet. May not be correct anymore, but was a fun project to try to derive from excel spreadsheets."
             },
             {
                 "en":"",
