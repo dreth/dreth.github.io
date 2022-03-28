@@ -223,7 +223,7 @@ function loadObjects(langsObj) {
     
     
                     // playlists preview
-                    case 'homepagePlaylistPreview':
+                    case 'homepagePlaylistsPreview':
                         // set homepage playlists stuff
                         homepagePlaylistList = `<br><span>${translation}</span><br><br>`;
 
@@ -233,7 +233,7 @@ function loadObjects(langsObj) {
                             homepagePlaylistList += `<a class="p" href="${baseSpotifyLink}${page}">${name}<br><img class="playlistImages" src="/assets/playlist_images/${name}.png"></a><br>`;
                         }
 
-                        $('#homepagePlaylistPreview').html(homepagePlaylistList)
+                        $('#homepagePlaylistsPreview').html(homepagePlaylistList)
                         break;
                 }
     
@@ -327,7 +327,7 @@ itemsToAddEventsTo = {
     'expandAboutMePreview':'homepageAboutMePreview',
     'expandBlogPreview':'homepageArticlePreview',
     'expandCoolLinksPreview':'homepageCoolLinkPreview',
-    'expandPlaylistsPreview':'homepagePlaylistPreview'
+    'expandPlaylistsPreview':'homepagePlaylistsPreview'
 }
 
 // adding events
