@@ -94,6 +94,11 @@
                 "nl":"Master's afstudeerproject: \"Development of an automatic tool for periodic surveillance of actuarial and demographic indicators\""
             },
             {
+                "en":"Predicting HDI, a full pipeline with a focus on preprocessing and EDA.",
+                "es":"Prediciendo IDH, un pipeline completo con enfoque en preprocesamiento y EDA.",
+                "nl":"Predicting HDI, a full pipeline with a focus on preprocessing and EDA."
+            },
+            {
                 "en":"Simple Dash web app",
                 "es":"Aplicación web sencilla utilizando Dash",
                 "nl":"Simple Dash web app"
@@ -114,9 +119,9 @@
                 "nl":"Portfolio efficient frontier calculator script."
             },
             {
-                "en":"",
-                "es":"",
-                "nl":""
+                "en":"Plot generator with a simple CL-based menu.",
+                "es":"Generador de gráficos con un menu sencillo de línea de comando.",
+                "nl":"Plot generator with a simple CL-based menu."
             }
         ],
         "unfinished":[
@@ -171,6 +176,11 @@
                 "nl":"An RShiny dashboard showing visualizations of mortality and life expectancy indicators of the Spanish population. The data is queried and preprocessed through a set of Python scripts and the entire application is containerized using Docker."
             },
             {
+                "en":"A simple human development index prediction model using demographic and development variables and implementing a full modelling pipeline with special focus on preprocessing (using Python) and exploratory data analysis (using R).",
+                "es":"Un modelo de predicción estadístico sencillo para predecir índice de desarrollo humano utilizando varias métricas demográficas y de desarrollo e implementando un pipeline completo de modelaje con especial enfoque en preprocesamiento (en Python) y análisis exploratorio (en R).",
+                "nl":"A simple human development index prediction model using demographic and development variables and implementing a full modelling pipeline with special focus on preprocessing (using Python) and exploratory data analysis (using R)."
+            },
+            {
                 "en":"A Dash web app with several interactive plots and a dashboard-like UI using Python.",
                 "es":"Una aplicación web utilizando Dash que incluye varios gráficos interactivos y una interfaz gráfica de tipo dashboard utilizando Python.",
                 "nl":"A Dash web app with several interactive plots and a dashboard-like UI using Python."
@@ -191,9 +201,9 @@
                 "nl":"A simple portfolio efficient frontier calculator derived from a boilerplate excel sheet. May not be correct anymore, but was a fun project to try to derive from excel spreadsheets."
             },
             {
-                "en":"",
-                "es":"",
-                "nl":""
+                "en":"A simple Python script to generate plots at a precalculus level using matplotlib.",
+                "es":"Un script sencillo de Python utilizando matplotlib para generar gráficos a nivel de precálculo",
+                "nl":"A simple Python script to generate plots at a precalculus level using matplotlib."
             }
         ],
         "unfinished":[
@@ -215,6 +225,7 @@
         ],
         "academic":[
             "https://github.com/dreth/tfm_uc3m",
+            "https://github.com/dreth/UC3MStatisticalLearning",
             "https://github.com/dreth/DashTakeaway",
             "https://github.com/dreth/ShinyTakeaway",
             "https://github.com/dreth/ProyectosComplementos",

@@ -22,7 +22,11 @@ function updateProjectsList() {
                 // project DESCRIPTIONS
                 projectList += `<br><ul class="noBullets"><li class="pjs-desc">${projectDescriptions[sec][i][language]}</li>`;
                 // project LINKS
-                projectList += `<br><li class="pjs-gh"><a class="b" href="${projectLinks[sec][i]}">${projectLinkHeading[projectTypeOfLink][language]}</a></li></ul><br><br>`;
+                if (projectLinks[sec][i] != "") {
+                    projectList += `<br><li class="pjs-gh"><a class="b" href="${projectLinks[sec][i]}">${projectLinkHeading[projectTypeOfLink][language]}</a></li></ul><br><br>`;
+                } else {
+                    projectList += `<br><br>`;
+                }
             }
             projectList += '</ul><hr>';
         }
@@ -38,4 +42,11 @@ function updateProjectsList() {
 // update projects list
 allFiles.done(() => {
     updateProjectsList()
+
+    // make all links' target _blank if the link does not have #
+    $('a').click(function() {
+        if (!(this.href.indexOf('#') > -1) && (!(this.href.indexOf('https://dac.ac/') > -1) | !(this.href.indexOf('/') > -1))) {
+            this.target = '_blank'
+        }
+    })
 })
