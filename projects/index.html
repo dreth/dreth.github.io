@@ -44,11 +44,17 @@
       <div class="column rightcol">
         <!-- Theme switcher -->
         <br><div id="themeSwitcher"></div>
+        <br>
+        <div>
+          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es')" onmouseleave="toggleLangText('es')" class="l">🇪🇸🇩🇴</a><br>
+          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en')" onmouseleave="toggleLangText('en')" class="l">🇬🇧🇺🇸</a><br>
+          <a onclick="updateLang('nl')" onmouseenter="toggleLangText('nl')" onmouseleave="toggleLangText('nl')" class="l">🇳🇱🇧🇪</a><br>
+          <span id="langName"></span>
+        </div>
       </div>
     </div>
     <hr>
     <div id="projectsList"></div>
-
     <div>
       <a href="#" onclick="this.href = home;" oncontextmenu="this.href = home;" class="gb">
         ⬅️ dac.ac</a>

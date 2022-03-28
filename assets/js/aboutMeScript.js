@@ -22,16 +22,14 @@ if (language == 'en' | language == 'nl') {
 
 // GENERATE CONTENTS FOR CV -------------------
 function loadCV() {
-    aboutFiles.done(langsJSON, (langsData) => {
-        // site title
-        $("#aboutMeTitleBar").html(`${langs['content']['about'][cvLang]} | Daniel A.`)
+    // site title
+    $("#aboutMeTitleBar").html(`${langs['content']['about'][cvLang]} | Daniel A.`)
 
-        // aboutMeDescription
-        $("#aboutMeDescription").html(langs['content']['about_me_text'][cvLang])
+    // aboutMeDescription
+    $("#aboutMeDescription").html(langs['content']['about_me_text'][cvLang])
 
-        // site subtitle (what do i do)
-        $("#aboutSubtitle").html(langs['content']['subtitle'][cvLang])
-    })
+    // site subtitle (what do i do)
+    $("#aboutSubtitle").html(langs['content']['subtitle'][cvLang])
 
     // about me section title
     $("#aboutHeading").html(cvContent["headings"]["aboutme"][cvLang])

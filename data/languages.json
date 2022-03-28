@@ -40,6 +40,16 @@
             "es":"⛓️ enlaces cool",
             "nl":"⛓️ coole links"
         },
+        "projects_title": {
+            "en":"⚗️ projects",
+            "es":"⚗️ proyectos",
+            "nl":"⚗️ projecten"
+        },
+        "projects": {
+            "en":"projects",
+            "es":"proyectos",
+            "nl":"projecten"
+        },
         "playlists": {
             "en":"playlists",
             "es":"listas de reproducción",
@@ -121,6 +131,7 @@
             "blogHomepageLink":"blog",
             "coolLinksHomepageLink":"cool_links",
             "playlistsHomepageLink":"playlists",
+            "projectsHomepageLink":"projects",
             "githubHomepageLink":"github",
             "linkedinHomepageLink":"linkedin",
             "emailHomepageLink":"e-mail",
@@ -128,13 +139,15 @@
             "blogTitle":"blog_title",
             "articlesLabel":"articles_label",
             "linksTitle":"cool_links_title",
-            "otherSitesLabel":"other_sites"
+            "otherSitesLabel":"other_sites",
+            "projectsTitle":"projects_title"
         },
         "1": {
             "homepageArticlePreview":"homepage_blogposts",
-            "homepagePlaylistPreview":"homepage_playlist",
+            "homepagePlaylistsPreview":"homepage_playlist",
             "homepageCoolLinkPreview":"homepage_wikipedia",
             "homepageAboutMePreview":"about_me_text",
+            "homepageProjectsPreview":"about_me_text",
             "aboutMeDescription":"about_me_text",
             "themeSwitcher":"theme_lang"
         },
@@ -142,7 +155,8 @@
             "linksTitleBar":"cool_links",
             "blogTitleBar":"blog",
             "playlistsTitleBar":"playlists",
-            "aboutMeTitleBar":"about"
+            "aboutMeTitleBar":"about",
+            "projectsTitleBar":"projects"
         }
     }
 }

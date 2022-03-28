@@ -5,6 +5,7 @@ var blog = '/blog/';
 var about = '/about/';
 var home = '/';
 var status = '/status';
+var projects = '/projects';
 var cool_links = '/cool_links';
 var playlists = '/playlists';
 var email = 'mailto:contact@m.dac.ac';
@@ -27,9 +28,11 @@ const wiktionaryBaseLink = 'wiktionary.org/wiki/';
 // hide article preview list
 $("#homepageArticlePreview").toggle()
 // hide homepage playlists preview
-$("#homepagePlaylistPreview").toggle()
+$("#homepagePlaylistsPreview").toggle()
 // hide homepage links preview
 $("#homepageCoolLinkPreview").toggle()
+// hide homepage projects preview
+$("#homepageProjectsPreview").toggle()
 // schakelaar voor startpagina "over mij" sectie
 $("#homepageAboutMePreview").toggle()
 // hide lang name
@@ -79,8 +82,26 @@ coolLinksJSON.done(coolLinksJSON, (coolLinksData) => {
     coolLinksContent = coolLinksData;
 })
 
+// PROJECTS STUFF -------- projects stuff
+var projectsJSON = $.getJSON('/data/projects.json');
+var projectLinkHeading;
+var projectHeadings;
+var projectSections;
+var projectNames;
+var projectDescriptions;
+var projectLinks;
+
+projectsJSON.done(projectsJSON, (projectsData) => {
+    projectHeadings = projectsData["projectHeadings"];
+    projectLinkHeading = projectsData["projectLinkHeading"];
+    projectSections = projectsData["projectSections"];
+    projectNames = projectsData["projectNames"];
+    projectDescriptions = projectsData["projectDescriptions"];
+    projectLinks = projectsData["projectLinks"];
+})
+
 // ALL FILES LOADED?
-allFiles = $.when(langsJSON, articlesJSON, playlistsJSON, coolLinksJSON);
+allFiles = $.when(langsJSON, articlesJSON, playlistsJSON, coolLinksJSON, projectsJSON);
 
 // COOKIES ---------------------------------------
 function setCookie(key, value, time_in_days=365) {
@@ -253,7 +274,13 @@ function updateLang(l) {
 
     // reload all objectes
     allFiles.done(() => {
+        // load all site objects specified the langs.json file
         loadObjects(langs)
+
+        // if on projects page
+        if (document.getElementById("projectsList")) {
+            updateProjectsList()
+        }
     })
 }
 
@@ -327,7 +354,8 @@ itemsToAddEventsTo = {
     'expandAboutMePreview':'homepageAboutMePreview',
     'expandBlogPreview':'homepageArticlePreview',
     'expandCoolLinksPreview':'homepageCoolLinkPreview',
-    'expandPlaylistsPreview':'homepagePlaylistsPreview'
+    'expandPlaylistsPreview':'homepagePlaylistsPreview',
+    'expandProjectsPreview':'homepageProjectsPreview'
 }
 
 // adding events
