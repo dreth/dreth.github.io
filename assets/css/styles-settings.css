@@ -322,6 +322,10 @@
   li.playlists:before {
     content: '🎶';
   }
+
+  li.projects:before {
+    content: '🧪';
+  }
   
   /* li bullet icons for cv section */
   li.tag:before {
