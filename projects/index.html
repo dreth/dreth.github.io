@@ -38,7 +38,7 @@
   <div>
     <div class="row">
       <div class="column leftcol">
-        <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
+        <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;" id="test"><h1>Daniel A.</h1></a>
         <h3 id="homepageSubtitle"></h3>
         <h3 id="projectsTitle">⚗️ proyects</h3>
       </div>
@@ -47,9 +47,9 @@
         <br><div id="themeSwitcher"></div>
         <br>
         <div>
-          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es')" onmouseleave="toggleLangText('es')" class="l">🇪🇸🇩🇴</a><br>
-          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en')" onmouseleave="toggleLangText('en')" class="l">🇬🇧🇺🇸</a><br>
-          <a onclick="updateLang('nl')" onmouseenter="toggleLangText('nl')" onmouseleave="toggleLangText('nl')" class="l">🇳🇱🇧🇪</a><br>
+          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es',1)" onmouseleave="toggleLangText('es',0)" class="l">🇪🇸🇩🇴</a><br>
+          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en',1)" onmouseleave="toggleLangText('en',0)" class="l">🇬🇧🇺🇸</a><br>
+          <a onclick="updateLang('nl')" onmouseenter="toggleLangText('nl',1)" onmouseleave="toggleLangText('nl',0)" class="l">🇳🇱🇧🇪</a><br>
           <span id="langName"></span>
         </div>
       </div>

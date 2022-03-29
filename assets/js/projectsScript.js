@@ -1,5 +1,5 @@
 // update language function
-function updateProjectsList() {    
+function updateProjectsList(l=language) {    
 
     // -------------------------- PROJECTS
     var projectList = '';
@@ -9,7 +9,7 @@ function updateProjectsList() {
         if (JSON.parse(projectSections[sec]["include"]) == true) {
             
             // generate heading
-            var projectHeading = `<h4>${projectSections[sec]['emoji']} ${projectHeadings[sec][language]}</h4>`;
+            var projectHeading = `<h4>${projectSections[sec]['emoji']} ${projectHeadings[sec][l]}</h4>`;
 
             // append to article list html object
             projectList += `${projectHeading}<ul class="noBullets">`;
@@ -18,12 +18,12 @@ function updateProjectsList() {
                 let projectTypeOfLink = projectLinks[sec][i].includes("github") ? "github" : "website";
 
                 // project NAMES
-                projectList += `<li class="pjs">${projectNames[sec][i][language]}</li>`;
+                projectList += `<li class="pjs">${projectNames[sec][i][l]}</li>`;
                 // project DESCRIPTIONS
-                projectList += `<br><ul class="noBullets"><li class="pjs-desc">${projectDescriptions[sec][i][language]}</li>`;
+                projectList += `<br><ul class="noBullets"><li class="pjs-desc">${projectDescriptions[sec][i][l]}</li>`;
                 // project LINKS
                 if (projectLinks[sec][i] != "") {
-                    projectList += `<br><li class="pjs-gh"><a class="b" href="${projectLinks[sec][i]}">${projectLinkHeading[projectTypeOfLink][language]}</a></li></ul><br><br>`;
+                    projectList += `<br><li class="pjs-gh"><a class="b" href="${projectLinks[sec][i]}">${projectLinkHeading[projectTypeOfLink][l]}</a></li></ul><br><br>`;
                 } else {
                     projectList += `<br><br>`;
                 }
@@ -45,7 +45,7 @@ allFiles.done(() => {
 
     // make all links' target _blank if the link does not have #
     $('a').click(function() {
-        if (!(this.href.indexOf('#') > -1) && (!(this.href.indexOf('https://dac.ac/') > -1) | !(this.href.indexOf('/') > -1))) {
+        if (!(this.href.indexOf('https://dac.ac/') > -1) | !(this.href.indexOf('#') > -1)) {
             this.target = '_blank'
         }
     })

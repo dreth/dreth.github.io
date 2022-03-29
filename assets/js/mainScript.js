@@ -131,14 +131,14 @@ if (navigator.language.substring(0,2) == 'es') {
 language = getCookie('language') ? getCookie('language') : browserLocale;
 
 // generate menus
-function loadObjects(langsObj) {
+function loadObjects(langsObj, l=language) {
     // loop over fields
     for (const [itemType, items] of Object.entries(langsObj["objectIds_Field"])) {
 
         // check if field is actually in the page before doing anything
         for (const [fieldId, content] of Object.entries(items)) {
             // get translation
-            translation = langsObj["content"][content][language]
+            translation = langsObj["content"][content][l]
 
             // loop over items
             if (document.getElementById(fieldId) && itemType == 2) {
@@ -309,7 +309,7 @@ function changeTheme() {
 }
 
 // show lang text on right col
-function toggleLangText(l) {
+function toggleLangText(l, event) {
     if ($(window).width() > 450) {
         langsJSON.done(() => {
             // get name of current language
@@ -317,6 +317,34 @@ function toggleLangText(l) {
             // add it to the langname lil thingy
             $("#langName").html(currentLangName)
             $("#langName").toggle()
+        })
+    }
+
+    // preview the language on mouse entry
+    if (event===1) {
+        allFiles.done(() => {
+            // reload objects with hover lang
+            loadObjects(langs, l)
+            // if on projects page
+            if (document.getElementById("projectsTitleBar")) {
+            // if on cv page
+                updateProjectsList(l)
+            } else if (document.getElementById("aboutMeTitleBar")) {
+                loadCV(l)
+            }
+        })
+    // go back to normal on mouse exit
+    } else {
+        allFiles.done(() => {
+            // reload objects back with original lang
+            loadObjects(langs, language)
+            // if on projects page
+            if (document.getElementById("projectsTitleBar")) {
+                updateProjectsList(language)
+            // if on cv page
+            } else if (document.getElementById("aboutMeTitleBar")) {
+                loadCV(language)
+            }
         })
     }
 }
