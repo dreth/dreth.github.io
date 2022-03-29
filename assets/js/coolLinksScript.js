@@ -6,6 +6,14 @@ $("#randomLinksTitle").toggle()
 $("#randomLinkBrowser").toggle()
 $("#goToRandomLinkTitle").toggle()
 
+// load list of random links
+var randomLinksJSON = $.getJSON('/data/random_links.json')
+var listOfRandomLinks;
+
+randomLinksJSON.done(randomLinksJSON, (listOfArticles) => {
+    listOfRandomLinks = listOfArticles["links"]
+})
+
 // links
 coolLinksJSON.done(() => {
 
@@ -106,12 +114,22 @@ function randomLinkSwitch() {
         // make hr NOT padded
         $("#coolLinksMiddleHR").attr('class','fullBody')
     }
+    // go to random link
+    randomLinksJSON.done(() => {
+        goToRandomLink()
+    })
 }
 
 // go to random link
 function goToRandomLink() {
-    // randomly select a link
-    
+    // if the list is loaded
+    randomLinksJSON.done(() => {
+        // randomly select a link
+        let randomlySelectedLink = listOfRandomLinks[listOfRandomLinks.length * Math.random() | 0];
+
+        // navigate to the selected link
+        $("#randomLinkBrowserEmbed").attr('src',randomlySelectedLink)
+    })
 }
 
 // run random link button loader
