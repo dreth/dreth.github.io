@@ -45,7 +45,7 @@ allFiles.done(() => {
 
     // make all links' target _blank if the link does not have #
     $('a').click(function() {
-        if (!(this.href.indexOf('https://dac.ac') > -1) | !(this.href.indexOf('#') > -1) | !(this.href.indexOf('/') > -1)) {
+        if (this.href != 'https://dac.ac/') {
             this.target = '_blank'
         }
     })
