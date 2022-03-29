@@ -133,4 +133,6 @@ function randomLinkSwitch() {
 }
 
 // run random link button loader
-randomLinkButtonLoader()
+randomLinksJSON.done(() => {
+    randomLinkButtonLoader()
+})
