@@ -47,7 +47,7 @@
             "emoji":"📚"
         },
         "unfinished":{
-            "include":"false",
+            "include":"true",
             "emoji":"🚧"
         }
     },
@@ -125,7 +125,11 @@
             }
         ],
         "unfinished":[
-            ""
+            {
+                "en":"Dutch vocabulary anki deck generator with noun articles (lidwoorden)",
+                "es":"Generador de deck de anki para vocabulario neerlandés con artículos para sustantivos (lidwoorden)",
+                "nl":"Dutch vocabulary anki deck generator with noun articles (lidwoorden)"
+            }
         ]
     },
     "projectDescriptions":{
@@ -207,7 +211,11 @@
             }
         ],
         "unfinished":[
-            ""
+            {
+                "en":"While studying dutch I thought community-made, free vocabulary anki decks were quite lackluster on the anki website. Especially because they didn't include articles for nouns (lidwoorden). I never quite got to finish it because other things took priority at the time, but I was almost done with it.",
+                "es":"Mientras estudiaba neerlandés, pensé que los decks para practicar vocabulario que había en la página de anki disponibles para descarga eran de poca calidad. Especialmente porque no incluían artículos para sustantivos (lidwoorden). Nunca llegué a sacar tiempo para terminarlo porque otras cosas tomaron prioridad en su momento, pero faltaba poco.",
+                "nl":"While studying dutch I thought community-made, free vocabulary anki decks were quite lackluster on the anki website. Especially because they didn't include articles for nouns (lidwoorden). I never quite got to finish it because other things took priority at the time, but I was almost done with it."
+            }
         ]
     },
     "projectLinks":{
@@ -233,7 +241,7 @@
             "https://github.com/dreth/ProyectoLogProg"
         ],
         "unfinished":[
-            ""
+            "https://github.com/dreth/nlVertalingenEnLidwoorden"
         ]
     }
 }
