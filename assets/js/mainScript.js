@@ -278,8 +278,10 @@ function updateLang(l) {
         loadObjects(langs)
 
         // if on projects page
-        if (document.getElementById("projectsList")) {
+        if (document.getElementById("projectsTitleBar")) {
             updateProjectsList()
+        } else if (document.getElementById("aboutMeTitleBar")) {
+            loadCV(l)
         }
     })
 }
@@ -321,31 +323,33 @@ function toggleLangText(l, event) {
     }
 
     // preview the language on mouse entry
-    if (event===1) {
-        allFiles.done(() => {
-            // reload objects with hover lang
-            loadObjects(langs, l)
-            // if on projects page
-            if (document.getElementById("projectsTitleBar")) {
-            // if on cv page
-                updateProjectsList(l)
-            } else if (document.getElementById("aboutMeTitleBar")) {
-                loadCV(l)
-            }
-        })
-    // go back to normal on mouse exit
-    } else {
-        allFiles.done(() => {
-            // reload objects back with original lang
-            loadObjects(langs, language)
-            // if on projects page
-            if (document.getElementById("projectsTitleBar")) {
-                updateProjectsList(language)
-            // if on cv page
-            } else if (document.getElementById("aboutMeTitleBar")) {
-                loadCV(language)
-            }
-        })
+    if (l != language) {
+        if (event===1) {
+            allFiles.done(() => {
+                // reload objects with hover lang
+                loadObjects(langs, l)
+                // if on projects page
+                if (document.getElementById("projectsTitleBar")) {
+                // if on cv page
+                    updateProjectsList(l)
+                } else if (document.getElementById("aboutMeTitleBar")) {
+                    loadCV(l)
+                }
+            })
+        // go back to normal on mouse exit
+        } else {
+            allFiles.done(() => {
+                // reload objects back with original lang
+                loadObjects(langs, language)
+                // if on projects page
+                if (document.getElementById("projectsTitleBar")) {
+                    updateProjectsList(language)
+                // if on cv page
+                } else if (document.getElementById("aboutMeTitleBar")) {
+                    loadCV(language)
+                }
+            })
+        }
     }
 }
 

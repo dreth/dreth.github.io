@@ -110,13 +110,3 @@ function loadCV(l=cvLang) {
 aboutFiles.done(() => {
     loadCV()
 })
-
-// CHANGE LANGUAGE FUNCTION
-function changeCVLang(l) {
-    // switch language
-    cvLang = l;
-
-    aboutFiles.done(() => {
-        loadCV()
-    })
-}
