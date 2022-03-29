@@ -1,0 +1,241 @@
+{   
+    "projectHeadings":{
+        "personal":{
+            "en":"Personal",
+            "es":"Personales",
+            "nl":"Persoonlijk"
+        },
+        "job-related":{
+            "en":"Work-related",
+            "es":"Laborales",
+            "nl":"Werk gerelateerd"
+        },
+        "academic":{
+            "en":"Academic",
+            "es":"Académicos",
+            "nl":"Academisch"
+        },
+        "unfinished":{
+            "en":"Unfinished",
+            "es":"Sin completar",
+            "nl":"Onvooltoid"
+        }
+    },
+    "projectLinkHeading":{
+        "github":{
+            "en":"Link to repository",
+            "es":"Enlace al repositorio",
+            "nl":"Link naar repository"
+        },
+        "website":{
+            "en":"Live website",
+            "es":"Página web en vivo",
+            "nl":"Live website"
+        }
+    },
+    "projectSections":{
+        "personal":{
+            "include":"true",
+            "emoji":"🤹"
+        },
+        "job-related":{
+            "include":"false",
+            "emoji":"🔨"
+        },
+        "academic":{
+            "include":"true",
+            "emoji":"📚"
+        },
+        "unfinished":{
+            "include":"false",
+            "emoji":"🚧"
+        }
+    },
+    "projectNames":{
+        "personal":[
+            {
+                "en":"dac.ac",
+                "es":"dac.ac",
+                "nl":"dac.ac"
+            },
+            {
+                "en":"DeFi Navy",
+                "es":"DeFi Navy",
+                "nl":"DeFi Navy"
+            },
+            {
+                "en":"Selenium-based router reboot tool",
+                "es":"Utilidad basada en selenium para reiniciar routers",
+                "nl":"Selenium-based router reboot tool"
+            },
+            {
+                "en":"Phishing form spammer",
+                "es":"Spammer para formularios de phishing",
+                "nl":"Phishing form spammer"
+            },
+            {
+                "en":"File downloader from list of links",
+                "es":"Descargador de archivos de una lista de enlaces",
+                "nl":"File downloader from list of links"
+            },
+            {
+                "en":"Mass image converter script",
+                "es":"Conversor de imágenes en masa",
+                "nl":"Mass image converter script"
+            }
+        ],
+        "job-related":[
+            ""
+        ],
+        "academic":[
+            {
+                "en":"Final master project: \"Development of an automatic tool for periodic surveillance of actuarial and demographic indicators\"",
+                "es":"Trabajo de fin de máster: \"Development of an automatic tool for periodic surveillance of actuarial and demographic indicators\"",
+                "nl":"Master's afstudeerproject: \"Development of an automatic tool for periodic surveillance of actuarial and demographic indicators\""
+            },
+            {
+                "en":"Predicting HDI, a full pipeline with a focus on preprocessing and EDA.",
+                "es":"Prediciendo IDH, un pipeline completo con enfoque en preprocesamiento y EDA.",
+                "nl":"Predicting HDI, a full pipeline with a focus on preprocessing and EDA."
+            },
+            {
+                "en":"Simple Dash web app",
+                "es":"Aplicación web sencilla utilizando Dash",
+                "nl":"Simple Dash web app"
+            },
+            {
+                "en":"Simple RShiny web app",
+                "es":"Aplicación web sencilla utilizando RShiny",
+                "nl":"Simple RShiny web app"
+            },
+            {
+                "en":"Financial prediction scripts.",
+                "es":"Scripts para predicción de valor de activos.",
+                "nl":"Financial prediction scripts."
+            },
+            {
+                "en":"Portfolio efficient frontier calculator script.",
+                "es":"Script para calcular la frontera eficiente de un portafolio de inversión.",
+                "nl":"Portfolio efficient frontier calculator script."
+            },
+            {
+                "en":"Plot generator with a simple CL-based menu.",
+                "es":"Generador de gráficos con un menu sencillo de línea de comando.",
+                "nl":"Plot generator with a simple CL-based menu."
+            }
+        ],
+        "unfinished":[
+            ""
+        ]
+    },
+    "projectDescriptions":{
+        "personal":[
+            {
+                "en":"My personal website and blog.",
+                "es":"Mi página web personal y blog.",
+                "nl":"Mijn persoonlijke website en blog."
+            },
+            {
+                "en":"A simple website to serve as a link directory for decentralized finance applications (DeFi), smart contract platform related websites, Ethereum related websites and all sorts of useful blockchain-related links.",
+                "es":"Una sencilla página web que sirve el propósito de ser un directorio de enlaces relacionados a webs de aplicaciones de finanza decentralizada (DeFi), plataformas de smart contracts, Ethereum y otros enlaces útiles relacionados a temas de blockchain.",
+                "nl":"A simple website to serve as a link directory for decentralized finance applications (DeFi), smart contract platform related websites, Ethereum related websites and all sorts of useful blockchain-related links."
+            },
+            {
+                "en":"Python script that uses selenium and a headless (or not) browser to reboot a router.",
+                "es":"Script de Python que utiliza selenium y un navegador con o sin interfaz para reiniciar un router.",
+                "nl":"Python script that uses selenium and a headless (or not) browser to reboot a router."
+            },
+            {
+                "en":"Python script to spam forms typically used for phishing. Should work for any online form though.",
+                "es":"Script de python para spammear y saturar formularios online típicamente usados para spam. Sin embargo, debería funcionar para cualquier forma.",
+                "nl":"Python script to spam forms typically used for phishing. Should work for any online form though."
+            },
+            {
+                "en":"Python script to download files (through curl) using files obtained from a list of links contained in a plaintext file.",
+                "es":"Script de python para descargar archivos (usando curl) extraídos desde una lista de enlaces en un archivo de texto plano.",
+                "nl":"Python script to download files (through curl) using files obtained from a list of links contained in a plaintext file."
+            },
+            {
+                "en":"Python script to convert images from any format supported by ffmpeg to another.",
+                "es":"Script de python para convertir imágenes de cualquier formato soportado por ffmpeg a otro.",
+                "nl":"Python script to convert images from any format supported by ffmpeg to another."
+            },
+            {
+                "en":"Python script to aid in translating pieces of text from a json that use a specific format.",
+                "es":"Script de python para facilitar la traducción de pedazos de texto desde un json con un formato específico.",
+                "nl":"Python script to aid in translating pieces of text from a json that use a specific format."
+            }
+        ],
+        "job-related":[
+            ""
+        ],
+        "academic":[
+            {
+                "en":"An RShiny dashboard showing visualizations of mortality and life expectancy indicators of the Spanish population. The data is queried and preprocessed through a set of Python scripts and the entire application is containerized using Docker.",
+                "es":"Un dashboard de RShiny que muestra visualizaciones de métricas de mortalidad y esperanza de vida de la población de España. La data es obtenida y preprocesada a través de una serie de scripts de Python y la aplicación está contenida en un contenedor de Docker.",
+                "nl":"An RShiny dashboard showing visualizations of mortality and life expectancy indicators of the Spanish population. The data is queried and preprocessed through a set of Python scripts and the entire application is containerized using Docker."
+            },
+            {
+                "en":"A simple human development index prediction model using demographic and development variables and implementing a full modelling pipeline with special focus on preprocessing (using Python) and exploratory data analysis (using R).",
+                "es":"Un modelo de predicción estadístico sencillo para predecir índice de desarrollo humano utilizando varias métricas demográficas y de desarrollo e implementando un pipeline completo de modelaje con especial enfoque en preprocesamiento (en Python) y análisis exploratorio (en R).",
+                "nl":"A simple human development index prediction model using demographic and development variables and implementing a full modelling pipeline with special focus on preprocessing (using Python) and exploratory data analysis (using R)."
+            },
+            {
+                "en":"A Dash web app with several interactive plots and a dashboard-like UI using Python.",
+                "es":"Una aplicación web utilizando Dash que incluye varios gráficos interactivos y una interfaz gráfica de tipo dashboard utilizando Python.",
+                "nl":"A Dash web app with several interactive plots and a dashboard-like UI using Python."
+            },
+            {
+                "en":"An RShiny web app similar to the previous Dash app, with interactive plots and a dashboard UI.",
+                "es":"Una aplicación web de RShiny similar a la anteriormente mencionada en Dash, con gráficos interactivos y una interfaz de dashboard.",
+                "nl":"An RShiny web app similar to the previous Dash app, with interactive plots and a dashboard UI."
+            },
+            {
+                "en":"Some cool financial asset price prediction scripts. At the time was a big challenge, but very fun to make.",
+                "es":"Algunos scripts de predicción de precio de activos financieros. Un gran reto en su momento, pero muy divertido.",
+                "nl":"Some cool financial asset price prediction scripts. At the time was a big challenge, but very fun to make."
+            },
+            {
+                "en":"A simple portfolio efficient frontier calculator derived from a boilerplate excel sheet. May not be correct anymore, but was a fun project to try to derive from excel spreadsheets.",
+                "es":"Una calculadora de la frontera eficiente de un  portafolio derivado de una hoja de excel base que nos dieron en clases. Quizás no esté del todo correcto, pero fue entretenido derivar el código de una hoja de cálculo.",
+                "nl":"A simple portfolio efficient frontier calculator derived from a boilerplate excel sheet. May not be correct anymore, but was a fun project to try to derive from excel spreadsheets."
+            },
+            {
+                "en":"A simple Python script to generate plots at a precalculus level using matplotlib.",
+                "es":"Un script sencillo de Python utilizando matplotlib para generar gráficos a nivel de precálculo",
+                "nl":"A simple Python script to generate plots at a precalculus level using matplotlib."
+            }
+        ],
+        "unfinished":[
+            ""
+        ]
+    },
+    "projectLinks":{
+        "personal":[
+            "https://dac.ac",
+            "https://defi.navy",
+            "https://github.com/dreth/RouterRebootTool",
+            "https://github.com/dreth/CodeSnippets/tree/main/phishing_spammer",
+            "https://github.com/dreth/CodeSnippets/tree/main/download_link_list_from_txt",
+            "https://github.com/dreth/CodeSnippets/tree/main/mass_convert_image_files",
+            "https://github.com/dreth/SWJsonTranslations"
+        ],
+        "job-related":[
+            ""
+        ],
+        "academic":[
+            "https://github.com/dreth/tfm_uc3m",
+            "https://github.com/dreth/UC3MStatisticalLearning",
+            "https://github.com/dreth/DashTakeaway",
+            "https://github.com/dreth/ShinyTakeaway",
+            "https://github.com/dreth/ProyectosComplementos",
+            "https://github.com/dreth/MarkowitzPortfolio",
+            "https://github.com/dreth/ProyectoLogProg"
+        ],
+        "unfinished":[
+            ""
+        ]
+    }
+}
+
+

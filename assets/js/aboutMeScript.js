@@ -21,23 +21,21 @@ if (language == 'en' | language == 'nl') {
 }
 
 // GENERATE CONTENTS FOR CV -------------------
-function loadCV() {
-    aboutFiles.done(langsJSON, (langsData) => {
-        // site title
-        $("#aboutMeTitleBar").html(`${langs['content']['about'][cvLang]} | Daniel A.`)
+function loadCV(l=cvLang) {
+    // site title
+    $("#aboutMeTitleBar").html(`${langs['content']['about'][l]} | Daniel A.`)
 
-        // aboutMeDescription
-        $("#aboutMeDescription").html(langs['content']['about_me_text'][cvLang])
+    // aboutMeDescription
+    $("#aboutMeDescription").html(langs['content']['about_me_text'][l])
 
-        // site subtitle (what do i do)
-        $("#aboutSubtitle").html(langs['content']['subtitle'][cvLang])
-    })
+    // site subtitle (what do i do)
+    $("#aboutSubtitle").html(langs['content']['subtitle'][l])
 
     // about me section title
-    $("#aboutHeading").html(cvContent["headings"]["aboutme"][cvLang])
+    $("#aboutHeading").html(cvContent["headings"]["aboutme"][l])
 
     // CV title
-    $("#cvHeading").html(cvContent["headings"]["cvtitle"][cvLang])
+    $("#cvHeading").html(cvContent["headings"]["cvtitle"][l])
 
 // EDUCATION AND WORK SECTION --------------------------------------
     // list sections to loop over (these are identical)
@@ -48,15 +46,15 @@ function loadCV() {
         // get section content from cvcontent json
         content = cvContent[ed_work[k]];
         // HEADING
-        edWorkContents = `<div><h3>${content['heading'][cvLang]}</h3></div>`
+        edWorkContents = `<div><h3>${content['heading'][l]}</h3></div>`
 
         // LOOP OVER CONTENTS LIST
-        for (i = 0; i < content["list"][cvLang].length; i++) {
+        for (i = 0; i < content["list"][l].length; i++) {
             // create content components
-            let title = `<ul><li><h4>${content["list"][cvLang][i]["title"]}</h4></li>`
-            let institution = `<span>${content["list"][cvLang][i]["institution"]}<br>`
-            let dates = `${content["list"][cvLang][i]["dates"]}<br>`
-            let location = `${content["list"][cvLang][i]["location"]}</span></ul>`
+            let title = `<ul><li><h4>${content["list"][l][i]["title"]}</h4></li>`
+            let institution = `<span>${content["list"][l][i]["institution"]}<br>`
+            let dates = `${content["list"][l][i]["dates"]}<br>`
+            let location = `${content["list"][l][i]["location"]}</span></ul>`
 
             // add contents to section
             edWorkContents += `${title}${institution}${dates}${location}`
@@ -112,13 +110,3 @@ function loadCV() {
 aboutFiles.done(() => {
     loadCV()
 })
-
-// CHANGE LANGUAGE FUNCTION
-function changeCVLang(l) {
-    // switch language
-    cvLang = l;
-
-    aboutFiles.done(() => {
-        loadCV()
-    })
-}

@@ -6,20 +6,20 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <meta name="title" content="Daniel A. | cool links">
+  <meta name="title" content="Daniel A. | projects">
   <meta name="description" content="List of articles">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dac.ac/cool_links">
-  <meta property="og:title" content="Daniel A. | cool links">
+  <meta property="og:title" content="Daniel A. | projects">
   <meta property="og:description" content="List of articles">
   <meta property="og:image" content="/assets/icons/meta.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="/assets/icons/meta.png">
   <meta property="twitter:url" content="https://dac.ac/cool_links">
-  <meta property="twitter:title" content="Daniel A. | cool links">
+  <meta property="twitter:title" content="Daniel A. | projects">
   <meta property="twitter:description" content="List of articles">
   <meta property="twitter:image" content="/assets/icons/meta.png">
 
@@ -31,41 +31,37 @@
 
   <!-- title -->
   <script src="/assets/js/libs/jquery.js"></script>
-  <title id="linksTitleBar">cool links | Daniel A.</title>
+  <title id="projectsTitleBar">projects | Daniel A.</title>
 </head>
 
 <body class="paddedBody">
   <div>
     <div class="row">
       <div class="column leftcol">
-        <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
-        <h3 id="linksTitle"></h3>
+        <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;" id="test"><h1>Daniel A.</h1></a>
+        <h3 id="homepageSubtitle"></h3>
+        <h3 id="projectsTitle">⚗️ proyects</h3>
       </div>
       <div class="column rightcol">
         <!-- Theme switcher -->
         <br><div id="themeSwitcher"></div>
+        <br>
+        <div>
+          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es',1)" onmouseleave="toggleLangText('es',0)" class="l">🇪🇸🇩🇴</a><br>
+          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en',1)" onmouseleave="toggleLangText('en',0)" class="l">🇬🇧🇺🇸</a><br>
+          <!-- <a onclick="updateLang('nl')" onmouseenter="toggleLangText('nl',1)" onmouseleave="toggleLangText('nl',0)" class="l">🇳🇱🇧🇪</a><br> -->
+          <span id="langName"></span>
+        </div>
       </div>
     </div>
     <hr>
-
-    <!-- WIKIPEDIA LINKS -->
-    <p>Wikipedia:</p>
-    <div id="wikipediaLinkList"></div>
-    
-    <!-- WIKTIONARY LINKS -->
-    <p>Wiktionary:</p>
-    <div id="wiktionaryLinkList"></div>
-
-    <!-- OTHER LINKS -->
-    <p id="otherSitesLabel"></p>
-    <div id="otherSitesLinkList"></div>
-    
+    <div id="projectsList"></div>
     <div>
       <a href="#" onclick="this.href = home;" oncontextmenu="this.href = home;" class="gb">
         ⬅️ dac.ac</a>
     </div>
   <script src="/assets/js/mainScript.js"></script>
-  <script src="/assets/js/coolLinksScript.js"></script>
+  <script src="/assets/js/projectsScript.js"></script>
   </div>
 </body>
 

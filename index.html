@@ -46,9 +46,9 @@
         <br><div id="themeSwitcher"></div>
         <br>
         <div>
-          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es')" onmouseleave="toggleLangText('es')" class="l">🇪🇸🇩🇴</a><br>
-          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en')" onmouseleave="toggleLangText('en')" class="l">🇬🇧🇺🇸</a><br>
-          <a onclick="updateLang('nl')" onmouseenter="toggleLangText('nl')" onmouseleave="toggleLangText('nl')" class="l">🇳🇱🇧🇪</a><br>
+          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es',1)" onmouseleave="toggleLangText('es',0)" class="l">🇪🇸🇩🇴</a><br>
+          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en',1)" onmouseleave="toggleLangText('en',0)" class="l">🇬🇧🇺🇸</a><br>
+          <!-- <a onclick="updateLang('nl')" onmouseenter="toggleLangText('nl',1)" onmouseleave="toggleLangText('nl',0)" class="l">🇳🇱🇧🇪</a><br> -->
           <span id="langName"></span>
         </div>
       </div>
@@ -78,13 +78,23 @@
           <a href="#" onclick="this.href = playlists;" oncontextmenu="this.href = playlists;" class="b" id="playlistsHomepageLink"></a>
           <a class="bp" id="expandPlaylistsPreview">⊕</a>
         </li>
-          <div id="homepagePlaylistPreview"></div>
+          <div id="homepagePlaylistsPreview"></div>
         <br>
-        <li class="ml github"><a href="#" onclick="this.href = github;" oncontextmenu="this.href = github;" class="b" id="githubHomepageLink"></a></li>
+        <li class="ml projects">
+          <a href="#" onclick="this.href = projects;" oncontextmenu="this.href = projects;" class="b" id="projectsHomepageLink"></a>
+        </li>
         <br>
-        <li class="ml linkedin"><a href="#" onclick="this.href = linkedin;" oncontextmenu="this.href = linkedin;" class="b" id="linkedinHomepageLink"></a></li>
+        <li class="ml github">
+          <a href="#" onclick="this.href = github;" oncontextmenu="this.href = github;" class="b" id="githubHomepageLink"></a>
+        </li>
         <br>
-        <li class="ml email"><a href="#" onclick="this.href = email;" oncontextmenu="this.href = email;" class="b" id="emailHomepageLink"></a></li>
+        <li class="ml linkedin">
+          <a href="#" onclick="this.href = linkedin;" oncontextmenu="this.href = linkedin;" class="b" id="linkedinHomepageLink"></a>
+        </li>
+        <br>
+        <li class="ml email">
+          <a href="#" onclick="this.href = email;" oncontextmenu="this.href = email;" class="b" id="emailHomepageLink"></a>
+        </li>
       </ul>
       <hr>
     </div>

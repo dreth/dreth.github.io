@@ -5,6 +5,7 @@ var blog = '/blog/';
 var about = '/about/';
 var home = '/';
 var status = '/status';
+var projects = '/projects';
 var cool_links = '/cool_links';
 var playlists = '/playlists';
 var email = 'mailto:contact@m.dac.ac';
@@ -27,9 +28,11 @@ const wiktionaryBaseLink = 'wiktionary.org/wiki/';
 // hide article preview list
 $("#homepageArticlePreview").toggle()
 // hide homepage playlists preview
-$("#homepagePlaylistPreview").toggle()
+$("#homepagePlaylistsPreview").toggle()
 // hide homepage links preview
 $("#homepageCoolLinkPreview").toggle()
+// hide homepage projects preview
+$("#homepageProjectsPreview").toggle()
 // schakelaar voor startpagina "over mij" sectie
 $("#homepageAboutMePreview").toggle()
 // hide lang name
@@ -79,8 +82,26 @@ coolLinksJSON.done(coolLinksJSON, (coolLinksData) => {
     coolLinksContent = coolLinksData;
 })
 
+// PROJECTS STUFF -------- projects stuff
+var projectsJSON = $.getJSON('/data/projects.json');
+var projectLinkHeading;
+var projectHeadings;
+var projectSections;
+var projectNames;
+var projectDescriptions;
+var projectLinks;
+
+projectsJSON.done(projectsJSON, (projectsData) => {
+    projectHeadings = projectsData["projectHeadings"];
+    projectLinkHeading = projectsData["projectLinkHeading"];
+    projectSections = projectsData["projectSections"];
+    projectNames = projectsData["projectNames"];
+    projectDescriptions = projectsData["projectDescriptions"];
+    projectLinks = projectsData["projectLinks"];
+})
+
 // ALL FILES LOADED?
-allFiles = $.when(langsJSON, articlesJSON, playlistsJSON, coolLinksJSON);
+allFiles = $.when(langsJSON, articlesJSON, playlistsJSON, coolLinksJSON, projectsJSON);
 
 // COOKIES ---------------------------------------
 function setCookie(key, value, time_in_days=365) {
@@ -110,14 +131,14 @@ if (navigator.language.substring(0,2) == 'es') {
 language = getCookie('language') ? getCookie('language') : browserLocale;
 
 // generate menus
-function loadObjects(langsObj) {
+function loadObjects(langsObj, l=language) {
     // loop over fields
     for (const [itemType, items] of Object.entries(langsObj["objectIds_Field"])) {
 
         // check if field is actually in the page before doing anything
         for (const [fieldId, content] of Object.entries(items)) {
             // get translation
-            translation = langsObj["content"][content][language]
+            translation = langsObj["content"][content][l]
 
             // loop over items
             if (document.getElementById(fieldId) && itemType == 2) {
@@ -223,7 +244,7 @@ function loadObjects(langsObj) {
     
     
                     // playlists preview
-                    case 'homepagePlaylistPreview':
+                    case 'homepagePlaylistsPreview':
                         // set homepage playlists stuff
                         homepagePlaylistList = `<br><span>${translation}</span><br><br>`;
 
@@ -233,7 +254,7 @@ function loadObjects(langsObj) {
                             homepagePlaylistList += `<a class="p" href="${baseSpotifyLink}${page}">${name}<br><img class="playlistImages" src="/assets/playlist_images/${name}.png"></a><br>`;
                         }
 
-                        $('#homepagePlaylistPreview').html(homepagePlaylistList)
+                        $('#homepagePlaylistsPreview').html(homepagePlaylistList)
                         break;
                 }
     
@@ -253,7 +274,15 @@ function updateLang(l) {
 
     // reload all objectes
     allFiles.done(() => {
+        // load all site objects specified the langs.json file
         loadObjects(langs)
+
+        // if on projects page
+        if (document.getElementById("projectsTitleBar")) {
+            updateProjectsList()
+        } else if (document.getElementById("aboutMeTitleBar")) {
+            loadCV(l)
+        }
     })
 }
 
@@ -282,7 +311,7 @@ function changeTheme() {
 }
 
 // show lang text on right col
-function toggleLangText(l) {
+function toggleLangText(l, event) {
     if ($(window).width() > 450) {
         langsJSON.done(() => {
             // get name of current language
@@ -291,6 +320,36 @@ function toggleLangText(l) {
             $("#langName").html(currentLangName)
             $("#langName").toggle()
         })
+    }
+
+    // preview the language on mouse entry
+    if (l != language) {
+        if (event===1) {
+            allFiles.done(() => {
+                // reload objects with hover lang
+                loadObjects(langs, l)
+                // if on projects page
+                if (document.getElementById("projectsTitleBar")) {
+                // if on cv page
+                    updateProjectsList(l)
+                } else if (document.getElementById("aboutMeTitleBar")) {
+                    loadCV(l)
+                }
+            })
+        // go back to normal on mouse exit
+        } else {
+            allFiles.done(() => {
+                // reload objects back with original lang
+                loadObjects(langs, language)
+                // if on projects page
+                if (document.getElementById("projectsTitleBar")) {
+                    updateProjectsList(language)
+                // if on cv page
+                } else if (document.getElementById("aboutMeTitleBar")) {
+                    loadCV(language)
+                }
+            })
+        }
     }
 }
 
@@ -327,7 +386,8 @@ itemsToAddEventsTo = {
     'expandAboutMePreview':'homepageAboutMePreview',
     'expandBlogPreview':'homepageArticlePreview',
     'expandCoolLinksPreview':'homepageCoolLinkPreview',
-    'expandPlaylistsPreview':'homepagePlaylistPreview'
+    'expandPlaylistsPreview':'homepagePlaylistsPreview',
+    'expandProjectsPreview':'homepageProjectsPreview'
 }
 
 // adding events
