@@ -88,6 +88,18 @@ function randomLinkButtonLoader() {
     }
 }
 
+// go to random link
+function goToRandomLink() {
+    // if the list is loaded
+    randomLinksJSON.done(() => {
+        // randomly select a link
+        let randomlySelectedLink = listOfRandomLinks[listOfRandomLinks.length * Math.random() | 0];
+
+        // navigate to the selected link
+        $("#randomLinkBrowserEmbed").attr('src',randomlySelectedLink)
+    })
+}
+
 // random link switch
 function randomLinkSwitch() {
     // switch mode
@@ -117,18 +129,6 @@ function randomLinkSwitch() {
     // go to random link
     randomLinksJSON.done(() => {
         goToRandomLink()
-    })
-}
-
-// go to random link
-function goToRandomLink() {
-    // if the list is loaded
-    randomLinksJSON.done(() => {
-        // randomly select a link
-        let randomlySelectedLink = listOfRandomLinks[listOfRandomLinks.length * Math.random() | 0];
-
-        // navigate to the selected link
-        $("#randomLinkBrowserEmbed").attr('src',randomlySelectedLink)
     })
 }
 
