@@ -1,3 +1,18 @@
+// random link mode
+var randomLinkMode = 0;
+
+// hide random link stuff
+$("#randomLinksTitle").toggle()
+$("#randomLinkBrowser").toggle()
+$("#goToRandomLinkTitle").toggle()
+
+// load list of random links
+var randomLinksJSON = $.getJSON('/data/random_links.json')
+var listOfRandomLinks;
+
+randomLinksJSON.done(randomLinksJSON, (listOfArticles) => {
+    listOfRandomLinks = listOfArticles["links"]
+})
 
 // links
 coolLinksJSON.done(() => {
@@ -63,3 +78,59 @@ coolLinksJSON.done(() => {
     }
 
 })
+
+// Random link browser function
+function randomLinkButtonLoader() {
+    if (randomLinkMode == 0) {
+        $("#randomLinkSwitcher").html(`<a class='lt lts' onclick='randomLinkSwitch()'>🔄</a>`)
+    } else {
+        $("#randomLinkSwitcher").html(`<a class='lt lts' onclick='randomLinkSwitch()'>⛓️</a>`)
+    }
+}
+
+// random link switch
+function randomLinkSwitch() {
+    // switch mode
+    randomLinkMode = randomLinkMode == 0 ? 1 : 0;
+    // reload button
+    randomLinkButtonLoader()
+    // change section of the site to show randomlink browser
+    if (randomLinkMode == 0) {
+        // all toggles to show the other section
+        $("#randomLinksTitle").toggle()
+        $("#linksTitle").toggle()
+        $("#randomLinkBrowser").toggle()
+        $("#linksBlock").toggle()
+        $("#goToRandomLinkTitle").toggle()
+        // make hr padded
+        $("#coolLinksMiddleHR").attr('class','paddedBody')
+    } else {
+        // all toggles to show the other section
+        $("#randomLinksTitle").toggle()
+        $("#linksTitle").toggle()
+        $("#randomLinkBrowser").toggle()
+        $("#linksBlock").toggle()
+        $("#goToRandomLinkTitle").toggle()
+        // make hr NOT padded
+        $("#coolLinksMiddleHR").attr('class','fullBody')
+    }
+    // go to random link
+    randomLinksJSON.done(() => {
+        goToRandomLink()
+    })
+}
+
+// go to random link
+function goToRandomLink() {
+    // if the list is loaded
+    randomLinksJSON.done(() => {
+        // randomly select a link
+        let randomlySelectedLink = listOfRandomLinks[listOfRandomLinks.length * Math.random() | 0];
+
+        // navigate to the selected link
+        $("#randomLinkBrowserEmbed").attr('src',randomlySelectedLink)
+    })
+}
+
+// run random link button loader
+randomLinkButtonLoader()
