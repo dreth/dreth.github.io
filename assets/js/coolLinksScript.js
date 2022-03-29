@@ -1,3 +1,10 @@
+// random link mode
+var randomLinkMode = 0;
+
+// hide random link stuff
+$("#randomLinksTitle").toggle()
+$("#randomLinkBrowser").toggle()
+$("#goToRandomLinkTitle").toggle()
 
 // links
 coolLinksJSON.done(() => {
@@ -63,3 +70,49 @@ coolLinksJSON.done(() => {
     }
 
 })
+
+// Random link browser function
+function randomLinkButtonLoader() {
+    if (randomLinkMode == 0) {
+        $("#randomLinkSwitcher").html(`<a class='lt lts' onclick='randomLinkSwitch()'>🔄</a>`)
+    } else {
+        $("#randomLinkSwitcher").html(`<a class='lt lts' onclick='randomLinkSwitch()'>⛓️</a>`)
+    }
+}
+
+// random link switch
+function randomLinkSwitch() {
+    // switch mode
+    randomLinkMode = randomLinkMode == 0 ? 1 : 0;
+    // reload button
+    randomLinkButtonLoader()
+    // change section of the site to show randomlink browser
+    if (randomLinkMode == 0) {
+        // all toggles to show the other section
+        $("#randomLinksTitle").toggle()
+        $("#linksTitle").toggle()
+        $("#randomLinkBrowser").toggle()
+        $("#linksBlock").toggle()
+        $("#goToRandomLinkTitle").toggle()
+        // make hr padded
+        $("#coolLinksMiddleHR").attr('class','paddedBody')
+    } else {
+        // all toggles to show the other section
+        $("#randomLinksTitle").toggle()
+        $("#linksTitle").toggle()
+        $("#randomLinkBrowser").toggle()
+        $("#linksBlock").toggle()
+        $("#goToRandomLinkTitle").toggle()
+        // make hr NOT padded
+        $("#coolLinksMiddleHR").attr('class','fullBody')
+    }
+}
+
+// go to random link
+function goToRandomLink() {
+    // randomly select a link
+    
+}
+
+// run random link button loader
+randomLinkButtonLoader()

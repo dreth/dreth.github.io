@@ -77,9 +77,15 @@ playlistsJSON.done(playlistsJSON, (playlistsData) => {
 // COOL LINKS STUFF -------- cool links stuff
 var coolLinksJSON = $.getJSON('/data/links.json');
 var coolLinksContent;
+var listOfRandomCoolLinks;
 
 coolLinksJSON.done(coolLinksJSON, (coolLinksData) => {
+    // random links data
     coolLinksContent = coolLinksData;
+
+    // list of all links to randomize
+    // https://${articleLang}.${wikipediaBaseLink}${wikipediaArticles[name].slice(3)}
+    
 })
 
 // PROJECTS STUFF -------- projects stuff

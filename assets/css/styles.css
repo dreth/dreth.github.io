@@ -25,6 +25,14 @@ a.lt:visited {
 a.lt:hover {
   color: #eeff00;
 }
+/* go to random link */
+#goToRandomLinkTitle {
+  text-decoration: none;
+  color: #0ff;
+}
+#goToRandomLinkTitle:hover {
+  color: #7dff7d;
+}
 /* links (dt) */
 a.dt {
   text-decoration: none;

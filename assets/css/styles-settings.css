@@ -281,6 +281,18 @@
       font-size: 3.5vw;
     }
   }
+
+  /* cool links random link browser  */
+  #randomLinkBrowserEmbed {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .fullBody {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
   /* li bullet icons for diff profiles/links */
   ul.noBullets {
     list-style: none;

@@ -34,39 +34,51 @@
   <title id="linksTitleBar">cool links | Daniel A.</title>
 </head>
 
-<body class="paddedBody">
-  <div>
+<body>
+  <div class="paddedBody">
     <div class="row">
       <div class="column leftcol">
         <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
         <h3 id="linksTitle"></h3>
+        <h3 id="randomLinksTitle"></h3>
+        <a id="goToRandomLinkTitle" class="b" onclick="goToRandomLink()"></a>
       </div>
       <div class="column rightcol">
         <!-- Theme switcher -->
         <br><div id="themeSwitcher"></div>
+        <br><div id="randomLinkSwitcher"></div>
       </div>
     </div>
-    <hr>
+  </div>
 
-    <!-- WIKIPEDIA LINKS -->
-    <p>Wikipedia:</p>
-    <div id="wikipediaLinkList"></div>
-    
-    <!-- WIKTIONARY LINKS -->
-    <p>Wiktionary:</p>
-    <div id="wiktionaryLinkList"></div>
+  <div class="paddedBody"id="coolLinksMiddleHR"><hr></div>
+  
+  <div class="paddedBody">
+    <div id="linksBlock">
+      <!-- WIKIPEDIA LINKS -->
+      <p>Wikipedia:</p>
+      <div id="wikipediaLinkList"></div>
+      
+      <!-- WIKTIONARY LINKS -->
+      <p>Wiktionary:</p>
+      <div id="wiktionaryLinkList"></div>
 
-    <!-- OTHER LINKS -->
-    <p id="otherSitesLabel"></p>
-    <div id="otherSitesLinkList"></div>
-    
-    <div>
-      <a href="#" onclick="this.href = home;" oncontextmenu="this.href = home;" class="gb">
-        ⬅️ dac.ac</a>
-    </div>
+      <!-- OTHER LINKS -->
+      <p id="otherSitesLabel"></p>
+      <div id="otherSitesLinkList"></div>
+  </div>
+  </div>
+
+  <!-- random link browser -->
+  <div id="randomLinkBrowser" class="fullBody"><embed id="randomLinkBrowserEmbed" src="https://dac.ac"><hr></div>
+
+  <div class="paddedBody">
+    <a href="#" onclick="this.href = home;" oncontextmenu="this.href = home;" class="gb" id="coolLinksGoBackButton">
+      ⬅️ dac.ac</a>
+  </div>
+
   <script src="/assets/js/mainScript.js"></script>
   <script src="/assets/js/coolLinksScript.js"></script>
-  </div>
 </body>
 
 </html>

@@ -40,6 +40,16 @@
             "es":"⛓️ enlaces cool",
             "nl":"⛓️ coole links"
         },
+        "random_cool_links": {
+            "en":"🔄 random cool links",
+            "es":"🔄 enlaces cool aleatorios",
+            "nl":"🔄 willekeurig coole links"
+        },
+        "go_to_random_link": {
+            "en":"🔮 go to another random link",
+            "es":"🔮 ir a otro enlace aleatorio",
+            "nl":"🔮 gaan naar een andere willekeurige link"
+        },
         "projects_title": {
             "en":"⚗️ projects",
             "es":"⚗️ proyectos",
@@ -140,7 +150,9 @@
             "articlesLabel":"articles_label",
             "linksTitle":"cool_links_title",
             "otherSitesLabel":"other_sites",
-            "projectsTitle":"projects_title"
+            "projectsTitle":"projects_title",
+            "randomLinksTitle":"random_cool_links",
+            "goToRandomLinkTitle":"go_to_random_link"
         },
         "1": {
             "homepageArticlePreview":"homepage_blogposts",

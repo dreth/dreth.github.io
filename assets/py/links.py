@@ -2,7 +2,11 @@ from urllib import parse
 import json
 from bs4 import BeautifulSoup
 import requests
+from collections import defaultdict
 
+# base vars
+wikipediaBaseLink = 'wikipedia.org/wiki/'
+wiktionaryBaseLink = 'wiktionary.org/wiki/'
 
 # 1 = wikipedia
 # 2 = anything
@@ -91,5 +95,34 @@ def get_links(type):
             json.dump(links, f, indent=4, ensure_ascii=False)
 
 
+# function to create json with list of random links
+def random_links():
+
+    # all links
+    all_links = defaultdict(list)
+    
+    # get links
+    with open('./data/links.json', 'r') as f:
+        links = json.load(f)
+    
+    for key,link_list in links.items():
+        
+        for link in link_list.values():
+            # wikipedia
+            if key == 'wikipedia':
+                all_links['links'].append(f"https://{link[0:2].lower()}.{wikipediaBaseLink}{link[3:]}")
+            
+            elif key == 'wiktionary':
+                all_links['links'].append(f"https://{link[0:2].lower()}.{wiktionaryBaseLink}{link[3:]}")
+
+            elif key == 'other_sites':
+                all_links['links'].append(link)
+    
+    # dump json with the links
+    with open('./data/random_links.json', 'w') as f:
+        json.dump(all_links, f, indent=4, ensure_ascii=False)
+
+
 # run function
 get_links(1)
+random_links()
