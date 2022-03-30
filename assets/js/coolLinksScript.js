@@ -11,7 +11,7 @@ var randomLinksJSON = $.getJSON('/data/random_links.json')
 var listOfRandomLinks;
 
 randomLinksJSON.done(randomLinksJSON, (listOfArticles) => {
-    listOfRandomLinks = listOfArticles["links"]
+    listOfRandomLinks = listOfArticles["links"];
 })
 
 // links
@@ -103,11 +103,12 @@ function goToRandomLink() {
 // random link switch
 function randomLinkSwitch() {
     // switch mode
-    randomLinkMode = randomLinkMode == 0 ? 1 : 0;
+    randomLinkMode = randomLinkMode === 0 ? 1 : 0;
     // change section of the site to show randomlink browser
     randomLinksJSON.done(() => {
         // reload button
         randomLinkButtonLoader()
+
         if (randomLinkMode == 0) {
             // all toggles to show the other section
             $("#randomLinksTitle").toggle()
