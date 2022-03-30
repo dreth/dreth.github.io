@@ -25,14 +25,6 @@ a.lt:visited {
 a.lt:hover {
   color: #eeff00;
 }
-/* go to random link */
-#goToRandomLinkTitle {
-  text-decoration: none;
-  color: #0ff;
-}
-#goToRandomLinkTitle:hover {
-  color: #7dff7d;
-}
 /* links (dt) */
 a.dt {
   text-decoration: none;
@@ -45,7 +37,7 @@ a.dt:hover {
   color: #4700cc;
 }
 /* links (b) */
-a.b:link {
+a.b {
   text-decoration: none;
   color: #0ff;
 }
@@ -56,7 +48,7 @@ a.b:hover {
   color: #7dff7d;
 }
 /* links (c) */
-a.c:link {
+a.c {
   text-decoration: none;
   color: rgb(0, 174, 255);
 }
@@ -67,7 +59,7 @@ a.c:hover {
   color: #00a500;
 }
 /* links (p) */
-a.p:link {
+a.p {
   text-decoration: none;
   color: rgb(0, 174, 255);
 }
@@ -82,7 +74,7 @@ a.bp {
   text-decoration: none;
   color: rgb(0, 174, 255);
 }
-a.bp:link {
+a.bp {
   text-decoration: none;
   color: rgb(0, 174, 255);
 }
@@ -93,7 +85,7 @@ a.bp:hover {
   color: #d2ff6a;
 }
 /* links (title) */
-a.title:link {
+a.title {
   text-decoration: none;
   color: white
 }
@@ -104,7 +96,7 @@ a.title:hover {
   color: rgb(206, 77, 77)
 }
 /* links (going back) */
-a.gb:link {
+a.gb {
   text-decoration: none;
   color: rgb(233, 55, 55);
 }
