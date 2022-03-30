@@ -133,7 +133,7 @@ language = getCookie('language') ? getCookie('language') : browserLocale;
 // detect if user agent has safari
 function isSafari() {
     return (navigator.userAgent.includes("Safari"))
-  }
+}
 
 // generate menus
 function loadObjects(langsObj, l=language) {
