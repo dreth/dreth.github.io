@@ -130,18 +130,9 @@ if (navigator.language.substring(0,2) == 'es') {
 // take language from browser locale
 language = getCookie('language') ? getCookie('language') : browserLocale;
 
-// detect if user agent is iOS
-function isiOSDevice() {
-    return [
-      'iPad Simulator',
-      'iPhone Simulator',
-      'iPod Simulator',
-      'iPad',
-      'iPhone',
-      'iPod'
-    ].includes(navigator.platform)
-    // iPad on iOS 13 detection
-    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+// detect if user agent has safari
+function isSafari() {
+    return (navigator.userAgent.includes("Safari"))
   }
 
 // generate menus

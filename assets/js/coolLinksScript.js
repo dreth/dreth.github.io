@@ -135,7 +135,7 @@ function randomLinkSwitch() {
 
 // run random link button loader
 randomLinksJSON.done(() => {
-    if (!isiOSDevice()) {
+    if (!isSafari()) {
         randomLinkButtonLoader()
     }
 })
