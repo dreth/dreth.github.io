@@ -79,7 +79,6 @@ var coolLinksJSON = $.getJSON('/data/links.json');
 var coolLinksContent;
 
 coolLinksJSON.done(coolLinksJSON, (coolLinksData) => {
-    // random links data
     coolLinksContent = coolLinksData;
 })
 
