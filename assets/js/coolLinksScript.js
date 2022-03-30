@@ -107,28 +107,28 @@ function randomLinkSwitch() {
     // reload button
     randomLinkButtonLoader()
     // change section of the site to show randomlink browser
-    if (randomLinkMode == 0) {
-        // all toggles to show the other section
-        $("#randomLinksTitle").toggle()
-        $("#linksTitle").toggle()
-        $("#randomLinkBrowser").toggle()
-        $("#linksBlock").toggle()
-        $("#goToRandomLinkTitle").toggle()
-        // make hr padded
-        $("#coolLinksMiddleHR").attr('class','paddedBody')
-    } else {
-        // all toggles to show the other section
-        $("#randomLinksTitle").toggle()
-        $("#linksTitle").toggle()
-        $("#randomLinkBrowser").toggle()
-        $("#linksBlock").toggle()
-        $("#goToRandomLinkTitle").toggle()
-        // make hr NOT padded
-        $("#coolLinksMiddleHR").attr('class','fullBody')
-    }
-    // go to random link
     randomLinksJSON.done(() => {
-        goToRandomLink()
+        if (randomLinkMode == 0) {
+            // all toggles to show the other section
+            $("#randomLinksTitle").toggle()
+            $("#linksTitle").toggle()
+            $("#randomLinkBrowser").toggle()
+            $("#linksBlock").toggle()
+            $("#goToRandomLinkTitle").toggle()
+            // make hr padded
+            $("#coolLinksMiddleHR").attr('class','paddedBody')
+        } else {
+            // all toggles to show the other section
+            $("#randomLinksTitle").toggle()
+            $("#linksTitle").toggle()
+            $("#randomLinkBrowser").toggle()
+            $("#linksBlock").toggle()
+            $("#goToRandomLinkTitle").toggle()
+            // make hr NOT padded
+            $("#coolLinksMiddleHR").attr('class','fullBody')
+        }
+        // go to random link
+            goToRandomLink()
     })
 }
 
