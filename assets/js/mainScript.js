@@ -317,7 +317,8 @@ function changeTheme() {
 
 // show lang text on right col
 function toggleLangText(l, event) {
-    if ($(window).width() > 450) {
+    // depending on width, show lang popup or not
+    if ($(window).width() > 515) {
         langsJSON.done(() => {
             // get name of current language
             let currentLangName = langs['content']['language_names'][l];

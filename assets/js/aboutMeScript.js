@@ -1,6 +1,7 @@
 // GENERAL VARIABLES
 var cvHeading;
 var content;
+var workDetails = 0;
 
 // ABOUT ME SECTION, CV CONTENTS -------------  
 var aboutMeJSON = $.getJSON('/data/cv.json');
@@ -18,6 +19,17 @@ if (language == 'en' | language == 'nl') {
     var cvLang = 'en';
 } else if (language == 'es') {
     var cvLang = 'es';
+}
+
+// TOGGLE WORK DETAILS ------------------------
+function toggleWorkDetail() {
+    aboutMeJSON.done(() => {
+        // toggle showing or hiding details
+        workDetails = workDetails === 0 ? 1 : 0;
+        
+        // reload cv
+        loadCV()
+    })
 }
 
 // GENERATE CONTENTS FOR CV -------------------
@@ -46,18 +58,33 @@ function loadCV(l=cvLang) {
         // get section content from cvcontent json
         content = cvContent[ed_work[k]];
         // HEADING
-        edWorkContents = `<div><h3>${content['heading'][l]}</h3></div>`
+        edWorkContents = `<div><h3 class="cvHeading1">${content['heading'][l]}</h3> &nbsp;`
+        
+        // show detail if in the work experience section
+        if (ed_work[k] === 'work') {
+            if (workDetails === 1) {
+                edWorkContents += `<a class="b" onclick="toggleWorkDetail()"><span class="smaller">(hide detail ⬆️)</span></a>`
+            } else {
+                edWorkContents += `<a class="b" onclick="toggleWorkDetail()"><span class="smaller">(show detail ↕️)</span></a>`
+            }
+        }
+        edWorkContents += '</div><div class="halfRightPadding"><hr></div>'
 
         // LOOP OVER CONTENTS LIST
         for (i = 0; i < content["list"][l].length; i++) {
             // create content components
-            let title = `<ul><li><h4>${content["list"][l][i]["title"]}</h4></li>`
+            let title = `<ul><li><h4 class="cvHeading2">${content["list"][l][i]["title"]}</h4></li>`
             let institution = `<span>${content["list"][l][i]["institution"]}<br>`
             let dates = `${content["list"][l][i]["dates"]}<br>`
             let location = `${content["list"][l][i]["location"]}</span></ul>`
 
             // add contents to section
             edWorkContents += `${title}${institution}${dates}${location}`
+
+            // add details if in work section
+            if (ed_work[k] === 'work' && workDetails == 1) {
+                edWorkContents += `<ul class="smaller">${content["detail"][l][i]}</ul>`
+            }
         }
 
         // add contents to section innerhtml
@@ -74,7 +101,7 @@ function loadCV(l=cvLang) {
         let content = cvContent['other'][other_s[k]];
 
         // HEADING
-        otherContents += `<div><h3>${content['heading'][cvLang]}</h3></div>`;
+        otherContents += `<br><div><h3>${content['heading'][cvLang]}</h3></div><div class="halfRightPadding"><hr></div>`;
 
         // LOOP OVER CONTENTS LIST
         for (const [level, langContent] of Object.entries(content['list'][cvLang])) {
