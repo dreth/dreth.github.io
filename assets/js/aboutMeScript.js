@@ -83,7 +83,7 @@ function loadCV(l=cvLang) {
 
             // add details if in work section
             if (ed_work[k] === 'work' && workDetails == 1) {
-                edWorkContents += `<ul>${content["detail"][l][i]}</ul>`
+                edWorkContents += `<ul class="smaller">${content["detail"][l][i]}</ul>`
             }
         }
 
