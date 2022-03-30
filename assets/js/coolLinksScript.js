@@ -96,7 +96,7 @@ function goToRandomLink() {
         let randomlySelectedLink = listOfRandomLinks[listOfRandomLinks.length * Math.random() | 0];
 
         // navigate to the selected link
-        $("#randomLinkBrowserEmbed").attr('src',randomlySelectedLink)
+        $("#randomLinkBrowserEmbed").attr('src',randomlySelectedLink);
     })
 }
 
@@ -104,10 +104,10 @@ function goToRandomLink() {
 function randomLinkSwitch() {
     // switch mode
     randomLinkMode = randomLinkMode == 0 ? 1 : 0;
-    // reload button
-    randomLinkButtonLoader()
     // change section of the site to show randomlink browser
     randomLinksJSON.done(() => {
+        // reload button
+        randomLinkButtonLoader()
         if (randomLinkMode == 0) {
             // all toggles to show the other section
             $("#randomLinksTitle").toggle()
