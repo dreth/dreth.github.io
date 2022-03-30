@@ -58,7 +58,7 @@ function loadCV(l=cvLang) {
         // get section content from cvcontent json
         content = cvContent[ed_work[k]];
         // HEADING
-        edWorkContents = `<div><h3 style="display: inline;">${content['heading'][l]}</h3> &nbsp;`
+        edWorkContents = `<div><h3 class="cvHeading1">${content['heading'][l]}</h3> &nbsp;`
         
         // show detail if in the work experience section
         if (ed_work[k] === 'work') {
@@ -73,13 +73,18 @@ function loadCV(l=cvLang) {
         // LOOP OVER CONTENTS LIST
         for (i = 0; i < content["list"][l].length; i++) {
             // create content components
-            let title = `<ul><li><h4>${content["list"][l][i]["title"]}</h4></li>`
+            let title = `<ul><li><h4 class="cvHeading2">${content["list"][l][i]["title"]}</h4></li>`
             let institution = `<span>${content["list"][l][i]["institution"]}<br>`
             let dates = `${content["list"][l][i]["dates"]}<br>`
-            let location = `${content["list"][l][i]["location"]}</span></ul><br>`
+            let location = `${content["list"][l][i]["location"]}</span></ul>`
 
             // add contents to section
             edWorkContents += `${title}${institution}${dates}${location}`
+
+            // add details if in work section
+            if (ed_work[k] === 'work' && workDetails == 1) {
+                edWorkContents += `<ul>${content["detail"][l][i]}</ul>`
+            }
         }
 
         // add contents to section innerhtml

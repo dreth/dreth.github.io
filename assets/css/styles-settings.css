@@ -317,6 +317,13 @@
       font-size: 3.5vw;
     }
   }
+  /* CV headings */
+  .cvHeading1 {
+    display: inline;
+  }
+  .cvHeading2 {
+    font-style: italic;
+  }
 
   /* cool links random link browser  */
   #randomLinkBrowserEmbed {
