@@ -20,7 +20,6 @@ playlistsJSON.done(() => {
                 </a>
             </div><br><br><br>
         `;
-
         
         // append to playlist list html object
         console.log(playlistDivisionCounter)
