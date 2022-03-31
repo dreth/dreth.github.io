@@ -98,7 +98,7 @@ function loadCV(l=cvLang) {
         let content = cvContent['other'][other_s[k]];
 
         // HEADING
-        otherContents += `<br><div><h3>${content['heading'][cvLang]}</h3></div><div class="halfRightPadding"><hr></div>`;
+        otherContents += `<br><div><h3 class="cvHeading1">${content['heading'][cvLang]}</h3></div><div class="halfRightPadding"><hr></div>`;
 
         // LOOP OVER CONTENTS LIST
         for (const [level, langContent] of Object.entries(content['list'][cvLang])) {
