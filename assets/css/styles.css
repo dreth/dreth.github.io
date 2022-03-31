@@ -14,6 +14,14 @@ span.aboutHeading {
 a {
   cursor: pointer;
 }
+/* go to random link */ 
+#goToRandomLinkTitle {
+  text-decoration: none;
+  color: #0ff;
+}
+#goToRandomLinkTitle:hover {
+  color: #7dff7d;
+}
 /* links (lt) */
 a.lt {
   text-decoration: none;
