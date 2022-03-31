@@ -40,9 +40,6 @@ function loadCV(l=cvLang) {
     // aboutMeDescription
     $("#aboutMeDescription").html(langs['content']['about_me_text'][l])
 
-    // site subtitle (what do i do)
-    $("#aboutSubtitle").html(langs['content']['subtitle'][l])
-
     // about me section title
     $("#aboutHeading").html(cvContent["headings"]["aboutme"][l])
 
