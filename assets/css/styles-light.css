@@ -113,28 +113,6 @@ a.gb:visited {
 a.gb:hover {
   color: #c139eb;
 }
-/* hide and show languages names */
-/* ES */
-.hidees {
-  display: none;
-}
-.showes:hover + .hidees {
-  display: inline-block;
-}
-/* EN */
-.hideen {
-  display: none;
-}
-.showen:hover + .hideen {
-  display: inline-block;
-}
-/* NL */
-.hidenl {
-  display: none;
-}
-.shownl:hover + .hidenl {
-  display: inline-block;
-}
 /* langs legacy stuff */
 .l:visited {
   color: #f00;
