@@ -12,7 +12,7 @@ playlistsJSON.done(() => {
         let playlistBlock = `
             <div class="img__wrap">
                 <a href="${playlistURL}"><br>
-                <img class="img__img playlistImages" src="/assets/playlist_images/${name}.png" title="${name}">
+                <img class="playlistImages" src="/assets/playlist_images/${name}.png" title="${name}">
                 <div class="img__description_layer img__dl_hover_panel">
                     <br>
                     <p class="img__description">${name}</p>
