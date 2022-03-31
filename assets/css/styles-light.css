@@ -14,6 +14,11 @@ span.aboutHeading {
 a {
   cursor: pointer;
 }
+/* playlist images hover text/panel color */
+.img__dl_hover_panel {
+  background: rgba(255, 255, 255, 0.561);
+  color: rgb(0, 0, 0);
+}
 /* go to random link */ 
 #goToRandomLinkTitle {
   text-decoration: none;
