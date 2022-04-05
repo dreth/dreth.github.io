@@ -4,21 +4,6 @@ art_path = art_path[art_path.length - 2];
 var art_md_path = `/blog/${art_path}/article.md`;
 var art_draft_md_path = `/blog/drafts/${art_path}/article.md`;
 
-// links for the article MD files and article URL
-var artList = '';
-articlesJSON.done(() => {
-    for (let i = 0; i < articleTag.length; i++) {
-        // generate article URL
-        let articleURL = `/blog/${articleTag[i]}/`;
-
-        // append to article list html object
-        artList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br><br>`;
-    }
-    artList += '<hr>';
-
-    // appending the list of articles
-    $("#articleList").html(artList);
-})
 
 // check if there's a post div id to insert article content
 if (document.getElementById("content")) {

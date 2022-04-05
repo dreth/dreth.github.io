@@ -18,20 +18,6 @@ const baseSpotifyLink = 'https://open.spotify.com/playlist/';
 const wikipediaBaseLink = 'wikipedia.org/wiki/';
 const wiktionaryBaseLink = 'wiktionary.org/wiki/';
 
-// HIDING STUFF THAT STARTS HIDDEN ---------------
-// hide article preview list
-$("#blogHomepagePreview").toggle()
-// hide homepage playlists preview
-$("#playlistsHomepagePreview").toggle()
-// hide homepage links preview
-$("#coolLinksHomepagePreview").toggle()
-// schakelaar voor startpagina "over mij" sectie
-$("#aboutHomepagePreview").toggle()
-// hide lang name
-$("#langName").toggle()
-// add notepad to blog link li
-$("#blogHomepageLi").attr('data-before','🗒️')
-
 // LANGUAGES -------------- get languages and labels
 var langsJSON = $.getJSON('/data/languages.json');
 var langs; 
@@ -127,6 +113,28 @@ function isSafari() {
     return (navigator.userAgent.includes("Safari"))
 }
 
+// get window width
+function getWidth() {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
+  }
+  
+  function getHeight() {
+    return Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.documentElement.clientHeight
+    );
+  }
+  
+
 // generate page skeleton
 function generateSkeleton() {
     // SECTIONS -------------------------------------
@@ -145,35 +153,99 @@ function generateSkeleton() {
         'email':'email'
     }
 
+    // only show 2 column layout if width > 1000
+    let homepageBullets;
+    let widthReq = $(window).width() > 1000 | getWidth() > 1000;
+    if (widthReq) {
+        homepageBullets = '<div class="column leftcol-home"><ul class="noBullets">';
+    } else {
+        homepageBullets = '<ul class="noBullets">';
+    }
+
     // MAIN LOOP --------------------------------------
     // EXPAND sections
-    let homepageBullets = '<ul class="noBullets">';
     for (const [name, nameCC] of Object.entries(expandSections)) {
         // start the LI
         homepageBullets += `<li class="ml ${name}">`
         // add PAGE LINK
         homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
         // add EXPANDER BUTTON
-        homepageBullets += `<a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
+        homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
         // ADD CLOSING LI AND PREVIEW DIV
         homepageBullets += `</li><div class="row" id="${nameCC}HomepagePreview"></div><br>`
     }
 
     // LINK sections
     for (const [name, nameCC] of Object.entries(linkOnlySections)) {
+        // is this line the last one?
+        let lastLineBreak = name === 'email' ? '' : '<br>';
         // start the LI
         homepageBullets += `<li class="ml ${name}">`
         // add PAGE LINK
         homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
         // ADD CLOSING LI AND LINE BREAK
-        homepageBullets += `</li>` + name === 'email' ? '' : '<br>'
+        homepageBullets += `</li>` + lastLineBreak
     }
     // close the UL tag
-    homepageBullets += '</ul>'
+    // only show 2 column layout if width > 1000
+    if (widthReq) {
+        homepageBullets += '</ul></div>'
+    } else {
+        homepageBullets += '</ul>'
+    }
 
-    console.log(homepageBullets)
+    // ADD BLOG ARTICLE LIST
+    let blogArticleList;
+    if (widthReq) {
+        blogArticleList = `
+        <div class="column rightcol-home">
+            <br>
+            <span id="blogTitle"></span>
+            <div class="blogTitleRightPadding"><hr></div><br>
+            <div id="articleList"></div>
+        </div>` 
+    } else {
+        blogArticleList = `
+        <hr><br>
+        <h3 id="blogTitle"></h3>
+        <div class="blogTitleRightPadding"><hr></div><br>
+        <div id="articleList"></div>` 
+    }
 
+    $("#homepageMainDiv").html(`${homepageBullets}${blogArticleList}`)
 }
+
+// immediately generate the skeleton
+if (document.getElementById("homepageMainDiv")) {
+    generateSkeleton()
+}
+// HIDING STUFF THAT STARTS HIDDEN ---------------
+function toggleSkeletonExpanders(all=true) {
+    if (all) {
+        // hide homepage playlists preview
+        $("#playlistsHomepagePreview").toggle()
+        // hide homepage links preview
+        $("#coolLinksHomepagePreview").toggle()
+        // schakelaar voor startpagina "over mij" sectie
+        $("#aboutHomepagePreview").toggle()
+        // hide lang name
+        $("#langName").toggle()
+    } else {
+        // if the section is expanded, dont hide it
+        if (!expandedItems.includes('playlists')) {
+            // hide homepage playlists preview
+            $("#playlistsHomepagePreview").hide()
+        } else if (!expandedItems.includes('cool_links')) {
+            // hide homepage links preview
+            $("#coolLinksHomepagePreview").hide()
+        } else if (!expandedItems.includes('about')) {
+            // schakelaar voor startpagina "over mij" sectie
+            $("#aboutHomepagePreview").hide()
+        }
+    }
+}
+// hide everything on page load
+toggleSkeletonExpanders()
 
 // generate menus
 function loadObjects(langsObj, l=language) {
@@ -221,7 +293,7 @@ function loadObjects(langsObj, l=language) {
                     // about me preview
                     case 'aboutHomepagePreview':
                         // homepage self description
-                        fieldContent = `<br><span>${translation}</span>`;
+                        fieldContent = `<br><span class="notThatSmall">${translation}</span>`;
 
                         // add stuff to object
                         $(`#${fieldId}`).html(fieldContent)
@@ -260,7 +332,7 @@ function loadObjects(langsObj, l=language) {
                     // cool links preview
                     case 'coolLinksHomepagePreview':
                         // cool wikipedia links preview
-                        fieldContent = `<br><span>${translation}</span><br><br>`;
+                        fieldContent = `<br><span class="notThatSmall">${translation}</span><br><br>`;
                         let cnt = 0;
                         var wikipediaArticles = coolLinksContent['wikipedia'];
                         for (const name of Object.keys(wikipediaArticles).reverse()) {
@@ -272,9 +344,9 @@ function loadObjects(langsObj, l=language) {
 
                             // append to article list html object
                             if (cnt < 2) {
-                                fieldContent += `<span>🔗</span> <a class="bp" href="${articleURL}">${name}</a><br><br>`;
+                                fieldContent += `<class="notThatSmall" span>🔗</span> <a class="notThatSmall bp" href="${articleURL}">${name}</a><br><br>`;
                             } else {
-                                fieldContent += `<span>🔗</span> <a class="bp" href="${articleURL}">${name}</a><br>`;
+                                fieldContent += `<class="notThatSmall" span>🔗</span> <a class="notThatSmall bp" href="${articleURL}">${name}</a><br>`;
                             }
                             
                             // increase counter
@@ -293,7 +365,7 @@ function loadObjects(langsObj, l=language) {
                     // playlists preview
                     case 'playlistsHomepagePreview':
                         // set homepage playlists stuff
-                        fieldContent = `<br><span>${translation}</span><br>`;
+                        fieldContent = `<br><span class="notThatSmall">${translation}</span><br>`;
 
                         // creating homepage playlists list
                         for (const [name, page] of Object.entries(homepagePlaylist)) {
@@ -303,7 +375,7 @@ function loadObjects(langsObj, l=language) {
                             fieldContent += `
                                 <div class="column img__wrap">
                                     <a href="${playlistURL}"><br>
-                                    <img class="playlistImages" src="/assets/playlist_images/${name}.png" title="${name}">
+                                    <img class="playlistImages-hp" src="/assets/playlist_images/${name}.png" title="${name}">
                                         <div class="img__description_layer img__dl_hover_panel">
                                             <span class="img__description">${name}</span>
                                         </div>
@@ -323,6 +395,26 @@ function loadObjects(langsObj, l=language) {
         }
 
     }
+
+    // loadArticles
+    loadArticleList()
+}
+
+// links for the article MD files and article URL
+function loadArticleList() {
+    articlesJSON.done(() => {
+    let artList = '';
+    for (let i = 0; i < articleTag.length; i++) {
+            // generate article URL
+            let articleURL = `/blog/${articleTag[i]}/`;
+    
+            // append to article list html object
+            artList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br><br>`;
+        }
+    
+        // appending the list of articles
+        $("#articleList").html(artList);
+    })
 }
 
 // detecting the language to abstract language-based links
@@ -436,30 +528,53 @@ function removeBlogIcon() {
 // LOAD ALL OBJECTS -------------------------------------
 allFiles.done(() => {
     loadObjects(langs)
+
+    // reload skeleton if window is resized
+    window.addEventListener('resize', () => {
+        generateSkeleton()
+        addHomepageExpandEvents()
+        toggleSkeletonExpanders(all=false)
+        loadObjects(langs)
+    })
 })
 
 
 // ADD HOMEPAGE EVENTS ----------------------------------
+var expandedItems = [];
 // ID of items to add events to
-itemsToAddEventsTo = {
-    'aboutExpandPreview':'aboutHomepagePreview',
-    'blogExpandPreview':'blogHomepagePreview',
-    'coolLinksExpandPreview':'coolLinksHomepagePreview',
-    'playlistsExpandPreview':'playlistsHomepagePreview',
-}
+function addHomepageExpandEvents() {
+    var itemsToAddEventsTo = {
+        'aboutExpandPreview':'aboutHomepagePreview',
+        'coolLinksExpandPreview':'coolLinksHomepagePreview',
+        'playlistsExpandPreview':'playlistsHomepagePreview',
+    }
+    var itemsExpandedName = {
+        'aboutExpandPreview':'about',
+        'coolLinksExpandPreview':'cool_links',
+        'playlistsExpandPreview':'playlists',
+    }
 
-// adding events
-for (const [expander, prevToggle] of Object.entries(itemsToAddEventsTo)) {
-    if (document.getElementById(expander)) {
-        // show or hide blog preview
-        $(`#${expander}`).click(function() {
-            $(`#${prevToggle}`).toggle()
-            if ($(`#${expander}`).html() === '⊖') {
-                $(`#${expander}`).html('⊕')
-            } else {
-                $(`#${expander}`).html('⊖')
-            }
-        });
+    // adding events
+    for (const [expander, prevToggle] of Object.entries(itemsToAddEventsTo)) {
+        if (document.getElementById(expander)) {
+            // show or hide blog preview
+            $(`#${expander}`).click(function() {
+                $(`#${prevToggle}`).toggle()
+                // switch plus to minus and vice versa on toggle
+                if ($(`#${expander}`).html() === '⊖') {
+                    $(`#${expander}`).html('⊕')
+                    // remove from expanded list
+                    expandedItems = expandedItems.filter(function(val){ 
+                        return val != itemsExpandedName[expander]; 
+                    });
+                } else {
+                    $(`#${expander}`).html('⊖')
+                    // add to expanded list
+                    expandedItems.push(itemsExpandedName[expander])
+                }
+            });
+        }
     }
 }
-
+// add the events on load
+addHomepageExpandEvents()

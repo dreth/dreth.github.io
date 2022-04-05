@@ -8,15 +8,18 @@
     }
     /* article padding and object padding */
     .articleBody, .paddedBody {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
     .fullBody {
-      padding-left: 20%;
-      padding-right: 20%;
+      padding-left: 15%;
+      padding-right: 15%;
     }
     .halfRightPadding {
       padding-right: 65%;
+    }
+    .blogTitleRightPadding {
+      padding-right: 90%;
     }
     /* article date */
     span.articleTopInfo {
@@ -47,6 +50,15 @@
       width: 50%;
       text-align: center;
     }
+    /* two-col layout - HOME */
+    div.leftcol-home {
+      width: 25%;
+      padding-right: 5%;
+    }
+    div.rightcol-home {
+      width: 68%;
+      padding-left: 2%;
+    }
     /* --------------------------------------------- */
     /* PLAYLIST HOVER STUFF */
     .img__wrap {
@@ -75,12 +87,14 @@
     }
     /* --------------------------------------------- */
     a.ml, a.b, a.p, a.b, a.bp, a.gb {
-      font-size: 1.2vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
     img.playlistImages {
       width: 18vw;
+    }
+    img.playlistImages-hp {
+      width: 14vw;
     }
     a,
     ul,
@@ -88,6 +102,11 @@
     ol,
     span {
       font-size: 1vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    .notThatSmall {
+      font-size: 0.8vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
@@ -162,6 +181,9 @@
     .halfRightPadding {
       padding-right: 50%;
     }
+    .blogTitleRightPadding {
+      padding-right: 83%;
+    }
     /* article date */
     span.articleTopInfo {
       font-size: 0.8vw;
@@ -191,6 +213,15 @@
       width: 50%;
       text-align: center;
     }
+    /* two-col layout - HOME */
+    div.leftcol-home {
+      width: 35%;
+      padding-right: 5%;
+    }
+    div.rightcol-home {
+      width: 58%;
+      padding-left: 2%;
+    }
     /* --------------------------------------------- */
     /* PLAYLIST HOVER STUFF */
     .img__wrap {
@@ -219,12 +250,14 @@
     }
     /* --------------------------------------------- */
     a.ml, a.b, a.p, a.b, a.bp, a.gb {
-      font-size: 1.8vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
     img.playlistImages {
       width: 24vw;
+    }
+    img.playlistImages-hp {
+      width: 18vw;
     }
     a,
     ul,
@@ -232,6 +265,11 @@
     ol,
     span {
       font-size: 1.6vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    .notThatSmall {
+      font-size: 1.3vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
@@ -305,6 +343,9 @@
     .halfRightPadding {
       padding-right: 30%;
     }
+    .blogTitleRightPadding {
+      padding-right: 75%;
+    }
     /* article date */
     span.articleTopInfo {
       font-size: 1.6vw;
@@ -334,6 +375,15 @@
       width: 50%;
       text-align: center;
     }
+    /* two-col layout - HOME */
+    div.leftcol-home {
+      width: 45%;
+      padding-right: 5%;
+    }
+    div.rightcol-home {
+      width: 53%;
+      padding-left: 2%;
+    }
     /* --------------------------------------------- */
     /* PLAYLIST HOVER STUFF */
     .img__wrap {
@@ -362,12 +412,14 @@
     }
     /* --------------------------------------------- */
     a.ml, a.b, a.p, a.b, a.bp, a.gb {
-      font-size: 3.5vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
     img.playlistImages {
       width: 30vw;
+    }
+    img.playlistImages-hp {
+      width: 22vw;
     }
     a,
     ul,
@@ -375,6 +427,11 @@
     ol,
     span {
       font-size: 3.2vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
+    .notThatSmall {
+      font-size: 3vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
