@@ -251,12 +251,23 @@ function loadObjects(langsObj, l=language) {
                     // playlists preview
                     case 'homepagePlaylistsPreview':
                         // set homepage playlists stuff
-                        homepagePlaylistList = `<br><span>${translation}</span><br><br>`;
+                        homepagePlaylistList = `<br><span>${translation}</span><br>`;
 
                         // creating homepage playlists list
                         for (const [name, page] of Object.entries(homepagePlaylist)) {
+                            // construct playlist url
+                            let playlistURL = `${baseSpotifyLink}${page}`;
                             // append to article list html object
-                            homepagePlaylistList += `<a class="p" href="${baseSpotifyLink}${page}">${name}<br><img class="playlistImages" src="/assets/playlist_images/${name}.png"></a><br>`;
+                            homepagePlaylistList += `
+                                <div class="column img__wrap">
+                                    <a href="${playlistURL}"><br>
+                                    <img class="playlistImages" src="/assets/playlist_images/${name}.png" title="${name}">
+                                        <div class="img__description_layer img__dl_hover_panel">
+                                            <span class="img__description">${name}</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            <br>`;
                         }
 
                         $('#homepagePlaylistsPreview').html(homepagePlaylistList)
