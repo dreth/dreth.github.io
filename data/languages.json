@@ -98,24 +98,24 @@
         "theme_lang": {
             "en":
                 {
-                    "dark":" dark",
-                    "light":" light"
+                    "dark":"dark",
+                    "light":"light"
                 },
             "es":
                 {
-                    "dark":" oscuro",
-                    "light":" claro"
+                    "dark":"oscuro",
+                    "light":"claro"
                 },
             "nl":
                 {
-                    "dark":" donker",
-                    "light":" licht"
+                    "dark":"donker",
+                    "light":"licht"
                 }
         },
         "about_me_text": {
-            "en":"I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general. Originally studied mathematics and then branched out into data science.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills.",
-            "es":"Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas. Originalmente estudié matemáticas y luego me integré en el mundo de ciencia de datos.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. Me estoy tomando un pequeño descanso del mercado laboral para aprender, estudiar y desarrollar mis propios proyectos personales y habilidades.",
-            "nl":"I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general. Originally studied mathematics and then branched out into data science.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills."
+            "en":"Data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills.",
+            "es":"Data scientist y profesor.Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. Me estoy tomando un pequeño descanso del mercado laboral para aprender, estudiar y desarrollar mis propios proyectos personales y habilidades.",
+            "nl":"Data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills."
         },
         "other_sites": {
             "en":"Other sites:",

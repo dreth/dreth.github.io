@@ -254,8 +254,6 @@ function toggleSkeletonExpanders() {
     $("#playlistsHomepagePreview").toggle()
     // hide homepage links preview
     $("#coolLinksHomepagePreview").toggle()
-    // schakelaar voor startpagina "over mij" sectie
-    $("#aboutHomepagePreview").toggle()
     // hide lang name
     $("#langName").toggle()
 }
@@ -466,7 +464,7 @@ function toggleLangText(l, event) {
         $("#langName").html(currentLangName)
         $("#langName").toggle()
     })
-    
+
     // preview the language on mouse entry
     if (l != language) {
         if (event===1) {
@@ -568,8 +566,12 @@ function addHomepageExpandEvents() {
 
     // adding events
     for (const [expander, prevToggle] of Object.entries(itemsToAddEventsTo)) {
+        // change expander icon if the item is visible
+        if ($(`#${prevToggle}`).is(":visible")) {
+            $(`#${expander}`).html('⊖')
+        }
+        // add click event listeners if the element exists
         if (document.getElementById(expander)) {
-            // show or hide blog preview
             $(`#${expander}`).click(function() {
                 $(`#${prevToggle}`).toggle()
                 // switch plus to minus and vice versa on toggle
