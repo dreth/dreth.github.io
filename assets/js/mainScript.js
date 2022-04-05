@@ -344,9 +344,9 @@ function loadObjects(langsObj, l=language) {
 
                             // append to article list html object
                             if (cnt < 2) {
-                                fieldContent += `<class="notThatSmall" span>🔗</span> <a class="notThatSmall bp" href="${articleURL}">${name}</a><br><br>`;
+                                fieldContent += `<a class="notThatSmall bp" href="${articleURL}">🔗 ${name}</a><br><br>`;
                             } else {
-                                fieldContent += `<class="notThatSmall" span>🔗</span> <a class="notThatSmall bp" href="${articleURL}">${name}</a><br>`;
+                                fieldContent += `<a class="notThatSmall bp" href="${articleURL}">🔗 ${name}</a><br>`;
                             }
                             
                             // increase counter
