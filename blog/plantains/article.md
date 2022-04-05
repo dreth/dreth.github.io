@@ -1,5 +1,9 @@
 # How a staple of Dominican cuisine has helped me manage my Crohn’s Disease
 
+<div class="date">
+<span class="smaller"><b>November 14, 2020</b></span></div>
+<div class="centerPosition"><hr></div>
+
 I’m partly dominican and spanish. I grew up, went to school and did my bachelor’s in the Dominican Republic. My closest friends and parents live there and it has and will always have a special place in my heart.
 
 Here in Spain, where I currently live, I still hold the common dominican practice of frequently eating plantains for breakfast or at any time.
@@ -58,4 +62,3 @@ Thanks for checking out my article!
 
 ***
 
-**Date: November 14, 2020**

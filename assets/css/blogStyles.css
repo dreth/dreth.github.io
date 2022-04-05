@@ -6,6 +6,19 @@ img {
     height: auto;
 }
 
+h1 {
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+}
+
+.centerPosition {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
 @media screen and (min-width: 2000px) {
     img {
         width: 53%;

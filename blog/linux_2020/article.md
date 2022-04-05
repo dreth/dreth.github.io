@@ -1,5 +1,9 @@
 # My switch (back) to linux as primary OS in 2020
 
+<div class="date">
+<span class="smaller"><b>January 23, 2021</b></span></div>
+<div class="centerPosition"><hr></div>
+
 <figure>
     <img src="./assets/1.png">
     <figcaption>The Linux mascot Tux.</figcaption>
@@ -63,4 +67,3 @@ I highly recommend trying it out in a virtual machine if you like tinkering, itâ
 
 ***
 
-**Date: January 23, 2021**

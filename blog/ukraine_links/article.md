@@ -1,4 +1,8 @@
-# Links and information resources on the 2022 Russian invasion of Ukraine. Слава Україні!
+# Links and information resources on the 2022 Russian invasion of Ukraine
+
+<div class="date">
+<span class="smaller"><b>February 26, 2022</b></span></div>
+<div class="centerPosition"><hr></div>
 
 I've been closely following the invasion and the conflict for a few years and I'm very sad about the escalation and full invasion. I've compiled some links and useful resources to keep up with the war.
 
@@ -114,4 +118,3 @@ These may contain very graphic content, if you're sensitive do NOT click any of 
 
 ***
 
-**Date: February 26, 2022**

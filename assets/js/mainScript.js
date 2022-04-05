@@ -13,6 +13,13 @@ var language;
 var darkThemeLabel;
 var lightThemeLabel;
 
+// sections that expand
+var expandSections = {
+    'about':'about',
+    'cool_links':'coolLinks',
+    'playlists':'playlists'
+}
+
 // base links
 const baseSpotifyLink = 'https://open.spotify.com/playlist/';
 const wikipediaBaseLink = 'wikipedia.org/wiki/';
@@ -136,15 +143,8 @@ function getWidth() {
   
 
 // generate page skeleton
-function generateSkeleton() {
+function generateSkeleton(regen=false) {
     // SECTIONS -------------------------------------
-    // sections that expand
-    let expandSections = {
-        'about':'about',
-        'cool_links':'coolLinks',
-        'playlists':'playlists'
-    }
-
     // sections that are just a link
     let linkOnlySections = {
         'projects':'projects',
@@ -169,10 +169,28 @@ function generateSkeleton() {
         homepageBullets += `<li class="ml ${name}">`
         // add PAGE LINK
         homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
-        // add EXPANDER BUTTON
-        homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
-        // ADD CLOSING LI AND PREVIEW DIV
-        homepageBullets += `</li><div class="row" id="${nameCC}HomepagePreview"></div><br>`
+        // add expanders if width requirement is met
+        if (widthReq) {
+            if (regen === false) {
+                // add EXPANDER BUTTON
+                homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
+                // ADD CLOSING LI AND PREVIEW DIV
+                homepageBullets += `</li><div class="row" id="${nameCC}HomepagePreview"></div><br>`
+            } else {
+                // if it's already expanded load it expanded
+                if (expandedItems.includes(name)) {
+                    // add EXPANDER BUTTON
+                    homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊖</a>`
+                    // ADD CLOSING LI AND PREVIEW DIV
+                    homepageBullets += `</li><div class="row" id="${nameCC}HomepagePreview"></div><br>`
+                } else {
+                    // add EXPANDER BUTTON
+                    homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
+                    // ADD CLOSING LI AND PREVIEW DIV
+                    homepageBullets += `</li><div class="row" id="${nameCC}HomepagePreview"></div><br>`
+                }
+            }
+        }
     }
 
     // LINK sections
@@ -220,29 +238,15 @@ if (document.getElementById("homepageMainDiv")) {
     generateSkeleton()
 }
 // HIDING STUFF THAT STARTS HIDDEN ---------------
-function toggleSkeletonExpanders(all=true) {
-    if (all) {
-        // hide homepage playlists preview
-        $("#playlistsHomepagePreview").toggle()
-        // hide homepage links preview
-        $("#coolLinksHomepagePreview").toggle()
-        // schakelaar voor startpagina "over mij" sectie
-        $("#aboutHomepagePreview").toggle()
-        // hide lang name
-        $("#langName").toggle()
-    } else {
-        // if the section is expanded, dont hide it
-        if (!expandedItems.includes('playlists')) {
-            // hide homepage playlists preview
-            $("#playlistsHomepagePreview").hide()
-        } else if (!expandedItems.includes('cool_links')) {
-            // hide homepage links preview
-            $("#coolLinksHomepagePreview").hide()
-        } else if (!expandedItems.includes('about')) {
-            // schakelaar voor startpagina "over mij" sectie
-            $("#aboutHomepagePreview").hide()
-        }
-    }
+function toggleSkeletonExpanders() {
+    // hide homepage playlists preview
+    $("#playlistsHomepagePreview").toggle()
+    // hide homepage links preview
+    $("#coolLinksHomepagePreview").toggle()
+    // schakelaar voor startpagina "over mij" sectie
+    $("#aboutHomepagePreview").toggle()
+    // hide lang name
+    $("#langName").toggle()
 }
 // hide everything on page load
 toggleSkeletonExpanders()
@@ -531,10 +535,28 @@ allFiles.done(() => {
 
     // reload skeleton if window is resized
     window.addEventListener('resize', () => {
-        generateSkeleton()
-        addHomepageExpandEvents()
-        toggleSkeletonExpanders(all=false)
-        loadObjects(langs)
+        if ($(window).width() < 1000 | getWidth() < 1000) {
+            // regen the skeleton
+            generateSkeleton(regen=true)
+            // reload text items
+            loadObjects(langs)
+        } else {
+            // regen the skeleton
+            generateSkeleton(regen=true)
+
+            // add expand events (they are lost when generateSkeleton() runs)
+            addHomepageExpandEvents()
+
+            // hide non previously expanded items
+            for (const [section,sectionCC] of Object.entries(expandSections)) {
+                if (!expandedItems.includes(section)) {
+                    $(`#${sectionCC}HomepagePreview`).toggle()
+                }
+            }
+            
+            // reload text items
+            loadObjects(langs)
+        }
     })
 })
 
@@ -543,12 +565,12 @@ allFiles.done(() => {
 var expandedItems = [];
 // ID of items to add events to
 function addHomepageExpandEvents() {
-    var itemsToAddEventsTo = {
+    let itemsToAddEventsTo = {
         'aboutExpandPreview':'aboutHomepagePreview',
         'coolLinksExpandPreview':'coolLinksHomepagePreview',
         'playlistsExpandPreview':'playlistsHomepagePreview',
     }
-    var itemsExpandedName = {
+    let itemsExpandedName = {
         'aboutExpandPreview':'about',
         'coolLinksExpandPreview':'cool_links',
         'playlistsExpandPreview':'playlists',

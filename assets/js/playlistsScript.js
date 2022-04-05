@@ -22,16 +22,13 @@ playlistsJSON.done(() => {
         `;
         
         // append to playlist list html object
-        console.log(playlistDivisionCounter)
         if (playlistDivisionCounter < (breakPlaylistsAt + 1)) {
-            console.log("left side")
             if (playlistDivisionCounter === breakPlaylistsAt) {
                 playlistList += `${playlistBlock}</div>`;
             } else {
                 playlistList += `${playlistBlock}`;
             }
         } else {
-            console.log("right side")
             if (playlistDivisionCounter === (breakPlaylistsAt + 1)) {
                 playlistList += `<div class="column rightcol-half">${playlistBlock}`;
             } else {

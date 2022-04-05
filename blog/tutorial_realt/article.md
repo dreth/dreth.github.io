@@ -1,5 +1,9 @@
 # Como invertir en bienes raíces utilizando RealT y blockchain
 
+<div class="date">
+<span class="smaller"><b>October 13, 2020</b></span></div>
+<div class="centerPosition"><hr></div>
+
 En un mundo increíblemente globalizado y cuya población se encuentra en constante crecimiento, la demanda de vivienda siempre se mantendrá vigente.
 
 Siempre nos han dicho que invertir en bienes raíces es una excelente manera de acumular ingresos pasivos y que nos da la seguridad de ser un activo fijo cuyo valor generalmente tiende a subir.
@@ -374,4 +378,3 @@ A continuación las páginas web y servicios que hemos mencionado en este artíc
 
 ***
 
-**Date: October 13, 2020**
