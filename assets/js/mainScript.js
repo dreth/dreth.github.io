@@ -17,7 +17,8 @@ var lightThemeLabel;
 var expandSections = {
     'about':'about',
     'cool_links':'coolLinks',
-    'playlists':'playlists'
+    'playlists':'playlists',
+    'projects':'projects'
 }
 
 // base links
@@ -147,7 +148,6 @@ function generateSkeleton(regen=false) {
     // SECTIONS -------------------------------------
     // sections that are just a link
     let linkOnlySections = {
-        'projects':'projects',
         'github':'github',
         'linkedin':'linkedin',
         'email':'email'
@@ -159,18 +159,20 @@ function generateSkeleton(regen=false) {
     if (widthReq) {
         homepageBullets = '<div class="column leftcol-home"><ul class="noBullets">';
     } else {
-        homepageBullets = '<ul class="noBullets">';
+        homepageBullets = '<div class="column leftcol-half"></div>';
     }
 
     // MAIN LOOP --------------------------------------
     // EXPAND sections
+    let divideCount = 0;
     for (const [name, nameCC] of Object.entries(expandSections)) {
-        // start the LI
-        homepageBullets += `<li class="ml ${name}">`
-        // add PAGE LINK
-        homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
-        // add expanders if width requirement is met
+        // normal widths (desktop)
         if (widthReq) {
+            // start the LI
+            homepageBullets += `<li class="ml ${name}">`
+            // add PAGE LINK
+            homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
+            // add expanders if width requirement is met
             if (regen === false) {
                 // add EXPANDER BUTTON
                 homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
@@ -190,6 +192,15 @@ function generateSkeleton(regen=false) {
                     homepageBullets += `</li><div class="row" id="${nameCC}HomepagePreview"></div><br>`
                 }
             }
+        } 
+        // small widths (mobile)
+        else {
+            divideCount += 1;
+            // start the LI
+            homepageBullets += `<div>`
+            // add PAGE LINK
+            homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
+            homepageBullets += `<div id="${nameCC}HomepagePreviewSW"></div><br>`
         }
     }
 
@@ -313,25 +324,6 @@ function loadObjects(langsObj, l=language) {
                         $(`#${fieldId}`).html(aboutMeDescription)
 
                         break;
-    
-    
-                    // blog preview
-                    case 'blogHomepagePreview':
-                        // latest three articles
-                        fieldContent = `<br><span>${translation}</span><br><br>`;
-                        for (let i = 0; i <= articleTag.slice(0,3).length-1; i++) {
-                            // generate article URL
-                            let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
-    
-                            // append to article list html object
-                            fieldContent += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br>`;
-                        }
-
-                        // add stuff to object
-                        $(`#${fieldId}`).html(fieldContent)
-
-                        break;
-    
     
                     // cool links preview
                     case 'coolLinksHomepagePreview':
@@ -467,16 +459,14 @@ function changeTheme() {
 // show lang text on right col
 function toggleLangText(l, event) {
     // depending on width, show lang popup or not
-    if ($(window).width() > 515) {
-        langsJSON.done(() => {
-            // get name of current language
-            let currentLangName = langs['content']['language_names'][l];
-            // add it to the langname lil thingy
-            $("#langName").html(currentLangName)
-            $("#langName").toggle()
-        })
-    }
-
+    langsJSON.done(() => {
+        // get name of current language
+        let currentLangName = langs['content']['language_names'][l];
+        // add it to the langname lil thingy
+        $("#langName").html(currentLangName)
+        $("#langName").toggle()
+    })
+    
     // preview the language on mouse entry
     if (l != language) {
         if (event===1) {

@@ -5,6 +5,7 @@
       font-size: 0.4vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
+      display: inline;
     }
     /* article padding and object padding */
     .articleBody, .paddedBody {
@@ -141,6 +142,11 @@
       font-family: Ubuntu, Sans-Serif;
       font-weight: normal;
     }
+    .title {
+      font-size: 2.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
     h2 {
       font-size: 1.7vw;
       font-family: Ubuntu, Sans-Serif;
@@ -168,6 +174,7 @@
       font-size: 0.6vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
+      display: inline;
     }
     /* article padding and object padding */
     .articleBody, .paddedBody {
@@ -304,6 +311,11 @@
       font-family: Ubuntu, Sans-Serif;
       font-weight: normal;
     }
+    .title {
+      font-size: 3.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
     h2 {
       font-size: 2vw;
       font-family: Ubuntu, Sans-Serif;
@@ -330,6 +342,7 @@
       font-size: 1.2vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
+      display: inline;
     }
     /* article padding and object padding */
     .articleBody, .paddedBody {
@@ -463,6 +476,11 @@
     }
     h1 {
       font-size: 6vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
+    .title {
+      font-size: 7.5vw;
       font-family: Ubuntu, Sans-Serif;
       font-weight: normal;
     }

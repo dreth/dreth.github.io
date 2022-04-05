@@ -27,6 +27,13 @@ a {
 #goToRandomLinkTitle:hover {
   color: #00a100;
 }
+/* borders */
+.homepageButtons {
+  border: 1px solid black;
+}
+.homepageButtons:hover {
+  background-color: rgb(25, 182, 255);
+}
 /* links (lt) */
 a.lt {
   text-decoration: none;

@@ -85,11 +85,6 @@
             "es":"correo electrónico",
             "nl":"e-mail"
         },
-        "homepage_blogposts": {
-            "en":"Latest three blog posts:",
-            "es":"Últimos tres artículos:",
-            "nl":"Laatste drie blogberichten:"
-        },
         "homepage_wikipedia": {
             "en":"Some Wikipedia articles I read recently:",
             "es":"Articulos de Wikipedia que leí recientemente:",
@@ -155,10 +150,12 @@
             "goToRandomLinkTitle":"go_to_random_link"
         },
         "1": {
-            "blogHomepagePreview":"homepage_blogposts",
             "playlistsHomepagePreview":"homepage_playlist",
             "coolLinksHomepagePreview":"homepage_wikipedia",
             "aboutHomepagePreview":"about_me_text",
+            "playlistsHomepagePreviewSW":"homepage_playlist",
+            "coolLinksHomepagePreviewSW":"homepage_wikipedia",
+            "aboutHomepagePreviewSW":"about_me_text",
             "aboutMeDescription":"about_me_text",
             "themeSwitcher":"theme_lang"
         },
