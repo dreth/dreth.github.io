@@ -327,6 +327,7 @@ function loadObjects(langsObj, l=language) {
                     case 'coolLinksHomepagePreview':
                         // cool wikipedia links preview
                         fieldContent = `<br><span class="notThatSmall">${translation}</span><br><br>`;
+                        let maxAmountOfLinks = 5;
                         let cnt = 0;
                         var wikipediaArticles = coolLinksContent['wikipedia'];
                         for (const name of Object.keys(wikipediaArticles).reverse()) {
@@ -337,7 +338,7 @@ function loadObjects(langsObj, l=language) {
                             let articleURL = `https://${articleLang}.${wikipediaBaseLink}${wikipediaArticles[name].slice(3)}`;
 
                             // append to article list html object
-                            if (cnt < 2) {
+                            if (cnt < (maxAmountOfLinks-1)) {
                                 fieldContent += `<a class="notThatSmall bp" href="${articleURL}">🔗 ${name}</a><br><br>`;
                             } else {
                                 fieldContent += `<a class="notThatSmall bp" href="${articleURL}">🔗 ${name}</a><br>`;
@@ -347,7 +348,7 @@ function loadObjects(langsObj, l=language) {
                             cnt += 1;
                             
                             // break if counter reaches 3
-                            if (cnt >= 3) {break;}
+                            if (cnt >= maxAmountOfLinks) {break;}
                         }
 
                         // add stuff to object
@@ -396,19 +397,20 @@ function loadObjects(langsObj, l=language) {
 
 // links for the article MD files and article URL
 function loadArticleList() {
-    articlesJSON.done(() => {
     let artList = '';
     for (let i = 0; i < articleTag.length; i++) {
             // generate article URL
             let articleURL = `/blog/${articleTag[i]}/`;
     
             // append to article list html object
-            artList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br><br>`;
+            artList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div>`;
+
+            // append line breaks
+            artList += '<br><br>'
         }
     
         // appending the list of articles
         $("#articleList").html(artList);
-    })
 }
 
 // detecting the language to abstract language-based links
@@ -566,10 +568,6 @@ function addHomepageExpandEvents() {
 
     // adding events
     for (const [expander, prevToggle] of Object.entries(itemsToAddEventsTo)) {
-        // change expander icon if the item is visible
-        if ($(`#${prevToggle}`).is(":visible")) {
-            $(`#${expander}`).html('⊖')
-        }
         // add click event listeners if the element exists
         if (document.getElementById(expander)) {
             $(`#${expander}`).click(function() {
