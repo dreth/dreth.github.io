@@ -137,7 +137,7 @@
         "0": {
             "homepageSubtitle":"subtitle",
             "welcomeSubtitle":"welcome",
-            "aboutMeHomepageLink":"about",
+            "aboutHomepageLink":"about",
             "blogHomepageLink":"blog",
             "coolLinksHomepageLink":"cool_links",
             "playlistsHomepageLink":"playlists",
@@ -155,11 +155,10 @@
             "goToRandomLinkTitle":"go_to_random_link"
         },
         "1": {
-            "homepageArticlePreview":"homepage_blogposts",
-            "homepagePlaylistsPreview":"homepage_playlist",
-            "homepageCoolLinkPreview":"homepage_wikipedia",
-            "homepageAboutMePreview":"about_me_text",
-            "homepageProjectsPreview":"about_me_text",
+            "blogHomepagePreview":"homepage_blogposts",
+            "playlistsHomepagePreview":"homepage_playlist",
+            "coolLinksHomepagePreview":"homepage_wikipedia",
+            "aboutHomepagePreview":"about_me_text",
             "aboutMeDescription":"about_me_text",
             "themeSwitcher":"theme_lang"
         },

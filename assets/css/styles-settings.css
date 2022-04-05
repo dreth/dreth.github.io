@@ -39,11 +39,11 @@
       clear: both;
     }
     /* two-col layout - PLAYLISTS */
-    div.leftcol-playlists {
+    div.leftcol-half {
       width: 50%;
       text-align: center;
     }
-    div.rightcol-playlists {
+    div.rightcol-half {
       width: 50%;
       text-align: center;
     }
@@ -183,11 +183,11 @@
       clear: both;
     }
     /* two-col layout - PLAYLISTS */
-    div.leftcol-playlists {
+    div.leftcol-half {
       width: 50%;
       text-align: center;
     }
-    div.rightcol-playlists {
+    div.rightcol-half {
       width: 50%;
       text-align: center;
     }
@@ -326,11 +326,11 @@
       clear: both;
     }
     /* two-col layout - PLAYLISTS */
-    div.leftcol-playlists {
+    div.leftcol-half {
       width: 50%;
       text-align: center;
     }
-    div.rightcol-playlists {
+    div.rightcol-half {
       width: 50%;
       text-align: center;
     }
@@ -470,10 +470,6 @@
     margin-right: 10px;
   }
   
-  li.waid:before {
-    content: '📝';
-  }
-  
   li.linkedin:before {
     content: '👤';
   }
@@ -486,7 +482,7 @@
     content: attr(data-before);
   }
   
-  li.cv:before {
+  li.about:before {
     content: '📃';
   }
   
@@ -494,7 +490,7 @@
     content: '✉️';
   }
   
-  li.coolLinks:before {
+  li.cool_links:before {
     content: '⛓️';
   }
   

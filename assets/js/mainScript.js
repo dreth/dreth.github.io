@@ -13,12 +13,6 @@ var language;
 var darkThemeLabel;
 var lightThemeLabel;
 
-// homepage previews
-var homepageArticleList;
-var homepagePlaylistList;
-var homepageCoolLinkList;
-var homepageSelfDescription;
-
 // base links
 const baseSpotifyLink = 'https://open.spotify.com/playlist/';
 const wikipediaBaseLink = 'wikipedia.org/wiki/';
@@ -26,15 +20,13 @@ const wiktionaryBaseLink = 'wiktionary.org/wiki/';
 
 // HIDING STUFF THAT STARTS HIDDEN ---------------
 // hide article preview list
-$("#homepageArticlePreview").toggle()
+$("#blogHomepagePreview").toggle()
 // hide homepage playlists preview
-$("#homepagePlaylistsPreview").toggle()
+$("#playlistsHomepagePreview").toggle()
 // hide homepage links preview
-$("#homepageCoolLinkPreview").toggle()
-// hide homepage projects preview
-$("#homepageProjectsPreview").toggle()
+$("#coolLinksHomepagePreview").toggle()
 // schakelaar voor startpagina "over mij" sectie
-$("#homepageAboutMePreview").toggle()
+$("#aboutHomepagePreview").toggle()
 // hide lang name
 $("#langName").toggle()
 // add notepad to blog link li
@@ -135,6 +127,54 @@ function isSafari() {
     return (navigator.userAgent.includes("Safari"))
 }
 
+// generate page skeleton
+function generateSkeleton() {
+    // SECTIONS -------------------------------------
+    // sections that expand
+    let expandSections = {
+        'about':'about',
+        'cool_links':'coolLinks',
+        'playlists':'playlists'
+    }
+
+    // sections that are just a link
+    let linkOnlySections = {
+        'projects':'projects',
+        'github':'github',
+        'linkedin':'linkedin',
+        'email':'email'
+    }
+
+    // MAIN LOOP --------------------------------------
+    // EXPAND sections
+    let homepageBullets = '<ul class="noBullets">';
+    for (const [name, nameCC] of Object.entries(expandSections)) {
+        // start the LI
+        homepageBullets += `<li class="ml ${name}">`
+        // add PAGE LINK
+        homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
+        // add EXPANDER BUTTON
+        homepageBullets += `<a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
+        // ADD CLOSING LI AND PREVIEW DIV
+        homepageBullets += `</li><div class="row" id="${nameCC}HomepagePreview"></div><br>`
+    }
+
+    // LINK sections
+    for (const [name, nameCC] of Object.entries(linkOnlySections)) {
+        // start the LI
+        homepageBullets += `<li class="ml ${name}">`
+        // add PAGE LINK
+        homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
+        // ADD CLOSING LI AND LINE BREAK
+        homepageBullets += `</li>` + name === 'email' ? '' : '<br>'
+    }
+    // close the UL tag
+    homepageBullets += '</ul>'
+
+    console.log(homepageBullets)
+
+}
+
 // generate menus
 function loadObjects(langsObj, l=language) {
     // loop over fields
@@ -151,6 +191,8 @@ function loadObjects(langsObj, l=language) {
                 $(`#${fieldId}`).html(`${translation} | Daniel A.`);
 
             } else if (document.getElementById(fieldId) && itemType == 1) {
+                // field contents
+                let fieldContent = '';
                 // SPECIAL FIELDS ---------------------------------------------------------------------------
                 switch(fieldId) {
                     // theme switcher
@@ -177,12 +219,12 @@ function loadObjects(langsObj, l=language) {
                         break;
     
                     // about me preview
-                    case 'homepageAboutMePreview':
+                    case 'aboutHomepagePreview':
                         // homepage self description
-                        homepageSelfDescription = `<br><span>${translation}</span>`;
+                        fieldContent = `<br><span>${translation}</span>`;
 
                         // add stuff to object
-                        $("#homepageAboutMePreview").html(homepageSelfDescription)
+                        $(`#${fieldId}`).html(fieldContent)
 
                         break;
                     
@@ -192,33 +234,33 @@ function loadObjects(langsObj, l=language) {
                         aboutMeDescription = `<span>${translation}</span>`;
 
                         // add stuff to object
-                        $("#aboutMeDescription").html(aboutMeDescription)
+                        $(`#${fieldId}`).html(aboutMeDescription)
 
                         break;
     
     
                     // blog preview
-                    case 'homepageArticlePreview':
+                    case 'blogHomepagePreview':
                         // latest three articles
-                        homepageArticleList = `<br><span>${translation}</span><br><br>`;
+                        fieldContent = `<br><span>${translation}</span><br><br>`;
                         for (let i = 0; i <= articleTag.slice(0,3).length-1; i++) {
                             // generate article URL
                             let articleURL = `https://dac.ac/blog/${articleTag[i]}/`;
     
                             // append to article list html object
-                            homepageArticleList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br>`;
+                            fieldContent += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div><br>`;
                         }
 
                         // add stuff to object
-                        $("#homepageArticlePreview").html(homepageArticleList)
+                        $(`#${fieldId}`).html(fieldContent)
 
                         break;
     
     
                     // cool links preview
-                    case 'homepageCoolLinkPreview':
+                    case 'coolLinksHomepagePreview':
                         // cool wikipedia links preview
-                        homepageCoolLinkList = `<br><span>${translation}</span><br><br>`;
+                        fieldContent = `<br><span>${translation}</span><br><br>`;
                         let cnt = 0;
                         var wikipediaArticles = coolLinksContent['wikipedia'];
                         for (const name of Object.keys(wikipediaArticles).reverse()) {
@@ -230,9 +272,9 @@ function loadObjects(langsObj, l=language) {
 
                             // append to article list html object
                             if (cnt < 2) {
-                                homepageCoolLinkList += `<span>🔗</span> <a class="bp" href="${articleURL}">${name}</a><br><br>`;
+                                fieldContent += `<span>🔗</span> <a class="bp" href="${articleURL}">${name}</a><br><br>`;
                             } else {
-                                homepageCoolLinkList += `<span>🔗</span> <a class="bp" href="${articleURL}">${name}</a><br>`;
+                                fieldContent += `<span>🔗</span> <a class="bp" href="${articleURL}">${name}</a><br>`;
                             }
                             
                             // increase counter
@@ -243,22 +285,22 @@ function loadObjects(langsObj, l=language) {
                         }
 
                         // add stuff to object
-                        $("#homepageCoolLinkPreview").html(homepageCoolLinkList)
+                        $(`#${fieldId}`).html(fieldContent)
 
                         break;
     
     
                     // playlists preview
-                    case 'homepagePlaylistsPreview':
+                    case 'playlistsHomepagePreview':
                         // set homepage playlists stuff
-                        homepagePlaylistList = `<br><span>${translation}</span><br>`;
+                        fieldContent = `<br><span>${translation}</span><br>`;
 
                         // creating homepage playlists list
                         for (const [name, page] of Object.entries(homepagePlaylist)) {
                             // construct playlist url
                             let playlistURL = `${baseSpotifyLink}${page}`;
                             // append to article list html object
-                            homepagePlaylistList += `
+                            fieldContent += `
                                 <div class="column img__wrap">
                                     <a href="${playlistURL}"><br>
                                     <img class="playlistImages" src="/assets/playlist_images/${name}.png" title="${name}">
@@ -270,7 +312,7 @@ function loadObjects(langsObj, l=language) {
                             <br>`;
                         }
 
-                        $('#homepagePlaylistsPreview').html(homepagePlaylistList)
+                        $(`#${fieldId}`).html(fieldContent)
                         break;
                 }
     
@@ -400,11 +442,10 @@ allFiles.done(() => {
 // ADD HOMEPAGE EVENTS ----------------------------------
 // ID of items to add events to
 itemsToAddEventsTo = {
-    'expandAboutMePreview':'homepageAboutMePreview',
-    'expandBlogPreview':'homepageArticlePreview',
-    'expandCoolLinksPreview':'homepageCoolLinkPreview',
-    'expandPlaylistsPreview':'homepagePlaylistsPreview',
-    'expandProjectsPreview':'homepageProjectsPreview'
+    'aboutExpandPreview':'aboutHomepagePreview',
+    'blogExpandPreview':'blogHomepagePreview',
+    'coolLinksExpandPreview':'coolLinksHomepagePreview',
+    'playlistsExpandPreview':'playlistsHomepagePreview',
 }
 
 // adding events
