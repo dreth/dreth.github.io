@@ -34,6 +34,10 @@ a {
 .homepageButtons:hover {
   background-color: rgb(25, 182, 255);
 }
+.divBorder {
+  outline: 3px solid black;
+  border-radius: 20px;
+}
 /* links (lt) */
 a.lt {
   text-decoration: none;

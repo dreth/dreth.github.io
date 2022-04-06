@@ -13,14 +13,6 @@ var language;
 var darkThemeLabel;
 var lightThemeLabel;
 
-// sections that expand
-var expandSections = {
-    'about':'about',
-    'cool_links':'coolLinks',
-    'playlists':'playlists',
-    'projects':'projects'
-}
-
 // base links
 const baseSpotifyLink = 'https://open.spotify.com/playlist/';
 const wikipediaBaseLink = 'wikipedia.org/wiki/';
@@ -146,6 +138,13 @@ function getWidth() {
 // generate page skeleton
 function generateSkeleton(regen=false) {
     // SECTIONS -------------------------------------
+    // sections that expand
+    let expandSections = {
+        'about':'about',
+        'cool_links':'coolLinks',
+        'playlists':'playlists',
+        'projects':'projects'
+    }
     // sections that are just a link
     let linkOnlySections = {
         'github':'github',
@@ -154,54 +153,21 @@ function generateSkeleton(regen=false) {
     }
 
     // only show 2 column layout if width > 1000
-    let homepageBullets;
-    let widthReq = $(window).width() > 1000 | getWidth() > 1000;
-    if (widthReq) {
-        homepageBullets = '<div class="column leftcol-home"><ul class="noBullets">';
-    } else {
-        homepageBullets = '<div class="column leftcol-half"></div>';
-    }
+    let homepageBullets = '<div class="column leftcol-home divBorder">';
 
     // MAIN LOOP --------------------------------------
     // EXPAND sections
     let divideCount = 0;
     for (const [name, nameCC] of Object.entries(expandSections)) {
-        // normal widths (desktop)
-        if (widthReq) {
-            // start the LI
-            homepageBullets += `<li class="ml ${name}">`
-            // add PAGE LINK
-            homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
-            // add expanders if width requirement is met
-            if (regen === false) {
-                // add EXPANDER BUTTON
-                homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
-                // ADD CLOSING LI AND PREVIEW DIV
-                homepageBullets += `</li><div class="row" id="${nameCC}HomepagePreview"></div><br>`
-            } else {
-                // if it's already expanded load it expanded
-                if (expandedItems.includes(name)) {
-                    // add EXPANDER BUTTON
-                    homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊖</a>`
-                    // ADD CLOSING LI AND PREVIEW DIV
-                    homepageBullets += `</li><div class="row" id="${nameCC}HomepagePreview"></div><br>`
-                } else {
-                    // add EXPANDER BUTTON
-                    homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
-                    // ADD CLOSING LI AND PREVIEW DIV
-                    homepageBullets += `</li><div class="row" id="${nameCC}HomepagePreview"></div><br>`
-                }
-            }
-        } 
-        // small widths (mobile)
-        else {
-            divideCount += 1;
-            // start the LI
-            homepageBullets += `<div>`
-            // add PAGE LINK
-            homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
-            homepageBullets += `<div id="${nameCC}HomepagePreviewSW"></div><br>`
-        }
+        divideCount += 1;
+        // start the LI
+        homepageBullets += `<div class="ml ${name}">`
+        // add PAGE LINK
+        homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
+        // add EXPANDER BUTTON
+        homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
+        // ADD CLOSING LI AND PREVIEW DIV
+        homepageBullets += `<div class="row" id="${nameCC}HomepagePreview"></div></div><br>`
     }
 
     // LINK sections
@@ -209,37 +175,25 @@ function generateSkeleton(regen=false) {
         // is this line the last one?
         let lastLineBreak = name === 'email' ? '' : '<br>';
         // start the LI
-        homepageBullets += `<li class="ml ${name}">`
+        homepageBullets += `<div class="ml ${name}">`
         // add PAGE LINK
         homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
         // ADD CLOSING LI AND LINE BREAK
-        homepageBullets += `</li>` + lastLineBreak
+        homepageBullets += `</div>` + lastLineBreak
     }
     // close the UL tag
     // only show 2 column layout if width > 1000
-    if (widthReq) {
-        homepageBullets += '</ul></div>'
-    } else {
-        homepageBullets += '</ul>'
-    }
+    homepageBullets += '</div>'
 
     // ADD BLOG ARTICLE LIST
-    let blogArticleList;
-    if (widthReq) {
-        blogArticleList = `
-        <div class="column rightcol-home">
-            <br>
-            <span id="blogTitle"></span>
-            <div class="blogTitleRightPadding"><hr></div><br>
+    let blogArticleList = `
+        <div class="column rightcol-home divBorder">
+            <div class="blogTitle">
+                <h3 id="blogTitle"></h3>
+                <br>
+            </div>
             <div id="articleList"></div>
         </div>` 
-    } else {
-        blogArticleList = `
-        <hr><br>
-        <h3 id="blogTitle"></h3>
-        <div class="blogTitleRightPadding"><hr></div><br>
-        <div id="articleList"></div>` 
-    }
 
     $("#homepageMainDiv").html(`${homepageBullets}${blogArticleList}`)
 }
@@ -250,10 +204,6 @@ if (document.getElementById("homepageMainDiv")) {
 }
 // HIDING STUFF THAT STARTS HIDDEN ---------------
 function toggleSkeletonExpanders() {
-    // hide homepage playlists preview
-    $("#playlistsHomepagePreview").toggle()
-    // hide homepage links preview
-    $("#coolLinksHomepagePreview").toggle()
     // hide lang name
     $("#langName").toggle()
 }
@@ -403,7 +353,12 @@ function loadArticleList() {
             let articleURL = `/blog/${articleTag[i]}/`;
     
             // append to article list html object
-            artList += `<div><span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span><br><a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a></div>`;
+            artList += `
+            <div>
+                <span class="articleTopInfo">${articleDates[i]} - ${articleLang[i]}</span>
+                <br> 
+                <a onmouseenter="setBlogIcon('${articleEmoji[i]}')" onmouseleave="removeBlogIcon()" class="c" href="${articleURL}">${articleEmoji[i]} ${articleTitles[i]}</a> 
+            </div>`;
 
             // append line breaks
             artList += '<br><br>'
@@ -522,34 +477,7 @@ function removeBlogIcon() {
 // LOAD ALL OBJECTS -------------------------------------
 allFiles.done(() => {
     loadObjects(langs)
-
-    // reload skeleton if window is resized
-    window.addEventListener('resize', () => {
-        if ($(window).width() < 1000 | getWidth() < 1000) {
-            // regen the skeleton
-            generateSkeleton(regen=true)
-            // reload text items
-            loadObjects(langs)
-        } else {
-            // regen the skeleton
-            generateSkeleton(regen=true)
-
-            // add expand events (they are lost when generateSkeleton() runs)
-            addHomepageExpandEvents()
-
-            // hide non previously expanded items
-            for (const [section,sectionCC] of Object.entries(expandSections)) {
-                if (!expandedItems.includes(section)) {
-                    $(`#${sectionCC}HomepagePreview`).toggle()
-                }
-            }
-            
-            // reload text items
-            loadObjects(langs)
-        }
-    })
 })
-
 
 // ADD HOMEPAGE EVENTS ----------------------------------
 var expandedItems = [];

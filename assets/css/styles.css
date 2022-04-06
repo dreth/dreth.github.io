@@ -14,13 +14,6 @@ span.aboutHeading {
 a {
   cursor: pointer;
 }
-/* borders */
-.homepageButtons {
-  border: 1px solid white;
-}
-.homepageButtons:hover {
-  background-color: rgb(0, 53, 227);
-}
 /* playlist images hover text/panel color */
 .img__dl_hover_panel {
   background: rgba(0, 0, 0, 0.561);
@@ -33,6 +26,17 @@ a {
 }
 #goToRandomLinkTitle:hover {
   color: #7dff7d;
+}
+/* borders */
+.homepageButtons {
+  border: 1px solid white;
+}
+.homepageButtons:hover {
+  background-color: rgb(0, 53, 227);
+}
+.divBorder {
+  outline: 3px solid white;
+  border-radius: 20px;
 }
 /* links (lt) */
 a.lt {
