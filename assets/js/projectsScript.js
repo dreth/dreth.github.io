@@ -9,7 +9,7 @@ function updateProjectsList(l=language) {
         if (JSON.parse(projectSections[sec]["include"]) == true) {
             
             // generate heading
-            var projectHeading = `<h4>${projectSections[sec]['emoji']} ${projectHeadings[sec][l]}</h4>`;
+            var projectHeading = `<h3><b>${projectSections[sec]['emoji']} ${projectHeadings[sec][l]}</b></h3>`;
 
             // append to article list html object
             projectList += `${projectHeading}<ul class="noBullets">`;
@@ -28,7 +28,7 @@ function updateProjectsList(l=language) {
                     projectList += `<br><br>`;
                 }
             }
-            projectList += '</ul><hr>';
+            projectList += '</ul>';
         }
     }
 
