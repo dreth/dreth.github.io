@@ -16,10 +16,13 @@ a {
 }
 /* homepage main block links */
 div.ml:hover {
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(43, 43, 43);
 }
 div.alt {
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(43, 43, 43);
+}
+div.alt2 {
+  background-color: rgb(19, 19, 19);
 }
 /* playlist images hover text/panel color */
 .img__dl_hover_panel {

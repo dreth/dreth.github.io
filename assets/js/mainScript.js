@@ -427,11 +427,15 @@ function toggleLangText(l, event) {
 // function to change blog icon (fun stuff)
 function setBlogIcon(icon) {
     allFiles.done(() => {
+        // replace blog icon
         if (document.getElementById('blogTitle')) {
             $("#blogTitle").html($("#blogTitle").html().replace('🗒️',icon))
         } else if (document.getElementById('blogHomepageLink')) {
             $("#blogHomepageLi").attr('data-before',icon)
         }
+
+        // change blog div background
+        $("#blogArticles").addClass('alt2')
     })
 }
 function removeBlogIcon() {
@@ -442,6 +446,9 @@ function removeBlogIcon() {
         if (document.getElementById('blogHomepageLi')) {
             $("#blogHomepageLi").attr('data-before','🗒️')
         }
+
+        // change blog div background
+        $("#blogArticles").removeClass('alt2')
     })
 }
 
