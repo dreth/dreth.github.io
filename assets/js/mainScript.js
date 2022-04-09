@@ -247,7 +247,7 @@ function loadObjects(langsObj, l=language) {
                     case 'coolLinksHomepagePreview':
                         // cool wikipedia links preview
                         fieldContent = `<br><span class="notThatSmall">${translation}</span><br><br>`;
-                        let maxAmountOfLinks = 5;
+                        let maxAmountOfLinks = 3;
                         let cnt = 0;
                         var wikipediaArticles = coolLinksContent['wikipedia'];
                         for (const name of Object.keys(wikipediaArticles).reverse()) {

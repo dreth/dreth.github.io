@@ -74,7 +74,7 @@ div.rightcol-half-mb {
       padding-right: 2%;
     }
     .homepagePlaylist {
-      padding-left: 7%;
+      width: 100%;
     }
     /* PADDING all around */
     .paddingAllAround {
@@ -248,7 +248,7 @@ div.rightcol-half-mb {
       padding-right: 5%;
     }
     .homepagePlaylist {
-      width: 98%;
+      width: 100%;
     }
     /* PADDING all around */
     .paddingAllAround {
@@ -427,7 +427,7 @@ div.rightcol-half-mb {
       padding-right: 75%;
     }
     .homepagePlaylist {
-      padding-left: 36.5%;
+      width: 100%;
     }
     /* PADDING all around */
     .paddingAllAround {
