@@ -13,6 +13,42 @@ var language;
 var darkThemeLabel;
 var lightThemeLabel;
 
+// logging something cool cause life's too short and this may make someone smile, hopefully.
+console.log(`
+                                 #######*                ##*                    
+                               ###########           ###    ###                 
+                ####        ##############       (((        ###                 
+               #####      ###############        (((        ###                 
+             ######    #################      ###(((        #                   
+            ######   #################      #####(((                            
+           ##########################     #######(((                            
+          ##########################   ##########(((                            
+         #########################   ############(((          ##########        
+       ##########################  ##############(((        ############        
+      #########################*                #(((        ############        
+     ######################                                 ###########         
+    ############# #######                                   ##########          
+   ###########   ######           #############             ########            
+    *######     ######         ##################(((        #######             
+              #######         ###################(((        ######              
+             #######         ####################(((        #####               
+            ########         ####################(((        ####                
+           ########         #####################(((        ##                  
+         ##########         #####################(((        #       #####       
+        ###########         ##################  #(((             ##########     
+       ###########          ################   ##(((         ##############     
+       #########             ############     ###(((        ##############      
+         ####      ##         ########      #####(((        #############       
+                  ####          ####       ######(((        ############        
+                #######                   #######(((        ###########         
+               ##########                                   ##########          
+             ###############                                #########           
+             ############                                  #########            
+              ########                #############         #######             
+                                       #########                                
+`)
+console.log('Welcome to my site (:')
+
 // base links
 const baseSpotifyLink = 'https://open.spotify.com/playlist/';
 const wikipediaBaseLink = 'wikipedia.org/wiki/';
@@ -255,7 +291,7 @@ function loadObjects(langsObj, l=language) {
                                 <div class="column img__wrap homepagePlaylist">
                                     <a href="${playlistURL}"><br>
                                     <img class="playlistImages-hp" src="/assets/playlist_images/${name}.png" title="${name}">
-                                        <div class="img__description_layer img__dl_hover_panel homepagePlaylist">
+                                        <div class="homepagePlaylist img__description_layer img__dl_hover_panel">
                                             <span class="img__description">${name}</span>
                                         </div>
                                     </a>
@@ -387,6 +423,7 @@ function toggleLangText(l, event) {
     }
 }
 
+
 // function to change blog icon (fun stuff)
 function setBlogIcon(icon) {
     allFiles.done(() => {
@@ -408,47 +445,43 @@ function removeBlogIcon() {
     })
 }
 
-// LOAD ALL OBJECTS -------------------------------------
-allFiles.done(() => {
-    loadObjects(langs)
-})
 
 // ADD HOMEPAGE EVENTS ----------------------------------
-var expandedItems = [];
-// ID of items to add events to
-function addHomepageExpandEvents() {
-    let itemsToAddEventsTo = {
-        'aboutExpandPreview':'aboutHomepagePreview',
-        'coolLinksExpandPreview':'coolLinksHomepagePreview',
-        'playlistsExpandPreview':'playlistsHomepagePreview',
+// change text of about me, cool links and playlists on hover or clicking the div
+function addTextChangeEvents() {
+    // sections' divs and their respective link
+    let expandedSec = {
+        'aboutHomepageDIV':'aboutHomepageLink',
+        'coolLinksHomepageDIV':'coolLinksHomepageLink',
+        'playlistsHomepageDIV':'playlistsHomepageLink'
+    };
+    // keys to search the language for
+    let expandedLangKey = {
+        'aboutHomepageDIV':'about',
+        'coolLinksHomepageDIV':'cool_links',
+        'playlistsHomepageDIV':'playlists'
     }
-    let itemsExpandedName = {
-        'aboutExpandPreview':'about',
-        'coolLinksExpandPreview':'cool_links',
-        'playlistsExpandPreview':'playlists',
-    }
-
-    // adding events
-    for (const [expander, prevToggle] of Object.entries(itemsToAddEventsTo)) {
-        // add click event listeners if the element exists
-        if (document.getElementById(expander)) {
-            $(`#${expander}`).click(function() {
-                $(`#${prevToggle}`).toggle()
-                // switch plus to minus and vice versa on toggle
-                if ($(`#${expander}`).html() === '⊖') {
-                    $(`#${expander}`).html('⊕')
-                    // remove from expanded list
-                    expandedItems = expandedItems.filter(function(val){ 
-                        return val != itemsExpandedName[expander]; 
-                    });
-                } else {
-                    $(`#${expander}`).html('⊖')
-                    // add to expanded list
-                    expandedItems.push(itemsExpandedName[expander])
-                }
-            });
-        }
+    // add onmousenter and onmouseleave events
+    for (const div of Object.keys(expandedSec)) {
+        console.log(`${expandedLangKey[div]}_title`)
+        console.log(`${expandedLangKey[div]}_full`)
+        $(`#${div}`).mouseenter(function() {
+            // change link text
+            $(`#${expandedSec[div]}`).html(langs['content'][`${expandedLangKey[div]}_full`][language])
+        })
+        $(`#${div}`).mouseleave(function() {
+            // change link text
+            $(`#${expandedSec[div]}`).html(langs['content'][`${expandedLangKey[div]}_title`][language])
+        })
     }
 }
-// add the events on load
-addHomepageExpandEvents()
+
+// LOAD ALL OBJECTS -------------------------------------
+allFiles.done(() => {
+    // load stuff
+    loadObjects(langs)
+    // add the events
+    if (document.getElementById('homepageMainDiv')) {
+        addTextChangeEvents()
+    }
+})

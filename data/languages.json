@@ -20,10 +20,15 @@
             "es":"blog",
             "nl":"blog"
         },
-        "about_we": {
+        "about_title": {
             "en":"📃 about me",
             "es":"📃 sobre mí",
             "nl":"📃 over mij"
+        },
+        "about_full": {
+            "en":"📃 view full CV",
+            "es":"📃 ver mi CV completo",
+            "nl":"📃 kijk naar mijn full CV"
         },
         "blog_title": {
             "en":"🗒️ blog",
@@ -44,6 +49,11 @@
             "en":"⛓️ cool links",
             "es":"⛓️ enlaces cool",
             "nl":"⛓️ coole links"
+        },
+        "cool_links_full": {
+            "en":"⛓️ view all cool links",
+            "es":"⛓️ ver todos los links cool",
+            "nl":"⛓️ kijk naar alle coole links"
         },
         "random_cool_links": {
             "en":"🔄 random cool links",
@@ -79,6 +89,11 @@
             "en":"🎶 playlists",
             "es":"🎶 listas de reproducción",
             "nl":"🎶 afspeellijsten"
+        },
+        "playlists_full": {
+            "en":"🎶 view all playlists",
+            "es":"🎶 ver todas las listas",
+            "nl":"🎶 kijk naar alle playlists"
         },
         "github": {
             "en":"github",
@@ -162,7 +177,7 @@
         "0": {
             "homepageSubtitle":"subtitle",
             "welcomeSubtitle":"welcome",
-            "aboutHomepageLink":"about_we",
+            "aboutHomepageLink":"about_title",
             "blogHomepageLink":"blog",
             "coolLinksHomepageLink":"cool_links_title",
             "playlistsHomepageLink":"playlists_title",

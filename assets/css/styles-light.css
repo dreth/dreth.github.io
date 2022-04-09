@@ -39,7 +39,7 @@ div.ml:hover {
   background-color: rgb(25, 182, 255);
 }
 .divBorder {
-  outline: 3px solid black;
+  outline: 2px solid black;
   border-radius: 20px;
 }
 /* links (lt) */
