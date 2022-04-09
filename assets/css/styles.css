@@ -18,6 +18,9 @@ a {
 div.ml:hover {
   background-color: rgb(61, 61, 61);
 }
+div.alt {
+  background-color: rgb(61, 61, 61);
+}
 /* playlist images hover text/panel color */
 .img__dl_hover_panel {
   background: rgba(0, 0, 0, 0.561);

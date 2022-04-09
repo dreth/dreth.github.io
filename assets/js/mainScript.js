@@ -463,15 +463,24 @@ function addTextChangeEvents() {
     }
     // add onmousenter and onmouseleave events
     for (const div of Object.keys(expandedSec)) {
-        console.log(`${expandedLangKey[div]}_title`)
-        console.log(`${expandedLangKey[div]}_full`)
+        // event listeners for divs
         $(`#${div}`).mouseenter(function() {
             // change link text
             $(`#${expandedSec[div]}`).html(langs['content'][`${expandedLangKey[div]}_full`][language])
         })
         $(`#${div}`).mouseleave(function() {
-            // change link text
+            // back to original link text
             $(`#${expandedSec[div]}`).html(langs['content'][`${expandedLangKey[div]}_title`][language])
+        })
+
+        // event listeners for links
+        $(`#${expandedSec[div]}`).mouseenter(function() {
+            // change background color
+            $(`#${div}`).addClass('alt')
+        })
+        $(`#${expandedSec[div]}`).mouseleave(function() {
+            // change background color to original
+            $(`#${div}`).removeClass('alt')
         })
     }
 }
