@@ -14,6 +14,16 @@ span.aboutHeading {
 a {
   cursor: pointer;
 }
+/* homepage main block links */
+div.ml:hover {
+  background-color: rgb(231, 255, 230);
+}
+div.alt {
+  background-color: rgb(231, 255, 230);
+}
+div.alt2 {
+  background-color: rgb(246, 255, 245);
+}
 /* playlist images hover text/panel color */
 .img__dl_hover_panel {
   background: rgba(255, 255, 255, 0.561);
@@ -26,6 +36,17 @@ a {
 }
 #goToRandomLinkTitle:hover {
   color: #00a100;
+}
+/* borders */
+.homepageButtons {
+  border: 1px solid black;
+}
+.homepageButtons:hover {
+  background-color: rgb(25, 182, 255);
+}
+.divBorder {
+  outline: 2px solid black;
+  border-radius: 20px;
 }
 /* links (lt) */
 a.lt {
@@ -99,13 +120,13 @@ a.bp:hover {
 /* links (title) */
 a.title {
   text-decoration: none;
-  color: rgb(0, 0, 0)
+  color: rgb(104, 53, 255)
 }
 a.title:visited {
-  color: rgb(0, 0, 0)
+  color: rgb(104, 53, 255)
 }
 a.title:hover {
-  color: rgb(180, 0, 0)
+  color: rgb(62, 103, 199)
 }
 /* links (going back) */
 a.gb {

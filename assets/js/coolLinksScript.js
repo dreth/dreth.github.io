@@ -70,7 +70,7 @@ coolLinksJSON.done(() => {
         // append to article list html object
         artList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br><br>`;
     }
-    artList += '</ul><hr>';
+    artList += '</ul>';
 
     // appending the list of articles
     if (document.getElementById("otherSitesLinkList")) {

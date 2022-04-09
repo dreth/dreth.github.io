@@ -1,5 +1,9 @@
 # Useful NFTs?
 
+<div class="date">
+<span class="smaller"><b>February 10, 2022</b></span></div>
+<div class="centerPosition"><hr></div>
+
 NFTs have taken the spotlight extremely quickly and suddenly everyone knows about their existence. From being a piece of technology that only people involved in the blockchain world knew about, to having tons of artists, famous or infamous, release their own collections, gaming companies attempt to introduce it in their gaming ecosystems with limited success or huge backlash, and existing crypto projects integrate it in their existing functionality.
 
 They seem to be here to stay, but there's a lot of details people don't quite understand about these. Here I will try to demystify them, show some interesting use-cases for NFTs currently implemented, give my own opinion on their value justify it in some way. I write this because I find the topic fascinating, but also because I strongly dislike how the media have painted these, generally causing people to _despise_ the technology without quite understanding its use.
@@ -220,4 +224,3 @@ I'll only source externally obtained images, these are in order. Images I do not
 
 ***
 
-**Date: February 10, 2022**

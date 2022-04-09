@@ -20,6 +20,16 @@
             "es":"blog",
             "nl":"blog"
         },
+        "about_title": {
+            "en":"📃 about me",
+            "es":"📃 sobre mí",
+            "nl":"📃 over mij"
+        },
+        "about_full": {
+            "en":"📃 view full CV",
+            "es":"📃 ver mi CV completo",
+            "nl":"📃 kijk naar mijn full CV"
+        },
         "blog_title": {
             "en":"🗒️ blog",
             "es":"🗒️ blog",
@@ -39,6 +49,11 @@
             "en":"⛓️ cool links",
             "es":"⛓️ enlaces cool",
             "nl":"⛓️ coole links"
+        },
+        "cool_links_full": {
+            "en":"⛓️ view all cool links",
+            "es":"⛓️ ver todos los links cool",
+            "nl":"⛓️ kijk naar alle coole links"
         },
         "random_cool_links": {
             "en":"🔄 random cool links",
@@ -60,6 +75,11 @@
             "es":"proyectos",
             "nl":"projecten"
         },
+        "projects_we": {
+            "en":"🧪 projects",
+            "es":"🧪 proyectos",
+            "nl":"🧪 projecten"
+        },
         "playlists": {
             "en":"playlists",
             "es":"listas de reproducción",
@@ -69,6 +89,11 @@
             "en":"🎶 playlists",
             "es":"🎶 listas de reproducción",
             "nl":"🎶 afspeellijsten"
+        },
+        "playlists_full": {
+            "en":"🎶 view all playlists",
+            "es":"🎶 ver todas las listas",
+            "nl":"🎶 kijk naar alle playlists"
         },
         "github": {
             "en":"github",
@@ -82,45 +107,60 @@
         },
         "e-mail": {
             "en":"e-mail",
-            "es":"correo electrónico",
+            "es":"correo",
             "nl":"e-mail"
         },
-        "homepage_blogposts": {
-            "en":"Latest three blog posts:",
-            "es":"Últimos tres artículos:",
-            "nl":"Laatste drie blogberichten:"
+        "github_we": {
+            "en":"📦 github",
+            "es":"📦 github",
+            "nl":"📦 github"
+        },
+        "linkedin_we": {
+            "en":"👤 linkedin",
+            "es":"👤 linkedin",
+            "nl":"👤 linkedin"
+        },
+        "e-mail_we": {
+            "en":"✉️ e-mail",
+            "es":"✉️ correo",
+            "nl":"✉️ e-mail"
         },
         "homepage_wikipedia": {
-            "en":"Some Wikipedia articles I read recently:",
-            "es":"Articulos de Wikipedia que leí recientemente:",
-            "nl":"Wikipedia-artikelen die ik onlangs heb gelezen:"
+            "en":"Some cool Wikipedia articles I read recently:",
+            "es":"Algunos articulos cool de Wikipedia que leí recientemente:",
+            "nl":"Coole Wikipedia-artikelen die ik onlangs heb gelezen:"
         },
         "homepage_playlist": {
-            "en":"Kinda proud of this one:",
-            "es":"Moderadamente orgulloso de esta:",
-            "nl":"Best wel trots op deze:"
+            "en":"This one's chill:",
+            "es":"Esta está chill:",
+            "nl":"Deze is chill:"
         },
         "theme_lang": {
             "en":
                 {
-                    "dark":" dark",
-                    "light":" light"
+                    "dark":"dark",
+                    "light":"light"
                 },
             "es":
                 {
-                    "dark":" oscuro",
-                    "light":" claro"
+                    "dark":"oscuro",
+                    "light":"claro"
                 },
             "nl":
                 {
-                    "dark":" donker",
-                    "light":" licht"
+                    "dark":"donker",
+                    "light":"licht"
                 }
         },
         "about_me_text": {
-            "en":"I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general. Originally studied mathematics and then branched out into data science.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills.",
-            "es":"Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas. Originalmente estudié matemáticas y luego me integré en el mundo de ciencia de datos.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. Me estoy tomando un pequeño descanso del mercado laboral para aprender, estudiar y desarrollar mis propios proyectos personales y habilidades.",
-            "nl":"I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general. Originally studied mathematics and then branched out into data science.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills."
+            "en":"Data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills.",
+            "es":"Data scientist y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. Me estoy tomando un pequeño descanso del mercado laboral para aprender, estudiar y desarrollar mis propios proyectos personales y habilidades.",
+            "nl":"Data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills."
+        },
+        "about_me_short": {
+            "en":"Data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.",
+            "es":"Data scientist y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.",
+            "nl":"Data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general."
         },
         "other_sites": {
             "en":"Other sites:",
@@ -137,14 +177,14 @@
         "0": {
             "homepageSubtitle":"subtitle",
             "welcomeSubtitle":"welcome",
-            "aboutMeHomepageLink":"about",
+            "aboutHomepageLink":"about_title",
             "blogHomepageLink":"blog",
-            "coolLinksHomepageLink":"cool_links",
-            "playlistsHomepageLink":"playlists",
-            "projectsHomepageLink":"projects",
-            "githubHomepageLink":"github",
-            "linkedinHomepageLink":"linkedin",
-            "emailHomepageLink":"e-mail",
+            "coolLinksHomepageLink":"cool_links_title",
+            "playlistsHomepageLink":"playlists_title",
+            "projectsHomepageLink":"projects_we",
+            "githubHomepageLink":"github_we",
+            "linkedinHomepageLink":"linkedin_we",
+            "emailHomepageLink":"e-mail_we",
             "playlistsTitle":"playlists_title",
             "blogTitle":"blog_title",
             "articlesLabel":"articles_label",
@@ -155,11 +195,12 @@
             "goToRandomLinkTitle":"go_to_random_link"
         },
         "1": {
-            "homepageArticlePreview":"homepage_blogposts",
-            "homepagePlaylistsPreview":"homepage_playlist",
-            "homepageCoolLinkPreview":"homepage_wikipedia",
-            "homepageAboutMePreview":"about_me_text",
-            "homepageProjectsPreview":"about_me_text",
+            "playlistsHomepagePreview":"homepage_playlist",
+            "coolLinksHomepagePreview":"homepage_wikipedia",
+            "aboutHomepagePreview":"about_me_short",
+            "playlistsHomepagePreviewSW":"homepage_playlist",
+            "coolLinksHomepagePreviewSW":"homepage_wikipedia",
+            "aboutHomepagePreviewSW":"about_me_text",
             "aboutMeDescription":"about_me_text",
             "themeSwitcher":"theme_lang"
         },

@@ -1,5 +1,9 @@
 # How to set up a Data Science environment on Windows using Visual Studio Code
 
+<div class="date">
+<span class="smaller"><b>November 16, 2020</b></span></div>
+<div class="centerPosition"><hr></div>
+
 It is no mystery that I am profoundly in love with VS Code in many more ways than I’m comfortable admitting. Since my good friend Victor showed me the power of this application, I not only have never gone back to any other code editor but I’ve also even replaced other tools with it.
 
 I’m currently doing a master’s degree and I have found myself using it as not only my main code editor and development environment but also my main tool for editing documents, opening PDFs, editing my site, etc…
@@ -1004,4 +1008,3 @@ Hopefully this guide has been useful at getting you started with VS Code. If you
 
 ***
 
-**Date: November 16, 2020**

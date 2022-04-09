@@ -1,5 +1,10 @@
 # Analyzing long-term investments in cryptocurrency projects
 
+<div class="date">
+  <span class="smaller"><b>March 13th, 2022</b></span></div>
+</div>
+<div class="centerPosition"><hr></div>
+
 I happen to really enjoy rolling around in the crypto world. I spend hours and hours researching, not only to find specific answers to things I'm curious about, but because I think its _really cool_ and this is what makes me happy. Given that many of my friends and some acquaintances know how much time I spent researching, I often get asked the question **How do you determine if project may or may not be a good investment?**. I can't predict the future, but there's several things I research before deciding to invest in any project. 
 
 A few weeks ago, I had a cool conversation about life with my friend César, who phrased this question in a way that gave me a great idea... _write an article about it!_. So here we are again, talking about crypto stuff.
@@ -741,4 +746,4 @@ I typically source these in order but I'll reference them with a description sin
 
 ***
 
-**Date: March 13th, 2022**
+
