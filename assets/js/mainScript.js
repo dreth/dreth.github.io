@@ -135,69 +135,6 @@ function getWidth() {
   }
   
 
-// generate page skeleton
-function generateSkeleton(regen=false) {
-    // SECTIONS -------------------------------------
-    // sections that expand
-    let expandSections = {
-        'about':'about',
-        'cool_links':'coolLinks',
-        'playlists':'playlists',
-        'projects':'projects'
-    }
-    // sections that are just a link
-    let linkOnlySections = {
-        'github':'github',
-        'linkedin':'linkedin',
-        'email':'email'
-    }
-
-    // only show 2 column layout if width > 1000
-    let homepageBullets = '<div class="column leftcol-home divBorder">';
-
-    // MAIN LOOP --------------------------------------
-    // EXPAND sections
-    let divideCount = 0;
-    for (const [name, nameCC] of Object.entries(expandSections)) {
-        divideCount += 1;
-        // start the LI
-        homepageBullets += `<div class="ml ${name}">`
-        // add PAGE LINK
-        homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
-        // add EXPANDER BUTTON
-        homepageBullets += ` <a class="bp" id="${nameCC}ExpandPreview">⊕</a>`
-        // ADD CLOSING LI AND PREVIEW DIV
-        homepageBullets += `<div class="row" id="${nameCC}HomepagePreview"></div></div><br>`
-    }
-
-    // LINK sections
-    for (const [name, nameCC] of Object.entries(linkOnlySections)) {
-        // is this line the last one?
-        let lastLineBreak = name === 'email' ? '' : '<br>';
-        // start the LI
-        homepageBullets += `<div class="ml ${name}">`
-        // add PAGE LINK
-        homepageBullets += `<a href="#" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b" id="${nameCC}HomepageLink"></a>`
-        // ADD CLOSING LI AND LINE BREAK
-        homepageBullets += `</div>` + lastLineBreak
-    }
-    // close the UL tag
-    // only show 2 column layout if width > 1000
-    homepageBullets += '</div>'
-
-    // ADD BLOG ARTICLE LIST
-    let blogArticleList = `
-        <div class="column rightcol-home divBorder">
-            <div class="blogTitle">
-                <h3 id="blogTitle"></h3>
-                <br>
-            </div>
-            <div id="articleList"></div>
-        </div>` 
-
-    $("#homepageMainDiv").html(`${homepageBullets}${blogArticleList}`)
-}
-
 
 // HIDING STUFF THAT STARTS HIDDEN ---------------
 function toggleSkeletonExpanders() {
@@ -315,10 +252,10 @@ function loadObjects(langsObj, l=language) {
                             let playlistURL = `${baseSpotifyLink}${page}`;
                             // append to article list html object
                             fieldContent += `
-                                <div class="column img__wrap">
+                                <div class="column img__wrap homepagePlaylist">
                                     <a href="${playlistURL}"><br>
                                     <img class="playlistImages-hp" src="/assets/playlist_images/${name}.png" title="${name}">
-                                        <div class="img__description_layer img__dl_hover_panel">
+                                        <div class="img__description_layer img__dl_hover_panel homepagePlaylist">
                                             <span class="img__description">${name}</span>
                                         </div>
                                     </a>

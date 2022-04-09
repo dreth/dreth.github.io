@@ -114,13 +114,13 @@ a.bp:hover {
 /* links (title) */
 a.title {
   text-decoration: none;
-  color: rgb(0, 0, 0)
+  color: rgb(104, 53, 255)
 }
 a.title:visited {
-  color: rgb(0, 0, 0)
+  color: rgb(104, 53, 255)
 }
 a.title:hover {
-  color: rgb(180, 0, 0)
+  color: rgb(62, 103, 199)
 }
 /* links (going back) */
 a.gb {

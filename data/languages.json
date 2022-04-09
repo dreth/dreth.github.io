@@ -111,14 +111,14 @@
             "nl":"✉️ e-mail"
         },
         "homepage_wikipedia": {
-            "en":"Some Wikipedia articles I read recently:",
-            "es":"Articulos de Wikipedia que leí recientemente:",
-            "nl":"Wikipedia-artikelen die ik onlangs heb gelezen:"
+            "en":"Some cool Wikipedia articles I read recently:",
+            "es":"Algunos articulos cool de Wikipedia que leí recientemente:",
+            "nl":"Coole Wikipedia-artikelen die ik onlangs heb gelezen:"
         },
         "homepage_playlist": {
-            "en":"Kinda proud of this one:",
-            "es":"Moderadamente orgulloso de esta:",
-            "nl":"Best wel trots op deze:"
+            "en":"This one's chill:",
+            "es":"Esta está chill:",
+            "nl":"Deze is chill:"
         },
         "theme_lang": {
             "en":
