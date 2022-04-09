@@ -198,10 +198,7 @@ function generateSkeleton(regen=false) {
     $("#homepageMainDiv").html(`${homepageBullets}${blogArticleList}`)
 }
 
-// immediately generate the skeleton
-if (document.getElementById("homepageMainDiv")) {
-    generateSkeleton()
-}
+
 // HIDING STUFF THAT STARTS HIDDEN ---------------
 function toggleSkeletonExpanders() {
     // hide lang name
