@@ -580,6 +580,9 @@ div.rightcol-half-mb {
   .blogTitle {
     text-align: center;
   }
+  #blogTitle {
+    display: inline;
+  }
 
   /* cool links random link browser  */
   #randomLinkBrowserEmbed {
@@ -654,4 +657,8 @@ div.rightcol-half-mb {
   
   .rightcol {
     text-align: right;
+  }
+
+  .centered {
+    text-align: center;
   }
