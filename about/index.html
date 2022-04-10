@@ -43,33 +43,38 @@
         <h3 id="aboutHeading">📃 About me</h3>
       </div>
       <div class="column rightcol">
-        <!-- Theme switcher -->
-        <br><div id="themeSwitcher"></div>
-        <!-- Language switcher -->
-        <span id="langName"></span>
         <br>
-        <span><a onclick="updateLang('es')" onmouseenter="toggleLangText('es',1)" onmouseleave="toggleLangText('es',0)">🇪🇸🇩🇴</a></span><br>
-        <span><a onclick="updateLang('en')" onmouseenter="toggleLangText('en',1)" onmouseleave="toggleLangText('en',0)">🇬🇧🇺🇸</a></span><br>
+        <!-- Language switcher -->
+        <div class="inline">
+          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es',1)" onmouseleave="toggleLangText('es',0)" class="l">🇪🇸🇩🇴</a>&nbsp;
+          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en',1)" onmouseleave="toggleLangText('en',0)" class="l">🇬🇧🇺🇸</a>
+        </div>&emsp;&nbsp;
+        <!-- Theme switcher -->
+        <div id="themeSwitcher" class="inline"></div>
       </div>
     </div>
-    <hr>
-      <p id="aboutMeDescription"></p>
-    <hr>
-      <h2 id="cvHeading">CV/Résumé</h2>
+    <div class="divBorder smallPaddingAllAround">
+        <span id="aboutMeDescription"></span>
+      <br><br>
+      <hr>
       <br>
 
-      <!-- EDUCATION -->
-      <div id="educationSection"></div>
-      <br>
-      
-      <!-- WORK EXPERIENCE -->
-      <div id="workSection"></div>
-      <br>
+      <div class="row">
+        <div class="column leftcol-half-about rightmargin-2">
+          <!-- WORK EXPERIENCE -->
+          <div id="workSection"></div>
+          <br>
+        </div>
+        <div class="column rightcol-half-about leftmargin-2">
+          <!-- EDUCATION -->
+          <div id="educationSection"></div>
+          <br>
 
-      <!-- OTHER THINGS (langs/skills) -->
-      <div id="otherSection"></div>
-      <br>
-
+          <!-- OTHER THINGS (langs/skills) -->
+          <div id="otherSection"></div>
+          <br>
+      </div>
+    </div>
   </div>
 </body>
 

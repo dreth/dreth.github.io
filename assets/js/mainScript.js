@@ -383,15 +383,6 @@ function changeTheme() {
 
 // show lang text on right col
 function toggleLangText(l, event) {
-    // depending on width, show lang popup or not
-    langsJSON.done(() => {
-        // get name of current language
-        let currentLangName = langs['content']['language_names'][l];
-        // add it to the langname lil thingy
-        $("#langName").html(currentLangName)
-        $("#langName").toggle()
-    })
-
     // preview the language on mouse entry
     if (l != language) {
         if (event===1) {

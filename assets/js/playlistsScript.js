@@ -1,6 +1,6 @@
 // creating playlists list
 var breakPlaylistsAt = 4;
-var playlistList = '<div class="column leftcol-half">';
+var playlistList = '<br><br><br><div class="column leftcol-half centered">';
 
 playlistsJSON.done(() => {
     let playlistDivisionCounter = 0;
@@ -30,7 +30,7 @@ playlistsJSON.done(() => {
             }
         } else {
             if (playlistDivisionCounter === (breakPlaylistsAt + 1)) {
-                playlistList += `<div class="column rightcol-half">${playlistBlock}`;
+                playlistList += `<div class="column rightcol-half centered">${playlistBlock}`;
             } else {
                 playlistList += `${playlistBlock}`;
             }

@@ -42,19 +42,18 @@
         <h3 id="projectsTitle">⚗️ proyects</h3>
       </div>
       <div class="column rightcol">
-        <!-- Theme switcher -->
-        <br><div id="themeSwitcher"></div>
-        <span id="langName"></span>
         <br>
-        <div>
-          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es',1)" onmouseleave="toggleLangText('es',0)" class="l">🇪🇸🇩🇴</a><br>
-          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en',1)" onmouseleave="toggleLangText('en',0)" class="l">🇬🇧🇺🇸</a><br>
-          <!-- <a onclick="updateLang('nl')" onmouseenter="toggleLangText('nl',1)" onmouseleave="toggleLangText('nl',0)" class="l">🇳🇱🇧🇪</a><br> -->
-        </div>
+        <!-- Language switcher -->
+        <div class="inline">
+          <a onclick="updateLang('es')" onmouseenter="toggleLangText('es',1)" onmouseleave="toggleLangText('es',0)" class="l">🇪🇸🇩🇴</a>&nbsp;
+          <a onclick="updateLang('en')" onmouseenter="toggleLangText('en',1)" onmouseleave="toggleLangText('en',0)" class="l">🇬🇧🇺🇸</a>
+        </div>&emsp;&nbsp;
+        <!-- Theme switcher -->
+        <div id="themeSwitcher" class="inline"></div>
       </div>
     </div>
-    <hr>
-    <div id="projectsList"></div>
+    </div>
+    <div id="projectsList" class="divBorder smallPaddingAllAround"></div>
 
   <script src="/assets/js/mainScript.js"></script>
   <script src="/assets/js/projectsScript.js"></script>

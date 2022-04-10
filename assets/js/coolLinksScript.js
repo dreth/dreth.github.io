@@ -31,7 +31,7 @@ coolLinksJSON.done(() => {
         // append to article list html object
         artList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br><br>`;
     }
-    artList += '</ul><hr>';
+    artList += '</ul>';
 
     // appending the list of articles
     if (document.getElementById("wikipediaLinkList")) {
@@ -52,7 +52,7 @@ coolLinksJSON.done(() => {
         // append to article list html object
         artList += `<span>🔗</span> <a class="b" href="${articleURL}">${name}</a><br><br>`;
     }
-    artList += '</ul><hr>';
+    artList += '</ul>';
 
     // appending the list of articles
     if (document.getElementById("wiktionaryLinkList")) {
@@ -116,8 +116,6 @@ function randomLinkSwitch() {
             $("#randomLinkBrowser").toggle()
             $("#linksBlock").toggle()
             $("#goToRandomLinkTitle").toggle()
-            // make hr padded
-            $("#coolLinksMiddleHR").attr('class','paddedBody')
         } else {
             // all toggles to show the other section
             $("#randomLinksTitle").toggle()
@@ -125,8 +123,6 @@ function randomLinkSwitch() {
             $("#randomLinkBrowser").toggle()
             $("#linksBlock").toggle()
             $("#goToRandomLinkTitle").toggle()
-            // make hr NOT padded
-            $("#coolLinksMiddleHR").attr('class','fullBody')
         }
         // go to random link
             goToRandomLink()

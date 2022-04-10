@@ -34,43 +34,40 @@
   <title id="linksTitleBar">cool links | Daniel A.</title>
 </head>
 
-<body>
-  <div class="paddedBody">
-    <div class="row">
-      <div class="column leftcol">
-        <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
-        <h3 id="linksTitle"></h3>
-        <h3 id="randomLinksTitle"></h3>
-        <a id="goToRandomLinkTitle" onclick="goToRandomLink()"></a>
-      </div>
-      <div class="column rightcol">
-        <!-- Theme switcher -->
-        <br><div id="themeSwitcher"></div>
-        <br><div id="randomLinkSwitcher"></div>
-      </div>
+<body class="paddedBody">
+  <div class="row">
+    <div class="column leftcol">
+      <a class='title' href="#" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1>Daniel A.</h1></a>
+      <h3 id="linksTitle"></h3>
+      <h3 id="randomLinksTitle"></h3>
+      <a id="goToRandomLinkTitle" onclick="goToRandomLink()"></a>
+    </div>
+    <div class="column rightcol">
+      <!-- Theme switcher -->
+      <br><div id="themeSwitcher"></div>
+      <br><div id="randomLinkSwitcher"></div>
     </div>
   </div>
-
-  <div class="paddedBody"id="coolLinksMiddleHR"><hr></div>
-  
-  <div class="paddedBody">
-    <div id="linksBlock">
+  <div id="linksBlock" class="row divBorder smallPaddingAllAround">
+    <div class="column leftcol-half-about rightmargin-2">
       <!-- WIKIPEDIA LINKS -->
-      <p>Wikipedia:</p>
+      <h3 class="inline">Wikipedia:</h3>
       <div id="wikipediaLinkList"></div>
-      
+    </div>
+    <div class="column rightcol-half-about leftmargin-2">
       <!-- WIKTIONARY LINKS -->
-      <p>Wiktionary:</p>
+      <h3 class="inline">Wiktionary:</h3>
       <div id="wiktionaryLinkList"></div>
 
       <!-- OTHER LINKS -->
-      <p id="otherSitesLabel"></p>
+      <h3 class="inline" id="otherSitesLabel"></h3>
       <div id="otherSitesLinkList"></div>
-  </div>
+    </div>
   </div>
 
   <!-- random link browser -->
-  <div id="randomLinkBrowser" class="fullBody">
+  <div id="randomLinkBrowser">
+    <hr>
     <embed id="randomLinkBrowserEmbed" src="https://dac.ac">
   </div>
 

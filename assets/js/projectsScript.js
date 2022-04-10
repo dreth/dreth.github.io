@@ -3,13 +3,16 @@ function updateProjectsList(l=language) {
 
     // -------------------------- PROJECTS
     var projectList = '';
-    for (const sec of Object.keys(projectNames)) {
+    let projectsPageSections = Object.keys(projectNames);
+    for (const sec of projectsPageSections) {
+        // avoid adding extra brs at the end
+        let lastSection = sec == projectsPageSections[projectsPageSections.length - 1] ? true : false;
 
         // generate section
         if (JSON.parse(projectSections[sec]["include"]) == true) {
             
             // generate heading
-            var projectHeading = `<h3><b>${projectSections[sec]['emoji']} ${projectHeadings[sec][l]}</b></h3>`;
+            var projectHeading = `<h3 class="inline"><b>${projectSections[sec]['emoji']} ${projectHeadings[sec][l]}</b></h3>`;
 
             // append to article list html object
             projectList += `${projectHeading}<ul class="noBullets">`;
@@ -23,10 +26,13 @@ function updateProjectsList(l=language) {
                 projectList += `<br><ul class="noBullets"><li class="pjs-desc">${projectDescriptions[sec][i][l]}</li>`;
                 // project LINKS
                 if (projectLinks[sec][i] != "") {
-                    projectList += `<br><li class="pjs-gh"><a class="b" href="${projectLinks[sec][i]}">${projectLinkHeading[projectTypeOfLink][l]}</a></li></ul><br><br>`;
-                } else {
-                    projectList += `<br><br>`;
-                }
+                    projectList += `<br><li class="pjs-gh"><a class="b" href="${projectLinks[sec][i]}">${projectLinkHeading[projectTypeOfLink][l]}</a></li></ul>`;
+                    // add line breaks if the object isnt the last one of the last section
+                    if (!lastSection) {
+                        console.log('test')
+                        projectList += '<br><br>';
+                    }
+                } 
             }
             projectList += '</ul>';
         }
