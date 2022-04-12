@@ -47,6 +47,8 @@ div.alt2 {
 .divBorder {
   outline: 2px solid white;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
 }
 /* links (lt) */
 a.lt {
