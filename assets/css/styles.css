@@ -49,6 +49,7 @@ div.alt2 {
   outline: 2px solid white;
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
+  perspective: 1px;
 }
 /* links (lt) */
 a.lt {
