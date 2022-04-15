@@ -1,7 +1,6 @@
 html {
   background-color: #fff;
   color: #000;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 p.innerText {
   font-size: large;
@@ -48,9 +47,6 @@ div.alt2 {
 .divBorder {
   outline: 2px solid black;
   border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -khtml-border-radius: 20px;
 }
 /* links (lt) */
 a.lt {
