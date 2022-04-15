@@ -39,16 +39,14 @@ div.alt2 {
 }
 /* borders */
 .homepageButtons {
-  border: 1px solid white;
+  box-shadow: 0 0 0 1pt white;
 }
 .homepageButtons:hover {
   background-color: rgb(0, 53, 227);
 }
 .divBorder {
-  outline: 2px solid white;
+  box-shadow: 0 0 0 1.8pt white;
   border-radius: 20px 20px 20px 20px;
-  overflow: hidden;
-  perspective: 1px;
 }
 /* links (lt) */
 a.lt {

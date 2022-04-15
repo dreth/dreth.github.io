@@ -1,6 +1,6 @@
 // creating playlists list
 var breakPlaylistsAt = 4;
-var playlistList = '<br><br><br><div class="column leftcol-half centered">';
+var playlistList = '<br><br><div class="column leftcol-half centered">';
 
 playlistsJSON.done(() => {
     let playlistDivisionCounter = 0;
