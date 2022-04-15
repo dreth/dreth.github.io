@@ -1,6 +1,7 @@
 html {
   background-color: #fff;
   color: #000;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 p.innerText {
   font-size: large;
