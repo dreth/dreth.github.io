@@ -12,11 +12,17 @@ allFiles.done(() => {
     // prev article title
     let prevNextArticleSwitcher = "";
     if (!(articleTitles[current_article_index+1] === undefined)) {
+        // prev article title and path
+        let prevArticleTitle = articleTitles[current_article_index+1];
+        let prevArticlePath = articleTag[current_article_index+1];
+
+        // add to the html tag
         prevNextArticleSwitcher += `
         <div class="column leftcol-half-articles divBorder paddingAllAround rightmargin-2">
             <p class="centered" id="prevArticleText"></p><br>
-            <a class="b"><i>${articleTitles[current_article_index+1]}</i></a>
+            <a class="b" href="/blog/${prevArticlePath}"><i>${prevArticleTitle}</i></a>
         </div>`;
+
     } else {
         prevNextArticleSwitcher += `
         <div class="column leftcol-half-articles divBorder paddingAllAround rightmargin-2">
@@ -26,11 +32,17 @@ allFiles.done(() => {
 
     // next article title
     if (!(articleTitles[current_article_index-1] === undefined)) {
+        // next article title and path
+        let nextArticleTitle = articleTitles[current_article_index-1];
+        let nextArticlePath = articleTag[current_article_index-1];
+
+        // add to the html tag
         prevNextArticleSwitcher += `
         <div class="column rightcol-half-articles divBorder paddingAllAround leftmargin-2">
             <p class="centered" id="nextArticleText"></p><br>
-            <a class="b"><i>${articleTitles[current_article_index-1]}</i></a>
+            <a class="b" href="/blog/${nextArticlePath}"><i>${nextArticleTitle}</i></a>
         </div>`;
+
     } else {
         prevNextArticleSwitcher += `
         <div class="column rightcol-half-articles divBorder paddingAllAround leftmargin-2">
