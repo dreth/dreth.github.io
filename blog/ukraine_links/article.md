@@ -116,5 +116,3 @@ These may contain very graphic content, if you're sensitive do NOT click any of 
 
 - [monavrill](https://twitter.com/monavrill)
 
-***
-

@@ -65,5 +65,4 @@ I highly recommend trying it out in a virtual machine if you like tinkering, itâ
 1. [Unity Blog](https://blogs.unity3d.com/2019/05/30/announcing-the-unity-editor-for-linux/)
 2. [HowtoForge.com](https://www.howtoforge.com/the-perfect-desktop-ubuntu-9.04)
 
-***
 

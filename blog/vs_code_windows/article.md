@@ -1006,5 +1006,3 @@ Hopefully this guide has been useful at getting you started with VS Code. If you
 
 [You can read up more up in the VS Code Documentation which is quite complete as well!](https://code.visualstudio.com/docs)
 
-***
-

@@ -376,5 +376,3 @@ A continuación las páginas web y servicios que hemos mencionado en este artíc
 
 - [Coinbase](https://www.coinbase.com)
 
-***
-

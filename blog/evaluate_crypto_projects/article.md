@@ -744,6 +744,3 @@ I typically source these in order but I'll reference them with a description sin
 
 - Initial token distributions for different blockchains: [messari.io](https://messari.io/)
 
-***
-
-

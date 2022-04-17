@@ -60,5 +60,3 @@ Thanks for checking out my article!
 2. [Wikipedia](https://en.wikipedia.org/wiki/Mang%C3%BA)
 3. [DominicanCooking.com](https://dominicancooking.com/)
 
-***
-
