@@ -14,8 +14,13 @@ allFiles.done(() => {
     if (!(articleTitles[current_article_index+1] === undefined)) {
         prevNextArticleSwitcher += `
         <div class="column leftcol-half-articles divBorder paddingAllAround rightmargin-2">
-            <p id="prevArticleText"></p><br>
+            <p class="centered" id="prevArticleText"></p><br>
             <a class="b"><i>${articleTitles[current_article_index+1]}</i></a>
+        </div>`;
+    } else {
+        prevNextArticleSwitcher += `
+        <div class="column leftcol-half-articles divBorder paddingAllAround rightmargin-2">
+            <i><p class="centered" id="oldestArticleText"></p></i><br>
         </div>`;
     }
 
@@ -23,8 +28,13 @@ allFiles.done(() => {
     if (!(articleTitles[current_article_index-1] === undefined)) {
         prevNextArticleSwitcher += `
         <div class="column rightcol-half-articles divBorder paddingAllAround leftmargin-2">
-            <p id="nextArticleText"></p><br>
+            <p class="centered" id="nextArticleText"></p><br>
             <a class="b"><i>${articleTitles[current_article_index-1]}</i></a>
+        </div>`;
+    } else {
+        prevNextArticleSwitcher += `
+        <div class="column rightcol-half-articles divBorder paddingAllAround leftmargin-2">
+            <i><p class="centered" id="latestArticleText"></p></i><br>
         </div>`;
     }
 

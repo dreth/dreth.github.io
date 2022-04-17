@@ -41,14 +41,24 @@
             "nl":"artikels:"
         },
         "prev_article_text": {
-            "en":"⬅️ Previous article:",
-            "es":"⬅️ Artículo anterior:",
-            "nl":"⬅️ Vorige artikel:"
+            "en":"⬅️ Previous article",
+            "es":"⬅️ Artículo anterior",
+            "nl":"⬅️ Vorige artikel"
         },
         "next_article_text": {
-            "en":"➡️ Next article:",
-            "es":"➡️ Próximo artículo:",
-            "nl":"➡️ Volgende artikel:"
+            "en":"➡️ Next article",
+            "es":"➡️ Próximo artículo",
+            "nl":"➡️ Volgende artikel"
+        },
+        "oldest_article_text": {
+            "en":"You're currently reading the oldest article",
+            "es":"Está leyendo el primer artículo del blog",
+            "nl":"Je bent nu de oudste artikel aan het lezen"
+        },
+        "latest_article_text": {
+            "en":"You're currently reading the latest article",
+            "es":"Está leyendo el artículo más reciente del blog",
+            "nl":"Je bent nu de laatste artikel aan het lezen"
         },
         "cool_links": {
             "en":"cool links",
@@ -204,7 +214,9 @@
             "randomLinksTitle":"random_cool_links",
             "goToRandomLinkTitle":"go_to_random_link",
             "prevArticleText":"prev_article_text",
-            "nextArticleText":"next_article_text"
+            "nextArticleText":"next_article_text",
+            "oldestArticleText":"oldest_article_text",
+            "latestArticleText":"latest_article_text"
         },
         "1": {
             "playlistsHomepagePreview":"homepage_playlist",
