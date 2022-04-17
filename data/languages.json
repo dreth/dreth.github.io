@@ -40,6 +40,16 @@
             "es":"artículos:",
             "nl":"artikels:"
         },
+        "prev_article_text": {
+            "en":"⬅️ Previous article:",
+            "es":"⬅️ Artículo anterior:",
+            "nl":"⬅️ Vorige artikel:"
+        },
+        "next_article_text": {
+            "en":"➡️ Next article:",
+            "es":"➡️ Próximo artículo:",
+            "nl":"➡️ Volgende artikel:"
+        },
         "cool_links": {
             "en":"cool links",
             "es":"enlaces cool",
@@ -192,7 +202,9 @@
             "otherSitesLabel":"other_sites",
             "projectsTitle":"projects_title",
             "randomLinksTitle":"random_cool_links",
-            "goToRandomLinkTitle":"go_to_random_link"
+            "goToRandomLinkTitle":"go_to_random_link",
+            "prevArticleText":"prev_article_text",
+            "nextArticleText":"next_article_text"
         },
         "1": {
             "playlistsHomepagePreview":"homepage_playlist",

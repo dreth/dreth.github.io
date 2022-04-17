@@ -4,6 +4,38 @@ art_path = art_path[art_path.length - 2];
 var art_md_path = `/blog/${art_path}/article.md`;
 var art_draft_md_path = `/blog/drafts/${art_path}/article.md`;
 
+// current article index (for prev and next)
+var current_article_index;
+allFiles.done(() => {
+    current_article_index = articleTag.indexOf(art_path);
+
+    // prev article title
+    let prevNextArticleSwitcher = "";
+    if (!(articleTitles[current_article_index+1] === undefined)) {
+        prevNextArticleSwitcher += `
+        <div class="column leftcol-half-articles divBorder paddingAllAround rightmargin-2">
+            <p id="prevArticleText"></p><br>
+            <a class="b"><i>${articleTitles[current_article_index+1]}</i></a>
+        </div>`;
+    }
+
+    // next article title
+    if (!(articleTitles[current_article_index-1] === undefined)) {
+        prevNextArticleSwitcher += `
+        <div class="column rightcol-half-articles divBorder paddingAllAround leftmargin-2">
+            <p id="nextArticleText"></p><br>
+            <a class="b"><i>${articleTitles[current_article_index-1]}</i></a>
+        </div>`;
+    }
+
+    // add the article switcher
+    $("#prevNextArticleSwitcher").html(prevNextArticleSwitcher)
+    console.log(prevNextArticleSwitcher)
+
+    // reload texts
+    loadObjects(langs)
+})
+
 
 // check if there's a post div id to insert article content
 if (document.getElementById("content")) {

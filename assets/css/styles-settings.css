@@ -32,12 +32,19 @@ div.rightcol-half {
   width: 50%;
   float: none;
 }
-/* left-right margins */
+/* left-right margins 2% */
 div.leftmargin-2 {
   margin-left: 2%;
 }
 div.rightmargin-2 {
   margin-right: 2%;
+}
+/* left-right margins 1% */
+div.leftmargin-1 {
+  margin-left: 1%;
+}
+div.rightmargin-1 {
+  margin-right: 1%;
 }
 /* two-col layout - MAIN HOMEPAGE BUTTONS */
 div.leftcol-half-mb {
@@ -46,6 +53,15 @@ div.leftcol-half-mb {
 }
 div.rightcol-half-mb {
   width: 48%;
+  float: none;
+}
+/* two-col layout - prev and forward article buttons */
+div.leftcol-half-articles {
+  width: 42%;
+  float: none;
+}
+div.rightcol-half-articles {
+  width: 42%;
   float: none;
 }
 
