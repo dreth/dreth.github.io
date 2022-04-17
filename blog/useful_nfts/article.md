@@ -222,5 +222,3 @@ I'll only source externally obtained images, these are in order. Images I do not
 
 7. [Guild wars 2 trading post](https://wiki.guildwars2.com/wiki/Trading_Post)
 
-***
-
