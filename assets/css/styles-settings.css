@@ -191,6 +191,11 @@ div.rightcol-half-articles {
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
+    pre {
+      font-size: 0.8vw;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
     .notThatSmall {
       font-size: 0.8vw;
       font-family: Ubuntu, Sans-Serif;
@@ -392,6 +397,11 @@ div.rightcol-half-articles {
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
+    pre {
+      font-size: 1.2vw;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
     .notThatSmall {
       font-size: 1.3vw;
       font-family: Ubuntu, Sans-Serif;
@@ -584,6 +594,11 @@ div.rightcol-half-articles {
       font-size: 3.2vw;
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
+    }
+    pre {
+      font-size: 2.8vw;
+      word-wrap: break-word;
+      white-space: pre-wrap;
     }
     .notThatSmall {
       font-size: 3vw;

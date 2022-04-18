@@ -48,6 +48,16 @@ div.alt2 {
   box-shadow: 0 0 0 1.8pt white;
   border-radius: 20px 20px 20px 20px;
 }
+/* pre formatted text blocks (code and stuff) */
+pre {
+  box-shadow: 0 0 0 1.2pt rgb(207, 207, 207);
+  background-color: rgb(64, 64, 64);
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 10px 10px 10px 10px;
+}
 /* links (lt) */
 a.lt {
   text-decoration: none;
