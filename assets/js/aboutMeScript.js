@@ -14,13 +14,6 @@ aboutMeJSON.done(aboutMeJSON, (cvData) => {
 // jsons to load
 var aboutFiles = $.when(langsJSON, aboutMeJSON);
 
-// SET LANGUAGE TO DISPLAY CV IN -------------
-if (language == 'en' | language == 'nl') {
-    var cvLang = 'en';
-} else if (language == 'es') {
-    var cvLang = 'es';
-}
-
 // TOGGLE WORK DETAILS ------------------------
 function toggleWorkDetail() {
     aboutMeJSON.done(() => {
@@ -33,7 +26,7 @@ function toggleWorkDetail() {
 }
 
 // GENERATE CONTENTS FOR CV -------------------
-function loadCV(l=cvLang) {
+function loadCV(l=language) {
     // site title
     $("#aboutMeTitleBar").html(`${langs['content']['about'][l]} | Daniel A.`)
 
@@ -98,14 +91,14 @@ function loadCV(l=cvLang) {
         let content = cvContent['other'][other_s[k]];
 
         // HEADING
-        otherContents += `<br><div><h3 class="cvHeading1">${content['heading'][cvLang]}</h3></div><div class="halfRightPadding"><hr></div>`;
+        otherContents += `<br><div><h3 class="cvHeading1">${content['heading'][language]}</h3></div><div class="halfRightPadding"><hr></div>`;
 
         // LOOP OVER CONTENTS LIST
-        for (const [level, langContent] of Object.entries(content['list'][cvLang])) {
+        for (const [level, langContent] of Object.entries(content['list'][language])) {
             // for stuff with levels of difficulty
             if (level != 'noLevel') {
                 // mark level
-                otherContents += `<ul><li><h4>${content['level'][cvLang][level]}</h4></li><ul>`;
+                otherContents += `<ul><li><h4>${content['level'][language][level]}</h4></li><ul>`;
 
                 // add list elements
                 for (s = 0; s < langContent.length; s++) {
