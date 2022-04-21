@@ -38,14 +38,8 @@ div.alt2 {
   color: #00a100;
 }
 /* borders */
-.homepageButtons {
-  box-shadow: 0 0 0 1pt black;
-}
-.homepageButtons:hover {
-  background-color: rgb(25, 182, 255);
-}
 .divBorder {
-  box-shadow: 0 0 0 1.8pt black;
+  box-shadow: 0 0 0 1.5pt black;
   border-radius: 20px 20px 20px 20px;
 }
 /* links (lt) */
