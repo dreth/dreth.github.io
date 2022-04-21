@@ -39,7 +39,7 @@ div.alt2 {
 }
 /* borders */
 .divBorder {
-  box-shadow: 0 0 0 1.5pt black;
+  box-shadow: 0 0 0 2pt black;
   border-radius: 20px 20px 20px 20px;
 }
 /* links (lt) */
