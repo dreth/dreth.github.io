@@ -1,14 +1,14 @@
 // GENERAL STUFF ------------ links to all the profiles + email
-var linkedin = 'https://www.linkedin.com/in/dreth/';
-var github = 'https://github.com/dreth';
-var blog = '/blog/';
-var about = '/about/';
-var home = '/';
-var status = '/status';
-var projects = '/projects';
-var cool_links = '/cool_links';
-var playlists = '/playlists';
-var email = 'mailto:contact@m.dac.ac';
+const linkedin = 'https://www.linkedin.com/in/dreth/';
+const github = 'https://github.com/dreth';
+const blog = '/blog/';
+const about = '/about/';
+const home = '/';
+const status = '/status';
+const projects = '/projects';
+const cool_links = '/cool_links';
+const playlists = '/playlists';
+const email = 'mailto:contact@m.dac.ac';
 var language;
 var darkThemeLabel;
 var lightThemeLabel;
@@ -55,7 +55,7 @@ const wikipediaBaseLink = 'wikipedia.org/wiki/';
 const wiktionaryBaseLink = 'wiktionary.org/wiki/';
 
 // LANGUAGES -------------- get languages and labels
-var langsJSON = $.getJSON('/data/languages.json');
+const langsJSON = $.getJSON('/data/languages.json');
 var langs; 
 
 langsJSON.done(langsJSON, (langsData) => {
@@ -63,7 +63,7 @@ langsJSON.done(langsJSON, (langsData) => {
 })
 
 // BLOG STUFF -------------- lists of article info
-var articlesJSON = $.getJSON('/data/articles.json');
+const articlesJSON = $.getJSON('/data/articles.json');
 var articleDates;
 var articleLang;
 var articleTitles;
@@ -79,7 +79,7 @@ articlesJSON.done(articlesJSON, (articleData) => {
 })
 
 // PLAYLISTS STUFF -------- list playlists stuff
-var playlistsJSON = $.getJSON('/data/playlists.json');
+const playlistsJSON = $.getJSON('/data/playlists.json');
 var playlistsContent;
 var homepagePlaylist;
 
@@ -89,7 +89,7 @@ playlistsJSON.done(playlistsJSON, (playlistsData) => {
 })
 
 // COOL LINKS STUFF -------- cool links stuff
-var coolLinksJSON = $.getJSON('/data/links.json');
+const coolLinksJSON = $.getJSON('/data/links.json');
 var coolLinksContent;
 
 coolLinksJSON.done(coolLinksJSON, (coolLinksData) => {
@@ -97,7 +97,7 @@ coolLinksJSON.done(coolLinksJSON, (coolLinksData) => {
 })
 
 // PROJECTS STUFF -------- projects stuff
-var projectsJSON = $.getJSON('/data/projects.json');
+const projectsJSON = $.getJSON('/data/projects.json');
 var projectLinkHeading;
 var projectHeadings;
 var projectSections;
