@@ -668,12 +668,13 @@ Let's observe the performance of some of these and analyze the sustainability of
 
 3. This redemption of LUNA will continue until the 1:1 peg is once again achieved after anyone that wants to exit their UST position does. Meaning that the LUNA supply (and price) will be further diluted until this is achieved, as the LFG has already sold *all of its collateral* to try to keep the 1:1 peg.
 
-4. People holding UST *might* be able to recover their money (or so they hope to be able to do), but the reputation damage that the LUNA and UST ecosystem have suffered from this collapse is unfortunately (for them), too late to fix.
+People holding UST *might* be able to recover their money (or so they hope to be able to do), but the reputation damage that the LUNA and UST ecosystem have suffered from this collapse is unfortunately (for them), too late to fix.
+
+<span class="red">Lesson:</span> if something looks like a ponzi, **do not** put your money in it.
 
 ![](assets/USTUSDT.png)
 <figcaption>UST's depeg and full crash, weekly candles</figcaption>
 
-<span class="red">Lesson learned:</span> if something looks like a ponzi, **do not** put your money in it.
 
  
 
