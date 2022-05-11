@@ -657,7 +657,27 @@ Let's observe the performance of some of these and analyze the sustainability of
 
 - <span class="lc">LUNA/BTC</span>: Holding LUNA (Terra's native token) has also been an absolutely spectacular investment as opposed to holding BTC or ETH. The Terra blockchain uses UST as its native token, a USD-pegged algorithmic stablecoin which is the main driver of growth of the ecosystem through a protocol called Anchor, which at the time of writing pays a consistent 20% APR on UST deposits. UST is backed by a basket of assets, in particular LUNA and a small portion of ETH and their staking rewards, however, the rewards backing UST *are not of 20%*, instead, the rewards are provided by a reserve of UST provided by investors. Additionally, not all the UST is fully collateralized. The growth of the ecosystem is great, but it may be unsustainable. This [twitter thread](https://nitter.net/AlgodTrading/status/1493900328655335424?s=20&t=fjlz5YVMUPlyZvKIaBPQEQ) by AlgodTrading and articles like [this one](https://cryptobriefing.com/can-terras-ust-hold-its-peg-cryptos-top-algorithmic-stablecoin-unpacked/) from cryptobriefing.com go into more detail about potential risks and sustainability of the UST stablecoin. So then why is LUNA performing so well? When will investors take profits? are these 'ponzinomics' sustainable? No matter what, I still think LUNA's performance may continue for longer, but due to my personal risk tolerance, I don't usually get into projects whose sustainability I'm not 100% confident in.
 
-**Note:** I specifically analyzed the price action vs ETH and BTC of two NON-EVN chains, meaning these are not carbon-copies of the Ethereum blockchain with some tweaks or use the Ethereum Virtual Machine. That's because in my view, those chains are <span class="red">not innovative</span> and often use lies and deceptive statements around the argument that 'Ethereum is not fast enough' while they copy-paste Ethereum and change some parameters which would make the long-term growth of those chains completely unsustainable. Again, none of this means you can't or shouldn't try to make money with these, this is simply my perspective and opinion on *why I don't try to make money with these*.
+<span class="red">**Update:**</span> as expected, the LUNA/UST system has completely collapsed during May 2022's market crash. The price of LUNA was trading at around 80 USD on 05-05-2022, and it is now (11-05-2022) trading around 1 USD per LUNA. The crash occurred as follows:
+
+![](assets/LUNAUSDT-May2022.png)
+<figcaption>LUNA's market crash and full supply dilution, weekly candles</figcaption>
+
+1. UST is *undercollateralized*, meaning that its value is driven by what the market believes it's worth, which prior to the crash was 1 USD per UST. However, a single party market sold a significant amount of UST driving the peg down from 1:1 to under 0.98:1, thereby reducing confidence in the liquidity of UST. Given that it's undercollateralized, there's only a portion of UST which is actually backed by the value of something else (other assets). These assets were a treasury combination of some LUNA, ETH and BTC that the LFG (entity responsible of keeping the 1:1 peg) held.
+
+2. Once a significant amount of market players dumped their UST holdings, others wanted to do the same to recover their investment, however, there's unfortunately not enough liquidity for all 18 Billion UST to be redeemed at a 1:1 value with the USD. So there's a second mechanism to keep the peg, which is a redemption of LUNA equivalent to 1 USD per unit of UST. Meaning I can *burn* my UST to receive equivalent amount of LUNA tokens worth the UST I burned at a 1:1 ratio with the USD. This increases the supply of LUNA.
+
+3. This redemption of LUNA will continue until the 1:1 peg is once again achieved after anyone that wants to exit their UST position does. Meaning that the LUNA supply (and price) will be further diluted until this is achieved, as the LFG has already sold *all of its collateral* to try to keep the 1:1 peg.
+
+4. People holding UST *might* be able to recover their money (or so they hope to be able to do), but the reputation damage that the LUNA and UST ecosystem have suffered from this collapse is unfortunately (for them), too late to fix.
+
+![](assets/USTUSDT.png)
+<figcaption>UST's depeg and full crash, weekly candles</figcaption>
+
+<span class="red">Lesson learned:</span> if something looks like a ponzi, **do not** put your money in it.
+
+ 
+
+**Note:** I specifically analyzed the price action vs ETH and BTC of two NON-EVN chains, meaning these are not carbon-copies of the Ethereum blockchain with some tweaks or use the Ethereum Virtual Machine. That's because in my view, those chains are <span class="red">not especially innovative</span> and often use lies and deceptive statements around the argument that 'Ethereum is not fast enough' while they copy-paste Ethereum and change some parameters which would make the long-term growth of those chains completely unsustainable. Again, none of this means you can't or shouldn't try to make money with these, this is simply my perspective and opinion on *why I don't try to make money with these*.
 
 #### Ethereum's coming upgrades and development
 
