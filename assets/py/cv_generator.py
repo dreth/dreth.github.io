@@ -60,7 +60,7 @@ cv_data['basic_links'] = {
     },
     "email":{
         "link":"mailto:daniel@m.dac.ac",
-        "name":"d@m.dac.ac"
+        "name":"d@dac.ac"
     },
     "linkedin":{
         "link":"https://linkedin.com/in/dreth",
@@ -175,8 +175,8 @@ cv_skeleton = r"""
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Daniel A.}} & Email: \href{mailto:}{*email:name*}\\
-  Website: \href{*website:link*}{*website:name*} & Github: ~~~\href{*github:link*}{*github:name*}
+  \textbf{{\LARGE Daniel A.}} & Email: {\color{blue}\href{mailto:}{*email:name*}}\\
+  Website: {\color{blue}\href{*website:link*}{*website:name*}} & Github: ~~~{\color{blue}\href{*github:link*}{*github:name*}}
 \end{tabular*}
 
 %----------SECTIONS TO ITERATE ON-----------------
@@ -474,7 +474,10 @@ def fill_cv(cv_skeleton, l="en"):
 fill_cv(cv_skeleton=cv_skeleton, l="en")
 fill_cv(cv_skeleton=cv_skeleton, l="es")
 
+# force compile latex
+os.system('cd assets/py && latexmk')
+
 # clean up
-sleep(5)
+sleep(1.5)
 for filetype in ['fls', 'log', 'fdb_latexmk', 'aux', 'gz', 'out']:
     os.system(f'cd assets/py && rm *.{filetype}')
