@@ -466,7 +466,7 @@ def fill_cv(cv_skeleton, l="en"):
         cv_skeleton = cv_skeleton.replace(f'*{section}*', cv_blocks['section_names'][l][section])
 
     # create a tex file for cv
-    with open(f'./assets/py/cv_{l}.tex','w') as f:
+    with open(f'./assets/py/Daniel_CV_{l}.tex','w') as f:
         f.write(cv_skeleton)
     
 # %%

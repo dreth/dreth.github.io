@@ -133,7 +133,7 @@ aboutFiles.done(() => {
     // if on about me page
     if (document.getElementById("downloadCVLink")) {
         // CV PDF DOWNLOAD LINK
-        $("#downloadCVLink").attr('href',`/assets/py/cv_${language}.pdf`)
+        $("#downloadCVLink").attr('href',`/assets/py/Daniel_CV_${language}.pdf`)
     }
 })
 

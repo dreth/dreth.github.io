@@ -257,6 +257,11 @@ div.rightcol-half-articles {
       font-family: Ubuntu, Sans-Serif;
       font-weight: normal;
     }
+    .h4 {
+      font-size: 1vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
     .dash {
       font-size: 1vw;
     }
@@ -463,6 +468,11 @@ div.rightcol-half-articles {
       font-family: Ubuntu, Sans-Serif;
       font-weight: normal;
     }
+    .h4 {
+      font-size: 1.6vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
     .dash {
       font-size: 1.6vw;
     }
@@ -661,6 +671,11 @@ div.rightcol-half-articles {
       font-family: Ubuntu, Sans-Serif;
       font-weight: normal;
     }
+    .h4 {
+      font-size: 3.5vw;
+      font-family: Ubuntu, Sans-Serif;
+      font-weight: normal;
+    }
     .dash {
       font-size: 3.5vw;
     }
@@ -673,6 +688,9 @@ div.rightcol-half-articles {
 }
 .cvHeading2 {
   font-style: italic;
+}
+.block {
+  display: block;
 }
 
 /* blog title */
