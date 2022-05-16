@@ -74,87 +74,101 @@
                     "title":"Data Scientist",
                     "institution":"🏢 Populate",
                     "dates":"📅 September 2021 - February 2022",
-                    "location":"📍 Madrid, Spain"
+                    "location":"📍 Madrid, Spain (remote)",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Field Business Data Scientist",
                     "institution":"🏢 Cervecería Nacional Dominicana",
                     "dates":"📅 March 2020 - August 2020",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic (remote)",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Bioinformatician and data scientist",
                     "institution":"🏢 Referencia Laboratorio Clínico S.A.",
                     "dates":"📅 August 2019 - March 2020",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Vehicle insurance subscription representative",
                     "institution":"🏢 Seguros Sura",
                     "dates":"📅 April 2019 - August 2019",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Mathematics and physics tutor",
                     "institution":"🏢 Sainz Tutoring",
                     "dates":"📅 November 2016 - May 2019",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Part-time"
                 },
                 {
                     "title":"Tech Support",
                     "institution":"🏢 Business Computer POS",
                     "dates":"📅 May 2015 - October 2015",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Marketing Staff",
                     "institution":"🏢 Alonso & Colado SRL",
                     "dates":"📅 January 2014 - August 2014",
-                    "location":"📍 Santo Domingo, Dominican Republic"
-                    }
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
+                }
             ],
             "es":[
                 {
                     "title":"Data Scientist",
                     "institution":"🏢 Populate",
                     "dates":"📅 Septiembre 2021 - Febrero 2022",
-                    "location":"📍 Madrid, España"
+                    "location":"📍 Madrid, España (remoto)",
+                    "schedule":"🕐 Tiempo completo"
                 },
                 {
                     "title":"Field Business Data Scientist",
                     "institution":"🏢 Cervecería Nacional Dominicana",
                     "dates":"📅 Marzo 2020 - Agosto 2020",
-                    "location":"📍 Santo Domingo, República Dominicana"
+                    "location":"📍 Santo Domingo, República Dominicana (remoto)",
+                    "schedule":"🕐 Tiempo completo"
                 },
                 {
                     "title":"Bioinformático y data scientist",
                     "institution":"🏢 Referencia Laboratorio Clínico S.A.",
                     "dates":"📅 Agosto 2019 - Marzo 2020",
-                    "location":"📍 Santo Domingo, República Dominicana"
+                    "location":"📍 Santo Domingo, República Dominicana",
+                    "schedule":"🕐 Tiempo completo"
                 },
                 {
                     "title":"Oficial de suscripción (Autos)",
                     "institution":"🏢 Seguros Sura",
                     "dates":"📅 Abril 2019 - Agosto 2019",
-                    "location":"📍 Santo Domingo, República Dominicana"
+                    "location":"📍 Santo Domingo, República Dominicana",
+                    "schedule":"🕐 Tiempo completo"
                 },
                 {
                     "title":"Tutor de matemáticas y física",
                     "institution":"🏢 Sainz Tutoring",
                     "dates":"📅 Noviembre 2016 - Mayo 2019",
-                    "location":"📍 Santo Domingo, República Dominicana"
+                    "location":"📍 Santo Domingo, República Dominicana",
+                    "schedule":"🕐 Medio tiempo"
                 },
                 {
                     "title":"Soporte Técnico",
                     "institution":"🏢 Business Computer POS",
                     "dates":"📅 Mayo 2015 - Octubre 2015",
-                    "location":"📍 Santo Domingo, República Dominicana"
+                    "location":"📍 Santo Domingo, República Dominicana",
+                    "schedule":"🕐 Tiempo completo"
                 },
                 {
                     "title":"Encargado de mercadeo",
                     "institution":"🏢 Alonso & Colado SRL",
                     "dates":"📅 Enero 2014 - Agosto 2014",
-                    "location":"📍 Santo Domingo, República Dominicana"
+                    "location":"📍 Santo Domingo, República Dominicana",
+                    "schedule":"🕐 Tiempo completo"
                 }
             ],
             "nl":[
@@ -162,44 +176,51 @@
                     "title":"Data Scientist",
                     "institution":"🏢 Populate",
                     "dates":"📅 September 2021 - February 2022",
-                    "location":"📍 Madrid, Spain"
+                    "location":"📍 Madrid, Spain (remote)",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Field Business Data Scientist",
                     "institution":"🏢 Cervecería Nacional Dominicana",
                     "dates":"📅 March 2020 - August 2020",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic (remote)",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Bioinformatician and data scientist",
                     "institution":"🏢 Referencia Laboratorio Clínico S.A.",
                     "dates":"📅 August 2019 - March 2020",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Vehicle insurance subscription representative",
                     "institution":"🏢 Seguros Sura",
                     "dates":"📅 April 2019 - August 2019",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Mathematics and physics tutor",
                     "institution":"🏢 Sainz Tutoring",
                     "dates":"📅 November 2016 - May 2019",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Part-time"
                 },
                 {
                     "title":"Tech Support",
                     "institution":"🏢 Business Computer POS",
                     "dates":"📅 May 2015 - October 2015",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Marketing Staff",
                     "institution":"🏢 Alonso & Colado SRL",
                     "dates":"📅 January 2014 - August 2014",
-                    "location":"📍 Santo Domingo, Dominican Republic"
-                    }
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
+                }
             ]
         },
         "detail":{
@@ -294,28 +315,37 @@
             },
             "list":{
                 "en":{
-                    "noLevel":[
-                        "Python, R",
-                        "SQL, DB design",
-                        "Spreadsheets/Excel",
-                        "Simple web development (html, css, js)"
-                    ]
+                    "noLevel":{
+                        "languages":"Python, R, SQL, Bash, Javascript",
+                        "frameworks":"Manipulation, visualization of data/arrays and basic ML modelling in Python/R",
+                        "tools1":"Git, Docker, DB design, Spreadsheets/Excel",
+                        "tools2":"Basic web development (html, css, js)",
+                        "platforms":"Familiarity with Linux/macOS/Windows",
+                        "other1":"Understanding of the decentralized finance market",
+                        "other2":"Passion for teaching, writing and presenting information"
+                    }
                 },
                 "es":{
-                    "noLevel":[
-                        "Python, R",
-                        "SQL, diseño de BD",
-                        "Hojas de cálculo/Excel",
-                        "Desarrollo web básico (html, css, js)"
-                    ]
+                    "noLevel":{
+                        "languages":"Python, R, SQL, Bash, Javascript",
+                        "frameworks":"Manipulación, visualización de datos/arreglos y construcción básica de modelos de ML con Python/R",
+                        "tools1":"Git, Docker, Diseño de DB, Hojas de cálculo/Excel",
+                        "tools2":"Desarrollo web básico (html, css, js)",
+                        "platforms":"Familiaridad con Linux/macOS/Windows",
+                        "other1":"Entendimiento del mercado de finanzas decentralizada",
+                        "other2":"Pasión por enseñar, escribir y presentar información"
+                    }
                 },
                 "nl":{
-                    "noLevel":[
-                        "Python, R",
-                        "SQL, DB design",
-                        "Spreadsheets/Excel",
-                        "Simple web development (html, css, js)"
-                    ]
+                    "noLevel":{
+                        "languages":"Python, R, SQL, Bash, Javascript",
+                        "frameworks":"Manipulation, visualization of data/arrays and basic ML modelbuilding in Python/R",
+                        "tools1":"Git, Docker, Diseño de DB, Spreadsheets/Excel",
+                        "tools2":"Basic web development (html, css, js)",
+                        "platforms":"Familiarity with Linux/macOS/Windows",
+                        "other1":"Understanding of the decentralized finance market",
+                        "other2":"Passion for teaching, writing and presenting information"
+                    }
                 }
             }
         }

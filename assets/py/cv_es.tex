@@ -1,0 +1,212 @@
+
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage[inline]{enumitem}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Daniel A.}} & Email: \href{mailto:}{d@m.dac.ac}\\
+  Website: \href{https://dac.ac}{dac.ac} & Github: ~~~\href{https://github.com/dreth}{@dreth}
+\end{tabular*}
+
+%----------SECTIONS TO ITERATE ON-----------------
+
+
+
+            
+%-----------EDUCATION-----------------
+\vspace{-4pt}
+\section{Educación}
+\resumeSubHeadingListStart
+        
+  \resumeSubheading
+    {Universidad Carlos III de Madrid}{Madrid, España}
+    {Master en estadística para ciencia de datos}{Septiembre 2020 - Septiembre 2021}
+\vspace{-2pt}
+  \resumeSubheading
+    {Instituto Tecnológico de Santo Domingo}{Santo Domingo, República Dominicana}
+    {Licenciatura en matemáticas y ciencias actuariales}{Agosto 2015 - Octubre 2019}
+\resumeSubHeadingListEnd
+
+
+            
+%-----------SKILLS-----------------
+\vspace{-7pt}
+\section{Habilidades}
+  \resumeSubHeadingListStart
+            
+        
+\vspace{-2pt}
+\resumeSubItem{Languages}{~~~~~~Python, R, SQL, Bash, Javascript}
+\vspace{-2pt}
+\resumeSubItem{Frameworks}{~~~~Manipulación, visualización de datos/arreglos y construcción básica de modelos de ML con Python/R}
+\vspace{-2pt}
+\resumeSubItem{Tools}{~~~~~~~~~~~~~~Git, Docker, Diseño de DB, Hojas de cálculo/Excel\\ ~~~~~~~~~~~~~~~~~~~~~~~~Desarrollo web básico (html, css, js)}
+\vspace{-2pt}
+\resumeSubItem{Platforms}{~~~~~~~Familiaridad con Linux/macOS/Windows}
+\vspace{-2pt}
+\resumeSubItem{Other}{~~~~~~~~~~~~~Entendimiento del mercado de finanzas decentralizada\\ ~~~~~~~~~~~~~~~~~~~~~~~~Pasión por enseñar, escribir y presentar información}
+\resumeSubHeadingListEnd
+
+
+            
+%-----------LANGUAGES-----------------
+\vspace{-10pt}
+\section{Idiomas}
+  \begin{center}
+  \begin{itemize*}
+        
+  \item \textbf{Avanzado/Nativo:} Español, Inglés.
+  \item \textbf{Intermedio:} Neerlandés.
+  \item \textbf{Básico:} Italiano.
+\end{itemize*}
+\end{center}
+
+
+            
+%-----------WORK-----------------
+\vspace{-12pt}
+\section{Experiencia de trabajo}
+  \resumeSubHeadingListStart
+        
+  \resumeSubheading{Populate}{Madrid, España (remoto)}
+    {Data Scientist (Tiempo completo)}{Septiembre 2021 - Febrero 2022}
+\begin{itemize} \itemsep-0.24em
+  \item Construir dashboards interactivos utilizando Metabase, a través de queries de SQL y la interfaz nativa de Metabase
+  \item Preparar un pipeline de chequeos diarios de integridad de datos utilizando Python y Great Expectations
+  \item Mantener y mejorar un modelo de deep learning para predecir propuestas de licitaciones
+  \item Análisis de datos utilizando datos de contratación pública extraídos de las plataformas de contratación del estado españolas
+  \item Trabajo completamente remoto
+\end{itemize}
+\vspace{-4.2pt}
+  \resumeSubheading{Cervecería Nacional Dominicana}{Santo Domingo, República Dominicana (remoto)}
+    {Field Business Data Scientist (Tiempo completo)}{Marzo 2020 - Agosto 2020}
+\begin{itemize} \itemsep-0.24em
+  \item Limpiando y manipulando data para crear vistas minables
+  \item Preparando un pipeline completo de data science para construir modelos predictivos basados en data de ventas
+  \item Seleccion de variables para modelación y afinación de modelos
+  \item Segmentando clientes basados en sus compras de productos específicos y clasificación interna con el propósito de atacar agrupaciones más granularmente segmentadas para incrementar marketshare en el mercado local
+  \item Utilizando Azure Databricks para poner en marcha y afinar modelos para predicción de ventas durante la pandemia de COVID-19
+  \item Trabajo completamente remoto
+\end{itemize}
+\vspace{-4.2pt}
+  \resumeSubheading{Referencia Laboratorio Clínico S.A.}{Santo Domingo, República Dominicana}
+    {Bioinformático y data scientist (Tiempo completo)}{Agosto 2019 - Marzo 2020}
+\begin{itemize} \itemsep-0.24em
+  \item Extrayendo, limpiando, procesando, creando visualizaciones y manipulando data con Pandas
+  \item Programando soluciones sencillas de software con el propósito de automatizar tareas manuales y evadir tareas redundantes
+  \item Construyendo y modelando bases de datos para almacenar data extraída de archivos de texto crudos
+  \item Analizando data de secuencias genéticas para encontrar mutaciones/alteraciones en pacientes
+\end{itemize}
+\vspace{-4.2pt}
+  \resumeSubheading{Seguros Sura}{Santo Domingo, República Dominicana}
+    {Oficial de suscripción (Autos) (Tiempo completo)}{Abril 2019 - Agosto 2019}
+\begin{itemize} \itemsep-0.24em
+  \item Análisis de tarificación de seguros de vehículos de motor
+  \item Programación/construcción de utilidades para eficientizar procesos de cotización
+  \item Análisis de datos en general con relación a producción/siniestralidad y reportes
+  \item Cotizaciones de pólizas de vehículos y de pólizas para flotillas de vehículos
+\end{itemize}
+\vspace{-4.2pt}
+  \resumeSubheading{Sainz Tutoring}{Santo Domingo, República Dominicana}
+    {Tutor de matemáticas y física (Medio tiempo)}{Noviembre 2016 - Mayo 2019}
+\begin{itemize} \itemsep-0.24em
+  \item Tutor de matemáticas para estudiantes de secundaria y universitarios, desde aritmética básica hasta calculo integral.
+\end{itemize}
+\vspace{-4.2pt}
+  \resumeSubheading{Business Computer POS}{Santo Domingo, República Dominicana}
+    {Soporte Técnico (Tiempo completo)}{Mayo 2015 - Octubre 2015}
+\vspace{-4.2pt}
+  \resumeSubheading{Alonso \& Colado SRL}{Santo Domingo, República Dominicana}
+    {Encargado de mercadeo (Tiempo completo)}{Enero 2014 - Agosto 2014}
+\begin{itemize} \itemsep-0.24em
+  \item Creación de artes para publicidad
+  \item Introducción de datos en bases de datos de clientes
+  \item Envío de correos masivos a clientes
+  \item Manejo de redes sociales
+\end{itemize}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-10pt}
+\section{Proyectos}
+\textbf{View all my projects on \href{https://dac.ac/projects}{my website}}
+
+\end{document}

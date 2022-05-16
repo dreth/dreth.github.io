@@ -347,14 +347,20 @@ function updateLang(l) {
     allFiles.done(() => {
         // load all site objects specified the langs.json file
         loadObjects(langs)
-
-        // if on projects page
-        if (document.getElementById("projectsTitleBar")) {
-            updateProjectsList()
-        } else if (document.getElementById("aboutMeTitleBar")) {
-            loadCV(l)
-        }
     })
+
+    // if on about me page
+    if (document.getElementById("downloadCVLink")) {
+        // CV PDF DOWNLOAD LINK
+        $("#downloadCVLink").attr('href',`/assets/py/cv_${language}.pdf`)
+    }
+
+    // if on projects page
+    if (document.getElementById("projectsTitleBar")) {
+        updateProjectsList()
+    } else if (document.getElementById("aboutMeTitleBar")) {
+        loadCV(l)
+    }
 }
 
 // change theme

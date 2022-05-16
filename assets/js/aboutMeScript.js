@@ -66,10 +66,11 @@ function loadCV(l=language) {
             let title = `<ul><li><h4 class="cvHeading2">${content["list"][l][i]["title"]}</h4></li>`
             let institution = `<span>${content["list"][l][i]["institution"]}<br>`
             let dates = `${content["list"][l][i]["dates"]}<br>`
-            let location = `${content["list"][l][i]["location"]}</span></ul>`
+            let location = `${content["list"][l][i]["location"]}<br>`
+            let schedule = `${content["list"][l][i]["schedule"]}</span></ul>`
 
             // add contents to section
-            edWorkContents += `${title}${institution}${dates}${location}`
+            edWorkContents += `${title}${institution}${dates}${location}${schedule}`
 
             // add details if in work section
             if (ed_work[k] === 'work' && workDetails == 1) {
@@ -111,9 +112,12 @@ function loadCV(l=language) {
                 // mark level
                 otherContents += `<ul>`;
 
+                // take values from langcontent (skills)
+                let objLangContent = Object.values(langContent);
+
                 // add list elements
-                for (s = 0; s < langContent.length; s++) {
-                    otherContents += `<li><span>${langContent[s]}</span></li>`;
+                for (s = 0; s < objLangContent.length; s++) {
+                    otherContents += `<li><span>${objLangContent[s]}</span></li>`;
                 }
                 otherContents += '</ul></ul>';
             }
@@ -126,4 +130,10 @@ function loadCV(l=language) {
 // AFTER JSON LOADS, LOAD CV
 aboutFiles.done(() => {
     loadCV()
+    // if on about me page
+    if (document.getElementById("downloadCVLink")) {
+        // CV PDF DOWNLOAD LINK
+        $("#downloadCVLink").attr('href',`/assets/py/cv_${language}.pdf`)
+    }
 })
+

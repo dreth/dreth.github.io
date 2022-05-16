@@ -1,9 +1,9 @@
 {
     "content": {
         "subtitle": {
-            "en":"data scientist, teacher, crypto enthusiast",
-            "es":"data scientist, profesor, cripto-fan",
-            "nl":"data scientist en leraar, crypto-enthousiasteling"
+            "en":"data scientist, developer, teacher",
+            "es":"data scientist, desarrollador, profesor",
+            "nl":"data scientist, ontwikkelaar, leraar,"
         },
         "welcome": {
             "en":"welcome!",
@@ -155,6 +155,11 @@
             "es":"Esta está chill:",
             "nl":"Deze is chill:"
         },
+        "download_cv_link": {
+            "en":"💾 Download in PDF",
+            "es":"💾 Descargar en PDF",
+            "nl":"💾 Downloaden op PDF"
+        },
         "theme_lang": {
             "en":
                 {
@@ -173,14 +178,14 @@
                 }
         },
         "about_me_text": {
-            "en":"Data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills.",
-            "es":"Data scientist y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. Me estoy tomando un pequeño descanso del mercado laboral para aprender, estudiar y desarrollar mis propios proyectos personales y habilidades.",
-            "nl":"Data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. Taking a short break from the job market to learn and further develop my own projects and skills."
+            "en":"Data scientist, developer and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention.",
+            "es":"Data scientist, desarrollador y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención.",
+            "nl":"Data scientist, developer and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention."
         },
         "about_me_short": {
-            "en":"Data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.",
-            "es":"Data scientist y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.",
-            "nl":"Data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general."
+            "en":"Data scientist, developer and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.",
+            "es":"Data scientist, desarrollador y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.",
+            "nl":"Data scientist, developer and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general."
         },
         "other_sites": {
             "en":"Other sites:",
@@ -216,7 +221,8 @@
             "prevArticleText":"prev_article_text",
             "nextArticleText":"next_article_text",
             "oldestArticleText":"oldest_article_text",
-            "latestArticleText":"latest_article_text"
+            "latestArticleText":"latest_article_text",
+            "downloadCVLink":"download_cv_link"
         },
         "1": {
             "playlistsHomepagePreview":"homepage_playlist",
