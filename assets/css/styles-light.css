@@ -24,6 +24,55 @@ div.alt {
 div.alt2 {
   background-color: rgb(231, 255, 230);
 }
+/* color cycle text */
+.colorCycleText {
+  animation-name: textColorPalette;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear; 
+}
+@keyframes textColorPalette {
+  0% {
+    color: #c50d00;
+  }
+  25% {
+    color: #00a94c;
+  }
+  50% {
+    color: #3cb500;
+  }
+  75% {
+    color: #c38900;
+  }
+  100% {
+    color: #ff4218;
+  }
+}
+.colorCycleText:hover {
+  animation-name: backgroundColorPaletteHover;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear; 
+}
+@keyframes backgroundColorPaletteHover {
+  0% {
+    color: #ff2819;
+  }
+  25% {
+    color: #25bc69;
+  }
+  50% {
+    color: #82ff43;
+  }
+  75% {
+    color: #ffc130;
+  }
+  100% {
+    color: #ff542e;
+  }
+}
 /* playlist images hover text/panel color */
 .img__dl_hover_panel {
   background: rgba(255, 255, 255, 0.561);

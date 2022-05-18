@@ -225,22 +225,22 @@
         },
         "detail":{
             "en":[
-                "- Creating interactive dashboards using Metabase through SQL queries and Metabase's UI<br>- Preparing a daily data integrity checking pipeline using Python and Great Expectations<br>- General data analysis using public contracting data from Spain's public contracting platforms<br>- Improving upon and maintaining a deep learning model to predict proposals on tenders<br>- Fully remote work",
-                "- Cleaning up and manipulating data to create mineable views<br>- Preparing a full data science pipeline for predictive models based on sales data<br>- Feature selection for modeling and model tuning<br>- Clustering clients based on their sales of specific products and internal classification in order to find a more accurate targetting to increase local marketshare<br>- Utilizing Azure Databricks to effectively deploy, clean up and tune models for sales prediction during the ongoing COVID-19 pandemic at the time<br>- Fully remote work",
+                "- Creating interactive dashboards using Metabase through SQL queries and Metabase's UI<br>- Preparing a daily data integrity checking pipeline using Python and Great Expectations<br>- General data analysis using public contracting data from Spain's public contracting platforms<br>- Improving upon and maintaining a deep learning model to predict proposals on tenders",
+                "- Cleaning up and manipulating data to create mineable views<br>- Preparing a full data science pipeline for predictive models based on sales data<br>- Feature selection for modeling and model tuning<br>- Clustering clients based on their sales of specific products and internal classification in order to find a more accurate targetting to increase local marketshare<br>- Utilizing Azure Databricks to effectively deploy, clean up and tune models for sales prediction during the ongoing COVID-19 pandemic at the time",
                 "- Extracting, cleaning up, processing, visualizing and manipulating data with Pandas<br>- Programming simple software solutions in order to automate manual tasks and avoid redundant processes<br>- Constructing databases from raw text data<br>- Analyzing genetic sequence data to find genetic mutations in patients",
                 "- Programming/building utilities to quicken the quote-giving process<br>- General data analysis and reporting on sales/accident rate for different insurance policies or groups of insurance policies<br>- Giving quotes for individual vehicle insurance policies and fleets of vehicles<br>- Pricing/discount analysis during the quote-giving process",
                 "- Math tutor for high school and university students, from basic arithmetic to integral calculus.",
                 "",
-                "- Creation of designs for ads<br>- Introduction and filling of data in a client database<br>- Mass emailing to customers<br>- Social media management"
+                "- Designing ads and general image editing<br>- Introduction and filling of data in a client database<br>- Mass emailing to customers<br>- Social media management"
             ],
             "es":[
-                "- Construir dashboards interactivos utilizando Metabase, a través de queries de SQL y la interfaz nativa de Metabase<br>- Preparar un pipeline de chequeos diarios de integridad de datos utilizando Python y Great Expectations<br>- Mantener y mejorar un modelo de deep learning para predecir propuestas de licitaciones<br>- Análisis de datos utilizando datos de contratación pública extraídos de las plataformas de contratación del estado españolas<br>- Trabajo completamente remoto",
-                "- Limpiando y manipulando data para crear vistas minables<br>- Preparando un pipeline completo de data science para construir modelos predictivos basados en data de ventas<br>- Seleccion de variables para modelación y afinación de modelos<br>- Segmentando clientes basados en sus compras de productos específicos y clasificación interna con el propósito de atacar agrupaciones más granularmente segmentadas para incrementar marketshare en el mercado local<br>- Utilizando Azure Databricks para poner en marcha y afinar modelos para predicción de ventas durante la pandemia de COVID-19<br>- Trabajo completamente remoto",
+                "- Construir dashboards interactivos utilizando Metabase, a través de queries de SQL y la interfaz nativa de Metabase<br>- Preparar un pipeline de chequeos diarios de integridad de datos utilizando Python y Great Expectations<br>- Mantener y mejorar un modelo de deep learning para predecir propuestas de licitaciones<br>- Análisis de datos utilizando datos de contratación pública extraídos de las plataformas de contratación del estado españolas",
+                "- Limpiando y manipulando data para crear vistas minables<br>- Preparando un pipeline completo de data science para construir modelos predictivos basados en data de ventas<br>- Seleccion de variables para modelación y afinación de modelos<br>- Segmentando clientes basados en sus compras de productos específicos y clasificación interna con el propósito de atacar agrupaciones más granularmente segmentadas para incrementar marketshare en el mercado local<br>- Utilizando Azure Databricks para poner en marcha y afinar modelos para predicción de ventas durante la pandemia de COVID-19",
                 "- Extrayendo, limpiando, procesando, creando visualizaciones y manipulando data con Pandas<br>- Programando soluciones sencillas de software con el propósito de automatizar tareas manuales y evadir tareas redundantes<br>- Construyendo y modelando bases de datos para almacenar data extraída de archivos de texto crudos<br>- Analizando data de secuencias genéticas para encontrar mutaciones/alteraciones en pacientes",
                 "- Análisis de tarificación de seguros de vehículos de motor<br>- Programación/construcción de utilidades para eficientizar procesos de cotización<br>- Análisis de datos en general con relación a producción/siniestralidad y reportes<br>- Cotizaciones de pólizas de vehículos y de pólizas para flotillas de vehículos",
                 "- Tutor de matemáticas para estudiantes de secundaria y universitarios, desde aritmética básica hasta calculo integral.",
                 "",
-                "- Creación de artes para publicidad<br>- Introducción de datos en bases de datos de clientes<br>- Envío de correos masivos a clientes<br>- Manejo de redes sociales"
+                "- Creación de artes para publicidad y edición de imágenes general<br>- Introducción de datos en bases de datos de clientes<br>- Envío de correos masivos a clientes<br>- Manejo de redes sociales"
             ]
         }
     },
@@ -312,6 +312,36 @@
                 "en":"🖥️ Skills",
                 "es":"🖥️ Habilidades",
                 "nl":"🖥️ Vaardigheden"
+            },
+            "skills_categories": {
+                "languages":{
+                    "en":"Languages",
+                    "es":"Lenguajes"
+                },
+                "frameworks":{
+                    "en":"Frameworks",
+                    "es":"Frameworks"
+                },
+                "tools1":{
+                    "en":"Tools",
+                    "es":"Utilidades"
+                },
+                "tools2":{
+                    "en":"Tools",
+                    "es":"Utilidades"
+                },
+                "platforms":{
+                    "en":"Platforms",
+                    "es":"Plataformas"
+                },
+                "other1":{
+                    "en":"Other",
+                    "es":"Otros"
+                },
+                "other2":{
+                    "en":"Other",
+                    "es":"Otros"
+                }
             },
             "list":{
                 "en":{

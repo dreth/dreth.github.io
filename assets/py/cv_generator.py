@@ -226,12 +226,23 @@ cv_blocks = {
 
 ### GENERAL INDENTERS
     'indenter': {
-        'skills':{
-            'Languages':'~~~~~~',
-            'Frameworks':'~~~~',
-            'Tools':'~~~~~~~~~~~~~~',
-            'Platforms':'~~~~~~~',
-            'Other':'~~~~~~~~~~~~~'
+        'en':{
+            'skills':{
+                'Languages':'~~~~~~',
+                'Frameworks':'~~~~',
+                'Tools':'~~~~~~~~~~~~~~',
+                'Platforms':'~~~~~~~',
+                'Other':'~~~~~~~~~~~~~'
+            }
+        },
+        'es':{
+            'skills':{
+                'Languages':'~~~~~~~',
+                'Frameworks':'~~~~',
+                'Tools':'~~~~~~~',
+                'Platforms':'~~~~',
+                'Other':'~~~~~~~~~~~~~~'
+            }
         }
     },
 
@@ -368,17 +379,18 @@ def fill_cv(cv_skeleton, l="en"):
             for key, value in cv_data[section]['list'][l]['noLevel'].items():
 
                 # section name
-                section_name = re.sub('\d','',key).capitalize()
+                section_name = re.sub('\d','', cv_data[section]["skills_categories"][key][l]).capitalize()
+                section_name_std = re.sub('\d','', key).capitalize()
 
                 # replace special tags
-                if section_name not in done_skills_sections:
+                if section_name_std not in done_skills_sections:
                     skill_block = cv_blocks[section]['iterative_block']
 
                     # tags and replacements
                     tags = ['*section*', '*indenter*', '*skill_list*']
                     replacements = [
                         section_name, 
-                        cv_blocks['indenter'][section][section_name],
+                        cv_blocks['indenter'][l][section][section_name_std],
                         value
                     ]
                     
@@ -394,13 +406,13 @@ def fill_cv(cv_skeleton, l="en"):
 
                     # adding the additional elements to the section
                     skill_block = skill_block[0:-1]
-                    skill_block += f'\\\\ ~~~~~~~~~~~~~~~~~~~~~~~~{value}}}'
+                    skill_block += f'\\\\~~~~~~~~~~~~~~~~~~~~~~~~{value}}}'
 
                     # add with the added newline
                     skills_section += skill_block
             
                 # append to done skills sections
-                done_skills_sections.add(section_name)
+                done_skills_sections.add(section_name_std)
             
             # add skills section
             iteration_items += skills_section
