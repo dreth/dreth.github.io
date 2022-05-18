@@ -404,9 +404,15 @@ def fill_cv(cv_skeleton, l="en"):
                     # subtract previously added element 
                     skills_section = skills_section[0:len(skills_section)-len(skill_block)]
 
+                    # additional space in spanish
+                    extra_space = {
+                        "en":'',
+                        "es":'~'
+                    }[l]
+
                     # adding the additional elements to the section
                     skill_block = skill_block[0:-1]
-                    skill_block += f'\\\\~~~~~~~~~~~~~~~~~~~~~~~~{value}}}'
+                    skill_block += f'\\\\~~~~~~~~~~~~~~~~~~~~~~~~{extra_space}{value}}}'
 
                     # add with the added newline
                     skills_section += skill_block
