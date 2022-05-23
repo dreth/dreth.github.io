@@ -1,0 +1,15 @@
+/* fade in animation */
+.fadein {
+    animation: fadeIn 2s;
+}
+    @keyframes fadeIn {
+    0% {opacity:1;}
+    100% {opacity:1;}
+}  
+#b1 {
+    animation: fadeIn 1s;
+}
+embed {
+    width: 100%;
+    height: 1000px;
+  }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Daniel A. | playlists">
+  <meta name="description" content="">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dac.ac/playlists">
+  <meta property="og:title" content="Daniel A. | playlists">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="/assets/icons/meta.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="/assets/icons/meta.png">
+  <meta property="twitter:url" content="https://dac.ac/playlists">
+  <meta property="twitter:title" content="Daniel A. | playlists">
+  <meta property="twitter:description" content="">
+  <meta property="twitter:image" content="/assets/icons/meta.png">
+
+  <!-- stylesheet, script, icon and font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles-settings.css">
+  <link rel="shortcut icon" id="icon"/>
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" type="text/css" id="mainStylesheet" href="./bibi.css">
+  <script src="/assets/js/libs/jquery.js"></script>
+
+  <!-- title -->
+  <title>May 22nd</title>
+</head>
+
+<body>
+  <div id="body" class="paddedBody">
+    <div>
+      <div class="row">
+        <div class="column leftcol">
+          <a class='title' onclick="showGC()"><h1 class="inline">Daniel A.</h1></a>
+          <h3>(almost) May 22nd</h3>
+        </div>
+        <div class="column rightcol">
+        </div>
+      </div>
+
+      <div id="buttons" class="fadein centered paddingAllAround divBorder"></div>
+      <br>
+      <div id="textAndOptions" class="paddingAllAround divBorder">
+        <div>
+          <span>Numbers clicked:</span> <span id="numbersClicked"></span>
+          <br><br>
+          <div id="colorToggles">
+            <a class="b" id="changeColor" onclick="showText(lastNumberClicked, cc=true)">Change color</a>
+            <br><br>
+            <a class="b" id="changeBackColor" onclick="makeCurrentColorBackground()">Make the page background the color of the current text</a>
+          </div>
+        </div>
+        <br><hr><br>
+        <div id="text">
+          <div class="centered"><b><h2>Click on numbers (ideally in order)</h2></b></div>
+        </div>
+
+      </div>
+
+      <br>
+
+      
+      <div id="gc" class="centered paddingAllAround divBorder"></div>
+
+    </div>
+  </div>
+  <script src="/assets/js/mainScript.js"></script>
+  <script src="/assets/js/playlistsScript.js"></script>
+  <script src="./bibi.js"></script>
+</body>
+
+</html>
