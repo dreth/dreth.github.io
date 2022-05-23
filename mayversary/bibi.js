@@ -179,7 +179,7 @@ const messages = {
     51:"i love u",
     52:"happy 2 years and 8 months bebi",
     53:"it only gets better with u",
-    54:"also clicking on my name should show ur gift (:"
+    54:"also clicking on my name should show ur gift (: (only if you have clicked all numbers)"
 }
 
 var clicks = {};
