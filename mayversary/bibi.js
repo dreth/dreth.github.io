@@ -129,7 +129,7 @@ const messages = {
     40:`<h1>I LOVE U</h1><br><img src="./buibi.jpg">`,
     41:"i think ull like the gift u better gimme a kiss nOW before the gift",
     42:`<h2>WE ARE GONNA HAVE A CAT</h2><br><pre>
-     /\_/\
+     /\\_/\\
     ( o.o )
      > ^ <
     </pre>`,
