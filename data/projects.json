@@ -59,6 +59,11 @@
                 "nl":"dac.ac"
             },
             {
+                "en":"Web3 messages app",
+                "es":"App de mensajes con web3",
+                "nl":"Web3 messages app"
+            },
+            {
                 "en":"DeFi Navy",
                 "es":"DeFi Navy",
                 "nl":"DeFi Navy"
@@ -138,6 +143,11 @@
                 "en":"My personal website and blog.",
                 "es":"Mi página web personal y blog.",
                 "nl":"Mijn persoonlijke website en blog."
+            },
+            {
+                "en":"A simple node+express, vanilla JS messages app that connects to a contract on the blockchain web3js. Messages can be posted using message signatures (posts them to the server DB which is a simple JSON file) or signing transactions (posts/saves the messages to the contract directly on the blockchain).",
+                "es":"Una simple aplicación de mensajes que utiliza node+express y vanilla JS para conectarse con un contrato en el blockchain. Los mensajes pueden ser publicados utilizando firmas (guarda/publica los mensajes en la base de datos del servidor, que es un archivo JSON) o firmando transacciones (guarda/publica los mensajes directamente en el contrato en el blockchain).",
+                "nl":"A simple node+express, vanilla JS messages app that connects to a contract on the blockchain web3js. Messages can be posted using message signatures (posts them to the server DB which is a simple JSON file) or signing transactions (posts/saves the messages to the contract directly on the blockchain)."
             },
             {
                 "en":"A simple website to serve as a link directory for decentralized finance applications (DeFi), smart contract platform related websites, Ethereum related websites and all sorts of useful blockchain-related links.",
@@ -221,6 +231,7 @@
     "projectLinks":{
         "personal":[
             "https://dac.ac",
+            "https://web3-messages-express.herokuapp.com/",
             "https://defi.navy",
             "https://github.com/dreth/RouterRebootTool",
             "https://github.com/dreth/CodeSnippets/tree/main/phishing_spammer",
