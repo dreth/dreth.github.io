@@ -201,16 +201,33 @@
         "Tiny the Wonder": "EN_Tiny_the_Wonder",
         "Edible flower": "EN_Edible_flower",
         "Ortolan bunting": "EN_Ortolan_bunting",
-        "List of Grand Slam–related tennis records": "EN_List_of_Grand_Slam%E2%80%93related_tennis_records"
+        "List of Grand Slam–related tennis records": "EN_List_of_Grand_Slam%E2%80%93related_tennis_records",
+        "Dominican Spanish": "EN_Dominican_Spanish",
+        "Jwaneng diamond mine": "EN_Jwaneng_diamond_mine",
+        "Sabina Selimovic and Samra Kesinovic": "EN_Sabina_Selimovic_and_Samra_Kesinovic",
+        "Heizeldrama": "NL_Heizeldrama",
+        "Match of the Century (1953 England v Hungary football match)": "EN_Match_of_the_Century_(1953_England_v_Hungary_football_match)",
+        "Lerwick": "EN_Lerwick",
+        "Kirkwall": "EN_Kirkwall",
+        "Xenotransplantation": "EN_Xenotransplantation",
+        "Curonian Spit": "EN_Curonian_Spit",
+        "List of uninhabited regions": "EN_List_of_uninhabited_regions",
+        "Shaggy defense": "EN_Shaggy_defense",
+        "WTA Tour records": "EN_WTA_Tour_records",
+        "Baltic Way": "EN_Baltic_Way",
+        "Eight-thousander": "EN_Eight-thousander"
     },
     "wiktionary": {
         "ja": "EN_ja",
         "jordgubbe": "EN_jordgubbe",
-        "garish": "EN_garish"
+        "garish": "EN_garish",
+        "savvy": "EN_savvy"
     },
     "other_sites": {
         "New gTLD Brand Applications - ICANNWiki": "https://icannwiki.org/New_gTLD_Brand_Applications",
         "JavaScript | MDN": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        "Track drawing websites - OpenStreetMap Wiki": "https://wiki.openstreetmap.org/wiki/Track_drawing_websites"
+        "Track drawing websites - OpenStreetMap Wiki": "https://wiki.openstreetmap.org/wiki/Track_drawing_websites",
+        "Ethereum Smart Contract Best Practices": "https://consensys.github.io/smart-contract-best-practices/",
+        "Yul — Solidity 0.8.16 documentation": "https://docs.soliditylang.org/en/latest/yul.html"
     }
 }
