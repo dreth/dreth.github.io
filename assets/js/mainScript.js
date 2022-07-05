@@ -498,3 +498,9 @@ allFiles.done(() => {
         addTextChangeEvents()
     }
 })
+
+
+// add analytics at the end of the body of each page
+$("body").append(`<!-- 100% privacy friendly analytics -->
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>`)
