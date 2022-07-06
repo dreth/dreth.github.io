@@ -799,7 +799,7 @@ tbody tr:last-of-type {
 
 /* pre */
 code {
-  font-family: monospace, 'Courier New', Courier !important;
+  font-family: Courier, 'Courier New' !important;
   background-color: inherit;
   background: inherit;
   color: inherit;
