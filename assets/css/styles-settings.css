@@ -726,30 +726,25 @@ div.rightcol-half-articles {
 ul.noBullets {
   list-style: none;
 }
-
 li.pjs:before {
   margin-left: -20px; 
   margin-right: 10px;
   content: '📎';
 }
-
 li.pjs-gh:before {
   margin-left: -20px; 
   margin-right: 10px;
   content: '🗂️';
 }
-
 li.pjs-desc:before {
   margin-left: -20px; 
   margin-right: 10px;
   content: '📝';
 }
-
 li.ml:before {
   margin-left: -20px; 
   margin-right: 10px;
 }
-
 li.blog:before {
   content: attr(data-before);
 }
