@@ -6,7 +6,7 @@
 <p>In an effort to learn and understand Solidity, to either code contracts or audit them in the future (not sure what I want to do yet), I decided to solve the Ethernaut challenges.</p>
 <p>These were fun, engaging challenges that allowed me to learn some details, vulnerabilities and intricacies of the EVM and the Solidity programming language. Probably one of the most fun learning experiences I’ve had.</p>
 <p>In this article I will basically copy-paste all my solution write-ups from the <a href="https://github.com/dreth/Ethernaut">github repo</a> where I uploaded all of them.</p>
-<p>I solved these initially in a local brownie environment (smart contract development framework on python) using a local fork of the rinkeby test network. After solving each challenge, I then ran the scripts that would perform the transactions on the test network itself to solve the challenges.</p>
+<p>I solved these initially in a local brownie (smart contract development framework on python) using a local fork of the rinkeby test network. After solving each challenge, I then ran the scripts that would perform the transactions on the test network itself to solve the challenges.</p>
 <p>If you want to reproduce the same environment I used for it, you can do so by following the instructions in the<a href="https://github.com/dreth/Ethernaut/blob/main/README.md">readme of that same github repo</a>.</p>
 <hr>
 <h2 id="article-index">Article index</h2>
@@ -1109,7 +1109,7 @@ address public owner;
 <li>I first needed to look for help as I had absolutely no idea how to approach this problem, but after extensive reading of how this whole thing works and some basics of opcodes and EVM assembly, I then decided to code a contract using Yul (deployed at: <code>0x678a4e09ec08d8fd32abc0f4e3e28469fe8b6e80</code>), which IMO is a very readable way of attempting to do this.</li>
 </ol>
 <p>The contract looks like this (It’s under <code>/contracts/attacks/MagicNumberSolver.Yul</code> in the repo):</p>
-<pre class=" language-yul"><code class="prism  language-yul">// SPDX-License-Identifier: MIT
+<pre class=" language-cs"><code class="prism  language-cs">// SPDX-License-Identifier: MIT
 object "MagicNumberSolver" {
     code {
         sstore(0, caller())
@@ -1126,7 +1126,7 @@ object "MagicNumberSolver" {
 </code></pre>
 <p>This is a <em>million times</em> more readable than raw bytecode or even raw opcodes, though now raw opcodes no longer look like robot instructions to me (even though they technically are).</p>
 <p>This is the constructor of the contract (initialization opcodes), usually declared with <code>constructor()</code> in Solidity:</p>
-<pre class=" language-yul"><code class="prism  language-yul">code {
+<pre class=" language-cs"><code class="prism  language-cs">code {
     sstore(0, caller())
     datacopy(0, dataoffset("Runtime"), datasize("Runtime"))
     return(0, datasize("Runtime"))
@@ -1892,3 +1892,4 @@ legacytoken <span class="token operator">=</span> dep<span class="token punctuat
 </code></pre>
 <h3 id="submission-transaction-25">Submission transaction</h3>
 <p>Block explorer: <a href="https://rinkeby.etherscan.io/tx/0x3edb0cb77a9b738b830f6fe7b7b460b2a698ec70d36f66097ca71b9c7c389ce2">https://rinkeby.etherscan.io/tx/0x3edb0cb77a9b738b830f6fe7b7b460b2a698ec70d36f66097ca71b9c7c389ce2</a></p>
+
