@@ -66,7 +66,7 @@ div.rightcol-half-articles {
 }
 
 /* screen width higher than 2000 px */
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 2550px) {
     /* langname little thingy */
     #langName {
       font-size: 0.4vw;
@@ -273,7 +273,7 @@ div.rightcol-half-articles {
   }
   
   /* screen width higher than 1000 px */
-  @media screen and (max-width: 2000px) and (min-width: 1000px) {
+  @media screen and (max-width: 2550px) and (min-width: 1250px) {
     /* langname little thingy */
     #langName {
       font-size: 0.6vw;
@@ -488,7 +488,7 @@ div.rightcol-half-articles {
     }
   }
   /* screen width lower than 1000 px */
-  @media screen and (max-width: 1000px) and (min-width: 0px) {
+  @media screen and (max-width: 1250px) and (min-width: 0px) {
     /* langname little thingy */
     #langName {
       font-size: 1.2vw;
