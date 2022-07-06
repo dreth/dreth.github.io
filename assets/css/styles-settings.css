@@ -759,15 +759,12 @@ li.blog:before {
 li.tag:before {
   content:'>';
 }
-
 .rightcol {
   text-align: right;
 }
-
 .centered {
   text-align: center;
 }
-
 .inline {
   display: inline;
 }
