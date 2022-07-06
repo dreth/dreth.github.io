@@ -1,6 +1,23 @@
-h1,h2,h3,h4,h5 {
+h1 {
     color:rgb(129, 193, 253);
 }
+
+h2 {
+    color:rgb(97, 115, 255);
+}
+
+h3 {
+    color:rgb(129, 193, 253);
+}
+
+h4 {
+    color:rgb(129, 193, 253);
+}
+
+h5 {
+    color:rgb(129, 193, 253);
+}
+
 
 a:link {
     text-decoration: none;
