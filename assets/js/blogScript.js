@@ -52,7 +52,6 @@ allFiles.done(() => {
 
     // add the article switcher
     $("#prevNextArticleSwitcher").html(prevNextArticleSwitcher)
-    console.log(prevNextArticleSwitcher)
 
     // reload texts
     loadObjects(langs)
@@ -102,4 +101,11 @@ function goBackToReadingSection() {
 function captureSection(section) {
     $('#goBackToReadingSectionDiv').show()
     $('#goBackToReadingSection').attr('href',section)
+}
+// add ethernautsolutions html to the ethernaut solutions article content2 block
+if ($("#ethernautSolutions")) {
+    $('#ethernautSolutions').load('/blog/ethernaut_solutions/assets/ethernautsolutions.html', function() {
+        $(".katex-html").hide();
+        hljs.highlightAll();
+    })
 }

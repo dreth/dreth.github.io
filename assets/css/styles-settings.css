@@ -191,6 +191,11 @@ div.rightcol-half-articles {
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
+    table {
+      font-size: 0.9vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
     pre {
       font-size: 0.8vw;
       word-wrap: break-word;
@@ -402,6 +407,11 @@ div.rightcol-half-articles {
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
+    table {
+      font-size: 1.4vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
     pre {
       font-size: 1.2vw;
       word-wrap: break-word;
@@ -605,6 +615,11 @@ div.rightcol-half-articles {
       font-family: Ubuntu, Sans-Serif;
       word-wrap: break-word;
     }
+    table {
+      font-size: 2.9vw;
+      font-family: Ubuntu, Sans-Serif;
+      word-wrap: break-word;
+    }
     pre {
       font-size: 2.8vw;
       word-wrap: break-word;
@@ -755,4 +770,45 @@ li.tag:before {
 
 .inline {
   display: inline;
+}
+
+/*  table */
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 2px #676767;
+  word-break:break-all;
+}
+tbody tr {
+  border-bottom: 1px solid #676767;
+}
+thead tr {
+  background-color: #717171;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+td, th {
+  padding: 10px 11px;
+}
+tbody tr:last-of-type {
+  border-bottom: 3px solid #676767;
+}
+
+/* pre */
+code {
+  font-family: monospace, 'Courier New', Courier !important;
+  background-color: inherit;
+  background: inherit;
+  color: inherit;
+}
+span.token, [class^="hljs"], .hljs {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: inherit !important;
+  background: inherit !important;
+  color: inherit;
 }
