@@ -266,7 +266,7 @@ function callFlip() external {
 
 ### How I did it
 
-I did exactly what I described in the [solution section](#solution), but I inherited from Ownable to create the `CoinFlipAttack` contract as a way to restrict calling the `callFlip()` function only from the deployer of the attacker contract. After coding the contract I did the following steps:
+I did exactly what I described in the [solution section](#solution-1), but I inherited from Ownable to create the `CoinFlipAttack` contract as a way to restrict calling the `callFlip()` function only from the deployer of the attacker contract. After coding the contract I did the following steps:
 
 1. Deploy (at: `0xA8834Cc6c91bf94d4FB32D72815C2011CC1c2e15`) the attacker contract which I labeled `CoinFlipAttack.sol`
 
@@ -791,7 +791,7 @@ So then after acquiring this, all that needs to be done is simply pass it as par
 
 ### How I did it
 
-Exactly as I described in [solution](#solution):
+Exactly as I described in [solution](#solution-10):
 
 1. Get the first 16 bytes of the data in the 5th storage position of the contract instance.
 
@@ -890,7 +890,7 @@ function callEnter(address _modifiedTxOrigin, uint16 additionalGas) public retur
 }
 ```
 
-2. Modify my address (the `tx.origin`, `0x98bCCA1C6023e3F851090e079030da43d9F229d1`) in order to pass the third check, in this case I used `0x0000000000000000000000000000000A000029d1`. This will pass all checks as described in [solution](#solution).
+2. Modify my address (the `tx.origin`, `0x98bCCA1C6023e3F851090e079030da43d9F229d1`) in order to pass the third check, in this case I used `0x0000000000000000000000000000000A000029d1`. This will pass all checks as described in [solution](#solution-11).
 
 ```python
 modified_tx_origin = f"0x{'0'*31}A0000{acc.address[-4:]}"
@@ -1112,7 +1112,7 @@ Therefore the flow is as follows:
 
 ### How I did it
 
-1. Code and deploy (at: `0x5E51EE439b501d7e39261Df8C437dA19a28F651D`) the attacker contract as described in [solution](#solution)
+1. Code and deploy (at: `0x5E51EE439b501d7e39261Df8C437dA19a28F651D`) the attacker contract as described in [solution](#solution-14)
 
 ```python
 pattack = PreservationAttack.deploy(preservation.address, _from)
@@ -1171,7 +1171,7 @@ With this information, all we have to do now is call the `destroy()` function in
 
 ### How I did it
 
-1. Once we have these two details (deployer address, nonce) as I described in [solution](#solution), we can code a function in python (or directly in solidity) to obtain the address. As a resourceful developer, even though I know how to compute this, I still decided to go and find a ready made solution in StackExchange in order to skip this:
+1. Once we have these two details (deployer address, nonce) as I described in [solution](#solution-15), we can code a function in python (or directly in solidity) to obtain the address. As a resourceful developer, even though I know how to compute this, I still decided to go and find a ready made solution in StackExchange in order to skip this:
 
 ```python
 # compute address of a given contract to be deployed from
@@ -1246,13 +1246,13 @@ These raw assembly opcodes can be divided into two parts:
 
 * Initialization code (can be of any length)
 
-```assembly
+```
 CALLER PUSH1 0x0 SSTORE PUSH1 0xA PUSH1 0x11 PUSH1 0x0 CODECOPY PUSH1 0xA PUSH1 0x0 RETURN INVALID
 ```
 
 * Runtime code (has to have a length of _at most_ 10 opcodes)
 
-```assembly
+```
 PUSH1 0x2A PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 RETURN 
 ```
 
@@ -1383,7 +1383,7 @@ Which returns the hash: `0x4ef1d2ad89edf8c4d91132028e8195cdf30bb4b5053d4f8cd2603
 
 ### How I did it
 
-_Exactly_ as described in [solution](#solution), but using my local setup in brownie:
+_Exactly_ as described in [solution](#solu), but using my local setup in brownie:
 
 1. Call `make_contact()`
 
@@ -1741,7 +1741,7 @@ As a result of this, we can code another ERC20 token contract of which we mint t
 
 ### How I did it
 
-Exactly as described in [solution](#solution).
+Exactly as described in [solution](#solution-21).
 
 1. Code and deploy a new ERC20 token (at: `0xc27a45c6D84F6AB7aAFECFB82d0853064e288261`)
 
@@ -1827,7 +1827,7 @@ Therefore, we can follow these steps to become `admin`:
 
 ### How I did it
 
-As described in [solution](#solution), but with a few resourceful changes in order to simplify the python code.
+As described in [solution](#solution-22), but with a few resourceful changes in order to simplify the python code.
 
 1. Get the position in the proxy contract's storage which contains the address of the implementation contract. I do this in order to be able to encode the calls to certain methods in this contract, which I could technically do manually by constructing a short JSON and encoding it as ABI, but using the contract code instance is easier. I think it's also possible to deploy an instance of the PuzzleWallet contract in order to do it.
 
@@ -1861,7 +1861,7 @@ acc.transfer(to=puzzleproxy.address, amount=0, data=whitelist_address_data)
 
 Block explorer: https://rinkeby.etherscan.io/tx/0xfbc79616c75d96e8a0d176b88197521a18b688bfc6286f01fb904335300c56c5
 
-5. Create the multicall bundled transaction and call `multicall()` as specified in [solution](#solution) step 3.
+5. Create the multicall bundled transaction and call `multicall()` as specified in [solution](#solution-22) step 3.
 
 ```python
 # multicall tx data
@@ -1960,7 +1960,7 @@ function boom() public {
 # deploy our bomb engine contract
 be = BombEngine.deploy(_from)
 ```
-4. Call `UpgradeToAndCall()` in the Engine implementation contract as described in [solution](#solution).
+4. Call `UpgradeToAndCall()` in the Engine implementation contract as described in [solution](#solution-23).
 
 ```python
 # call upgradeToAndCall() to selfdestruct the Engine implementation contract

