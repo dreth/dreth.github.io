@@ -346,7 +346,7 @@
             "list":{
                 "en":{
                     "noLevel":{
-                        "languages":"Python, R, SQL, Bash, Javascript",
+                        "languages":"Python, R, SQL, Bash, Javascript, Solidity",
                         "frameworks":"Manipulation, visualization of data/arrays and basic ML modelling in Python/R",
                         "tools1":"Git, Docker, DB design, Spreadsheets/Excel",
                         "tools2":"Basic web development (html, css, js)",
@@ -357,7 +357,7 @@
                 },
                 "es":{
                     "noLevel":{
-                        "languages":"Python, R, SQL, Bash, Javascript",
+                        "languages":"Python, R, SQL, Bash, Javascript, Solidity",
                         "frameworks":"Manipulación, visualización de datos/arreglos y construcción básica de modelos de ML con Python/R",
                         "tools1":"Git, Docker, Diseño de DB, Hojas de cálculo/Excel",
                         "tools2":"Desarrollo web básico (html, css, js)",
@@ -368,7 +368,7 @@
                 },
                 "nl":{
                     "noLevel":{
-                        "languages":"Python, R, SQL, Bash, Javascript",
+                        "languages":"Python, R, SQL, Bash, Javascript, Solidity",
                         "frameworks":"Manipulation, visualization of data/arrays and basic ML modelbuilding in Python/R",
                         "tools1":"Git, Docker, Diseño de DB, Spreadsheets/Excel",
                         "tools2":"Basic web development (html, css, js)",
