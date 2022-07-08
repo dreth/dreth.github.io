@@ -13,7 +13,7 @@ In this article I will basically copy-paste all my solution write-ups from the [
 
 I solved these initially in a local brownie (smart contract development framework on python) using a local fork of the rinkeby test network. After solving each challenge, I then ran the scripts that would perform the transactions on the test network itself to solve the challenges. 
 
-If you want to reproduce the same environment I used for it, you can do so by following the instructions in the[readme of that same github repo](https://github.com/dreth/Ethernaut/blob/main/README.md). 
+If you want to reproduce the same environment I used for it, you can do so by following the instructions in the [readme of that same github repo](https://github.com/dreth/Ethernaut/blob/main/README.md). 
 
 ***
 
