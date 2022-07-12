@@ -139,7 +139,7 @@ div.rightcol-half-articles {
       width: 25%;
     }
     div.rightcol-home {
-      width: 67%;
+      width: 73%;
       margin-left: 1.5%;
     }
     /* two-col layout - ABOUT */
@@ -351,12 +351,8 @@ div.rightcol-half-articles {
       width: 35%;
     }
     div.rightcol-home {
-      width: 59%;
-      padding-left: 2%;
-      padding-right: 2%;
-      padding-top: 2%;
-      padding-bottom: 2%;
-      margin-left: 2%;
+      width: 63%;
+      margin-left: 1.5%;
     }
     /* two-col layout - ABOUT */
     div.leftcol-half-about {
@@ -561,7 +557,7 @@ div.rightcol-half-articles {
       float: none;
     }
     div.rightcol-home {
-      width: 94%;
+      width: 100%;
       float: none;
     }
     /* two-col layout - ABOUT */

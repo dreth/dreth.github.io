@@ -204,3 +204,23 @@ a.l {
 a.l:hover {
   color: #ffa07a;
 }
+/* input for notifs */
+input.emailField {
+  display: block;
+  width:100%;
+  margin-top:15px;
+  border: none;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  font-size: inherit;
+}
+input.subscribeButton {
+  width:100%;
+  border: none;
+  background-color: black;
+  font-size: inherit;
+  color: rgb(0, 174, 255);
+}
+input.subscribeButton:hover {
+  color: #d2ff6a;
+}

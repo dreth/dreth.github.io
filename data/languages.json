@@ -196,6 +196,21 @@
             "en":"english",
             "es":"español",
             "nl":"nederlands"
+        },
+        "newsletter_notif": {
+            "en":"📧 Get notified when I post",
+            "es":"📧 Recibe notificaciones cuando publico",
+            "nl":"📧 Krijg melding wanneer ik publiceer"
+        },
+        "newsletter_title": {
+            "en":"📧 Newsletter",
+            "es":"📧 Notificaciones por correo",
+            "nl":"📧 Nieuwsbrief"
+        },
+        "newsletter": {
+            "en":"Newsletter",
+            "es":"Notificaciones por correo",
+            "nl":"Nieuwsbrief"
         }
     },
     "objectIds_Field":{
@@ -222,7 +237,10 @@
             "nextArticleText":"next_article_text",
             "oldestArticleText":"oldest_article_text",
             "latestArticleText":"latest_article_text",
-            "downloadCVLink":"download_cv_link"
+            "downloadCVLink":"download_cv_link",
+            "signUpNewsletterTitle":"newsletter_notif",
+            "newsletterHeading":"newsletter_title",
+            "newsletterTitleBar":"newsletter"
         },
         "1": {
             "playlistsHomepagePreview":"homepage_playlist",
