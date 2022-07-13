@@ -38,7 +38,7 @@
     <!-- TITLE STUFF -->
     <div class="row">
       <div class="column leftcol">
-        <a class='title' href="/" onclick="this.href = home;" oncontextmenu="this.href = home;"><h1 class="colorCycleText inline">Daniel A.</h1></a>
+        <a class='title titleHomepage'><h1 class="colorCycleText inline">Daniel A.</h1></a>
         <p class="heading" id="welcomeSubtitle"></p>
         <br>
       </div>
@@ -110,12 +110,24 @@
         <br>
       </div>
       <!-- BLOG ARTICLE LIST -->
-      <div class="column paddingAllAround rightcol-home divBorder" id="blogArticles">
-          <div class="blogTitle">
+      <div class="column rightcol-home">
+        <!-- article list -->
+        <div class="paddingAllAround divBorder" id="blogArticles">
+            <div class="blogTitle">
               <h3 id="blogTitle"></h3>
               <br><br>
-          </div>
+            </div>
           <div id="articleList"></div>
+        </div>
+        <br>
+        <!-- subscribe form -->
+        <div class="paddingAllAround divBorder" id="mcStuff">
+          <div class="blogTitle">
+            <h3 id="signUpNewsletterTitle" class="inline"></h3>
+            <br>
+          </div>
+          <div id="mailchimpStuff"></div>
+        </div>
       </div>
   </div>
       

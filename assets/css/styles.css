@@ -18,10 +18,10 @@ a {
 div.ml:hover {
   background-color: rgb(43, 43, 43);
 }
-div.alt {
+.alt {
   background-color: rgb(43, 43, 43);
 }
-div.alt2 {
+.alt2 {
   background-color: rgb(19, 19, 19);
 }
 /* color cycle text */
@@ -203,4 +203,17 @@ a.l {
 }
 a.l:hover {
   color: #ffa07a;
+}
+/* input for notifs */
+input.emailField {
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+input.subscribeButton {
+  background-color: black;
+  color: rgb(0, 174, 255);
+}
+input.subscribeButton:hover {
+  color: #d2ff6a;
+  background-color: rgb(19, 19, 19);
 }

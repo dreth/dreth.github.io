@@ -203,3 +203,15 @@ a.gb:hover {
 .l:hover {
   color: #ff5614;
 }
+/* input for notifs */
+input.emailField {
+  background-color: rgb(171, 171, 171);
+  color: rgb(0, 0, 0);
+}
+input.subscribeButton {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 116, 170);
+}
+input.subscribeButton:hover {
+  color: #007500;
+}

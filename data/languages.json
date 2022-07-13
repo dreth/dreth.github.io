@@ -196,6 +196,51 @@
             "en":"english",
             "es":"español",
             "nl":"nederlands"
+        },
+        "newsletter_notif": {
+            "en":"📧 Get notified when I post",
+            "es":"📧 Recibe notificaciones cuando publico",
+            "nl":"📧 Krijg melding wanneer ik publiceer"
+        },
+        "newsletter_title": {
+            "en":"📧 Newsletter",
+            "es":"📧 Notificaciones por correo",
+            "nl":"📧 Nieuwsbrief"
+        },
+        "newsletter": {
+            "en":"Newsletter",
+            "es":"Notificaciones por correo",
+            "nl":"Nieuwsbrief"
+        },
+        "subscribe_button": {
+            "en":"Add me to the list",
+            "es":"Agrégame a la lista",
+            "nl":"Voeg me toe aan de lijst"
+        },
+        "newsletter_thank_you": {
+            "en":"Welcome to the mailing list (:<br><br>You'll now receive emails when I post something on my blog.",
+            "es":"Bienvenido a la lista de correos (:<br><br>Ahora recibirás correos cuando publique algo en mi blog.",
+            "nl":"Welkom op de mailinglijst (:<br><br>Je zal emails krijgen wanneer ik iets op mijn blog publiceer."
+        },
+        "back_home": {
+            "en":"Go back to the homepage",
+            "es":"Volver a la página principal",
+            "nl":"Terug naar de homepage"
+        },
+        "unsub_embed": {
+            "en":"Unsubscribe",
+            "es":"Desuscribirse",
+            "nl":"Afmelden"
+        },
+        "newsletter_email_updated": {
+            "en":"Your email has been updated.",
+            "es":"Tu correo ha sido actualizado.",
+            "nl":"Je emailadres is bijgewerkt."
+        },
+        "newsletter_unsubscribed": {
+            "en":"You have been removed from the mailing list.",
+            "es":"Has sido eliminado de la lista de correos.",
+            "nl":"Je bent afgemeld van de nieuwsbrief."
         }
     },
     "objectIds_Field":{
@@ -222,7 +267,15 @@
             "nextArticleText":"next_article_text",
             "oldestArticleText":"oldest_article_text",
             "latestArticleText":"latest_article_text",
-            "downloadCVLink":"download_cv_link"
+            "downloadCVLink":"download_cv_link",
+            "signUpNewsletterTitle":"newsletter_notif",
+            "newsletterHeading":"newsletter_title",
+            "newsletterTitleBar":"newsletter",
+            "newsletterThankYou":"newsletter_thank_you",
+            "backHome":"back_home",
+            "unsubEmbed":"unsub_embed",
+            "newsletterEmailUpdated":"newsletter_email_updated",
+            "newsletterUnsubscribed":"newsletter_unsubscribed"
         },
         "1": {
             "playlistsHomepagePreview":"homepage_playlist",
@@ -232,7 +285,8 @@
             "coolLinksHomepagePreviewSW":"homepage_wikipedia",
             "aboutHomepagePreviewSW":"about_me_text",
             "aboutMeDescription":"about_me_text",
-            "themeSwitcher":"theme_lang"
+            "themeSwitcher":"theme_lang",
+            "subscribeButton":"subscribe_button"
         },
         "2": {
             "linksTitleBar":"cool_links",

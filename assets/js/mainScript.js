@@ -152,33 +152,23 @@ function isSafari() {
 // get window width
 function getWidth() {
     return Math.max(
-      document.body.scrollWidth,
-      document.documentElement.scrollWidth,
-      document.body.offsetWidth,
-      document.documentElement.offsetWidth,
-      document.documentElement.clientWidth
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.documentElement.clientWidth
     );
-  }
-  
-  function getHeight() {
-    return Math.max(
-      document.body.scrollHeight,
-      document.documentElement.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.offsetHeight,
-      document.documentElement.clientHeight
-    );
-  }
-  
-
-
-// HIDING STUFF THAT STARTS HIDDEN ---------------
-function toggleSkeletonExpanders() {
-    // hide lang name
-    $("#langName").toggle()
 }
-// hide everything on page load
-toggleSkeletonExpanders()
+  
+function getHeight() {
+    return Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight,
+        document.documentElement.clientHeight
+    );
+}
 
 // generate menus
 function loadObjects(langsObj, l=language) {
@@ -301,6 +291,10 @@ function loadObjects(langsObj, l=language) {
 
                         $(`#${fieldId}`).html(fieldContent)
                         break;
+                    
+                    // subscribe button
+                    case 'subscribeButton':
+                        $("#subscribeButton").attr('value', translation)
                 }
     
             } else if (document.getElementById(fieldId) && itemType == 0) {
@@ -449,6 +443,56 @@ function removeBlogIcon() {
     })
 }
 
+// MAILCHIMP STUFF --------------------------------------
+$("#mailchimpStuff").html(`
+<!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="https://dac.us12.list-manage.com/subscribe/post?u=2dc3eb13fc6803ee768b95c77&amp;id=97eb89d742" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div id="mc_embed_signup_scroll">
+<div class="mc-field-group">
+	<p for="mce-EMAIL">
+        <input type="email" value="" name="EMAIL" class="emailField" id="mce-EMAIL" placeholder="e-mail">
+    </p>
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2dc3eb13fc6803ee768b95c77_97eb89d742" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <h3 class="inline"><input type="submit" id="subscribeButton" value="Subscribe" name="subscribe" onmouseover="mcSubscribeIn()" onmouseout="mcSubscribeOut()" id="mc-embedded-subscribe"  class="subscribeButton"></h3>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+`)
+
+// background color change for subscribe button
+function mcSubscribeIn() {
+    $("#mcStuff").addClass("alt2");
+}
+function mcSubscribeOut() {
+    $("#mcStuff").removeClass("alt2");
+}
+// validate email
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/
+    return re.test(email)
+}
+
+// only allow adding to the list of there's a valid email
+$("#subscribeButton").hide()
+$("#mce-EMAIL").on('input', () => {
+    if (!validateEmail($("#mce-EMAIL").prop('value'))) {
+        $("#subscribeButton").hide()
+    } else {
+        $("#subscribeButton").show()
+    }
+})
 
 // ADD HOMEPAGE EVENTS ----------------------------------
 // change text of about me, cool links and playlists on hover or clicking the div
