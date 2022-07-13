@@ -7,6 +7,9 @@ a.ml, a.b, a.p, a.b, a.bp, a.gb {
   font-family: Ubuntu, Sans-Serif;
   word-wrap: break-word;
 }
+a.titleHomepage {
+  cursor: default;
+}
 .hp-main-grid-11 {
   margin-right: 2%;
   margin-bottom: 2%;
@@ -67,13 +70,6 @@ div.rightcol-half-articles {
 
 /* screen width higher than 2000 px */
 @media screen and (min-width: 2550px) {
-    /* langname little thingy */
-    #langName {
-      font-size: 0.4vw;
-      font-family: Ubuntu, Sans-Serif;
-      word-wrap: break-word;
-      display: inline;
-    }
     /* article padding and object padding */
     .articleBody, .paddedBody {
         padding-left: 15%;
@@ -274,13 +270,6 @@ div.rightcol-half-articles {
   
   /* screen width higher than 1000 px */
   @media screen and (max-width: 2550px) and (min-width: 1250px) {
-    /* langname little thingy */
-    #langName {
-      font-size: 0.6vw;
-      font-family: Ubuntu, Sans-Serif;
-      word-wrap: break-word;
-      display: inline;
-    }
     /* article padding and object padding */
     .articleBody, .paddedBody {
         padding-left: 7%;
@@ -485,13 +474,6 @@ div.rightcol-half-articles {
   }
   /* screen width lower than 1000 px */
   @media screen and (max-width: 1250px) and (min-width: 0px) {
-    /* langname little thingy */
-    #langName {
-      font-size: 1.2vw;
-      font-family: Ubuntu, Sans-Serif;
-      word-wrap: break-word;
-      display: inline;
-    }
     /* article padding and object padding */
     .articleBody, .paddedBody {
         padding-left: 5%;
@@ -799,4 +781,18 @@ span.token, [class^="hljs"], .hljs {
   background-color: inherit !important;
   background: inherit !important;
   color: inherit;
+}
+
+/* input for notifs */
+input.emailField {
+  border: none;
+  display: inline;
+  width:100%;
+  font-size: inherit;
+}
+input.subscribeButton {
+  font-size: inherit;
+  border: none;
+  width:100%;
+  cursor: pointer;
 }
