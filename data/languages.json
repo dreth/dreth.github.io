@@ -178,14 +178,14 @@
                 }
         },
         "about_me_text": {
-            "en":"Data scientist, developer and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention.",
-            "es":"Data scientist, desarrollador y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención.",
-            "nl":"Data scientist, developer and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention."
+            "en":"Developer, data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. In particular, I've been doing CTFs to learn Solidity.",
+            "es":"Desarrollador, data scientist y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. En particular he estado haciendo CTFs para aprender Solidity.",
+            "nl":"Programmeur, data scientist en leraar. Ik ben bezig met de technologie, muziek, blockchains, programmeren, internetcultuur, privacy en beveiliging, matematiek, taal en taal.<br><br>Altijd open voor nieuwe kansen en ideeën. Ik zit momenteel op het punt om dingen te schrijven die me intereseren in mijn blog en actief te studeren wat ik mee kan doen."
         },
         "about_me_short": {
-            "en":"Data scientist, developer and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.",
-            "es":"Data scientist, desarrollador y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.",
-            "nl":"Data scientist, developer and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general."
+            "en":"Developer, data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.",
+            "es":"Desarrollador, data scientist y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.",
+            "nl":"Programmeur, data scientist en leraar. Ik ben bezig met de technologie, muziek, blockchains, programmeren, internet subcultures, online privacy and security, matematiek, linguïstiek en talen in algemeen."
         },
         "other_sites": {
             "en":"Other sites:",
