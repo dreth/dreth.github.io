@@ -215,3 +215,11 @@ input.subscribeButton {
 input.subscribeButton:hover {
   color: #007500;
 }
+
+/* block quotes */
+blockquote {
+  border-left: 3px solid #4a4a4a;
+  padding-left: 0.3vw;
+  background-color: rgb(199, 199, 199);
+  font-style: italic;
+}

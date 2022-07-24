@@ -1,7 +1,7 @@
 # Ethernaut solutions
 
 <div class="date">
-  <span class="smaller"><b>July 6th, 2022</b></span></div>
+  <span class="smaller"><b>July 6th, 2022</b></span>
 </div>
 <div class="centerPosition"><hr></div>
 

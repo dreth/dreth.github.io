@@ -109,3 +109,10 @@ if ($("#ethernautSolutions")) {
         hljs.highlightAll();
     })
 }
+// add capturetheether html to the capture the ether solutions article content2 block
+if ($("#captureTheEtherSolutions")) {
+    $('#captureTheEtherSolutions').load('/blog/capture_the_ether_solutions/assets/capturetheethersolutions.html', function() {
+        $(".katex-html").hide();
+        hljs.highlightAll();
+    })
+}

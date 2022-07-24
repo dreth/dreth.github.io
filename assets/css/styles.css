@@ -217,3 +217,11 @@ input.subscribeButton:hover {
   color: #d2ff6a;
   background-color: rgb(19, 19, 19);
 }
+
+/* block quotes */
+blockquote {
+  border-left: 0.3vw solid #8c8c8c;
+  padding-left: 0.3vw;
+  background-color: rgb(52, 52, 52);
+  font-style: italic;
+}

