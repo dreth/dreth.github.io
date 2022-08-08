@@ -230,9 +230,9 @@
     },
     "projectLinks":{
         "personal":[
-            "https://dac.ac",
-            "https://web3-messages-express.herokuapp.com/",
-            "https://defi.navy",
+            ["https://dac.ac", "https://github.com/dreth/my-site-template"],
+            ["https://web3-messages-express.herokuapp.com/", "https://github.com/dreth/web3-messages"],
+            ["https://defi.navy", "https://github.com/dreth/DefiNavyWebsite"],
             "https://github.com/dreth/RouterRebootTool",
             "https://github.com/dreth/CodeSnippets/tree/main/phishing_spammer",
             "https://github.com/dreth/CodeSnippets/tree/main/download_link_list_from_txt",
