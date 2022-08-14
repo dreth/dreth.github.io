@@ -236,7 +236,17 @@
         "Modular multiplicative inverse": "EN_Modular_multiplicative_inverse",
         "Elliptic Curve Digital Signature Algorithm": "EN_Elliptic_Curve_Digital_Signature_Algorithm",
         "Andromeda–Milky Way collision": "EN_Andromeda%E2%80%93Milky_Way_collision",
-        "Jonestown": "EN_Jonestown"
+        "Jonestown": "EN_Jonestown",
+        "Dissolution of Czechoslovakia": "EN_Dissolution_of_Czechoslovakia",
+        "Makarios III": "EN_Makarios_III",
+        "Officials implicated by the anti-corruption campaign in China (2012–2017)": "EN_Officials_implicated_by_the_anti-corruption_campaign_in_China_(2012%E2%80%932017)",
+        "Quadrilateral Security Dialogue": "EN_Quadrilateral_Security_Dialogue",
+        "Restavek": "EN_Restavek",
+        "Hyundai Creta": "ES_Hyundai_Creta",
+        "Diet (assembly)": "EN_Diet_(assembly)",
+        "Corinth Canal": "EN_Corinth_Canal",
+        "Entrevista de Hendaya": "ES_Entrevista_de_Hendaya",
+        "Hyphen War": "EN_Hyphen_War"
     },
     "wiktionary": {
         "ja": "EN_ja",
@@ -250,5 +260,12 @@
         "Track drawing websites - OpenStreetMap Wiki": "https://wiki.openstreetmap.org/wiki/Track_drawing_websites",
         "Ethereum Smart Contract Best Practices": "https://consensys.github.io/smart-contract-best-practices/",
         "Yul — Solidity 0.8.16 documentation": "https://docs.soliditylang.org/en/latest/yul.html"
+    },
+    "people_i_admire": {
+        "Guido van Rossum": "https://gvanrossum.github.io/",
+        "Daniel Micay": "https://daniel.micay.dev/",
+        "Nikolai Mushegian": "https://nikolai.fyi",
+        "Edward Snowden": "https://edwardsnowden.substack.com/",
+        "Vitalik Buterin": "https://vitalik.ca"
     }
 }

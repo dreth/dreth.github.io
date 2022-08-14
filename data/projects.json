@@ -59,6 +59,11 @@
                 "nl":"dac.ac"
             },
             {
+                "en":"DamnVulnerableDeFi.xyz Challenges in Brownie",
+                "es":"Retos de DamnVulnerableDeFi.xyz en Brownie",
+                "nl":"DamnVulnerableDeFi.xyz Challenges in Brownie"
+            },
+            {
                 "en":"Web3 messages app",
                 "es":"App de mensajes con web3",
                 "nl":"Web3 messages app"
@@ -143,6 +148,11 @@
                 "en":"My personal website and blog.",
                 "es":"Mi página web personal y blog.",
                 "nl":"Mijn persoonlijke website en blog."
+            },
+            {
+                "en":"Translation from Ethers.js+Hardhat --> Brownie+Hardhat or Brownie+Anvil of the <a class=\"b\" href=\"https://www.damnvulnerabledefi.xyz/\">Damn Vulnerable DeFi challenges</a> by <a class=\"b\" href=\"https://twitter.com/tinchoabbate\">@tinchoabbate</a>",
+                "es":"Traducción de Ethers.js+Hardhat --> Brownie+Hardhat o Brownie+Anvil de los <a class=\"b\" href=\"https://www.damnvulnerabledefi.xyz/\">retos Damn Vulnerable DeFi</a> de <a class=\"b\" href=\"https://twitter.com/tinchoabbate\">@tinchoabbate</a>",
+                "nl":"Vertaling van Ethers.js+Hardhat --> Brownie+Hardhat of Brownie+Anvil van de <a class=\"b\" href=\"https://www.damnvulnerabledefi.xyz/\">Damn Vulnerable DeFi challenges</a> van <a class=\"b\" href=\"https://twitter.com/tinchoabbate\">@tinchoabbate</a>"
             },
             {
                 "en":"A simple node+express, vanilla JS messages app that connects to a contract on the blockchain web3js. Messages can be posted using message signatures (posts them to the server DB which is a simple JSON file) or signing transactions (posts/saves the messages to the contract directly on the blockchain).",
@@ -231,6 +241,7 @@
     "projectLinks":{
         "personal":[
             ["https://dac.ac", "https://github.com/dreth/my-site-template"],
+            "https://github.com/dreth/Damn-Vulnerable-DeFi-Brownie",
             ["https://web3-messages-express.herokuapp.com/", "https://github.com/dreth/web3-messages"],
             ["https://defi.navy", "https://github.com/dreth/DefiNavyWebsite"],
             "https://github.com/dreth/RouterRebootTool",
