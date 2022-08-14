@@ -28,7 +28,7 @@ function toggleWorkDetail() {
 // GENERATE CONTENTS FOR CV -------------------
 function loadCV(l=language) {
     // site title
-    $("#aboutMeTitleBar").html(`${langs['content']['about'][l]} | Daniel A.`)
+    $("#aboutMeTitleBar").html(`${langs['content']['about'][l]} | Daniel Alonso`)
 
     // aboutMeDescription
     $("#aboutMeDescription").html(langs['content']['about_me_text'][l])

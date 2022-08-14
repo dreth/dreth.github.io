@@ -175,7 +175,7 @@ cv_skeleton = r"""
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Daniel A.}} & Email: {\color{blue}\href{mailto:}{*email:name*}}\\
+  \textbf{{\LARGE Daniel Alonso}} & Email: {\color{blue}\href{mailto:}{*email:name*}}\\
   Website: {\color{blue}\href{*website:link*}{*website:name*}} & Github: ~~~{\color{blue}\href{*github:link*}{*github:name*}}
 \end{tabular*}
 
@@ -497,5 +497,5 @@ os.system('cd assets/py && latexmk')
 
 # clean up
 sleep(1.5)
-for filetype in ['fls', 'log', 'fdb_latexmk', 'aux', 'gz', 'out']:
+for filetype in ['fls', 'log', 'fdb_latexmk', 'aux', 'gz', 'out', 'tex']:
     os.system(f'cd assets/py && rm *.{filetype}')

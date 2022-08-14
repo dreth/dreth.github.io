@@ -184,7 +184,7 @@ function loadObjects(langsObj, l=language) {
             // loop over items
             if (document.getElementById(fieldId) && itemType == 2) {
                 // PAGE TITLES ------------------------------------------------------------------------------
-                $(`#${fieldId}`).html(`${translation} | Daniel A.`);
+                $(`#${fieldId}`).html(`${translation} | Daniel Alonso`);
 
             } else if (document.getElementById(fieldId) && itemType == 1) {
                 // field contents
