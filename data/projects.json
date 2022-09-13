@@ -69,6 +69,11 @@
                 "nl":"Web3 messages app"
             },
             {
+                "en":"Birthday reminder script for a Telegram bot",
+                "es":"Script para enviar recordatorios de cumpleaños a través de un bot de Telegram",
+                "nl":"Birthday herinnering script voor een Telegram bot"
+            },
+            {
                 "en":"DeFi Navy",
                 "es":"DeFi Navy",
                 "nl":"DeFi Navy"
@@ -160,14 +165,19 @@
                 "nl":"A simple node+express, vanilla JS messages app that connects to a contract on the blockchain web3js. Messages can be posted using message signatures (posts them to the server DB which is a simple JSON file) or signing transactions (posts/saves the messages to the contract directly on the blockchain)."
             },
             {
+                "en":"Simple script that is intended to run as a cron job to read a list of birthdays provided in CSV format and send daily birthday reminders to a personal Telegram account (or channel) through a Telegram bot.",
+                "es":"Script sencillo que está pensado para ser ejecutado como un cron job que lee una lista de cumpleaños que se proveen en formato CSV y envian recordatorios diarios a un usuario personal de Telegram (o canal) a través de un bot de Telegram.",
+                "nl":"Simple script that is intended to run as a cron job to read a list of birthdays provided in CSV format and send daily birthday reminders to a personal Telegram account (or channel) through a Telegram bot."
+            },
+            {
                 "en":"A simple website to serve as a link directory for decentralized finance applications (DeFi), smart contract platform related websites, Ethereum related websites and all sorts of useful blockchain-related links.",
                 "es":"Una sencilla página web que sirve el propósito de ser un directorio de enlaces relacionados a webs de aplicaciones de finanza decentralizada (DeFi), plataformas de smart contracts, Ethereum y otros enlaces útiles relacionados a temas de blockchain.",
                 "nl":"A simple website to serve as a link directory for decentralized finance applications (DeFi), smart contract platform related websites, Ethereum related websites and all sorts of useful blockchain-related links."
             },
             {
-                "en":"Python script that uses selenium and a headless (or not) browser to reboot a router.",
-                "es":"Script de Python que utiliza selenium y un navegador con o sin interfaz para reiniciar un router.",
-                "nl":"Python script that uses selenium and a headless (or not) browser to reboot a router."
+                "en":"Python script that uses selenium and a headless (or not) browser to reboot a router through its web interface.",
+                "es":"Script de Python que utiliza selenium y un navegador con o sin interfaz para reiniciar un router a través de su interfaz web.",
+                "nl":"Python script that uses selenium and a headless (or not) browser to reboot a router through its web interface."
             },
             {
                 "en":"Python script to spam forms typically used for phishing. Should work for any online form though.",
@@ -243,6 +253,7 @@
             ["https://dac.ac", "https://github.com/dreth/my-site-template"],
             "https://github.com/dreth/Damn-Vulnerable-DeFi-Brownie",
             ["https://web3-messages-express.herokuapp.com/", "https://github.com/dreth/web3-messages"],
+            "https://github.com/dreth/BdayReminderBot",
             ["https://defi.navy", "https://github.com/dreth/DefiNavyWebsite"],
             "https://github.com/dreth/RouterRebootTool",
             "https://github.com/dreth/CodeSnippets/tree/main/phishing_spammer",
