@@ -14,12 +14,23 @@ My return to linux in late 2020 plus my strong interest in data privacy has made
 
 ### Article index
 
+  - [The machines](#the-machines)
+    - [NUC-1 for self-hosted applications](#nuc-1-for-self-hosted-applications)
+    - [NUC-2 for an ethereum full node (or validator, someday)](#nuc-2-for-an-ethereum-full-node-or-validator-someday)
+  - [NUC-1: Main server](#nuc-1)
+    - [The setup](#the-setup)
+    - [Services it has replaced](#services-it-has-replaced)
+  - [NUC-2: Ethereum node](#nuc-2)
+  - [Conclusion](#conclusion)
+  - [Image sources](#image-sources)
+
+
 ***
 
 ## The machines
 
 ![](assets/nuc-bros-in-my-hand.jpg)
-<figcaption>Bottom is NUC-1, top is NUC-2</figcaption>
+<figcaption>Bottom is NUC-1, top is NUC-2. <i>Aren't they cute???</i></figcaption>
 
 Both machines are Intel NUCs, hence the image at the top of the article. These are formidable little machines and I find them quite aesthetically pleasing as well, a perfect little squared box with rounded corners. These also have relatively low power consumption and are reasonably quiet.
 
@@ -45,7 +56,7 @@ Anyway, I populated this NUC with much stronger specifications as I intended to 
 
 ***
 
-## NUC-1
+## NUC-1: Main server
 
 The first machine I have been using for a very simple docker-based, self-hosted application machine. In particular, mostly as a Nextcloud server. Though I have a few little other applications, tasks and scripts running regularly here.
 
@@ -80,15 +91,31 @@ It connects fast and lets me manage the servers from anywhere, though given how 
 <img src="assets/joplin.png" class="smaller">
 
 
-+ **VPN with an address that is not banned in range-wide VPN address bans**: Sometimes VPNs are banned on certain websites and it's extremely difficult to find a server that will actually show the website. If I were to need a fresh address, then I could just connect to my server and it'll basically show as if I'm home.
++ **Single-location VPN with an address that is not banned in range-wide VPN address bans**: Sometimes VPNs are banned on certain websites and it's extremely difficult to find a server that will actually show the website. If I were to need a fresh address, then I could just connect to my server and it'll basically show as if I'm where my server is. It is no replacement for an actual VPN, but it kinda does the job in some scenarios.
 
+<img src="assets/vpn.jpeg">
 
++ **Access to an Ethereum RPC provider**: As NUC-2 runs an Ethereum node, I can just use my private tunnel to my main server and use the tunnel to point `https://localhost:port` to that node using ssh after I'm connected through the wireguard tunnel. This increases privacy when interacting with the Ethereum network as well as reducing reliance on a 3rd party RPC provider. This is also a simple way to query mainnet data, as I no longer need to rely on ta 3rd party RPC provider.
 
-![](assets/vpn.jpeg)
+<img src="assets/node.png" class="smaller">
+
++ **A place to periodically run useful scripts**: I actually didn't replace a service for this, but it does serve this purpose. In particular, I have at the moment two useful scripts I run every day in the server, one of them is a [birthday reminder script](https://github.com/dreth/BdayReminderBot) I made that sends me reminders for birthdays of people I care about to my telegram account through a telegram bot. Another one is [a script I made that reboots my home router](https://github.com/dreth/RouterRebootTool) every night by going through its web interface in a headless browser.
+
+<img src="assets/bday-checker.png">
+
+*** 
+
+## NUC-2: Ethereum node
+
+The second server runs an Ethereum full node, currently I'm using the two majority clients at the time of writing this (prysm+geth) as the node is not being used as a validator. I use this node to query blockchain data, to submit transactions or to just tinker with it. This one was a fun project to make, I might write about it in the future once I understand the CL and EL clients in depth.
 
 ***
 
 ## Conclusion
+
+If you can and want to, run a home server, it's kinda fun, pretty useful and feels like a very organized and fun way to keep control of my data while also learning a thing or two.
+
+I might update this article with anything new I install in it or any other services I replace with self-hosted applications.
 
 ***
 
@@ -101,3 +128,5 @@ Only adding sources for externally obtained images, in order:
 6. [Joplin logo](https://en.wikipedia.org/wiki/File:Joplin-icon.svg)
 
 7. [VPN diagram](https://www.atriainnovation.com/en/tutorial-to-create-your-own-vpn/)
+
+8. [Ethereum node image](https://ethereum.org/en/run-a-node/)
