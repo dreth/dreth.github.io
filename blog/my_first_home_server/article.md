@@ -97,7 +97,7 @@ It connects fast and lets me manage the servers from anywhere, though given how 
 
 + **Access to an Ethereum RPC provider**: As NUC-2 runs an Ethereum node, I can just use my private tunnel to my main server and use the tunnel to point `https://localhost:port` to that node using ssh after I'm connected through the wireguard tunnel. This increases privacy when interacting with the Ethereum network as well as reducing reliance on a 3rd party RPC provider. This is also a simple way to query mainnet data, as I no longer need to rely on ta 3rd party RPC provider.
 
-<img src="assets/node.png" class="smaller">
+<img src="assets/rpc-provider.png">
 
 + **A place to periodically run useful scripts**: I actually didn't replace a service for this, but it does serve this purpose. In particular, I have at the moment two useful scripts I run every day in the server, one of them is a [birthday reminder script](https://github.com/dreth/BdayReminderBot) I made that sends me reminders for birthdays of people I care about to my telegram account through a telegram bot. Another one is [a script I made that reboots my home router](https://github.com/dreth/RouterRebootTool) every night by going through its web interface in a headless browser.
 
@@ -106,6 +106,8 @@ It connects fast and lets me manage the servers from anywhere, though given how 
 *** 
 
 ## NUC-2: Ethereum node
+
+<img src="assets/node.png" class="smaller">
 
 The second server runs an Ethereum full node, currently I'm using the two majority clients at the time of writing this (prysm+geth) as the node is not being used as a validator. I use this node to query blockchain data, to submit transactions or to just tinker with it. This one was a fun project to make, I might write about it in the future once I understand the CL and EL clients in depth.
 
@@ -129,4 +131,6 @@ Only adding sources for externally obtained images, in order:
 
 7. [VPN diagram](https://www.atriainnovation.com/en/tutorial-to-create-your-own-vpn/)
 
-8. [Ethereum node image](https://ethereum.org/en/run-a-node/)
+8. [RPC provider diagram](https://ethereum.stackexchange.com/questions/93261/difference-between-metamask-and-ethereum-provider)
+
+9. [Ethereum node image](https://ethereum.org/en/run-a-node/)
