@@ -1,7 +1,7 @@
 // GENERAL STUFF ------------ links to all the profiles + email
-const linkedin = 'https://www.linkedin.com/in/dreth/';
-const github = 'https://github.com/dreth';
-const twitter = 'https://twitter.com/definavy';
+const linkedin = '/profiles/linkedin';
+const github = '/profiles/github';
+const twitter = '/profiles/twitter';
 const email = 'mailto:contact@m.dac.ac';
 const blog = '/blog/';
 const about = '/about/';
@@ -357,7 +357,7 @@ function loadProfileButtons() {
     for (const [name, link] of Object.entries(profileButtons)) {
         // append to profile buttons html object
         profileButtonsContent += `
-        <a href="${link}" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b ml-prof">
+        <a href="${link}" onclick="this.href = ${name};" oncontextmenu="this.href = ${name};" class="b ml-prof" target="_blank">
             <div id="${name}HomepageButtonDiv" class="column leftcol-half-mb-3 centered divBorder ml">
                 <img src="/assets/icons/${name}.svg" class="homepageButtonSVG"/>
             </div>
@@ -591,3 +591,5 @@ allFiles.done(() => {
 $("body").append(`<!-- 100% privacy friendly analytics -->
 <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>`)
+
+
