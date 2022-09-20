@@ -12,7 +12,7 @@ wiktionaryBaseLink = 'wiktionary.org/wiki/'
 # 2 = people i admire
 # 3 = wiktionary
 # 4 = anything
-link_type_to_get = 3
+link_type_to_get = 1
 
 def get_links(type):
     input('did you check everything?')
