@@ -2,123 +2,153 @@
     "content": {
         "subtitle": {
             "en":"data scientist, developer, teacher",
-            "es":"data scientist, desarrollador, profesor"
+            "es":"data scientist, desarrollador, profesor",
+            "nl":"data scientist, ontwikkelaar, leraar,"
         },
         "welcome": {
             "en":"welcome!",
-            "es":"bienvenido/a!"
+            "es":"bienvenido/a!",
+            "nl":"welkom!"
         },
         "about": {
             "en":"about me",
-            "es":"sobre mí"
+            "es":"sobre mí",
+            "nl":"over mij"
         },
         "blog": {
             "en":"blog",
-            "es":"blog"
+            "es":"blog",
+            "nl":"blog"
         },
         "about_title": {
             "en":"📃 about me",
-            "es":"📃 sobre mí"
+            "es":"📃 sobre mí",
+            "nl":"📃 over mij"
         },
         "about_full": {
             "en":"📃 view full CV",
-            "es":"📃 ver mi CV completo"
+            "es":"📃 ver mi CV completo",
+            "nl":"📃 kijk naar mijn full CV"
         },
         "blog_title": {
             "en":"🗒️ blog",
-            "es":"🗒️ blog"
+            "es":"🗒️ blog",
+            "nl":"🗒️ blog"
         },
         "articles_label": {
             "en":"articles:",
-            "es":"artículos:"
+            "es":"artículos:",
+            "nl":"artikels:"
         },
         "prev_article_text": {
             "en":"⬅️ Previous article",
-            "es":"⬅️ Artículo anterior"
+            "es":"⬅️ Artículo anterior",
+            "nl":"⬅️ Vorige artikel"
         },
         "next_article_text": {
             "en":"➡️ Next article",
-            "es":"➡️ Próximo artículo"
+            "es":"➡️ Próximo artículo",
+            "nl":"➡️ Volgende artikel"
         },
         "oldest_article_text": {
             "en":"You're currently reading the oldest article",
-            "es":"Está leyendo el primer artículo del blog"
+            "es":"Está leyendo el primer artículo del blog",
+            "nl":"Je bent nu de oudste artikel aan het lezen"
         },
         "latest_article_text": {
             "en":"You're currently reading the latest article",
-            "es":"Está leyendo el artículo más reciente del blog"
+            "es":"Está leyendo el artículo más reciente del blog",
+            "nl":"Je bent nu de laatste artikel aan het lezen"
         },
         "cool_links": {
             "en":"cool links",
-            "es":"enlaces cool"
+            "es":"enlaces cool",
+            "nl":"coole links"
         },
         "cool_links_title": {
             "en":"⛓️ cool links",
-            "es":"⛓️ enlaces cool"
+            "es":"⛓️ enlaces cool",
+            "nl":"⛓️ coole links"
         },
         "cool_links_full": {
             "en":"⛓️ view all cool links",
-            "es":"⛓️ ver todos los links cool"
+            "es":"⛓️ ver todos los links cool",
+            "nl":"⛓️ kijk naar alle coole links"
         },
         "random_cool_links": {
             "en":"🔄 random cool links",
-            "es":"🔄 enlaces cool aleatorios"
+            "es":"🔄 enlaces cool aleatorios",
+            "nl":"🔄 willekeurig coole links"
         },
         "go_to_random_link": {
             "en":"🔮 go to another random link",
-            "es":"🔮 ir a otro enlace aleatorio"
+            "es":"🔮 ir a otro enlace aleatorio",
+            "nl":"🔮 gaan naar een andere willekeurige link"
         },
         "projects_title": {
             "en":"⚗️ projects",
-            "es":"⚗️ proyectos"
+            "es":"⚗️ proyectos",
+            "nl":"⚗️ projecten"
         },
         "projects": {
             "en":"projects",
-            "es":"proyectos"
+            "es":"proyectos",
+            "nl":"projecten"
         },
         "projects_we": {
             "en":"🧪 projects",
-            "es":"🧪 proyectos"
+            "es":"🧪 proyectos",
+            "nl":"🧪 projecten"
         },
         "playlists": {
             "en":"playlists",
-            "es":"listas de reproducción"
+            "es":"listas de reproducción",
+            "nl":"afspeellijsten"
         },
         "playlists_title": {
             "en":"🎶 playlists",
-            "es":"🎶 listas de reproducción"
+            "es":"🎶 listas de reproducción",
+            "nl":"🎶 afspeellijsten"
         },
         "playlists_full": {
             "en":"🎶 view all playlists",
-            "es":"🎶 ver todas las listas"
+            "es":"🎶 ver todas las listas",
+            "nl":"🎶 kijk naar alle playlists"
         },
         "github": {
             "en":"github",
-            "es":"github"
+            "es":"github",
+            "nl":"github"
         },
         "linkedin": {
             "en":"linkedin",
-            "es":"linkedin"
+            "es":"linkedin",
+            "nl":"linkedin"
         },
         "e-mail": {
             "en":"e-mail",
-            "es":"correo"
+            "es":"correo",
+            "nl":"e-mail"
         },
         "e-mail_we": {
             "en":"✉️ e-mail",
-            "es":"✉️ correo"
+            "es":"✉️ correo",
+            "nl":"✉️ e-mail"
         },
         "homepage_wikipedia": {
             "en":"Some cool Wikipedia articles I read recently:",
-            "es":"Algunos articulos cool de Wikipedia que leí recientemente:"
+            "es":"Algunos articulos cool de Wikipedia que leí recientemente:",
+            "nl":"Coole Wikipedia-artikelen die ik onlangs heb gelezen:"
         },
         "homepage_playlist": {
             "en":"This one's chill:",
-            "es":"Esta está chill:"
+            "es":"Esta está chill:",
+            "nl":"Deze is chill:"
         },
         "download_cv_link": {
             "en":"💾 Download in PDF",
-            "es":"💾 Descargar en PDF"
+            "es":"💾 Descargar en PDF",
+            "nl":"💾 Downloaden op PDF"
         },
         "theme_lang": {
             "en":
@@ -130,63 +160,82 @@
                 {
                     "dark":"oscuro",
                     "light":"claro"
+                },
+            "nl":
+                {
+                    "dark":"donker",
+                    "light":"licht"
                 }
         },
         "about_me_text": {
             "en":"I'm a developer, data scientist and teacher. I'm passionate about technology, music, finance, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. In particular, I've been doing CTFs to learn Solidity and tinkering with home servers and self-hosting.",
-            "es":"Soy desarrollador, data scientist y profesor. Me apasiona la tecnología, música, finanzas, blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad digital, las matemáticas, la lingüística y los idiomas.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. En particular he estado haciendo CTFs para aprender Solidity y aprendiendo de servidores y self-hosting."
+            "es":"Soy desarrollador, data scientist y profesor. Me apasiona la tecnología, música, finanzas, blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad digital, las matemáticas, la lingüística y los idiomas.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. En particular he estado haciendo CTFs para aprender Solidity y aprendiendo de servidores y self-hosting.",
+            "nl":"Ik ben programmeur, data scientist en leraar. Ik ben bezig met de technologie, muziek, blockchains, programmeren, internetcultuur, privacy en beveiliging, matematiek, taal en taal.<br><br>Altijd open voor nieuwe kansen en ideeën. Ik zit momenteel op het punt om dingen te schrijven die me intereseren in mijn blog en actief te studeren wat ik mee kan doen."
         },
         "about_me_short": {
             "en":"Developer, data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.",
-            "es":"Desarrollador, data scientist y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas."
+            "es":"Desarrollador, data scientist y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas.",
+            "nl":"Programmeur, data scientist en leraar. Ik ben bezig met de technologie, muziek, blockchains, programmeren, internet subcultures, online privacy and security, matematiek, linguïstiek en talen in algemeen."
         },
         "other_sites": {
             "en":"Other sites:",
-            "es":"Otras páginas web:"
+            "es":"Otras páginas web:",
+            "nl":"Andere websites:"
         },
         "people_i_admire": {
             "en":"People I admire:",
-            "es":"Personas que admiro:"
+            "es":"Personas que admiro:",
+            "nl":"Mensen die ik bewonder:"
         },
         "language_names": {
             "en":"english",
-            "es":"español"
+            "es":"español",
+            "nl":"nederlands"
         },
         "newsletter_notif": {
             "en":"📧 Get notified when I post",
-            "es":"📧 Recibe notificaciones cuando publico"
+            "es":"📧 Recibe notificaciones cuando publico",
+            "nl":"📧 Krijg melding wanneer ik publiceer"
         },
         "newsletter_title": {
             "en":"📧 Newsletter",
-            "es":"📧 Notificaciones por correo"
+            "es":"📧 Notificaciones por correo",
+            "nl":"📧 Nieuwsbrief"
         },
         "newsletter": {
             "en":"Newsletter",
-            "es":"Notificaciones por correo"
+            "es":"Notificaciones por correo",
+            "nl":"Nieuwsbrief"
         },
         "subscribe_button": {
             "en":"Add me to the list",
-            "es":"Agrégame a la lista"
+            "es":"Agrégame a la lista",
+            "nl":"Voeg me toe aan de lijst"
         },
         "newsletter_thank_you": {
             "en":"Welcome to the mailing list (:<br><br>You'll now receive emails when I post something on my blog.",
-            "es":"Bienvenido a la lista de correos (:<br><br>Ahora recibirás correos cuando publique algo en mi blog."
+            "es":"Bienvenido a la lista de correos (:<br><br>Ahora recibirás correos cuando publique algo en mi blog.",
+            "nl":"Welkom op de mailinglijst (:<br><br>Je zal emails krijgen wanneer ik iets op mijn blog publiceer."
         },
         "back_home": {
             "en":"Go back to the homepage",
-            "es":"Volver a la página principal"
+            "es":"Volver a la página principal",
+            "nl":"Terug naar de homepage"
         },
         "unsub_embed": {
             "en":"Unsubscribe",
-            "es":"Desuscribirse"
+            "es":"Desuscribirse",
+            "nl":"Afmelden"
         },
         "newsletter_email_updated": {
             "en":"Your email has been updated.",
-            "es":"Tu correo ha sido actualizado."
+            "es":"Tu correo ha sido actualizado.",
+            "nl":"Je emailadres is bijgewerkt."
         },
         "newsletter_unsubscribed": {
             "en":"You have been removed from the mailing list.",
-            "es":"Has sido eliminado de la lista de correos."
+            "es":"Has sido eliminado de la lista de correos.",
+            "nl":"Je bent afgemeld van de nieuwsbrief."
         }
     },
     "objectIds_Field":{

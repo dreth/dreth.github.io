@@ -2,17 +2,20 @@
     "headings": {
         "aboutme":{
             "en":"📃 about me",
-            "es":"📃 sobre mí"
+            "es":"📃 sobre mí",
+            "nl":"📃 about me"
         },
         "cvtitle":{
             "en":"CV/Résumé",
-            "es":"CV"
+            "es":"CV",
+            "nl":"CV/Résumé"
         }
     },
     "education": {
         "heading":{
             "en":"📚 Education",
-            "es":"📚 Educación"
+            "es":"📚 Educación",
+            "nl":"📚 Education"
         },
         "list":{
             "en":[
@@ -41,6 +44,20 @@
                     "institution":"🎓 Instituto Tecnológico de Santo Domingo",
                     "dates":"📅 Agosto 2015 - Octubre 2019",
                     "location":"📍 Santo Domingo, República Dominicana"
+                }
+            ],
+            "nl":[
+                {
+                    "title":"Master in Statistics for Data Science",
+                    "institution":"🎓 Universidad Carlos III de Madrid",
+                    "dates":"📅 September 2020 - September 2021",
+                    "location":"📍 Madrid, Spain"
+                },
+                {
+                    "title":"Bachelor's degree in Mathematics and Actuarial Science",
+                    "institution":"🎓 Instituto Tecnológico de Santo Domingo",
+                    "dates":"📅 August 2015 - October 2019",
+                    "location":"📍 Santo Domingo, Dominican Republic"
                 }
             ]
         }
@@ -153,6 +170,57 @@
                     "location":"📍 Santo Domingo, República Dominicana",
                     "schedule":"🕐 Tiempo completo"
                 }
+            ],
+            "nl":[
+                {
+                    "title":"Data Scientist",
+                    "institution":"🏢 Populate",
+                    "dates":"📅 September 2021 - February 2022",
+                    "location":"📍 Madrid, Spain (remote)",
+                    "schedule":"🕐 Full-time"
+                },
+                {
+                    "title":"Field Business Data Scientist",
+                    "institution":"🏢 Cervecería Nacional Dominicana",
+                    "dates":"📅 March 2020 - August 2020",
+                    "location":"📍 Santo Domingo, Dominican Republic (remote)",
+                    "schedule":"🕐 Full-time"
+                },
+                {
+                    "title":"Bioinformatician and data scientist",
+                    "institution":"🏢 Referencia Laboratorio Clínico S.A.",
+                    "dates":"📅 August 2019 - March 2020",
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
+                },
+                {
+                    "title":"Vehicle insurance subscription representative",
+                    "institution":"🏢 Seguros Sura",
+                    "dates":"📅 April 2019 - August 2019",
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
+                },
+                {
+                    "title":"Mathematics and physics tutor",
+                    "institution":"🏢 Sainz Tutoring",
+                    "dates":"📅 November 2016 - May 2019",
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Part-time"
+                },
+                {
+                    "title":"Tech Support",
+                    "institution":"🏢 Business Computer POS",
+                    "dates":"📅 May 2015 - October 2015",
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
+                },
+                {
+                    "title":"Marketing Staff",
+                    "institution":"🏢 Alonso & Colado SRL",
+                    "dates":"📅 January 2014 - August 2014",
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
+                }
             ]
         },
         "detail":{
@@ -180,7 +248,8 @@
         "languages": {
             "heading": {
                 "en":"🗺️ Languages",
-                "es":"🗺️ Idiomas"
+                "es":"🗺️ Idiomas",
+                "nl":"🗺️ Languages"
             },
             "level":{
                 "en": {
@@ -192,6 +261,11 @@
                     "advanced":"Avanzado/Nativo:",
                     "intermediate":"Intermedio:",
                     "basic":"Básico:"
+                },
+                "nl":{
+                    "advanced":"Gevorderd/Native:",
+                    "intermediate":"Intermediate:",
+                    "basic":"Basic:"
                 }
             },
             "list": {
@@ -218,13 +292,26 @@
                     "basic":[
                         "🇮🇹 Italiano"
                     ]
+                },
+                "nl":{
+                    "advanced":[
+                        "🇪🇸🇩🇴 Spaans",
+                        "🇺🇸🇬🇧 Engels"
+                    ],
+                    "intermediate":[
+                        "🇳🇱🇧🇪 Nederlands"
+                    ],
+                    "basic":[
+                        "🇮🇹 Italiaans"
+                    ]
                 }
             }
         },
         "skills": {
             "heading":{
                 "en":"🖥️ Skills",
-                "es":"🖥️ Habilidades"
+                "es":"🖥️ Habilidades",
+                "nl":"🖥️ Vaardigheden"
             },
             "skills_categories": {
                 "languages":{
@@ -277,6 +364,17 @@
                         "platforms":"Familiaridad con Linux/macOS/Windows",
                         "other1":"Entendimiento del mercado de finanzas decentralizada, mucha experiencia usando defi",
                         "other2":"Pasión por enseñar, escribir y presentar información"
+                    }
+                },
+                "nl":{
+                    "noLevel":{
+                        "languages":"Python, R, SQL, Bash, Javascript, Solidity",
+                        "frameworks":"Manipulation, visualization of data/arrays and basic ML modelbuilding in Python/R",
+                        "tools1":"Git, Docker, Diseño de DB, Spreadsheets/Excel",
+                        "tools2":"Basic web development (html, css, js)",
+                        "platforms":"Familiarity with Linux/macOS/Windows",
+                        "other1":"Understanding of the decentralized finance market, heavy defi user",
+                        "other2":"Passion for teaching, writing and presenting information"
                     }
                 }
             }

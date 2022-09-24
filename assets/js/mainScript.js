@@ -136,8 +136,6 @@ var link = $('#icon').attr('href',"/assets/icons/icon.ico");
 // DETECT BROWSER LOCALE -------------------------
 if (navigator.language.substring(0,2) == 'es') {
     var browserLocale = 'es';
-} else if (navigator.language.substring(0,2) == 'nl') {
-    var browserLocale = 'nl';
 } else {
     var browserLocale = 'en';
 }
