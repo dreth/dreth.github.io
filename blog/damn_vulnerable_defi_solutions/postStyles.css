@@ -1,0 +1,21 @@
+span.red {
+    color: red;
+}
+
+span.green {
+    color: green;
+}
+
+span.lc {
+    color: lightcoral;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 0px) {
+    .smallerThanSmaller {
+        font-size: 1.8vw;
+    }
+}

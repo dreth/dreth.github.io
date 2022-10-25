@@ -1,5 +1,6 @@
 {
     "articleEmoji":[
+        "🕵️",
         "🧮",
         "🥷",
         "💡",
@@ -11,17 +12,19 @@
         "🏘️"
     ],
     "articleDates":[
-    "2022, September 14",
-    "2022, July 24",
-    "2022, July 6",
-    "2022, March 13",
-    "2022, February 10",
-    "2021, January 23",
-    "2020, November 16",
-    "2020, November 14",
-    "2020, October 13"
+        "2022, October 25",
+        "2022, September 14",
+        "2022, July 24",
+        "2022, July 6",
+        "2022, March 13",
+        "2022, February 10",
+        "2021, January 23",
+        "2020, November 16",
+        "2020, November 14",
+        "2020, October 13"
     ],
     "articleLang":[
+        "🇬🇧🇺🇸",
         "🇬🇧🇺🇸",
         "🇬🇧🇺🇸",
         "🇬🇧🇺🇸",
@@ -33,6 +36,7 @@
         "🇪🇸🇩🇴"
     ],
     "articleTitles":[
+        "Damn Vulnerable DeFi solutions (Brownie)",
         "My first home server",
         "Capture the Ether solutions",
         "Ethernaut solutions",
@@ -44,6 +48,7 @@
         "Como invertir en bienes raíces utilizando RealT y blockchain"
     ],
     "articleTag":[
+        "damn_vulnerable_defi_solutions",
         "my_first_home_server",
         "capture_the_ether_solutions",
         "ethernaut_solutions",

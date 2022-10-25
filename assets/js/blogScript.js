@@ -116,3 +116,11 @@ if ($("#captureTheEtherSolutions")) {
         hljs.highlightAll();
     })
 }
+
+// add damnVulnerableDefi html to the capture the ether solutions article content2 block
+if ($("#damnVulnerableDefiSolutions")) {
+    $('#damnVulnerableDefiSolutions').load('/blog/damn_vulnerable_defi_solutions/assets/damnvulnerabledefisolutions.html', function() {
+        $(".katex-html").hide();
+        hljs.highlightAll();
+    })
+}
