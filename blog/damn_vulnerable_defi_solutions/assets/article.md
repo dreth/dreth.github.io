@@ -9,7 +9,7 @@ This article is a collection of my solutions to the Damn Vulnerable DeFi challen
 
 I used Brownie tests to solve it just like in the original challenges which use JS+Hardhat, but using Brownie+Hardhat and Brownie+Anvil.
 
-If you want to reproduce the same environment I used for it, you can clone the [repo I made as a clean slate](https://github.com/dreth/Damn-Vulnerable-DeFi-Brownie) to solve the challenges with Brownie.
+If you want to reproduce the same environment I used for it, you can clone the [repo I made as a clean slate](https://github.com/dreth/Damn-Vulnerable-DeFi-Brownie) to solve the challenges with Brownie. It took a while to adapt them, but it was a really fun challenge.
 
 ***
 
