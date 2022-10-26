@@ -482,14 +482,14 @@ IERC20(weth).transfer(address(pair), amountToRepay);
 </blockquote>
 <h3 id="solution-10">Solution</h3>
 <p>The Backdoor challenge tasks us with deploying a Gnosis Safe proxy for 4 users through a Gnosis Safe Proxy Factory. After each deployment, 10 DVT tokens will be distributed to each one of those users (the beneficiaries)</p>
-<p>For the registry to accept each proxy creation as correct and to steal the tokens, we must code an attacker contract that makes the calls and pass a few conditions:</p>
+<p>For the registry to accept each proxy creation as correct and to steal the tokens, we must code an attacker contract that makes the calls and passes a few conditions:</p>
 <ol>
 <li>The WalletRegistry contract must have enough DVT tokens to make the payment to the beneficiary</li>
 </ol>
 <pre class=" language-cs"><code class="prism  language-cs">require(token.balanceOf(address(this)) &gt;= TOKEN_PAYMENT, "Not enough funds to pay");
 </code></pre>
 <p>This does not directly depend on us, so we can continue.</p>
-<ol>
+<ol start="2">
 <li>The caller contract must be the GnosisSafeProxyFactory contract</li>
 </ol>
 <pre class=" language-cs"><code class="prism  language-cs">require(msg.sender == walletFactory, "Caller must be factory");
