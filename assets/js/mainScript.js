@@ -193,21 +193,9 @@ function loadObjects(langsObj, l=language) {
                     case 'themeSwitcher':
                         // arrangement of theme link
                         if (getCookie('theme') == 0) {
-                            $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌒</a>`)
-                            $("#mainStylesheet").attr('href','/assets/css/styles-light.css')
-                    
-                            // for articles
-                            if (document.getElementById('articleStylesheet')) {
-                                $("#articleStylesheet").attr('href','/assets/css/articleStyles-light.css')
-                            }
+                            changeTheme(set=false);
                         } else {
-                            $("#themeSwitcher").html(`<a class='lt lts' onclick='changeTheme()'>☀️</a>`)
-                            $("#mainStylesheet").attr('href','/assets/css/styles.css')
-                    
-                            // for articles
-                            if (document.getElementById('articleStylesheet')) {
-                                $("#articleStylesheet").attr('href','/assets/css/articleStyles.css')
-                            }
+                            changeTheme(set=false);
                         }
 
                         break;
@@ -399,25 +387,37 @@ function updateLang(l) {
 }
 
 // change theme
-function changeTheme() {
+function changeTheme(set=false) {
+    // change theme if set is true
+    if (set===true) {
+        setCookie('theme', getCookie('theme') == 1 ? 0 : 1)
+    }
     // translation lang for changing language
-    if (getCookie('theme') == 0) {
-        setCookie('theme',1)
-        $("#themeSwitcher").html(`<a class='lt lts' onclick='changeTheme()'>☀️</a>`)
+    if (getCookie('theme') == 1) {
+        $("#themeSwitcher").html(`<a class='lt lts' onclick='changeTheme(set=true)'>☀️</a>`)
         $("#mainStylesheet").attr('href','/assets/css/styles.css')
 
         // for articles
         if (document.getElementById('articleStylesheet')) {
             $("#articleStylesheet").attr('href','/assets/css/articleStyles.css')
         }
+
+        // for pages with code
+        if (document.getElementById('codeStylesheet')) {
+            $("#codeStylesheet").attr('href','/assets/css/libs/dracula.css')
+        }
     } else {
-        setCookie('theme',0)
-        $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme()'>🌒</a>`)
+        $("#themeSwitcher").html(`<a class='dt dts' onclick='changeTheme(set=true)'>🌒</a>`)
         $("#mainStylesheet").attr('href','/assets/css/styles-light.css')
 
         // for articles
         if (document.getElementById('articleStylesheet')) {
             $("#articleStylesheet").attr('href','/assets/css/articleStyles-light.css')
+        }
+
+        // for pages with code
+        if (document.getElementById('codeStylesheet')) {
+            $("#codeStylesheet").attr('href','/assets/css/libs/highlight.css')
         }
     }
 }
