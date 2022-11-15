@@ -676,8 +676,6 @@ People holding UST *might* be able to recover their money (or so they hope to be
 <figcaption>UST's depeg and full crash, weekly candles</figcaption>
 
 
- 
-
 **Note:** I specifically analyzed the price action vs ETH and BTC of two NON-EVN chains, meaning these are not carbon-copies of the Ethereum blockchain with some tweaks or use the Ethereum Virtual Machine. That's because in my view, those chains are <span class="red">not especially innovative</span> and often use lies and deceptive statements around the argument that 'Ethereum is not fast enough' while they copy-paste Ethereum and change some parameters which would make the long-term growth of those chains completely unsustainable. Again, none of this means you can't or shouldn't try to make money with these, this is simply my perspective and opinion on *why I don't try to make money with these*.
 
 #### Ethereum's coming upgrades and development
@@ -694,6 +692,9 @@ Moreover, the coming monetary policy changes to Ethereum after the London hardfo
 - <span class="lc">**Further reduction of inflation after the merge**</span>: After the merge, inflation will be further reduced, as rewards to stakers have a much lower rate of issuance as opposed to the flat 2 ETH block reward awarded to miners in proof of work. The merge could even render the ETH inflation negative, leading to deflationary periods. This can be simulated in [this website](https://ultrasound.money).
 
 - <span class="lc">**Revenue shares to network participants**</span>: In proof of stake, users can gain revenue from staking Ether. There's staking pools where users can deposit their ETH (as well as stake solo) and earn anywhere between 4% APR (at the time of writing) up to whatever the amount is after the merge. Some estimates put it at ~12%-15% APR, though these are only predictions. No matter what the future APR is, ETH holders that stake their ETH can benefit from a decent APR as well as ETH maybe even reducing its total supply with time (deflation) depending on network conditions, which again, has not been reflected on the price yet.
+
+
+**Update 2022-11-15:** The merge was successful. The actual staking rate hovers around 6-8%, though in moments of high network use, the rate has gone up to 12%. The supply is currently deflationary since the merge as shown in the popular website [ultrasound.money](https://ultrasound.money) which shows several different measures related to the ETH supply and how the merge and EIP-1559 affect it. As expected, Ethereum remains YTD (despite the big crash related to 3AC, Luna, Celsius and now FTX) the strongest performing and most resilient risk-adjusted investment in the smart contract blockchain category. It has even beat the resilience of Bitcoin even deep in a bear market, which is not an easy feat to pull off when we consider BTC has about double the market capitalization of ETH. Investing in ETH would have incurred in meaningful losses YTD, though if one had chosen to invest in the summer bottom, one would have been both up 150% at some point in august and still up 50% even at the current price of $1262 USD at the time of writing. This update is not me giving myself a pat on the back, but rather trying to highlight how important fundamental analysis is in this space when choosing an asset to invest into. The large losses presented by the market downturn could have also occurred in other asset classes, an example is having invested in Meta stock at the start of 2022, which would have incurred in similarly meaningful losses of about ~70%. Crypto is risky, but it's not the only risky, legitimate and justifiable investment in the world. ETH keeps leading the pack.
 
 ***
 
