@@ -180,7 +180,7 @@ These measures are *serious*. If you do any of these things, your threat model i
 
 + **Payments**: avoid giving all your transaction information to the same provider. The likelihood of your data being leaked may be higher if you use several banks for example, but at the same time, your data won't be all centralized in one entity. Additionally, try to use crypto to pay for certain things, lots of online services now take it and could be a good privacy-friendly option for payments.
 
-+ **Other services**: learn to self-host services at home in a simple, affordable home server (Intel NUC or similar machines), in order to avoid
++ **Other services**: learn to self-host services at home in a simple, affordable home server (Intel NUC or similar machines), in order to avoid additional data tracking and data collection. Hosting a media server to download films is near-free and with basically no data collection compared to a service like Netflix.
 
 ***
 
