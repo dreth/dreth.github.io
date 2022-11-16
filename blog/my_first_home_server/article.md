@@ -1,7 +1,7 @@
 # My first home server
 
 <div class="date">
-<span class="smaller"><b>Semptember 14, 2022</b></span></div>
+<span class="smaller"><b>September 14, 2022</b></span></div>
 <div class="centerPosition"><hr></div>
 
 ![](assets/intel-my-first-home-server.png)
