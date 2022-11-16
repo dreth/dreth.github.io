@@ -64,7 +64,7 @@ Most people are only ever indirectly affected by massive data collection, so mos
 
 ![you're being watched](assets/dude_on_pc.jpeg)
 
-The right to privacy is present in over 150 national constitutions. There's reasons governments used to at least pretend to care about it. In the past and at times in the present, governments or law enforcement would try to protect you against blatant violations of privacy. This notion somewhat changed when Edward Snowden revealed that the NSA and other government-owned intelligence agencies spying on US citizens and essentially the entire world through backdoors, spyware and extensive surveillance campaigns.
+The right to privacy is present in over 150 national constitutions. There are reasons governments used to at least pretend to care about it. In the past and at times in the present, governments or law enforcement would try to protect you against blatant violations of privacy. This notion somewhat changed when Edward Snowden revealed that the NSA and other government-owned intelligence agencies were spying on US citizens and essentially the entire world through backdoors, spyware and extensive surveillance campaigns.
 
 Wikipedia has an [excellent article on the right to privacy](https://en.wikipedia.org/wiki/Right_to_privacy) that I highly recommend reading if you're interested in the right to privacy, its history and how it's evolved over time.
 
