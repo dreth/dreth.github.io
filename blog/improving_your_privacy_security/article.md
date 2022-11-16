@@ -1,7 +1,7 @@
 # Measures to improve your online privacy and security
 
 <div class="date">
-<span class="smaller"><b>November 15, 2022</b></span></div>
+<span class="smaller"><b>November 16, 2022</b></span></div>
 <div class="centerPosition"><hr></div>
 
 In the past few years I've taken an interest in privacy/security. For many reasons, some due to the alarming levels of data collection we face from massive tech corporations like Google, Microsoft, Apple, Meta (formerly Facebook) or Amazon. Others due to the fact that I, like many other people, have had my (now deleted) Facebook account hacked once or twice in the past, maybe due to company negligence, like Facebook not securing their systems properly, or due to poor password management.
