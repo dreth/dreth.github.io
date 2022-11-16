@@ -105,11 +105,16 @@ It connects fast and lets me manage the servers from anywhere, though given how 
 
 *** 
 
-## NUC-2: Ethereum node
+## NUC-2: Ethereum node and pihole server
 
 <img src="assets/node.png" class="smaller">
 
 The second server runs an Ethereum full node, currently I'm using the two majority clients at the time of writing this (prysm+geth) as the node is not being used as a validator. I use this node to query blockchain data, to submit transactions or to just tinker with it. This one was a fun project to make, I might write about it in the future once I understand the CL and EL clients in depth.
+
+<img src="assets/pihole_unbound.png">
+
+I also run a pi-hole server with an unbound recursive DNS resolver for local home ad, telemetry and malicious domain blocking. Quite a useful privacy tool that also makes browsing at home much more comforting than outside of it. Also an incredibly interesting learning experiment that has taught me a lot about networking and challenged lots of notions I had about concepts that I thought I understood but didn't _really_ understand.
+
 
 ***
 
@@ -134,3 +139,5 @@ Only adding sources for externally obtained images, in order:
 8. [RPC provider diagram](https://ethereum.stackexchange.com/questions/93261/difference-between-metamask-and-ethereum-provider)
 
 9. [Ethereum node image](https://ethereum.org/en/run-a-node/)
+
+10. [pihole + unbound image](https://www.brsmedia.in/pi-hole-as-all-around-dns-solution-with-unbound-dns/), this page is what looks to be essentially a mirror of [this page](https://docs.pi-hole.net/guides/dns/unbound/), at least in terms of content.
