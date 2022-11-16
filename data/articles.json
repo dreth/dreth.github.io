@@ -1,5 +1,6 @@
 {
     "articleEmoji":[
+        "🔐",
         "🕵️",
         "🧮",
         "🥷",
@@ -12,6 +13,7 @@
         "🏘️"
     ],
     "articleDates":[
+        "2022, November 15",
         "2022, October 25",
         "2022, September 14",
         "2022, July 24",
@@ -33,9 +35,11 @@
         "🇬🇧🇺🇸",
         "🇬🇧🇺🇸",
         "🇬🇧🇺🇸",
+        "🇬🇧🇺🇸",
         "🇪🇸🇩🇴"
     ],
     "articleTitles":[
+        "Measures to improve your privacy and security",
         "Damn Vulnerable DeFi solutions (Brownie)",
         "My first home server",
         "Capture the Ether solutions",
@@ -48,6 +52,7 @@
         "Como invertir en bienes raíces utilizando RealT y blockchain"
     ],
     "articleTag":[
+        "improving_your_privacy_security",
         "damn_vulnerable_defi_solutions",
         "my_first_home_server",
         "capture_the_ether_solutions",
