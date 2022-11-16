@@ -12,7 +12,18 @@ In this article I plan to explain some of the tools I've used to reduce such dat
 
 ### Article index
 
-
+  - [Why should I care?](#why-should-i-care)
+  - [Are you affected by data collection?](#are-you-affected-by-data-collection)
+  - [Privacy is a right](#privacy-is-a-right)
+  - [Security is a must](#security-is-a-must)
+  - [Measures and mitigations](#measures-and-mitigations)
+    - [Basic security measures that apply to all levels](#basic-security-measures-that-apply-to-all-levels)
+    - [Level 1: minimal measures](#level-1-minimal-measures)
+    - [Level 2: strong measures](#level-2-strong-measures)
+    - [Level 3: powerful measures](#level-3-powerful-measures)
+  - [Conclusions](#conclusions)
+  - [Additional resources](#additional-resources)
+  - [Image sources](#image-sources)
 
 
 ***
