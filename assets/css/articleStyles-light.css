@@ -18,6 +18,14 @@ h5 {
     color:rgb(0, 94, 170);
 }
 
+span.red {
+    color: red;
+}
+
+span.green {
+    color: green;
+}
+
 a:link {
     text-decoration: none;
     color: rgb(53, 71, 233);
