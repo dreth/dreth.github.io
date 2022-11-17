@@ -128,14 +128,14 @@ All the previous recommendations on level 1 apply here. Once those are applied, 
 
 + **VPN**: never use free VPNs. The rest of the recommendations from level 1 remain.
 
-+ **Web browser**: Same recommendations as level 1.
++ **Web browser**: Same recommendations as level 1 with some additions:
   + On *desktop*: I'd say stick to **Brave** or **Firefox** regardless of operating system. Also [apply PrivacyGuides.org's recommendations](https://www.privacyguides.org/desktop-browsers/#recommended-configuration) to steer clear of any telemetry from Brave or Mozilla. Install [**uBlock Origin**](https://github.com/gorhill/uBlock) regardless of what web browser you pick.
 
   + On *mobile*, if you're on iOS, **Safari** is fine. If you're on Android, there's many options but the ones I've seen recommended online the most are **Brave** or **Bromite**, though I think Brave is a better option as it stays up to date more consistently than Bromite. **Firefox** on Android is OK, but it's clear Chromium-based browsers play better with Android than others.
 
 + **Mobile phone**: iPhones are still totally fine at this level IMO. If you have an android phone then going for phones that just use _stock android_ or as closer to it as possible are the better option. You can optionally opt for the most secure android phones which are Google Pixels. Same recommendations as level 1 apply for android.
 
-+ **Operating system and apps**: Same recommendations as level 1 + some additional options.
++ **Operating system and apps**: Same recommendations as level 1 + some additional options:
   + *Operating system*: I won't recommend switching to linux at this level, though if you're brave enough, go ahead, it's really not that difficult. Otherwise, stick to the recommendations on level 1 and consider that macOS is _probably_ a more private option than Windows at this point.
 
   + *Apps*: Avoid apps that are known to be telemetry-ridden and opt for open source options instead of closed source ones whenever you can. Some examples to this would be not using the Microsoft Office suite and using known privacy-friendly open source alternatives like Libreoffice. [AlternativeTo.net](https://alternativeto.net/) usually has good open source recommendations if you add `?license=opensource` at the end of a search query. Example: you need an alternative to photoshop that is free and open source, you can search `open source photoshop alternative` on a search engine and you'll find a link to `AlternativeTo.net` which will have this license query term at the end of the URL, in this case: `https://alternativeto.net/software/adobe-photoshop/?license=opensource` will be the URL. You can always just make searches like this on your chosen search engine and you'll get the result you're looking for from this site. 
@@ -162,9 +162,9 @@ All the previous recommendations on level 1 apply here. Once those are applied, 
 
 These measures are *serious*. If you do any of these things, your threat model is elaborate and complex, you understand the importance of your personal data, and more importantly you care to spend a significant amount of time trying to stop companies and government entities from gobbling up as much of your digital breadcrumb trail as possible. Nothing is perfect, you'll still have to make some compromises like using Whatsapp to talk to your family or whatever, but you know this is a compromise and not necessarily a reality that you forever have to accept.
 
-+ **VPN**: Same as level 2, but with more added strength. Use a paid VPN only, and use it whenever you're in a public Wi-Fi network (you might not be able to do so on planes though). If possible, also set up a self-hosted wireguard server at home to which you can connect using your client (phone/laptop). The self-hosted wireguard server will make more sense as you continue to read this section. Otherwise, a good, privacy-respecting paid VPN provider like those mentioned in level 1 are going to be more than enough for whenever you're out. You can also optionally use a VPN when connected to your cellular network, that way you don't have to rely on your ISP.
++ **VPN**: Use one of the paid VPNs recommended in level 1 only, and use it whenever you're in a public Wi-Fi network (you might not be able to do so on planes though). If possible, also set up a self-hosted wireguard server at home to which you can connect using your client (phone/laptop). The self-hosted wireguard server will make more sense as you continue to read this section. Otherwise, a good, privacy-respecting paid VPN provider like those mentioned in level 1 are going to be more than enough for whenever you're out. You can also optionally use a VPN when connected to your cellular network, that way you don't have to rely on your ISP.
 
-+ **DNS**: Use a private DNS resolver when possible or self-host a [pi-hole server](https://pi-hole.net/) with an [unbound recursive DNS server](https://docs.pi-hole.net/guides/dns/unbound/). For private DNS resolvers Android phones have this option under Settings -> Network and internet -> Private DNS. For iOS, [the Adguard site](https://adguard.com/en/blog/encrypted-dns-ios-14.html) has a good tutorial on how to do this. You can use any of the listed DNS resolvers in the [PrivacyGuides.org DNS resolver](https://www.privacyguides.org/dns/) recommendation page. This will allow you to block malicious links, ads, as well as most DNS requests to telemetry and data collection domains.
++ **DNS**: Use a private DNS resolver when possible or self-host a [pi-hole server](https://pi-hole.net/) with an [unbound recursive DNS server](https://docs.pi-hole.net/guides/dns/unbound/). For private DNS resolvers Android phones have this option under Settings -> Network and internet -> Private DNS. For iOS, [the Adguard site](https://adguard.com/en/blog/encrypted-dns-ios-14.html) has a good tutorial on how to do this. You can use any of the listed DNS resolvers in the [PrivacyGuides.org DNS resolver](https://www.privacyguides.org/dns/) recommendation page. This will allow you to block malicious links, ads, as well as most DNS requests to telemetry and data collection domains. This is also where the wireguard server at home fits in, if you have a wireguard server in the same machine, or another machine within the network that the pihole + unbound DNS servers are servicing, your wireguard connection will perform DNS resolution using them, thereby protecting you from another resolver logging your requests or a potentially compromised one.
 
 + **Web browser**: Same as level 2, but absolutely make sure that you [apply PrivacyGuides.org's recommendations](https://www.privacyguides.org/desktop-browsers/#recommended-configuration) for browsers. On Android stick to Brave, and on iPhones stick to Safari or Adguard browser. [PrivacyGuides.org](https://www.privacyguides.org/mobile-browsers) also has a good article on mobile browsers you should check out with some recommendations to be applied.
 
@@ -175,9 +175,9 @@ These measures are *serious*. If you do any of these things, your threat model i
 
   + *Apps*: As much open source as possible. Same recommendation on how to find it as in level 2.
 
-+ **Search engine**: same as level 2. Optionally self host a tool like a searX instance or something similar.
++ **Search engine**: Level 2 recommendations remain, though optionally self host a tool like a searX instance or something similar for added privacy.
 
-+ **Social networks**: this really depends on your network, what do your contacts use. I'd say be more strict about what I suggested on level 2, try to lean away from apps like instagram, twitter, discord, etc... and try federated options like pixelfed, mastodon, matrix, etc... respectively
++ **Social networks**: this really depends on your network and what your contacts use. I'd say be more strict about what I suggested on level 2, try to lean away from apps like instagram, twitter, discord, etc... and try federated options like pixelfed, mastodon, matrix, etc... respectively.
 
 + **E-mail**: No Gmail, no outlook, no iCloud mail, no yahoo mail or any of that. Traditional free email providers are untrustworthy when it comes to sensitive data. Use some of the options recommended by PrivacyGuides.org as mentioned in level 2. Additionally, use an email aliasing service like [**AnonAddy**](https://anonaddy.com/) or [**Simplelogin**](https://simplelogin.io/) to avoid giving out the same address to every service, this will help you simply disable whatever address ends up caught in a data breach (guaranteed some will), or in the hands of the wrong third party that whatever service you registered for decided to sell your address to (guaranteed some will). Simplelogin will play well with ProtonMail if you have a Proton account, as it is now a subsidiary of Proton.
 
@@ -185,9 +185,7 @@ These measures are *serious*. If you do any of these things, your threat model i
 
 + **Instant messaging**: Incredibly difficult to get your contacts over, but if possible, [**Signal**](https://signal.org/), other than that, [PrivacyGuides.org](https://www.privacyguides.org/real-time-communication/) has some good suggestions, though I'd really stick to Signal if possible. Whatsapp is bad, but it's better than Telegram unless you're using secret chats, if so, then Telegram is better than Whatsapp. Only use these if you have to. I would avoid Messenger or Instagram for instant messaging, only use these if you absolutely have to but preferably avoid.
 
-+ **SMS**: same as level 2.
-
-+ **Calling**: same as level 2. Exchange no personal information in ordinary, non E2EE VoIP calls.
++ **Calling**: Exchange no personal information in ordinary, non E2EE VoIP calls.
 
 + **Payments**: avoid giving all your transaction information to the same provider. The likelihood of your data being leaked may be higher if you use several banks for example, but at the same time, your data won't be all centralized in one entity. Additionally, try to use crypto to pay for certain things, lots of online services now take it and could be a good privacy-friendly option for payments.
 
