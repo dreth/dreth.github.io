@@ -211,7 +211,7 @@
         "personal":[
             ["https://dac.ac", "https://github.com/dreth/my-site-template"],
             "https://github.com/dreth/Damn-Vulnerable-DeFi-Brownie",
-            ["https://web3-messages-express.herokuapp.com/", "https://github.com/dreth/web3-messages"],
+            "https://github.com/dreth/web3-messages",
             "https://github.com/dreth/BdayReminderBot",
             ["https://defi.navy", "https://github.com/dreth/DefiNavyWebsite"],
             "https://github.com/dreth/RouterRebootTool",
