@@ -64,10 +64,6 @@
                 "es":"Script para enviar recordatorios de cumpleaños a través de un bot de Telegram"
             },
             {
-                "en":"DeFi Navy",
-                "es":"DeFi Navy"
-            },
-            {
                 "en":"Selenium-based router reboot tool",
                 "es":"Utilidad basada en selenium para reiniciar routers"
             },
@@ -82,6 +78,14 @@
             {
                 "en":"Mass image converter script",
                 "es":"Conversor de imágenes en masa"
+            },
+            {
+                "en":"StakeWise website json translator tool",
+                "es":"Utilidad para traducir el contenido de la página web de StakeWise (en json)"
+            },
+            {
+                "en":"DeFi Navy",
+                "es":"DeFi Navy"
             }
         ],
         "job-related":[
@@ -143,10 +147,6 @@
                 "es":"Script sencillo que está pensado para ser ejecutado como un cron job que lee una lista de cumpleaños que se proveen en formato CSV y envian recordatorios diarios a un usuario personal de Telegram (o canal) a través de un bot de Telegram."
             },
             {
-                "en":"A simple website to serve as a link directory for decentralized finance applications (DeFi), smart contract platform related websites, Ethereum related websites and all sorts of useful blockchain-related links.",
-                "es":"Una sencilla página web que sirve el propósito de ser un directorio de enlaces relacionados a webs de aplicaciones de finanza decentralizada (DeFi), plataformas de smart contracts, Ethereum y otros enlaces útiles relacionados a temas de blockchain."
-            },
-            {
                 "en":"Python script that uses selenium and a headless (or not) browser to reboot a router through its web interface.",
                 "es":"Script de Python que utiliza selenium y un navegador con o sin interfaz para reiniciar un router a través de su interfaz web."
             },
@@ -165,6 +165,10 @@
             {
                 "en":"Python script to aid in translating pieces of text from a json that use a specific format.",
                 "es":"Script de python para facilitar la traducción de pedazos de texto desde un json con un formato específico."
+            },
+            {
+                "en":"A simple website to serve as a link directory for decentralized finance applications (DeFi), smart contract platform related websites, Ethereum related websites and all sorts of useful blockchain-related links.",
+                "es":"Una sencilla página web que sirve el propósito de ser un directorio de enlaces relacionados a webs de aplicaciones de finanza decentralizada (DeFi), plataformas de smart contracts, Ethereum y otros enlaces útiles relacionados a temas de blockchain."
             }
         ],
         "job-related":[
@@ -213,12 +217,12 @@
             "https://github.com/dreth/Damn-Vulnerable-DeFi-Brownie",
             "https://github.com/dreth/web3-messages",
             "https://github.com/dreth/BdayReminderBot",
-            ["https://defi.navy", "https://github.com/dreth/DefiNavyWebsite"],
             "https://github.com/dreth/RouterRebootTool",
             "https://github.com/dreth/CodeSnippets/tree/main/phishing_spammer",
             "https://github.com/dreth/CodeSnippets/tree/main/download_link_list_from_txt",
             "https://github.com/dreth/CodeSnippets/tree/main/mass_convert_image_files",
-            "https://github.com/dreth/SWJsonTranslations"
+            "https://github.com/dreth/SWJsonTranslations",
+            "https://github.com/dreth/DefiNavyWebsite"
         ],
         "job-related":[
             ""
