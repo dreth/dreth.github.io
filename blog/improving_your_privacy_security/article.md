@@ -100,7 +100,7 @@ Now that you hopefully care, let me give you 3 levels of privacy measures to tak
 
 + Uninstall any random anti-virus software and other useless software installed on your PC. The more apps you have the higher your surface area for attacks is.
 
-+ Use secure passwords and try to use 2-factor or multi-factor authentication wherever possible. Try to avoid SMS 2FA, SMS is not especially secure and it opens you to the vulnerability of being SIM swapped if someone has already attained your credentials for whatever service you're using SMS 2FA on. Try to stick to mobile authenticators like Aegis, andOTP or those provided by a password manager like Bitwarden or 1Password.
++ Use secure passwords and try to use 2-factor or multi-factor authentication wherever possible. Try to avoid SMS 2FA, SMS is not especially secure and it opens you to the vulnerability of being SIM swapped if someone has already attained your credentials for whatever service you're using SMS 2FA on. Try to stick to mobile authenticators like Aegis, andOTP, those provided by a password manager like Bitwarden or 1Password or a hardware key like a YubiKey (which you should buy 2 of if you want to use, in case you lose one).
 
 + Revoke inexplicable permissions on random apps, example: a tic tac toe app should have zero need to use your camera, precise geolocation, full access to storage or access to contacts.
 
