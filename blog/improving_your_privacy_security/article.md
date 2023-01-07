@@ -12,6 +12,8 @@ In this article I plan to explain some of the tools I've used to reduce such dat
 
 ### Article index
 
+- [Measures to improve your online privacy and security](#measures-to-improve-your-online-privacy-and-security)
+    - [Article index](#article-index)
   - [Why should I care?](#why-should-i-care)
   - [Are you affected by data collection?](#are-you-affected-by-data-collection)
   - [Privacy is a right](#privacy-is-a-right)
@@ -164,7 +166,7 @@ All the previous recommendations on level 1 apply here. Once those are applied, 
 
 These measures are *serious*. If you do any of these things, your threat model is elaborate and complex, you understand the importance of your personal data, and more importantly you care to spend a significant amount of time trying to stop companies and government entities from gobbling up as much of your digital breadcrumb trail as possible. Nothing is perfect, you'll still have to make some compromises like using Whatsapp to talk to your family or whatever, but you know this is a compromise and not necessarily a reality that you forever have to accept.
 
-+ <span class="red">\*</span> **VPN**: Use one of the paid VPNs recommended in level 1 only, and use it whenever you're in a public Wi-Fi network (you might not be able to do so on planes though). If possible, also set up a self-hosted wireguard server at home to which you can connect using your client (phone/laptop). The self-hosted wireguard server will make more sense as you continue to read this section. Otherwise, a good, privacy-respecting paid VPN provider like those mentioned in level 1 are going to be more than enough for whenever you're out. You can also optionally use a VPN when connected to your cellular network, that way you don't have to rely on your ISP.
++ <span class="red">\*</span> **VPN**: Use one of the paid VPNs recommended in level 1 only, and use it whenever you're in a public Wi-Fi network (you might not be able to do so on planes though). If possible, also set up a self-hosted wireguard server at home to which you can connect using your client (phone/laptop). The self-hosted wireguard server will make more sense as you continue to read this section. Otherwise, a good, privacy-respecting paid VPN provider like those mentioned in level 1 are going to be more than enough for whenever you're out. You can also optionally use a VPN when connected to your cellular network, that way you don't have to rely on your ISP for DNS resolution and you can hide your traffic from it.
 
 + **DNS**: Use a private DNS resolver when possible or self-host a [pi-hole server](https://pi-hole.net/) with an [unbound recursive DNS server](https://docs.pi-hole.net/guides/dns/unbound/). For private DNS resolvers Android phones have this option under Settings -> Network and internet -> Private DNS. For iOS, [the Adguard site](https://adguard.com/en/blog/encrypted-dns-ios-14.html) has a good tutorial on how to do this. You can use any of the listed DNS resolvers in the [PrivacyGuides.org DNS resolver](https://www.privacyguides.org/dns/) recommendation page. This will allow you to block malicious links, ads, as well as most DNS requests to telemetry and data collection domains. This is also where the wireguard server at home fits in, if you have a wireguard server in the same machine, or another machine within the network that the pihole + unbound DNS servers are servicing, your wireguard connection will perform DNS resolution using them, thereby protecting you from another resolver logging your requests or a potentially compromised one.
 
