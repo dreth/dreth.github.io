@@ -51,9 +51,8 @@ Pretty straightforward, but what happens when the file is *not flat*? Well, `rea
   - [Flattening the XML file using XSLT](#flattening-the-xml-file-using-xslt)
     - [Connecting the XML with the XSL document](#connecting-the-xml-with-the-xsl-document)
     - [Creating the XSL file](#creating-the-xsl-file)
-  - [Creating a template to flatten the file](#creating-a-template-to-flatten-the-file)
+    - [Creating a template to flatten the file](#creating-a-template-to-flatten-the-file)
   - [Additional resources](#additional-resources)
-
 
 ***
 
@@ -105,6 +104,8 @@ Therefore, the qualities the dataframe must have are:
 * The values in the columns `id`, `from` and `to` must be integers
 * The full contents of each `<text>` tag inside each `<sentence>` tag must be contained in its specified column, same for each `term` attribute in every `<aspectTerm>` tag, including symbols like quotes and such
 
+***
+
 ## Flattening the XML file using XSLT
 
 In order to flatten the XML file we can look for convoluted methods where we traverse the XML file iteratively to extract information from it, but this interesting [thread on stackoverflow](https://stackoverflow.com/questions/37730436/flatten-a-nested-xml-using-xslt) prompted me to research XSLT a bit more.
@@ -112,6 +113,8 @@ In order to flatten the XML file we can look for convoluted methods where we tra
 XSLT stands for "Extensible Stylesheet Language Transformations", it's a language originally design for transforming XML docs into other XMLs, other markup language files like HTML, plain text, etc. It's a powerful tool that utilizes XPath to identify, extract and reference elements within the source XML file. It's an extraordinarily powerful tool to flatten XML files.
 
 Note that I *just found out this thing exists* so bear with me if you already know everything I'm writing here, I just thought this was immensely cool and makes dealing with XML files a much less annoying endeavor.
+
+***
 
 ### Connecting the XML with the XSL document
 
@@ -123,6 +126,8 @@ First, create the XSL file (with extension `.xsl`) then you must connect the XML
 ```
 
 Where the `href` tag on the `xml-stylesheet` tag is the name of the file you want to tell the XML document to look at in order to be transformed.
+
+***
 
 ### Creating the XSL file
 
@@ -141,7 +146,9 @@ The stylesheet declaration should also end with its closing tag:
 </xsl:stylesheet>
 ```
 
-## Creating a template to flatten the file
+***
+
+### Creating a template to flatten the file
 
 In my case, I wanted to make a template because the file contained quite a lot of data, so I started by matching the top level tag `<sentences>`:
 
