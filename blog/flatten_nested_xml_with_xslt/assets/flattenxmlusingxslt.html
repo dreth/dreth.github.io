@@ -87,16 +87,19 @@
 <li>The values in the columns <code>id</code>, <code>from</code> and <code>to</code> must be integers</li>
 <li>The full contents of each <code>&lt;text&gt;</code> tag inside each <code>&lt;sentence&gt;</code> tag must be contained in its specified column, same for each <code>term</code> attribute in every <code>&lt;aspectTerm&gt;</code> tag, including symbols like quotes and such</li>
 </ul>
+<hr>
 <h2 id="flattening-the-xml-file-using-xslt">Flattening the XML file using XSLT</h2>
 <p>In order to flatten the XML file we can look for convoluted methods where we traverse the XML file iteratively to extract information from it, but this interesting <a href="https://stackoverflow.com/questions/37730436/flatten-a-nested-xml-using-xslt">thread on stackoverflow</a> prompted me to research XSLT a bit more.</p>
 <p>XSLT stands for “Extensible Stylesheet Language Transformations”, it’s a language originally design for transforming XML docs into other XMLs, other markup language files like HTML, plain text, etc. It’s a powerful tool that utilizes XPath to identify, extract and reference elements within the source XML file. It’s an extraordinarily powerful tool to flatten XML files.</p>
 <p>Note that I <em>just found out this thing exists</em> so bear with me if you already know everything I’m writing here, I just thought this was immensely cool and makes dealing with XML files a much less annoying endeavor.</p>
+<hr>
 <h3 id="connecting-the-xml-with-the-xsl-document">Connecting the XML with the XSL document</h3>
 <p>First, create the XSL file (with extension <code>.xsl</code>) then you must connect the XML file with its stylesheet by adding this tag at the top of the document right under the XML declaration:</p>
 <pre class=" language-xml"><code class="prism  language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;</span>
 <span class="token prolog">&lt;?xml-stylesheet type="text/xsl" version="2.0" href="filename.xsl"?&gt;</span>
 </code></pre>
 <p>Where the <code>href</code> tag on the <code>xml-stylesheet</code> tag is the name of the file you want to tell the XML document to look at in order to be transformed.</p>
+<hr>
 <h3 id="creating-the-xsl-file">Creating the XSL file</h3>
 <p>XSL files are also XML documents, so they must start with the XML declaration and then you must add the following tag to reference the start of the stylesheet:</p>
 <pre class=" language-xml"><code class="prism  language-xml"><span class="token prolog">&lt;?xml version="1.0"?&gt;</span>
@@ -106,6 +109,7 @@
 <p>The stylesheet declaration should also end with its closing tag:</p>
 <pre class=" language-xml"><code class="prism  language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">xsl:</span>stylesheet</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
+<hr>
 <h3 id="creating-a-template-to-flatten-the-file">Creating a template to flatten the file</h2>
 <p>In my case, I wanted to make a template because the file contained quite a lot of data, so I started by matching the top level tag <code>&lt;sentences&gt;</code>:</p>
 <pre class=" language-xml"><code class="prism  language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">xsl:</span>template</span> <span class="token attr-name">match</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/sentences<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
