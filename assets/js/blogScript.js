@@ -117,9 +117,17 @@ if ($("#captureTheEtherSolutions")) {
     })
 }
 
-// add damnVulnerableDefi html to the capture the ether solutions article content2 block
+// add damnVulnerableDefi html to the damn vulnerable defi solutions article content2 block
 if ($("#damnVulnerableDefiSolutions")) {
     $('#damnVulnerableDefiSolutions').load('/blog/damn_vulnerable_defi_solutions/assets/damnvulnerabledefisolutions.html', function() {
+        $(".katex-html").hide();
+        hljs.highlightAll();
+    })
+}
+
+// add the flattenXMLUsingXSLT html to the flatten xml using xslt article content2 block
+if ($("#flattenXMLUsingXSLT")) {
+    $('#flattenXMLUsingXSLT').load('/blog/flatten_nested_xml_with_xslt/assets/flattenxmlusingxslt.html', function() {
         $(".katex-html").hide();
         hljs.highlightAll();
     })
