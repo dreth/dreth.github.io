@@ -182,11 +182,6 @@ cv_skeleton = r"""
 %----------SECTIONS TO ITERATE ON-----------------
 *iteration_items*
 
-%-----------PROJECTS-----------------
-\vspace{-10pt}
-\section{*projects*}
-\textbf{View all my projects on \href{https://dac.ac/projects}{my website}}
-
 \end{document}
 """
 
@@ -200,14 +195,14 @@ cv_blocks = {
             'languages':'Languages',
             'skills':'Skills Summary',
             'work':'Work experience',
-            'projects':'Projects'
+            'projects':'Projects \\& Blog'
         },
         'es': {
             'education':'Educación',
             'languages':'Idiomas',
             'skills':'Habilidades',
             'work':'Experiencia de trabajo',
-            'projects':'Proyectos'
+            'projects':'Proyectos \\& Blog'
         }
     },
 
@@ -229,7 +224,7 @@ cv_blocks = {
         'en':{
             'skills':{
                 'Languages':'~~~~~~',
-                'Frameworks':'~~~~',
+                'Data':'~~~~~~~~~~~~~~',
                 'Tools':'~~~~~~~~~~~~~~',
                 'Platforms':'~~~~~~~',
                 'Other':'~~~~~~~~~~~~~'
@@ -238,9 +233,9 @@ cv_blocks = {
         'es':{
             'skills':{
                 'Languages':'~~~~~~~',
-                'Frameworks':'~~~~',
+                'Data':'~~~~~~~~~~~~~~~',
                 'Tools':'~~~~~~~',
-                'Platforms':'~~~~',
+                'Platforms':'~~~~~',
                 'Other':'~~~~~~~~~~~~~~'
             }
         }
@@ -325,7 +320,24 @@ cv_blocks = {
 \end{itemize*}
 \end{center}"""
     },
+    
+### PROJECTS SECTION
+    'projects': {
+        'title':
+            r"""
+%-----------PROJECTSANDBLOG-----------------
+\vspace{-10pt}
+\section{*projects*}
+\textbf{*projects:text*}""",
+        'text': {
+            'en':'View all my \href{https://dac.ac/projects}{projects} and \href{https://dac.ac}{articles} on my website',
+            'es':'Ver todos mis \href{https://dac.ac/projects}{proyectos} y \href{https://dac.ac}{artículos} en mi sitio web'
+        },
+        'closing_tag':""
+    }
 }
+
+
 
 # %%
 # create the CV tex document
@@ -340,7 +352,7 @@ def fill_cv(cv_skeleton, l="en"):
     iteration_items = ''
 
     # iterating over standardized sections
-    standardized_sections = ['education', 'skills', 'languages', 'work']
+    standardized_sections = ['education', 'skills', 'languages', 'work','projects']
     for section in standardized_sections:
 
         # add to the iteration items string
@@ -468,6 +480,12 @@ def fill_cv(cv_skeleton, l="en"):
                 
                     # add language level
                     iteration_items += escape_chars(it_item)
+        
+        # items in the projects section
+        if section == 'projects':
+            
+            # add projects link
+            iteration_items = iteration_items.replace("*projects:text*",cv_blocks[section]['text'][l])
                  
         # add closing tag
         iteration_items += cv_blocks[section]['closing_tag']
