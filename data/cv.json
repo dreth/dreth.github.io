@@ -54,49 +54,56 @@
         "list":{
             "en":[
                 {
-                    "title":"Data Scientist",
+                    "title":"Python backend developer",
+                    "institution":"🏢 NeoLux Energy Solutions",
+                    "dates":"📅 January 2023 - Currently",
+                    "location":"📍 Madrid, Spain (remote)",
+                    "schedule":"🕐 Part-time"
+                },
+                {
+                    "title":"Python developer & Data scientist",
                     "institution":"🏢 Populate",
                     "dates":"📅 September 2021 - February 2022",
                     "location":"📍 Madrid, Spain (remote)",
                     "schedule":"🕐 Full-time"
                 },
                 {
-                    "title":"Field Business Data Scientist",
+                    "title":"Data scientist",
                     "institution":"🏢 Cervecería Nacional Dominicana",
                     "dates":"📅 March 2020 - August 2020",
                     "location":"📍 Santo Domingo, Dominican Republic (remote)",
                     "schedule":"🕐 Full-time"
                 },
                 {
-                    "title":"Bioinformatician and data scientist",
+                    "title":"Python developer & Lead data scientist",
                     "institution":"🏢 Referencia Laboratorio Clínico S.A.",
                     "dates":"📅 August 2019 - March 2020",
                     "location":"📍 Santo Domingo, Dominican Republic",
                     "schedule":"🕐 Full-time"
                 },
                 {
-                    "title":"Vehicle insurance subscription representative",
+                    "title":"Vehicle insurance subscription analyst",
                     "institution":"🏢 Seguros Sura",
                     "dates":"📅 April 2019 - August 2019",
                     "location":"📍 Santo Domingo, Dominican Republic",
                     "schedule":"🕐 Full-time"
                 },
                 {
-                    "title":"Mathematics and physics tutor",
+                    "title":"Mathematics, programming & physics tutor",
                     "institution":"🏢 Sainz Tutoring",
                     "dates":"📅 November 2016 - May 2019",
                     "location":"📍 Santo Domingo, Dominican Republic",
                     "schedule":"🕐 Part-time"
                 },
                 {
-                    "title":"Tech Support",
+                    "title":"IT Technician",
                     "institution":"🏢 Business Computer POS",
                     "dates":"📅 May 2015 - October 2015",
                     "location":"📍 Santo Domingo, Dominican Republic",
                     "schedule":"🕐 Full-time"
                 },
                 {
-                    "title":"Marketing Staff",
+                    "title":"Marketing manager",
                     "institution":"🏢 Alonso & Colado SRL",
                     "dates":"📅 January 2014 - August 2014",
                     "location":"📍 Santo Domingo, Dominican Republic",
@@ -105,42 +112,49 @@
             ],
             "es":[
                 {
-                    "title":"Data Scientist",
+                    "title":"Desarrollador de backend (Python)",
+                    "institution":"🏢 NeoLux Energy Solutions",
+                    "dates":"📅 January 2023 - Currently",
+                    "location":"📍 Madrid, Spain (remote)",
+                    "schedule":"🕐 Part-time"
+                },
+                {
+                    "title":"Desarrollador de python & Data scientist",
                     "institution":"🏢 Populate",
                     "dates":"📅 Septiembre 2021 - Febrero 2022",
                     "location":"📍 Madrid, España (remoto)",
                     "schedule":"🕐 Tiempo completo"
                 },
                 {
-                    "title":"Field Business Data Scientist",
+                    "title":"Data scientist",
                     "institution":"🏢 Cervecería Nacional Dominicana",
                     "dates":"📅 Marzo 2020 - Agosto 2020",
                     "location":"📍 Santo Domingo, República Dominicana (remoto)",
                     "schedule":"🕐 Tiempo completo"
                 },
                 {
-                    "title":"Bioinformático y data scientist",
+                    "title":"Desarrollador de python & Lead data scientist",
                     "institution":"🏢 Referencia Laboratorio Clínico S.A.",
                     "dates":"📅 Agosto 2019 - Marzo 2020",
                     "location":"📍 Santo Domingo, República Dominicana",
                     "schedule":"🕐 Tiempo completo"
                 },
                 {
-                    "title":"Oficial de suscripción (Autos)",
+                    "title":"Analista de suscripción de seguros de vehículos",
                     "institution":"🏢 Seguros Sura",
                     "dates":"📅 Abril 2019 - Agosto 2019",
                     "location":"📍 Santo Domingo, República Dominicana",
                     "schedule":"🕐 Tiempo completo"
                 },
                 {
-                    "title":"Tutor de matemáticas y física",
+                    "title":"Tutor de matemáticas, programación y física",
                     "institution":"🏢 Sainz Tutoring",
                     "dates":"📅 Noviembre 2016 - Mayo 2019",
                     "location":"📍 Santo Domingo, República Dominicana",
                     "schedule":"🕐 Medio tiempo"
                 },
                 {
-                    "title":"Soporte Técnico",
+                    "title":"Técnico de IT",
                     "institution":"🏢 Business Computer POS",
                     "dates":"📅 Mayo 2015 - Octubre 2015",
                     "location":"📍 Santo Domingo, República Dominicana",
@@ -157,22 +171,24 @@
         },
         "detail":{
             "en":[
-                "- Creating interactive dashboards using Metabase through SQL queries and Metabase's UI<br>- Preparing a daily data integrity checking pipeline using Python and Great Expectations<br>- General data analysis using public contracting data from Spain's public contracting platforms<br>- Improving upon and maintaining a deep learning model to predict proposals on tenders",
-                "- Cleaning up and manipulating data to create mineable views<br>- Preparing a full data science pipeline for predictive models based on sales data<br>- Feature selection for modeling and model tuning<br>- Clustering clients based on their sales of specific products and internal classification in order to find a more accurate targetting to increase local marketshare<br>- Utilizing Azure Databricks to effectively deploy, clean up and tune models for sales prediction during the ongoing COVID-19 pandemic at the time",
-                "- Extracting, cleaning up, processing, visualizing and manipulating data with Pandas<br>- Programming simple software solutions in order to automate manual tasks and avoid redundant processes<br>- Constructing databases from raw text data<br>- Analyzing genetic sequence data to find genetic mutations in patients",
-                "- Programming/building utilities to quicken the quote-giving process<br>- General data analysis and reporting on sales/accident rate for different insurance policies or groups of insurance policies<br>- Giving quotes for individual vehicle insurance policies and fleets of vehicles<br>- Pricing/discount analysis during the quote-giving process",
-                "- Math tutor for high school and university students, from basic arithmetic to integral calculus.",
-                "",
-                "- Designing ads and general image editing<br>- Introduction and filling of data in a client database<br>- Mass emailing to customers<br>- Social media management"
+                "- Python backend development using django<br>- Data analysis and visualization using pandas, numpy, matplotlib, plotly and streamlit",
+                "- Developing a data integrity checking pipeline using Python and Great Expectations<br>- Build interactive dashboards using Metabase, PostgreSQL queries and Metabase's native UI<br>- Data analysis using public contracting data from Spain's with pandas, numpy, matplotlib, seaborn and streamlit<br>- Improving the accuracy (c. 10\\% improvement) of a TensorFlow deep learning model to predict tender proposals and some smaller scikit-learn models<br>- Performing a keyword extraction analysis, stemming and lemmatization using NLP methods",
+                "- Cleaning up and manipulating data with pandas for analysis<br>- Developing complete data pipelines for ML model development tuning and deployment<br>- Clustering clients based on their product sales to target market niches<br>- Utilizing Azure Databricks and PySpark to effectively deploy, clean up and tune models for sales prediction during the ongoing COVID-19 pandemic at the time",
+                "- Developing software tools for automation with an emphasis on minimal human intervention<br>- Extracting, cleaning up, processing, visualizing and manipulating data with pandas, numpy, matplotlib, seaborn<br>- Constructing databases from raw text data using python and a strong use of regex<br>- Analyzing genetic sequence data",
+                "- Programming/building spreadsheets with macros (VBA) to improve the quote-giving process<br>- General data analysis and reporting on sales/accident rate for different insurance policies or groups of policies<br>- Pricing/discount analysis and quoting individual vehicle insurance policies and fleets of vehicles",
+                "- Math, programming and physics tutor for high school and university students",
+                "- Repairing and maintaining computers and peripherals<br>- Installing and configuring software",
+                "- Designing ads and general image editing<br>- Data entry,mass emailing to customers and social media management"
             ],
             "es":[
-                "- Construir dashboards interactivos utilizando Metabase, a través de queries de SQL y la interfaz nativa de Metabase<br>- Preparar un pipeline de chequeos diarios de integridad de datos utilizando Python y Great Expectations<br>- Mantener y mejorar un modelo de deep learning para predecir propuestas de licitaciones<br>- Análisis de datos utilizando datos de contratación pública extraídos de las plataformas de contratación del estado españolas",
-                "- Limpiando y manipulando data para crear vistas minables<br>- Preparando un pipeline completo de data science para construir modelos predictivos basados en data de ventas<br>- Seleccion de variables para modelación y afinación de modelos<br>- Segmentando clientes basados en sus compras de productos específicos y clasificación interna con el propósito de atacar agrupaciones más granularmente segmentadas para incrementar marketshare en el mercado local<br>- Utilizando Azure Databricks para poner en marcha y afinar modelos para predicción de ventas durante la pandemia de COVID-19",
-                "- Extrayendo, limpiando, procesando, creando visualizaciones y manipulando data con Pandas<br>- Programando soluciones sencillas de software con el propósito de automatizar tareas manuales y evadir tareas redundantes<br>- Construyendo y modelando bases de datos para almacenar data extraída de archivos de texto crudos<br>- Analizando data de secuencias genéticas para encontrar mutaciones/alteraciones en pacientes",
-                "- Análisis de tarificación de seguros de vehículos de motor<br>- Programación/construcción de utilidades para eficientizar procesos de cotización<br>- Análisis de datos en general con relación a producción/siniestralidad y reportes<br>- Cotizaciones de pólizas de vehículos y de pólizas para flotillas de vehículos",
-                "- Tutor de matemáticas para estudiantes de secundaria y universitarios, desde aritmética básica hasta calculo integral.",
-                "",
-                "- Creación de artes para publicidad y edición de imágenes general<br>- Introducción de datos en bases de datos de clientes<br>- Envío de correos masivos a clientes<br>- Manejo de redes sociales"
+                "- Desarrollo de backend con Python usando django<br>- Análisis y visualización de data usando pandas, numpy, matplotlib, plotly y streamlit",
+                "- Desarrollando un pipeline de verificación de integridad de data usando Python y Great Expectations<br>- Construyendo dashboards interactivos usando Metabase, consultas en PostgreSQL y la UI nativa de Metabase<br>- Análisis de datos y visualización de datos de contratación pública con pandas, numpy, matplotlib, seaborn, plotly y streamlit<br>- Mejorando la precisión (c. 10\\% de mejora) de un modelo de deep learning de TensorFlow para predecir propuestas en licitaciones y otros modelos pequeños de scikit-learn<br>- Realizando un análisis de extracción de palabras clave, stemming y lematización usando métodos de NLP",
+                "- Limpieza y manipulación de data con pandas para análisis<br>- Desarrollando pipelines completos para el desarrollo, tuneo y despliegue de modelos de ML<br>- Clustering de clientes basado en sus ventas de productos para identificar nichos de mercado<br>- Utilizando Azure Databricks y PySpark para desplegar, limpiar y ajustar modelos de predicción de ventas durante la pandemia de COVID-19",
+                "- Desarrollando herramientas de software para automatización con énfasis en una mínima intervención humana<br>- Extrayendo, limpiando, procesando, visualizando y manipulando data con pandas, numpy, matplotlib, seaborn<br>- Construyendo bases de datos a partir de data cruda usando python y regex<br>- Analizando data de secuencias genéticas",
+                "- Programando/creando hojas de cálculo con macros (VBA) para mejorar el proceso de dar cotizaciones<br>- Análisis y reporte general de ventas/tasa de accidentes para diferentes pólizas de seguro o grupos de pólizas<br>- Análisis de precios/descuentos y cotización de pólizas individuales de seguro de vehículos y flotas de vehículos",
+                "- Tutor de matemáticas, programación y física para estudiantes de secundaria y universidad",
+                "- Reparación y mantenimiento de computadoras y periféricos<br>- Instalación y configuración de software",
+                "- Creación de artes para publicidad y edición de imágenes general<br>- Envío de correos masivos a clientes, data entry y manejo de redes sociales"
             ]
         }
     },
@@ -231,9 +247,9 @@
                     "en":"Languages",
                     "es":"Lenguajes"
                 },
-                "frameworks":{
-                    "en":"Frameworks",
-                    "es":"Frameworks"
+                "data":{
+                    "en":"Data",
+                    "es":"Data"
                 },
                 "tools1":{
                     "en":"Tools",
@@ -259,24 +275,24 @@
             "list":{
                 "en":{
                     "noLevel":{
-                        "languages":"Python, R, SQL, Bash, Javascript, Solidity",
-                        "frameworks":"Manipulation, visualization of data/arrays and basic ML modelling in Python/R",
-                        "tools1":"Git, Docker, DB design, Spreadsheets/Excel",
-                        "tools2":"Basic web development (html, css, js)",
-                        "platforms":"Familiarity with Linux/macOS/Windows",
-                        "other1":"Understanding of the decentralized finance market, heavy defi user",
-                        "other2":"Passion for teaching, writing and presenting information"
+                        "languages":"Python, R, SQL, Shell scripting, Javascript, Solidity, LaTeX, HTML+CSS, VBA",
+                        "data":"Manipulation, visualization of data/arrays and ML modelling in Python/R. Database modelling.",
+                        "tools1":"Git, docker/docker-compose, server infra software, Spreadsheets/Excel",
+                        "tools2":"Software development + Vanilla JS web dev (html, css, js)",
+                        "platforms":"Strong familiarity with unix shells (zsh, bash, sh, etc.) and comfortable with CLIs",
+                        "other1":"Blockchain data analysis + on-chain sleuthing. Strong defi and on-chain arbitrage experience",
+                        "other2":"Passion for languages, development, teaching, writing, and presenting information"
                     }
                 },
                 "es":{
                     "noLevel":{
-                        "languages":"Python, R, SQL, Bash, Javascript, Solidity",
-                        "frameworks":"Manipulación, visualización de datos/arreglos y construcción básica de modelos de ML con Python/R",
-                        "tools1":"Git, Docker, Diseño de DB, Hojas de cálculo/Excel",
-                        "tools2":"Desarrollo web básico (html, css, js)",
-                        "platforms":"Familiaridad con Linux/macOS/Windows",
-                        "other1":"Entendimiento del mercado de finanzas decentralizada, mucha experiencia usando defi",
-                        "other2":"Pasión por enseñar, escribir y presentar información"
+                        "languages":"Python, R, SQL, Shell scripting, Javascript, Solidity, LaTeX, HTML+CSS, VBA",
+                        "data":"Manipulación, visualización de datos/arreglos, ML modelling con Python/R. Database modelling.",
+                        "tools1":"Git, docker/docker-compose, software de infra de servidores, hojas de cálculo/Excel",
+                        "tools2":"Desarollo de software + Desarrollo web con Vanilla JS (html, css, js)",
+                        "platforms":"Familiaridad con shells de unix (zsh, bash, sh, etc.) y cómodo con CLIs",
+                        "other1":"Análisis de data del blockchain + rastreo de transacciones. Fuerte experiencia en defi y arbitraje on-chain",
+                        "other2":"Pasión por lenguajes, programación, enseñanza, escritura y presentación de información"
                     }
                 }
             }

@@ -1,8 +1,8 @@
 {
     "content": {
         "subtitle": {
-            "en":"data scientist, developer, teacher",
-            "es":"data scientist, desarrollador, profesor"
+            "en":"developer, data scientist, teacher",
+            "es":"desarrollador, data scientist, profesor"
         },
         "welcome": {
             "en":"welcome!",
@@ -133,12 +133,12 @@
                 }
         },
         "about_me_text": {
-            "en":"I'm a developer, data scientist and teacher. I'm passionate about technology, music, finance, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. I'm currently focusing on writing things that interest me on my blog and actively studying stuff that calls my attention. In particular, I've been doing CTFs to learn Solidity and tinkering with home servers and self-hosting.",
-            "es":"Soy desarrollador, data scientist y profesor. Me apasiona la tecnología, música, finanzas, blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad digital, las matemáticas, la lingüística y los idiomas.<br><br>Siempre abierto a nuevos retos e ideas. Actualmente me estoy enfocando en escribir sobre cosas que me interesan en mi blog y activamente estudiando cosas que me llaman la atención. En particular he estado haciendo CTFs para aprender Solidity y aprendiendo de servidores y self-hosting."
+            "en":"I'm a developer, data scientist and teacher. I'm passionate about technology, music, finance, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.<br><br>Always open to new challenges and ideas. Feel free to contact me.",
+            "es":"Soy desarrollador, data scientist y profesor. Me apasiona la tecnología, música, finanzas, blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad digital, las matemáticas, la lingüística y los idiomas.<br><br>Siempre abierto a nuevos retos e ideas. Siéntase libre de contactarme."
         },
         "about_me_short": {
-            "en":"Developer, data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general.",
-            "es":"Desarrollador, data scientist y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas."
+            "en":"Developer, data scientist and teacher. I'm passionate about technology, music, blockchains, programming, internet subcultures, online privacy and security, mathematics, linguisitics and languages in general. I find almost everything interesting.",
+            "es":"Desarrollador, data scientist y profesor. Me apasiona la tecnología, la música, los blockchains, la programación, las subculturas de internet, los temas de privacidad de datos y seguridad, las matemáticas, la lingüística y los idiomas. I find almost everything interesting."
         },
         "other_sites": {
             "en":"Other sites:",
