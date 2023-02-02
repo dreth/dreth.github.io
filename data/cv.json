@@ -288,7 +288,7 @@
             "list":{
                 "en":{
                     "noLevel":{
-                        "languages":"Python, R, SQL, Shell scripting, Javascript, Solidity, LaTeX, HTML+CSS, VBA",
+                        "languages":"Python, R, SQL, Shell scripting, Javascript, Solidity, LaTeX, HTML+CSS, Julia, MATLAB, VBA",
                         "data":"Manipulation, visualization of data/arrays and ML modelling in Python/R. Database modelling.",
                         "tools1":"Git, docker/docker-compose, server infra software, Spreadsheets/Excel",
                         "tools2":"Software development + Vanilla JS web dev (html, css, js)",
@@ -299,7 +299,7 @@
                 },
                 "es":{
                     "noLevel":{
-                        "languages":"Python, R, SQL, Shell scripting, Javascript, Solidity, LaTeX, HTML+CSS, VBA",
+                        "languages":"Python, R, SQL, Shell scripting, Javascript, Solidity, LaTeX, HTML+CSS, Julia, MATLAB, VBA",
                         "data":"Manipulación, visualización de datos/arreglos, ML modelling con Python/R. Database modelling.",
                         "tools1":"Git, docker/docker-compose, software de infra de servidores, hojas de cálculo/Excel",
                         "tools2":"Desarollo de software + Desarrollo web con Vanilla JS (html, css, js)",

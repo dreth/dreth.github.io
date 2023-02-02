@@ -197,14 +197,14 @@ cv_blocks = {
             'languages':'Languages',
             'skills':'Skills Summary',
             'work':'Work experience',
-            'projects':'Projects \\& Blog'
+            'projects':'Projects, Blog \\& Certifications'
         },
         'es': {
             'education':'Educación',
             'languages':'Idiomas',
             'skills':'Habilidades',
             'work':'Experiencia de trabajo',
-            'projects':'Proyectos \\& Blog'
+            'projects':'Proyectos, Blog y Certificaciones'
         }
     },
 
@@ -341,8 +341,8 @@ cv_blocks = {
 \section{*projects*}
 \textbf{*projects:text*}""",
         'text': {
-            'en':'View all my \href{https://dac.ac/projects}{projects} and \href{https://dac.ac}{articles} on my website',
-            'es':'Ver todos mis \href{https://dac.ac/projects}{proyectos} y \href{https://dac.ac}{artículos} en mi sitio web'
+            'en':'View all my \href{https://dac.ac/projects}{projects}, \href{https://dac.ac}{articles}, and \href{https://https://www.linkedin.com/in/dreth/details/certifications/}{certifications}.',
+            'es':'Ver todos/as mis \href{https://dac.ac/projects}{proyectos}, \href{https://dac.ac}{artículos}, y \href{https://https://www.linkedin.com/in/dreth/details/certifications/}{certificaciones}.'
         },
         'closing_tag':""
     }
