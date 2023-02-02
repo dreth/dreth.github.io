@@ -1,7 +1,7 @@
 // GENERAL VARIABLES
 var cvHeading;
 var content;
-var workDetails = 0;
+var details = 0;
 
 // ABOUT ME SECTION, CV CONTENTS -------------  
 var aboutMeJSON = $.getJSON('/data/cv.json');
@@ -15,10 +15,10 @@ aboutMeJSON.done(aboutMeJSON, (cvData) => {
 var aboutFiles = $.when(langsJSON, aboutMeJSON);
 
 // TOGGLE WORK DETAILS ------------------------
-function toggleWorkDetail() {
+function toggleDetails() {
     aboutMeJSON.done(() => {
         // toggle showing or hiding details
-        workDetails = workDetails === 0 ? 1 : 0;
+        details = details === 0 ? 1 : 0;
         
         // reload cv
         loadCV()
@@ -51,13 +51,11 @@ function loadCV(l=language) {
         edWorkContents = `<div><h3 class="cvHeading1">${content['heading'][l]}</h3> &nbsp;`
         
         // show detail if in the work experience section
-        if (ed_work[k] === 'work') {
-            edWorkContentsText = langs['content'][`cv_detail_toggle_${workDetails}`][l]
-            if (workDetails === 0) {
-                edWorkContents += `<a class="b" onclick="toggleWorkDetail()"><span class="smaller">${edWorkContentsText}</span></a>`
-            } else {
-                edWorkContents += `<a class="b" onclick="toggleWorkDetail()"><span class="smaller">${edWorkContentsText}</span></a>`
-            }
+        workDetailsToggleText = langs['content'][`cv_detail_toggle_${details}`][l]
+        if (details === 0) {
+            edWorkContents += `<a class="b" onclick="toggleDetails()"><span class="smaller">${workDetailsToggleText}</span></a>`
+        } else {
+            edWorkContents += `<a class="b" onclick="toggleDetails()"><span class="smaller">${workDetailsToggleText}</span></a>`
         }
         edWorkContents += '</div><div class="halfRightPadding"><hr></div>'
 
@@ -71,10 +69,10 @@ function loadCV(l=language) {
             let schedule = `${content["list"][l][i]["schedule"]}</span></ul>`
 
             // add contents to section
-            edWorkContents += ed_work[k] === 'work' ? `${title}${institution}${dates}${location}${schedule}` : `${title}${institution}${dates}${location}</span></ul>`
+            edWorkContents += `${title}${institution}${dates}${location}${schedule}`
 
             // add details if in work section
-            if (ed_work[k] === 'work' && workDetails == 0) {
+            if (details === 1) {
                 edWorkContents += `<ul class="smaller">${content["detail"][l][i]}</ul>`
             }
         }

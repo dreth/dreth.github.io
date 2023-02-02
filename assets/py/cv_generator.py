@@ -85,9 +85,11 @@ with open('./data/cv.json', 'r') as f:
         del cv_data[section]['heading']
     
     # remove dashes in detail section
-    for lang, element_list in cv_data['work']['detail'].items():
-        for i,item in enumerate(element_list):
-            element_list[i] = remove_lists(item)
+    detailed_sections = ['work','education']
+    for section in detailed_sections:
+        for lang, element_list in cv_data[section]['detail'].items():
+            for i,item in enumerate(element_list):
+                element_list[i] = remove_lists(item)
 
 # %%
 # skeleton
@@ -210,10 +212,10 @@ cv_blocks = {
     'separator': {
         'education':
             r"""
-\vspace{-2pt}""",
+\vspace{-4.2pt}""",
         'work':
             r"""
-\vspace{-4.2pt}""",
+\vspace{-4.5pt}""",
         'languages':
             r"""
 \vspace{-2pt}"""
@@ -254,6 +256,15 @@ cv_blocks = {
   \resumeSubheading
     {*institution*}{*location*}
     {*title*}{*dates*}""",
+        'itemize_start':
+            r"""
+\begin{itemize} \itemsep-0.24em""",
+        'itemize_item':
+            r"""
+  \item *item*""",
+        'itemize_end':
+            r"""
+\end{itemize}""",
         'closing_tag':
             r"""
 \resumeSubHeadingListEnd"""
@@ -264,7 +275,7 @@ cv_blocks = {
         'title':
             r"""
 %-----------SKILLS-----------------
-\vspace{-7pt}
+\vspace{-12pt}
 \section{*skills*}
   \resumeSubHeadingListStart
             """,
@@ -282,7 +293,7 @@ cv_blocks = {
         'title':
             r"""
 %-----------WORK-----------------
-\vspace{-12pt}
+\vspace{-13pt}
 \section{*work*}
   \resumeSubHeadingListStart""",
         'iterative_block':
@@ -326,7 +337,7 @@ cv_blocks = {
         'title':
             r"""
 %-----------PROJECTSANDBLOG-----------------
-\vspace{-10pt}
+\vspace{-9pt}
 \section{*projects*}
 \textbf{*projects:text*}""",
         'text': {
@@ -372,13 +383,23 @@ def fill_cv(cv_skeleton, l="en"):
                     it_item = cv_blocks[section]['iterative_block']
                     for key, value in entry.items():
                         it_item = it_item.replace(f"*{key}*", value)
+                        
+                    # add list of items for work experience detail
+                    it_item += cv_blocks[section]['itemize_start']
                     
-                    # add education section
-                    iteration_items += it_item
-
+                    # iterate over details
+                    for detail_item in cv_data[section]['detail'][l][i].replace('%',r'\\%').split('<br>'):
+                        it_item += cv_blocks[section]['itemize_item'].replace('*item*',detail_item)
+                    
+                    # add itemize end
+                    it_item += cv_blocks[section]['itemize_end']
+                
                     # add separator
-                    if i < (len(cv_data[section]['list'][l])-1):
-                        iteration_items += cv_blocks['separator'][section]
+                    if (i < (len(cv_data[section]['list'][l])-1)):
+                        it_item += cv_blocks['separator'][section]
+                
+                    # add language level
+                    iteration_items += escape_chars(it_item)
             
         # items in skills section
         if section == 'skills':
@@ -468,7 +489,7 @@ def fill_cv(cv_skeleton, l="en"):
                     it_item += cv_blocks[section]['itemize_start']
                     
                     # iterate over details
-                    for detail_item in cv_data[section]['detail'][l][i].split('<br>'):
+                    for detail_item in cv_data[section]['detail'][l][i].replace('%',r'\\%').split('<br>'):
                         it_item += cv_blocks[section]['itemize_item'].replace('*item*',detail_item)
                     
                     # add itemize end

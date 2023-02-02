@@ -189,12 +189,12 @@
             "es":"Has sido eliminado de la lista de correos."
         },
         "cv_detail_toggle_1": {
-            "en":"(show detail ↕️)",
-            "es":"(mostrar detalle ⬆️)"
+            "en":"(show details ↕️)",
+            "es":"(mostrar detalles ⬆️)"
         },
         "cv_detail_toggle_0": {
-            "en":"(hide detail ↕️)",
-            "es":"(ocultar detalle ⬆️)"
+            "en":"(hide details ↕️)",
+            "es":"(ocultar detalles ⬆️)"
         }
     },
     "objectIds_Field":{

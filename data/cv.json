@@ -20,13 +20,15 @@
                     "title":"Master in Statistics for Data Science",
                     "institution":"🎓 Universidad Carlos III de Madrid",
                     "dates":"📅 September 2020 - September 2021",
-                    "location":"📍 Madrid, Spain"
+                    "location":"📍 Madrid, Spain",
+                    "schedule":"🕐 Full-time"
                 },
                 {
                     "title":"Bachelor's degree in Mathematics and Actuarial Science",
                     "institution":"🎓 Instituto Tecnológico de Santo Domingo",
                     "dates":"📅 August 2015 - October 2019",
-                    "location":"📍 Santo Domingo, Dominican Republic"
+                    "location":"📍 Santo Domingo, Dominican Republic",
+                    "schedule":"🕐 Full-time"
                 }
             ],
             "es":[
@@ -34,22 +36,33 @@
                     "title":"Master en estadística para ciencia de datos",
                     "institution":"🎓 Universidad Carlos III de Madrid",
                     "dates":"📅 Septiembre 2020 - Septiembre 2021",
-                    "location":"📍 Madrid, España"
+                    "location":"📍 Madrid, España",
+                    "schedule":"🕐 Tiempo completo"
                 },
                 {
                     "title":"Licenciatura en matemáticas y ciencias actuariales",
                     "institution":"🎓 Instituto Tecnológico de Santo Domingo",
                     "dates":"📅 Agosto 2015 - Octubre 2019",
-                    "location":"📍 Santo Domingo, República Dominicana"
+                    "location":"📍 Santo Domingo, República Dominicana",
+                    "schedule":"🕐 Tiempo completo"
                 }
+            ]
+        },
+        "detail":{
+            "en":[
+                "- Working with R/Python/Julia for statistical analysis, data viz. and reports and collaborative projects<br>- Building statistical models, ML models, and interactive web applications with RShiny and Dash",
+                "- Studied calculus, functional analysis, actuarial mathematics, financial mathematics, statisticsM<br>- Perform financial data modelling and predictions as well as learn to code"
+            ],
+            "es":[
+                "- Trabajar con R y Python para análisis estadístico, viz. de datos e informes y proyectos colaborativos<br>- Construyendo modelos estadísticos y de ML y aplicaciones web interactivas con RShiny y Dash",
+                "- Estudié cálculo, análisis funcional, matemáticas actuariales, matemáticas financieras, estadística<br>- Realizar modelado y predicción de datos financieros y aprender a desarrollar"
             ]
         }
     },
     "work": {
         "heading":{
             "en":"👨‍💻 Work experience",
-            "es":"👨‍💻 Experiencia laboral",
-            "nl":"👨‍💻 Work experience"
+            "es":"👨‍💻 Experiencia laboral"
         },
         "list":{
             "en":[
@@ -172,23 +185,23 @@
         "detail":{
             "en":[
                 "- Python backend development using django<br>- Data analysis and visualization using pandas, numpy, matplotlib, plotly and streamlit",
-                "- Developing a data integrity checking pipeline using Python and Great Expectations<br>- Build interactive dashboards using Metabase, PostgreSQL queries and Metabase's native UI<br>- Data analysis using public contracting data from Spain's with pandas, numpy, matplotlib, seaborn and streamlit<br>- Improving the accuracy (c. 10\\% improvement) of a TensorFlow deep learning model to predict tender proposals and some smaller scikit-learn models<br>- Performing a keyword extraction analysis, stemming and lemmatization using NLP methods",
+                "- Developing a data integrity checking pipeline using Python and Great Expectations<br>- Build interactive dashboards using Metabase, PostgreSQL queries and Metabase's native UI<br>- Data analysis using public contracting data from Spain's with pandas, numpy, matplotlib, seaborn and streamlit<br>- Improving the accuracy (c. 10% improvement) of a TensorFlow deep learning model to predict tender proposals and some smaller scikit-learn models<br>- Performing a keyword extraction analysis, stemming and lemmatization using NLP methods",
                 "- Cleaning up and manipulating data with pandas for analysis<br>- Developing complete data pipelines for ML model development tuning and deployment<br>- Clustering clients based on their product sales to target market niches<br>- Utilizing Azure Databricks and PySpark to effectively deploy, clean up and tune models for sales prediction during the ongoing COVID-19 pandemic at the time",
                 "- Developing software tools for automation with an emphasis on minimal human intervention<br>- Extracting, cleaning up, processing, visualizing and manipulating data with pandas, numpy, matplotlib, seaborn<br>- Constructing databases from raw text data using python and a strong use of regex<br>- Analyzing genetic sequence data",
                 "- Programming/building spreadsheets with macros (VBA) to improve the quote-giving process<br>- General data analysis and reporting on sales/accident rate for different insurance policies or groups of policies<br>- Pricing/discount analysis and quoting individual vehicle insurance policies and fleets of vehicles",
                 "- Math, programming and physics tutor for high school and university students",
-                "- Repairing and maintaining computers and peripherals<br>- Installing and configuring software",
-                "- Designing ads and general image editing<br>- Data entry,mass emailing to customers and social media management"
+                "- Repairing and maintaining computers and peripherals / Installing and configuring software",
+                "- Designing ads and general image editing / Data entry, mass emailing to customers and CM"
             ],
             "es":[
                 "- Desarrollo de backend con Python usando django<br>- Análisis y visualización de data usando pandas, numpy, matplotlib, plotly y streamlit",
-                "- Desarrollando un pipeline de verificación de integridad de data usando Python y Great Expectations<br>- Construyendo dashboards interactivos usando Metabase, consultas en PostgreSQL y la UI nativa de Metabase<br>- Análisis de datos y visualización de datos de contratación pública con pandas, numpy, matplotlib, seaborn, plotly y streamlit<br>- Mejorando la precisión (c. 10\\% de mejora) de un modelo de deep learning de TensorFlow para predecir propuestas en licitaciones y otros modelos pequeños de scikit-learn<br>- Realizando un análisis de extracción de palabras clave, stemming y lematización usando métodos de NLP",
+                "- Desarrollando un pipeline de verificación de integridad de data usando Python y Great Expectations<br>- Construyendo dashboards interactivos usando Metabase, consultas en PostgreSQL y la UI nativa de Metabase<br>- Análisis de datos y visualización de datos de contratación pública con pandas, numpy, matplotlib, seaborn, plotly y streamlit<br>- Mejorando la precisión (c. 10% de mejora) de un modelo de deep learning de TensorFlow para predecir propuestas en licitaciones y otros modelos pequeños de scikit-learn<br>- Realizando un análisis de extracción de palabras clave, stemming y lematización usando métodos de NLP",
                 "- Limpieza y manipulación de data con pandas para análisis<br>- Desarrollando pipelines completos para el desarrollo, tuneo y despliegue de modelos de ML<br>- Clustering de clientes basado en sus ventas de productos para identificar nichos de mercado<br>- Utilizando Azure Databricks y PySpark para desplegar, limpiar y ajustar modelos de predicción de ventas durante la pandemia de COVID-19",
                 "- Desarrollando herramientas de software para automatización con énfasis en una mínima intervención humana<br>- Extrayendo, limpiando, procesando, visualizando y manipulando data con pandas, numpy, matplotlib, seaborn<br>- Construyendo bases de datos a partir de data cruda usando python y regex<br>- Analizando data de secuencias genéticas",
                 "- Programando/creando hojas de cálculo con macros (VBA) para mejorar el proceso de dar cotizaciones<br>- Análisis y reporte general de ventas/tasa de accidentes para diferentes pólizas de seguro o grupos de pólizas<br>- Análisis de precios/descuentos y cotización de pólizas individuales de seguro de vehículos y flotas de vehículos",
                 "- Tutor de matemáticas, programación y física para estudiantes de secundaria y universidad",
-                "- Reparación y mantenimiento de computadoras y periféricos<br>- Instalación y configuración de software",
-                "- Creación de artes para publicidad y edición de imágenes general<br>- Envío de correos masivos a clientes, data entry y manejo de redes sociales"
+                "- Reparación y mantenimiento de computadoras y periféricos / Instalación y configuración de software",
+                "- Diseño de anuncios y edición de imágenes / Envío de correos a clientes, data entry y CM"
             ]
         }
     },
