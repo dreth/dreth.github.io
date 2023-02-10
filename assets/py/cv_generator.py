@@ -248,7 +248,7 @@ cv_blocks = {
         'title':
             r"""
 %-----------EDUCATION-----------------
-\vspace{-4pt}
+\vspace{-5pt}
 \section{*education*}
 \resumeSubHeadingListStart""",
         'iterative_block':
