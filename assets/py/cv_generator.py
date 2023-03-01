@@ -341,8 +341,8 @@ cv_blocks = {
 \section{*projects*}
 \textbf{*projects:text*}""",
         'text': {
-            'en':'View all my \href{https://dac.ac/projects}{projects}, \href{https://dac.ac}{articles}, and \href{https://https://www.linkedin.com/in/dreth/details/certifications/}{certifications}.',
-            'es':'Ver todos/as mis \href{https://dac.ac/projects}{proyectos}, \href{https://dac.ac}{artículos}, y \href{https://https://www.linkedin.com/in/dreth/details/certifications/}{certificaciones}.'
+            'en':'View all my \href{https://dac.ac/projects}{projects}, \href{https://dac.ac}{articles}, and \href{https://www.linkedin.com/in/dreth/details/certifications/}{certifications}.',
+            'es':'Ver todos/as mis \href{https://dac.ac/projects}{proyectos}, \href{https://dac.ac}{artículos}, y \href{https://www.linkedin.com/in/dreth/details/certifications/}{certificaciones}.'
         },
         'closing_tag':""
     }
