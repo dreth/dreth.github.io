@@ -4,7 +4,7 @@
 <span class="smaller"><b>January 15, 2023</b></span></div>
 <div class="centerPosition"><hr></div>
 
-XML files have been a bit annoying to deal with in my experience while working with data. However, today my friend Julio asked me for an emergency favour to help him extract data from an XML file that was *not flat*, meaning it couldn't be easily read into pandas using the pandas `read_xml()` method, which is intended to only read flat XML files.
+XML files have been a bit annoying to deal with in my experience while working with data. However, today my friend Julio asked me for an emergency favour to help him extract data from an XML file that was *not flat*, meaning it couldn't be easily read into pandas using the pandas `read_xml()` function, which is intended to only read flat XML files.
 
 By a flat XML file, I mean a file that looks like this:
 
@@ -323,4 +323,3 @@ And that's how you flatten XML files using XSLT!
 + [W3school's XPath tutorial](https://www.w3schools.com/xml/xpath_intro.asp)
 
 + [Excellent presentation by Rich from arbitrarytechnology on XPath and XSLT](https://youtu.be/WggVR4YI5oI)
-
