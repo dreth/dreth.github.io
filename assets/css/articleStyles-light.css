@@ -18,6 +18,10 @@ h5 {
     color:rgb(0, 94, 170);
 }
 
+.divBorder-article {
+    box-shadow: 0 0 0 1.5pt rgb(255, 255, 255);
+}
+
 span.red {
     color: red;
 }

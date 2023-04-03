@@ -18,6 +18,10 @@ h5 {
     color:rgb(129, 193, 253);
 }
 
+.divBorder-article {
+    box-shadow: 0 0 0 1.5pt rgb(0, 0, 0);
+}
+
 span.red {
     color: red;
 }
@@ -62,4 +66,3 @@ a:hover {
         object-fit: cover;
     }
 }
-
