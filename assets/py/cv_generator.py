@@ -124,8 +124,8 @@ cv_skeleton = r"""
 \addtolength{\oddsidemargin}{-0.530in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.45in}
-\addtolength{\textheight}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.11in}
 
 \urlstyle{rm}
 
