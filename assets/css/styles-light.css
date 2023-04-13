@@ -226,11 +226,21 @@ blockquote {
     box-shadow: 0 0 0 1.5pt rgb(190, 190, 190);
     border-radius: 20px 20px 20px 20px;
   }
+  /* borders */
+  .divBorder-2 {
+    box-shadow: 0 0 0 1.5pt rgb(190, 190, 190);
+    border-radius: 20px 20px 20px 20px;
+  }
 }
 /* screen width higher than 1000 px */
 @media screen and (max-width: 2550px) and (min-width: 1250px) {
   /* borders */
   .divBorder {
+    box-shadow: 0 0 0 1.5pt rgb(190, 190, 190);
+    border-radius: 20px 20px 20px 20px;
+  }
+  /* borders */
+  .divBorder-2 {
     box-shadow: 0 0 0 1.5pt rgb(190, 190, 190);
     border-radius: 20px 20px 20px 20px;
   }
@@ -240,6 +250,11 @@ blockquote {
   /* borders */
   .divBorder {
     box-shadow: 0 0 0 1.5pt rgb(190, 190, 190);
+    border-radius: 13px 13px 13px 13px;
+  }
+  /* borders */
+  .divBorder-2 {
+    box-shadow: 0 0 0 1.5pt rgb(255, 255, 255);
     border-radius: 13px 13px 13px 13px;
   }
 }
