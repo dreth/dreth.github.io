@@ -67,7 +67,7 @@
         "list":{
             "en":[
                 {
-                    "title":"Senior python engineer",
+                    "title":"Tech Lead",
                     "institution":"🏢 NeoLux Energy",
                     "dates":"📅 January 2023 - Currently",
                     "location":"📍 Madrid, Spain (remote)",
@@ -125,7 +125,7 @@
             ],
             "es":[
                 {
-                    "title":"Desarrollador de python senior",
+                    "title":"Tech Lead",
                     "institution":"🏢 NeoLux Energy",
                     "dates":"📅 Enero 2023 - Actualidad",
                     "location":"📍 Madrid, Spain (remoto)",
@@ -184,7 +184,7 @@
         },
         "detail":{
             "en":[
-                "- Python backend development using django and DRF (REST APIs)<br>- Data manipulation with pandas, building interactive webapps with streamlit<br>- Using AWS and DO to deploy, managing our K8s infrastructure<br>- Utilizing AWS cloud services like S3, EKS, RDS, EC2 as well as DO equivalents.<br>- Agile dev. using Jira, docs with Confluence, Git, etc. with extensive documentation",
+                "- Python backend development using django and DRF (REST APIs)<br>- Data manipulation with pandas, building interactive webapps with streamlit<br>- Using AWS and DO to deploy, managing our K8s infrastructure and on-premise servers<br>- Utilizing AWS cloud services like S3, EKS, RDS, EC2 as well as DO equivalents.<br>- Agile dev. using Jira, docs with Confluence, Git, etc. with extensive documentation",
                 "- Developing a data integrity checking pipeline using Python and Great Expectations<br>- Build interactive dashboards using Metabase, PostgreSQL queries and Metabase's native UI<br>- Data analysis using public contracting data from Spain's with pandas, numpy, matplotlib, seaborn and streamlit<br>- Improving the accuracy (c. 10 pct.) of a TensorFlow deep learning model and some smaller scikit-learn models<br>- Performing a keyword extraction analysis, stemming and lemmatization using NLP methods",
                 "- Cleaning up and manipulating data with pandas for analysis<br>- Developing complete data pipelines for ML model development tuning and deployment<br>- Clustering clients based on their product sales to target market niches<br>- Utilizing Azure Databricks and PySpark to deploy, clean up and tune models for sales prediction",
                 "- Developing software tools for automation with an emphasis on minimal human intervention<br>- Extracting, cleaning up, processing, visualizing and manipulating data with pandas, numpy, matplotlib, seaborn<br>- Constructing databases from raw text data using python and a strong use of regex<br>- Analyzing genetic sequence data",
@@ -194,7 +194,7 @@
                 "- Designing ads and general image editing / Data entry, mass emailing to customers and CM"
             ],
             "es":[
-                "- Desarrollo de backend en Python utilizando django y DRF (APIs REST)<br>- Manipulación de datos con pandas, creación de aplicaciones web interactivas con streamlit<br>- Utilización de AWS y DO para implementación, gestión de infraestructura K8s<br>- Utilización de servicios en la nube de AWS como S3, EKS, RDS, EC2, así como equivalentes en DO.<br>- Desarrollo ágil y docs utilizando Jira, Confluence, Git, etc. y desarrollo con documentación extensiva",
+                "- Desarrollo de backend en Python utilizando django y DRF (APIs REST)<br>- Manipulación de datos con pandas, creación de aplicaciones web interactivas con streamlit<br>- Utilización de AWS y DO para implementación, gestión de infraestructura K8s y servidores en premisa<br>- Utilización de servicios en la nube de AWS como S3, EKS, RDS, EC2, así como equivalentes en DO.<br>- Desarrollo ágil y docs utilizando Jira, Confluence, Git, etc. y desarrollo con documentación extensiva",
                 "- Desarrollando un pipeline de verificación de integridad de data usando Python y Great Expectations<br>- Construyendo dashboards interactivos usando Metabase, consultas en PostgreSQL y la UI nativa de Metabase<br>- Análisis de datos y viz. de datos de contr. pública con pandas, numpy, matplotlib, seaborn, plotly y streamlit<br>- Mejorando la precisión (c. 10 pct.) de un modelo de deep learning de TensorFlow otros modelos de scikit-learn<br>- Realizando un análisis de extracción de palabras clave, stemming y lematización usando métodos de NLP",
                 "- Limpieza y manipulación de data con pandas para análisis<br>- Desarrollando pipelines completos para el desarrollo, tuneo y despliegue de modelos de ML<br>- Clustering de clientes basado en sus ventas de productos para identificar nichos de mercado<br>- Utilizando Azure Databricks y PySpark para desplegar, limpiar y ajustar modelos de predicciones de ventas",
                 "- Desarrollando herramientas de software para automatización con énfasis en una mínima intervención humana<br>- Extrayendo, limpiando, procesando, visualizando y manipulando data con pandas, numpy, matplotlib, seaborn<br>- Construyendo bases de datos a partir de data cruda usando python y regex<br>- Analizando data de secuencias genéticas",
