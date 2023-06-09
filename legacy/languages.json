@@ -1,9 +1,9 @@
 {
     "content": {
         "subtitle": {
-            "en":"data scientist, developer, teacher",
-            "es":"data scientist, desarrollador, profesor",
-            "nl":"data scientist, ontwikkelaar, leraar,"
+            "en":"developer, teacher",
+            "es":"desarrollador, profesor",
+            "nl":"ontwikkelaar, leraar,"
         },
         "welcome": {
             "en":"welcome!",
