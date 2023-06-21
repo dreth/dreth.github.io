@@ -215,7 +215,7 @@ cv_blocks = {
 \vspace{-4.2pt}""",
         'work':
             r"""
-\vspace{-4.5pt}""",
+\vspace{-3pt}""",
         'languages':
             r"""
 \vspace{-2pt}"""
@@ -248,7 +248,7 @@ cv_blocks = {
         'title':
             r"""
 %-----------EDUCATION-----------------
-\vspace{-5pt}
+\vspace{-3pt}
 \section{*education*}
 \resumeSubHeadingListStart""",
         'iterative_block':
@@ -275,13 +275,13 @@ cv_blocks = {
         'title':
             r"""
 %-----------SKILLS-----------------
-\vspace{-12pt}
+\vspace{-8pt}
 \section{*skills*}
   \resumeSubHeadingListStart
             """,
         'iterative_block':
             r"""
-\vspace{-2pt}
+\vspace{-1pt}
 \resumeSubItem{*section*}{*indenter**skill_list*}""",
         'closing_tag':
             r"""
@@ -293,7 +293,7 @@ cv_blocks = {
         'title':
             r"""
 %-----------WORK-----------------
-\vspace{-13pt}
+\vspace{-8pt}
 \section{*work*}
   \resumeSubHeadingListStart""",
         'iterative_block':
@@ -514,7 +514,7 @@ def fill_cv(cv_skeleton, l="en"):
     # add iteration items to cv skeleton
     cv_skeleton = cv_skeleton.replace('*iteration_items*', iteration_items)
     cv_skeleton = cv_skeleton.replace(r"""
-\begin{itemize} \itemsep-0.24em
+\begin{itemize} \itemsep-0.2em
   \item 
 \end{itemize}""","")
 
@@ -536,5 +536,5 @@ os.system('cd assets/py && latexmk')
 
 # clean up
 sleep(1.5)
-for filetype in ['fls', 'log', 'fdb_latexmk', 'aux', 'gz', 'out', 'tex']:
+for filetype in ['fls', 'log', 'fdb_latexmk', 'aux', 'gz', 'out']:
     os.system(f'cd assets/py && rm *.{filetype}')
