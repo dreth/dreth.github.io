@@ -11,3 +11,4 @@ assets/py/word_lists/NL.txt
 *.xdv
 *.out
 .vscode/settings.json
+.venv
