@@ -463,7 +463,7 @@ def fill_cv(cv_skeleton, l="en"):
             for i, (level, level_name) in enumerate(cv_data[section]['level'][l].items()):
 
                 # add replace cv block tags
-                it_item = cv_blocks[section]['iterative_block'].replace(f"*level*", level_name)
+                it_item = cv_blocks[section]['iterative_block'].replace("*level*", level_name)
 
                 # iterate over languages in section
                 it_item = it_item.replace(
