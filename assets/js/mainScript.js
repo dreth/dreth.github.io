@@ -118,6 +118,14 @@ projectsJSON.done(projectsJSON, (projectsData) => {
 // ALL FILES LOADED?
 allFiles = $.when(langsJSON, articlesJSON, playlistsJSON, coolLinksJSON, projectsJSON);
 
+// BEFORE ANYTHING RUNS, ADD A MESSAGE THAT THIS IS MY OLD SITE ---
+$("body").prepend(`
+<div id="oldSiteMessage" class="divBorder" style="padding: 20px;">
+    <span>Hey! This is my old site and I'm no longer updating it. <a class="b" href="https://dac.ac">Check out the new one here</a>.</span>
+    <br>
+</div>
+`)
+
 // COOKIES ---------------------------------------
 function setCookie(key, value, time_in_days=365) {
     var expires = new Date();
@@ -593,5 +601,3 @@ allFiles.done(() => {
 $("body").append(`<!-- 100% privacy friendly analytics -->
 <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>`)
-
-
